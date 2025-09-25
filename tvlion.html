@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTV Player</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; display: flex; background: #121212; color: white; }
+    /* Sidebar principal */
+    .sidebar { width: 220px; background: #1e1e1e; height: 100vh; position: fixed; top: 0; left: 0; padding-top: 20px; }
+    .sidebar h2 { text-align: center; margin-bottom: 20px; color: #00bfff; }
+    .sidebar a { display: block; padding: 12px 20px; text-decoration: none; color: white; transition: background 0.3s; }
+    .sidebar a:hover { background: #333; }
+    /* Submenú */
+    .submenu { width: 180px; background: #2a2a2a; height: 100vh; position: fixed; top: 0; left: 220px; padding-top: 20px; display: none; flex-direction: column; }
+    .submenu a { display: block; padding: 10px 15px; text-decoration: none; color: #ddd; }
+    .submenu a:hover { background: #444; }
+    /* Contenido */
+    .main { margin-left: 220px; padding: 20px; flex: 1; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-left: 200px; }
+    .channel { background: #1e1e1e; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.2s; }
+    .channel:hover { transform: scale(1.05); background: #2c2c2c; }
+    .channel img { width: 100%; height: 100px; object-fit: contain; }
+    /* Player fullscreen */
+    #player { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 999; }
+    #player video { width: 100%; height: 100%; object-fit: contain; }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar principal -->
+  <div class="sidebar">
+    <h2>IPTV App</h2>
+    <a href="#" onclick="showSection('tv')">TV en Vivo</a>
+    <a href="#" onclick="showSection('peliculas')">Películas</a>
+  </div>
+
+  <!-- Submenú dinámico -->
+  <div class="submenu" id="submenu"></div>
+
+  <!-- Contenido -->
+  <div class="main">
+    <div id="tv">
+      <h1>TV en Vivo</h1>
+      <div class="grid" id="channelGridTV"></div>
+    </div>
+
+    <div id="peliculas" style="display:none;">
+      <h1>Películas</h1>
+      <div class="grid" id="channelGridMovies"></div>
+    </div>
+  </div>
+
+  <!-- Player -->
+  <div id="player">
+    <video id="videoPlayer" controls autoplay></video>
+  </div>
+
+  <script>
+    const PLAYLIST_URL_TV = "https://iptv-org.github.io/iptv/index.m3u"; 
+    const PLAYLIST_URL_MOVIES = "https://example.com/playlist-movies.m3u"; 
+
+    let channelsTV = [];
+    let channelsMovies = [];
+
+    function parseM3U(text) {
+      let lines = text.split("\n");
+      let channels = [];
+      let current = {};
+      lines.forEach(line => {
+        line = line.trim();
+        if (line.startsWith("#EXTINF:")) {
+          let logoMatch = line.match(/tvg-logo="([^"]*)"/);
+          let groupMatch = line.match(/group-title="([^"]*)"/);
+          let nameMatch = line.split(",").pop();
+          current.logo = logoMatch ? logoMatch[1] : "https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg";
+          current.group = groupMatch ? groupMatch[1] : "Otros";
+          current.name = nameMatch ? nameMatch : "Canal";
+        } else if (line && !line.startsWith("#")) {
+          current.url = line;
+          channels.push({ ...current });
+          current = {};
+        }
+      });
+      return channels;
+    }
+
+    async function loadPlaylist(url, type) {
+      try {
+        let res = await fetch(url);
+        let text = await res.text();
+        let parsed = parseM3U(text);
+        if (type === "tv") {
+          channelsTV = parsed;
+          renderChannels(channelsTV, "channelGridTV");
+          renderSubmenu(channelsTV);
+        } else {
+          channelsMovies = parsed;
+          renderChannels(channelsMovies, "channelGridMovies");
+        }
+      } catch (e) {
+        console.error("Error cargando M3U:", e);
+      }
+    }
+
+    function renderChannels(channels, gridId, filter = null) {
+      let grid = document.getElementById(gridId);
+      grid.innerHTML = "";
+      channels.forEach(ch => {
+        if (!filter || ch.group === filter) {
+          let div = document.createElement("div");
+          div.className = "channel";
+          div.setAttribute("data-category", ch.group);
+          div.innerHTML = `
+            <img src="${ch.logo}" alt="${ch.name}">
+            <p>${ch.name}</p>`;
+          div.onclick = () => playChannel(ch.url);
+          grid.appendChild(div);
+        }
+      });
+    }
+
+    function renderSubmenu(channels) {
+      let submenu = document.getElementById("submenu");
+      submenu.innerHTML = "";
+      let groups = [...new Set(channels.map(ch => ch.group))];
+      groups.forEach(g => {
+        let link = document.createElement("a");
+        link.href = "#";
+        link.innerText = g;
+        link.onclick = () => renderChannels(channelsTV, "channelGridTV", g);
+        submenu.appendChild(link);
+      });
+    }
+
+    function showSection(section) {
+      document.getElementById("tv").style.display = "none";
+      document.getElementById("peliculas").style.display = "none";
+      document.getElementById("submenu").style.display = "none";
+      document.getElementById(section).style.display = "block";
+      if (section === "tv") document.getElementById("submenu").style.display = "flex";
+    }
+
+    function playChannel(url) {
+      let player = document.getElementById("player");
+      let video = document.getElementById("videoPlayer");
+      player.style.display = "block";
+      video.src = url;
+      video.play();
+
+      // Abrir en fullscreen
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+
+      // Salir de fullscreen cierra el reproductor
+      document.addEventListener("fullscreenchange", () => {
+        if (!document.fullscreenElement) {
+          video.pause();
+          video.src = "";
+          player.style.display = "none";
+        }
+      });
+    }
+
+    // Cargar listas al inicio → directo en TV
+    loadPlaylist(PLAYLIST_URL_TV, "tv");
+    loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
+    showSection("tv");
+  </script>
+</body>
+</html>
