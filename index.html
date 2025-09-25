@@ -57,8 +57,9 @@
   </div>
 
   <script>
-    const PLAYLIST_URL_TV = "https://iptv-org.github.io/iptv/index.m3u"; 
-    const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tb/refs/heads/main/inicio.m3u"; 
+    // 🔹 URLs M3U personalizadas
+    const PLAYLIST_URL_TV = "https://raw.githubusercontent.com/Miguel179-spe/tb/refs/heads/main/inicio.m3u"; 
+    const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tb/main/peliculas.m3u"; 
 
     let channelsTV = [];
     let channelsMovies = [];
@@ -167,17 +168,10 @@
       });
     }
 
-    // Cargar listas al inicio → directo en TV
+    // 🔹 Cargar listas al inicio → directo en TV
     loadPlaylist(PLAYLIST_URL_TV, "tv");
     loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
     showSection("tv");
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
