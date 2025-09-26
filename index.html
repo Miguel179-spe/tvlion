@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPTV Player</title>
+
+  <!-- 🎬 Video.js -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
   <style>
     body { margin: 0; font-family: Arial, sans-serif; display: flex; background: #121212; color: white; }
     /* Sidebar principal */
@@ -23,21 +28,20 @@
     .channel { background: #1e1e1e; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.2s; }
     .channel:hover { transform: scale(1.05); background: #2c2c2c; }
 
-    /* Ajuste de imágenes uniformes */
+    /* Imágenes */
     .channel img {
-  width: 100%;
-  aspect-ratio: 16/9; /* Fuerza formato tipo TV/película */
-  object-fit: cover;  /* Recorta proporcionalmente sin deformar */
-  border-radius: 6px;
-  display: block;
-
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
     }
 
     .channel p { margin-top: 8px; font-size: 14px; color: #ddd; }
 
     /* Player fullscreen */
     #player { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 999; }
-    #player video { width: 100%; height: 100%; object-fit: contain; }
+    #videoPlayer { width: 100%; height: 100%; }
   </style>
 </head>
 <body>
@@ -65,13 +69,13 @@
     </div>
   </div>
 
-  <!-- Player -->
+  <!-- 🎬 Player con Video.js -->
   <div id="player">
-    <video id="videoPlayer" controls autoplay></video>
+    <video id="videoPlayer" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"></video>
   </div>
 
   <script>
-    // 🔹 URLs M3U personalizadas
+    // 🔹 URLs M3U
     const PLAYLIST_URL_TV = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/tv.html"; 
     const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html"; 
 
@@ -158,36 +162,33 @@
 
     function playChannel(url) {
       let player = document.getElementById("player");
-      let video = document.getElementById("videoPlayer");
       player.style.display = "block";
-      video.src = url;
-      video.play();
 
-      // Abrir en fullscreen
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
+      // Inicializar Video.js
+      let videoElement = document.getElementById("videoPlayer");
+      let video = videojs(videoElement);
+
+      video.src({
+        src: url,
+        type: url.endsWith(".m3u8") ? "application/x-mpegURL" : "video/mp4"
+      });
+
+      video.play();
 
       // Salir de fullscreen cierra el reproductor
       document.addEventListener("fullscreenchange", () => {
         if (!document.fullscreenElement) {
           video.pause();
-          video.src = "";
+          video.src("");
           player.style.display = "none";
         }
       });
     }
 
-    // 🔹 Cargar listas al inicio → directo en TV
+    // 🔹 Cargar listas al inicio
     loadPlaylist(PLAYLIST_URL_TV, "tv");
     loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
     showSection("tv");
   </script>
 </body>
 </html>
-
-
