@@ -11,16 +11,30 @@
     .sidebar h2 { text-align: center; margin-bottom: 20px; color: #00bfff; }
     .sidebar a { display: block; padding: 12px 20px; text-decoration: none; color: white; transition: background 0.3s; }
     .sidebar a:hover { background: #333; }
+
     /* Submenú */
     .submenu { width: 180px; background: #2a2a2a; height: 100vh; position: fixed; top: 0; left: 220px; padding-top: 20px; display: none; flex-direction: column; }
     .submenu a { display: block; padding: 10px 15px; text-decoration: none; color: #ddd; }
     .submenu a:hover { background: #444; }
+
     /* Contenido */
     .main { margin-left: 220px; padding: 20px; flex: 1; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-left: 200px; }
     .channel { background: #1e1e1e; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.2s; }
     .channel:hover { transform: scale(1.05); background: #2c2c2c; }
-    .channel img { width: 100%; height: 100px; object-fit: contain; }
+
+    /* Ajuste de imágenes uniformes */
+    .channel img {
+  width: 100%;
+  aspect-ratio: 16/9; /* Fuerza formato tipo TV/película */
+  object-fit: cover;  /* Recorta proporcionalmente sin deformar */
+  border-radius: 6px;
+  display: block;
+
+    }
+
+    .channel p { margin-top: 8px; font-size: 14px; color: #ddd; }
+
     /* Player fullscreen */
     #player { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 999; }
     #player video { width: 100%; height: 100%; object-fit: contain; }
@@ -59,7 +73,7 @@
   <script>
     // 🔹 URLs M3U personalizadas
     const PLAYLIST_URL_TV = "https://raw.githubusercontent.com/Miguel179-spe/tb/refs/heads/main/inicio.m3u"; 
-    const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tb/main/peliculas.m3u"; 
+    const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html"; 
 
     let channelsTV = [];
     let channelsMovies = [];
@@ -74,7 +88,7 @@
           let logoMatch = line.match(/tvg-logo="([^"]*)"/);
           let groupMatch = line.match(/group-title="([^"]*)"/);
           let nameMatch = line.split(",").pop();
-          current.logo = logoMatch ? logoMatch[1] : "https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg";
+          current.logo = logoMatch ? logoMatch[1] : "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
           current.group = groupMatch ? groupMatch[1] : "Otros";
           current.name = nameMatch ? nameMatch : "Canal";
         } else if (line && !line.startsWith("#")) {
@@ -175,3 +189,4 @@
   </script>
 </body>
 </html>
+
