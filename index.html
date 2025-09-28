@@ -1,179 +1,355 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPTV Player</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; display: flex; background: #121212; color: white; }
-    /* Sidebar principal */
-    .sidebar { width: 220px; background: #1e1e1e; height: 100vh; position: fixed; top: 0; left: 0; padding-top: 20px; }
-    .sidebar h2 { text-align: center; margin-bottom: 20px; color: #00bfff; }
-    .sidebar a { display: block; padding: 12px 20px; text-decoration: none; color: white; transition: background 0.3s; }
-    .sidebar a:hover { background: #333; }
-    /* Submenú */
-    .submenu { width: 180px; background: #2a2a2a; height: 100vh; position: fixed; top: 0; left: 220px; padding-top: 20px; display: none; flex-direction: column; }
-    .submenu a { display: block; padding: 10px 15px; text-decoration: none; color: #ddd; }
-    .submenu a:hover { background: #444; }
-    /* Contenido */
-    .main { margin-left: 220px; padding: 20px; flex: 1; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-left: 200px; }
-    .channel { background: #1e1e1e; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.2s; }
-    .channel:hover { transform: scale(1.05); background: #2c2c2c; }
-    .channel img { width: 100%; height: 100px; object-fit: contain; }
-    /* Player fullscreen */
-    #player { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 999; }
-    #player video { width: 100%; height: 100%; object-fit: contain; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player Nativo</title>
+
+    <style>
+        /* --- ESTILOS PRINCIPALES --- */
+        body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
+        .pin-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(18,18,18,0.98); z-index: 9999; display: flex; align-items: center; justify-content: center;
+        }
+        .pin-box {
+            background: #1e1e1e; padding: 30px 40px; border-radius: 14px; box-shadow: 0 2px 16px #0008;
+            text-align: center; color: #fff; min-width: 260px;
+        }
+        .pin-box input[type="password"] {
+            padding: 10px; font-size: 20px; border-radius: 6px; border: none; margin-bottom: 18px; width: 90%;
+            background: #242424; color: #fff; text-align: center; outline: none;
+        }
+        .pin-box button {
+            padding: 10px 30px; font-size: 16px; background: #00bfff; color: #fff; border: none; border-radius: 6px; cursor: pointer;
+        }
+        .pin-error { color: #ff4040; margin-top: 12px; font-size: 14px; min-height: 20px; }
+        
+        /* --- ESTILOS DE NAVEGACIÓN Y LISTA (Sin cambios) --- */
+        .sidebar { width: 160px; background: #1e1e1e; height: 100vh; position: fixed; top: 0; left: 10; padding-top: 20px; }
+        .sidebar h2 { text-align: center; margin-bottom: 20px; color: #00bfff; }
+        .sidebar a { display: block; padding: 12px 20px; text-decoration: none; color: white; transition: background 0.3s; }
+        .sidebar a:hover { background: #333; }
+        .submenu { display: none; position: fixed; top: 0; left: 160px; height: 70px; width: calc(100% - 100px); background: #2a2a2a; display: flex; align-items: center; padding: 0 10px; gap: 10px; z-index: 10; overflow-x: auto; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+        .submenu a { padding: 10px 15px; text-decoration: none; color: #ddd; flex: none; white-space: nowrap; border-radius: 4px; }
+        .submenu::-webkit-scrollbar { display: none; }
+        .submenu { -ms-overflow-style: none; scrollbar-width: none; }
+        .main { margin-left: 160px; padding: 00px 20px 20px 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); gap: 15px; }
+        .channel { background: #1e1e1e; padding: 5px; border-radius: 0px; text-align: center; cursor: pointer; transition: transform 0.2s; }
+        .channel:hover { transform: scale(1.05); background: #2c2c2c; }
+        .channel img { width: 100%; aspect-ratio: 6/2; object-fit: cover; border-radius: 8px; display: block; }
+        .tv-channel img { aspect-ratio: 10/10; }
+        .movie-channel img { aspect-ratio: 9/15; }
+        .channel p { margin-top: 1px; font-size: 14px; color: #ddd; }
+        
+        /* --- ESTILOS DEL REPRODUCTOR NATIVO --- */
+        #player { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 999; }
+        #videoPlayer { 
+            width: 100%; 
+            height: 100%; 
+            /* Esto ayuda a que el reproductor nativo llene el contenedor */
+            object-fit: contain; 
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Sidebar principal -->
-  <div class="sidebar">
-    <h2>IPTV App</h2>
-    <a href="#" onclick="showSection('tv')">TV en Vivo</a>
-    <a href="#" onclick="showSection('peliculas')">Películas</a>
-  </div>
-
-  <!-- Submenú dinámico -->
-  <div class="submenu" id="submenu"></div>
-
-  <!-- Contenido -->
-  <div class="main">
-    <div id="tv">
-      <h1>TV en Vivo</h1>
-      <div class="grid" id="channelGridTV"></div>
+    <div class="pin-overlay" id="pinOverlay">
+        <form class="pin-box" id="pinBox" autocomplete="off">
+            <h2>Acceso restringido</h2>
+            <p>Ingrese el PIN de acceso para continuar o comunicate al correo xxxxxxxxxxxxxxxxxxxxxxxxx para obtener tu pin:</p>
+            <input type="password" id="pinInput" maxlength="8" autofocus required placeholder="PIN" />
+            <br>
+            <button type="submit">Entrar</button>
+            <div class="pin-error" id="pinError"></div>
+        </form>
     </div>
 
-    <div id="peliculas" style="display:none;">
-      <h1>Películas</h1>
-      <div class="grid" id="channelGridMovies"></div>
+    <div class="sidebar">
+        <h2>IPTV App</h2>
+        <a href="#" onclick="showSection('tv')">TV en Vivo</a>
+        <a href="#" onclick="showSection('peliculas')">Películas</a>
+        <a href="#" onclick="showSection('historial')">Historial</a>
     </div>
-  </div>
 
-  <!-- Player -->
-  <div id="player">
-    <video id="videoPlayer" controls autoplay></video>
-  </div>
+    <div class="submenu" id="submenu" tabindex="0"></div>
 
-  <script>
-    // 🔹 URLs M3U personalizadas
-    const PLAYLIST_URL_TV = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/tv.html"; 
-    const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.m3u"; 
+    <div class="main">
+        <div id="tv">
+            <h1>TV en Vivo</h1>
+            <div class="grid" id="channelGridTV"></div>
+        </div>
+        <div id="peliculas" style="display:none;">
+            <h1>Películas</h1>
+            <div class="grid" id="channelGridMovies"></div>
+        </div>
+        <div id="historial" style="display:none;">
+            <h1>Historial Reciente</h1>
+            <div class="grid" id="channelGridHistory"></div>
+        </div>
+    </div>
 
-    let channelsTV = [];
-    let channelsMovies = [];
+    <div id="player">
+        <video id="videoPlayer" controls preload="auto"></video>
+    </div>
 
-    function parseM3U(text) {
-      let lines = text.split("\n");
-      let channels = [];
-      let current = {};
-      lines.forEach(line => {
-        line = line.trim();
-        if (line.startsWith("#EXTINF:")) {
-          let logoMatch = line.match(/tvg-logo="([^"]*)"/);
-          let groupMatch = line.match(/group-title="([^"]*)"/);
-          let nameMatch = line.split(",").pop();
-          current.logo = logoMatch ? logoMatch[1] : "https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg";
-          current.group = groupMatch ? groupMatch[1] : "Otros";
-          current.name = nameMatch ? nameMatch : "Canal";
-        } else if (line && !line.startsWith("#")) {
-          current.url = line;
-          channels.push({ ...current });
-          current = {};
+    <script>
+        // --- Lógica del PIN (Sin cambios) ---
+        const ACCESS_PINS = ["1434", "5678", "9999", "0999"];
+        const PIN_KEY = "iptv_access_granted";
+
+        function checkAccess() {
+            const savedPin = localStorage.getItem(PIN_KEY);
+            return ACCESS_PINS.includes(savedPin);
         }
-      });
-      return channels;
-    }
 
-    async function loadPlaylist(url, type) {
-      try {
-        let res = await fetch(url);
-        let text = await res.text();
-        let parsed = parseM3U(text);
-        if (type === "tv") {
-          channelsTV = parsed;
-          renderChannels(channelsTV, "channelGridTV");
-          renderSubmenu(channelsTV);
-        } else {
-          channelsMovies = parsed;
-          renderChannels(channelsMovies, "channelGridMovies");
+        function showPINOverlay() {
+            document.getElementById("pinOverlay").style.display = "flex";
+            document.body.style.overflow = "hidden";
+            document.getElementById("pinInput").value = "";
+            document.getElementById("pinError").innerText = "";
+            document.getElementById("pinInput").focus();
         }
-      } catch (e) {
-        console.error("Error cargando M3U:", e);
-      }
-    }
 
-    function renderChannels(channels, gridId, filter = null) {
-      let grid = document.getElementById(gridId);
-      grid.innerHTML = "";
-      channels.forEach(ch => {
-        if (!filter || ch.group === filter) {
-          let div = document.createElement("div");
-          div.className = "channel";
-          div.setAttribute("data-category", ch.group);
-          div.innerHTML = `
-            <img src="${ch.logo}" alt="${ch.name}">
-            <p>${ch.name}</p>`;
-          div.onclick = () => playChannel(ch.url);
-          grid.appendChild(div);
+        function hidePINOverlay() {
+            document.getElementById("pinOverlay").style.display = "none";
+            document.body.style.overflow = "";
         }
-      });
-    }
 
-    function renderSubmenu(channels) {
-      let submenu = document.getElementById("submenu");
-      submenu.innerHTML = "";
-      let groups = [...new Set(channels.map(ch => ch.group))];
-      groups.forEach(g => {
-        let link = document.createElement("a");
-        link.href = "#";
-        link.innerText = g;
-        link.onclick = () => renderChannels(channelsTV, "channelGridTV", g);
-        submenu.appendChild(link);
-      });
-    }
+        document.getElementById("pinBox").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const pin = document.getElementById("pinInput").value.trim();
+            if(ACCESS_PINS.includes(pin)) {
+                localStorage.setItem(PIN_KEY, pin);
+                hidePINOverlay();
+            } else {
+                document.getElementById("pinError").innerText = "PIN incorrecto";
+                document.getElementById("pinInput").value = "";
+                document.getElementById("pinInput").focus();
+            }
+        });
 
-    function showSection(section) {
-      document.getElementById("tv").style.display = "none";
-      document.getElementById("peliculas").style.display = "none";
-      document.getElementById("submenu").style.display = "none";
-      document.getElementById(section).style.display = "block";
-      if (section === "tv") document.getElementById("submenu").style.display = "flex";
-    }
+        window.addEventListener("DOMContentLoaded", () => {
+            if(!checkAccess()) {
+                showPINOverlay();
+            } else {
+                hidePINOverlay();
+            }
+        });
 
-    function playChannel(url) {
-      let player = document.getElementById("player");
-      let video = document.getElementById("videoPlayer");
-      player.style.display = "block";
-      video.src = url;
-      video.play();
+        // --- Lógica de la Aplicación ---
+        const PLAYLIST_URL_TV = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/tv.html";
+        const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html";
+        const HISTORY_KEY = "iptv_history";
+        const MAX_HISTORY_ITEMS = 20;
+        const UPDATE_INTERVAL = 60 * 60 * 1000;
 
-      // Abrir en fullscreen
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
+        let channelsTV = [];
+        let channelsMovies = [];
+        // Ya no necesitamos una variable global para la instancia de Video.js
+        let isPlayerOpen = false;
 
-      // Salir de fullscreen cierra el reproductor
-      document.addEventListener("fullscreenchange", () => {
-        if (!document.fullscreenElement) {
-          video.pause();
-          video.src = "";
-          player.style.display = "none";
+        function startAutoUpdate() {
+            setInterval(() => {
+                loadPlaylist(PLAYLIST_URL_TV, "tv");
+                loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
+                if (document.getElementById("tv").style.display !== "none") {
+                    renderChannels(channelsTV, "channelGridTV", null);
+                }
+            }, UPDATE_INTERVAL);
         }
-      });
-    }
 
-    // 🔹 Cargar listas al inicio → directo en TV
-    loadPlaylist(PLAYLIST_URL_TV, "tv");
-    loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
-    showSection("tv");
-  </script>
+        function getHistory() {
+            try {
+                const history = localStorage.getItem(HISTORY_KEY);
+                return history ? JSON.parse(history) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+        function saveToHistory(channelData) {
+            let history = getHistory();
+            history = history.filter(item => item.url !== channelData.url);
+            history.unshift(channelData);
+            if (history.length > MAX_HISTORY_ITEMS) {
+                history = history.slice(0, MAX_HISTORY_ITEMS);
+            }
+            try {
+                localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+                if (document.getElementById("historial").style.display === "block") {
+                    renderHistory();
+                }
+            } catch (e) {}
+        }
+        function renderHistory() {
+            let history = getHistory();
+            let grid = document.getElementById("channelGridHistory");
+            grid.innerHTML = "";
+            if (history.length === 0) {
+                grid.innerHTML = "<p style='text-align: center; width: 100%; padding: 20px;'>No hay elementos en el historial.</p>";
+                return;
+            }
+            history.forEach(ch => {
+                const channelClass = (ch.type === "tv") ? "tv-channel" : "movie-channel";
+                let div = document.createElement("div");
+                div.className = "channel " + channelClass;
+                div.innerHTML = `<img src="${ch.logo}" alt="${ch.name}"><p>${ch.name}</p>`;
+                div.onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.type);
+                grid.appendChild(div);
+            });
+        }
+        function onFullscreenChange() {
+            if (!document.fullscreenElement && isPlayerOpen) {
+                history.back();
+            }
+        }
+        
+        // --- FUNCIÓN closePlayer OPTIMIZADA ---
+        function closePlayer() {
+            if (!isPlayerOpen) return;
+            isPlayerOpen = false;
+            document.getElementById("player").style.display = "none";
+            
+            const videoElement = document.getElementById("videoPlayer");
+            // Pausar y limpiar la fuente es crucial para liberar el stream
+            videoElement.pause();
+            videoElement.src = ""; 
+            videoElement.load();
+
+            document.removeEventListener("fullscreenchange", onFullscreenChange);
+        }
+
+        // --- FUNCIÓN playChannel OPTIMIZADA PARA REPRODUCCIÓN NATIVA ---
+        function playChannel(url, name, logo, type) {
+            let playerDiv = document.getElementById("player");
+            const videoElement = document.getElementById("videoPlayer");
+
+            playerDiv.style.display = "block";
+            isPlayerOpen = true;
+            saveToHistory({ url: url, name: name, logo: logo, type: type });
+            history.pushState({ page: 'player' }, 'Player', '#play');
+            
+            // Asignamos la URL directamente al atributo 'src'
+            videoElement.src = url;
+            
+            // Forzamos la carga y reproducción
+            videoElement.load();
+            videoElement.play().catch(error => {
+                // Manejo de errores común en dispositivos móviles o Smart TV
+                console.error("Error al iniciar la reproducción:", error);
+                // Puede que necesites un botón de play si el dispositivo lo requiere
+            });
+            
+            // Pedir pantalla completa del contenedor del reproductor
+            playerDiv.requestFullscreen().catch(() => {});
+            document.addEventListener("fullscreenchange", onFullscreenChange);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // No hay inicialización de reproductor de terceros aquí.
+
+            window.addEventListener('popstate', (event) => {
+                if (isPlayerOpen) {
+                    closePlayer();
+                }
+            });
+            loadPlaylist(PLAYLIST_URL_TV, "tv");
+            loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
+            showSection("tv");
+            startAutoUpdate();
+        });
+        
+        // ... parseM3U, loadPlaylist, renderChannels, renderSubmenu, showSection, submenu listener (Sin cambios) ...
+        
+        function parseM3U(text) {
+            let lines = text.split("\n");
+            let channels = [];
+            let current = {};
+            lines.forEach(line => {
+                line = line.trim();
+                if (line.startsWith("#EXTINF:")) {
+                    let logoMatch = line.match(/tvg-logo="([^"]*)"/);
+                    let groupMatch = line.match(/group-title="([^"]*)"/);
+                    let nameMatch = line.split(",").pop();
+                    current.logo = logoMatch ? logoMatch[1] : "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
+                    current.group = groupMatch ? groupMatch[1] : "Otros";
+                    current.name = nameMatch ? nameMatch : "Canal";
+                } else if (line && !line.startsWith("#")) {
+                    current.url = line;
+                    channels.push({ ...current });
+                    current = {};
+                }
+            });
+            return channels;
+        }
+        async function loadPlaylist(url, type) {
+            try {
+                let res = await fetch(url);
+                let text = await res.text();
+                let parsed = parseM3U(text);
+                parsed = parsed.map(ch => ({ ...ch, type: type }));
+                if (type === "tv") {
+                    channelsTV = parsed;
+                    renderChannels(channelsTV, "channelGridTV");
+                    renderSubmenu(channelsTV);
+                } else {
+                    channelsMovies = parsed;
+                    renderChannels(channelsMovies, "channelGridMovies");
+                }
+            } catch (e) {}
+        }
+        function renderChannels(channels, gridId, filter = null) {
+            let grid = document.getElementById(gridId);
+            grid.innerHTML = "";
+            const channelClass = (gridId === "channelGridTV") ? "tv-channel" : "movie-channel";
+            channels.forEach(ch => {
+                if (!filter || ch.group === filter) {
+                    let div = document.createElement("div");
+                    div.className = "channel " + channelClass;
+                    div.setAttribute("data-category", ch.group);
+                    div.innerHTML = `<img src="${ch.logo}" alt="${ch.name}"><p>${ch.name}</p>`;
+                    div.onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.type);
+                    grid.appendChild(div);
+                }
+            });
+        }
+        function renderSubmenu(channels) {
+            let submenu = document.getElementById("submenu");
+            submenu.innerHTML = "";
+            let groups = [...new Set(channels.map(ch => ch.group))];
+            let allLink = document.createElement("a");
+            allLink.href = "#";
+            allLink.innerText = "Todos";
+            allLink.onclick = () => renderChannels(channelsTV, "channelGridTV", null);
+            submenu.appendChild(allLink);
+            groups.forEach(g => {
+                let link = document.createElement("a");
+                link.href = "#";
+                link.innerText = g;
+                link.onclick = () => renderChannels(channelsTV, "channelGridTV", g);
+                submenu.appendChild(link);
+            });
+        }
+        function showSection(section) {
+            document.getElementById("tv").style.display = "none";
+            document.getElementById("peliculas").style.display = "none";
+            document.getElementById("historial").style.display = "none";
+            document.getElementById("submenu").style.display = "none";
+            if (isPlayerOpen) {
+                closePlayer();
+            }
+            document.getElementById(section).style.display = "block";
+            if (section === "tv") {
+                document.getElementById("submenu").style.display = "flex";
+            } else if (section === "historial") {
+                renderHistory();
+            }
+        }
+        const submenu = document.getElementById("submenu");
+        submenu.addEventListener("keydown", (e) => {
+            if(e.key === "ArrowRight") submenu.scrollBy({ left: 100, behavior: 'smooth' });
+            else if(e.key === "ArrowLeft") submenu.scrollBy({ left: -100, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
-
-
