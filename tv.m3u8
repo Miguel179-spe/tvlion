@@ -1,5 +1,3 @@
-#EXTM3U
-
 #EXTINF:-1 group-title="República Dominicana" tvg-name="ATV Canal 35" tvg-logo="https://imgur.com/Zs6NJSr.png",ATV Canal 35
 https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
 
@@ -108,6 +106,7 @@ https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8
 
 #EXTINF:-1 tvg-name="Puerto TV" group-title="República Dominicana" tvg-logo="https://imgur.com/undefined.png",Puerto TV
 https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/chunklist_w2132469973.m3u8
+
 
 
 
