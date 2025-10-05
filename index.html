@@ -75,7 +75,7 @@
     <div class="submenu" id="submenu" tabindex="0"></div>
 
     <div class="main">
-        <div id="tv">
+        <div id="MOVIES">
             <h1>TV en Vivo</h1>
             <div class="grid" id="channelGridTV"></div>
         </div>
@@ -151,9 +151,9 @@
 
         function startAutoUpdate() {
             setInterval(() => {
-                loadPlaylist(PLAYLIST_URL_TV, "tv");
+                loadPlaylist(PLAYLIST_URL_TV, "MOVIES");
                 loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
-                if (document.getElementById("tv").style.display !== "none") {
+                if (document.getElementById("MOVIES").style.display !== "none") {
                     renderChannels(channelsTV, "channelGridTV", null);
                 }
             }, UPDATE_INTERVAL);
@@ -190,7 +190,7 @@
                 return;
             }
             history.forEach(ch => {
-                const channelClass = (ch.type === "tv") ? "tv-channel" : "movie-channel";
+                const channelClass = (ch.type === "MOVIES") ? "tv-channel" : "movie-channel";
                 let div = document.createElement("div");
                 div.className = "channel " + channelClass;
                 div.innerHTML = `<img src="${ch.logo}" alt="${ch.name}"><p>${ch.name}</p>`;
@@ -253,9 +253,9 @@
                     closePlayer();
                 }
             });
-            loadPlaylist(PLAYLIST_URL_TV, "tv");
+            loadPlaylist(PLAYLIST_URL_TV, "MOVIES");
             loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
-            showSection("tv");
+            showSection("MOVIES");
             startAutoUpdate();
         });
         
@@ -339,7 +339,7 @@
                 closePlayer();
             }
             document.getElementById(section).style.display = "block";
-            if (section === "tv") {
+            if (section === "MOVIES") {
                 document.getElementById("submenu").style.display = "flex";
             } else if (section === "historial") {
                 renderHistory();
@@ -353,3 +353,4 @@
     </script>
 </body>
 </html>
+
