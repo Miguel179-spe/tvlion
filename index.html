@@ -360,6 +360,141 @@
       z-index: 1000;
     }
     
+    /* Controles de video personalizados */
+    .video-controls {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .video-container:hover .video-controls {
+      opacity: 1;
+    }
+    
+    .control-button {
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+    
+    .control-button:hover {
+      background: rgba(255,255,255,0.3);
+      transform: scale(1.1);
+    }
+    
+    .time-display {
+      color: white;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+    
+    .progress-container {
+      flex: 1;
+      height: 6px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 3px;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: var(--primary-color);
+      border-radius: 3px;
+      width: 0%;
+    }
+    
+    /* Selectores de pistas */
+    .track-selectors {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      border-radius: 8px;
+      padding: 10px;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 100;
+    }
+    
+    .track-selectors.active {
+      display: flex;
+    }
+    
+    .track-selector {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      text-align: left;
+    }
+    
+    .track-selector:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .track-selector.active {
+      background: var(--primary-color);
+    }
+    
+    /* Selector de velocidad */
+    .speed-selector {
+      position: absolute;
+      bottom: 60px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      border-radius: 8px;
+      padding: 10px;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 100;
+    }
+    
+    .speed-selector.active {
+      display: flex;
+    }
+    
+    .speed-option {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      text-align: left;
+    }
+    
+    .speed-option:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .speed-option.active {
+      background: var(--primary-color);
+    }
+    
     /* Temporizador Modo Cine - MEJORADO (20 segundos) */
     .fullscreen-timer {
       position: fixed;
@@ -613,6 +748,28 @@
       <!-- Video Player -->
       <div class="video-container">
         <video id="videoPlayer" controls preload="metadata"></video>
+        <!-- Controles personalizados -->
+        <div class="video-controls">
+          <button class="control-button" id="playPauseBtn">⏯️</button>
+          <span class="time-display" id="currentTime">0:00</span>
+          <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <span class="time-display" id="duration">0:00</span>
+          <button class="control-button" id="muteBtn">🔊</button>
+          <button class="control-button" id="fullscreenBtn">⛶</button>
+          <button class="control-button" id="tracksBtn">🎛️</button>
+          <button class="control-button" id="speedBtn">1x</button>
+          <button class="control-button" id="subtitleBtn">📝</button>
+        </div>
+        
+        <!-- Selectores de pistas -->
+        <div class="track-selectors" id="audioTracks"></div>
+        <div class="track-selectors" id="videoTracks"></div>
+        <div class="track-selectors" id="subtitleTracks"></div>
+        
+        <!-- Selector de velocidad -->
+        <div class="speed-selector" id="speedSelector"></div>
       </div>
 
       <!-- Grid de Canales -->
@@ -650,6 +807,7 @@
         this.loadInitialData();
         this.setupHistoryState();
         this.initializeSubmenus();
+        this.setupVideoPlayer();
       }
 
       initializeElements() {
@@ -682,6 +840,22 @@
         this.btnExitCinema = document.getElementById('btnExitCinema');
         this.btnTogglePlay = document.getElementById('btnTogglePlay');
         this.btnFullscreen = document.getElementById('btnFullscreen');
+        
+        // Nuevos elementos del reproductor
+        this.playPauseBtn = document.getElementById('playPauseBtn');
+        this.muteBtn = document.getElementById('muteBtn');
+        this.fullscreenBtn = document.getElementById('fullscreenBtn');
+        this.tracksBtn = document.getElementById('tracksBtn');
+        this.speedBtn = document.getElementById('speedBtn');
+        this.subtitleBtn = document.getElementById('subtitleBtn');
+        this.currentTime = document.getElementById('currentTime');
+        this.duration = document.getElementById('duration');
+        this.progressContainer = document.getElementById('progressContainer');
+        this.progressBar = document.getElementById('progressBar');
+        this.audioTracks = document.getElementById('audioTracks');
+        this.videoTracks = document.getElementById('videoTracks');
+        this.subtitleTracks = document.getElementById('subtitleTracks');
+        this.speedSelector = document.getElementById('speedSelector');
       }
 
       initializeState() {
@@ -701,9 +875,13 @@
           history: JSON.parse(localStorage.getItem('tvHistory')) || [],
           inactivityTimer: null,
           countdownTimer: null,
-          countdownValue: 10,
+          countdownValue: 20,
           columns: 4,
           isSearching: false,
+          customTitle: '',
+          customImage: '',
+          customHeaders: {},
+          autoPlay: localStorage.getItem('autoPlay') !== 'false',
           // Estado para navegación jerárquica
           navigationStack: [],
           preFullscreenState: {
@@ -716,10 +894,209 @@
             searchText: '',
             isSearching: false,
             navigationStack: []
-          }
+          },
+          // Estado del reproductor
+          playbackRates: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
+          currentPlaybackRate: 1.0,
+          showTracks: false,
+          showSpeedSelector: false
         };
 
         this.updateLayout();
+      }
+
+      // Configurar el reproductor de video
+      setupVideoPlayer() {
+        // Ocultar controles nativos y usar los personalizados
+        this.videoPlayer.controls = false;
+        
+        // Configurar eventos del reproductor
+        this.videoPlayer.addEventListener('timeupdate', () => this.updateProgress());
+        this.videoPlayer.addEventListener('loadedmetadata', () => this.updateDuration());
+        this.videoPlayer.addEventListener('volumechange', () => this.updateVolumeIcon());
+        
+        // Configurar eventos de los controles personalizados
+        this.playPauseBtn.addEventListener('click', () => this.togglePlayPause());
+        this.muteBtn.addEventListener('click', () => this.toggleMute());
+        this.fullscreenBtn.addEventListener('click', () => this.toggleFullscreen());
+        this.tracksBtn.addEventListener('click', () => this.toggleTracks());
+        this.speedBtn.addEventListener('click', () => this.toggleSpeedSelector());
+        this.subtitleBtn.addEventListener('click', () => this.toggleSubtitles());
+        this.progressContainer.addEventListener('click', (e) => this.seek(e));
+        
+        // Inicializar selector de velocidad
+        this.setupSpeedSelector();
+      }
+
+      setupSpeedSelector() {
+        this.speedSelector.innerHTML = '';
+        this.state.playbackRates.forEach(rate => {
+          const button = document.createElement('button');
+          button.className = 'speed-option';
+          button.textContent = rate + 'x';
+          if (rate === this.state.currentPlaybackRate) {
+            button.classList.add('active');
+          }
+          button.addEventListener('click', () => {
+            this.setPlaybackRate(rate);
+            this.speedSelector.classList.remove('active');
+          });
+          this.speedSelector.appendChild(button);
+        });
+      }
+
+      setPlaybackRate(rate) {
+        this.state.currentPlaybackRate = rate;
+        this.videoPlayer.playbackRate = rate;
+        this.speedBtn.textContent = rate + 'x';
+        this.showNotification(`Velocidad: ${rate}x`, 'info');
+      }
+
+      toggleSpeedSelector() {
+        this.state.showSpeedSelector = !this.state.showSpeedSelector;
+        this.speedSelector.classList.toggle('active', this.state.showSpeedSelector);
+        
+        // Cerrar otros selectores
+        this.audioTracks.classList.remove('active');
+        this.videoTracks.classList.remove('active');
+        this.subtitleTracks.classList.remove('active');
+        this.state.showTracks = false;
+      }
+
+      toggleTracks() {
+        this.state.showTracks = !this.state.showTracks;
+        
+        // Alternar visibilidad de selectores de pistas
+        if (this.state.showTracks) {
+          this.showTrackSelectors();
+        } else {
+          this.hideTrackSelectors();
+        }
+        
+        // Cerrar selector de velocidad
+        this.speedSelector.classList.remove('active');
+        this.state.showSpeedSelector = false;
+      }
+
+      showTrackSelectors() {
+        // Mostrar selectores de pistas disponibles
+        if (this.state.currentHls) {
+          this.showHlsTracks();
+        } else if (this.state.currentDash) {
+          this.showDashTracks();
+        } else {
+          this.showNativeTracks();
+        }
+      }
+
+      showHlsTracks() {
+        // Implementar selector de pistas para HLS
+        const hls = this.state.currentHls;
+        if (hls) {
+          // Audio tracks
+          const audioTracks = hls.audioTracks;
+          this.audioTracks.innerHTML = '<div style="color: white; padding: 5px; font-weight: bold;">Audio</div>';
+          audioTracks.forEach((track, index) => {
+            const button = document.createElement('button');
+            button.className = 'track-selector';
+            button.textContent = track.name || `Audio ${index + 1}`;
+            if (index === hls.audioTrack) {
+              button.classList.add('active');
+            }
+            button.addEventListener('click', () => {
+              hls.audioTrack = index;
+              this.audioTracks.classList.remove('active');
+              this.state.showTracks = false;
+            });
+            this.audioTracks.appendChild(button);
+          });
+          this.audioTracks.classList.add('active');
+        }
+      }
+
+      showDashTracks() {
+        // Implementar selector de pistas para DASH
+        // Similar a showHlsTracks pero para DASH
+      }
+
+      showNativeTracks() {
+        // Implementar selector de pistas para video nativo
+        const video = this.videoPlayer;
+        
+        // Audio tracks
+        this.audioTracks.innerHTML = '<div style="color: white; padding: 5px; font-weight: bold;">Audio</div>';
+        const button = document.createElement('button');
+        button.className = 'track-selector active';
+        button.textContent = 'Audio Principal';
+        button.addEventListener('click', () => {
+          this.audioTracks.classList.remove('active');
+          this.state.showTracks = false;
+        });
+        this.audioTracks.appendChild(button);
+        this.audioTracks.classList.add('active');
+      }
+
+      hideTrackSelectors() {
+        this.audioTracks.classList.remove('active');
+        this.videoTracks.classList.remove('active');
+        this.subtitleTracks.classList.remove('active');
+      }
+
+      toggleSubtitles() {
+        // Alternar subtítulos
+        const textTracks = this.videoPlayer.textTracks;
+        for (let i = 0; i < textTracks.length; i++) {
+          const track = textTracks[i];
+          if (track.kind === 'subtitles') {
+            track.mode = track.mode === 'showing' ? 'hidden' : 'showing';
+            this.showNotification(track.mode === 'showing' ? 'Subtítulos activados' : 'Subtítulos desactivados', 'info');
+          }
+        }
+      }
+
+      updateProgress() {
+        if (this.videoPlayer.duration) {
+          const percent = (this.videoPlayer.currentTime / this.videoPlayer.duration) * 100;
+          this.progressBar.style.width = percent + '%';
+          
+          this.currentTime.textContent = this.formatTime(this.videoPlayer.currentTime);
+        }
+      }
+
+      updateDuration() {
+        this.duration.textContent = this.formatTime(this.videoPlayer.duration);
+      }
+
+      updateVolumeIcon() {
+        this.muteBtn.textContent = this.videoPlayer.muted ? '🔇' : '🔊';
+      }
+
+      formatTime(seconds) {
+        if (isNaN(seconds)) return '0:00';
+        const minutes = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+      }
+
+      togglePlayPause() {
+        if (this.videoPlayer.paused) {
+          this.videoPlayer.play();
+          this.playPauseBtn.textContent = '⏸️';
+        } else {
+          this.videoPlayer.pause();
+          this.playPauseBtn.textContent = '⏯️';
+        }
+      }
+
+      toggleMute() {
+        this.videoPlayer.muted = !this.videoPlayer.muted;
+        this.updateVolumeIcon();
+      }
+
+      seek(e) {
+        const rect = this.progressContainer.getBoundingClientRect();
+        const percent = (e.clientX - rect.left) / rect.width;
+        this.videoPlayer.currentTime = percent * this.videoPlayer.duration;
       }
 
       // Inicializar datos de submenús
@@ -908,6 +1285,19 @@
         document.addEventListener('webkitfullscreenchange', () => this.handleFullscreenChange());
         document.addEventListener('mozfullscreenchange', () => this.handleFullscreenChange());
         document.addEventListener('MSFullscreenChange', () => this.handleFullscreenChange());
+        
+        // Listener global para tecla BACK como respaldo
+        document.addEventListener("keydown", (e) => {
+          // Detección multiplataforma de tecla BACK
+          if (this.state.isFullscreenMode && (
+            e.key === "Backspace" ||    // tecla retroceso
+            e.key === "BrowserBack" ||  // en algunos navegadores Smart TV
+            e.keyCode === 8             // compatibilidad general
+          )) {
+            e.preventDefault(); // evita retroceder página
+            this.exitFullscreenMode();
+          }
+        });
       }
 
       // MEJORADO: Manejo de navegación por teclado en submenús
@@ -1048,7 +1438,17 @@
         e.preventDefault();
         this.resetInactivityTimer();
         
-        // Si estamos en modo búsqueda, manejar solo Escape
+        // Detección de tecla BACK para salir del modo cine
+        if (this.state.isFullscreenMode && (
+            e.key === "Backspace" ||    // tecla retroceso
+            e.key === "BrowserBack" ||  // en algunos navegadores Smart TV
+            e.keyCode === 8             // compatibilidad general
+        )) {
+            e.preventDefault(); // evita retroceder página
+            this.exitFullscreenMode();
+            return;
+        }
+        
         if (this.state.isSearching && e.key !== 'Escape' && e.key !== 'Backspace') {
           return;
         }
@@ -1085,7 +1485,10 @@
             this.handleEscapeOrBack(); 
             break;
           case 'Backspace': 
-            this.handleEscapeOrBack(); 
+            // Solo manejar Backspace si NO estamos en modo cine completo
+            if (!this.state.isFullscreenMode) {
+                this.handleEscapeOrBack();
+            }
             break;
           case '1': case '2': case '3': case '4': case '5': 
           case '6': case '7': case '8': case '9': 
@@ -1183,16 +1586,6 @@
         }
       }
 
-      // Abrir submenú desde teclado
-      openSubmenuFromKeyboard() {
-        if (this.state.navMode !== 'sidebar') return;
-        
-        const currentItem = this.navItems[this.state.sidebarIndex];
-        if (currentItem.classList.contains('has-submenu')) {
-          this.openSubmenu(currentItem.dataset.submenu, this.state.sidebarIndex);
-        }
-      }
-
       // MANEJO UNIFICADO DE ESCAPE Y BOTÓN ATRÁS - MEJORADO
       handleEscapeOrBack() {
         console.log('Escape/Back pressed - Current state:', {
@@ -1218,11 +1611,11 @@
           return;
         }
 
-        // 3. Priorizar salir de modo cine si estamos en ese modo
-        if (this.state.isFullscreenMode) {
-          this.exitFullscreenMode();
-          return;
-        }
+        // 3. ESCAPE ya NO sale del modo cine - solo BACK lo hace
+        // if (this.state.isFullscreenMode) {
+        //     this.exitFullscreenMode();
+        //     return;
+        // }
 
         // 4. Si estamos en modo controles video, salir del modo
         if (this.state.isCinemaMode) {
@@ -1331,7 +1724,7 @@
         clearInterval(this.state.countdownTimer);
         this.fullscreenTimer.classList.remove('show');
         
-        this.showNotification('Saliste del modo cine', 'info');
+        this.showNotification('Saliste del modo cine con tecla BACK', 'info');
       }
 
       // Guardar estado completo antes de entrar en modo cine
@@ -1872,11 +2265,13 @@
 
       onVideoPlay() {
         this.btnTogglePlay.textContent = 'Pausa';
+        this.playPauseBtn.textContent = '⏸️';
         this.resetInactivityTimer();
       }
 
       onVideoPause() {
         this.btnTogglePlay.textContent = 'Play';
+        this.playPauseBtn.textContent = '⏯️';
         clearTimeout(this.state.inactivityTimer);
         clearInterval(this.state.countdownTimer);
         this.fullscreenTimer.classList.remove('show');
@@ -1902,7 +2297,3 @@
   </script>
 </body>
 </html>
-
-
-
-
