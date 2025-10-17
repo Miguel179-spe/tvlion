@@ -1,356 +1,1904 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Player Nativo</title>
-
-    <style>
-        /* --- ESTILOS PRINCIPALES --- */
-        body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
-        .pin-overlay {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: rgba(18,18,18,0.98); z-index: 9999; display: flex; align-items: center; justify-content: center;
-        }
-        .pin-box {
-            background: #1e1e1e; padding: 30px 40px; border-radius: 14px; box-shadow: 0 2px 16px #0008;
-            text-align: center; color: #fff; min-width: 260px;
-        }
-        .pin-box input[type="password"] {
-            padding: 10px; font-size: 20px; border-radius: 6px; border: none; margin-bottom: 18px; width: 90%;
-            background: #242424; color: #fff; text-align: center; outline: none;
-        }
-        .pin-box button {
-            padding: 10px 30px; font-size: 16px; background: #00bfff; color: #fff; border: none; border-radius: 6px; cursor: pointer;
-        }
-        .pin-error { color: #ff4040; margin-top: 12px; font-size: 14px; min-height: 20px; }
-        
-        /* --- ESTILOS DE NAVEGACIÓN Y LISTA (Sin cambios) --- */
-        .sidebar { width: 160px; background: #1e1e1e; height: 100vh; position: fixed; top: 0; left: 10; padding-top: 20px; }
-        .sidebar h2 { text-align: center; margin-bottom: 20px; color: #00bfff; }
-        .sidebar a { display: block; padding: 12px 20px; text-decoration: none; color: white; transition: background 0.3s; }
-        .sidebar a:hover { background: #333; }
-        .submenu { display: none; position: fixed; top: 0; left: 160px; height: 70px; width: calc(100% - 100px); background: #2a2a2a; display: flex; align-items: center; padding: 0 10px; gap: 10px; z-index: 10; overflow-x: auto; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
-        .submenu a { padding: 10px 15px; text-decoration: none; color: #ddd; flex: none; white-space: nowrap; border-radius: 4px; }
-        .submenu::-webkit-scrollbar { display: none; }
-        .submenu { -ms-overflow-style: none; scrollbar-width: none; }
-        .main { margin-left: 160px; padding: 00px 20px 20px 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); gap: 15px; }
-        .channel { background: #1e1e1e; padding: 5px; border-radius: 0px; text-align: center; cursor: pointer; transition: transform 0.2s; }
-        .channel:hover { transform: scale(1.05); background: #2c2c2c; }
-        .channel img { width: 100%; aspect-ratio: 6/2; object-fit: cover; border-radius: 8px; display: block; }
-        .tv-channel img { aspect-ratio: 10/10; }
-        .movie-channel img { aspect-ratio: 9/15; }
-        .channel p { margin-top: 1px; font-size: 14px; color: #ddd; }
-        
-        /* --- ESTILOS DEL REPRODUCTOR NATIVO --- */
-        #player { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 999; }
-        #videoPlayer { 
-            width: 100%; 
-            height: 100%; 
-            /* Esto ayuda a que el reproductor nativo llene el contenedor */
-            object-fit: contain; 
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consola TV IPTV</title>
+  <style>
+    :root {
+      --primary-color: #ff4444;
+      --secondary-color: #44ff44;
+      --bg-dark: #0a0a0a;
+      --bg-card: #1a1a1a;
+      --bg-hover: #2a2a2a;
+      --border-color: #333;
+      --text-color: #fff;
+      --text-muted: #888;
+      --error-color: #ff4444;
+      --success-color: #44ff44;
+      --warning-color: #ffaa00;
+    }
+    
+    * { 
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-color);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      cursor: default;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Layout Principal */
+    .tv-container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    }
+    
+    .sidebar {
+      width: 280px;
+      background: rgba(30, 30, 30, 0.95);
+      border-right: 2px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+      z-index: 100;
+    }
+    
+    .sidebar.hidden {
+      transform: translateX(-100%);
+    }
+    
+    .content-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    /* Header TV */
+    .tv-header {
+      background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 100%);
+      padding: 15px 25px;
+      border-bottom: 2px solid var(--primary-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .tv-logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+    }
+    
+    .tv-info {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    
+    /* Barra de búsqueda */
+    .search-container {
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    
+    .search-box {
+      width: 100%;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+    }
+    
+    .search-box:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+    
+    /* Navegación TV */
+    .nav-section {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .nav-title {
+      padding: 0 20px 15px 20px;
+      font-size: 16px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      margin: 2px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+      position: relative;
+    }
+    
+    .nav-item:hover {
+      background: var(--bg-hover);
+    }
+    
+    .nav-item.focused {
+      background: var(--primary-color);
+      color: white;
+      transform: scale(1.02);
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
+    }
+    
+    .nav-item.active {
+      background: var(--bg-hover);
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .nav-item.has-submenu::after {
+      content: '▶';
+      position: absolute;
+      right: 15px;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+    
+    .nav-item.focused.has-submenu::after {
+      color: white;
+    }
+    
+    .nav-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      filter: brightness(0.8);
+    }
+    
+    .nav-item.focused .nav-icon {
+      filter: brightness(1);
+    }
+    
+    /* Submenús */
+    .submenu {
+      position: fixed;
+      left: 280px;
+      top: 0;
+      width: 280px;
+      height: 100%;
+      background: rgba(40, 40, 40, 0.98);
+      border-right: 2px solid var(--border-color);
+      z-index: 99;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .submenu.active {
+      transform: translateX(0);
+    }
+    
+    .submenu-header {
+      padding: 15px 20px;
+      background: rgba(30, 30, 30, 0.95);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .submenu-back {
+      background: none;
+      border: none;
+      color: var(--primary-color);
+      font-size: 18px;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    
+    .submenu-back:hover {
+      background: rgba(255, 68, 68, 0.2);
+    }
+    
+    .submenu-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .submenu-items {
+      flex: 1;
+      padding: 10px 0;
+      overflow-y: auto;
+    }
+    
+    .submenu-item {
+      padding: 12px 20px;
+      margin: 2px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+    }
+    
+    .submenu-item:hover {
+      background: var(--bg-hover);
+    }
+    
+    .submenu-item.focused {
+      background: var(--primary-color);
+      color: white;
+      transform: scale(1.02);
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
+    }
+    
+    /* Grid de Canales TV */
+    .channels-grid {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+      overflow-y: auto;
+      background: rgba(10, 10, 10, 0.8);
+    }
+    
+    .channel-card {
+      background: linear-gradient(145deg, #1a1a1a, #252525);
+      border-radius: 12px;
+      padding: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      display: flex;
+      flex-direction: column;
+      height: 140px;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .channel-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary-color);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    
+    .channel-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .channel-card.focused {
+      transform: scale(1.05);
+      border-color: var(--primary-color);
+      box-shadow: 0 0 20px rgba(255, 68, 68, 0.4);
+      z-index: 10;
+    }
+    
+    .channel-card.focused::before {
+      transform: scaleX(1);
+    }
+    
+    .channel-card.playing {
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 15px rgba(68, 255, 68, 0.3);
+    }
+    
+    .channel-logo {
+      width: 100%;
+      height: 70px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      padding: 5px;
+    }
+    
+    .channel-name {
+      font-size: 13px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--text-color);
+    }
+    
+    /* Reproductor TV */
+    .video-container {
+      position: relative;
+      background: #000;
+      transition: all 0.3s ease;
+    }
+    
+    #videoPlayer {
+      width: 100%;
+      height: 0;
+      background: #000;
+      transition: all 0.3s ease;
+    }
+    
+    #videoPlayer.active {
+      height: 300px;
+    }
+    
+    #videoPlayer.fullscreen-mode {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1000;
+    }
+    
+    /* Temporizador Modo Cine - MEJORADO (20 segundos) */
+    .fullscreen-timer {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      z-index: 1001;
+      font-size: 16px;
+      display: none;
+      border: 2px solid var(--primary-color);
+    }
+    
+    .fullscreen-timer.show {
+      display: block;
+    }
+    
+    /* Estados de Carga y Error */
+    .loading {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 40px;
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    
+    .loading::after {
+      content: '...';
+      animation: dots 1.5s steps(4, end) infinite;
+    }
+    
+    @keyframes dots {
+      0%, 20% { color: rgba(255,255,255,0); text-shadow: .25em 0 0 rgba(255,255,255,0), .5em 0 0 rgba(255,255,255,0); }
+      40% { color: white; text-shadow: .25em 0 0 rgba(255,255,255,0), .5em 0 0 rgba(255,255,255,0); }
+      60% { text-shadow: .25em 0 0 white, .5em 0 0 rgba(255,255,255,0); }
+      80%, 100% { text-shadow: .25em 0 0 white, .5em 0 0 white; }
+    }
+    
+    .error {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 40px;
+      color: var(--error-color);
+      font-size: 16px;
+    }
+    
+    /* Notificaciones TV */
+    .tv-notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(30, 30, 30, 0.95);
+      border-left: 4px solid var(--primary-color);
+      padding: 15px 20px;
+      border-radius: 8px;
+      color: white;
+      z-index: 1500;
+      transform: translateX(400px);
+      transition: transform 0.3s ease;
+      max-width: 300px;
+    }
+    
+    .tv-notification.show {
+      transform: translateX(0);
+    }
+    
+    .tv-notification.success {
+      border-left-color: var(--success-color);
+    }
+    
+    .tv-notification.error {
+      border-left-color: var(--error-color);
+    }
+    
+    .tv-notification.warning {
+      border-left-color: var(--warning-color);
+    }
+    
+    /* Modo Cine */
+    .cinema-controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 25px;
+      display: none;
+      gap: 10px;
+      z-index: 1001;
+    }
+    
+    .control-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .control-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .control-btn.primary {
+      background: var(--primary-color);
+    }
+    
+    /* Scrollbar Personalizado */
+    .channels-grid::-webkit-scrollbar,
+    .submenu-items::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    .channels-grid::-webkit-scrollbar-track,
+    .submenu-items::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    
+    .channels-grid::-webkit-scrollbar-thumb,
+    .submenu-items::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+    
+    /* Responsive TV */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 220px;
+      }
+      
+      .submenu {
+        left: 220px;
+        width: 220px;
+      }
+      
+      .channels-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+      
+      .tv-header {
+        padding: 12px 15px;
+      }
+      
+      .tv-logo {
+        font-size: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .tv-container {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+      }
+      
+      .submenu {
+        left: 0;
+        top: 40vh;
+        width: 100%;
+        height: 60vh;
+      }
+      
+      .channels-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      }
+      
+      .channel-card {
+        height: 120px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="pin-overlay" id="pinOverlay">
-        <form class="pin-box" id="pinBox" autocomplete="off">
-            <h2>Acceso restringido</h2>
-            <p>Ingrese el PIN de acceso para continuar o comunicate al correo xxxxxxxxxxxxxxxxxxxxxxxxx para obtener tu pin:</p>
-            <input type="password" id="pinInput" maxlength="8" autofocus required placeholder="PIN" />
-            <br>
-            <button type="submit">Entrar</button>
-            <div class="pin-error" id="pinError"></div>
-        </form>
-    </div>
-
+  <div class="tv-container">
+    <!-- Panel Lateral -->
     <div class="sidebar">
-        <h2>IPTV App</h2>
-        <a href="#" onclick="showSection('tv')">TV en Vivo</a>
-        <a href="#" onclick="showSection('peliculas')">Películas</a>
-        <a href="#" onclick="showSection('historial')">Historial</a>
+      <!-- Barra de búsqueda -->
+      <div class="search-container">
+        <input type="text" class="search-box" id="searchBox" placeholder="Buscar canales...">
+      </div>
+      
+      <div class="nav-section">
+        <div class="nav-title">Navegación</div>
+        <div class="nav-item focused active" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html">
+          <span>📺</span>
+          <span>All Channels</span>
+        </div>
+        <div class="nav-item" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Sports%20Channels.html">
+          <span>🤼</span>
+          <span>Sports Channels</span>
+        </div>
+        <div class="nav-item" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Premium%20Channels.html">
+          <span>🏅</span>
+          <span>Premium Channels</span>
+        </div>
+        <div class="nav-item" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/New%20Channels.html">
+          <span>🆕</span>
+          <span>New Channels</span>
+        </div>
+      </div>
+      
+      <div class="nav-section">
+        <div class="nav-title">Categorías</div>
+        <div class="nav-item has-submenu" data-submenu="deportes">
+          <span>🌎</span>
+          <span>Channels by Country</span>
+        </div>
+        <div class="nav-item has-submenu" data-submenu="noticias">
+          <span>📺</span>
+          <span>Channels by Category</span>
+        </div>
+        <div class="nav-item has-submenu" data-submenu="musica">
+          <span>📽️</span>
+          <span>VIP channels</span>
+        </div>
+      </div>
     </div>
 
-    <div class="submenu" id="submenu" tabindex="0"></div>
-
-    <div class="main">
-        <div id="MOVIES">
-            <h1>TV en Vivo</h1>
-            <div class="grid" id="channelGridTV"></div>
-        </div>
-        <div id="peliculas" style="display:none;">
-            <h1>Películas</h1>
-            <div class="grid" id="channelGridMovies"></div>
-        </div>
-        <div id="historial" style="display:none;">
-            <h1>Historial Reciente</h1>
-            <div class="grid" id="channelGridHistory"></div>
-        </div>
+    <!-- Submenús -->
+    <div class="submenu" id="submenu">
+      <div class="submenu-header">
+        <button class="submenu-back" id="submenuBack">◀</button>
+        <div class="submenu-title" id="submenuTitle">Submenú</div>
+      </div>
+      <div class="submenu-items" id="submenuItems">
+        <!-- Los elementos del submenú se cargarán dinámicamente -->
+      </div>
     </div>
 
-    <div id="player">
-        <video id="videoPlayer" controls preload="auto"></video>
+    <!-- Área Principal -->
+    <div class="content-area">
+      <!-- Header TV -->
+      <div class="tv-header">
+        <div class="tv-logo">DEV-IPTV</div>
+        <div class="tv-info">
+          <span id="currentCategory">Canales Estados Unidos</span>
+          <span id="channelCount">0 canales</span>
+        </div>
+      </div>
+
+      <!-- Video Player -->
+      <div class="video-container">
+        <video id="videoPlayer" controls preload="metadata"></video>
+      </div>
+
+      <!-- Grid de Canales -->
+      <div class="channels-grid" id="channelsGrid">
+        <div class="loading">Cargando canales</div>
+      </div>
     </div>
+  </div>
 
-    <script>
-        // --- Lógica del PIN (Sin cambios) ---
-        const ACCESS_PINS = ["1434", "5678", "9999", "0999"];
-        const PIN_KEY = "iptv_access_granted";
+  <!-- Temporizador Modo Cine - MEJORADO (20 segundos) -->
+  <div class="fullscreen-timer" id="fullscreenTimer">
+    Modo cine en <span id="timerCountdown">20</span> segundos
+  </div>
 
-        function checkAccess() {
-            const savedPin = localStorage.getItem(PIN_KEY);
-            return ACCESS_PINS.includes(savedPin);
-        }
+  <!-- Notificaciones -->
+  <div class="tv-notification" id="notification">
+    <div id="notificationMessage">Mensaje de notificación</div>
+  </div>
 
-        function showPINOverlay() {
-            document.getElementById("pinOverlay").style.display = "flex";
-            document.body.style.overflow = "hidden";
-            document.getElementById("pinInput").value = "";
-            document.getElementById("pinError").innerText = "";
-            document.getElementById("pinInput").focus();
-        }
+  <!-- Controles Modo Cine -->
+  <div class="cinema-controls" id="cinemaControls">
+    <button class="control-btn" id="btnExitCinema">Salir Modo Cine</button>
+    <button class="control-btn" id="btnTogglePlay">Pausa</button>
+    <button class="control-btn" id="btnFullscreen">Modo Cine</button>
+  </div>
 
-        function hidePINOverlay() {
-            document.getElementById("pinOverlay").style.display = "none";
-            document.body.style.overflow = "";
-        }
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dashjs@latest/dist/dash.all.min.js"></script>
+  <script>
+    class TVConsole {
+      constructor() {
+        this.initializeElements();
+        this.initializeState();
+        this.setupEventListeners();
+        this.loadInitialData();
+        this.setupHistoryState();
+        this.initializeSubmenus();
+      }
 
-        document.getElementById("pinBox").addEventListener("submit", function(e) {
-            e.preventDefault();
-            const pin = document.getElementById("pinInput").value.trim();
-            if(ACCESS_PINS.includes(pin)) {
-                localStorage.setItem(PIN_KEY, pin);
-                hidePINOverlay();
-            } else {
-                document.getElementById("pinError").innerText = "PIN incorrecto";
-                document.getElementById("pinInput").value = "";
-                document.getElementById("pinInput").focus();
-            }
-        });
+      initializeElements() {
+        // Elementos principales
+        this.videoPlayer = document.getElementById('videoPlayer');
+        this.channelsGrid = document.getElementById('channelsGrid');
+        this.sidebar = document.querySelector('.sidebar');
+        
+        // Elementos de UI
+        this.currentCategory = document.getElementById('currentCategory');
+        this.channelCount = document.getElementById('channelCount');
+        this.notification = document.getElementById('notification');
+        this.cinemaControls = document.getElementById('cinemaControls');
+        this.fullscreenTimer = document.getElementById('fullscreenTimer');
+        this.timerCountdown = document.getElementById('timerCountdown');
+        this.searchBox = document.getElementById('searchBox');
+        
+        // Elementos navegables
+        this.navItems = [...document.querySelectorAll('.nav-item')];
+        this.channelCards = [];
+        
+        // Elementos de submenús
+        this.submenu = document.getElementById('submenu');
+        this.submenuBack = document.getElementById('submenuBack');
+        this.submenuTitle = document.getElementById('submenuTitle');
+        this.submenuItems = document.getElementById('submenuItems');
+        this.submenuItemsElements = [];
+        
+        // Botones
+        this.btnExitCinema = document.getElementById('btnExitCinema');
+        this.btnTogglePlay = document.getElementById('btnTogglePlay');
+        this.btnFullscreen = document.getElementById('btnFullscreen');
+      }
 
-        window.addEventListener("DOMContentLoaded", () => {
-            if(!checkAccess()) {
-                showPINOverlay();
-            } else {
-                hidePINOverlay();
-            }
-        });
+      initializeState() {
+        this.state = {
+          navMode: 'sidebar',
+          sidebarIndex: 0,
+          gridIndex: 0,
+          submenuIndex: 0,
+          currentPlaylist: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html',
+          currentHls: null,
+          currentDash: null,
+          isCinemaMode: false,
+          isFullscreenMode: false,
+          isSubmenuVisible: false,
+          channels: [],
+          filteredChannels: [],
+          history: JSON.parse(localStorage.getItem('tvHistory')) || [],
+          inactivityTimer: null,
+          countdownTimer: null,
+          countdownValue: 10,
+          columns: 4,
+          isSearching: false,
+          // Estado para navegación jerárquica
+          navigationStack: [],
+          preFullscreenState: {
+            isCinemaMode: false,
+            navMode: 'grid',
+            gridIndex: 0,
+            sidebarIndex: 0,
+            gridScrollTop: 0,
+            activeElement: null,
+            searchText: '',
+            isSearching: false,
+            navigationStack: []
+          }
+        };
 
-        // --- Lógica de la Aplicación ---
-        const PLAYLIST_URL_TV = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/tv.html";
-        const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html";
-        const HISTORY_KEY = "iptv_history";
-        const MAX_HISTORY_ITEMS = 20;
-        const UPDATE_INTERVAL = 60 * 60 * 1000;
+        this.updateLayout();
+      }
 
-        let channelsTV = [];
-        let channelsMovies = [];
-        // Ya no necesitamos una variable global para la instancia de Video.js
-        let isPlayerOpen = false;
+      // Inicializar datos de submenús
+      initializeSubmenus() {
+        this.submenusData = {
+          'deportes': [
+            { name: 'United States', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/United%20States.html' },
+            { name: 'Canada', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Canada.html' },
+            { name: 'Spain', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Spain.html' },
+            { name: 'Italy', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Italy.html' },
+            { name: 'France', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/France.html' },
+            { name: 'Mexico', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Mexico.html' },
+            { name: 'Brazil', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Brazil.html' },
+            { name: 'Dominican Republic', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Dominican%20Republic.html' },
+            { name: 'Peru', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Peru.html' },
+            { name: 'Argentina', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Argentina.html' },
+            { name: 'Russia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Russia.html' },
+            { name: 'India', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/India.html' },
+            { name: 'China', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/China.html' },
+            { name: 'Mongolia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Mongolia.html' },
+            { name: 'Australia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Australia.html' },
+            { name: 'Bolivia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Bolivia.html' },
+            { name: 'Colombia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Colombia.html' },
+            { name: 'Costa Rica', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Costa%20Rica.html' },
+            { name: 'Cuba', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Cuba.html' },
+            { name: 'Ecuador', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Ecuador.html' },
+            { name: 'El Salvador', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/El%20Salvador.html' },
+            { name: 'Guatemala', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Guatemala.html' },
+            { name: 'Haiti', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Haiti.html' },
+            { name: 'Honduras', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Honduras.html' },
+            { name: 'Nicaragua', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Nicaragua.html' },
+            { name: 'Panama', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Panama.html' },
+            { name: 'Paraguay', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Paraguay.html' },
+            { name: 'Peru', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Peru.html' },
+            { name: 'Uruguay', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Uruguay.html' },
+            { name: 'Venezuela', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Venezuela.html' },
+            { name: 'Luxemburgo', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Luxemburgo.html' },
+            { name: 'Mónaco', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/M%C3%B3naco.html' },
+            { name: 'Portugal', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Portugal.html' },
+            { name: 'Chile', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Chile.html' },
+            { name: 'Austria', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Austria.html' }
+          ],
+          'noticias': [
+            { name: 'Comedy', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/comedy.html' },
+            { name: 'Animation', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/animation.html' },
+            { name: 'Documentary', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/documentary.html' },
+            { name: 'Culture', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/culture.html' },
+            { name: 'Classic', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/classic.html' },
+            { name: 'Business', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/business.html' },
+            { name: 'Cooking', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/cooking.html' },
+            { name: 'Auto', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Auto.html' },
+            { name: 'Education', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/education.html' },
+            { name: 'Entertainment', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/entertainment.html' },
+            { name: 'Family', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/family.html' },
+            { name: 'General', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/general.html' },
+            { name: 'Kids', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Kids.html' },
+            { name: 'Legislative', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/legislative.html' },
+            { name: 'Lifestyle', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/lifestyle.html' },
+            { name: 'Movies', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/movies.html' },
+            { name: 'Music', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/music.html' },
+            { name: 'Outdoor', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/outdoor.html' },
+            { name: 'Public', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/public.html' },
+            { name: 'Relax', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/relax.html' },
+            { name: 'Religious', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/relax.html' },
+            { name: 'Science', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/science.html' },
+            { name: 'Series', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Series.html' },
+            { name: 'Shop', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/shop.html' },
+            { name: 'Sports', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Deportes.html' },
+            { name: 'Travel', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/travel.html' },
+            { name: 'Weather', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/weather.html' }
+          ],
+          'musica': [
+            { name: 'HBO', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/HBO.html' },
+            { name: 'NBA', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/NBA.html' },
+            { name: 'MLB', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/MLB.html' },
+            { name: 'NFL', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/NFL.html' },
+            { name: 'MLB 5', url: 'https://iptv-org.github.io/iptv/categories/music.m3u' }
+          ]
+        };
+      }
 
-        function startAutoUpdate() {
-            setInterval(() => {
-                loadPlaylist(PLAYLIST_URL_TV, "MOVIES");
-                loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
-                if (document.getElementById("MOVIES").style.display !== "none") {
-                    renderChannels(channelsTV, "channelGridTV", null);
-                }
-            }, UPDATE_INTERVAL);
-        }
-
-        function getHistory() {
-            try {
-                const history = localStorage.getItem(HISTORY_KEY);
-                return history ? JSON.parse(history) : [];
-            } catch (e) {
-                return [];
-            }
-        }
-        function saveToHistory(channelData) {
-            let history = getHistory();
-            history = history.filter(item => item.url !== channelData.url);
-            history.unshift(channelData);
-            if (history.length > MAX_HISTORY_ITEMS) {
-                history = history.slice(0, MAX_HISTORY_ITEMS);
-            }
-            try {
-                localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
-                if (document.getElementById("historial").style.display === "block") {
-                    renderHistory();
-                }
-            } catch (e) {}
-        }
-        function renderHistory() {
-            let history = getHistory();
-            let grid = document.getElementById("channelGridHistory");
-            grid.innerHTML = "";
-            if (history.length === 0) {
-                grid.innerHTML = "<p style='text-align: center; width: 100%; padding: 20px;'>No hay elementos en el historial.</p>";
-                return;
-            }
-            history.forEach(ch => {
-                const channelClass = (ch.type === "MOVIES") ? "tv-channel" : "movie-channel";
-                let div = document.createElement("div");
-                div.className = "channel " + channelClass;
-                div.innerHTML = `<img src="${ch.logo}" alt="${ch.name}"><p>${ch.name}</p>`;
-                div.onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.type);
-                grid.appendChild(div);
-            });
-        }
-        function onFullscreenChange() {
-            if (!document.fullscreenElement && isPlayerOpen) {
-                history.back();
-            }
+      // Configurar el historial del navegador
+      setupHistoryState() {
+        // Inicializar el historial del navegador
+        if (history.state === null) {
+          history.replaceState({
+            type: 'main',
+            navMode: 'sidebar',
+            sidebarIndex: 0,
+            playlist: this.state.currentPlaylist,
+            category: 'Canales Estados Unidos'
+          }, 'Consola TV', window.location.href);
         }
         
-        // --- FUNCIÓN closePlayer OPTIMIZADA ---
-        function closePlayer() {
-            if (!isPlayerOpen) return;
-            isPlayerOpen = false;
-            document.getElementById("player").style.display = "none";
-            
-            const videoElement = document.getElementById("videoPlayer");
-            // Pausar y limpiar la fuente es crucial para liberar el stream
-            videoElement.pause();
-            videoElement.src = ""; 
-            videoElement.load();
+        // Escuchar cambios en el historial del navegador
+        window.addEventListener('popstate', (event) => {
+          this.handlePopState(event);
+        });
+      }
 
-            document.removeEventListener("fullscreenchange", onFullscreenChange);
-        }
-
-        // --- FUNCIÓN playChannel OPTIMIZADA PARA REPRODUCCIÓN NATIVA ---
-        function playChannel(url, name, logo, type) {
-            let playerDiv = document.getElementById("player");
-            const videoElement = document.getElementById("videoPlayer");
-
-            playerDiv.style.display = "block";
-            isPlayerOpen = true;
-            saveToHistory({ url: url, name: name, logo: logo, type: type });
-            history.pushState({ page: 'player' }, 'Player', '#play');
+      // Manejar cambios en el historial del navegador
+      handlePopState(event) {
+        if (event.state) {
+          const state = event.state;
+          console.log('Popstate detected:', state);
+          
+          // Restaurar el estado desde el historial
+          if (state.type === 'main') {
+            this.state.navMode = state.navMode || 'sidebar';
+            this.state.sidebarIndex = state.sidebarIndex || 0;
             
-            // Asignamos la URL directamente al atributo 'src'
-            videoElement.src = url;
+            // Si hay una playlist diferente, cargarla
+            if (state.playlist && state.playlist !== this.state.currentPlaylist) {
+              this.state.currentPlaylist = state.playlist;
+              this.loadPlaylist(state.playlist, this.state.sidebarIndex);
+            }
             
-            // Forzamos la carga y reproducción
-            videoElement.load();
-            videoElement.play().catch(error => {
-                // Manejo de errores común en dispositivos móviles o Smart TV
-                console.error("Error al iniciar la reproducción:", error);
-                // Puede que necesites un botón de play si el dispositivo lo requiere
+            this.currentCategory.textContent = state.category || 'Canales Estados Unidos';
+            
+            // Actualizar la UI
+            this.navItems.forEach((item, index) => {
+              item.classList.toggle('active', index === this.state.sidebarIndex);
+              item.classList.toggle('focused', index === this.state.sidebarIndex);
             });
             
-            // Pedir pantalla completa del contenedor del reproductor
-            playerDiv.requestFullscreen().catch(() => {});
-            document.addEventListener("fullscreenchange", onFullscreenChange);
+            // Enfocar el elemento actual
+            this.focusCurrentElement();
+            
+            this.showNotification('Navegación restaurada', 'info');
+          }
+        }
+      }
+
+      // Actualizar el historial del navegador
+      updateHistoryState(stateData, title = 'Consola TV') {
+        history.pushState(stateData, title, window.location.href);
+      }
+
+      setupEventListeners() {
+        // Navegación por teclado MEJORADA para TV
+        document.addEventListener('keydown', (e) => this.handleKeyNavigation(e));
+        
+        // Evento keydown para submenús
+        this.submenu.addEventListener('keydown', (e) => this.handleSubmenuKeyNavigation(e));
+        
+        // Eventos de video
+        this.videoPlayer.addEventListener('play', () => this.onVideoPlay());
+        this.videoPlayer.addEventListener('pause', () => this.onVideoPause());
+        this.videoPlayer.addEventListener('error', (e) => this.onVideoError(e));
+        this.videoPlayer.addEventListener('click', () => this.resetInactivityTimer());
+        
+        // Botones de UI
+        this.btnExitCinema.addEventListener('click', () => this.exitCinemaMode());
+        this.btnTogglePlay.addEventListener('click', () => this.togglePlayPause());
+        this.btnFullscreen.addEventListener('click', () => this.toggleFullscreen());
+        
+        // Botón de volver en submenú
+        this.submenuBack.addEventListener('click', () => this.closeSubmenu());
+        
+        // Búsqueda
+        this.searchBox.addEventListener('input', () => this.searchChannels());
+        this.searchBox.addEventListener('focus', () => this.state.isSearching = true);
+        this.searchBox.addEventListener('blur', () => this.state.isSearching = false);
+        
+        // Navegación por ratón (backup)
+        this.navItems.forEach((item, index) => {
+          if (item.dataset.url) {
+            item.addEventListener('click', () => this.loadPlaylist(item.dataset.url, index));
+          }
+          // Manejar clic en elementos con submenú
+          if (item.classList.contains('has-submenu')) {
+            item.addEventListener('click', () => this.openSubmenu(item.dataset.submenu, index));
+          }
+        });
+
+        // Detección de inactividad
+        this.setupInactivityDetection();
+
+        // Eventos de actividad del usuario
+        document.addEventListener('mousemove', () => this.resetInactivityTimer());
+        document.addEventListener('keydown', () => this.resetInactivityTimer());
+        document.addEventListener('click', () => this.resetInactivityTimer());
+
+        // Eventos de pantalla completa
+        document.addEventListener('fullscreenchange', () => this.handleFullscreenChange());
+        document.addEventListener('webkitfullscreenchange', () => this.handleFullscreenChange());
+        document.addEventListener('mozfullscreenchange', () => this.handleFullscreenChange());
+        document.addEventListener('MSFullscreenChange', () => this.handleFullscreenChange());
+      }
+
+      // MEJORADO: Manejo de navegación por teclado en submenús
+      handleSubmenuKeyNavigation(e) {
+        if (!this.state.isSubmenuVisible) return;
+        
+        e.preventDefault();
+        e.stopPropagation();
+        
+        switch(e.key) {
+          case 'ArrowUp': 
+            this.navigateSubmenu(-1);
+            break;
+          case 'ArrowDown': 
+            this.navigateSubmenu(1);
+            break;
+          case 'ArrowLeft':
+            this.closeSubmenu();
+            break;
+          case 'ArrowRight':
+            // Si estamos en submenú, la flecha derecha puede abrir otro nivel
+            // Por ahora, simplemente no hacemos nada
+            break;
+          case 'Enter': 
+            this.selectSubmenuItem();
+            break;
+          case 'Escape': 
+          case 'Backspace':
+            this.closeSubmenu();
+            break;
+          case 'm': 
+          case 'M':
+            this.closeSubmenu();
+            break;
+        }
+      }
+
+      // MEJORADO: Navegación en submenús
+      navigateSubmenu(delta) {
+        if (this.submenuItemsElements.length === 0) return;
+        
+        this.submenuItemsElements[this.state.submenuIndex].classList.remove('focused');
+        
+        let newIndex = this.state.submenuIndex + delta;
+        newIndex = Math.max(0, Math.min(this.submenuItemsElements.length - 1, newIndex));
+        
+        this.state.submenuIndex = newIndex;
+        this.submenuItemsElements[newIndex].classList.add('focused');
+        
+        // Scroll si es necesario
+        this.submenuItemsElements[newIndex].scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'nearest' 
+        });
+      }
+
+      // MEJORADO: Seleccionar elemento del submenú
+      selectSubmenuItem() {
+        if (this.submenuItemsElements.length === 0) return;
+        
+        const item = this.submenuItemsElements[this.state.submenuIndex];
+        const url = item.dataset.url;
+        
+        if (url) {
+          this.closeSubmenu();
+          this.loadPlaylist(url, this.state.sidebarIndex);
+          this.state.navMode = 'grid';
+          this.state.gridIndex = 0;
+        }
+      }
+
+      // MEJORADO: Abrir submenú
+      openSubmenu(submenuId, navIndex) {
+        const submenuData = this.submenusData[submenuId];
+        if (!submenuData) return;
+        
+        // Actualizar estado
+        this.state.isSubmenuVisible = true;
+        this.state.navMode = 'submenu';
+        this.state.submenuIndex = 0;
+        this.state.sidebarIndex = navIndex;
+        
+        // Actualizar UI
+        this.submenuTitle.textContent = this.navItems[navIndex].textContent.trim();
+        this.renderSubmenuItems(submenuData);
+        this.submenu.classList.add('active');
+        
+        // Enfocar primer elemento del submenú
+        if (this.submenuItemsElements.length > 0) {
+          this.submenuItemsElements[0].classList.add('focused');
+        }
+        
+        this.showNotification(`Submenú ${this.submenuTitle.textContent} abierto`, 'info');
+      }
+
+      // MEJORADO: Cerrar submenú
+      closeSubmenu() {
+        this.state.isSubmenuVisible = false;
+        this.state.navMode = 'sidebar';
+        this.submenu.classList.remove('active');
+        
+        // Enfocar el elemento del sidebar que abrió el submenú
+        this.focusCurrentElement();
+        
+        this.showNotification('Submenú cerrado', 'info');
+      }
+
+      // Renderizar elementos del submenú
+      renderSubmenuItems(items) {
+        this.submenuItems.innerHTML = '';
+        this.submenuItemsElements = [];
+        
+        items.forEach((item, index) => {
+          const div = document.createElement('div');
+          div.className = 'submenu-item';
+          div.textContent = item.name;
+          div.dataset.url = item.url;
+          div.tabIndex = 0;
+          
+          div.addEventListener('click', () => {
+            this.state.submenuIndex = index;
+            this.selectSubmenuItem();
+          });
+          
+          this.submenuItems.appendChild(div);
+          this.submenuItemsElements.push(div);
+        });
+      }
+
+      // MEJORADO: Manejo de teclado con navegación mejorada
+      handleKeyNavigation(e) {
+        // Si estamos en submenú, dejar que handleSubmenuKeyNavigation maneje la tecla
+        if (this.state.isSubmenuVisible) {
+          this.handleSubmenuKeyNavigation(e);
+          return;
+        }
+        
+        e.preventDefault();
+        this.resetInactivityTimer();
+        
+        // Si estamos en modo búsqueda, manejar solo Escape
+        if (this.state.isSearching && e.key !== 'Escape' && e.key !== 'Backspace') {
+          return;
+        }
+        
+        switch(e.key) {
+          case 'ArrowUp': 
+            this.navigate(-1, 0); 
+            break;
+          case 'ArrowDown': 
+            this.navigate(1, 0); 
+            break;
+          case 'ArrowLeft': 
+            this.navigate(0, -1); 
+            break;
+          case 'ArrowRight': 
+            this.navigate(0, 1); 
+            break;
+          case 'Enter': 
+            this.selectItem(); 
+            break;
+          case ' ': 
+            this.togglePlayPause(); 
+            break;
+          case 'f': case 'F': 
+            this.toggleFullscreen(); 
+            break;
+          case 'c': case 'C': 
+            this.toggleCinemaMode(); 
+            break;
+          case 's': case 'S': 
+            this.searchBox.focus(); 
+            break;
+          case 'Escape': 
+            this.handleEscapeOrBack(); 
+            break;
+          case 'Backspace': 
+            this.handleEscapeOrBack(); 
+            break;
+          case '1': case '2': case '3': case '4': case '5': 
+          case '6': case '7': case '8': case '9': 
+            this.quickSelect(parseInt(e.key)); 
+            break;
+        }
+      }
+
+      // NUEVO: Navegación unificada con comportamiento mejorado
+      navigate(rowDelta, colDelta) {
+        if (this.state.navMode === 'sidebar') {
+          this.navigateSidebar(rowDelta, colDelta);
+        } else if (this.state.navMode === 'grid') {
+          this.navigateGrid(rowDelta, colDelta);
+        } else if (this.state.navMode === 'submenu') {
+          this.navigateSubmenu(rowDelta);
+        }
+      }
+
+      // NUEVO: Navegación en sidebar con flechas izquierda/derecha mejorada
+      navigateSidebar(rowDelta, colDelta) {
+        // Si estamos en sidebar y presionamos flecha derecha, ir al grid si hay canales
+        if (colDelta > 0 && this.state.filteredChannels.length > 0) {
+          this.state.navMode = 'grid';
+          this.state.gridIndex = 0;
+          this.focusCurrentElement();
+          this.showNotification('Navegando a canales', 'info');
+          return;
+        }
+        
+        // MEJORADO: Si estamos en sidebar y presionamos flecha izquierda, navegar entre secciones del sidebar
+        if (colDelta < 0) {
+          // Podemos implementar navegación entre diferentes grupos del sidebar si es necesario
+          // Por ahora simplemente no hacemos nada o podemos mostrar un mensaje
+          this.showNotification('Ya estás en el menú de navegación', 'info');
+          return;
+        }
+        
+        // Navegación vertical normal
+        this.navItems[this.state.sidebarIndex].classList.remove('focused');
+        this.state.sidebarIndex = Math.max(0, Math.min(this.navItems.length - 1, this.state.sidebarIndex + rowDelta));
+        this.navItems[this.state.sidebarIndex].classList.add('focused');
+        this.navItems[this.state.sidebarIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      // NUEVO: Navegación en grid con flechas izquierda/derecha mejorada
+      navigateGrid(rowDelta, colDelta) {
+        if (this.channelCards.length === 0) return;
+        
+        // MEJORADO: Si estamos en grid y presionamos flecha izquierda en la primera columna, volver al sidebar
+        const currentCol = this.state.gridIndex % this.state.columns;
+        if (colDelta < 0 && currentCol === 0) {
+          // Guardar estado actual antes de cambiar al sidebar
+          this.state.navigationStack.push({
+            navMode: this.state.navMode,
+            gridIndex: this.state.gridIndex,
+            filteredChannels: [...this.state.filteredChannels],
+            category: this.currentCategory.textContent
+          });
+          
+          this.state.navMode = 'sidebar';
+          // Mantener el mismo índice del sidebar que estaba activo antes
+          this.focusCurrentElement();
+          this.showNotification('Navegando al menú principal', 'info');
+          return;
+        }
+        
+        // Si estamos en grid y presionamos flecha derecha en la última columna, no hacer nada
+        if (colDelta > 0 && currentCol === this.state.columns - 1) {
+          return;
+        }
+        
+        // Navegación normal en grid
+        this.channelCards[this.state.gridIndex].classList.remove('focused');
+        
+        const oldIndex = this.state.gridIndex;
+        const newRow = Math.floor(oldIndex / this.state.columns) + rowDelta;
+        const newCol = (oldIndex % this.state.columns) + colDelta;
+        
+        let newIndex = newRow * this.state.columns + newCol;
+        newIndex = Math.max(0, Math.min(this.channelCards.length - 1, newIndex));
+        
+        this.state.gridIndex = newIndex;
+        this.channelCards[newIndex].classList.add('focused');
+        
+        // Solo hacer scroll si es necesario
+        const cardRect = this.channelCards[newIndex].getBoundingClientRect();
+        const gridRect = this.channelsGrid.getBoundingClientRect();
+        
+        if (cardRect.bottom > gridRect.bottom || cardRect.top < gridRect.top) {
+          this.channelCards[newIndex].scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'nearest' 
+          });
+        }
+      }
+
+      // Abrir submenú desde teclado
+      openSubmenuFromKeyboard() {
+        if (this.state.navMode !== 'sidebar') return;
+        
+        const currentItem = this.navItems[this.state.sidebarIndex];
+        if (currentItem.classList.contains('has-submenu')) {
+          this.openSubmenu(currentItem.dataset.submenu, this.state.sidebarIndex);
+        }
+      }
+
+      // MANEJO UNIFICADO DE ESCAPE Y BOTÓN ATRÁS - MEJORADO
+      handleEscapeOrBack() {
+        console.log('Escape/Back pressed - Current state:', {
+          isSearching: this.state.isSearching,
+          isFullscreenMode: this.state.isFullscreenMode,
+          isCinemaMode: this.state.isCinemaMode,
+          isSubmenuVisible: this.state.isSubmenuVisible,
+          navMode: this.state.navMode,
+          navigationStack: this.state.navigationStack.length
+        });
+
+        // 1. Si estamos en submenú, cerrarlo primero
+        if (this.state.isSubmenuVisible) {
+          this.closeSubmenu();
+          return;
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // No hay inicialización de reproductor de terceros aquí.
+        // 2. Si estamos en búsqueda, salir de la búsqueda
+        if (this.state.isSearching) {
+          this.searchBox.blur();
+          this.state.isSearching = false;
+          this.showNotification('Búsqueda cancelada', 'info');
+          return;
+        }
 
-            window.addEventListener('popstate', (event) => {
-                if (isPlayerOpen) {
-                    closePlayer();
-                }
+        // 3. Priorizar salir de modo cine si estamos en ese modo
+        if (this.state.isFullscreenMode) {
+          this.exitFullscreenMode();
+          return;
+        }
+
+        // 4. Si estamos en modo controles video, salir del modo
+        if (this.state.isCinemaMode) {
+          this.exitCinemaMode();
+          return;
+        }
+
+        // 5. Navegación jerárquica - Si hay elementos en el stack, volver atrás
+        if (this.state.navigationStack.length > 0) {
+          this.navigateBack();
+          return;
+        }
+
+        // 6. MEJORADO: Si estamos en grid de canales, volver al sidebar con flecha izquierda
+        if (this.state.navMode === 'grid') {
+          this.navigateToSidebar();
+          return;
+        }
+
+        // 7. MEJORADO: Mensaje más específico cuando ya estamos en sidebar
+        if (this.state.navMode === 'sidebar') {
+          this.showNotification('Usa las flechas para navegar por el menú', 'info');
+          return;
+        }
+      }
+
+      // Navegación jerárquica hacia atrás
+      navigateBack() {
+        const previousState = this.state.navigationStack.pop();
+        
+        if (previousState) {
+          this.state.navMode = previousState.navMode;
+          this.state.gridIndex = previousState.gridIndex || 0;
+          this.state.sidebarIndex = previousState.sidebarIndex || 0;
+          this.state.filteredChannels = previousState.filteredChannels || this.state.channels;
+          this.currentCategory.textContent = previousState.category || 'Canales Estados Unidos';
+          
+          this.renderChannels();
+          this.focusCurrentElement();
+          
+          this.showNotification('Volviendo atrás...', 'info');
+        }
+      }
+
+      // Navegar al sidebar desde el grid
+      navigateToSidebar() {
+        // Guardar estado actual en el stack
+        this.state.navigationStack.push({
+          navMode: this.state.navMode,
+          gridIndex: this.state.gridIndex,
+          filteredChannels: [...this.state.filteredChannels],
+          category: this.currentCategory.textContent
+        });
+
+        // Volver al sidebar
+        this.state.navMode = 'sidebar';
+        this.state.sidebarIndex = 0;
+        this.focusCurrentElement();
+        
+        this.showNotification('Volviendo al menú principal', 'info');
+      }
+
+      // MÉTODO handleFullscreenChange SIMPLIFICADO
+      handleFullscreenChange() {
+        const isFullscreen = !!(document.fullscreenElement || 
+                                document.webkitFullscreenElement || 
+                                document.mozFullScreenElement || 
+                                document.msFullscreenElement);
+        
+        if (!isFullscreen && this.state.isFullscreenMode) {
+          // Salida de modo cine detectada
+          this.state.isFullscreenMode = false;
+          this.videoPlayer.classList.remove('fullscreen-mode');
+          
+          // Restaurar el estado después de salir de modo cine
+          this.restorePreFullscreenState();
+          
+          this.resetInactivityTimer();
+        } else if (isFullscreen && !this.state.isFullscreenMode) {
+          // Entrada en modo cine
+          this.state.isFullscreenMode = true;
+          this.videoPlayer.classList.add('fullscreen-mode');
+        }
+      }
+
+      // MÉTODO exitFullscreenMode - MEJORADO (modo cine)
+      exitFullscreenMode() {
+        // Primero restaurar el estado previo
+        this.restorePreFullscreenState();
+        
+        // Luego salir de modo cine
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+        
+        // Actualizar estado inmediatamente
+        this.state.isFullscreenMode = false;
+        this.videoPlayer.classList.remove('fullscreen-mode');
+        
+        // Cancelar cualquier temporizador activo
+        clearTimeout(this.state.inactivityTimer);
+        clearInterval(this.state.countdownTimer);
+        this.fullscreenTimer.classList.remove('show');
+        
+        this.showNotification('Saliste del modo cine', 'info');
+      }
+
+      // Guardar estado completo antes de entrar en modo cine
+      savePreFullscreenState() {
+        this.state.preFullscreenState = {
+          isCinemaMode: this.state.isCinemaMode,
+          navMode: this.state.navMode,
+          gridIndex: this.state.gridIndex,
+          sidebarIndex: this.state.sidebarIndex,
+          gridScrollTop: this.channelsGrid.scrollTop,
+          activeElement: document.activeElement,
+          searchText: this.searchBox.value,
+          isSearching: this.state.isSearching,
+          navigationStack: [...this.state.navigationStack]
+        };
+      }
+
+      // Restaurar estado completo después de salir de modo cine
+      restorePreFullscreenState() {
+        if (!this.state.preFullscreenState) return;
+        
+        const prevState = this.state.preFullscreenState;
+        
+        // Restaurar modo controles video
+        if (prevState.isCinemaMode && !this.state.isCinemaMode) {
+          this.enterCinemaMode();
+        } else if (!prevState.isCinemaMode && this.state.isCinemaMode) {
+          this.exitCinemaMode();
+        }
+        
+        // Restaurar modo de navegación e índices
+        this.state.navMode = prevState.navMode;
+        this.state.gridIndex = prevState.gridIndex;
+        this.state.sidebarIndex = prevState.sidebarIndex;
+        
+        // Restaurar stack de navegación
+        this.state.navigationStack = [...prevState.navigationStack];
+        
+        // Restaurar posición de scroll del grid
+        if (prevState.gridScrollTop !== undefined) {
+          setTimeout(() => {
+            this.channelsGrid.scrollTop = prevState.gridScrollTop;
+          }, 50);
+        }
+        
+        // Restaurar búsqueda
+        if (prevState.searchText !== undefined) {
+          this.searchBox.value = prevState.searchText;
+        }
+        this.state.isSearching = prevState.isSearching;
+        
+        // Asegurar que el canal enfocado se mantenga visible
+        setTimeout(() => {
+          this.focusCurrentElement();
+        }, 100);
+      }
+
+      // Enfocar el elemento actual basado en el estado
+      focusCurrentElement() {
+        if (this.state.navMode === 'sidebar' && this.navItems.length > 0) {
+          this.navItems.forEach(item => item.classList.remove('focused'));
+          if (this.state.sidebarIndex < this.navItems.length) {
+            this.navItems[this.state.sidebarIndex].classList.add('focused');
+            this.navItems[this.state.sidebarIndex].scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'nearest' 
             });
-            loadPlaylist(PLAYLIST_URL_TV, "MOVIES");
-            loadPlaylist(PLAYLIST_URL_MOVIES, "movies");
-            showSection("MOVIES");
-            startAutoUpdate();
+          }
+        } else if (this.state.navMode === 'grid' && this.channelCards.length > 0) {
+          this.channelCards.forEach(card => card.classList.remove('focused'));
+          if (this.state.gridIndex < this.channelCards.length) {
+            this.channelCards[this.state.gridIndex].classList.add('focused');
+            this.channelCards[this.state.gridIndex].scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'nearest' 
+            });
+          }
+        } else if (this.state.navMode === 'submenu' && this.submenuItemsElements.length > 0) {
+          this.submenuItemsElements.forEach(item => item.classList.remove('focused'));
+          if (this.state.submenuIndex < this.submenuItemsElements.length) {
+            this.submenuItemsElements[this.state.submenuIndex].classList.add('focused');
+            this.submenuItemsElements[this.state.submenuIndex].scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'nearest' 
+            });
+          }
+        }
+        
+        // Restaurar foco en el elemento activo si era un input
+        if (this.state.preFullscreenState && this.state.preFullscreenState.activeElement) {
+          const prevActive = this.state.preFullscreenState.activeElement;
+          if (prevActive.tagName === 'INPUT' || prevActive.tagName === 'TEXTAREA') {
+            setTimeout(() => {
+              prevActive.focus();
+            }, 150);
+          }
+        }
+      }
+
+      // MEJORADO: Cambiado a "Modo Cine"
+      enterFullscreenMode() {
+        // Guardar el estado completo antes de entrar en modo cine
+        this.savePreFullscreenState();
+        
+        if (this.videoPlayer.requestFullscreen) {
+          this.videoPlayer.requestFullscreen();
+        } else if (this.videoPlayer.webkitRequestFullscreen) {
+          this.videoPlayer.webkitRequestFullscreen();
+        } else if (this.videoPlayer.msRequestFullscreen) {
+          this.videoPlayer.msRequestFullscreen();
+        }
+        
+        this.state.isFullscreenMode = true;
+        this.videoPlayer.classList.add('fullscreen-mode');
+        this.showNotification('Modo cine activado', 'info');
+      }
+
+      selectItem() {
+        if (this.state.navMode === 'sidebar') {
+          const item = this.navItems[this.state.sidebarIndex];
+          if (item.dataset.url) {
+            // Guardar estado actual antes de cambiar
+            this.state.navigationStack.push({
+              navMode: this.state.navMode,
+              sidebarIndex: this.state.sidebarIndex,
+              filteredChannels: [...this.state.filteredChannels],
+              category: this.currentCategory.textContent
+            });
+
+            this.loadPlaylist(item.dataset.url, this.state.sidebarIndex);
+            this.state.navMode = 'grid';
+            this.state.gridIndex = 0;
+            
+            // Actualizar historial del navegador
+            this.updateHistoryState({
+              type: 'main',
+              navMode: 'grid',
+              sidebarIndex: this.state.sidebarIndex,
+              playlist: item.dataset.url,
+              category: item.textContent.trim()
+            }, `Consola TV - ${item.textContent.trim()}`);
+          } else if (item.classList.contains('has-submenu')) {
+            this.openSubmenu(item.dataset.submenu, this.state.sidebarIndex);
+          }
+        } else if (this.state.navMode === 'grid') {
+          this.playChannel(this.state.gridIndex);
+        }
+      }
+
+      async loadPlaylist(url, navIndex) {
+        this.showNotification('Cargando canales...', 'info');
+        this.channelsGrid.innerHTML = '<div class="loading">Cargando canales</div>';
+        
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error('Error de red');
+          const data = await response.text();
+          this.parseM3U(data);
+          
+          // Actualizar UI
+          this.navItems.forEach(item => item.classList.remove('active'));
+          this.navItems[navIndex].classList.add('active');
+          this.currentCategory.textContent = this.navItems[navIndex].textContent.trim();
+          
+          this.showNotification(`Canales cargados: ${this.state.channels.length}`, 'success');
+        } catch (error) {
+          this.showNotification('Error al cargar canales', 'error');
+          this.channelsGrid.innerHTML = '<div class="error">Error al cargar los canales</div>';
+        }
+      }
+
+      parseM3U(data) {
+        const lines = data.split("\n");
+        let currentChannel = {};
+        const channels = [];
+        lines.forEach(line => {
+          if (line.startsWith("#EXTINF")) {
+            const nameMatch = line.match(/,(.*)$/);
+            const logoMatch = line.match(/tvg-logo="(.*?)"/);
+            currentChannel = {
+              name: nameMatch ? nameMatch[1].trim() : "Canal sin nombre",
+              logo: logoMatch ? logoMatch[1] : "https://via.placeholder.com/150x80?text=No+Logo"
+            };
+          } else if (line.startsWith("http")) {
+            currentChannel.url = line.trim();
+            channels.push({...currentChannel});
+            currentChannel = {};
+          }
+        });
+        this.state.channels = channels;
+        this.state.filteredChannels = [...channels];
+        this.renderChannels();
+      }
+
+      // MEJORADO: Renderizado sin numeración
+      renderChannels() {
+        this.channelsGrid.innerHTML = "";
+        this.channelCards = [];
+        
+        if (this.state.filteredChannels.length === 0) {
+          this.channelsGrid.innerHTML = '<div class="error">No se encontraron canales</div>';
+          return;
+        }
+        
+        this.state.filteredChannels.forEach((channel, index) => {
+          const div = document.createElement("div");
+          div.className = "channel-card";
+          div.tabIndex = 0;
+          div.dataset.url = channel.url;
+          
+          // Verificar si es reciente
+          const isRecent = this.state.history.some(hist => hist.url === channel.url);
+          
+          if (isRecent) div.classList.add('recent');
+          
+          // MEJORADO: Sin numeración
+          div.innerHTML = `
+            <img class="channel-logo" src="${channel.logo}" alt="${channel.name}" 
+                 onerror="this.src='https://via.placeholder.com/150x80?text=No+Logo'">
+            <div class="channel-name">${channel.name}</div>
+          `;
+
+          div.addEventListener("click", () => this.playChannel(index));
+
+          this.channelsGrid.appendChild(div);
+          this.channelCards.push(div);
         });
         
-        // ... parseM3U, loadPlaylist, renderChannels, renderSubmenu, showSection, submenu listener (Sin cambios) ...
+        this.channelCount.textContent = `${this.state.filteredChannels.length} canales`;
+        this.updateLayout();
         
-        function parseM3U(text) {
-            let lines = text.split("\n");
-            let channels = [];
-            let current = {};
-            lines.forEach(line => {
-                line = line.trim();
-                if (line.startsWith("#EXTINF:")) {
-                    let logoMatch = line.match(/tvg-logo="([^"]*)"/);
-                    let groupMatch = line.match(/group-title="([^"]*)"/);
-                    let nameMatch = line.split(",").pop();
-                    current.logo = logoMatch ? logoMatch[1] : "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
-                    current.group = groupMatch ? groupMatch[1] : "Otros";
-                    current.name = nameMatch ? nameMatch : "Canal";
-                } else if (line && !line.startsWith("#")) {
-                    current.url = line;
-                    channels.push({ ...current });
-                    current = {};
-                }
-            });
-            return channels;
+        // Enfocar primer canal
+        if (this.channelCards.length > 0) {
+          this.channelCards[0].classList.add('focused');
         }
-        async function loadPlaylist(url, type) {
-            try {
-                let res = await fetch(url);
-                let text = await res.text();
-                let parsed = parseM3U(text);
-                parsed = parsed.map(ch => ({ ...ch, type: type }));
-                if (type === "tv") {
-                    channelsTV = parsed;
-                    renderChannels(channelsTV, "channelGridTV");
-                    renderSubmenu(channelsTV);
-                } else {
-                    channelsMovies = parsed;
-                    renderChannels(channelsMovies, "channelGridMovies");
-                }
-            } catch (e) {}
+      }
+
+      // NUEVO: Reproductor MPD (MPEG-DASH)
+      playMPD(url) {
+        if (this.state.currentDash) {
+          this.state.currentDash.destroy();
         }
-        function renderChannels(channels, gridId, filter = null) {
-            let grid = document.getElementById(gridId);
-            grid.innerHTML = "";
-            const channelClass = (gridId === "channelGridTV") ? "tv-channel" : "movie-channel";
-            channels.forEach(ch => {
-                if (!filter || ch.group === filter) {
-                    let div = document.createElement("div");
-                    div.className = "channel " + channelClass;
-                    div.setAttribute("data-category", ch.group);
-                    div.innerHTML = `<img src="${ch.logo}" alt="${ch.name}"><p>${ch.name}</p>`;
-                    div.onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.type);
-                    grid.appendChild(div);
-                }
-            });
-        }
-        function renderSubmenu(channels) {
-            let submenu = document.getElementById("submenu");
-            submenu.innerHTML = "";
-            let groups = [...new Set(channels.map(ch => ch.group))];
-            let allLink = document.createElement("a");
-            allLink.href = "#";
-            allLink.innerText = "Todos";
-            allLink.onclick = () => renderChannels(channelsTV, "channelGridTV", null);
-            submenu.appendChild(allLink);
-            groups.forEach(g => {
-                let link = document.createElement("a");
-                link.href = "#";
-                link.innerText = g;
-                link.onclick = () => renderChannels(channelsTV, "channelGridTV", g);
-                submenu.appendChild(link);
-            });
-        }
-        function showSection(section) {
-            document.getElementById("tv").style.display = "none";
-            document.getElementById("peliculas").style.display = "none";
-            document.getElementById("historial").style.display = "none";
-            document.getElementById("submenu").style.display = "none";
-            if (isPlayerOpen) {
-                closePlayer();
-            }
-            document.getElementById(section).style.display = "block";
-            if (section === "MOVIES") {
-                document.getElementById("submenu").style.display = "flex";
-            } else if (section === "historial") {
-                renderHistory();
-            }
-        }
-        const submenu = document.getElementById("submenu");
-        submenu.addEventListener("keydown", (e) => {
-            if(e.key === "ArrowRight") submenu.scrollBy({ left: 100, behavior: 'smooth' });
-            else if(e.key === "ArrowLeft") submenu.scrollBy({ left: -100, behavior: 'smooth' });
+        
+        this.state.currentDash = dashjs.MediaPlayer().create();
+        this.state.currentDash.initialize(this.videoPlayer, url, true);
+        
+        this.videoPlayer.play().catch(e => {
+          console.error('Error play MPD:', e);
+          this.showNotification('Error al reproducir el canal', 'error');
         });
-    </script>
+      }
+
+      // NUEVO: Reproductor M3U8 nativo
+      playM3U8(url) {
+        if (Hls.isSupported()) {
+          if (this.state.currentHls) {
+            this.state.currentHls.destroy();
+          }
+          
+          this.state.currentHls = new Hls({
+            enableWorker: false,
+            lowLatencyMode: true
+          });
+          this.state.currentHls.loadSource(url);
+          this.state.currentHls.attachMedia(this.videoPlayer);
+          this.state.currentHls.on(Hls.Events.MANIFEST_PARSED, () => {
+            this.videoPlayer.play().catch(e => {
+              console.error('Error play M3U8:', e);
+              this.showNotification('Error al reproducir el canal', 'error');
+            });
+          });
+          this.state.currentHls.on(Hls.Events.ERROR, (event, data) => {
+            console.error('HLS Error:', data);
+            if (data.fatal) {
+              this.showNotification('Error de transmisión del canal', 'error');
+            }
+          });
+        } else if (this.videoPlayer.canPlayType('application/vnd.apple.mpegurl')) {
+          // Soporte nativo para Safari
+          this.videoPlayer.src = url;
+          this.videoPlayer.play().catch(e => {
+            console.error('Error play M3U8:', e);
+            this.showNotification('Error al reproducir el canal', 'error');
+          });
+        } else {
+          this.showNotification('Formato no compatible en este navegador', 'error');
+        }
+      }
+
+      // NUEVO: Reproductor M3U
+      playM3U(url) {
+        this.videoPlayer.src = url;
+        this.videoPlayer.play().catch(e => {
+          console.error('Error play M3U:', e);
+          this.showNotification('Error al reproducir el canal', 'error');
+        });
+      }
+
+      // NUEVO: Soporte EPG (Electronic Program Guide)
+      loadEPG(epgUrl) {
+        fetch(epgUrl)
+          .then(response => response.text())
+          .then(data => {
+            this.parseEPG(data);
+            this.showNotification('Guía de programación cargada', 'success');
+          })
+          .catch(error => {
+            console.error('Error loading EPG:', error);
+            this.showNotification('Error al cargar la guía de programación', 'error');
+          });
+      }
+
+      // NUEVO: Parsear datos EPG (formato XMLTV simplificado)
+      parseEPG(data) {
+        // Esta es una implementación básica para parsear EPG
+        // En una implementación real, necesitarías un parser XML más robusto
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data, "text/xml");
+        
+        // Extraer información de programas
+        const programmes = xmlDoc.getElementsByTagName("programme");
+        const epgData = [];
+        
+        for (let i = 0; i < programmes.length; i++) {
+          const programme = programmes[i];
+          const channel = programme.getAttribute("channel");
+          const start = programme.getAttribute("start");
+          const stop = programme.getAttribute("stop");
+          const title = programme.getElementsByTagName("title")[0]?.textContent || "Sin título";
+          const desc = programme.getElementsByTagName("desc")[0]?.textContent || "";
+          
+          epgData.push({
+            channel,
+            start,
+            stop,
+            title,
+            desc
+          });
+        }
+        
+        // Guardar datos EPG para uso posterior
+        this.state.epgData = epgData;
+        
+        // Actualizar UI con información EPG si está disponible
+        this.updateEPGDisplay();
+      }
+
+      // NUEVO: Actualizar visualización EPG
+      updateEPGDisplay() {
+        // Aquí puedes implementar la lógica para mostrar la información EPG
+        // en la interfaz de usuario, por ejemplo, en tooltips o en un panel separado
+        console.log('EPG data loaded:', this.state.epgData);
+      }
+
+      playChannel(index) {
+        const channel = this.state.filteredChannels[index];
+        if (!channel) return;
+        
+        this.showNotification(`Cargando: ${channel.name}`, 'info');
+        
+        // Limpiar reproducción anterior
+        if (this.state.currentHls) {
+          this.state.currentHls.destroy();
+        }
+        if (this.state.currentDash) {
+          this.state.currentDash.destroy();
+        }
+        
+        // Actualizar UI
+        this.channelCards.forEach(card => card.classList.remove('playing'));
+        this.channelCards[index].classList.add('playing');
+        this.channelCards[index].classList.add('focused');
+        this.state.gridIndex = index;
+        
+        // Añadir al historial
+        this.addToHistory(channel);
+        
+        // Configurar video
+        this.videoPlayer.classList.add('active');
+        
+        // NUEVO: Seleccionar reproductor según el tipo de archivo
+        const url = channel.url.toLowerCase();
+        
+        if (url.includes('.mpd')) {
+          // Reproductor MPD para MPEG-DASH
+          this.playMPD(channel.url);
+        } else if (url.includes('.m3u8')) {
+          // Reproductor M3U8 para HLS
+          this.playM3U8(channel.url);
+        } else if (url.includes('.m3u')) {
+          // Reproductor M3U para listas de reproducción
+          this.playM3U(channel.url);
+        } else {
+          // Reproductor por defecto (para otros formatos)
+          this.videoPlayer.src = channel.url;
+          this.videoPlayer.play().catch(e => {
+            console.error('Error play:', e);
+            this.showNotification('Error al reproducir el canal', 'error');
+          });
+        }
+
+        // Iniciar temporizador para modo cine
+        this.resetInactivityTimer();
+      }
+
+      // Sistema de modo cine automático - MEJORADO (20 segundos)
+      resetInactivityTimer() {
+        clearTimeout(this.state.inactivityTimer);
+        clearInterval(this.state.countdownTimer);
+        
+        this.fullscreenTimer.classList.remove('show');
+        
+        if (!this.videoPlayer.paused && this.videoPlayer.src && !this.state.isFullscreenMode) {
+          this.state.inactivityTimer = setTimeout(() => {
+            this.startFullscreenCountdown();
+          }, 3000); // 3 segundos de inactividad antes de mostrar countdown
+        }
+      }
+
+      // MEJORADO: Cambiado a "Modo Cine" y extendido a 20 segundos
+      startFullscreenCountdown() {
+        this.state.countdownValue = 20; // CAMBIADO: De 5 a 20 segundos
+        this.timerCountdown.textContent = this.state.countdownValue;
+        this.fullscreenTimer.classList.add('show');
+        
+        this.state.countdownTimer = setInterval(() => {
+          this.state.countdownValue--;
+          this.timerCountdown.textContent = this.state.countdownValue;
+          
+          if (this.state.countdownValue <= 0) {
+            clearInterval(this.state.countdownTimer);
+            this.fullscreenTimer.classList.remove('show');
+            this.enterFullscreenMode();
+          }
+        }, 1000);
+      }
+
+      // Control de reproducción
+      togglePlayPause() {
+        if (this.videoPlayer.paused) {
+          this.videoPlayer.play();
+        } else {
+          this.videoPlayer.pause();
+        }
+      }
+
+      // MEJORADO: Cambiado a "Modo Cine"
+      toggleFullscreen() {
+        if (!this.state.isFullscreenMode) {
+          this.enterFullscreenMode();
+        } else {
+          this.exitFullscreenMode();
+        }
+      }
+
+      toggleCinemaMode() {
+        if (this.state.isCinemaMode) {
+          this.exitCinemaMode();
+        } else {
+          this.enterCinemaMode();
+        }
+      }
+
+      enterCinemaMode() {
+        this.state.isCinemaMode = true;
+        document.body.classList.add('cinema-mode');
+        this.cinemaControls.style.display = 'flex';
+        this.showNotification('Controles de video activados', 'info');
+      }
+
+      exitCinemaMode() {
+        this.state.isCinemaMode = false;
+        document.body.classList.remove('cinema-mode');
+        this.cinemaControls.style.display = 'none';
+      }
+
+      quickSelect(number) {
+        if (number <= this.channelCards.length) {
+          this.playChannel(number - 1);
+        }
+      }
+
+      // Sistema de búsqueda
+      searchChannels() {
+        const query = this.searchBox.value.toLowerCase();
+        
+        if (query === '') {
+          this.state.filteredChannels = [...this.state.channels];
+        } else {
+          this.state.filteredChannels = this.state.channels.filter(channel => 
+            channel.name.toLowerCase().includes(query)
+          );
+        }
+        
+        this.renderChannels();
+      }
+
+      // Historial de visualización
+      addToHistory(channel) {
+        const index = this.state.history.findIndex(hist => hist.url === channel.url);
+        if (index !== -1) {
+          this.state.history.splice(index, 1);
+        }
+        
+        this.state.history.unshift(channel);
+        
+        if (this.state.history.length > 20) {
+          this.state.history.pop();
+        }
+        
+        localStorage.setItem('tvHistory', JSON.stringify(this.state.history));
+      }
+
+      // Utilidades
+      showNotification(message, type = 'info') {
+        this.notification.textContent = message;
+        this.notification.className = `tv-notification ${type} show`;
+        
+        setTimeout(() => {
+          this.notification.classList.remove('show');
+        }, 3000);
+      }
+
+      updateLayout() {
+        const gridWidth = this.channelsGrid.clientWidth;
+        const cardWidth = 180;
+        this.state.columns = Math.max(1, Math.floor(gridWidth / cardWidth));
+      }
+
+      // MEJORADO: Reloj eliminado
+      setupInactivityDetection() {
+        this.resetInactivityTimer();
+      }
+
+      loadInitialData() {
+        this.loadPlaylist(this.state.currentPlaylist, 0);
+      }
+
+      onVideoPlay() {
+        this.btnTogglePlay.textContent = 'Pausa';
+        this.resetInactivityTimer();
+      }
+
+      onVideoPause() {
+        this.btnTogglePlay.textContent = 'Play';
+        clearTimeout(this.state.inactivityTimer);
+        clearInterval(this.state.countdownTimer);
+        this.fullscreenTimer.classList.remove('show');
+      }
+
+      onVideoError(e) {
+        this.showNotification('Error al reproducir el canal', 'error');
+        console.error('Video error:', e);
+      }
+    }
+
+    // Inicializar la consola TV cuando se carga la página
+    document.addEventListener('DOMContentLoaded', () => {
+      window.tvConsole = new TVConsole();
+    });
+
+    // Manejar cambios de tamaño para responsive
+    window.addEventListener('resize', () => {
+      if (window.tvConsole) {
+        window.tvConsole.updateLayout();
+      }
+    });
+  </script>
 </body>
 </html>
-
