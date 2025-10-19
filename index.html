@@ -866,15 +866,12 @@
       }
 
       initializeState() {
-        // Cargar último estado guardado del localStorage
-        const savedState = JSON.parse(localStorage.getItem('tvLastState')) || {};
-        
         this.state = {
-          navMode: savedState.navMode || 'sidebar',
-          sidebarIndex: savedState.sidebarIndex || 0,
-          gridIndex: savedState.gridIndex || 0,
+          navMode: 'sidebar',
+          sidebarIndex: 0,
+          gridIndex: 0,
           submenuIndex: 0,
-          currentPlaylist: savedState.currentPlaylist || 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html',
+          currentPlaylist: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html',
           currentHls: null,
           currentDash: null,
           isCinemaMode: false,
@@ -894,8 +891,6 @@
           autoPlay: localStorage.getItem('autoPlay') !== 'false',
           // Estado para navegación jerárquica
           navigationStack: [],
-          // NUEVO: Estado para recordar última navegación
-          lastNavState: savedState.lastNavState || null,
           preFullscreenState: {
             isCinemaMode: false,
             navMode: 'grid',
@@ -920,56 +915,6 @@
         };
 
         this.updateLayout();
-      }
-
-      // NUEVO: Guardar estado actual en localStorage
-      saveCurrentState() {
-        const stateToSave = {
-          navMode: this.state.navMode,
-          sidebarIndex: this.state.sidebarIndex,
-          gridIndex: this.state.gridIndex,
-          currentPlaylist: this.state.currentPlaylist,
-          lastNavState: this.state.lastNavState
-        };
-        localStorage.setItem('tvLastState', JSON.stringify(stateToSave));
-      }
-
-      // NUEVO: Guardar estado de navegación cuando se navega a una sección
-      saveNavigationState(sectionIndex, sectionName) {
-        this.state.lastNavState = {
-          navMode: this.state.navMode,
-          sidebarIndex: this.state.sidebarIndex,
-          gridIndex: this.state.gridIndex,
-          sectionName: sectionName,
-          playlist: this.state.currentPlaylist,
-          timestamp: Date.now()
-        };
-        this.saveCurrentState();
-      }
-
-      // NUEVO: Restaurar a la última sección navegada
-      restoreLastNavigation() {
-        if (this.state.lastNavState) {
-          // Restaurar el último estado guardado
-          this.state.navMode = this.state.lastNavState.navMode;
-          this.state.sidebarIndex = this.state.lastNavState.sidebarIndex;
-          this.state.gridIndex = this.state.lastNavState.gridIndex || 0;
-          
-          // Si hay una playlist diferente, cargarla
-          if (this.state.lastNavState.playlist && this.state.lastNavState.playlist !== this.state.currentPlaylist) {
-            this.state.currentPlaylist = this.state.lastNavState.playlist;
-            this.loadPlaylist(this.state.lastNavState.playlist, this.state.sidebarIndex);
-          }
-          
-          this.focusCurrentElement();
-          this.showNotification(`Volviendo a ${this.state.lastNavState.sectionName || 'la última sección'}`, 'info');
-        } else {
-          // Si no hay última sección, volver al menú principal por defecto
-          this.state.navMode = 'sidebar';
-          this.state.sidebarIndex = 0;
-          this.focusCurrentElement();
-          this.showNotification('Volviendo al menú principal', 'info');
-        }
       }
 
       // NUEVO: Precarga de recursos críticos
@@ -1927,9 +1872,9 @@
           return;
         }
 
-        // 6. MEJORADO: Si estamos en grid de canales, usar el nuevo sistema de última navegación
+        // 6. MEJORADO: Si estamos en grid de canales, volver al sidebar
         if (this.state.navMode === 'grid') {
-          this.restoreLastNavigation();
+          this.navigateToSidebar();
           return;
         }
 
@@ -1958,6 +1903,169 @@
         }
       }
 
+      // Navegar al sidebar desde el grid
+      navigateToSidebar() {
+        // Guardar estado actual en el stack
+        this.state.navigationStack.push({
+          navMode: this.state.navMode,
+          gridIndex: this.state.gridIndex,
+          filteredChannels: [...this.state.filteredChannels],
+          category: this.currentCategory.textContent
+        });
+
+        // Volver al sidebar
+        this.state.navMode = 'sidebar';
+        this.state.sidebarIndex = 0;
+        this.focusCurrentElement();
+        
+        this.showNotification('Volviendo al menú principal', 'info');
+      }
+
+      // MEJORADO: Manejo de cambios de pantalla completa más robusto
+      handleFullscreenChange() {
+        const isFullscreen = !!(document.fullscreenElement || 
+                                document.webkitFullscreenElement || 
+                                document.mozFullScreenElement || 
+                                document.msFullscreenElement);
+        
+        console.log('Fullscreen change detected:', isFullscreen);
+        
+        if (!isFullscreen && this.state.isFullscreenMode) {
+          // Salida de modo cine detectada
+          console.log('Fullscreen exit detected by browser event');
+          this.state.isFullscreenMode = false;
+          this.videoPlayer.classList.remove('fullscreen-mode');
+          
+          // Restaurar el estado después de salir de modo cine
+          this.restorePreFullscreenState();
+          
+          this.resetInactivityTimer();
+        } else if (isFullscreen && !this.state.isFullscreenMode) {
+          // Entrada en modo cine
+          console.log('Fullscreen enter detected by browser event');
+          this.state.isFullscreenMode = true;
+          this.videoPlayer.classList.add('fullscreen-mode');
+        }
+      }
+
+      // MEJORADO: Salida de pantalla completa optimizada para Fire TV
+      exitFullscreenMode() {
+        console.log('Exiting fullscreen mode...');
+        
+        // Cancelar temporizadores primero
+        clearTimeout(this.state.inactivityTimer);
+        clearInterval(this.state.countdownTimer);
+        this.fullscreenTimer.classList.remove('show');
+        
+        if (this.state.isFullscreenMode) {
+          // Llamar a las APIs nativas de salida de pantalla completa
+          const exitMethods = [
+            () => document.exitFullscreen?.(),
+            () => document.webkitExitFullscreen?.(),
+            () => document.mozCancelFullScreen?.(),
+            () => document.msExitFullscreen?.(),
+            () => this.videoPlayer.webkitExitFullscreen?.()
+          ];
+          
+          // Intentar todos los métodos de salida
+          exitMethods.forEach(method => {
+            try {
+              method().catch(e => console.log('Exit method failed (normal):', e.message));
+            } catch (e) {
+              console.log('Exit method error:', e);
+            }
+          });
+          
+          // Actualizar estado inmediatamente
+          this.state.isFullscreenMode = false;
+          this.videoPlayer.classList.remove('fullscreen-mode');
+          
+          // MEJORADO: Restaurar estado después de un breve delay para asegurar DOM
+          setTimeout(() => {
+            this.restorePreFullscreenState();
+          }, 300);
+        }
+        
+        this.showNotification('Saliste del modo cine - Posición restaurada', 'success');
+      }
+
+      // NUEVO: Método para forzar salida de pantalla completa como fallback
+      forceExitFullscreen() {
+        console.log('Forcing fullscreen exit...');
+        
+        // Intentar múltiples métodos de salida
+        const exitMethods = [
+          () => document.exitFullscreen?.(),
+          () => document.webkitExitFullscreen?.(),
+          () => document.mozCancelFullScreen?.(),
+          () => document.msExitFullscreen?.(),
+          () => this.videoPlayer.webkitExitFullscreen?.()
+        ];
+        
+        exitMethods.forEach(method => {
+          try {
+            method();
+          } catch (e) {
+            console.log('Exit method failed:', e);
+          }
+        });
+        
+        // Forzar actualización de estado
+        this.state.isFullscreenMode = false;
+        this.videoPlayer.classList.remove('fullscreen-mode');
+        this.restorePreFullscreenState();
+      }
+
+      // MEJORADO: Cambiado a "Modo Cine"
+      enterFullscreenMode() {
+        // Guardar el estado completo antes de entrar en modo cine
+        this.savePreFullscreenState();
+        
+        if (this.videoPlayer.requestFullscreen) {
+          this.videoPlayer.requestFullscreen();
+        } else if (this.videoPlayer.webkitRequestFullscreen) {
+          this.videoPlayer.webkitRequestFullscreen();
+        } else if (this.videoPlayer.msRequestFullscreen) {
+          this.videoPlayer.msRequestFullscreen();
+        }
+        
+        this.state.isFullscreenMode = true;
+        this.videoPlayer.classList.add('fullscreen-mode');
+        this.showNotification('Modo cine activado', 'info');
+      }
+
+      selectItem() {
+        if (this.state.navMode === 'sidebar') {
+          const item = this.navItems[this.state.sidebarIndex];
+          if (item.dataset.url) {
+            // Guardar estado actual antes de cambiar
+            this.state.navigationStack.push({
+              navMode: this.state.navMode,
+              sidebarIndex: this.state.sidebarIndex,
+              filteredChannels: [...this.state.filteredChannels],
+              category: this.currentCategory.textContent
+            });
+
+            this.loadPlaylist(item.dataset.url, this.state.sidebarIndex);
+            this.state.navMode = 'grid';
+            this.state.gridIndex = 0;
+            
+            // Actualizar historial del navegador
+            this.updateHistoryState({
+              type: 'main',
+              navMode: 'grid',
+              sidebarIndex: this.state.sidebarIndex,
+              playlist: item.dataset.url,
+              category: item.textContent.trim()
+            }, `Consola TV - ${item.textContent.trim()}`);
+          } else if (item.classList.contains('has-submenu')) {
+            this.openSubmenu(item.dataset.submenu, this.state.sidebarIndex);
+          }
+        } else if (this.state.navMode === 'grid') {
+          this.playChannel(this.state.gridIndex);
+        }
+      }
+
       async loadPlaylist(url, navIndex) {
         this.showNotification('Cargando canales...', 'info');
         this.channelsGrid.innerHTML = '<div class="loading">Cargando canales</div>';
@@ -1972,9 +2080,6 @@
           this.navItems.forEach(item => item.classList.remove('active'));
           this.navItems[navIndex].classList.add('active');
           this.currentCategory.textContent = this.navItems[navIndex].textContent.trim();
-          
-          // NUEVO: Guardar estado de navegación
-          this.saveNavigationState(navIndex, this.navItems[navIndex].textContent.trim());
           
           this.showNotification(`Canales cargados: ${this.state.channels.length}`, 'success');
         } catch (error) {
@@ -2069,41 +2174,6 @@
         }
         
         this.state.isRendering = false;
-      }
-
-      selectItem() {
-        if (this.state.navMode === 'sidebar') {
-          const item = this.navItems[this.state.sidebarIndex];
-          if (item.dataset.url) {
-            // Guardar estado actual antes de cambiar
-            this.state.navigationStack.push({
-              navMode: this.state.navMode,
-              sidebarIndex: this.state.sidebarIndex,
-              filteredChannels: [...this.state.filteredChannels],
-              category: this.currentCategory.textContent
-            });
-
-            this.loadPlaylist(item.dataset.url, this.state.sidebarIndex);
-            this.state.navMode = 'grid';
-            this.state.gridIndex = 0;
-            
-            // NUEVO: Guardar estado de navegación
-            this.saveNavigationState(this.state.sidebarIndex, item.textContent.trim());
-            
-            // Actualizar historial del navegador
-            this.updateHistoryState({
-              type: 'main',
-              navMode: 'grid',
-              sidebarIndex: this.state.sidebarIndex,
-              playlist: item.dataset.url,
-              category: item.textContent.trim()
-            }, `Consola TV - ${item.textContent.trim()}`);
-          } else if (item.classList.contains('has-submenu')) {
-            this.openSubmenu(item.dataset.submenu, this.state.sidebarIndex);
-          }
-        } else if (this.state.navMode === 'grid') {
-          this.playChannel(this.state.gridIndex);
-        }
       }
 
       // NUEVO: Reproductor MPD (MPEG-DASH)
@@ -2373,119 +2443,6 @@
       onVideoError(e) {
         this.showNotification('Error al reproducir el canal', 'error');
         console.error('Video error:', e);
-      }
-
-      // MEJORADO: Cambiado a "Modo Cine"
-      enterFullscreenMode() {
-        // Guardar el estado completo antes de entrar en modo cine
-        this.savePreFullscreenState();
-        
-        if (this.videoPlayer.requestFullscreen) {
-          this.videoPlayer.requestFullscreen();
-        } else if (this.videoPlayer.webkitRequestFullscreen) {
-          this.videoPlayer.webkitRequestFullscreen();
-        } else if (this.videoPlayer.msRequestFullscreen) {
-          this.videoPlayer.msRequestFullscreen();
-        }
-        
-        this.state.isFullscreenMode = true;
-        this.videoPlayer.classList.add('fullscreen-mode');
-        this.showNotification('Modo cine activado', 'info');
-      }
-
-      // MEJORADO: Salida de pantalla completa optimizada para Fire TV
-      exitFullscreenMode() {
-        console.log('Exiting fullscreen mode...');
-        
-        // Cancelar temporizadores primero
-        clearTimeout(this.state.inactivityTimer);
-        clearInterval(this.state.countdownTimer);
-        this.fullscreenTimer.classList.remove('show');
-        
-        if (this.state.isFullscreenMode) {
-          // Llamar a las APIs nativas de salida de pantalla completa
-          const exitMethods = [
-            () => document.exitFullscreen?.(),
-            () => document.webkitExitFullscreen?.(),
-            () => document.mozCancelFullScreen?.(),
-            () => document.msExitFullscreen?.(),
-            () => this.videoPlayer.webkitExitFullscreen?.()
-          ];
-          
-          // Intentar todos los métodos de salida
-          exitMethods.forEach(method => {
-            try {
-              method().catch(e => console.log('Exit method failed (normal):', e.message));
-            } catch (e) {
-              console.log('Exit method error:', e);
-            }
-          });
-          
-          // Actualizar estado inmediatamente
-          this.state.isFullscreenMode = false;
-          this.videoPlayer.classList.remove('fullscreen-mode');
-          
-          // MEJORADO: Restaurar estado después de un breve delay para asegurar DOM
-          setTimeout(() => {
-            this.restorePreFullscreenState();
-          }, 300);
-        }
-        
-        this.showNotification('Saliste del modo cine - Posición restaurada', 'success');
-      }
-
-      // NUEVO: Método para forzar salida de pantalla completa como fallback
-      forceExitFullscreen() {
-        console.log('Forcing fullscreen exit...');
-        
-        // Intentar múltiples métodos de salida
-        const exitMethods = [
-          () => document.exitFullscreen?.(),
-          () => document.webkitExitFullscreen?.(),
-          () => document.mozCancelFullScreen?.(),
-          () => document.msExitFullscreen?.(),
-          () => this.videoPlayer.webkitExitFullscreen?.()
-        ];
-        
-        exitMethods.forEach(method => {
-          try {
-            method();
-          } catch (e) {
-            console.log('Exit method failed:', e);
-          }
-        });
-        
-        // Forzar actualización de estado
-        this.state.isFullscreenMode = false;
-        this.videoPlayer.classList.remove('fullscreen-mode');
-        this.restorePreFullscreenState();
-      }
-
-      // MEJORADO: Manejo de cambios de pantalla completa más robusto
-      handleFullscreenChange() {
-        const isFullscreen = !!(document.fullscreenElement || 
-                                document.webkitFullscreenElement || 
-                                document.mozFullScreenElement || 
-                                document.msFullscreenElement);
-        
-        console.log('Fullscreen change detected:', isFullscreen);
-        
-        if (!isFullscreen && this.state.isFullscreenMode) {
-          // Salida de modo cine detectada
-          console.log('Fullscreen exit detected by browser event');
-          this.state.isFullscreenMode = false;
-          this.videoPlayer.classList.remove('fullscreen-mode');
-          
-          // Restaurar el estado después de salir de modo cine
-          this.restorePreFullscreenState();
-          
-          this.resetInactivityTimer();
-        } else if (isFullscreen && !this.state.isFullscreenMode) {
-          // Entrada en modo cine
-          console.log('Fullscreen enter detected by browser event');
-          this.state.isFullscreenMode = true;
-          this.videoPlayer.classList.add('fullscreen-mode');
-        }
       }
     }
 
