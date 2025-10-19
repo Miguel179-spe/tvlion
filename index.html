@@ -38,7 +38,7 @@
       -webkit-user-select: none;
     }
     
-    /* Layout Principal */
+    /* Layout Principal - OPTIMIZADO */
     .tv-container {
       display: flex;
       width: 100%;
@@ -54,10 +54,7 @@
       flex-direction: column;
       transition: transform 0.3s ease;
       z-index: 100;
-    }
-    
-    .sidebar.hidden {
-      transform: translateX(-100%);
+      will-change: transform;
     }
     
     .content-area {
@@ -255,7 +252,7 @@
       box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
     }
     
-    /* Grid de Canales TV */
+    /* Grid de Canales TV - OPTIMIZADO */
     .channels-grid {
       flex: 1;
       padding: 20px;
@@ -264,6 +261,8 @@
       gap: 15px;
       overflow-y: auto;
       background: rgba(10, 10, 10, 0.8);
+      will-change: transform;
+      transform: translateZ(0);
     }
     
     .channel-card {
@@ -279,6 +278,8 @@
       justify-content: space-between;
       position: relative;
       overflow: hidden;
+      transform: translateZ(0);
+      will-change: transform;
     }
     
     .channel-card::before {
@@ -808,6 +809,9 @@
         this.setupHistoryState();
         this.initializeSubmenus();
         this.setupVideoPlayer();
+        
+        // OPTIMIZACIÓN: Precargar recursos críticos
+        this.preloadCriticalResources();
       }
 
       initializeElements() {
@@ -856,15 +860,21 @@
         this.videoTracks = document.getElementById('videoTracks');
         this.subtitleTracks = document.getElementById('subtitleTracks');
         this.speedSelector = document.getElementById('speedSelector');
+        
+        // OPTIMIZACIÓN: Cache de elementos frecuentemente accedidos
+        this.cachedElements = new Map();
       }
 
       initializeState() {
+        // Cargar último estado guardado del localStorage
+        const savedState = JSON.parse(localStorage.getItem('tvLastState')) || {};
+        
         this.state = {
-          navMode: 'sidebar',
-          sidebarIndex: 0,
-          gridIndex: 0,
+          navMode: savedState.navMode || 'sidebar',
+          sidebarIndex: savedState.sidebarIndex || 0,
+          gridIndex: savedState.gridIndex || 0,
           submenuIndex: 0,
-          currentPlaylist: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html',
+          currentPlaylist: savedState.currentPlaylist || 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html',
           currentHls: null,
           currentDash: null,
           isCinemaMode: false,
@@ -884,6 +894,8 @@
           autoPlay: localStorage.getItem('autoPlay') !== 'false',
           // Estado para navegación jerárquica
           navigationStack: [],
+          // NUEVO: Estado para recordar última navegación
+          lastNavState: savedState.lastNavState || null,
           preFullscreenState: {
             isCinemaMode: false,
             navMode: 'grid',
@@ -899,10 +911,251 @@
           playbackRates: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
           currentPlaybackRate: 1.0,
           showTracks: false,
-          showSpeedSelector: false
+          showSpeedSelector: false,
+          // OPTIMIZACIÓN: Flags de rendimiento
+          isRendering: false,
+          lastRenderTime: 0,
+          keyThrottle: false,
+          searchThrottle: null
         };
 
         this.updateLayout();
+      }
+
+      // NUEVO: Guardar estado actual en localStorage
+      saveCurrentState() {
+        const stateToSave = {
+          navMode: this.state.navMode,
+          sidebarIndex: this.state.sidebarIndex,
+          gridIndex: this.state.gridIndex,
+          currentPlaylist: this.state.currentPlaylist,
+          lastNavState: this.state.lastNavState
+        };
+        localStorage.setItem('tvLastState', JSON.stringify(stateToSave));
+      }
+
+      // NUEVO: Guardar estado de navegación cuando se navega a una sección
+      saveNavigationState(sectionIndex, sectionName) {
+        this.state.lastNavState = {
+          navMode: this.state.navMode,
+          sidebarIndex: this.state.sidebarIndex,
+          gridIndex: this.state.gridIndex,
+          sectionName: sectionName,
+          playlist: this.state.currentPlaylist,
+          timestamp: Date.now()
+        };
+        this.saveCurrentState();
+      }
+
+      // NUEVO: Restaurar a la última sección navegada
+      restoreLastNavigation() {
+        if (this.state.lastNavState) {
+          // Restaurar el último estado guardado
+          this.state.navMode = this.state.lastNavState.navMode;
+          this.state.sidebarIndex = this.state.lastNavState.sidebarIndex;
+          this.state.gridIndex = this.state.lastNavState.gridIndex || 0;
+          
+          // Si hay una playlist diferente, cargarla
+          if (this.state.lastNavState.playlist && this.state.lastNavState.playlist !== this.state.currentPlaylist) {
+            this.state.currentPlaylist = this.state.lastNavState.playlist;
+            this.loadPlaylist(this.state.lastNavState.playlist, this.state.sidebarIndex);
+          }
+          
+          this.focusCurrentElement();
+          this.showNotification(`Volviendo a ${this.state.lastNavState.sectionName || 'la última sección'}`, 'info');
+        } else {
+          // Si no hay última sección, volver al menú principal por defecto
+          this.state.navMode = 'sidebar';
+          this.state.sidebarIndex = 0;
+          this.focusCurrentElement();
+          this.showNotification('Volviendo al menú principal', 'info');
+        }
+      }
+
+      // NUEVO: Precarga de recursos críticos
+      preloadCriticalResources() {
+        // Precargar imágenes placeholder para mejor experiencia
+        const placeholderImg = new Image();
+        placeholderImg.src = 'https://via.placeholder.com/150x80?text=No+Logo';
+      }
+
+      // MEJORADO: Guardar estado completo antes de entrar en modo cine
+      savePreFullscreenState() {
+        this.state.preFullscreenState = {
+          isCinemaMode: this.state.isCinemaMode,
+          navMode: this.state.navMode,
+          gridIndex: this.state.gridIndex,
+          sidebarIndex: this.state.sidebarIndex,
+          gridScrollTop: this.channelsGrid.scrollTop,
+          activeElement: document.activeElement,
+          searchText: this.searchBox.value,
+          isSearching: this.state.isSearching,
+          navigationStack: [...this.state.navigationStack],
+          // NUEVO: Guardar el canal actual que se está reproduciendo
+          currentChannelIndex: this.state.gridIndex,
+          currentChannelUrl: this.videoPlayer.src,
+          // NUEVO: Guardar estado de reproducción
+          wasPlaying: !this.videoPlayer.paused,
+          currentTime: this.videoPlayer.currentTime
+        };
+        
+        console.log('Estado guardado:', {
+          gridIndex: this.state.gridIndex,
+          gridScrollTop: this.channelsGrid.scrollTop,
+          currentChannelIndex: this.state.gridIndex
+        });
+      }
+
+      // MEJORADO: Restaurar estado completo después de salir de modo cine
+      restorePreFullscreenState() {
+        if (!this.state.preFullscreenState) return;
+        
+        const prevState = this.state.preFullscreenState;
+        
+        console.log('Restaurando estado:', {
+          gridIndex: prevState.gridIndex,
+          gridScrollTop: prevState.gridScrollTop,
+          currentChannelIndex: prevState.currentChannelIndex
+        });
+
+        // Restaurar modo controles video
+        if (prevState.isCinemaMode && !this.state.isCinemaMode) {
+          this.enterCinemaMode();
+        } else if (!prevState.isCinemaMode && this.state.isCinemaMode) {
+          this.exitCinemaMode();
+        }
+        
+        // NUEVO: Restaurar índice del grid PRIMERO
+        if (prevState.gridIndex !== undefined) {
+          this.state.gridIndex = prevState.gridIndex;
+        }
+        
+        // Restaurar modo de navegación e índices
+        this.state.navMode = prevState.navMode;
+        this.state.sidebarIndex = prevState.sidebarIndex;
+        
+        // Restaurar stack de navegación
+        this.state.navigationStack = [...prevState.navigationStack];
+        
+        // MEJORADO: Restaurar posición de scroll del grid con verificación
+        if (prevState.gridScrollTop !== undefined && this.channelsGrid) {
+          setTimeout(() => {
+            if (this.channelsGrid) {
+              this.channelsGrid.scrollTop = prevState.gridScrollTop;
+              console.log('Scroll restaurado a:', prevState.gridScrollTop);
+            }
+          }, 100);
+        }
+        
+        // Restaurar búsqueda
+        if (prevState.searchText !== undefined) {
+          this.searchBox.value = prevState.searchText;
+        }
+        this.state.isSearching = prevState.isSearching;
+        
+        // NUEVO: Restaurar estado de reproducción si había un canal
+        if (prevState.currentChannelUrl && prevState.wasPlaying) {
+          setTimeout(() => {
+            if (this.videoPlayer.src === prevState.currentChannelUrl) {
+              this.videoPlayer.currentTime = prevState.currentTime || 0;
+            }
+          }, 200);
+        }
+        
+        // MEJORADO: Enfocar el elemento actual con retardo para asegurar renderizado
+        setTimeout(() => {
+          this.focusCurrentElement();
+          
+          // NUEVO: Resaltar el canal que se estaba reproduciendo
+          if (this.channelCards.length > 0 && this.state.gridIndex < this.channelCards.length) {
+            this.channelCards[this.state.gridIndex].classList.add('focused');
+            this.channelCards[this.state.gridIndex].scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'center' 
+            });
+          }
+        }, 150);
+        
+        // NUEVO: Verificar y corregir el estado de navegación
+        setTimeout(() => {
+          this.verifyAndCorrectNavigationState();
+        }, 200);
+        
+        this.showNotification('Posición restaurada', 'success');
+      }
+
+      // NUEVO: Método para verificar y corregir estado de navegación
+      verifyAndCorrectNavigationState() {
+        // Verificar que gridIndex esté dentro de los límites
+        if (this.channelCards.length > 0 && this.state.gridIndex >= this.channelCards.length) {
+          this.state.gridIndex = this.channelCards.length - 1;
+          console.log('Grid index corregido a:', this.state.gridIndex);
+        }
+        
+        // Verificar que sidebarIndex esté dentro de los límites
+        if (this.navItems.length > 0 && this.state.sidebarIndex >= this.navItems.length) {
+          this.state.sidebarIndex = this.navItems.length - 1;
+          console.log('Sidebar index corregido a:', this.state.sidebarIndex);
+        }
+        
+        // Forzar actualización visual
+        this.focusCurrentElement();
+      }
+
+      // MEJORADO: Enfocar el elemento actual basado en el estado
+      focusCurrentElement() {
+        console.log('Enfocando elemento:', {
+          navMode: this.state.navMode,
+          gridIndex: this.state.gridIndex,
+          sidebarIndex: this.state.sidebarIndex,
+          channelCardsLength: this.channelCards.length
+        });
+
+        // Limpiar todos los focos primero
+        this.navItems.forEach(item => item.classList.remove('focused'));
+        this.channelCards.forEach(card => card.classList.remove('focused'));
+        this.submenuItemsElements.forEach(item => item.classList.remove('focused'));
+        
+        if (this.state.navMode === 'sidebar' && this.navItems.length > 0) {
+          const index = Math.min(this.state.sidebarIndex, this.navItems.length - 1);
+          this.navItems[index].classList.add('focused');
+          this.navItems[index].scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'nearest' 
+          });
+        } else if (this.state.navMode === 'grid' && this.channelCards.length > 0) {
+          const index = Math.min(this.state.gridIndex, this.channelCards.length - 1);
+          this.channelCards[index].classList.add('focused');
+          
+          // MEJORADO: Scroll más inteligente
+          const cardRect = this.channelCards[index].getBoundingClientRect();
+          const gridRect = this.channelsGrid.getBoundingClientRect();
+          
+          if (cardRect.bottom > gridRect.bottom || cardRect.top < gridRect.top) {
+            this.channelCards[index].scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'center' 
+            });
+          }
+        } else if (this.state.navMode === 'submenu' && this.submenuItemsElements.length > 0) {
+          const index = Math.min(this.state.submenuIndex, this.submenuItemsElements.length - 1);
+          this.submenuItemsElements[index].classList.add('focused');
+          this.submenuItemsElements[index].scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'nearest' 
+          });
+        }
+        
+        // Restaurar foco en el elemento activo si era un input
+        if (this.state.preFullscreenState && this.state.preFullscreenState.activeElement) {
+          const prevActive = this.state.preFullscreenState.activeElement;
+          if ((prevActive.tagName === 'INPUT' || prevActive.tagName === 'TEXTAREA') && 
+              document.body.contains(prevActive)) {
+            setTimeout(() => {
+              prevActive.focus();
+            }, 200);
+          }
+        }
       }
 
       // Configurar el reproductor de video
@@ -1173,7 +1426,7 @@
             { name: 'NBA', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/NBA.html' },
             { name: 'MLB', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/MLB.html' },
             { name: 'NFL', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/NFL.html' },
-            { name: 'FUTBOL', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/futbol.html' }
+            { name: 'MLB 5', url: 'https://iptv-org.github.io/iptv/categories/music.m3u' }
           ]
         };
       }
@@ -1236,7 +1489,7 @@
       }
 
       setupEventListeners() {
-        // Navegación por teclado MEJORADA para TV
+        // Navegación por teclado MEJORADA para Fire TV
         document.addEventListener('keydown', (e) => this.handleKeyNavigation(e));
         
         // Evento keydown para submenús
@@ -1256,8 +1509,8 @@
         // Botón de volver en submenú
         this.submenuBack.addEventListener('click', () => this.closeSubmenu());
         
-        // Búsqueda
-        this.searchBox.addEventListener('input', () => this.searchChannels());
+        // Búsqueda OPTIMIZADA con throttling
+        this.searchBox.addEventListener('input', () => this.throttledSearch());
         this.searchBox.addEventListener('focus', () => this.state.isSearching = true);
         this.searchBox.addEventListener('blur', () => this.state.isSearching = false);
         
@@ -1286,18 +1539,46 @@
         document.addEventListener('mozfullscreenchange', () => this.handleFullscreenChange());
         document.addEventListener('MSFullscreenChange', () => this.handleFullscreenChange());
         
-        // Listener global para tecla BACK como respaldo
+        // MEJORADO: Listener global para tecla BACK optimizado para Fire TV
         document.addEventListener("keydown", (e) => {
-          // Detección multiplataforma de tecla BACK
-          if (this.state.isFullscreenMode && (
-            e.key === "Backspace" ||    // tecla retroceso
-            e.key === "BrowserBack" ||  // en algunos navegadores Smart TV
-            e.keyCode === 8             // compatibilidad general
-          )) {
-            e.preventDefault(); // evita retroceder página
+          const isBackKey = e.key === "Volver" || 
+                           e.key === "BrowserBack" || 
+                           e.keyCode === 8 ||
+                           e.key === "Volver" ||
+                           (e.key === "MediaPlayPause" && this.state.isFullscreenMode);
+          
+          if (this.state.isFullscreenMode && isBackKey) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Global back key handler triggered');
             this.exitFullscreenMode();
+            
+            // Fallback: forzar salida si no responde
+            setTimeout(() => {
+              if (this.state.isFullscreenMode) {
+                console.log('Fallback: forcing fullscreen exit');
+                this.forceExitFullscreen();
+              }
+            }, 500);
           }
         });
+
+        // NUEVO: Detectar cuando el video pierde el foco (útil para Fire TV)
+        this.videoPlayer.addEventListener('blur', () => {
+          if (this.state.isFullscreenMode) {
+            console.log('Video player lost focus in fullscreen mode');
+          }
+        });
+      }
+
+      // OPTIMIZACIÓN: Throttling para búsqueda
+      throttledSearch() {
+        if (this.state.searchThrottle) {
+          clearTimeout(this.state.searchThrottle);
+        }
+        this.state.searchThrottle = setTimeout(() => {
+          this.searchChannels();
+        }, 150); // Reducido de 300ms a 150ms para mejor respuesta
       }
 
       // MEJORADO: Manejo de navegación por teclado en submenús
@@ -1318,14 +1599,12 @@
             this.closeSubmenu();
             break;
           case 'ArrowRight':
-            // Si estamos en submenú, la flecha derecha puede abrir otro nivel
-            // Por ahora, simplemente no hacemos nada
             break;
           case 'Enter': 
             this.selectSubmenuItem();
             break;
-          case 'Escape': 
-          case 'Backspace':
+          case 'Volver': 
+          case 'Volver':
             this.closeSubmenu();
             break;
           case 'm': 
@@ -1410,6 +1689,9 @@
         this.submenuItems.innerHTML = '';
         this.submenuItemsElements = [];
         
+        // OPTIMIZACIÓN: Usar DocumentFragment para mejor rendimiento
+        const fragment = document.createDocumentFragment();
+        
         items.forEach((item, index) => {
           const div = document.createElement('div');
           div.className = 'submenu-item';
@@ -1422,12 +1704,14 @@
             this.selectSubmenuItem();
           });
           
-          this.submenuItems.appendChild(div);
+          fragment.appendChild(div);
           this.submenuItemsElements.push(div);
         });
+        
+        this.submenuItems.appendChild(fragment);
       }
 
-      // MEJORADO: Manejo de teclado con navegación mejorada
+      // MEJORADO: Manejo de teclado optimizado para Fire TV con throttling
       handleKeyNavigation(e) {
         // Si estamos en submenú, dejar que handleSubmenuKeyNavigation maneje la tecla
         if (this.state.isSubmenuVisible) {
@@ -1435,21 +1719,32 @@
           return;
         }
         
+        // OPTIMIZACIÓN: Throttling para teclas rápidas
+        if (this.state.keyThrottle) return;
+        this.state.keyThrottle = true;
+        setTimeout(() => {
+          this.state.keyThrottle = false;
+        }, 50); // 50ms de throttling para navegación
+        
         e.preventDefault();
         this.resetInactivityTimer();
         
-        // Detección de tecla BACK para salir del modo cine
-        if (this.state.isFullscreenMode && (
-            e.key === "Backspace" ||    // tecla retroceso
-            e.key === "BrowserBack" ||  // en algunos navegadores Smart TV
-            e.keyCode === 8             // compatibilidad general
-        )) {
-            e.preventDefault(); // evita retroceder página
-            this.exitFullscreenMode();
-            return;
+        // MEJORADO: Detección mejorada de tecla BACK para Fire TV
+        const isBackKey = e.key === "Volver" || 
+                         e.key === "BrowserBack" || 
+                         e.keyCode === 8 ||
+                         e.key === "Volver" || // ESC también como BACK
+                         (e.key === "MediaPlayPause" && this.state.isFullscreenMode); // Botón Play/Pause como BACK en modo cine
+        
+        // MEJORADO: Manejo prioritario de tecla BACK
+        if (isBackKey && this.state.isFullscreenMode) {
+          e.preventDefault();
+          e.stopPropagation();
+          this.exitFullscreenMode();
+          return;
         }
         
-        if (this.state.isSearching && e.key !== 'Escape' && e.key !== 'Backspace') {
+        if (this.state.isSearching && e.key !== 'Volver' && e.key !== 'Volver') {
           return;
         }
         
@@ -1467,32 +1762,37 @@
             this.navigate(0, 1); 
             break;
           case 'Enter': 
+          case 'MediaPlayPause': // Botón Play/Pause como Enter
             this.selectItem(); 
             break;
           case ' ': 
             this.togglePlayPause(); 
             break;
           case 'f': case 'F': 
+          case 'MediaFastForward': // Botón Avance rápido como Fullscreen
             this.toggleFullscreen(); 
             break;
           case 'c': case 'C': 
+          case 'MediaRewind': // Botón Retroceso como Cinema mode
             this.toggleCinemaMode(); 
             break;
           case 's': case 'S': 
             this.searchBox.focus(); 
             break;
-          case 'Escape': 
-            this.handleEscapeOrBack(); 
-            break;
-          case 'Backspace': 
-            // Solo manejar Backspace si NO estamos en modo cine completo
-            if (!this.state.isFullscreenMode) {
-                this.handleEscapeOrBack();
-            }
+          case 'Volver': 
+          case 'Volver':
+            this.handleVolverOrBack(); 
             break;
           case '1': case '2': case '3': case '4': case '5': 
           case '6': case '7': case '8': case '9': 
             this.quickSelect(parseInt(e.key)); 
+            break;
+          // MEJORADO: Teclas de medios para Fire TV
+          case 'MediaStop':
+            this.togglePlayPause();
+            break;
+          case 'AudioVolumeMute':
+            this.toggleMute();
             break;
         }
       }
@@ -1521,8 +1821,6 @@
         
         // MEJORADO: Si estamos en sidebar y presionamos flecha izquierda, navegar entre secciones del sidebar
         if (colDelta < 0) {
-          // Podemos implementar navegación entre diferentes grupos del sidebar si es necesario
-          // Por ahora simplemente no hacemos nada o podemos mostrar un mensaje
           this.showNotification('Ya estás en el menú de navegación', 'info');
           return;
         }
@@ -1574,11 +1872,11 @@
         this.state.gridIndex = newIndex;
         this.channelCards[newIndex].classList.add('focused');
         
-        // Solo hacer scroll si es necesario
+        // OPTIMIZACIÓN: Solo hacer scroll si es realmente necesario
         const cardRect = this.channelCards[newIndex].getBoundingClientRect();
         const gridRect = this.channelsGrid.getBoundingClientRect();
         
-        if (cardRect.bottom > gridRect.bottom || cardRect.top < gridRect.top) {
+        if (cardRect.bottom > gridRect.bottom + 50 || cardRect.top < gridRect.top - 50) {
           this.channelCards[newIndex].scrollIntoView({ 
             behavior: 'smooth', 
             block: 'nearest' 
@@ -1586,9 +1884,9 @@
         }
       }
 
-      // MANEJO UNIFICADO DE ESCAPE Y BOTÓN ATRÁS - MEJORADO
-      handleEscapeOrBack() {
-        console.log('Escape/Back pressed - Current state:', {
+      // MANEJO UNIFICADO DE Volver Y BOTÓN Volver - MEJORADO
+      handleVolverOrBack() {
+        console.log('Volver/Back pressed - Current state:', {
           isSearching: this.state.isSearching,
           isFullscreenMode: this.state.isFullscreenMode,
           isCinemaMode: this.state.isCinemaMode,
@@ -1611,11 +1909,11 @@
           return;
         }
 
-        // 3. ESCAPE ya NO sale del modo cine - solo BACK lo hace
-        // if (this.state.isFullscreenMode) {
-        //     this.exitFullscreenMode();
-        //     return;
-        // }
+        // 3. MEJORADO: Si estamos en modo cine completo, salir con BACK
+        if (this.state.isFullscreenMode) {
+          this.exitFullscreenMode();
+          return;
+        }
 
         // 4. Si estamos en modo controles video, salir del modo
         if (this.state.isCinemaMode) {
@@ -1623,15 +1921,15 @@
           return;
         }
 
-        // 5. Navegación jerárquica - Si hay elementos en el stack, volver atrás
+        // 5. Navegación jerárquica - Si hay elementos en el stack, volver Volver
         if (this.state.navigationStack.length > 0) {
           this.navigateBack();
           return;
         }
 
-        // 6. MEJORADO: Si estamos en grid de canales, volver al sidebar con flecha izquierda
+        // 6. MEJORADO: Si estamos en grid de canales, usar el nuevo sistema de última navegación
         if (this.state.navMode === 'grid') {
-          this.navigateToSidebar();
+          this.restoreLastNavigation();
           return;
         }
 
@@ -1642,7 +1940,7 @@
         }
       }
 
-      // Navegación jerárquica hacia atrás
+      // Navegación jerárquica hacia Volver
       navigateBack() {
         const previousState = this.state.navigationStack.pop();
         
@@ -1656,221 +1954,7 @@
           this.renderChannels();
           this.focusCurrentElement();
           
-          this.showNotification('Volviendo atrás...', 'info');
-        }
-      }
-
-      // Navegar al sidebar desde el grid
-      navigateToSidebar() {
-        // Guardar estado actual en el stack
-        this.state.navigationStack.push({
-          navMode: this.state.navMode,
-          gridIndex: this.state.gridIndex,
-          filteredChannels: [...this.state.filteredChannels],
-          category: this.currentCategory.textContent
-        });
-
-        // Volver al sidebar
-        this.state.navMode = 'sidebar';
-        this.state.sidebarIndex = 0;
-        this.focusCurrentElement();
-        
-        this.showNotification('Volviendo al menú principal', 'info');
-      }
-
-      // MÉTODO handleFullscreenChange SIMPLIFICADO
-      handleFullscreenChange() {
-        const isFullscreen = !!(document.fullscreenElement || 
-                                document.webkitFullscreenElement || 
-                                document.mozFullScreenElement || 
-                                document.msFullscreenElement);
-        
-        if (!isFullscreen && this.state.isFullscreenMode) {
-          // Salida de modo cine detectada
-          this.state.isFullscreenMode = false;
-          this.videoPlayer.classList.remove('fullscreen-mode');
-          
-          // Restaurar el estado después de salir de modo cine
-          this.restorePreFullscreenState();
-          
-          this.resetInactivityTimer();
-        } else if (isFullscreen && !this.state.isFullscreenMode) {
-          // Entrada en modo cine
-          this.state.isFullscreenMode = true;
-          this.videoPlayer.classList.add('fullscreen-mode');
-        }
-      }
-
-      // MÉTODO exitFullscreenMode - MEJORADO (modo cine)
-      exitFullscreenMode() {
-        // Primero restaurar el estado previo
-        this.restorePreFullscreenState();
-        
-        // Luego salir de modo cine
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-          document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-          document.msExitFullscreen();
-        }
-        
-        // Actualizar estado inmediatamente
-        this.state.isFullscreenMode = false;
-        this.videoPlayer.classList.remove('fullscreen-mode');
-        
-        // Cancelar cualquier temporizador activo
-        clearTimeout(this.state.inactivityTimer);
-        clearInterval(this.state.countdownTimer);
-        this.fullscreenTimer.classList.remove('show');
-        
-        this.showNotification('Saliste del modo cine con tecla BACK', 'info');
-      }
-
-      // Guardar estado completo antes de entrar en modo cine
-      savePreFullscreenState() {
-        this.state.preFullscreenState = {
-          isCinemaMode: this.state.isCinemaMode,
-          navMode: this.state.navMode,
-          gridIndex: this.state.gridIndex,
-          sidebarIndex: this.state.sidebarIndex,
-          gridScrollTop: this.channelsGrid.scrollTop,
-          activeElement: document.activeElement,
-          searchText: this.searchBox.value,
-          isSearching: this.state.isSearching,
-          navigationStack: [...this.state.navigationStack]
-        };
-      }
-
-      // Restaurar estado completo después de salir de modo cine
-      restorePreFullscreenState() {
-        if (!this.state.preFullscreenState) return;
-        
-        const prevState = this.state.preFullscreenState;
-        
-        // Restaurar modo controles video
-        if (prevState.isCinemaMode && !this.state.isCinemaMode) {
-          this.enterCinemaMode();
-        } else if (!prevState.isCinemaMode && this.state.isCinemaMode) {
-          this.exitCinemaMode();
-        }
-        
-        // Restaurar modo de navegación e índices
-        this.state.navMode = prevState.navMode;
-        this.state.gridIndex = prevState.gridIndex;
-        this.state.sidebarIndex = prevState.sidebarIndex;
-        
-        // Restaurar stack de navegación
-        this.state.navigationStack = [...prevState.navigationStack];
-        
-        // Restaurar posición de scroll del grid
-        if (prevState.gridScrollTop !== undefined) {
-          setTimeout(() => {
-            this.channelsGrid.scrollTop = prevState.gridScrollTop;
-          }, 50);
-        }
-        
-        // Restaurar búsqueda
-        if (prevState.searchText !== undefined) {
-          this.searchBox.value = prevState.searchText;
-        }
-        this.state.isSearching = prevState.isSearching;
-        
-        // Asegurar que el canal enfocado se mantenga visible
-        setTimeout(() => {
-          this.focusCurrentElement();
-        }, 100);
-      }
-
-      // Enfocar el elemento actual basado en el estado
-      focusCurrentElement() {
-        if (this.state.navMode === 'sidebar' && this.navItems.length > 0) {
-          this.navItems.forEach(item => item.classList.remove('focused'));
-          if (this.state.sidebarIndex < this.navItems.length) {
-            this.navItems[this.state.sidebarIndex].classList.add('focused');
-            this.navItems[this.state.sidebarIndex].scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'nearest' 
-            });
-          }
-        } else if (this.state.navMode === 'grid' && this.channelCards.length > 0) {
-          this.channelCards.forEach(card => card.classList.remove('focused'));
-          if (this.state.gridIndex < this.channelCards.length) {
-            this.channelCards[this.state.gridIndex].classList.add('focused');
-            this.channelCards[this.state.gridIndex].scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'nearest' 
-            });
-          }
-        } else if (this.state.navMode === 'submenu' && this.submenuItemsElements.length > 0) {
-          this.submenuItemsElements.forEach(item => item.classList.remove('focused'));
-          if (this.state.submenuIndex < this.submenuItemsElements.length) {
-            this.submenuItemsElements[this.state.submenuIndex].classList.add('focused');
-            this.submenuItemsElements[this.state.submenuIndex].scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'nearest' 
-            });
-          }
-        }
-        
-        // Restaurar foco en el elemento activo si era un input
-        if (this.state.preFullscreenState && this.state.preFullscreenState.activeElement) {
-          const prevActive = this.state.preFullscreenState.activeElement;
-          if (prevActive.tagName === 'INPUT' || prevActive.tagName === 'TEXTAREA') {
-            setTimeout(() => {
-              prevActive.focus();
-            }, 150);
-          }
-        }
-      }
-
-      // MEJORADO: Cambiado a "Modo Cine"
-      enterFullscreenMode() {
-        // Guardar el estado completo antes de entrar en modo cine
-        this.savePreFullscreenState();
-        
-        if (this.videoPlayer.requestFullscreen) {
-          this.videoPlayer.requestFullscreen();
-        } else if (this.videoPlayer.webkitRequestFullscreen) {
-          this.videoPlayer.webkitRequestFullscreen();
-        } else if (this.videoPlayer.msRequestFullscreen) {
-          this.videoPlayer.msRequestFullscreen();
-        }
-        
-        this.state.isFullscreenMode = true;
-        this.videoPlayer.classList.add('fullscreen-mode');
-        this.showNotification('Modo cine activado', 'info');
-      }
-
-      selectItem() {
-        if (this.state.navMode === 'sidebar') {
-          const item = this.navItems[this.state.sidebarIndex];
-          if (item.dataset.url) {
-            // Guardar estado actual antes de cambiar
-            this.state.navigationStack.push({
-              navMode: this.state.navMode,
-              sidebarIndex: this.state.sidebarIndex,
-              filteredChannels: [...this.state.filteredChannels],
-              category: this.currentCategory.textContent
-            });
-
-            this.loadPlaylist(item.dataset.url, this.state.sidebarIndex);
-            this.state.navMode = 'grid';
-            this.state.gridIndex = 0;
-            
-            // Actualizar historial del navegador
-            this.updateHistoryState({
-              type: 'main',
-              navMode: 'grid',
-              sidebarIndex: this.state.sidebarIndex,
-              playlist: item.dataset.url,
-              category: item.textContent.trim()
-            }, `Consola TV - ${item.textContent.trim()}`);
-          } else if (item.classList.contains('has-submenu')) {
-            this.openSubmenu(item.dataset.submenu, this.state.sidebarIndex);
-          }
-        } else if (this.state.navMode === 'grid') {
-          this.playChannel(this.state.gridIndex);
+          this.showNotification('Volviendo Volver...', 'info');
         }
       }
 
@@ -1888,6 +1972,9 @@
           this.navItems.forEach(item => item.classList.remove('active'));
           this.navItems[navIndex].classList.add('active');
           this.currentCategory.textContent = this.navItems[navIndex].textContent.trim();
+          
+          // NUEVO: Guardar estado de navegación
+          this.saveNavigationState(navIndex, this.navItems[navIndex].textContent.trim());
           
           this.showNotification(`Canales cargados: ${this.state.channels.length}`, 'success');
         } catch (error) {
@@ -1919,15 +2006,34 @@
         this.renderChannels();
       }
 
-      // MEJORADO: Renderizado sin numeración
+      // MEJORADO: Renderizado optimizado con DocumentFragment
       renderChannels() {
+        // OPTIMIZACIÓN: Evitar renderizado múltiple simultáneo
+        if (this.state.isRendering) return;
+        this.state.isRendering = true;
+        
+        const now = Date.now();
+        if (now - this.state.lastRenderTime < 100) { // Throttle a 100ms
+          setTimeout(() => {
+            this.state.isRendering = false;
+            this.renderChannels();
+          }, 100);
+          return;
+        }
+        
+        this.state.lastRenderTime = now;
+        
         this.channelsGrid.innerHTML = "";
         this.channelCards = [];
         
         if (this.state.filteredChannels.length === 0) {
           this.channelsGrid.innerHTML = '<div class="error">No se encontraron canales</div>';
+          this.state.isRendering = false;
           return;
         }
+        
+        // OPTIMIZACIÓN: Usar DocumentFragment para mejor rendimiento
+        const fragment = document.createDocumentFragment();
         
         this.state.filteredChannels.forEach((channel, index) => {
           const div = document.createElement("div");
@@ -1949,16 +2055,54 @@
 
           div.addEventListener("click", () => this.playChannel(index));
 
-          this.channelsGrid.appendChild(div);
+          fragment.appendChild(div);
           this.channelCards.push(div);
         });
         
+        this.channelsGrid.appendChild(fragment);
         this.channelCount.textContent = `${this.state.filteredChannels.length} canales`;
         this.updateLayout();
         
         // Enfocar primer canal
         if (this.channelCards.length > 0) {
           this.channelCards[0].classList.add('focused');
+        }
+        
+        this.state.isRendering = false;
+      }
+
+      selectItem() {
+        if (this.state.navMode === 'sidebar') {
+          const item = this.navItems[this.state.sidebarIndex];
+          if (item.dataset.url) {
+            // Guardar estado actual antes de cambiar
+            this.state.navigationStack.push({
+              navMode: this.state.navMode,
+              sidebarIndex: this.state.sidebarIndex,
+              filteredChannels: [...this.state.filteredChannels],
+              category: this.currentCategory.textContent
+            });
+
+            this.loadPlaylist(item.dataset.url, this.state.sidebarIndex);
+            this.state.navMode = 'grid';
+            this.state.gridIndex = 0;
+            
+            // NUEVO: Guardar estado de navegación
+            this.saveNavigationState(this.state.sidebarIndex, item.textContent.trim());
+            
+            // Actualizar historial del navegador
+            this.updateHistoryState({
+              type: 'main',
+              navMode: 'grid',
+              sidebarIndex: this.state.sidebarIndex,
+              playlist: item.dataset.url,
+              category: item.textContent.trim()
+            }, `Consola TV - ${item.textContent.trim()}`);
+          } else if (item.classList.contains('has-submenu')) {
+            this.openSubmenu(item.dataset.submenu, this.state.sidebarIndex);
+          }
+        } else if (this.state.navMode === 'grid') {
+          this.playChannel(this.state.gridIndex);
         }
       }
 
@@ -1986,7 +2130,11 @@
           
           this.state.currentHls = new Hls({
             enableWorker: false,
-            lowLatencyMode: true
+            lowLatencyMode: true,
+            // OPTIMIZACIÓN: Configuraciones de rendimiento
+            maxBufferLength: 30,
+            maxMaxBufferLength: 60,
+            backBufferLength: 30
           });
           this.state.currentHls.loadSource(url);
           this.state.currentHls.attachMedia(this.videoPlayer);
@@ -2021,62 +2169,6 @@
           console.error('Error play M3U:', e);
           this.showNotification('Error al reproducir el canal', 'error');
         });
-      }
-
-      // NUEVO: Soporte EPG (Electronic Program Guide)
-      loadEPG(epgUrl) {
-        fetch(epgUrl)
-          .then(response => response.text())
-          .then(data => {
-            this.parseEPG(data);
-            this.showNotification('Guía de programación cargada', 'success');
-          })
-          .catch(error => {
-            console.error('Error loading EPG:', error);
-            this.showNotification('Error al cargar la guía de programación', 'error');
-          });
-      }
-
-      // NUEVO: Parsear datos EPG (formato XMLTV simplificado)
-      parseEPG(data) {
-        // Esta es una implementación básica para parsear EPG
-        // En una implementación real, necesitarías un parser XML más robusto
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(data, "text/xml");
-        
-        // Extraer información de programas
-        const programmes = xmlDoc.getElementsByTagName("programme");
-        const epgData = [];
-        
-        for (let i = 0; i < programmes.length; i++) {
-          const programme = programmes[i];
-          const channel = programme.getAttribute("channel");
-          const start = programme.getAttribute("start");
-          const stop = programme.getAttribute("stop");
-          const title = programme.getElementsByTagName("title")[0]?.textContent || "Sin título";
-          const desc = programme.getElementsByTagName("desc")[0]?.textContent || "";
-          
-          epgData.push({
-            channel,
-            start,
-            stop,
-            title,
-            desc
-          });
-        }
-        
-        // Guardar datos EPG para uso posterior
-        this.state.epgData = epgData;
-        
-        // Actualizar UI con información EPG si está disponible
-        this.updateEPGDisplay();
-      }
-
-      // NUEVO: Actualizar visualización EPG
-      updateEPGDisplay() {
-        // Aquí puedes implementar la lógica para mostrar la información EPG
-        // en la interfaz de usuario, por ejemplo, en tooltips o en un panel separado
-        console.log('EPG data loaded:', this.state.epgData);
       }
 
       playChannel(index) {
@@ -2207,13 +2299,14 @@
         }
       }
 
-      // Sistema de búsqueda
+      // Sistema de búsqueda OPTIMIZADO
       searchChannels() {
         const query = this.searchBox.value.toLowerCase();
         
         if (query === '') {
           this.state.filteredChannels = [...this.state.channels];
         } else {
+          // OPTIMIZACIÓN: Búsqueda más eficiente
           this.state.filteredChannels = this.state.channels.filter(channel => 
             channel.name.toLowerCase().includes(query)
           );
@@ -2281,6 +2374,119 @@
         this.showNotification('Error al reproducir el canal', 'error');
         console.error('Video error:', e);
       }
+
+      // MEJORADO: Cambiado a "Modo Cine"
+      enterFullscreenMode() {
+        // Guardar el estado completo antes de entrar en modo cine
+        this.savePreFullscreenState();
+        
+        if (this.videoPlayer.requestFullscreen) {
+          this.videoPlayer.requestFullscreen();
+        } else if (this.videoPlayer.webkitRequestFullscreen) {
+          this.videoPlayer.webkitRequestFullscreen();
+        } else if (this.videoPlayer.msRequestFullscreen) {
+          this.videoPlayer.msRequestFullscreen();
+        }
+        
+        this.state.isFullscreenMode = true;
+        this.videoPlayer.classList.add('fullscreen-mode');
+        this.showNotification('Modo cine activado', 'info');
+      }
+
+      // MEJORADO: Salida de pantalla completa optimizada para Fire TV
+      exitFullscreenMode() {
+        console.log('Exiting fullscreen mode...');
+        
+        // Cancelar temporizadores primero
+        clearTimeout(this.state.inactivityTimer);
+        clearInterval(this.state.countdownTimer);
+        this.fullscreenTimer.classList.remove('show');
+        
+        if (this.state.isFullscreenMode) {
+          // Llamar a las APIs nativas de salida de pantalla completa
+          const exitMethods = [
+            () => document.exitFullscreen?.(),
+            () => document.webkitExitFullscreen?.(),
+            () => document.mozCancelFullScreen?.(),
+            () => document.msExitFullscreen?.(),
+            () => this.videoPlayer.webkitExitFullscreen?.()
+          ];
+          
+          // Intentar todos los métodos de salida
+          exitMethods.forEach(method => {
+            try {
+              method().catch(e => console.log('Exit method failed (normal):', e.message));
+            } catch (e) {
+              console.log('Exit method error:', e);
+            }
+          });
+          
+          // Actualizar estado inmediatamente
+          this.state.isFullscreenMode = false;
+          this.videoPlayer.classList.remove('fullscreen-mode');
+          
+          // MEJORADO: Restaurar estado después de un breve delay para asegurar DOM
+          setTimeout(() => {
+            this.restorePreFullscreenState();
+          }, 300);
+        }
+        
+        this.showNotification('Saliste del modo cine - Posición restaurada', 'success');
+      }
+
+      // NUEVO: Método para forzar salida de pantalla completa como fallback
+      forceExitFullscreen() {
+        console.log('Forcing fullscreen exit...');
+        
+        // Intentar múltiples métodos de salida
+        const exitMethods = [
+          () => document.exitFullscreen?.(),
+          () => document.webkitExitFullscreen?.(),
+          () => document.mozCancelFullScreen?.(),
+          () => document.msExitFullscreen?.(),
+          () => this.videoPlayer.webkitExitFullscreen?.()
+        ];
+        
+        exitMethods.forEach(method => {
+          try {
+            method();
+          } catch (e) {
+            console.log('Exit method failed:', e);
+          }
+        });
+        
+        // Forzar actualización de estado
+        this.state.isFullscreenMode = false;
+        this.videoPlayer.classList.remove('fullscreen-mode');
+        this.restorePreFullscreenState();
+      }
+
+      // MEJORADO: Manejo de cambios de pantalla completa más robusto
+      handleFullscreenChange() {
+        const isFullscreen = !!(document.fullscreenElement || 
+                                document.webkitFullscreenElement || 
+                                document.mozFullScreenElement || 
+                                document.msFullscreenElement);
+        
+        console.log('Fullscreen change detected:', isFullscreen);
+        
+        if (!isFullscreen && this.state.isFullscreenMode) {
+          // Salida de modo cine detectada
+          console.log('Fullscreen exit detected by browser event');
+          this.state.isFullscreenMode = false;
+          this.videoPlayer.classList.remove('fullscreen-mode');
+          
+          // Restaurar el estado después de salir de modo cine
+          this.restorePreFullscreenState();
+          
+          this.resetInactivityTimer();
+        } else if (isFullscreen && !this.state.isFullscreenMode) {
+          // Entrada en modo cine
+          console.log('Fullscreen enter detected by browser event');
+          this.state.isFullscreenMode = true;
+          this.videoPlayer.classList.add('fullscreen-mode');
+        }
+      }
     }
 
     // Inicializar la consola TV cuando se carga la página
@@ -2294,7 +2500,15 @@
         window.tvConsole.updateLayout();
       }
     });
+
+    // NUEVO: Global fallback para salida de pantalla completa
+    document.addEventListener('keydown', (e) => {
+      if (window.tvConsole && window.tvConsole.state.isFullscreenMode && 
+          (e.key === 'Volver' || e.key === 'Volver')) {
+        e.preventDefault();
+        window.tvConsole.forceExitFullscreen();
+      }
+    });
   </script>
 </body>
 </html>
-
