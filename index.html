@@ -1,2471 +1,423 @@
-<!DOCTYPE html>   
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consola TV IPTV</title>
-  <style>
-    :root {
-      --primary-color: #ff4444;
-      --secondary-color: #44ff44;
-      --bg-dark: #0a0a0a;
-      --bg-card: #1a1a1a;
-      --bg-hover: #2a2a2a;
-      --border-color: #333;
-      --text-color: #fff;
-      --text-muted: #888;
-      --error-color: #ff4444;
-      --success-color: #44ff44;
-      --warning-color: #ffaa00;
-    }
-    
-    * { 
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg-dark);
-      color: var(--text-color);
-      display: flex;
-      height: 100vh;
-      overflow: hidden;
-      cursor: default;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-    
-    /* Layout Principal - OPTIMIZADO */
-    .tv-container {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-    }
-    
-    .sidebar {
-      width: 280px;
-      background: rgba(30, 30, 30, 0.95);
-      border-right: 2px solid var(--border-color);
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s ease;
-      z-index: 100;
-      will-change: transform;
-    }
-    
-    .content-area {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    
-    /* Header TV */
-    .tv-header {
-      background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 100%);
-      padding: 15px 25px;
-      border-bottom: 2px solid var(--primary-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .tv-logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: var(--primary-color);
-      text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
-    }
-    
-    .tv-info {
-      display: flex;
-      gap: 20px;
-      font-size: 14px;
-      color: var(--text-muted);
-    }
-    
-    /* Barra de búsqueda */
-    .search-container {
-      padding: 15px 20px;
-      border-bottom: 1px solid var(--border-color);
-      position: relative;
-    }
-    
-    .search-box {
-      width: 100%;
-      padding: 10px 15px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      color: white;
-      font-size: 14px;
-    }
-    
-    .search-box:focus {
-      outline: none;
-      border-color: var(--primary-color);
-    }
-    
-    /* Navegación TV */
-    .nav-section {
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border-color);
-    }
-    
-    .nav-title {
-      padding: 0 20px 15px 20px;
-      font-size: 16px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    
-    .nav-item {
-      display: flex;
-      align-items: center;
-      padding: 12px 20px;
-      margin: 2px 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 2px solid transparent;
-      position: relative;
-    }
-    
-    .nav-item:hover {
-      background: var(--bg-hover);
-    }
-    
-    .nav-item.focused {
-      background: var(--primary-color);
-      color: white;
-      transform: scale(1.02);
-      border-color: var(--secondary-color);
-      box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
-    }
-    
-    .nav-item.active {
-      background: var(--bg-hover);
-      border-left: 4px solid var(--primary-color);
-    }
-    
-    .nav-item.has-submenu::after {
-      content: '▶';
-      position: absolute;
-      right: 15px;
-      color: var(--text-muted);
-      font-size: 12px;
-    }
-    
-    .nav-item.focused.has-submenu::after {
-      color: white;
-    }
-    
-    .nav-icon {
-      width: 24px;
-      height: 24px;
-      margin-right: 12px;
-      filter: brightness(0.8);
-    }
-    
-    .nav-item.focused .nav-icon {
-      filter: brightness(1);
-    }
-    
-    /* Submenús */
-    .submenu {
-      position: fixed;
-      left: 280px;
-      top: 0;
-      width: 280px;
-      height: 100%;
-      background: rgba(40, 40, 40, 0.98);
-      border-right: 2px solid var(--border-color);
-      z-index: 99;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .submenu.active {
-      transform: translateX(0);
-    }
-    
-    .submenu-header {
-      padding: 15px 20px;
-      background: rgba(30, 30, 30, 0.95);
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    
-    .submenu-back {
-      background: none;
-      border: none;
-      color: var(--primary-color);
-      font-size: 18px;
-      cursor: pointer;
-      padding: 5px;
-      border-radius: 4px;
-    }
-    
-    .submenu-back:hover {
-      background: rgba(255, 68, 68, 0.2);
-    }
-    
-    .submenu-title {
-      font-size: 18px;
-      font-weight: bold;
-    }
-    
-    .submenu-items {
-      flex: 1;
-      padding: 10px 0;
-      overflow-y: auto;
-    }
-    
-    .submenu-item {
-      padding: 12px 20px;
-      margin: 2px 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 2px solid transparent;
-    }
-    
-    .submenu-item:hover {
-      background: var(--bg-hover);
-    }
-    
-    .submenu-item.focused {
-      background: var(--primary-color);
-      color: white;
-      transform: scale(1.02);
-      border-color: var(--secondary-color);
-      box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
-    }
-    
-    /* Grid de Canales TV - OPTIMIZADO */
-    .channels-grid {
-      flex: 1;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 15px;
-      overflow-y: auto;
-      background: rgba(10, 10, 10, 0.8);
-      will-change: transform;
-      transform: translateZ(0);
-    }
-    
-    .channel-card {
-      background: linear-gradient(145deg, #1a1a1a, #252525);
-      border-radius: 12px;
-      padding: 15px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: 2px solid transparent;
-      display: flex;
-      flex-direction: column;
-      height: 140px;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-      transform: translateZ(0);
-      will-change: transform;
-    }
-    
-    .channel-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--primary-color);
-      transform: scaleX(0);
-      transition: transform 0.3s ease;
-    }
-    
-    .channel-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    
-    .channel-card.focused {
-      transform: scale(1.05);
-      border-color: var(--primary-color);
-      box-shadow: 0 0 20px rgba(255, 68, 68, 0.4);
-      z-index: 10;
-    }
-    
-    .channel-card.focused::before {
-      transform: scaleX(1);
-    }
-    
-    .channel-card.playing {
-      border-color: var(--secondary-color);
-      box-shadow: 0 0 15px rgba(68, 255, 68, 0.3);
-    }
-    
-    .channel-logo {
-      width: 100%;
-      height: 70px;
-      object-fit: contain;
-      margin-bottom: 10px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 6px;
-      padding: 5px;
-    }
-    
-    .channel-name {
-      font-size: 13px;
-      text-align: center;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      color: var(--text-color);
-    }
-    
-    /* Reproductor TV */
-    .video-container {
-      position: relative;
-      background: #000;
-      transition: all 0.3s ease;
-    }
-    
-    #videoPlayer {
-      width: 100%;
-      height: 0;
-      background: #000;
-      transition: all 0.3s ease;
-    }
-    
-    #videoPlayer.active {
-      height: 300px;
-    }
-    
-    #videoPlayer.fullscreen-mode {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 1000;
-    }
-    
-    /* Controles de video personalizados */
-    .video-controls {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent, rgba(0,0,0,0.7));
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    .video-container:hover .video-controls {
-      opacity: 1;
-    }
-    
-    .control-button {
-      background: rgba(255,255,255,0.2);
-      border: none;
-      color: white;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      transition: all 0.2s ease;
-    }
-    
-    .control-button:hover {
-      background: rgba(255,255,255,0.3);
-      transform: scale(1.1);
-    }
-    
-    .time-display {
-      color: white;
-      font-size: 14px;
-      margin: 0 10px;
-    }
-    
-    .progress-container {
-      flex: 1;
-      height: 6px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 3px;
-      cursor: pointer;
-      position: relative;
-    }
-    
-    .progress-bar {
-      height: 100%;
-      background: var(--primary-color);
-      border-radius: 3px;
-      width: 0%;
-    }
-    
-    /* Selectores de pistas */
-    .track-selectors {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(0,0,0,0.8);
-      border-radius: 8px;
-      padding: 10px;
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      z-index: 100;
-    }
-    
-    .track-selectors.active {
-      display: flex;
-    }
-    
-    .track-selector {
-      background: rgba(255,255,255,0.1);
-      border: none;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 12px;
-      text-align: left;
-    }
-    
-    .track-selector:hover {
-      background: rgba(255,255,255,0.2);
-    }
-    
-    .track-selector.active {
-      background: var(--primary-color);
-    }
-    
-    /* Selector de velocidad */
-    .speed-selector {
-      position: absolute;
-      bottom: 60px;
-      right: 10px;
-      background: rgba(0,0,0,0.8);
-      border-radius: 8px;
-      padding: 10px;
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      z-index: 100;
-    }
-    
-    .speed-selector.active {
-      display: flex;
-    }
-    
-    .speed-option {
-      background: rgba(255,255,255,0.1);
-      border: none;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 12px;
-      text-align: left;
-    }
-    
-    .speed-option:hover {
-      background: rgba(255,255,255,0.2);
-    }
-    
-    .speed-option.active {
-      background: var(--primary-color);
-    }
-    
-    /* Temporizador Modo Cine - MEJORADO (20 segundos) */
-    .fullscreen-timer {
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 15px 20px;
-      border-radius: 10px;
-      z-index: 1001;
-      font-size: 16px;
-      display: none;
-      border: 2px solid var(--primary-color);
-    }
-    
-    .fullscreen-timer.show {
-      display: block;
-    }
-    
-    /* Estados de Carga y Error */
-    .loading {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 40px;
-      color: var(--text-muted);
-      font-size: 16px;
-    }
-    
-    .loading::after {
-      content: '...';
-      animation: dots 1.5s steps(4, end) infinite;
-    }
-    
-    @keyframes dots {
-      0%, 20% { color: rgba(255,255,255,0); text-shadow: .25em 0 0 rgba(255,255,255,0), .5em 0 0 rgba(255,255,255,0); }
-      40% { color: white; text-shadow: .25em 0 0 rgba(255,255,255,0), .5em 0 0 rgba(255,255,255,0); }
-      60% { text-shadow: .25em 0 0 white, .5em 0 0 rgba(255,255,255,0); }
-      80%, 100% { text-shadow: .25em 0 0 white, .5em 0 0 white; }
-    }
-    
-    .error {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 40px;
-      color: var(--error-color);
-      font-size: 16px;
-    }
-    
-    /* Notificaciones TV */
-    .tv-notification {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: rgba(30, 30, 30, 0.95);
-      border-left: 4px solid var(--primary-color);
-      padding: 15px 20px;
-      border-radius: 8px;
-      color: white;
-      z-index: 1500;
-      transform: translateX(400px);
-      transition: transform 0.3s ease;
-      max-width: 300px;
-    }
-    
-    .tv-notification.show {
-      transform: translateX(0);
-    }
-    
-    .tv-notification.success {
-      border-left-color: var(--success-color);
-    }
-    
-    .tv-notification.error {
-      border-left-color: var(--error-color);
-    }
-    
-    .tv-notification.warning {
-      border-left-color: var(--warning-color);
-    }
-    
-    /* Modo Cine */
-    .cinema-controls {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0, 0, 0, 0.7);
-      padding: 15px;
-      border-radius: 25px;
-      display: none;
-      gap: 10px;
-      z-index: 1001;
-    }
-    
-    .control-btn {
-      background: rgba(255, 255, 255, 0.1);
-      border: none;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    
-    .control-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-    
-    .control-btn.primary {
-      background: var(--primary-color);
-    }
-    
-    /* Scrollbar Personalizado */
-    .channels-grid::-webkit-scrollbar,
-    .submenu-items::-webkit-scrollbar {
-      width: 8px;
-    }
-    
-    .channels-grid::-webkit-scrollbar-track,
-    .submenu-items::-webkit-scrollbar-track {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-    }
-    
-    .channels-grid::-webkit-scrollbar-thumb,
-    .submenu-items::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 4px;
-    }
-    
-    /* Responsive TV */
-    @media (max-width: 768px) {
-      .sidebar {
-        width: 220px;
-      }
-      
-      .submenu {
-        left: 220px;
-        width: 220px;
-      }
-      
-      .channels-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      }
-      
-      .tv-header {
-        padding: 12px 15px;
-      }
-      
-      .tv-logo {
-        font-size: 20px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .tv-container {
-        flex-direction: column;
-      }
-      
-      .sidebar {
-        width: 100%;
-        height: auto;
-        max-height: 40vh;
-      }
-      
-      .submenu {
-        left: 0;
-        top: 40vh;
-        width: 100%;
-        height: 60vh;
-      }
-      
-      .channels-grid {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-      }
-      
-      .channel-card {
-        height: 120px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPTV Player Nativo - Estilo Netflix + HLS.js</title>
+
+<!-- HLS.JS -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<style>
+/* --- ESTILO GENERAL --- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #141414;
+  color: #fff;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+
+/* --- PORTADA PRINCIPAL --- */
+.hero {
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-image 0.6s ease;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(20,20,20,1) 20%, rgba(20,20,20,0.3) 80%);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+.hero h1 { font-size: 3em; margin: 0; }
+.hero p {
+  font-size: 1.1em;
+  color: #ddd;
+  line-height: 1.4em;
+  margin-top: 1px;
+}
+.play-btn {
+  margin-top: 20px;
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.play-btn:hover { background: #339aff; transform: scale(1.05); }
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* --- FILAS --- */
+.section { margin-bottom: 1px; transition: transform 0.4s ease, opacity 0.4s ease; }
+.section.active { transform: scale(1.02); opacity: 1; }
+.section h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.row {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1px;
+}
+.row::-webkit-scrollbar { display: none; }
+
+.channel {
+  flex: 0 0 170px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, outline 0.25s ease;
+  border-radius: 6px;
+  position: relative;
+}
+.channel img {
+  width: 100%;
+  aspect-ratio: 6/9;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.channel:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+.channel p {
+  margin-top: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+.channel .category {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.7);
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+/* --- REPRODUCTOR --- */
+#player {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  z-index: 999;
+}
+#videoPlayer {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: black;
+}
+
+/* --- FOCO --- */
+.channel.focused {
+  outline: 3px solid #1e90ff;
+  box-shadow: 0 0 25px #1e90ff90;
+  transform: scale(1.12);
+}
+#heroPlayBtn.focused {
+  outline: 3px solid #1e90ff;
+  box-shadow: 0 0 25px #1e90ff90;
+  transform: scale(1.08);
+}
+</style>
 </head>
+
 <body>
-  <div class="tv-container">
-    <!-- Panel Lateral -->
-    <div class="sidebar">
-      <!-- Barra de búsqueda -->
-      <div class="search-container">
-        <input type="text" class="search-box" id="searchBox" placeholder="Buscar canales...">
-      </div>
-      
-      <div class="nav-section">
-        <div class="nav-title">Navegación</div>
-        <div class="nav-item focused active" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html">
-          <span>📺</span>
-          <span>All Channels</span>
-        </div>
-        <div class="nav-item" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Sports%20Channels.html">
-          <span>🤼</span>
-          <span>Sports Channels</span>
-        </div>
-        <div class="nav-item" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Premium%20Channels.html">
-          <span>🏅</span>
-          <span>Premium Channels</span>
-        </div>
-        <div class="nav-item" data-url="https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/New%20Channels.html">
-          <span>🆕</span>
-          <span>New Channels</span>
-        </div>
-      </div>
-      
-      <div class="nav-section">
-        <div class="nav-title">Categorías</div>
-        <div class="nav-item has-submenu" data-submenu="deportes">
-          <span>🌎</span>
-          <span>Channels by Country</span>
-        </div>
-        <div class="nav-item has-submenu" data-submenu="noticias">
-          <span>📺</span>
-          <span>Channels by Category</span>
-        </div>
-        <div class="nav-item has-submenu" data-submenu="musica">
-          <span>📽️</span>
-          <span>VIP channels</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Submenús -->
-    <div class="submenu" id="submenu">
-      <div class="submenu-header">
-        <button class="submenu-back" id="submenuBack">◀</button>
-        <div class="submenu-title" id="submenuTitle">Submenú</div>
-      </div>
-      <div class="submenu-items" id="submenuItems">
-        <!-- Los elementos del submenú se cargarán dinámicamente -->
-      </div>
-    </div>
-
-    <!-- Área Principal -->
-    <div class="content-area">
-      <!-- Header TV -->
-      <div class="tv-header">
-        <div class="tv-logo">DEV-IPTV</div>
-        <div class="tv-info">
-          <span id="currentCategory">Canales Estados Unidos</span>
-          <span id="channelCount">0 canales</span>
-        </div>
-      </div>
-
-      <!-- Video Player -->
-      <div class="video-container">
-        <video id="videoPlayer" controls preload="metadata"></video>
-        <!-- Controles personalizados -->
-        <div class="video-controls">
-          <button class="control-button" id="playPauseBtn">⏯️</button>
-          <span class="time-display" id="currentTime">0:00</span>
-          <div class="progress-container" id="progressContainer">
-            <div class="progress-bar" id="progressBar"></div>
-          </div>
-          <span class="time-display" id="duration">0:00</span>
-          <button class="control-button" id="muteBtn">🔊</button>
-          <button class="control-button" id="fullscreenBtn">⛶</button>
-          <button class="control-button" id="tracksBtn">🎛️</button>
-          <button class="control-button" id="speedBtn">1x</button>
-          <button class="control-button" id="subtitleBtn">📝</button>
-        </div>
-        
-        <!-- Selectores de pistas -->
-        <div class="track-selectors" id="audioTracks"></div>
-        <div class="track-selectors" id="videoTracks"></div>
-        <div class="track-selectors" id="subtitleTracks"></div>
-        
-        <!-- Selector de velocidad -->
-        <div class="speed-selector" id="speedSelector"></div>
-      </div>
-
-      <!-- Grid de Canales -->
-      <div class="channels-grid" id="channelsGrid">
-        <div class="loading">Cargando canales</div>
-      </div>
-    </div>
+<div class="hero" id="hero">
+  <div class="hero-content">
+    <h1 id="heroTitle">Bienvenido a IPTV Player</h1>
+    <p id="heroDesc">Explora tus películas y canales favoritos con estilo Netflix.</p>
+    <button id="heroPlayBtn" class="play-btn" onclick="playHero()">▶ Reproducir</button>
   </div>
-
-  <!-- Temporizador Modo Cine - MEJORADO (20 segundos) -->
-  <div class="fullscreen-timer" id="fullscreenTimer">
-    Modo cine en <span id="timerCountdown">20</span> segundos
-  </div>
-
-  <!-- Notificaciones -->
-  <div class="tv-notification" id="notification">
-    <div id="notificationMessage">Mensaje de notificación</div>
-  </div>
-
-  <!-- Controles Modo Cine -->
-  <div class="cinema-controls" id="cinemaControls">
-    <button class="control-btn" id="btnExitCinema">Salir Modo Cine</button>
-    <button class="control-btn" id="btnTogglePlay">Pausa</button>
-    <button class="control-btn" id="btnFullscreen">Modo Cine</button>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dashjs@latest/dist/dash.all.min.js"></script>
-  <script>
-    class TVConsole {
-      constructor() {
-        this.initializeElements();
-        this.initializeState();
-        this.setupEventListeners();
-        this.loadInitialData();
-        this.setupHistoryState();
-        this.initializeSubmenus();
-        this.setupVideoPlayer();
-        
-        // OPTIMIZACIÓN: Precargar recursos críticos
-        this.preloadCriticalResources();
-      }
-
-      initializeElements() {
-        // Elementos principales
-        this.videoPlayer = document.getElementById('videoPlayer');
-        this.channelsGrid = document.getElementById('channelsGrid');
-        this.sidebar = document.querySelector('.sidebar');
-        
-        // Elementos de UI
-        this.currentCategory = document.getElementById('currentCategory');
-        this.channelCount = document.getElementById('channelCount');
-        this.notification = document.getElementById('notification');
-        this.cinemaControls = document.getElementById('cinemaControls');
-        this.fullscreenTimer = document.getElementById('fullscreenTimer');
-        this.timerCountdown = document.getElementById('timerCountdown');
-        this.searchBox = document.getElementById('searchBox');
-        
-        // Elementos navegables
-        this.navItems = [...document.querySelectorAll('.nav-item')];
-        this.channelCards = [];
-        
-        // Elementos de submenús
-        this.submenu = document.getElementById('submenu');
-        this.submenuBack = document.getElementById('submenuBack');
-        this.submenuTitle = document.getElementById('submenuTitle');
-        this.submenuItems = document.getElementById('submenuItems');
-        this.submenuItemsElements = [];
-        
-        // Botones
-        this.btnExitCinema = document.getElementById('btnExitCinema');
-        this.btnTogglePlay = document.getElementById('btnTogglePlay');
-        this.btnFullscreen = document.getElementById('btnFullscreen');
-        
-        // Nuevos elementos del reproductor
-        this.playPauseBtn = document.getElementById('playPauseBtn');
-        this.muteBtn = document.getElementById('muteBtn');
-        this.fullscreenBtn = document.getElementById('fullscreenBtn');
-        this.tracksBtn = document.getElementById('tracksBtn');
-        this.speedBtn = document.getElementById('speedBtn');
-        this.subtitleBtn = document.getElementById('subtitleBtn');
-        this.currentTime = document.getElementById('currentTime');
-        this.duration = document.getElementById('duration');
-        this.progressContainer = document.getElementById('progressContainer');
-        this.progressBar = document.getElementById('progressBar');
-        this.audioTracks = document.getElementById('audioTracks');
-        this.videoTracks = document.getElementById('videoTracks');
-        this.subtitleTracks = document.getElementById('subtitleTracks');
-        this.speedSelector = document.getElementById('speedSelector');
-        
-        // OPTIMIZACIÓN: Cache de elementos frecuentemente accedidos
-        this.cachedElements = new Map();
-      }
-
-      initializeState() {
-        this.state = {
-          navMode: 'sidebar',
-          sidebarIndex: 0,
-          gridIndex: 0,
-          submenuIndex: 0,
-          currentPlaylist: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/All%20Channels.html',
-          currentHls: null,
-          currentDash: null,
-          isCinemaMode: false,
-          isFullscreenMode: false,
-          isSubmenuVisible: false,
-          channels: [],
-          filteredChannels: [],
-          history: JSON.parse(localStorage.getItem('tvHistory')) || [],
-          inactivityTimer: null,
-          countdownTimer: null,
-          countdownValue: 20,
-          columns: 4,
-          isSearching: false,
-          customTitle: '',
-          customImage: '',
-          customHeaders: {},
-          autoPlay: localStorage.getItem('autoPlay') !== 'false',
-          // Estado para navegación jerárquica
-          navigationStack: [],
-          preFullscreenState: {
-            isCinemaMode: false,
-            navMode: 'grid',
-            gridIndex: 0,
-            sidebarIndex: 0,
-            gridScrollTop: 0,
-            activeElement: null,
-            searchText: '',
-            isSearching: false,
-            navigationStack: []
-          },
-          // Estado del reproductor
-          playbackRates: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
-          currentPlaybackRate: 1.0,
-          showTracks: false,
-          showSpeedSelector: false,
-          // OPTIMIZACIÓN: Flags de rendimiento
-          isRendering: false,
-          lastRenderTime: 0,
-          keyThrottle: false,
-          searchThrottle: null
-        };
-
-        this.updateLayout();
-      }
-
-      // NUEVO: Precarga de recursos críticos
-      preloadCriticalResources() {
-        // Precargar imágenes placeholder para mejor experiencia
-        const placeholderImg = new Image();
-        placeholderImg.src = 'https://via.placeholder.com/150x80?text=No+Logo';
-      }
-
-      // MEJORADO: Guardar estado completo antes de entrar en modo cine
-      savePreFullscreenState() {
-        this.state.preFullscreenState = {
-          isCinemaMode: this.state.isCinemaMode,
-          navMode: this.state.navMode,
-          gridIndex: this.state.gridIndex,
-          sidebarIndex: this.state.sidebarIndex,
-          gridScrollTop: this.channelsGrid.scrollTop,
-          activeElement: document.activeElement,
-          searchText: this.searchBox.value,
-          isSearching: this.state.isSearching,
-          navigationStack: [...this.state.navigationStack],
-          // NUEVO: Guardar el canal actual que se está reproduciendo
-          currentChannelIndex: this.state.gridIndex,
-          currentChannelUrl: this.videoPlayer.src,
-          // NUEVO: Guardar estado de reproducción
-          wasPlaying: !this.videoPlayer.paused,
-          currentTime: this.videoPlayer.currentTime
-        };
-        
-        console.log('Estado guardado:', {
-          gridIndex: this.state.gridIndex,
-          gridScrollTop: this.channelsGrid.scrollTop,
-          currentChannelIndex: this.state.gridIndex
-        });
-      }
-
-      // MEJORADO: Restaurar estado completo después de salir de modo cine
-      restorePreFullscreenState() {
-        if (!this.state.preFullscreenState) return;
-        
-        const prevState = this.state.preFullscreenState;
-        
-        console.log('Restaurando estado:', {
-          gridIndex: prevState.gridIndex,
-          gridScrollTop: prevState.gridScrollTop,
-          currentChannelIndex: prevState.currentChannelIndex
-        });
-
-        // Restaurar modo controles video
-        if (prevState.isCinemaMode && !this.state.isCinemaMode) {
-          this.enterCinemaMode();
-        } else if (!prevState.isCinemaMode && this.state.isCinemaMode) {
-          this.exitCinemaMode();
-        }
-        
-        // NUEVO: Restaurar índice del grid PRIMERO
-        if (prevState.gridIndex !== undefined) {
-          this.state.gridIndex = prevState.gridIndex;
-        }
-        
-        // Restaurar modo de navegación e índices
-        this.state.navMode = prevState.navMode;
-        this.state.sidebarIndex = prevState.sidebarIndex;
-        
-        // Restaurar stack de navegación
-        this.state.navigationStack = [...prevState.navigationStack];
-        
-        // MEJORADO: Restaurar posición de scroll del grid con verificación
-        if (prevState.gridScrollTop !== undefined && this.channelsGrid) {
-          setTimeout(() => {
-            if (this.channelsGrid) {
-              this.channelsGrid.scrollTop = prevState.gridScrollTop;
-              console.log('Scroll restaurado a:', prevState.gridScrollTop);
-            }
-          }, 100);
-        }
-        
-        // Restaurar búsqueda
-        if (prevState.searchText !== undefined) {
-          this.searchBox.value = prevState.searchText;
-        }
-        this.state.isSearching = prevState.isSearching;
-        
-        // NUEVO: Restaurar estado de reproducción si había un canal
-        if (prevState.currentChannelUrl && prevState.wasPlaying) {
-          setTimeout(() => {
-            if (this.videoPlayer.src === prevState.currentChannelUrl) {
-              this.videoPlayer.currentTime = prevState.currentTime || 0;
-            }
-          }, 200);
-        }
-        
-        // MEJORADO: Enfocar el elemento actual con retardo para asegurar renderizado
-        setTimeout(() => {
-          this.focusCurrentElement();
-          
-          // NUEVO: Resaltar el canal que se estaba reproduciendo
-          if (this.channelCards.length > 0 && this.state.gridIndex < this.channelCards.length) {
-            this.channelCards[this.state.gridIndex].classList.add('focused');
-            this.channelCards[this.state.gridIndex].scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'center' 
-            });
-          }
-        }, 150);
-        
-        // NUEVO: Verificar y corregir el estado de navegación
-        setTimeout(() => {
-          this.verifyAndCorrectNavigationState();
-        }, 200);
-        
-        this.showNotification('Posición restaurada', 'success');
-      }
-
-      // NUEVO: Método para verificar y corregir estado de navegación
-      verifyAndCorrectNavigationState() {
-        // Verificar que gridIndex esté dentro de los límites
-        if (this.channelCards.length > 0 && this.state.gridIndex >= this.channelCards.length) {
-          this.state.gridIndex = this.channelCards.length - 1;
-          console.log('Grid index corregido a:', this.state.gridIndex);
-        }
-        
-        // Verificar que sidebarIndex esté dentro de los límites
-        if (this.navItems.length > 0 && this.state.sidebarIndex >= this.navItems.length) {
-          this.state.sidebarIndex = this.navItems.length - 1;
-          console.log('Sidebar index corregido a:', this.state.sidebarIndex);
-        }
-        
-        // Forzar actualización visual
-        this.focusCurrentElement();
-      }
-
-      // MEJORADO: Enfocar el elemento actual basado en el estado
-      focusCurrentElement() {
-        console.log('Enfocando elemento:', {
-          navMode: this.state.navMode,
-          gridIndex: this.state.gridIndex,
-          sidebarIndex: this.state.sidebarIndex,
-          channelCardsLength: this.channelCards.length
-        });
-
-        // Limpiar todos los focos primero
-        this.navItems.forEach(item => item.classList.remove('focused'));
-        this.channelCards.forEach(card => card.classList.remove('focused'));
-        this.submenuItemsElements.forEach(item => item.classList.remove('focused'));
-        
-        if (this.state.navMode === 'sidebar' && this.navItems.length > 0) {
-          const index = Math.min(this.state.sidebarIndex, this.navItems.length - 1);
-          this.navItems[index].classList.add('focused');
-          this.navItems[index].scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'nearest' 
-          });
-        } else if (this.state.navMode === 'grid' && this.channelCards.length > 0) {
-          const index = Math.min(this.state.gridIndex, this.channelCards.length - 1);
-          this.channelCards[index].classList.add('focused');
-          
-          // MEJORADO: Scroll más inteligente
-          const cardRect = this.channelCards[index].getBoundingClientRect();
-          const gridRect = this.channelsGrid.getBoundingClientRect();
-          
-          if (cardRect.bottom > gridRect.bottom || cardRect.top < gridRect.top) {
-            this.channelCards[index].scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'center' 
-            });
-          }
-        } else if (this.state.navMode === 'submenu' && this.submenuItemsElements.length > 0) {
-          const index = Math.min(this.state.submenuIndex, this.submenuItemsElements.length - 1);
-          this.submenuItemsElements[index].classList.add('focused');
-          this.submenuItemsElements[index].scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'nearest' 
-          });
-        }
-        
-        // Restaurar foco en el elemento activo si era un input
-        if (this.state.preFullscreenState && this.state.preFullscreenState.activeElement) {
-          const prevActive = this.state.preFullscreenState.activeElement;
-          if ((prevActive.tagName === 'INPUT' || prevActive.tagName === 'TEXTAREA') && 
-              document.body.contains(prevActive)) {
-            setTimeout(() => {
-              prevActive.focus();
-            }, 200);
-          }
-        }
-      }
-
-      // Configurar el reproductor de video
-      setupVideoPlayer() {
-        // Ocultar controles nativos y usar los personalizados
-        this.videoPlayer.controls = false;
-        
-        // Configurar eventos del reproductor
-        this.videoPlayer.addEventListener('timeupdate', () => this.updateProgress());
-        this.videoPlayer.addEventListener('loadedmetadata', () => this.updateDuration());
-        this.videoPlayer.addEventListener('volumechange', () => this.updateVolumeIcon());
-        
-        // Configurar eventos de los controles personalizados
-        this.playPauseBtn.addEventListener('click', () => this.togglePlayPause());
-        this.muteBtn.addEventListener('click', () => this.toggleMute());
-        this.fullscreenBtn.addEventListener('click', () => this.toggleFullscreen());
-        this.tracksBtn.addEventListener('click', () => this.toggleTracks());
-        this.speedBtn.addEventListener('click', () => this.toggleSpeedSelector());
-        this.subtitleBtn.addEventListener('click', () => this.toggleSubtitles());
-        this.progressContainer.addEventListener('click', (e) => this.seek(e));
-        
-        // Inicializar selector de velocidad
-        this.setupSpeedSelector();
-      }
-
-      setupSpeedSelector() {
-        this.speedSelector.innerHTML = '';
-        this.state.playbackRates.forEach(rate => {
-          const button = document.createElement('button');
-          button.className = 'speed-option';
-          button.textContent = rate + 'x';
-          if (rate === this.state.currentPlaybackRate) {
-            button.classList.add('active');
-          }
-          button.addEventListener('click', () => {
-            this.setPlaybackRate(rate);
-            this.speedSelector.classList.remove('active');
-          });
-          this.speedSelector.appendChild(button);
-        });
-      }
-
-      setPlaybackRate(rate) {
-        this.state.currentPlaybackRate = rate;
-        this.videoPlayer.playbackRate = rate;
-        this.speedBtn.textContent = rate + 'x';
-        this.showNotification(`Velocidad: ${rate}x`, 'info');
-      }
-
-      toggleSpeedSelector() {
-        this.state.showSpeedSelector = !this.state.showSpeedSelector;
-        this.speedSelector.classList.toggle('active', this.state.showSpeedSelector);
-        
-        // Cerrar otros selectores
-        this.audioTracks.classList.remove('active');
-        this.videoTracks.classList.remove('active');
-        this.subtitleTracks.classList.remove('active');
-        this.state.showTracks = false;
-      }
-
-      toggleTracks() {
-        this.state.showTracks = !this.state.showTracks;
-        
-        // Alternar visibilidad de selectores de pistas
-        if (this.state.showTracks) {
-          this.showTrackSelectors();
-        } else {
-          this.hideTrackSelectors();
-        }
-        
-        // Cerrar selector de velocidad
-        this.speedSelector.classList.remove('active');
-        this.state.showSpeedSelector = false;
-      }
-
-      showTrackSelectors() {
-        // Mostrar selectores de pistas disponibles
-        if (this.state.currentHls) {
-          this.showHlsTracks();
-        } else if (this.state.currentDash) {
-          this.showDashTracks();
-        } else {
-          this.showNativeTracks();
-        }
-      }
-
-      showHlsTracks() {
-        // Implementar selector de pistas para HLS
-        const hls = this.state.currentHls;
-        if (hls) {
-          // Audio tracks
-          const audioTracks = hls.audioTracks;
-          this.audioTracks.innerHTML = '<div style="color: white; padding: 5px; font-weight: bold;">Audio</div>';
-          audioTracks.forEach((track, index) => {
-            const button = document.createElement('button');
-            button.className = 'track-selector';
-            button.textContent = track.name || `Audio ${index + 1}`;
-            if (index === hls.audioTrack) {
-              button.classList.add('active');
-            }
-            button.addEventListener('click', () => {
-              hls.audioTrack = index;
-              this.audioTracks.classList.remove('active');
-              this.state.showTracks = false;
-            });
-            this.audioTracks.appendChild(button);
-          });
-          this.audioTracks.classList.add('active');
-        }
-      }
-
-      showDashTracks() {
-        // Implementar selector de pistas para DASH
-        // Similar a showHlsTracks pero para DASH
-      }
-
-      showNativeTracks() {
-        // Implementar selector de pistas para video nativo
-        const video = this.videoPlayer;
-        
-        // Audio tracks
-        this.audioTracks.innerHTML = '<div style="color: white; padding: 5px; font-weight: bold;">Audio</div>';
-        const button = document.createElement('button');
-        button.className = 'track-selector active';
-        button.textContent = 'Audio Principal';
-        button.addEventListener('click', () => {
-          this.audioTracks.classList.remove('active');
-          this.state.showTracks = false;
-        });
-        this.audioTracks.appendChild(button);
-        this.audioTracks.classList.add('active');
-      }
-
-      hideTrackSelectors() {
-        this.audioTracks.classList.remove('active');
-        this.videoTracks.classList.remove('active');
-        this.subtitleTracks.classList.remove('active');
-      }
-
-      toggleSubtitles() {
-        // Alternar subtítulos
-        const textTracks = this.videoPlayer.textTracks;
-        for (let i = 0; i < textTracks.length; i++) {
-          const track = textTracks[i];
-          if (track.kind === 'subtitles') {
-            track.mode = track.mode === 'showing' ? 'hidden' : 'showing';
-            this.showNotification(track.mode === 'showing' ? 'Subtítulos activados' : 'Subtítulos desactivados', 'info');
-          }
-        }
-      }
-
-      updateProgress() {
-        if (this.videoPlayer.duration) {
-          const percent = (this.videoPlayer.currentTime / this.videoPlayer.duration) * 100;
-          this.progressBar.style.width = percent + '%';
-          
-          this.currentTime.textContent = this.formatTime(this.videoPlayer.currentTime);
-        }
-      }
-
-      updateDuration() {
-        this.duration.textContent = this.formatTime(this.videoPlayer.duration);
-      }
-
-      updateVolumeIcon() {
-        this.muteBtn.textContent = this.videoPlayer.muted ? '🔇' : '🔊';
-      }
-
-      formatTime(seconds) {
-        if (isNaN(seconds)) return '0:00';
-        const minutes = Math.floor(seconds / 60);
-        const secs = Math.floor(seconds % 60);
-        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
-      }
-
-      togglePlayPause() {
-        if (this.videoPlayer.paused) {
-          this.videoPlayer.play();
-          this.playPauseBtn.textContent = '⏸️';
-        } else {
-          this.videoPlayer.pause();
-          this.playPauseBtn.textContent = '⏯️';
-        }
-      }
-
-      toggleMute() {
-        this.videoPlayer.muted = !this.videoPlayer.muted;
-        this.updateVolumeIcon();
-      }
-
-      seek(e) {
-        const rect = this.progressContainer.getBoundingClientRect();
-        const percent = (e.clientX - rect.left) / rect.width;
-        this.videoPlayer.currentTime = percent * this.videoPlayer.duration;
-      }
-
-      // Inicializar datos de submenús
-      initializeSubmenus() {
-        this.submenusData = {
-          'deportes': [
-            { name: 'United States', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/United%20States.html' },
-            { name: 'Canada', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Canada.html' },
-            { name: 'Spain', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Spain.html' },
-            { name: 'Italy', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Italy.html' },
-            { name: 'France', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/France.html' },
-            { name: 'Mexico', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Mexico.html' },
-            { name: 'Brazil', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Brazil.html' },
-            { name: 'Dominican Republic', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Dominican%20Republic.html' },
-            { name: 'Peru', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Peru.html' },
-            { name: 'Argentina', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Argentina.html' },
-            { name: 'Russia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Russia.html' },
-            { name: 'India', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/India.html' },
-            { name: 'China', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/China.html' },
-            { name: 'Mongolia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Mongolia.html' },
-            { name: 'Australia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Australia.html' },
-            { name: 'Bolivia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Bolivia.html' },
-            { name: 'Colombia', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Colombia.html' },
-            { name: 'Costa Rica', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Costa%20Rica.html' },
-            { name: 'Cuba', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Cuba.html' },
-            { name: 'Ecuador', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Ecuador.html' },
-            { name: 'El Salvador', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/El%20Salvador.html' },
-            { name: 'Guatemala', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Guatemala.html' },
-            { name: 'Haiti', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Haiti.html' },
-            { name: 'Honduras', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Honduras.html' },
-            { name: 'Nicaragua', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Nicaragua.html' },
-            { name: 'Panama', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Panama.html' },
-            { name: 'Paraguay', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Paraguay.html' },
-            { name: 'Peru', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Peru.html' },
-            { name: 'Uruguay', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Uruguay.html' },
-            { name: 'Venezuela', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Venezuela.html' },
-            { name: 'Luxemburgo', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Luxemburgo.html' },
-            { name: 'Mónaco', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/M%C3%B3naco.html' },
-            { name: 'Portugal', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Portugal.html' },
-            { name: 'Chile', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Chile.html' },
-            { name: 'Austria', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Austria.html' }
-          ],
-          'noticias': [
-            { name: 'Comedy', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/comedy.html' },
-            { name: 'Animation', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/animation.html' },
-            { name: 'Documentary', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/documentary.html' },
-            { name: 'Culture', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/culture.html' },
-            { name: 'Classic', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/classic.html' },
-            { name: 'Business', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/business.html' },
-            { name: 'Cooking', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/cooking.html' },
-            { name: 'Auto', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Auto.html' },
-            { name: 'Education', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/education.html' },
-            { name: 'Entertainment', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/entertainment.html' },
-            { name: 'Family', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/family.html' },
-            { name: 'General', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/general.html' },
-            { name: 'Kids', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Kids.html' },
-            { name: 'Legislative', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/legislative.html' },
-            { name: 'Lifestyle', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/lifestyle.html' },
-            { name: 'Movies', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/movies.html' },
-            { name: 'Music', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/music.html' },
-            { name: 'Outdoor', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/outdoor.html' },
-            { name: 'Public', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/public.html' },
-            { name: 'Relax', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/relax.html' },
-            { name: 'Religious', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/relax.html' },
-            { name: 'Science', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/science.html' },
-            { name: 'Series', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Series.html' },
-            { name: 'Shop', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/shop.html' },
-            { name: 'Sports', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/Deportes.html' },
-            { name: 'Travel', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/travel.html' },
-            { name: 'Weather', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/weather.html' }
-          ],
-          'musica': [
-            { name: 'HBO', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/HBO.html' },
-            { name: 'NBA', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/NBA.html' },
-            { name: 'MLB', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/MLB.html' },
-            { name: 'NFL', url: 'https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/NFL.html' },
-            { name: 'MLB 5', url: 'https://iptv-org.github.io/iptv/categories/music.m3u' }
-          ]
-        };
-      }
-
-      // Configurar el historial del navegador
-      setupHistoryState() {
-        // Inicializar el historial del navegador
-        if (history.state === null) {
-          history.replaceState({
-            type: 'main',
-            navMode: 'sidebar',
-            sidebarIndex: 0,
-            playlist: this.state.currentPlaylist,
-            category: 'Canales Estados Unidos'
-          }, 'Consola TV', window.location.href);
-        }
-        
-        // Escuchar cambios en el historial del navegador
-        window.addEventListener('popstate', (event) => {
-          this.handlePopState(event);
-        });
-      }
-
-      // Manejar cambios en el historial del navegador
-      handlePopState(event) {
-        if (event.state) {
-          const state = event.state;
-          console.log('Popstate detected:', state);
-          
-          // Restaurar el estado desde el historial
-          if (state.type === 'main') {
-            this.state.navMode = state.navMode || 'sidebar';
-            this.state.sidebarIndex = state.sidebarIndex || 0;
-            
-            // Si hay una playlist diferente, cargarla
-            if (state.playlist && state.playlist !== this.state.currentPlaylist) {
-              this.state.currentPlaylist = state.playlist;
-              this.loadPlaylist(state.playlist, this.state.sidebarIndex);
-            }
-            
-            this.currentCategory.textContent = state.category || 'Canales Estados Unidos';
-            
-            // Actualizar la UI
-            this.navItems.forEach((item, index) => {
-              item.classList.toggle('active', index === this.state.sidebarIndex);
-              item.classList.toggle('focused', index === this.state.sidebarIndex);
-            });
-            
-            // Enfocar el elemento actual
-            this.focusCurrentElement();
-            
-            this.showNotification('Navegación restaurada', 'info');
-          }
-        }
-      }
-
-      // Actualizar el historial del navegador
-      updateHistoryState(stateData, title = 'Consola TV') {
-        history.pushState(stateData, title, window.location.href);
-      }
-
-      setupEventListeners() {
-        // Navegación por teclado MEJORADA para Fire TV
-        document.addEventListener('keydown', (e) => this.handleKeyNavigation(e));
-        
-        // Evento keydown para submenús
-        this.submenu.addEventListener('keydown', (e) => this.handleSubmenuKeyNavigation(e));
-        
-        // Eventos de video
-        this.videoPlayer.addEventListener('play', () => this.onVideoPlay());
-        this.videoPlayer.addEventListener('pause', () => this.onVideoPause());
-        this.videoPlayer.addEventListener('error', (e) => this.onVideoError(e));
-        this.videoPlayer.addEventListener('click', () => this.resetInactivityTimer());
-        
-        // Botones de UI
-        this.btnExitCinema.addEventListener('click', () => this.exitCinemaMode());
-        this.btnTogglePlay.addEventListener('click', () => this.togglePlayPause());
-        this.btnFullscreen.addEventListener('click', () => this.toggleFullscreen());
-        
-        // Botón de volver en submenú
-        this.submenuBack.addEventListener('click', () => this.closeSubmenu());
-        
-        // Búsqueda OPTIMIZADA con throttling
-        this.searchBox.addEventListener('input', () => this.throttledSearch());
-        this.searchBox.addEventListener('focus', () => this.state.isSearching = true);
-        this.searchBox.addEventListener('blur', () => this.state.isSearching = false);
-        
-        // Navegación por ratón (backup)
-        this.navItems.forEach((item, index) => {
-          if (item.dataset.url) {
-            item.addEventListener('click', () => this.loadPlaylist(item.dataset.url, index));
-          }
-          // Manejar clic en elementos con submenú
-          if (item.classList.contains('has-submenu')) {
-            item.addEventListener('click', () => this.openSubmenu(item.dataset.submenu, index));
-          }
-        });
-
-        // Detección de inactividad
-        this.setupInactivityDetection();
-
-        // Eventos de actividad del usuario
-        document.addEventListener('mousemove', () => this.resetInactivityTimer());
-        document.addEventListener('keydown', () => this.resetInactivityTimer());
-        document.addEventListener('click', () => this.resetInactivityTimer());
-
-        // Eventos de pantalla completa
-        document.addEventListener('fullscreenchange', () => this.handleFullscreenChange());
-        document.addEventListener('webkitfullscreenchange', () => this.handleFullscreenChange());
-        document.addEventListener('mozfullscreenchange', () => this.handleFullscreenChange());
-        document.addEventListener('MSFullscreenChange', () => this.handleFullscreenChange());
-        
-        // MEJORADO: Listener global para tecla BACK optimizado para Fire TV
-        document.addEventListener("keydown", (e) => {
-          const isBackKey = e.key === "Volver" || 
-                           e.key === "BrowserBack" || 
-                           e.keyCode === 8 ||
-                           e.key === "Volver" ||
-                           (e.key === "MediaPlayPause" && this.state.isFullscreenMode);
-          
-          if (this.state.isFullscreenMode && isBackKey) {
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('Global back key handler triggered');
-            this.exitFullscreenMode();
-            
-            // Fallback: forzar salida si no responde
-            setTimeout(() => {
-              if (this.state.isFullscreenMode) {
-                console.log('Fallback: forcing fullscreen exit');
-                this.forceExitFullscreen();
-              }
-            }, 500);
-          }
-        });
-
-        // NUEVO: Detectar cuando el video pierde el foco (útil para Fire TV)
-        this.videoPlayer.addEventListener('blur', () => {
-          if (this.state.isFullscreenMode) {
-            console.log('Video player lost focus in fullscreen mode');
-          }
-        });
-      }
-
-      // OPTIMIZACIÓN: Throttling para búsqueda
-      throttledSearch() {
-        if (this.state.searchThrottle) {
-          clearTimeout(this.state.searchThrottle);
-        }
-        this.state.searchThrottle = setTimeout(() => {
-          this.searchChannels();
-        }, 150); // Reducido de 300ms a 150ms para mejor respuesta
-      }
-
-      // MEJORADO: Manejo de navegación por teclado en submenús
-      handleSubmenuKeyNavigation(e) {
-        if (!this.state.isSubmenuVisible) return;
-        
-        e.preventDefault();
-        e.stopPropagation();
-        
-        switch(e.key) {
-          case 'ArrowUp': 
-            this.navigateSubmenu(-1);
-            break;
-          case 'ArrowDown': 
-            this.navigateSubmenu(1);
-            break;
-          case 'ArrowLeft':
-            this.closeSubmenu();
-            break;
-          case 'ArrowRight':
-            break;
-          case 'Enter': 
-            this.selectSubmenuItem();
-            break;
-          case 'Volver': 
-          case 'Volver':
-            this.closeSubmenu();
-            break;
-          case 'm': 
-          case 'M':
-            this.closeSubmenu();
-            break;
-        }
-      }
-
-      // MEJORADO: Navegación en submenús
-      navigateSubmenu(delta) {
-        if (this.submenuItemsElements.length === 0) return;
-        
-        this.submenuItemsElements[this.state.submenuIndex].classList.remove('focused');
-        
-        let newIndex = this.state.submenuIndex + delta;
-        newIndex = Math.max(0, Math.min(this.submenuItemsElements.length - 1, newIndex));
-        
-        this.state.submenuIndex = newIndex;
-        this.submenuItemsElements[newIndex].classList.add('focused');
-        
-        // Scroll si es necesario
-        this.submenuItemsElements[newIndex].scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'nearest' 
-        });
-      }
-
-      // MEJORADO: Seleccionar elemento del submenú
-      selectSubmenuItem() {
-        if (this.submenuItemsElements.length === 0) return;
-        
-        const item = this.submenuItemsElements[this.state.submenuIndex];
-        const url = item.dataset.url;
-        
-        if (url) {
-          this.closeSubmenu();
-          this.loadPlaylist(url, this.state.sidebarIndex);
-          this.state.navMode = 'grid';
-          this.state.gridIndex = 0;
-        }
-      }
-
-      // MEJORADO: Abrir submenú
-      openSubmenu(submenuId, navIndex) {
-        const submenuData = this.submenusData[submenuId];
-        if (!submenuData) return;
-        
-        // Actualizar estado
-        this.state.isSubmenuVisible = true;
-        this.state.navMode = 'submenu';
-        this.state.submenuIndex = 0;
-        this.state.sidebarIndex = navIndex;
-        
-        // Actualizar UI
-        this.submenuTitle.textContent = this.navItems[navIndex].textContent.trim();
-        this.renderSubmenuItems(submenuData);
-        this.submenu.classList.add('active');
-        
-        // Enfocar primer elemento del submenú
-        if (this.submenuItemsElements.length > 0) {
-          this.submenuItemsElements[0].classList.add('focused');
-        }
-        
-        this.showNotification(`Submenú ${this.submenuTitle.textContent} abierto`, 'info');
-      }
-
-      // MEJORADO: Cerrar submenú
-      closeSubmenu() {
-        this.state.isSubmenuVisible = false;
-        this.state.navMode = 'sidebar';
-        this.submenu.classList.remove('active');
-        
-        // Enfocar el elemento del sidebar que abrió el submenú
-        this.focusCurrentElement();
-        
-        this.showNotification('Submenú cerrado', 'info');
-      }
-
-      // Renderizar elementos del submenú
-      renderSubmenuItems(items) {
-        this.submenuItems.innerHTML = '';
-        this.submenuItemsElements = [];
-        
-        // OPTIMIZACIÓN: Usar DocumentFragment para mejor rendimiento
-        const fragment = document.createDocumentFragment();
-        
-        items.forEach((item, index) => {
-          const div = document.createElement('div');
-          div.className = 'submenu-item';
-          div.textContent = item.name;
-          div.dataset.url = item.url;
-          div.tabIndex = 0;
-          
-          div.addEventListener('click', () => {
-            this.state.submenuIndex = index;
-            this.selectSubmenuItem();
-          });
-          
-          fragment.appendChild(div);
-          this.submenuItemsElements.push(div);
-        });
-        
-        this.submenuItems.appendChild(fragment);
-      }
-
-      // MEJORADO: Manejo de teclado optimizado para Fire TV con throttling
-      handleKeyNavigation(e) {
-        // Si estamos en submenú, dejar que handleSubmenuKeyNavigation maneje la tecla
-        if (this.state.isSubmenuVisible) {
-          this.handleSubmenuKeyNavigation(e);
-          return;
-        }
-        
-        // OPTIMIZACIÓN: Throttling para teclas rápidas
-        if (this.state.keyThrottle) return;
-        this.state.keyThrottle = true;
-        setTimeout(() => {
-          this.state.keyThrottle = false;
-        }, 50); // 50ms de throttling para navegación
-        
-        e.preventDefault();
-        this.resetInactivityTimer();
-        
-        // MEJORADO: Detección mejorada de tecla BACK para Fire TV
-        const isBackKey = e.key === "Volver" || 
-                         e.key === "BrowserBack" || 
-                         e.keyCode === 8 ||
-                         e.key === "Volver" || // ESC también como BACK
-                         (e.key === "MediaPlayPause" && this.state.isFullscreenMode); // Botón Play/Pause como BACK en modo cine
-        
-        // MEJORADO: Manejo prioritario de tecla BACK
-        if (isBackKey && this.state.isFullscreenMode) {
-          e.preventDefault();
-          e.stopPropagation();
-          this.exitFullscreenMode();
-          return;
-        }
-        
-        if (this.state.isSearching && e.key !== 'Volver' && e.key !== 'Volver') {
-          return;
-        }
-        
-        switch(e.key) {
-          case 'ArrowUp': 
-            this.navigate(-1, 0); 
-            break;
-          case 'ArrowDown': 
-            this.navigate(1, 0); 
-            break;
-          case 'ArrowLeft': 
-            this.navigate(0, -1); 
-            break;
-          case 'ArrowRight': 
-            this.navigate(0, 1); 
-            break;
-          case 'Enter': 
-          case 'MediaPlayPause': // Botón Play/Pause como Enter
-            this.selectItem(); 
-            break;
-          case ' ': 
-            this.togglePlayPause(); 
-            break;
-          case 'f': case 'F': 
-          case 'MediaFastForward': // Botón Avance rápido como Fullscreen
-            this.toggleFullscreen(); 
-            break;
-          case 'c': case 'C': 
-          case 'MediaRewind': // Botón Retroceso como Cinema mode
-            this.toggleCinemaMode(); 
-            break;
-          case 's': case 'S': 
-            this.searchBox.focus(); 
-            break;
-          case 'Volver': 
-          case 'Volver':
-            this.handleVolverOrBack(); 
-            break;
-          case '1': case '2': case '3': case '4': case '5': 
-          case '6': case '7': case '8': case '9': 
-            this.quickSelect(parseInt(e.key)); 
-            break;
-          // MEJORADO: Teclas de medios para Fire TV
-          case 'MediaStop':
-            this.togglePlayPause();
-            break;
-          case 'AudioVolumeMute':
-            this.toggleMute();
-            break;
-        }
-      }
-
-      // NUEVO: Navegación unificada con comportamiento mejorado
-      navigate(rowDelta, colDelta) {
-        if (this.state.navMode === 'sidebar') {
-          this.navigateSidebar(rowDelta, colDelta);
-        } else if (this.state.navMode === 'grid') {
-          this.navigateGrid(rowDelta, colDelta);
-        } else if (this.state.navMode === 'submenu') {
-          this.navigateSubmenu(rowDelta);
-        }
-      }
-
-      // NUEVO: Navegación en sidebar con flechas izquierda/derecha mejorada
-      navigateSidebar(rowDelta, colDelta) {
-        // Si estamos en sidebar y presionamos flecha derecha, ir al grid si hay canales
-        if (colDelta > 0 && this.state.filteredChannels.length > 0) {
-          this.state.navMode = 'grid';
-          this.state.gridIndex = 0;
-          this.focusCurrentElement();
-          this.showNotification('Navegando a canales', 'info');
-          return;
-        }
-        
-        // MEJORADO: Si estamos en sidebar y presionamos flecha izquierda, navegar entre secciones del sidebar
-        if (colDelta < 0) {
-          this.showNotification('Ya estás en el menú de navegación', 'info');
-          return;
-        }
-        
-        // Navegación vertical normal
-        this.navItems[this.state.sidebarIndex].classList.remove('focused');
-        this.state.sidebarIndex = Math.max(0, Math.min(this.navItems.length - 1, this.state.sidebarIndex + rowDelta));
-        this.navItems[this.state.sidebarIndex].classList.add('focused');
-        this.navItems[this.state.sidebarIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-
-      // NUEVO: Navegación en grid con flechas izquierda/derecha mejorada
-      navigateGrid(rowDelta, colDelta) {
-        if (this.channelCards.length === 0) return;
-        
-        // MEJORADO: Si estamos en grid y presionamos flecha izquierda en la primera columna, volver al sidebar
-        const currentCol = this.state.gridIndex % this.state.columns;
-        if (colDelta < 0 && currentCol === 0) {
-          // Guardar estado actual antes de cambiar al sidebar
-          this.state.navigationStack.push({
-            navMode: this.state.navMode,
-            gridIndex: this.state.gridIndex,
-            filteredChannels: [...this.state.filteredChannels],
-            category: this.currentCategory.textContent
-          });
-          
-          this.state.navMode = 'sidebar';
-          // Mantener el mismo índice del sidebar que estaba activo antes
-          this.focusCurrentElement();
-          this.showNotification('Navegando al menú principal', 'info');
-          return;
-        }
-        
-        // Si estamos en grid y presionamos flecha derecha en la última columna, no hacer nada
-        if (colDelta > 0 && currentCol === this.state.columns - 1) {
-          return;
-        }
-        
-        // Navegación normal en grid
-        this.channelCards[this.state.gridIndex].classList.remove('focused');
-        
-        const oldIndex = this.state.gridIndex;
-        const newRow = Math.floor(oldIndex / this.state.columns) + rowDelta;
-        const newCol = (oldIndex % this.state.columns) + colDelta;
-        
-        let newIndex = newRow * this.state.columns + newCol;
-        newIndex = Math.max(0, Math.min(this.channelCards.length - 1, newIndex));
-        
-        this.state.gridIndex = newIndex;
-        this.channelCards[newIndex].classList.add('focused');
-        
-        // OPTIMIZACIÓN: Solo hacer scroll si es realmente necesario
-        const cardRect = this.channelCards[newIndex].getBoundingClientRect();
-        const gridRect = this.channelsGrid.getBoundingClientRect();
-        
-        if (cardRect.bottom > gridRect.bottom + 50 || cardRect.top < gridRect.top - 50) {
-          this.channelCards[newIndex].scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'nearest' 
-          });
-        }
-      }
-
-      // MANEJO UNIFICADO DE Volver Y BOTÓN Volver - MEJORADO
-      handleVolverOrBack() {
-        console.log('Volver/Back pressed - Current state:', {
-          isSearching: this.state.isSearching,
-          isFullscreenMode: this.state.isFullscreenMode,
-          isCinemaMode: this.state.isCinemaMode,
-          isSubmenuVisible: this.state.isSubmenuVisible,
-          navMode: this.state.navMode,
-          navigationStack: this.state.navigationStack.length
-        });
-
-        // 1. Si estamos en submenú, cerrarlo primero
-        if (this.state.isSubmenuVisible) {
-          this.closeSubmenu();
-          return;
-        }
-
-        // 2. Si estamos en búsqueda, salir de la búsqueda
-        if (this.state.isSearching) {
-          this.searchBox.blur();
-          this.state.isSearching = false;
-          this.showNotification('Búsqueda cancelada', 'info');
-          return;
-        }
-
-        // 3. MEJORADO: Si estamos en modo cine completo, salir con BACK
-        if (this.state.isFullscreenMode) {
-          this.exitFullscreenMode();
-          return;
-        }
-
-        // 4. Si estamos en modo controles video, salir del modo
-        if (this.state.isCinemaMode) {
-          this.exitCinemaMode();
-          return;
-        }
-
-        // 5. Navegación jerárquica - Si hay elementos en el stack, volver Volver
-        if (this.state.navigationStack.length > 0) {
-          this.navigateBack();
-          return;
-        }
-
-        // 6. MEJORADO: Si estamos en grid de canales, volver al sidebar
-        if (this.state.navMode === 'grid') {
-          this.navigateToSidebar();
-          return;
-        }
-
-        // 7. MEJORADO: Mensaje más específico cuando ya estamos en sidebar
-        if (this.state.navMode === 'sidebar') {
-          this.showNotification('Usa las flechas para navegar por el menú', 'info');
-          return;
-        }
-      }
-
-      // Navegación jerárquica hacia Volver
-      navigateBack() {
-        const previousState = this.state.navigationStack.pop();
-        
-        if (previousState) {
-          this.state.navMode = previousState.navMode;
-          this.state.gridIndex = previousState.gridIndex || 0;
-          this.state.sidebarIndex = previousState.sidebarIndex || 0;
-          this.state.filteredChannels = previousState.filteredChannels || this.state.channels;
-          this.currentCategory.textContent = previousState.category || 'Canales Estados Unidos';
-          
-          this.renderChannels();
-          this.focusCurrentElement();
-          
-          this.showNotification('Volviendo Volver...', 'info');
-        }
-      }
-
-      // Navegar al sidebar desde el grid
-      navigateToSidebar() {
-        // Guardar estado actual en el stack
-        this.state.navigationStack.push({
-          navMode: this.state.navMode,
-          gridIndex: this.state.gridIndex,
-          filteredChannels: [...this.state.filteredChannels],
-          category: this.currentCategory.textContent
-        });
-
-        // Volver al sidebar
-        this.state.navMode = 'sidebar';
-        this.state.sidebarIndex = 0;
-        this.focusCurrentElement();
-        
-        this.showNotification('Volviendo al menú principal', 'info');
-      }
-
-      // MEJORADO: Manejo de cambios de pantalla completa más robusto
-      handleFullscreenChange() {
-        const isFullscreen = !!(document.fullscreenElement || 
-                                document.webkitFullscreenElement || 
-                                document.mozFullScreenElement || 
-                                document.msFullscreenElement);
-        
-        console.log('Fullscreen change detected:', isFullscreen);
-        
-        if (!isFullscreen && this.state.isFullscreenMode) {
-          // Salida de modo cine detectada
-          console.log('Fullscreen exit detected by browser event');
-          this.state.isFullscreenMode = false;
-          this.videoPlayer.classList.remove('fullscreen-mode');
-          
-          // Restaurar el estado después de salir de modo cine
-          this.restorePreFullscreenState();
-          
-          this.resetInactivityTimer();
-        } else if (isFullscreen && !this.state.isFullscreenMode) {
-          // Entrada en modo cine
-          console.log('Fullscreen enter detected by browser event');
-          this.state.isFullscreenMode = true;
-          this.videoPlayer.classList.add('fullscreen-mode');
-        }
-      }
-
-      // MEJORADO: Salida de pantalla completa optimizada para Fire TV
-      exitFullscreenMode() {
-        console.log('Exiting fullscreen mode...');
-        
-        // Cancelar temporizadores primero
-        clearTimeout(this.state.inactivityTimer);
-        clearInterval(this.state.countdownTimer);
-        this.fullscreenTimer.classList.remove('show');
-        
-        if (this.state.isFullscreenMode) {
-          // Llamar a las APIs nativas de salida de pantalla completa
-          const exitMethods = [
-            () => document.exitFullscreen?.(),
-            () => document.webkitExitFullscreen?.(),
-            () => document.mozCancelFullScreen?.(),
-            () => document.msExitFullscreen?.(),
-            () => this.videoPlayer.webkitExitFullscreen?.()
-          ];
-          
-          // Intentar todos los métodos de salida
-          exitMethods.forEach(method => {
-            try {
-              method().catch(e => console.log('Exit method failed (normal):', e.message));
-            } catch (e) {
-              console.log('Exit method error:', e);
-            }
-          });
-          
-          // Actualizar estado inmediatamente
-          this.state.isFullscreenMode = false;
-          this.videoPlayer.classList.remove('fullscreen-mode');
-          
-          // MEJORADO: Restaurar estado después de un breve delay para asegurar DOM
-          setTimeout(() => {
-            this.restorePreFullscreenState();
-          }, 300);
-        }
-        
-        this.showNotification('Saliste del modo cine - Posición restaurada', 'success');
-      }
-
-      // NUEVO: Método para forzar salida de pantalla completa como fallback
-      forceExitFullscreen() {
-        console.log('Forcing fullscreen exit...');
-        
-        // Intentar múltiples métodos de salida
-        const exitMethods = [
-          () => document.exitFullscreen?.(),
-          () => document.webkitExitFullscreen?.(),
-          () => document.mozCancelFullScreen?.(),
-          () => document.msExitFullscreen?.(),
-          () => this.videoPlayer.webkitExitFullscreen?.()
-        ];
-        
-        exitMethods.forEach(method => {
-          try {
-            method();
-          } catch (e) {
-            console.log('Exit method failed:', e);
-          }
-        });
-        
-        // Forzar actualización de estado
-        this.state.isFullscreenMode = false;
-        this.videoPlayer.classList.remove('fullscreen-mode');
-        this.restorePreFullscreenState();
-      }
-
-      // MEJORADO: Cambiado a "Modo Cine"
-      enterFullscreenMode() {
-        // Guardar el estado completo antes de entrar en modo cine
-        this.savePreFullscreenState();
-        
-        if (this.videoPlayer.requestFullscreen) {
-          this.videoPlayer.requestFullscreen();
-        } else if (this.videoPlayer.webkitRequestFullscreen) {
-          this.videoPlayer.webkitRequestFullscreen();
-        } else if (this.videoPlayer.msRequestFullscreen) {
-          this.videoPlayer.msRequestFullscreen();
-        }
-        
-        this.state.isFullscreenMode = true;
-        this.videoPlayer.classList.add('fullscreen-mode');
-        this.showNotification('Modo cine activado', 'info');
-      }
-
-      selectItem() {
-        if (this.state.navMode === 'sidebar') {
-          const item = this.navItems[this.state.sidebarIndex];
-          if (item.dataset.url) {
-            // Guardar estado actual antes de cambiar
-            this.state.navigationStack.push({
-              navMode: this.state.navMode,
-              sidebarIndex: this.state.sidebarIndex,
-              filteredChannels: [...this.state.filteredChannels],
-              category: this.currentCategory.textContent
-            });
-
-            this.loadPlaylist(item.dataset.url, this.state.sidebarIndex);
-            this.state.navMode = 'grid';
-            this.state.gridIndex = 0;
-            
-            // Actualizar historial del navegador
-            this.updateHistoryState({
-              type: 'main',
-              navMode: 'grid',
-              sidebarIndex: this.state.sidebarIndex,
-              playlist: item.dataset.url,
-              category: item.textContent.trim()
-            }, `Consola TV - ${item.textContent.trim()}`);
-          } else if (item.classList.contains('has-submenu')) {
-            this.openSubmenu(item.dataset.submenu, this.state.sidebarIndex);
-          }
-        } else if (this.state.navMode === 'grid') {
-          this.playChannel(this.state.gridIndex);
-        }
-      }
-
-      async loadPlaylist(url, navIndex) {
-        this.showNotification('Cargando canales...', 'info');
-        this.channelsGrid.innerHTML = '<div class="loading">Cargando canales</div>';
-        
-        try {
-          const response = await fetch(url);
-          if (!response.ok) throw new Error('Error de red');
-          const data = await response.text();
-          this.parseM3U(data);
-          
-          // Actualizar UI
-          this.navItems.forEach(item => item.classList.remove('active'));
-          this.navItems[navIndex].classList.add('active');
-          this.currentCategory.textContent = this.navItems[navIndex].textContent.trim();
-          
-          this.showNotification(`Canales cargados: ${this.state.channels.length}`, 'success');
-        } catch (error) {
-          this.showNotification('Error al cargar canales', 'error');
-          this.channelsGrid.innerHTML = '<div class="error">Error al cargar los canales</div>';
-        }
-      }
-
-      parseM3U(data) {
-        const lines = data.split("\n");
-        let currentChannel = {};
-        const channels = [];
-        lines.forEach(line => {
-          if (line.startsWith("#EXTINF")) {
-            const nameMatch = line.match(/,(.*)$/);
-            const logoMatch = line.match(/tvg-logo="(.*?)"/);
-            currentChannel = {
-              name: nameMatch ? nameMatch[1].trim() : "Canal sin nombre",
-              logo: logoMatch ? logoMatch[1] : "https://via.placeholder.com/150x80?text=No+Logo"
-            };
-          } else if (line.startsWith("http")) {
-            currentChannel.url = line.trim();
-            channels.push({...currentChannel});
-            currentChannel = {};
-          }
-        });
-        this.state.channels = channels;
-        this.state.filteredChannels = [...channels];
-        this.renderChannels();
-      }
-
-      // MEJORADO: Renderizado optimizado con DocumentFragment
-      renderChannels() {
-        // OPTIMIZACIÓN: Evitar renderizado múltiple simultáneo
-        if (this.state.isRendering) return;
-        this.state.isRendering = true;
-        
-        const now = Date.now();
-        if (now - this.state.lastRenderTime < 100) { // Throttle a 100ms
-          setTimeout(() => {
-            this.state.isRendering = false;
-            this.renderChannels();
-          }, 100);
-          return;
-        }
-        
-        this.state.lastRenderTime = now;
-        
-        this.channelsGrid.innerHTML = "";
-        this.channelCards = [];
-        
-        if (this.state.filteredChannels.length === 0) {
-          this.channelsGrid.innerHTML = '<div class="error">No se encontraron canales</div>';
-          this.state.isRendering = false;
-          return;
-        }
-        
-        // OPTIMIZACIÓN: Usar DocumentFragment para mejor rendimiento
-        const fragment = document.createDocumentFragment();
-        
-        this.state.filteredChannels.forEach((channel, index) => {
-          const div = document.createElement("div");
-          div.className = "channel-card";
-          div.tabIndex = 0;
-          div.dataset.url = channel.url;
-          
-          // Verificar si es reciente
-          const isRecent = this.state.history.some(hist => hist.url === channel.url);
-          
-          if (isRecent) div.classList.add('recent');
-          
-          // MEJORADO: Sin numeración
-          div.innerHTML = `
-            <img class="channel-logo" src="${channel.logo}" alt="${channel.name}" 
-                 onerror="this.src='https://via.placeholder.com/150x80?text=No+Logo'">
-            <div class="channel-name">${channel.name}</div>
-          `;
-
-          div.addEventListener("click", () => this.playChannel(index));
-
-          fragment.appendChild(div);
-          this.channelCards.push(div);
-        });
-        
-        this.channelsGrid.appendChild(fragment);
-        this.channelCount.textContent = `${this.state.filteredChannels.length} canales`;
-        this.updateLayout();
-        
-        // Enfocar primer canal
-        if (this.channelCards.length > 0) {
-          this.channelCards[0].classList.add('focused');
-        }
-        
-        this.state.isRendering = false;
-      }
-
-      // NUEVO: Reproductor MPD (MPEG-DASH)
-      playMPD(url) {
-        if (this.state.currentDash) {
-          this.state.currentDash.destroy();
-        }
-        
-        this.state.currentDash = dashjs.MediaPlayer().create();
-        this.state.currentDash.initialize(this.videoPlayer, url, true);
-        
-        this.videoPlayer.play().catch(e => {
-          console.error('Error play MPD:', e);
-          this.showNotification('Error al reproducir el canal', 'error');
-        });
-      }
-
-      // NUEVO: Reproductor M3U8 nativo
-      playM3U8(url) {
-        if (Hls.isSupported()) {
-          if (this.state.currentHls) {
-            this.state.currentHls.destroy();
-          }
-          
-          this.state.currentHls = new Hls({
-            enableWorker: false,
-            lowLatencyMode: true,
-            // OPTIMIZACIÓN: Configuraciones de rendimiento
-            maxBufferLength: 30,
-            maxMaxBufferLength: 60,
-            backBufferLength: 30
-          });
-          this.state.currentHls.loadSource(url);
-          this.state.currentHls.attachMedia(this.videoPlayer);
-          this.state.currentHls.on(Hls.Events.MANIFEST_PARSED, () => {
-            this.videoPlayer.play().catch(e => {
-              console.error('Error play M3U8:', e);
-              this.showNotification('Error al reproducir el canal', 'error');
-            });
-          });
-          this.state.currentHls.on(Hls.Events.ERROR, (event, data) => {
-            console.error('HLS Error:', data);
-            if (data.fatal) {
-              this.showNotification('Error de transmisión del canal', 'error');
-            }
-          });
-        } else if (this.videoPlayer.canPlayType('application/vnd.apple.mpegurl')) {
-          // Soporte nativo para Safari
-          this.videoPlayer.src = url;
-          this.videoPlayer.play().catch(e => {
-            console.error('Error play M3U8:', e);
-            this.showNotification('Error al reproducir el canal', 'error');
-          });
-        } else {
-          this.showNotification('Formato no compatible en este navegador', 'error');
-        }
-      }
-
-      // NUEVO: Reproductor M3U
-      playM3U(url) {
-        this.videoPlayer.src = url;
-        this.videoPlayer.play().catch(e => {
-          console.error('Error play M3U:', e);
-          this.showNotification('Error al reproducir el canal', 'error');
-        });
-      }
-
-      playChannel(index) {
-        const channel = this.state.filteredChannels[index];
-        if (!channel) return;
-        
-        this.showNotification(`Cargando: ${channel.name}`, 'info');
-        
-        // Limpiar reproducción anterior
-        if (this.state.currentHls) {
-          this.state.currentHls.destroy();
-        }
-        if (this.state.currentDash) {
-          this.state.currentDash.destroy();
-        }
-        
-        // Actualizar UI
-        this.channelCards.forEach(card => card.classList.remove('playing'));
-        this.channelCards[index].classList.add('playing');
-        this.channelCards[index].classList.add('focused');
-        this.state.gridIndex = index;
-        
-        // Añadir al historial
-        this.addToHistory(channel);
-        
-        // Configurar video
-        this.videoPlayer.classList.add('active');
-        
-        // NUEVO: Seleccionar reproductor según el tipo de archivo
-        const url = channel.url.toLowerCase();
-        
-        if (url.includes('.mpd')) {
-          // Reproductor MPD para MPEG-DASH
-          this.playMPD(channel.url);
-        } else if (url.includes('.m3u8')) {
-          // Reproductor M3U8 para HLS
-          this.playM3U8(channel.url);
-        } else if (url.includes('.m3u')) {
-          // Reproductor M3U para listas de reproducción
-          this.playM3U(channel.url);
-        } else {
-          // Reproductor por defecto (para otros formatos)
-          this.videoPlayer.src = channel.url;
-          this.videoPlayer.play().catch(e => {
-            console.error('Error play:', e);
-            this.showNotification('Error al reproducir el canal', 'error');
-          });
-        }
-
-        // Iniciar temporizador para modo cine
-        this.resetInactivityTimer();
-      }
-
-      // Sistema de modo cine automático - MEJORADO (20 segundos)
-      resetInactivityTimer() {
-        clearTimeout(this.state.inactivityTimer);
-        clearInterval(this.state.countdownTimer);
-        
-        this.fullscreenTimer.classList.remove('show');
-        
-        if (!this.videoPlayer.paused && this.videoPlayer.src && !this.state.isFullscreenMode) {
-          this.state.inactivityTimer = setTimeout(() => {
-            this.startFullscreenCountdown();
-          }, 3000); // 3 segundos de inactividad antes de mostrar countdown
-        }
-      }
-
-      // MEJORADO: Cambiado a "Modo Cine" y extendido a 20 segundos
-      startFullscreenCountdown() {
-        this.state.countdownValue = 20; // CAMBIADO: De 5 a 20 segundos
-        this.timerCountdown.textContent = this.state.countdownValue;
-        this.fullscreenTimer.classList.add('show');
-        
-        this.state.countdownTimer = setInterval(() => {
-          this.state.countdownValue--;
-          this.timerCountdown.textContent = this.state.countdownValue;
-          
-          if (this.state.countdownValue <= 0) {
-            clearInterval(this.state.countdownTimer);
-            this.fullscreenTimer.classList.remove('show');
-            this.enterFullscreenMode();
-          }
-        }, 1000);
-      }
-
-      // Control de reproducción
-      togglePlayPause() {
-        if (this.videoPlayer.paused) {
-          this.videoPlayer.play();
-        } else {
-          this.videoPlayer.pause();
-        }
-      }
-
-      // MEJORADO: Cambiado a "Modo Cine"
-      toggleFullscreen() {
-        if (!this.state.isFullscreenMode) {
-          this.enterFullscreenMode();
-        } else {
-          this.exitFullscreenMode();
-        }
-      }
-
-      toggleCinemaMode() {
-        if (this.state.isCinemaMode) {
-          this.exitCinemaMode();
-        } else {
-          this.enterCinemaMode();
-        }
-      }
-
-      enterCinemaMode() {
-        this.state.isCinemaMode = true;
-        document.body.classList.add('cinema-mode');
-        this.cinemaControls.style.display = 'flex';
-        this.showNotification('Controles de video activados', 'info');
-      }
-
-      exitCinemaMode() {
-        this.state.isCinemaMode = false;
-        document.body.classList.remove('cinema-mode');
-        this.cinemaControls.style.display = 'none';
-      }
-
-      quickSelect(number) {
-        if (number <= this.channelCards.length) {
-          this.playChannel(number - 1);
-        }
-      }
-
-      // Sistema de búsqueda OPTIMIZADO
-      searchChannels() {
-        const query = this.searchBox.value.toLowerCase();
-        
-        if (query === '') {
-          this.state.filteredChannels = [...this.state.channels];
-        } else {
-          // OPTIMIZACIÓN: Búsqueda más eficiente
-          this.state.filteredChannels = this.state.channels.filter(channel => 
-            channel.name.toLowerCase().includes(query)
-          );
-        }
-        
-        this.renderChannels();
-      }
-
-      // Historial de visualización
-      addToHistory(channel) {
-        const index = this.state.history.findIndex(hist => hist.url === channel.url);
-        if (index !== -1) {
-          this.state.history.splice(index, 1);
-        }
-        
-        this.state.history.unshift(channel);
-        
-        if (this.state.history.length > 20) {
-          this.state.history.pop();
-        }
-        
-        localStorage.setItem('tvHistory', JSON.stringify(this.state.history));
-      }
-
-      // Utilidades
-      showNotification(message, type = 'info') {
-        this.notification.textContent = message;
-        this.notification.className = `tv-notification ${type} show`;
-        
-        setTimeout(() => {
-          this.notification.classList.remove('show');
-        }, 3000);
-      }
-
-      updateLayout() {
-        const gridWidth = this.channelsGrid.clientWidth;
-        const cardWidth = 180;
-        this.state.columns = Math.max(1, Math.floor(gridWidth / cardWidth));
-      }
-
-      // MEJORADO: Reloj eliminado
-      setupInactivityDetection() {
-        this.resetInactivityTimer();
-      }
-
-      loadInitialData() {
-        this.loadPlaylist(this.state.currentPlaylist, 0);
-      }
-
-      onVideoPlay() {
-        this.btnTogglePlay.textContent = 'Pausa';
-        this.playPauseBtn.textContent = '⏸️';
-        this.resetInactivityTimer();
-      }
-
-      onVideoPause() {
-        this.btnTogglePlay.textContent = 'Play';
-        this.playPauseBtn.textContent = '⏯️';
-        clearTimeout(this.state.inactivityTimer);
-        clearInterval(this.state.countdownTimer);
-        this.fullscreenTimer.classList.remove('show');
-      }
-
-      onVideoError(e) {
-        this.showNotification('Error al reproducir el canal', 'error');
-        console.error('Video error:', e);
-      }
+</div>
+
+<div class="main" id="mainContent"></div>
+
+<div id="player">
+  <video id="videoPlayer" controls preload="auto"></video>
+</div>
+
+<script>
+const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html";
+const HISTORY_KEY = "iptv_history";
+const MAX_HISTORY_ITEMS = 20;
+
+let moviesByCategory = {};
+let currentHero = null;
+let isPlayerOpen = false;
+let hls;
+
+// --- HISTORIAL ---
+function getHistory() { try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; } catch { return []; } }
+function saveToHistory(ch) {
+  let history = getHistory();
+  history = history.filter(i => i.url !== ch.url);
+  history.unshift(ch);
+  if (history.length > MAX_HISTORY_ITEMS) history = history.slice(0, MAX_HISTORY_ITEMS);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+}
+
+// --- REPRODUCCIÓN SOLO HLS.js ---
+function playChannel(url, name, logo, category) {
+  const player = document.getElementById("player");
+  const video = document.getElementById("videoPlayer");
+  player.style.display = "block";
+  isPlayerOpen = true;
+  saveToHistory({url, name, logo, category});
+  history.pushState({ page: 'player' }, 'Player', '#play');
+
+  // Limpiar instancias previas
+  if (hls) { hls.destroy(); hls = null; }
+
+  // Si es compatible HLS.js
+  if (Hls.isSupported() && url.endsWith('.m3u8')) {
+    hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    // Safari
+    video.src = url;
+    video.play();
+  } else {
+    // fallback mp4
+    video.src = url;
+    video.play();
+  }
+
+  // Intentar fullscreen
+  player.requestFullscreen().catch(()=>{});
+}
+
+window.addEventListener('popstate', () => { if (isPlayerOpen) closePlayer(); });
+
+function closePlayer() {
+  if (!isPlayerOpen) return;
+  isPlayerOpen = false;
+  const player = document.getElementById("player");
+  player.style.display = "none";
+  const video = document.getElementById("videoPlayer");
+  if (hls) { hls.destroy(); hls = null; }
+  video.pause();
+  video.src = "";
+}
+
+// --- PARSEADOR M3U ---
+function parseM3U(text) {
+  const lines = text.split("\n");
+  const channels = [];
+  let current = {};
+  for (let line of lines) {
+    line = line.trim();
+    if (line.startsWith("#EXTINF:")) {
+      const logo = line.match(/tvg-logo="([^"]*)"/);
+      const name = line.split(",").pop();
+      const cat = line.match(/group-title="([^"]*)"/);
+      current.logo = logo ? logo[1] : "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
+      current.name = name;
+      current.category = cat ? cat[1] : "Sin categoría";
+    } else if (line && !line.startsWith("#")) {
+      current.url = line;
+      channels.push({...current});
+      current = {};
     }
+  }
+  return channels;
+}
 
-    // Inicializar la consola TV cuando se carga la página
-    document.addEventListener('DOMContentLoaded', () => {
-      window.tvConsole = new TVConsole();
-    });
+// --- CARGA Y ORGANIZACIÓN ---
+async function loadPlaylist() {
+  try {
+    const res = await fetch(PLAYLIST_URL_MOVIES);
+    const text = await res.text();
+    const channels = parseM3U(text);
+    organizeByCategory(channels);
+    setHero(channels[0]);
+  } catch (e) { console.error(e); }
+}
 
-    // Manejar cambios de tamaño para responsive
-    window.addEventListener('resize', () => {
-      if (window.tvConsole) {
-        window.tvConsole.updateLayout();
-      }
-    });
+function organizeByCategory(channels) {
+  moviesByCategory = {};
+  channels.forEach(ch => {
+    if (!moviesByCategory[ch.category]) moviesByCategory[ch.category] = [];
+    moviesByCategory[ch.category].push(ch);
+  });
+  renderAllCategories();
+}
 
-    // NUEVO: Global fallback para salida de pantalla completa
-    document.addEventListener('keydown', (e) => {
-      if (window.tvConsole && window.tvConsole.state.isFullscreenMode && 
-          (e.key === 'Volver' || e.key === 'Volver')) {
-        e.preventDefault();
-        window.tvConsole.forceExitFullscreen();
-      }
-    });
-  </script>
+function renderAllCategories() {
+  const main = document.getElementById("mainContent");
+  main.innerHTML = "";
+  Object.keys(moviesByCategory).forEach(cat => {
+    const section = document.createElement("div");
+    section.className = "section";
+    section.innerHTML = `<h2>${cat}</h2><div class="row" id="row_${cat.replace(/\s+/g,'_')}"></div>`;
+    main.appendChild(section);
+    renderChannels(moviesByCategory[cat], `row_${cat.replace(/\s+/g,'_')}`);
+  });
+  updateSectionElements();
+}
+
+function renderChannels(channels, rowId) {
+  const row = document.getElementById(rowId);
+  row.innerHTML = "";
+  channels.forEach(ch => {
+    const div = document.createElement("div");
+    div.className = "channel";
+    div.innerHTML = `
+      <img src="${ch.logo}" alt="${ch.name}">
+      <div class="category">${ch.category}</div>
+      <p>${ch.name}</p>`;
+    div.onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.category);
+    div.onmouseenter = () => updateHeroPreview(ch);
+    div.onmouseleave = () => restoreHero();
+    row.appendChild(div);
+  });
+}
+
+// --- HERO ---
+function setHero(ch) {
+  if (!ch) return;
+  currentHero = ch;
+  const hero = document.getElementById("hero");
+  hero.style.backgroundImage = `url('${ch.logo}')`;
+  document.getElementById("heroTitle").innerText = ch.name;
+  document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
+  document.getElementById("heroPlayBtn").onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.category);
+}
+function updateHeroPreview(ch) {
+  const hero = document.getElementById("hero");
+  hero.style.backgroundImage = `url('${ch.logo}')`;
+  document.getElementById("heroTitle").innerText = ch.name;
+  document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
+}
+function restoreHero() { setHero(currentHero); }
+function playHero() { if (currentHero) playChannel(currentHero.url, currentHero.name, currentHero.logo, currentHero.category); }
+
+// --- NAVEGACIÓN SMART TV ---
+let focusedRow = -1;
+let focusedCol = 0;
+let sectionElements = [];
+
+function updateSectionElements() {
+  sectionElements = Array.from(document.querySelectorAll(".section .row"));
+  focusedRow = -1;
+  focusedCol = 0;
+  updateFocus();
+}
+
+function scrollToRowSmooth(rowElement) {
+  const rect = rowElement.getBoundingClientRect();
+  const targetY = window.scrollY + rect.top - (window.innerHeight / 2) + rect.height / 2;
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  const duration = 500;
+  const startTime = performance.now();
+
+  function easeInOutQuad(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
+
+  function animate(time) {
+    const progress = Math.min((time - startTime) / duration, 1);
+    const eased = easeInOutQuad(progress);
+    window.scrollTo(0, startY + distance * eased);
+    if (progress < 1) requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
+}
+
+function updateFocus() {
+  sectionElements.forEach((r,i) => {
+    r.parentElement.classList.remove("active");
+    r.querySelectorAll(".channel").forEach(c => c.classList.remove("focused"));
+  });
+  document.getElementById("heroPlayBtn").classList.remove("focused");
+
+  if (focusedRow === -1) {
+    document.getElementById("heroPlayBtn").classList.add("focused");
+    scrollToRowSmooth(document.querySelector(".hero"));
+  } else {
+    const row = sectionElements[focusedRow];
+    if (!row) return;
+    const channels = row.querySelectorAll(".channel");
+    const channel = channels[focusedCol];
+    if (!channel) return;
+
+    channel.classList.add("focused");
+    channel.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    scrollToRowSmooth(row);
+    row.parentElement.classList.add("active");
+  }
+}
+
+document.addEventListener("keydown", (e) => {
+  if (isPlayerOpen) return;
+  let handled = true;
+  switch(e.key) {
+    case "ArrowRight": focusedCol++; break;
+    case "ArrowLeft": focusedCol--; break;
+    case "ArrowDown": focusedRow++; break;
+    case "ArrowUp": focusedRow--; break;
+    case "Enter":
+      if (focusedRow === -1) playHero();
+      else sectionElements[focusedRow]?.querySelectorAll(".channel")[focusedCol]?.click();
+      break;
+    default: handled = false;
+  }
+
+  if (!handled) return;
+
+  if (focusedRow < -1) focusedRow = -1;
+  if (focusedRow >= sectionElements.length) focusedRow = sectionElements.length - 1;
+
+  const currentRow = sectionElements[focusedRow];
+  if (focusedRow >= 0 && currentRow) {
+    const totalCols = currentRow.querySelectorAll(".channel").length;
+    if (focusedCol < 0) focusedCol = 0;
+    if (focusedCol >= totalCols) focusedCol = totalCols - 1;
+  }
+
+  updateFocus();
+  e.preventDefault();
+});
+
+document.addEventListener("DOMContentLoaded", loadPlaylist);
+</script>
+
 </body>
 </html>
+
+
+
+
+
