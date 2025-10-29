@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IPTV Player Nativo - Estilo Netflix + HLS.js</title>
-
-<!-- HLS.JS -->
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IPTV Player TV - Navegable</title>
 <style>
-/* --- ESTILO GENERAL --- */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,10 +14,9 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 
-/* --- PORTADA PRINCIPAL --- */
 .hero {
   position: relative;
-  height: 40vh;
+  height: 70vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -44,40 +38,32 @@ a { color: inherit; text-decoration: none; }
   z-index: 2;
   max-width: 600px;
 }
-.hero h1 { font-size: 3em; margin: 0; }
-.hero p {
-  font-size: 1.1em;
-  color: #ddd;
-  line-height: 1.4em;
-  margin-top: 1px;
-}
+.hero h1 { font-size: 2.4em; margin: 0; }
+.hero p { font-size: 1.1em; color: #ddd; line-height: 1.4em; margin-top: 5px; }
+
 .play-btn {
   margin-top: 20px;
   background: #1e90ff;
   color: #fff;
   border: none;
   padding: 12px 30px;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
 }
-.play-btn:hover { background: #339aff; transform: scale(1.05); }
-
-/* --- CONTENIDO PRINCIPAL --- */
-.main {
-  padding: 10px;
-  box-sizing: border-box;
+.play-btn:hover, .play-btn.focused {
+  background: #339aff;
+  transform: scale(1.05);
+  outline: 3px solid #1e90ff;
+  box-shadow: 0 0 20px #1e90ff90;
 }
 
-/* --- FILAS --- */
+.main { padding: 10px; box-sizing: border-box; }
 .section { margin-bottom: 1px; transition: transform 0.4s ease, opacity 0.4s ease; }
 .section.active { transform: scale(1.02); opacity: 1; }
-.section h2 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-  color: #fff;
-}
+.section h2 { font-size: 1.4em; margin-bottom: 10px; color: #fff; }
+
 .row {
   display: flex;
   overflow-x: auto;
@@ -89,149 +75,62 @@ a { color: inherit; text-decoration: none; }
 .row::-webkit-scrollbar { display: none; }
 
 .channel {
-  flex: 0 0 170px;
+  flex: 0 0 120px;
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, outline 0.25s ease;
-  border-radius: 6px;
-  position: relative;
+  border-radius: 10px;
+  font-size: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.05); /* ligero aumento */
+   box-shadow: 0 6px 20px rgba(0,0,0,0.5); /* sombra sutil */
+
 }
 .channel img {
   width: 100%;
-  aspect-ratio: 6/9;
-  border-radius: 6px;
+  aspect-ratio: 5/9;
+  border-radius: 10px;
   object-fit: cover;
-}
-.channel:hover {
-  transform: scale(1.08);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-}
-.channel p {
-  margin-top: 6px;
-  font-size: 14px;
-  text-align: center;
-}
-.channel .category {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: rgba(0,0,0,0.7);
-  padding: 3px 8px;
+  padding: 1px;
   font-size: 12px;
-  border-radius: 3px;
-  color: #1e90ff;
-  font-weight: bold;
-}
 
-/* --- REPRODUCTOR --- */
-#player {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: black;
-  z-index: 999;
 }
-#videoPlayer {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: black;
-}
+.channel .category { 
+position: absolute; 
+top: 2px; 
+left: 1px;
+background: rgba(255,255,255,0.8);
+padding: 2px 2px; font-size: 1px; 
+border-radius: 0px; color: #1e90ff;
+ padding: 2px 1px;
+  font-size: 12px;
+  border-radius: px;
+  color: #000; /* 🔥 texto negro */
+  font-weight: 600;
 
-/* --- FOCO --- */
+}
 .channel.focused {
-  outline: 3px solid #1e90ff;
-  box-shadow: 0 0 25px #1e90ff90;
-  transform: scale(1.12);
-}
-#heroPlayBtn.focused {
-  outline: 3px solid #1e90ff;
-  box-shadow: 0 0 25px #1e90ff90;
-  transform: scale(1.08);
+  outline: 3px solid #ffffff90;
+  box-shadow: 0 0 25px #ffffff90;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 </style>
 </head>
 
 <body>
-
 <div class="hero" id="hero">
   <div class="hero-content">
     <h1 id="heroTitle">Bienvenido a IPTV Player</h1>
-    <p id="heroDesc">Explora tus películas y canales favoritos con estilo Netflix.</p>
-    <button id="heroPlayBtn" class="play-btn" onclick="playHero()">▶ Reproducir</button>
+    <p id="heroDesc">Explora tus películas y canales favoritos con tu control remoto.</p>
+    <button id="heroPlayBtn" class="play-btn">▶ Reproducir</button>
   </div>
 </div>
 
 <div class="main" id="mainContent"></div>
 
-<div id="player">
-  <video id="videoPlayer" controls preload="auto"></video>
-</div>
-
 <script>
 const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html";
-const HISTORY_KEY = "iptv_history";
-const MAX_HISTORY_ITEMS = 20;
-
 let moviesByCategory = {};
 let currentHero = null;
-let isPlayerOpen = false;
-let hls;
-
-// --- HISTORIAL ---
-function getHistory() { try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; } catch { return []; } }
-function saveToHistory(ch) {
-  let history = getHistory();
-  history = history.filter(i => i.url !== ch.url);
-  history.unshift(ch);
-  if (history.length > MAX_HISTORY_ITEMS) history = history.slice(0, MAX_HISTORY_ITEMS);
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
-}
-
-// --- REPRODUCCIÓN SOLO HLS.js ---
-function playChannel(url, name, logo, category) {
-  const player = document.getElementById("player");
-  const video = document.getElementById("videoPlayer");
-  player.style.display = "block";
-  isPlayerOpen = true;
-  saveToHistory({url, name, logo, category});
-  history.pushState({ page: 'player' }, 'Player', '#play');
-
-  // Limpiar instancias previas
-  if (hls) { hls.destroy(); hls = null; }
-
-  // Si es compatible HLS.js
-  if (Hls.isSupported() && url.endsWith('.m3u8')) {
-    hls = new Hls();
-    hls.loadSource(url);
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    // Safari
-    video.src = url;
-    video.play();
-  } else {
-    // fallback mp4
-    video.src = url;
-    video.play();
-  }
-
-  // Intentar fullscreen
-  player.requestFullscreen().catch(()=>{});
-}
-
-window.addEventListener('popstate', () => { if (isPlayerOpen) closePlayer(); });
-
-function closePlayer() {
-  if (!isPlayerOpen) return;
-  isPlayerOpen = false;
-  const player = document.getElementById("player");
-  player.style.display = "none";
-  const video = document.getElementById("videoPlayer");
-  if (hls) { hls.destroy(); hls = null; }
-  video.pause();
-  video.src = "";
-}
 
 // --- PARSEADOR M3U ---
 function parseM3U(text) {
@@ -256,7 +155,7 @@ function parseM3U(text) {
   return channels;
 }
 
-// --- CARGA Y ORGANIZACIÓN ---
+// --- CARGA DE LISTA ---
 async function loadPlaylist() {
   try {
     const res = await fetch(PLAYLIST_URL_MOVIES);
@@ -264,6 +163,7 @@ async function loadPlaylist() {
     const channels = parseM3U(text);
     organizeByCategory(channels);
     setHero(channels[0]);
+    initTVNavigation();
   } catch (e) { console.error(e); }
 }
 
@@ -286,7 +186,6 @@ function renderAllCategories() {
     main.appendChild(section);
     renderChannels(moviesByCategory[cat], `row_${cat.replace(/\s+/g,'_')}`);
   });
-  updateSectionElements();
 }
 
 function renderChannels(channels, rowId) {
@@ -299,7 +198,7 @@ function renderChannels(channels, rowId) {
       <img src="${ch.logo}" alt="${ch.name}">
       <div class="category">${ch.category}</div>
       <p>${ch.name}</p>`;
-    div.onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.category);
+    div.onclick = () => playChannel(ch.url);
     div.onmouseenter = () => updateHeroPreview(ch);
     div.onmouseleave = () => restoreHero();
     row.appendChild(div);
@@ -314,7 +213,7 @@ function setHero(ch) {
   hero.style.backgroundImage = `url('${ch.logo}')`;
   document.getElementById("heroTitle").innerText = ch.name;
   document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
-  document.getElementById("heroPlayBtn").onclick = () => playChannel(ch.url, ch.name, ch.logo, ch.category);
+  document.getElementById("heroPlayBtn").onclick = () => playChannel(ch.url);
 }
 function updateHeroPreview(ch) {
   const hero = document.getElementById("hero");
@@ -323,74 +222,58 @@ function updateHeroPreview(ch) {
   document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
 }
 function restoreHero() { setHero(currentHero); }
-function playHero() { if (currentHero) playChannel(currentHero.url, currentHero.name, currentHero.logo, currentHero.category); }
+function playHero() { if (currentHero) playChannel(currentHero.url); }
 
-// --- NAVEGACIÓN SMART TV ---
+// --- ABRIR EN REPRODUCTOR NATIVO ---
+function playChannel(url) {
+  window.open(url, "_blank");
+}
+
+// --- NAVEGACIÓN CON CONTROL REMOTO / TECLADO ---
 let focusedRow = -1;
 let focusedCol = 0;
 let sectionElements = [];
 
-function updateSectionElements() {
+function initTVNavigation() {
   sectionElements = Array.from(document.querySelectorAll(".section .row"));
   focusedRow = -1;
   focusedCol = 0;
   updateFocus();
 }
 
-function scrollToRowSmooth(rowElement) {
-  const rect = rowElement.getBoundingClientRect();
-  const targetY = window.scrollY + rect.top - (window.innerHeight / 2) + rect.height / 2;
-  const startY = window.scrollY;
-  const distance = targetY - startY;
-  const duration = 500;
-  const startTime = performance.now();
-
-  function easeInOutQuad(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
-
-  function animate(time) {
-    const progress = Math.min((time - startTime) / duration, 1);
-    const eased = easeInOutQuad(progress);
-    window.scrollTo(0, startY + distance * eased);
-    if (progress < 1) requestAnimationFrame(animate);
-  }
-  requestAnimationFrame(animate);
-}
-
 function updateFocus() {
-  sectionElements.forEach((r,i) => {
-    r.parentElement.classList.remove("active");
-    r.querySelectorAll(".channel").forEach(c => c.classList.remove("focused"));
-  });
-  document.getElementById("heroPlayBtn").classList.remove("focused");
+  document.querySelectorAll(".focused").forEach(el => el.classList.remove("focused"));
 
   if (focusedRow === -1) {
     document.getElementById("heroPlayBtn").classList.add("focused");
-    scrollToRowSmooth(document.querySelector(".hero"));
+    document.querySelector(".hero").scrollIntoView({ behavior: "smooth" });
   } else {
     const row = sectionElements[focusedRow];
     if (!row) return;
     const channels = row.querySelectorAll(".channel");
     const channel = channels[focusedCol];
     if (!channel) return;
-
     channel.classList.add("focused");
-    channel.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-    scrollToRowSmooth(row);
+    channel.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
     row.parentElement.classList.add("active");
   }
 }
 
-document.addEventListener("keydown", (e) => {
-  if (isPlayerOpen) return;
+document.addEventListener("keydown", e => {
   let handled = true;
-  switch(e.key) {
+  switch (e.key) {
     case "ArrowRight": focusedCol++; break;
     case "ArrowLeft": focusedCol--; break;
     case "ArrowDown": focusedRow++; break;
     case "ArrowUp": focusedRow--; break;
     case "Enter":
+    case "OK":
       if (focusedRow === -1) playHero();
-      else sectionElements[focusedRow]?.querySelectorAll(".channel")[focusedCol]?.click();
+      else {
+        const row = sectionElements[focusedRow];
+        const item = row?.querySelectorAll(".channel")[focusedCol];
+        if (item) item.click();
+      }
       break;
     default: handled = false;
   }
@@ -406,18 +289,11 @@ document.addEventListener("keydown", (e) => {
     if (focusedCol < 0) focusedCol = 0;
     if (focusedCol >= totalCols) focusedCol = totalCols - 1;
   }
-
   updateFocus();
   e.preventDefault();
 });
 
 document.addEventListener("DOMContentLoaded", loadPlaylist);
 </script>
-
 </body>
 </html>
-
-
-
-
-
