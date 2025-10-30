@@ -57,12 +57,18 @@ a { color: inherit; text-decoration: none; }
   transform: scale(1.05);
   outline: 3px solid #1e90ff;
   box-shadow: 0 0 20px #1e90ff90;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+outline: 3px solid #fff;
+
 }
 
-.main { padding: 10px; box-sizing: border-box; }
+.main { padding: 20px; box-sizing: border-box; }
+
 .section { margin-bottom: 1px; transition: transform 0.4s ease, opacity 0.4s ease; }
-.section.active { transform: scale(1.02); opacity: 1; }
-.section h2 { font-size: 1.4em; margin-bottom: 10px; color: #fff; }
+
+.section.active { transform: scale(1.); opacity: 10; }
+
+.section h2 { font-size: 2.0em; margin-bottom: 30px; color: #fff; }
 
 .row {
   display: flex;
@@ -196,8 +202,7 @@ function renderChannels(channels, rowId) {
     div.className = "channel";
     div.innerHTML = `
       <img src="${ch.logo}" alt="${ch.name}">
-      <div class="category">${ch.category}</div>
-      <p>${ch.name}</p>`;
+            <p>${ch.name}</p>`;
     div.onclick = () => playChannel(ch.url);
     div.onmouseenter = () => updateHeroPreview(ch);
     div.onmouseleave = () => restoreHero();
