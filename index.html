@@ -1,363 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>IPTV Player TV - Navegable</title>
-<style>
-:root {
-  --accent: #1e90ff;
-  --bg: #141414;
-  --text: #fff;
-}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <title>Stream Player • TV</title>
+    <!-- Script de HLS.js no cambia -->
+    <script>
+        (function() { const v = document.createElement('video'); if (!v.canPlayType('application/vnd.apple.mpegurl')) { const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/hls.js@1'; s.async = true; document.head.appendChild(s); } })();
+    </script>
+    <style>
+        /* Tu CSS es casi el mismo, solo un pequeño ajuste para que los enlaces <a> se comporten como bloques */
+        :root { --bg: #0B0B0B; --text: #FFFFFF; --accent: #E50914; --focus: #FFFFFF; --radius: 8px; --gutter: clamp(20px, 4vw, 40px); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; }
+        .navbar { display: flex; align-items: center; gap: 10px; padding: 10px var(--gutter); position: sticky; top: 0; z-index: 50; background: rgba(11, 11, 11, 0.9); backdrop-filter: blur(10px); }
+        .navbar a { color: #cfcfcf; text-decoration: none; font-weight: 600; padding: 8px 12px; border-radius: 60px; cursor: pointer; }
+        .navbar a.active { color: #fff; background: rgba(229, 9, 20, 0.2); }
+        
+        /* Ajuste clave: el selector ahora incluye 'a.movie-card' */
+        .navbar a:focus, a.movie-card:focus, .play-btn:focus { outline: 3px solid var(--focus); outline-offset: 2px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); transform: scale(1.05); }
 
-/* === BASE === */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  transition: background 0.3s ease;
-}
-
-a { color: inherit; text-decoration: none; }
-
-/* === HERO === */
-.hero {
-  position: relative;
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: background-image 0.6s ease, transform 0.5s ease;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(20,20,20,1) 20%, rgba(20,20,20,0.3) 80%);
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-  animation: fadeInUp 0.8s ease;
-}
-.hero h1 { font-size: 2.4em; margin: 0; }
-.hero p { font-size: 1.1em; color: #ddd; line-height: 1.4em; margin-top: 5px; }
-
-/* === BOTÓN DE PLAY === */
-.play-btn {
-  margin-top: 20px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-.play-btn:hover, .play-btn.focused {
-  background: #339aff;
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(255,255,255,0.8);
-  outline: 2px solid #fff;
-}
-
-/* === SECCIONES === */
-.main { padding: 20px; box-sizing: border-box; }
-.section {
-  margin-bottom: 40px;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
-.section.active { transform: scale(1.02); opacity: 1; }
-.section h2 {
-  font-size: 1.6em;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-/* === FILAS / CARRUSEL === */
-.row {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 10px;
-}
-.row::-webkit-scrollbar { display: none; }
-
-/* === TARJETAS === */
-.channel {
-  flex: 0 0 140px;
-  cursor: pointer;
-  border-radius: 10px;
-  font-size: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-  position: relative;
-}
-.channel:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(255,255,255,0.6);
-}
-.channel img {
-  width: 100%;
-  aspect-ratio: 5/7;
-  border-radius: 10px;
-  object-fit: cover;
-  display: block;
-}
-.channel p {
-  margin-top: 6px;
-  font-size: 13px;
-  text-align: center;
-}
-.channel .category {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  background: rgba(255,255,255,0.9);
-  padding: 2px 6px;
-  font-size: 11px;
-  border-radius: 4px;
-  color: #000;
-  font-weight: 600;
-}
-.channel.focused {
-  outline: 3px solid #fff;
-  box-shadow: 0 0 30px rgba(255,255,255,0.8);
-  transform: scale(1.12);
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 900px) {
-  .hero { height: 60vh; padding: 15px; }
-  .hero h1 { font-size: 1.8em; }
-  .hero p { font-size: 1em; }
-  .channel { flex: 0 0 110px; }
-}
-@media (max-width: 600px) {
-  .hero { height: 50vh; }
-  .hero h1 { font-size: 1.4em; }
-  .play-btn { padding: 10px 20px; font-size: 14px; }
-  .channel { flex: 0 0 90px; }
-}
-
-/* === ANIMACIONES === */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
+        #heroBanner { position: relative; height: min(40vh, 400px); display: flex; align-items: center; padding: 0 var(--gutter); background-size: cover; background-position: center; }
+        #heroBanner::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11, 11, 11, 0.9) 0%, rgba(11, 11, 11, 0.4) 45%, transparent 70%); }
+        .hero-content { position: relative; z-index: 2; max-width: min(600px, 60vw); }
+        .hero-title { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 8px; font-weight: 800; }
+        .hero-description { color: #d0d0d0; font-size: clamp(0.9rem, 1.5vw, 1.1rem); line-height: 1.4; margin-bottom: 16px; }
+        .hero-buttons a { padding: 12px 20px; font-size: 12px; font-weight: 700; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; }
+        .play-btn { background: #fff; color: #000; }
+        #main-content-wrapper { height: calc(100% - min(40vh, 400px) - 62px); overflow: hidden; position: relative; }
+        .content-section { height: 100%; overflow-y: auto; overflow-x: hidden; position: absolute; width: 100%; top: 0; left: 0; opacity: 1; transition: opacity 0.2s; }
+        .content-section.hidden { opacity: 0; pointer-events: none; }
+        .section-title { font-size: 16px; font-weight: 800; margin: 12px var(--gutter) 8px; }
+        .container-carrusel { display: flex; gap: 12px; overflow-x: auto; padding: 0 var(--gutter) 15px; scroll-behavior: smooth; }
+        .container-carrusel::-webkit-scrollbar { display: none; }
+        
+        /* Ajuste clave: a.movie-card en lugar de .movie-card como div */
+        a.movie-card { display: block; width: 180px; flex: 0 0 110px; border-radius: var(--radius); overflow: hidden; cursor: pointer; transition: transform 0.2s ease; background: #181818; text-decoration: none; }
+        
+        .movie-card img { width: 100%; height: 200px; object-fit: cover; display: block; background: #222; }
+        .movie-card .title { font-size: 12px; font-weight: 600; padding: 8px; color: #f0f0f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .progress-indicator { position: absolute; left: 0; bottom: 0; height: 4px; background: linear-gradient(90deg, var(--accent), #ff6b6b); width: 0%; }
+        .loading-state, .error-state { padding: 40px var(--gutter); text-align: center; color: #ccc; }
+        .loading-spinner { border: 4px solid #333; border-top: 4px solid var(--accent); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 16px; }
+        @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+    </style>
 </head>
-
 <body>
-  <div class="hero" id="hero">
-    <div class="hero-content">
-      <h1 id="heroTitle">Bienvenido a IPTV Player</h1>
-      <p id="heroDesc">Explora tus películas y canales favoritos con tu control remoto.</p>
-      <button id="heroPlayBtn" class="play-btn">▶ Reproducir</button>
+    <div class="navbar" role="navigation"><a id="link-inicio" class="active" onclick="App.showSection('inicio')">Inicio</a><a id="link-historial" onclick="App.showSection('historial')">Seguir viendo</a></div>
+    <section id="heroBanner"><div class="hero-content"><h1 class="hero-title" id="heroTitle">Cargando…</h1><p class="hero-description" id="heroDescription">Buscando contenido…</p><div class="hero-buttons"><a class="play-btn" id="heroPlayBtn" tabindex="0">▶ Reproducir</a></div></div></section>
+    <div id="main-content-wrapper">
+        <section id="section-inicio" class="content-section"></section>
+        <section id="section-historial" class="content-section hidden"></section>
     </div>
-  </div>
 
-  <div class="main" id="mainContent"></div>
+    <script>
+        const CONFIG = { PLAYER_PAGE_URL: "player.html", /* <-- ¡MODIFICAR ESTO MANUALMENTE! */ PLAYLIST_URL: "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html", STORAGE_KEYS: { HISTORY: "tv_history_v11", PROGRESS: "tv_progress_v11", CACHE: "tv_cache_v11" }};
+        const State = { movies: [], heroMovies: [], currentHero: 0, focusable: [], focusIndex: 0 };
+        const Storage = { get: k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }, getHistory: () => Storage.get(CONFIG.STORAGE_KEYS.HISTORY) || [] };
+        const Parser = { parseM3U(t) { return t.split('#EXTINF').slice(1).map(e => { const p = e.split('\n'); const m = p[0]; const u = p.slice(1).find(l => l.trim() && !l.startsWith('#'))?.trim(); if (!u) return null; return { title: (m.split(',').pop() || '').trim(), logo: (m.match(/tvg-logo="([^"]*)"/)?.[1] || '').trim(), group: (m.match(/group-title="([^"]*)"/)?.[1] || 'Otros').trim(), url: u }; }).filter(Boolean); } };
 
-<script>
-const PLAYLIST_URL_MOVIES = "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/peliculas.html";
-let moviesByCategory = {};
-let currentHero = null;
+        const Renderer = { 
+            createMovieCard(movie) {
+                // *** CAMBIO CLAVE: AHORA CREAMOS UN <a> EN LUGAR DE UN <div> ***
+                const card = document.createElement('a');
+                card.className = 'movie-card';
+                card.tabIndex = 0;
+                
+                // Construimos la URL del reproductor y la asignamos al href
+                card.href = movie.url;  // Enlace directo al stream
+card.target = "_blank"; // Opcional: abre en nueva ventana si el navegador lo soporta
 
-// === PARSEADOR M3U ===
-function parseM3U(text) {
-  const lines = text.split("\n");
-  const channels = [];
-  let current = {};
-  for (let line of lines) {
-    line = line.trim();
-    if (line.startsWith("#EXTINF:")) {
-      const logo = line.match(/tvg-logo="([^"]*)"/);
-      const name = line.split(",").pop();
-      const cat = line.match(/group-title="([^"]*)"/);
-      current.logo = logo ? logo[1] : "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
-      current.name = name;
-      current.category = cat ? cat[1] : "Sin categoría";
-    } else if (line && !line.startsWith("#")) {
-      current.url = line;
-      channels.push({...current});
-      current = {};
-    }
-  }
-  return channels;
-}
+                
+                // Guardamos la película en el historial ANTES de navegar
+                card.addEventListener('click', (e) => {
+                    const history = Storage.getHistory().filter(x => x.url !== movie.url);
+                    Storage.set(CONFIG.STORAGE_KEYS.HISTORY, [movie, ...history].slice(0, 50));
+                });
 
-// === CARGA DE LISTA ===
-async function loadPlaylist() {
-  try {
-    const res = await fetch(PLAYLIST_URL_MOVIES);
-    if (!res.ok) throw new Error("No se pudo cargar la lista (HTTP " + res.status + ")");
-    const text = await res.text();
-    const channels = parseM3U(text);
+                const progress = Storage.get(CONFIG.STORAGE_KEYS.PROGRESS)?.[movie.url];
+                const pHTML = progress?.progress > 5 && progress.progress < 95 ? `<div class="progress-indicator" style="width:${progress.progress}%"></div>` : '';
+                card.innerHTML = `<img src="${movie.logo || ''}" alt="${movie.title}"><div class="title">${movie.title}</div>${pHTML}`;
+                return card;
+            },
+            renderCategories(byCategory) { const f = document.createDocumentFragment(); for (const [cat, movs] of Object.entries(byCategory)) { const s = document.createElement('div'); s.innerHTML=`<h2 class="section-title">${cat}</h2>`; const c = document.createElement('div'); c.className='container-carrusel'; c.setAttribute('data-category',cat); for(const mov of movs) c.appendChild(this.createMovieCard(mov)); s.appendChild(c); f.appendChild(s); } document.getElementById('section-inicio').innerHTML = ''; document.getElementById('section-inicio').appendChild(f); },
+            renderHistory() { const h = Storage.getHistory(); const c = document.getElementById('section-historial'); if (!h || h.length === 0) { c.innerHTML = '<h2>Seguir viendo</h2><p style="padding:0 var(--gutter);">Nada en el historial.</p>'; return; } const car = document.createElement('div'); car.className='container-carrusel'; for(const mov of h) car.appendChild(this.createMovieCard(mov)); c.innerHTML='<h2>Seguir viendo</h2>'; c.appendChild(car); }
+        };
+        
+        const Hero = {
+            timer: null,
+            update() {
+                const movs = State.heroMovies; if (!movs.length) return;
+                const mov = movs[State.currentHero % movs.length];
+                document.getElementById('heroBanner').style.backgroundImage = `url('${mov.logo}')`;
+                document.getElementById('heroTitle').textContent = mov.title;
+                document.getElementById('heroDescription').textContent = mov.description;
+                // *** CAMBIO CLAVE: El botón de play ahora también es un enlace ***
+                const playBtn = document.getElementById('heroPlayBtn');
+               playBtn.href = mov.url;
+                playBtn.onclick = () => {
+                    const history = Storage.getHistory().filter(x => x.url !== mov.url);
+                    Storage.set(CONFIG.STORAGE_KEYS.HISTORY, [mov, ...history].slice(0, 50));
+                };
+                State.currentHero = (State.currentHero + 1) % movs.length;
+            },
+            start() { this.stop(); this.update(); this.timer = setInterval(this.update, 8000); },
+            stop() { clearInterval(this.timer); }
+        };
 
-    if (!channels.length) throw new Error("Lista vacía o mal formateada");
+        const Navigation = { /* La lógica de navegación no cambia, solo que ahora opera sobre enlaces <a> */
+            updateFocusable() { const active = document.querySelector('.content-section:not(.hidden)'); if (!active) { State.focusable = []; return; } State.focusable = [...document.querySelectorAll('.navbar a'), ...(active.id === 'section-inicio' ? [document.getElementById('heroPlayBtn')] : []), ...active.querySelectorAll('a.movie-card')]; },
+            setFocus(index) { State.focusIndex = index; const el = State.focusable[State.focusIndex]; if(el) el.focus(); },
+            activateFocused() { State.focusable[State.focusIndex]?.click(); },
+            moveFocus(direction) {
+                if (!State.focusable.length) return;
+                const current = State.focusable[State.focusIndex];
+                if (!current) return;
+                const rect = current.getBoundingClientRect();
+                let bestCandidate = -1, minDistance = Infinity;
+                State.focusable.forEach((target, i) => {
+                    if (i === State.focusIndex) return;
+                    const targetRect = target.getBoundingClientRect();
+                    const dx = targetRect.left + targetRect.width / 2 - (rect.left + rect.width / 2);
+                    const dy = targetRect.top + targetRect.height / 2 - (rect.top + rect.height / 2);
+                    let isValid = false, distance = Infinity;
+                    if (direction === 'Right' && dx > 5 && Math.abs(dy) < rect.height * 1.5) { isValid = true; distance = Math.sqrt(dx*dx + dy*dy*0.5); }
+                    else if (direction === 'Left' && dx < -5 && Math.abs(dy) < rect.height * 1.5) { isValid = true; distance = Math.sqrt(dx*dx + dy*dy*0.5); }
+                    else if (direction === 'Down' && dy > 5) { isValid = true; distance = Math.sqrt(dx*dx*0.1 + dy*dy); }
+                    else if (direction === 'Up' && dy < -5) { isValid = true; distance = Math.sqrt(dx*dx*0.1 + dy*dy); }
+                    if (isValid && distance < minDistance) { minDistance = distance; bestCandidate = i; }
+                });
+                if (bestCandidate !== -1) { State.focusIndex = bestCandidate; const el = State.focusable[State.focusIndex]; if (el) { el.focus(); el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); } }
+            }
+        };
 
-    organizeByCategory(channels);
-    setHero(channels[0]);
-    initTVNavigation();
-
-  } catch (e) {
-    console.error("⚠️ Error al cargar playlist:", e);
-    
-    // Evita el fondo blanco mostrando un hero de respaldo
-    const hero = document.getElementById("hero");
-    hero.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg')";
-    document.getElementById("heroTitle").innerText = "Error al cargar lista";
-    document.getElementById("heroDesc").innerText = "No se pudo obtener la playlist. Revisa la conexión o la URL.";
-  }
-}
-
-
-// === ORGANIZACIÓN ===
-function organizeByCategory(channels) {
-  moviesByCategory = {};
-  channels.forEach(ch => {
-    if (!moviesByCategory[ch.category]) moviesByCategory[ch.category] = [];
-    moviesByCategory[ch.category].push(ch);
-  });
-  renderAllCategories();
-}
-
-// === RENDER ===
-function renderAllCategories() {
-  const main = document.getElementById("mainContent");
-  main.innerHTML = "";
-  Object.keys(moviesByCategory).forEach(cat => {
-    const section = document.createElement("div");
-    section.className = "section";
-    section.innerHTML = `<h2>${cat}</h2><div class="row" id="row_${cat.replace(/\s+/g,'_')}"></div>`;
-    main.appendChild(section);
-    renderChannels(moviesByCategory[cat], `row_${cat.replace(/\s+/g,'_')}`);
-  });
-}
-
-function renderChannels(channels, rowId) {
-  const row = document.getElementById(rowId);
-  row.innerHTML = "";
-  channels.forEach(ch => {
-    const div = document.createElement("div");
-    div.className = "channel";
-    div.innerHTML = `
-            <img src="${ch.logo}" alt="${ch.name}">
-      <p>${ch.name}</p>`;
-    div.onclick = () => playChannel(ch.url);
-    div.onmouseenter = () => updateHeroPreview(ch);
-    div.onmouseleave = () => restoreHero();
-    row.appendChild(div);
-  });
-}
-
-// === HERO ===
-function setHero(ch) {
-  if (!ch) return;
-  currentHero = ch;
-  const hero = document.getElementById("hero");
-  hero.style.backgroundImage = `url('${ch.logo}')`;
-  document.getElementById("heroTitle").innerText = ch.name;
-  document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
-  document.getElementById("heroPlayBtn").onclick = () => playChannel(ch.url);
-}
-function updateHeroPreview(ch) {
-  const hero = document.getElementById("hero");
-  hero.style.backgroundImage = `url('${ch.logo}')`;
-  document.getElementById("heroTitle").innerText = ch.name;
-  document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
-}
-function restoreHero() { setHero(currentHero); }
-function playHero() { if (currentHero) playChannel(currentHero.url); }
-
-// === REPRODUCTOR ===
-function playChannel(url) { window.open(url, "_blank"); }
-
-// === NAVEGACIÓN ===
-let focusedRow = -1;
-let focusedCol = 0;
-let sectionElements = [];
-
-function initTVNavigation() {
-  sectionElements = Array.from(document.querySelectorAll(".section .row"));
-  focusedRow = -1;
-  focusedCol = 0;
-  updateFocus();
-}
-
-function updateFocus() {
-  document.querySelectorAll(".focused").forEach(el => el.classList.remove("focused"));
-  if (focusedRow === -1) {
-    document.getElementById("heroPlayBtn").classList.add("focused");
-    document.querySelector(".hero").scrollIntoView({ behavior: "smooth" });
-  } else {
-    const row = sectionElements[focusedRow];
-    if (!row) return;
-    const channels = row.querySelectorAll(".channel");
-    const channel = channels[focusedCol];
-    if (!channel) return;
-    channel.classList.add("focused");
-    channel.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    row.parentElement.classList.add("active");
-  }
-}
-
-document.addEventListener("keydown", e => {
-  let handled = true;
-  switch (e.key) {
-    case "ArrowRight": focusedCol++; break;
-    case "ArrowLeft": focusedCol--; break;
-    case "ArrowDown": focusedRow++; break;
-    case "ArrowUp": focusedRow--; break;
-    case "Enter":
-    case "OK":
-      if (focusedRow === -1) playHero();
-      else {
-        const row = sectionElements[focusedRow];
-        const item = row?.querySelectorAll(".channel")[focusedCol];
-        if (item) item.click();
-      }
-      break;
-    default: handled = false;
-  }
-
-  if (!handled) return;
-  if (focusedRow < -1) focusedRow = -1;
-  if (focusedRow >= sectionElements.length) focusedRow = sectionElements.length - 1;
-
-  const currentRow = sectionElements[focusedRow];
-  if (focusedRow >= 0 && currentRow) {
-    const totalCols = currentRow.querySelectorAll(".channel").length;
-    if (focusedCol < 0) focusedCol = 0;
-    if (focusedCol >= totalCols) focusedCol = totalCols - 1;
-  }
-  updateFocus();
-  e.preventDefault();
-});
-
-document.addEventListener("DOMContentLoaded", loadPlaylist);
-
-// 🔁 Auto-actualización cada 15 minutos
-setInterval(() => {
-  console.log("🔄 Actualizando lista de películas...");
-  loadPlaylist();
-}, 900000);
-</script>
+        const App = {
+            init() {
+                document.addEventListener('keydown', e => {
+                    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) { e.preventDefault(); Navigation.moveFocus(e.key.replace('Arrow', '')); }
+                    else if (e.key === 'Enter') { e.preventDefault(); Navigation.activateFocused(); }
+                    else if (e.key === 'Backspace') { e.preventDefault(); if (document.getElementById('section-historial').classList.contains('hidden')) return; this.showSection('inicio'); }
+                });
+                window.addEventListener('pageshow', (event) => { if (event.persisted) { console.log('Página restaurada desde bfcache.'); this.showSection(document.getElementById('section-historial').classList.contains('hidden') ? 'inicio' : 'historial'); } });
+                this.loadMovies();
+            },
+            showSection(id) { /* ... sin cambios ... */ const isInicio = id === 'inicio'; document.getElementById('section-inicio').classList.toggle('hidden', !isInicio); document.getElementById('section-historial').classList.toggle('hidden', isInicio); document.getElementById('link-inicio').classList.toggle('active', isInicio); document.getElementById('link-historial').classList.toggle('active', !isInicio); if (isInicio) Hero.start(); else { Renderer.renderHistory(); Hero.stop(); } Navigation.updateFocusable(); Navigation.setFocus(0); },
+            async loadMovies() { /* ... sin cambios ... */ document.getElementById('section-inicio').innerHTML = `<div class="loading-state"><div class="loading-spinner"></div></div>`; const cached = Storage.get(CONFIG.STORAGE_KEYS.CACHE); if (cached?.data && (Date.now() - cached.timestamp < 3600000)) return this.processMovies(cached.data); try { const response = await fetch(CONFIG.PLAYLIST_URL); if (!response.ok) throw new Error(`Red ${response.status}`); const text = await response.text(); const movies = Parser.parseM3U(text); if (!movies.length) throw new Error('Lista vacía'); Storage.set(CONFIG.STORAGE_KEYS.CACHE, { data: movies, timestamp: Date.now() }); this.processMovies(movies); } catch (error) { document.getElementById('section-inicio').innerHTML = `<div class="error-state">❌ Error al cargar</div>`; } },
+            processMovies(movies) { /* ... sin cambios ... */ State.movies = movies; State.heroMovies = movies.slice(0, 5); const byCategory = movies.reduce((acc, movie) => { (acc[movie.group] = acc[movie.group] || []).push(movie); return acc; }, {}); Renderer.renderCategories(byCategory); this.showSection('inicio'); }
+        };
+        document.addEventListener('DOMContentLoaded', () => App.init());
+    </script>
 </body>
 </html>
-
 
