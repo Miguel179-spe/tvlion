@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -207,28 +207,14 @@ function focusCard() {
 }
 focusCard();
 
-document.addEventListener("keydown", e => {
-    const gridWidth = Math.floor(document.querySelector(".grid").offsetWidth / cards[0].offsetWidth);
-
-    if (modal.style.display === "flex") return;
-
-    if (e.key === "ArrowRight") index = (index + 1) % cards.length;
-    if (e.key === "ArrowLeft") index = (index - 1 + cards.length) % cards.length;
-    if (e.key === "ArrowDown") index = Math.min(index + gridWidth, cards.length - 1);
-    if (e.key === "ArrowUp") index = Math.max(index - gridWidth, 0);
-    if (e.key === "Enter") cards[index].click();
-
-    focusCard();
-});
-
-/* ------- MODAL ------- */
 const modal = document.getElementById("modal");
 const episodiosDiv = document.getElementById("episodios");
-
 let currentSeries = null;
 let episodioEls = [];
 let epIndex = 0;
+let lastBackspaceTime = 0;
 
+/* ------- OPEN MODAL ------- */
 cards.forEach(card => {
     card.addEventListener("click", () => {
         currentSeries = card.dataset.series;
@@ -261,17 +247,14 @@ function loadEpisodes() {
     focusEpisode(0);
 }
 
-/* ------- PLAY EPISODE (REPRODUCTOR NATIVO) ------- */
+/* ------- PLAY EPISODE ------- */
 function playEpisode(i) {
     const ep = seriesData[currentSeries][i];
-
     if (ep.locked) return alert("Episodio bloqueado");
-
-    // --- ABRIR VIDEO CON EL REPRODUCTOR NATIVO DEL DISPOSITIVO ---
     window.location.href = ep.url;
 }
 
-/* ------- NAVIGATION EPISODES ------- */
+/* ------- NAVIGATION EPISODES & DOUBLE BACKSPACE ------- */
 function focusEpisode(i) {
     epIndex = i;
     episodioEls.forEach(e => e.classList.remove("focused"));
@@ -279,18 +262,40 @@ function focusEpisode(i) {
 }
 
 document.addEventListener("keydown", e => {
-    if (modal.style.display !== "flex") return;
+    const now = Date.now();
 
-    if (e.key === "ArrowRight") {
-        epIndex = Math.min(epIndex + 1, episodioEls.length - 1);
-        focusEpisode(epIndex);
+    // Si el modal está abierto
+    if (modal.style.display === "flex") {
+        if (e.key === "ArrowRight") {
+            epIndex = Math.min(epIndex + 1, episodioEls.length - 1);
+            focusEpisode(epIndex);
+        }
+        if (e.key === "ArrowLeft") {
+            epIndex = Math.max(epIndex - 1, 0);
+            focusEpisode(epIndex);
+        }
+        if (e.key === "Enter") episodioEls[epIndex].click();
+
+        // Doble Backspace para volver al inicio
+        if (e.key === "Backspace") {
+            if (now - lastBackspaceTime < 500) {
+                closeModal();
+                index = 0;
+                focusCard();
+            }
+            lastBackspaceTime = now;
+        }
+        return;
     }
-    if (e.key === "ArrowLeft") {
-        epIndex = Math.max(epIndex - 1, 0);
-        focusEpisode(epIndex);
-    }
-    if (e.key === "Enter") episodioEls[epIndex].click();
-    if (e.key === "Backspace") closeModal();
+
+    // Navegación en Home
+    const gridWidth = Math.floor(document.querySelector(".grid").offsetWidth / cards[0].offsetWidth);
+    if (e.key === "ArrowRight") index = (index + 1) % cards.length;
+    if (e.key === "ArrowLeft") index = (index - 1 + cards.length) % cards.length;
+    if (e.key === "ArrowDown") index = Math.min(index + gridWidth, cards.length - 1);
+    if (e.key === "ArrowUp") index = Math.max(index - gridWidth, 0);
+    if (e.key === "Enter") cards[index].click();
+    focusCard();
 });
 
 /* ------- CLOSE MODAL ------- */
@@ -301,3 +306,4 @@ function closeModal() {
 
 </body>
 </html>
+
