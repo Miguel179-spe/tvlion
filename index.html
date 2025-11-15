@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -97,12 +97,6 @@ header input {
     padding: 20px;
 }
 
-.modal video {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-}
-
 .modal .episodios-grid {
     margin-top: 15px;
     display: flex;
@@ -128,16 +122,6 @@ header input {
 
 .modal .episodio.activo { background: var(--primary-color); }
 .modal .episodio.bloqueado { opacity: 0.4; cursor: not-allowed; }
-
-.next-btn {
-    margin-top: 20px;
-    background: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-}
 
 .close {
     position: absolute;
@@ -182,41 +166,31 @@ header input {
 
 <!-- MODAL -->
 <div class="modal" id="modal">
-    
-    <video id="player" controls></video>
-
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Episodios</h2>
     <div class="episodios-grid" id="episodios"></div>
-
-    
 </div>
 
 <script>
 /* ------- SERIES DATA ------- */
 const seriesData = {
-   
     "serie-ejemplo": [
         { title: "Episodio 1", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
         { title: "Episodio 2", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
-        { title: "Episodio 3", url: "https://archive.org/" , locked: true }
+        { title: "Episodio 3", url: "https://archive.org/", locked: true }
     ],
-  
-  
+
     "Yes Minister": [
         { title: "Capítulo 1", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
         { title: "Capítulo 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
         { title: "Capítulo 3", url: "", locked: true }
     ],
-   
-   
-   
+
     "ciencia-ficcion": [
         { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
         { title: "Episodio 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
     ],
-   
-   
-   
-   
+
     "misterios-nocturnos": [
         { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
     ]
@@ -236,7 +210,7 @@ focusCard();
 document.addEventListener("keydown", e => {
     const gridWidth = Math.floor(document.querySelector(".grid").offsetWidth / cards[0].offsetWidth);
 
-    if (modal.style.display === "flex") return; // no navegar en fondo
+    if (modal.style.display === "flex") return;
 
     if (e.key === "ArrowRight") index = (index + 1) % cards.length;
     if (e.key === "ArrowLeft") index = (index - 1 + cards.length) % cards.length;
@@ -249,19 +223,15 @@ document.addEventListener("keydown", e => {
 
 /* ------- MODAL ------- */
 const modal = document.getElementById("modal");
-const player = document.getElementById("player");
 const episodiosDiv = document.getElementById("episodios");
-const nextBtn = document.getElementById("nextBtn");
-const closeBtn = document.querySelector(".close");
 
 let currentSeries = null;
-let currentEpisode = 0;
 let episodioEls = [];
+let epIndex = 0;
 
 cards.forEach(card => {
     card.addEventListener("click", () => {
         currentSeries = card.dataset.series;
-        currentEpisode = 0;
         openModal();
     });
 });
@@ -269,19 +239,6 @@ cards.forEach(card => {
 function openModal() {
     modal.style.display = "flex";
     loadEpisodes();
-    playEpisode(0);
-
-    // ⏳ Pantalla completa INMEDIATA si el usuario hace click
-    if (player.requestFullscreen) player.requestFullscreen();
-
-    // ⏳ Pantalla completa AUTOMÁTICA después de 15 segundos
-    setTimeout(() => {
-        if (modal.style.display === "flex") {
-            if (player.requestFullscreen) player.requestFullscreen();
-            else if (player.webkitRequestFullscreen) player.webkitRequestFullscreen();
-            else if (player.msRequestFullscreen) player.msRequestFullscreen();
-        }
-    }, 15000);
 }
 
 /* ------- LOAD EPISODES ------- */
@@ -304,25 +261,17 @@ function loadEpisodes() {
     focusEpisode(0);
 }
 
+/* ------- PLAY EPISODE (REPRODUCTOR NATIVO) ------- */
 function playEpisode(i) {
     const ep = seriesData[currentSeries][i];
 
     if (ep.locked) return alert("Episodio bloqueado");
-    currentEpisode = i;
 
-    player.src = ep.url;
-    player.play();
-
-    episodioEls.forEach(e => e.classList.remove("activo"));
-    episodioEls[i].classList.add("activo");
-    focusEpisode(i);
-
-    nextBtn.style.display = (seriesData[currentSeries][i + 1]) ? "block" : "none";
+    // --- ABRIR VIDEO CON EL REPRODUCTOR NATIVO DEL DISPOSITIVO ---
+    window.location.href = ep.url;
 }
 
-/* ------- EPISODE FOCUS NAVIGATION ------- */
-let epIndex = 0;
-
+/* ------- NAVIGATION EPISODES ------- */
 function focusEpisode(i) {
     epIndex = i;
     episodioEls.forEach(e => e.classList.remove("focused"));
@@ -340,33 +289,15 @@ document.addEventListener("keydown", e => {
         epIndex = Math.max(epIndex - 1, 0);
         focusEpisode(epIndex);
     }
-    if (e.key === "Enter") {
-        episodioEls[epIndex].click();
-    }
+    if (e.key === "Enter") episodioEls[epIndex].click();
     if (e.key === "Backspace") closeModal();
-});
-
-/* ------- NEXT EPISODE ------- */
-nextBtn.addEventListener("click", () => {
-    if (seriesData[currentSeries][currentEpisode + 1]) {
-        playEpisode(currentEpisode + 1);
-        focusEpisode(currentEpisode);
-    }
 });
 
 /* ------- CLOSE MODAL ------- */
 function closeModal() {
     modal.style.display = "none";
-    player.pause();
 }
-
-closeBtn.addEventListener("click", closeModal);
-
-window.addEventListener("keydown", e => {
-    if (e.key === "Backspace" && modal.style.display === "flex") closeModal();
-});
 </script>
 
 </body>
 </html>
-
