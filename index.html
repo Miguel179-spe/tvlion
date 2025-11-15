@@ -179,18 +179,15 @@ const seriesData = {
         { title: "Episodio 2", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
         { title: "Episodio 3", url: "https://archive.org/", locked: true }
     ],
-
     "Yes Minister": [
         { title: "Capítulo 1", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
         { title: "Capítulo 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
         { title: "Capítulo 3", url: "", locked: true }
     ],
-
     "ciencia-ficcion": [
         { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
         { title: "Episodio 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
     ],
-
     "misterios-nocturnos": [
         { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
     ]
@@ -212,7 +209,6 @@ const episodiosDiv = document.getElementById("episodios");
 let currentSeries = null;
 let episodioEls = [];
 let epIndex = 0;
-let lastBackspaceTime = 0;
 
 /* ------- OPEN MODAL ------- */
 cards.forEach(card => {
@@ -254,7 +250,7 @@ function playEpisode(i) {
     window.location.href = ep.url;
 }
 
-/* ------- NAVIGATION EPISODES & DOUBLE BACKSPACE ------- */
+/* ------- NAVIGATION EPISODES & BACKSPACE ------- */
 function focusEpisode(i) {
     epIndex = i;
     episodioEls.forEach(e => e.classList.remove("focused"));
@@ -274,11 +270,11 @@ document.addEventListener("keydown", e => {
         }
         if (e.key === "Enter") episodioEls[epIndex].click();
 
-        // **Backspace simple regresa a la home**
+        // Backspace simple regresa a la sección principal
         if (e.key === "Backspace") {
-            e.preventDefault();  // evita comportamiento predeterminado
+            e.preventDefault();
             closeModal();
-            focusCard();         // enfoca la primera card
+            focusCard();
         }
         return;
     }
@@ -292,6 +288,12 @@ document.addEventListener("keydown", e => {
     if (e.key === "Enter") cards[index].click();
     focusCard();
 });
-/* ------- CLOSE MODAL ------- */ function closeModal() { modal.style.display = "none"; } </script> 
+
+/* ------- CLOSE MODAL ------- */
+function closeModal() {
+    modal.style.display = "none";
+}
+</script>
+
 </body>
 </html>
