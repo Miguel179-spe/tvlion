@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -20,6 +20,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: var(--background-dark);
     color: var(--text-light);
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -130,6 +131,26 @@ header input {
     font-size: 2rem;
     cursor: pointer;
 }
+
+/* BOTÓN ATRÁS */
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: var(--background-secondary);
+    color: var(--text-light);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+    z-index: 201;
+}
+
+.back-button.visible {
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -139,7 +160,9 @@ header input {
     <input type="text" placeholder="Buscar series...">
 </header>
 
-<section class="grid">
+<button class="back-button" id="backButton">← Atrás</button>
+
+<section class="grid" id="mainGrid">
     <article class="card" data-series="serie-ejemplo">
         <span class="badge">Nuevo</span>
         <img src="https://www.themoviedb.org/t/p/w1280/ef2QSeBkrYhAdfsWGXmp0lvH0T1.jpg">
@@ -179,15 +202,18 @@ const seriesData = {
         { title: "Episodio 2", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
         { title: "Episodio 3", url: "https://archive.org/", locked: true }
     ],
+
     "Yes Minister": [
         { title: "Capítulo 1", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
         { title: "Capítulo 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
         { title: "Capítulo 3", url: "", locked: true }
     ],
+
     "ciencia-ficcion": [
         { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
         { title: "Episodio 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
     ],
+
     "misterios-nocturnos": [
         { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
     ]
@@ -196,6 +222,8 @@ const seriesData = {
 /* ------- TV NAVIGATION HOME ------- */
 const cards = [...document.querySelectorAll(".card")];
 let index = 0;
+const backButton = document.getElementById("backButton");
+const mainGrid = document.getElementById("mainGrid");
 
 function focusCard() {
     cards.forEach(c => c.classList.remove("focused"));
@@ -209,6 +237,7 @@ const episodiosDiv = document.getElementById("episodios");
 let currentSeries = null;
 let episodioEls = [];
 let epIndex = 0;
+let lastBackspaceTime = 0;
 
 /* ------- OPEN MODAL ------- */
 cards.forEach(card => {
@@ -220,6 +249,7 @@ cards.forEach(card => {
 
 function openModal() {
     modal.style.display = "flex";
+    backButton.classList.add("visible");
     loadEpisodes();
 }
 
@@ -250,15 +280,32 @@ function playEpisode(i) {
     window.location.href = ep.url;
 }
 
-/* ------- NAVIGATION EPISODES & BACKSPACE ------- */
+/* ------- NAVIGATION EPISODES & DOUBLE BACKSPACE ------- */
 function focusEpisode(i) {
     epIndex = i;
     episodioEls.forEach(e => e.classList.remove("focused"));
     episodioEls[i].classList.add("focused");
 }
 
+/* ------- CLOSE MODAL ------- */
+function closeModal() {
+    modal.style.display = "none";
+    backButton.classList.remove("visible");
+    // Restablecer el foco a la tarjeta de la serie actual
+    const currentCardIndex = cards.findIndex(card => card.dataset.series === currentSeries);
+    if (currentCardIndex !== -1) {
+        index = currentCardIndex;
+        focusCard();
+    }
+}
+
+/* ------- MANEJAR BOTÓN ATRÁS ------- */
+backButton.addEventListener("click", closeModal);
+
 document.addEventListener("keydown", e => {
-    // Si el modal está abierto (área de episodios)
+    const now = Date.now();
+
+    // Si el modal está abierto
     if (modal.style.display === "flex") {
         if (e.key === "ArrowRight") {
             epIndex = Math.min(epIndex + 1, episodioEls.length - 1);
@@ -270,11 +317,9 @@ document.addEventListener("keydown", e => {
         }
         if (e.key === "Enter") episodioEls[epIndex].click();
 
-        // Backspace simple regresa a la sección principal
+        // Botón Atrás (Backspace) para volver al inicio
         if (e.key === "Backspace") {
-            e.preventDefault();
             closeModal();
-            focusCard();
         }
         return;
     }
@@ -289,10 +334,17 @@ document.addEventListener("keydown", e => {
     focusCard();
 });
 
-/* ------- CLOSE MODAL ------- */
-function closeModal() {
-    modal.style.display = "none";
-}
+// Manejar el botón "atrás" del navegador
+window.addEventListener('popstate', function(event) {
+    if (modal.style.display === "flex") {
+        closeModal();
+        // Prevenir que el navegador retroceda en el historial
+        history.pushState(null, null, window.location.href);
+    }
+});
+
+// Prevenir que el navegador retroceda cuando se abre el modal
+window.history.pushState(null, null, window.location.href);
 </script>
 
 </body>
