@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -63,7 +63,6 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    gap: 25px;
     align-items: center;
     z-index: 10;
     backdrop-filter: blur(20px);
@@ -76,171 +75,6 @@ header {
     font-size: 1.8rem;
     color: var(--primary-color);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    margin-right: 20px;
-}
-
-/* Professional Search Bar */
-.search-container {
-    flex: 1;
-    max-width: 500px;
-    position: relative;
-}
-
-.search-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.search-box {
-    width: 100%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 25px;
-    padding: 12px 50px 12px 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.search-box::placeholder {
-    color: rgba(255,255,255,0.4);
-    font-weight: 300;
-    letter-spacing: 0.5px;
-}
-
-.search-box:hover {
-    background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.08));
-    border-color: rgba(255,255,255,0.15);
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2), 0 0 20px rgba(255,255,255,0.05);
-}
-
-.search-box:focus {
-    outline: none;
-    background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.1));
-    border-color: rgba(229, 9, 20, 0.5);
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.3), 0 0 30px rgba(229, 9, 20, 0.2);
-    padding-left: 24px;
-}
-
-.search-box.focused {
-    transform: translateY(-1px);
-}
-
-.search-box.active-search {
-    border-color: var(--primary-color);
-    background: linear-gradient(135deg, rgba(229, 9, 20, 0.1), rgba(229, 9, 20, 0.05));
-}
-
-/* Search Icon */
-.search-icon {
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    pointer-events: none;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-
-.search-icon svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-}
-
-.search-box:focus ~ .search-icon {
-    opacity: 0.8;
-    right: 16px;
-}
-
-/* Search Clear Button */
-.search-clear {
-    position: absolute;
-    right: 45px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.search-clear:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.search-clear.visible {
-    display: flex;
-}
-
-/* Search Info Bar */
-.search-info {
-    display: none;
-    padding: 15px 30px;
-    background: linear-gradient(90deg, rgba(229, 9, 20, 0.1), transparent);
-    border-left: 3px solid var(--primary-color);
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-between;
-    animation: slideDown 0.3s ease;
-}
-
-.search-info.visible {
-    display: flex;
-}
-
-.search-info-text {
-    font-size: 1rem;
-    color: rgba(255,255,255,0.9);
-}
-
-.search-info-text strong {
-    color: var(--primary-color);
-}
-
-.search-info-count {
-    background: rgba(229, 9, 20, 0.2);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.clear-search {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    color: white;
-    padding: 6px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: all 0.2s ease;
-}
-
-.clear-search:hover {
-    background: rgba(255,255,255,0.2);
-    transform: scale(1.05);
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* MAIN GRID - INCREASED POSTERS PER ROW */
@@ -280,26 +114,6 @@ header {
 
 .card.hidden {
     display: none;
-}
-
-.card.search-match {
-    animation: highlight 0.5s ease;
-    border-color: rgba(229, 9, 20, 0.3);
-    box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
-}
-
-@keyframes highlight {
-    0% {
-        transform: scale(0.95);
-        opacity: 0.5;
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 .card img { 
@@ -1037,11 +851,6 @@ header {
     
     .logo {
         font-size: 1.3rem;
-        margin-right: 10px;
-    }
-    
-    .search-container {
-        max-width: 100%;
     }
     
     .episode {
@@ -1101,19 +910,6 @@ header {
 
 <header>
     <div class="logo">SERIES+</div>
-    
-    <!-- Professional Search Bar -->
-    <div class="search-container">
-        <div class="search-wrapper">
-             <input type="text" class="search-box" id="searchBox" placeholder="Search series...">
-            <div class="search-clear" id="searchClear">×</div>
-            <div class="search-icon">
-                <svg viewBox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                </svg>
-            </div>
-        </div>
-    </div>
 </header>
 
 <button class="back-button" id="backButton">
@@ -1123,19 +919,11 @@ header {
 
 <!-- Main Content -->
 <div class="main-content">
-    <div class="search-info" id="searchInfo">
-        <div class="search-info-text">
-            Results for: <strong id="searchQuery"></strong>
-        </div>
-        <div class="search-info-count" id="searchCount"></div>
-        <button class="clear-search" id="clearSearchBtn">Clear search</button>
-    </div>
-    
     <div class="all-series-header" id="gridHeader">All Series</div>
     <section class="grid" id="mainGrid">
         <div class="no-results-message" id="noResults">
-            No results found
-            <strong>Try different search terms</strong>
+            No series available
+            <strong>Try again later</strong>
         </div>
     </section>
 </div>
@@ -1166,7 +954,7 @@ header {
 
 <!-- Navigation Help -->
 <div class="nav-help" id="navHelp">
-    Press ↑ to search
+    Use arrow keys to navigate
 </div>
 
 <!-- Error message -->
@@ -1175,20 +963,13 @@ header {
 </div>
 
 <script>
-/* ========================================
-   "A SIMPLE SPELL, BUT QUITE UNBREAKABLE"
-   - Dr. Strange Style: Simple & Robust Code
-   ======================================== */
-
 class StreamingPlatform {
     constructor() {
         // Core data - simple and clear
         this.data = {};
-        this.filteredData = {};
         this.cards = [];
         this.currentIndex = 0;
-        this.mode = 'grid'; // grid, search, series, season, episode
-        this.searchQuery = '';
+        this.mode = 'grid'; // grid, series, season, episode
         
         // Series viewer state
         this.selectedSeries = null;
@@ -1199,25 +980,19 @@ class StreamingPlatform {
         this.init();
     }
     
-    // Simple initialization spell
+    // Simple initialization
     init() {
         this.cacheElements();
         this.bindEvents();
         this.loadData();
     }
     
-    // Cache DOM elements once - unbreakable reference
+    // Cache DOM elements
     cacheElements() {
         this.elements = {
             loader: document.getElementById('loader'),
             grid: document.getElementById('mainGrid'),
             overlay: document.getElementById('seriesOverlay'),
-            searchBox: document.getElementById('searchBox'),
-            searchClear: document.getElementById('searchClear'),
-            searchInfo: document.getElementById('searchInfo'),
-            searchQuery: document.getElementById('searchQuery'),
-            searchCount: document.getElementById('searchCount'),
-            clearBtn: document.getElementById('clearSearchBtn'),
             header: document.getElementById('gridHeader'),
             noResults: document.getElementById('noResults'),
             backBtn: document.getElementById('backButton'),
@@ -1235,23 +1010,14 @@ class StreamingPlatform {
         };
     }
     
-    // Simple event binding - one place, easy to track
+    // Simple event binding
     bindEvents() {
-        // Search events
-        this.elements.searchBox.addEventListener('input', (e) => this.search(e.target.value));
-        this.elements.searchBox.addEventListener('focus', () => this.setMode('search'));
-        this.elements.searchBox.addEventListener('blur', () => setTimeout(() => this.setMode('grid'), 200));
-        
-        // Clear buttons
-        this.elements.searchClear.addEventListener('click', () => this.clearSearch());
-        this.elements.clearBtn.addEventListener('click', () => this.clearSearch());
-        
         // Navigation
         this.elements.backBtn.addEventListener('click', () => this.closeSeries());
         this.elements.closeBtn.addEventListener('click', () => this.closeSeries());
         this.elements.banner.play.addEventListener('click', () => this.playFirstEpisode());
         
-        // Keyboard - the most powerful spell
+        // Keyboard navigation
         document.addEventListener('keydown', (e) => this.handleKey(e));
         
         // Browser back button
@@ -1285,7 +1051,6 @@ class StreamingPlatform {
                 });
             }
             
-            this.filteredData = {...this.data};
             this.render();
         } catch (error) {
             this.showError('Loading error');
@@ -1301,62 +1066,18 @@ class StreamingPlatform {
                     seasons: { 'Season 1': [{ title: 'Episode 1', url: '#' }] }
                 }
             };
-            this.filteredData = {...this.data};
             this.render();
         } finally {
             this.showLoader(false);
         }
     }
     
-    // Simple search - no complex algorithms
-    search(query) {
-        this.searchQuery = query.trim().toLowerCase();
-        
-        // Toggle clear button
-        this.elements.searchClear.classList.toggle('visible', !!this.searchQuery);
-        
-        if (!this.searchQuery) {
-            this.clearSearch();
-            return;
-        }
-        
-        // Simple filter - title includes query
-        this.filteredData = {};
-        Object.entries(this.data).forEach(([id, series]) => {
-            const title = (series.displayTitle || series.title).toLowerCase();
-            if (title.includes(this.searchQuery)) {
-                this.filteredData[id] = series;
-            }
-        });
-        
-        // Update UI
-        this.elements.searchInfo.classList.add('visible');
-        this.elements.searchQuery.textContent = query;
-        this.elements.searchCount.textContent = `${Object.keys(this.filteredData).length} result(s)`;
-        this.elements.header.textContent = Object.keys(this.filteredData).length ? 'Search Results' : 'No Results';
-        this.elements.searchBox.classList.add('active-search');
-        
-        this.render();
-    }
-    
-    // Clear search - simple reset
-    clearSearch() {
-        this.searchQuery = '';
-        this.elements.searchBox.value = '';
-        this.elements.searchClear.classList.remove('visible');
-        this.elements.searchInfo.classList.remove('visible');
-        this.elements.searchBox.classList.remove('active-search');
-        this.elements.header.textContent = 'All Series';
-        this.filteredData = {...this.data};
-        this.render();
-    }
-    
-    // Simple render - one function, clear purpose
+    // Simple render
     render() {
         this.elements.grid.innerHTML = '';
         this.cards = [];
         
-        const entries = Object.entries(this.filteredData);
+        const entries = Object.entries(this.data);
         
         if (entries.length === 0) {
             this.elements.noResults.classList.add('visible');
@@ -1368,7 +1089,6 @@ class StreamingPlatform {
         
         entries.forEach(([id, series], index) => {
             const card = this.createCard(series);
-            if (this.searchQuery) card.classList.add('search-match');
             card.style.animationDelay = `${index * 0.03}s`;
             this.elements.grid.appendChild(card);
             this.cards.push(card);
@@ -1409,7 +1129,7 @@ class StreamingPlatform {
     
     // Simple series opening
     openSeries(id) {
-        this.selectedSeries = this.data[id] || this.filteredData[id];
+        this.selectedSeries = this.data[id];
         if (!this.selectedSeries) return;
         
         this.selectedSeriesId = id;
@@ -1549,16 +1269,14 @@ class StreamingPlatform {
         this.showError('No episodes available');
     }
     
-    // Simple keyboard handler - the magic spell
+    // Simple keyboard handler
     handleKey(e) {
         const isOverlay = this.elements.overlay.style.display === 'block';
         
         // Escape - universal back
         if (e.key === 'Escape') {
             e.preventDefault();
-            if (this.searchQuery) {
-                this.clearSearch();
-            } else if (isOverlay) {
+            if (isOverlay) {
                 this.closeSeries();
             }
             return;
@@ -1591,10 +1309,6 @@ class StreamingPlatform {
                         this.currentIndex = Math.min(this.currentIndex + width, this.cards.length - 1);
                         break;
                     case 'ArrowUp':
-                        if (this.currentIndex < width) {
-                            this.elements.searchBox.focus();
-                            return;
-                        }
                         this.currentIndex = Math.max(this.currentIndex - width, 0);
                         break;
                 }
@@ -1666,11 +1380,6 @@ class StreamingPlatform {
     // Simple mode setter
     setMode(mode) {
         this.mode = mode;
-        if (mode === 'search') {
-            this.elements.searchBox.classList.add('focused');
-        } else {
-            this.elements.searchBox.classList.remove('focused');
-        }
     }
     
     // Simple grid width calculator
@@ -1692,14 +1401,11 @@ class StreamingPlatform {
     }
 }
 
-// "With great power comes great responsibility" - Keep it simple
+// Initialize the platform
 document.addEventListener('DOMContentLoaded', () => {
     window.platform = new StreamingPlatform();
-    console.log('✨ A simple spell, but quite unbreakable - Platform initialized');
 });
 </script>
 
 </body>
 </html>
-
-
