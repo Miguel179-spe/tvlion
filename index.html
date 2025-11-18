@@ -1,2452 +1,407 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Series+ - Plataforma de Streaming</title>
-<style>
-:root {
-    --primary-color: #7b2dff;
-    --background-dark: #000;
-    --background-card: #111;
-    --background-secondary: #222;
-    --text-light: #fff;
-    --accent-red: #e50914;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPTV Player TV - Multi Playlist</title>
+  <style>
+    :root {
+      --accent: #1e90ff;
+      --bg: #141414;
+      --text: #fff;
+    }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      transition: background 0.3s ease;
+    }
 
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--background-dark);
-    color: var(--text-light);
-    overflow-x: hidden;
-}
+    a { color: inherit; text-decoration: none; }
 
-/* HEADER */
-header {
-    padding: 15px;
-    background: rgba(0,0,0,0.8);
-    position: sticky;
-    top: 0;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    z-index: 10;
-}
+    .hero {
+      position: relative;
+      height: 70vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: background-image 0.6s ease, transform 0.5s ease;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(to top, rgba(20,20,20,1) 20%, rgba(20,20,20,0.3) 80%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      animation: fadeInUp 0.8s ease;
+    }
+    .hero h1 { font-size: 2.4em; margin: 0; }
+    .hero p { font-size: 1.1em; color: #ddd; line-height: 1.4em; margin-top: 5px; }
 
-.logo { font-weight: bold; font-size: 1.5rem; color: var(--primary-color); }
+    .play-btn {
+      margin-top: 20px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .play-btn:hover, .play-btn.focused {
+      background: #339aff;
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+      outline: 2px solid #fff;
+    }
 
-header input {
-    flex: 1;
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: none;
-    background: var(--background-secondary);
-    color: var(--text-light);
-    font-size: 1rem;
-}
+    .main { padding: 30px; box-sizing: border-box; }
+    .section {
+      margin-bottom: 40px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .section.active { transform: scale(1.02); opacity: 1; }
+    .section h2 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+      color: #fff;
+    }
 
-/* CARDS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
+    .row {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+    }
+    .row::-webkit-scrollbar { display: none; }
 
-.card {
-    background: var(--background-card);
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease, outline 0.3s ease;
-    position: relative;
-}
+    .channel {
+      flex: 0 0 130px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    .channel:hover {
+      transform: scale(1.0008);
+      box-shadow: 0 0 2px rgba(255,255,255,0.6);
+    }
+    .channel img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+    .channel p {
+      margin-top: 6px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .channel .category {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      background: rgba(255,255,255,0.9);
+      padding: 1px 8px;
+      font-size: 11px;
+      border-radius: 4px;
+      color: #000;
+      font-weight: 600;
+    }
+    .channel.focused {
+      outline: 3px solid #fff;
+      box-shadow: 0 0 30px rgba(255,255,255,0.8);
+      transform: scale(1.12);
+    }
 
-.card img { width: 100%; height: 180px; object-fit: cover; }
-.card-title { padding: 12px; font-size: 0.9rem; font-weight: 500; }
+    @media (max-width: 900px) {
+      .hero { height: 60vh; padding: 15px; }
+      .hero h1 { font-size: 1.8em; }
+      .hero p { font-size: 1em; }
+      .channel { flex: 0 0 110px; }
+    }
+    @media (max-width: 600px) {
+      .hero { height: 50vh; }
+      .hero h1 { font-size: 1.4em; }
+      .play-btn { padding: 10px 20px; font-size: 14px; }
+      .channel { flex: 0 0 90px; }
+    }
 
-.card.focused {
-    outline: 3px solid var(--primary-color);
-    transform: scale(1.06);
-}
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-/* BADGES */
-.badge {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: var(--accent-red);
-    padding: 4px 10px;
-    font-size: 0.7rem;
-    border-radius: 5px;
-    font-weight: bold;
-}
-.badge.doblado { background: #5a42f5; }
-
-/* MODAL */
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.95);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 200;
-    padding: 20px;
-}
-
-.modal .episodios-grid {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.modal .episodio {
-    background: var(--background-secondary);
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: var(--text-light);
-    transition: 0.2s;
-}
-
-.modal .episodio.focused {
-    outline: 2px solid var(--primary-color);
-    transform: scale(1.12);
-}
-
-.modal .episodio.activo { background: var(--primary-color); }
-.modal .episodio.bloqueado { opacity: 0.4; cursor: not-allowed; }
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-/* BOTÓN ATRÁS */
-.back-button {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    background: var(--background-secondary);
-    color: var(--text-light);
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    display: none;
-    z-index: 201;
-}
-
-.back-button.visible {
-    display: block;
-}
-</style>
+  </style>
 </head>
 <body>
-
-<header>
-    <div class="logo">SERIES</div>
-   
-</header>
-
-<button class="back-button" id="backButton">← Atrás</button>
-
-<section class="grid" id="mainGrid">
-    <article class="card" data-series="Shantaram">
-        <span class="badge">Nuevo</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/6FZCmmAdszkEFLAoibEuJPDhW40.jpg">
-        <div class="card-title">Shantaram</div>
-    </article>
-
-	
-	<article class="card" data-series="The Responder">
-         <img src="https://www.themoviedb.org/t/p/w1280/mU51EB4OSEL7oxMIub1Rl7N0xFB.jpg">
-        <div class="card-title">The Responder</div>
-    </article>
-
-	
-	 <article class="card" data-series="Marvel Studios: Legends">
-		 <span class="badge">Nuevo</span>
-         <img src="https://www.themoviedb.org/t/p/w1280/rP4QtA95NVjf1g3yo91jX22H9qQ.jpg">
-        <div class="card-title">Marvel Studios: Legends</div>
-    </article>
-
-	
-    <article class="card" data-series="Professor T">
-        <span class="badge">Nuevo</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/jJ9SjrX7tEAwHigRq20TeANhH1Q.jpg">
-        <div class="card-title">Professor T</div>
-    </article>
-
-
-	
-<article class="card" data-series="Let the Right One In">
-        <span class="badge">Extreno</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/aRsmGF1AVuMY26ArRxMpKJ8S8NL.jpg">
-        <div class="card-title">Let the Right One In</div>
-    </article>
-
-<article class="card" data-series="Ghostwriter">
-        <span class="badge">Extreno</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/cylPAXqLws5yM9oJa47MsHItBy8.jpg">
-        <div class="card-title">Ghostwriter</div>
-    </article>
-
-<article class="card" data-series="Alaska Daily">
-        <span class="badge">Extreno</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/biebJjdTledf0pjA5LUlzOuo9z4.jpg">
-        <div class="card-title">Alaska Daily</div>
-    </article>
-
-	<article class="card" data-series="The Elon Musk Show">
-        <span class="badge">Extreno</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/1rHI0QXUdcXyeSJUGOb1SY8Tepg.jpg">
-        <div class="card-title">The Elon Musk Show</div>
-    </article>
-
-	
-<article class="card" data-series="Inside Man">
-        <span class="badge">Extreno</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/qNhJZTrOTn8ywpdWMyPlYakAGBl.jpg">
-        <div class="card-title">Inside Man</div>
-    </article>
-
-
-
- <article class="card" data-series="Alone: Frozen">
-        <span class="badge">Extreno</span>
-        <img src="https://www.themoviedb.org/t/p/w1280/4TRl09iqWiPCcWW31KQ4DMmrQtg.jpg">
-        <div class="card-title">Alone: Frozen</div>
-    </article>
-
-
-<article class="card" data-series="Black Mirror">
-        <img src="https://www.themoviedb.org/t/p/w1280/3r4yKVZOoChFehKpIoH8iT3h3OH.jpg">
-        <div class="card-title">Black Mirror</div>
-    </article>
-
-	
-	 <article class="card" data-series="Harlem">
-         <img src="https://www.themoviedb.org/t/p/w1280/hQP2zAm5L52vs7fp3JzOI5LZ4uB.jpg">
-        <div class="card-title">Harlem</div>
-    </article>
-	
-
-	 <article class="card" data-series="Hightown">
-         <img src="https://www.themoviedb.org/t/p/w1280/69hornrvpKWIzBMCNzsVTZOggOw.jpg">
-        <div class="card-title">Hightown</div>
-    </article>
-
-
-	 <article class="card" data-series="Insecure">
-         <img src="https://www.themoviedb.org/t/p/w1280/sGMwPIE6m9QI3LzCRXnZG8opZtB.jpg">
-        <div class="card-title">Insecure</div>
-    </article>
-
-<article class="card" data-series="Euphoria">
-         <img src="https://www.themoviedb.org/t/p/w1280/nsZkLSw1d0le18B8F0B5VMv6QKJ.jpg">
-        <div class="card-title">Euphoria</div>
-    </article>
-
-
-	 <article class="card" data-series="Charmed">
-         <img src="https://www.themoviedb.org/t/p/w1280/z4bPJ1BWU2EtV69NII2GVvsugQ2.jpg">
-        <div class="card-title">Charmed</div>
-    </article>
-	
-
-	 <article class="card" data-series="The Bachelorette">
-         <img src="https://www.themoviedb.org/t/p/w1280/drzMvOJtQEwF9nnFia1sdAJspzM.jpg">
-        <div class="card-title">The Bachelorette</div>
-    </article>
-
-	
-	 <article class="card" data-series="Queen Sugar">
-         <img src="https://www.themoviedb.org/t/p/w1280/v5FtHPzooqBHsjEV7KAmQhFvd7w.jpg">
-        <div class="card-title">Queen Sugar</div>
-    </article>
-	
-	 <article class="card" data-series="Formula 1: Drive to Survive">
-         <img src="https://www.themoviedb.org/t/p/w1280/2epahdK8pFAXK4ZM6LovDhZKDew.jpg">
-        <div class="card-title">Formula 1: Drive to Survive</div>
-    </article>
-
-	 <article class="card" data-series="Batwoman">
-         <img src="https://www.themoviedb.org/t/p/w1280/pBpxKiitMuYXvtsXNSzya8DKKzV.jpg">
-        <div class="card-title">Batwoman</div>
-    </article>
-	
- <article class="card" data-series="The Hills: New Beginnings">
-         <img src="https://www.themoviedb.org/t/p/w1280/z2HdQdvNriWQyOmOpA8bdOuUKuJ.jpg">
-        <div class="card-title">The Hills: New Beginnings</div>
-    </article>
-	
-<article class="card" data-series="Lucifer">
-         <img src="https://www.themoviedb.org/t/p/w1280/ekZobS8isE6mA53RAiGDG93hBxL.jpg">
-        <div class="card-title">Lucifer</div>
-    </article>
-
-    
-<article class="card" data-series="Hit & Run">
-         <img src="https://www.themoviedb.org/t/p/w1280/6qiKrLdGQRUp2vgmkpOR3fwmzA.jpg">
-        <div class="card-title">Hit & Run</div>
-    </article>
-
-
- <article class="card" data-series="The Walking Dead: Origins">
-         <img src="https://www.themoviedb.org/t/p/w1280/6stEKYqgLBhSieTRnnZ5ShE5ZPS.jpg">
-        <div class="card-title">The Walking Dead: Origins</div>
-    </article>
-
-
-	 <article class="card" data-series="The White Lotus">
-         <img src="https://www.themoviedb.org/t/p/w1280/gbSaK9v1CbcYH1ISgbM7XObD2dW.jpg">
-        <div class="card-title">The White Lotus</div>
-    </article>
-
- <article class="card" data-series="Departure">
-         <img src="https://www.themoviedb.org/t/p/w1280/b52lWChoqjtE6ZgMLK2XjA3unDW.jpg">
-        <div class="card-title">Departure</div>
-    </article>
-	
-<article class="card" data-series="FBOY Island">
-         <img src="https://www.themoviedb.org/t/p/w1280/nFpUwmfZijUXthLkizncQPsGt62.jpg">
-        <div class="card-title">FBOY Island</div>
-    </article>
-	
-<article class="card" data-series="Delilah">
-         <img src="https://www.themoviedb.org/t/p/w1280/bqq5IEmBUSPjspbxaNQqo5kY9wh.jpg">
-        <div class="card-title">Delilah</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="Vigil">
-         <img src="https://www.themoviedb.org/t/p/w1280/5zAheY0Upi2MwU3edGtEgb7Ldh3.jpg">
-        <div class="card-title">Vigil</div>
-    </article>
-	
-	
-	<article class="card" data-series="The Tent Mender">
-         <img src="https://www.themoviedb.org/t/p/w1280/cYrZnYOY8ozTlR9Vd5WRtQRK0nA.jpg">
-        <div class="card-title">The Tent Mender</div>
-    </article>
-
-<article class="card" data-series="Foundation">
-         <img src="https://www.themoviedb.org/t/p/w1280/tg9I5pOY4M9CKj8U0cxVBTsm5eh.jpg">
-        <div class="card-title">Foundation</div>
-    </article>
-		
-	
-	<article class="card" data-series="Back to Life">
-         <img src="https://www.themoviedb.org/t/p/w1280/opMb4UHDVKCVSknT5DIPUaSRaSP.jpg">
-        <div class="card-title">Back to Life</div>
-    </article>
-	
-	
-	<article class="card" data-series="Deceit">
-         <img src="https://www.themoviedb.org/t/p/w1280/peIkWRJNnufq5n8al7Ngzmk9ujZ.jpg">
-        <div class="card-title">Deceit</div>
-    </article>
-	
- <article class="card" data-series="Dan Brown's The Lost Symbol">
-         <img src="https://www.themoviedb.org/t/p/w1280/rc99fLHeOH4QBROUzAyPeKCvt6T.jpg">
-        <div class="card-title">Dan Brown's The Lost Symbol</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="Countdown: Inspiration4 Mission to Space">
-         <img src="https://www.themoviedb.org/t/p/w1280/e4o6pOY136iDJN4IFvESltHa5to.jpg">
-        <div class="card-title">Countdown: Inspiration4 Mission to Space</div>
-    </article>
-	
-	
-	<article class="card" data-series="Doogie Kamealoha, M.D.">
-         <img src="https://www.themoviedb.org/t/p/w1280/qS9NwCJDPnHWtJbgiFmpc8T90tP.jpg">
-        <div class="card-title">Doogie Kamealoha, M.D.</div>
-    </article>
-	
- <article class="card" data-series="Dopesick">
-         <img src="https://www.themoviedb.org/t/p/w1280/qW8Gpddy29faTcD7VuyKjwLXbKU.jpg">
-        <div class="card-title">Dopesick</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="Heels">
-         <img src="https://www.themoviedb.org/t/p/w1280/69kPJaCFMXuZfbCrbDaYfMZbtJt.jpg">
-        <div class="card-title">Heels</div>
-    </article>
-	
-	
-	<article class="card" data-series="Fires">
-         <img src="https://www.themoviedb.org/t/p/w1280/QE851qjGKdtBCIAXszyGPnkYl4.jpg">
-        <div class="card-title">Fires</div>
-    </article>
-
-<article class="card" data-series="A.P. Bio">
-         <img src="https://www.themoviedb.org/t/p/w1280/wBD4XS7rPTTpA7xMrwxL3cilqem.jpg">
-        <div class="card-title">A.P. Bio</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="Head of the Class">
-         <img src="https://www.themoviedb.org/t/p/w1280/fxqSX1hyErStQBO0SdkV7fu5jOp.jpg">
-        <div class="card-title">Head of the Class</div>
-    </article>
-	
-	
-	<article class="card" data-series="Dexter: New Blood">
-         <img src="https://www.themoviedb.org/t/p/w1280/9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg">
-        <div class="card-title">Dexter: New Blood</div>
-    </article>
-<article class="card" data-series="Yellowjackets">
-         <img src="https://www.themoviedb.org/t/p/w1280/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg">
-        <div class="card-title">Yellowjackets</div>
-    </article>
-	
-		
-	<article class="card" data-series="True Nightmares: Tales of Terror">
-         <img src="https://www.themoviedb.org/t/p/w1280/deqtP9WDh4RnATvC7akvd151Gox.jpg">
-        <div class="card-title">True Nightmares: Tales of Terror</div>
-    </article>
-	
-	
-	<article class="card" data-series="The Outlaws">
-         <img src="https://www.themoviedb.org/t/p/w1280/s8vp0S0iz2nPb7TpOpV0rHbm1er.jpg">
-        <div class="card-title">The Outlaws</div>
-    </article>
-
-<article class="card" data-series="Frogger">
-         <img src="https://www.themoviedb.org/t/p/w1280/3Q41BC0ozUA0wzOvtQFbp284hQ0.jpg">
-        <div class="card-title">Frogger</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="South Side">
-         <img src="https://www.themoviedb.org/t/p/w1280/xUQ5ApXjd1sHAyZfsuZAN7wokzq.jpg">
-        <div class="card-title">South Side</div>
-    </article>
-	
-	
-	<article class="card" data-series="Dogs in Space">
-         <img src="https://www.themoviedb.org/t/p/w1280/wyrX626w311nbLfmG2JXewUjmFi.jpg">
-        <div class="card-title">Dogs in Space</div>
-    </article>
-	
-	
-	<article class="card" data-series="Hawkeye">
-         <img src="https://www.themoviedb.org/t/p/w1280/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg">
-        <div class="card-title">Hawkeye</div>
-    </article>
-	
-<article class="card" data-series="The Game">
-         <img src="https://imgur.com/0imacfW.png">
-        <div class="card-title">The Game</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="Day of the Dead">
-         <img src="https://www.themoviedb.org/t/p/w1280/iBeWa2Ds2uCjTOlMikiBqETsS2X.jpg">
-        <div class="card-title">Day of the Dead</div>
-    </article>
-	
-	
-	<article class="card" data-series="Diggstown">
-         <img src="https://www.themoviedb.org/t/p/w1280/a2PVO7LwAJbqr1JWbsmJ6pjkYvw.jpg">
-        <div class="card-title">Diggstown</div>
-    </article>
-	
-	
-	<article class="card" data-series="The Wheel of Time">
-         <img src="https://www.themoviedb.org/t/p/w1280/ihBi24EIr5kwAeY2PqmsgAcCj4n.jpg">
-        <div class="card-title">The Wheel of Time</div>
-    </article>
-
-	<article class="card" data-series="Tyler Perry's The Oval">
-         <img src="https://www.themoviedb.org/t/p/w1280/b5PTXErp18fzi8e2MQv2HlEiE23.jpg">
-        <div class="card-title">Tyler Perry's The Oval</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="The Premise">
-         <img src="https://www.themoviedb.org/t/p/w1280/r6fZdnOVjerXjXbotbTaRAeueqH.jpg">
-        <div class="card-title">The Premise</div>
-    </article>
-	
-	
-	<article class="card" data-series="With Love">
-         <img src="https://www.themoviedb.org/t/p/w1280/H7UoEyxRPKdwgdy4kt7UbvkAlX.jpg">
-        <div class="card-title">With Love </div>
-    </article>
-	
-	
-	<article class="card" data-series="Firebite">
-         <img src="https://www.themoviedb.org/t/p/w1280/wMFLGQ6dQ5V4pPp62hN2FCbpe0E.jpg">
-        <div class="card-title">Firebite</div>
-    </article>
-	
-
-	 <article class="card" data-series="Four Lives">
-         <img src="https://www.themoviedb.org/t/p/w1280/yZK3uB5btwimbgJVFzVo4BOLibX.jpg">
-        <div class="card-title">Four Lives</div>
-    </article>
-	
-		
-	<article class="card" data-series="Hype House">
-         <img src="https://www.themoviedb.org/t/p/w1280/sIppViBWffdcN2m6ffOsl0NKhHw.jpg">
-        <div class="card-title">Hype House</div>
-    </article>
-	
-	
-	<article class="card" data-series="Pivoting">
-         <img src="https://www.themoviedb.org/t/p/w1280/gQXja8mUGddQMfIpOOA0doLNdGu.jpg">
-        <div class="card-title">Pivoting</div>
-    </article>
-	
-	
-	<article class="card" data-series="Home Economics">
-         <img src="https://www.themoviedb.org/t/p/w1280/svYYne5mdKQVyIFwzkMVS2t35Ok.jpg">
-        <div class="card-title">Home Economics</div>
-    </article>
-		
-	 <article class="card" data-series="Son of a Critch">
-         <img src="https://www.themoviedb.org/t/p/w1280/ufw98SF9HdcZevXbEOTpHOmJF6Y.jpg">
-        <div class="card-title">Son of a Critch</div>
-    </article>
-	
-	
-	<article class="card" data-series="Derry Girls">
-         <img src="https://www.themoviedb.org/t/p/w1280/btIm8LOtm2qgHIA2IHmQJvD1Mju.jpg">
-        <div class="card-title">Derry Girls</div>
-    </article>
-	
-	
-	<article class="card" data-series="Women of the Movement">
-         <img src="https://www.themoviedb.org/t/p/w1280/pL9prhQYEPKoNOniVJcJjEaozdY.jpg">
-        <div class="card-title">Women of the Movement</div>
-    </article>
-	
-	
-	<article class="card" data-series="The Righteous Gemstones">
-         <img src="https://www.themoviedb.org/t/p/w1280/bKb54fgtMrS54VMMl8KdDIFlG3g.jpg">
-        <div class="card-title">The Righteous Gemstones</div>
-    </article>
-
-
- <article class="card" data-series="Fast Foodies">
-         <img src="https://www.themoviedb.org/t/p/w1280/9BJiM1hlidIrFA1HZ7vUCJ5MZMe.jpg">
-        <div class="card-title">Fast Foodies</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="DOTA: Dragon's Blood">
-         <img src="https://www.themoviedb.org/t/p/w1280/6Qwwam0TQEMQmFMagjtLmcQHJYs.jpg">
-        <div class="card-title">DOTA: Dragon's Blood</div>
-    </article>
-	
-		
-	<article class="card" data-series="Vienna Blood">
-         <img src="https://www.themoviedb.org/t/p/w1280/wHIkllx1obFjEeI7z558QLoRhiU.jpg">
-        <div class="card-title">Vienna Blood</div>
-    </article>
-
-	
-<article class="card" data-series="Fastest Cars in the Dirty South">
-         <img src="https://www.themoviedb.org/t/p/w1280/sOfBsnRZhbLUqItmvYbrwMu6AjF.jpg">
-        <div class="card-title">Fastest Cars in the Dirty South</div>
-    </article>
-	
-	
-	
-	<article class="card" data-series="Power Book IV: Force">
-         <img src="https://www.themoviedb.org/t/p/w1280/cR0ursLXoT0zfX9XDGAzQRAnK0W.jpg">
-        <div class="card-title">Power Book IV: Force</div>
-    </article>
-	
-	
-	<article class="card" data-series="Trigger Point">
-         <img src="https://www.themoviedb.org/t/p/w1280/cjMpwyWL0l1n0EkNw88QyzWRsHW.jpg">
-        <div class="card-title">Trigger Point</div>
-    </article>
-	
-	
-	<article class="card" data-series="Demi Lovato: Dancing with the Devil">
-         <img src="https://www.themoviedb.org/t/p/w1280/4I9dSghniR15CvdrFVwoU6BI4EM.jpg">
-        <div class="card-title">Demi Lovato: Dancing with the Devil</div>
-    </article>
-		
-	
-	
-	
-
-
-	
-</section>
-
-<!-- MODAL -->
-<div class="modal" id="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Episodios</h2>
-    <div class="episodios-grid" id="episodios"></div>
-</div>
-
-<script>
-/* ------- SERIES DATA ------- */
-const seriesData = {
-"Shantaram": [
-        { title: "T01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168781.mp4" },
-        { title: "T01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168782.mp4" },
-        { title: "T01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168783.mp4"},
-        { title: "T01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168784.mp4"},
-        { title: "T01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/171584.mp4"},
-        { title: "T01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/171585.mp4"},
-        { title: "T01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/172057.mp4"},
-        { title: "T01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173525.mp4"},
-        { title: "T01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173526.mp4"},
-        { title: "T01 E010", url: "http://fortv.cc:8080/series/16686894/06987237/173527.mp4"},
-        { title: "T01 E011", url: "http://fortv.cc:8080/series/16686894/06987237/173528.mp4"},
-        { title: "T01 E012", url: "http://fortv.cc:8080/series/16686894/06987237/174184.mp4"},
-        { title: "T01 E013", url: "http://fortv.cc:8080/series/16686894/06987237/174361.mp4"}
-    ],
-
-"Fastest Cars in the Dirty South": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191300.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191301.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191302.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191303.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191304.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191305.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191306.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191307.mp4" }
-],
-
-"Power Book IV: Force": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/193343.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/193344.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/193345.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/193346.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/193347.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/193348.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/209391.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/209392.mkv" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/209393.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/209394.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/209395.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/209396.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/210580.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/210581.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/210582.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/210583.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/210584.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/211041.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/211042.mkv" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/212121.mkv" }
-],
-
-"Trigger Point": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195443.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195444.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195445.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195446.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195447.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213693.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/213694.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213695.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/213696.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213697.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/213698.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213699.mkv" }
-],
-
-"Demi Lovato: Dancing with the Devil": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190760.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190761.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190762.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190763.mp4" }
-],
-
-
-	
-	"Fast Foodies": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191290.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191291.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191292.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191293.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191294.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191295.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191296.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191297.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/191298.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/191299.mp4" }
-],
-
-"DOTA: Dragon's Blood": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190909.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190910.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190911.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190912.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190913.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190914.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190915.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190916.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190917.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190918.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190919.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190920.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190921.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190922.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190923.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190924.mp4" }
-],
-
-"The Responder": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195035.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195036.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195037.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195038.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195039.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/226794.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/226795.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/226796.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/226797.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/226798.mkv" }
-],
-
-"Vienna Blood": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195638.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195639.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195640.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195641.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195642.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195643.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195644.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195645.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195646.mp4" }
-],
-
-
-	"Son of a Critch": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195029.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195030.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195031.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195032.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195033.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195034.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/179839.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/179840.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/179841.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/179842.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/179843.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/179844.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/179845.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/179846.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/179847.mkv" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/179848.mkv" },
-    { title: "S02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/179849.mkv" },
-    { title: "S02 E12", url: "http://fortv.cc:8080/series/16686894/06987237/179893.mkv" },
-    { title: "S02 E13", url: "http://fortv.cc:8080/series/16686894/06987237/213098.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/213099.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213100.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/213101.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213102.mp4" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/213103.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213459.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/213460.mkv" }
-],
-
-"Derry Girls": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190770.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190771.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190772.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190773.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190774.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190775.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190776.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190777.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190778.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190779.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190780.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190781.mp4" }
-],
-
-"Women of the Movement": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195840.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195841.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195842.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195843.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195844.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195845.mp4" }
-],
-
-"The Righteous Gemstones": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/209677.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/209678.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/209679.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/209680.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/209681.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/209682.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/209683.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/209684.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/209685.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/209686.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/209687.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/209688.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/209689.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/209690.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/209691.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/209692.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/209693.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/209694.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/209695.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/209696.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/209697.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/209698.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/209699.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/209700.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/209701.mkv" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/209702.mkv" },
-    { title: "S03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/209703.mkv" }
-],
-
-	"Four Lives": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191391.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191392.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191393.mkv" }
-],
-
-"Hype House": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192247.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192248.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192249.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192250.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192251.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192252.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192253.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192254.mp4" }
-],
-
-"Pivoting": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/193293.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/193294.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/193295.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/193296.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/193297.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/193298.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/193299.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/193300.mkv" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/193301.mkv" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/193302.mkv" }
-],
-
-"Home Economics": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192201.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192202.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192203.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192204.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192205.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192206.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192207.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192208.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192209.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192210.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192211.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192212.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192213.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192214.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192215.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192216.mkv" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192217.mkv" },
-    { title: "S02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/192218.mkv" }
-],
-
-	"Harlem": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192088.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192089.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192090.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192091.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192092.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192093.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192094.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192095.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192096.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192097.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/176680.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/176681.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/177201.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/177202.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/177203.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/177204.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/177409.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/177410.mp4" }
-],
-
-"Tyler Perry's The Oval": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195500.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195501.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195502.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195503.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195504.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195505.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195506.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195507.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/195508.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/195509.mp4" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/195510.mp4" },
-    { title: "S01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/195511.mp4" },
-    { title: "S01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/195512.mp4" },
-    { title: "S01 E14", url: "http://fortv.cc:8080/series/16686894/06987237/195513.mp4" },
-    { title: "S01 E15", url: "http://fortv.cc:8080/series/16686894/06987237/195514.mp4" },
-    { title: "S01 E16", url: "http://fortv.cc:8080/series/16686894/06987237/195515.mp4" },
-    { title: "S01 E17", url: "http://fortv.cc:8080/series/16686894/06987237/195516.mp4" },
-    { title: "S01 E18", url: "http://fortv.cc:8080/series/16686894/06987237/195517.mp4" },
-    { title: "S01 E19", url: "http://fortv.cc:8080/series/16686894/06987237/195518.mp4" },
-    { title: "S01 E20", url: "http://fortv.cc:8080/series/16686894/06987237/195519.mp4" },
-    { title: "S01 E21", url: "http://fortv.cc:8080/series/16686894/06987237/195520.mp4" },
-    { title: "S01 E22", url: "http://fortv.cc:8080/series/16686894/06987237/195521.mp4" },
-    { title: "S01 E23", url: "http://fortv.cc:8080/series/16686894/06987237/195522.mp4" },
-    { title: "S01 E24", url: "http://fortv.cc:8080/series/16686894/06987237/195523.mp4" },
-    { title: "S01 E25", url: "http://fortv.cc:8080/series/16686894/06987237/195524.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195525.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195526.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195527.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195528.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195529.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195530.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195531.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195532.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/195533.mp4" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/195534.mp4" },
-    { title: "S02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/195535.mp4" },
-    { title: "S02 E12", url: "http://fortv.cc:8080/series/16686894/06987237/195536.mp4" },
-    { title: "S02 E13", url: "http://fortv.cc:8080/series/16686894/06987237/195537.mp4" },
-    { title: "S02 E14", url: "http://fortv.cc:8080/series/16686894/06987237/195538.mp4" },
-    { title: "S02 E15", url: "http://fortv.cc:8080/series/16686894/06987237/195539.mp4" },
-    { title: "S02 E16", url: "http://fortv.cc:8080/series/16686894/06987237/195540.mp4" },
-    { title: "S02 E17", url: "http://fortv.cc:8080/series/16686894/06987237/195541.mp4" },
-    { title: "S02 E18", url: "http://fortv.cc:8080/series/16686894/06987237/195542.mp4" },
-    { title: "S02 E19", url: "http://fortv.cc:8080/series/16686894/06987237/195543.mp4" },
-    { title: "S02 E20", url: "http://fortv.cc:8080/series/16686894/06987237/195544.mp4" },
-    { title: "S02 E21", url: "http://fortv.cc:8080/series/16686894/06987237/195545.mp4" },
-    { title: "S02 E22", url: "http://fortv.cc:8080/series/16686894/06987237/195546.mp4" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195547.mp4" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195548.mp4" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195549.mp4" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195550.mp4" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195551.mp4" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195552.mp4" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195553.mp4" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195554.mp4" },
-    { title: "S03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/195555.mp4" },
-    { title: "S03 E10", url: "http://fortv.cc:8080/series/16686894/06987237/195556.mp4" },
-    { title: "S03 E11", url: "http://fortv.cc:8080/series/16686894/06987237/195557.mp4" },
-    { title: "S03 E12", url: "http://fortv.cc:8080/series/16686894/06987237/195558.mp4" },
-    { title: "S03 E13", url: "http://fortv.cc:8080/series/16686894/06987237/195559.mp4" },
-    { title: "S03 E14", url: "http://fortv.cc:8080/series/16686894/06987237/195560.mp4" },
-    { title: "S03 E15", url: "http://fortv.cc:8080/series/16686894/06987237/195561.mp4" },
-    { title: "S03 E16", url: "http://fortv.cc:8080/series/16686894/06987237/195562.mp4" },
-    { title: "S03 E17", url: "http://fortv.cc:8080/series/16686894/06987237/195563.mp4" },
-    { title: "S03 E18", url: "http://fortv.cc:8080/series/16686894/06987237/195564.mp4" },
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/174873.mkv" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213011.mkv" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/174874.mkv" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213012.mkv" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/174875.mkv" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213013.mkv" },
-    { title: "S04 E07", url: "http://fortv.cc:8080/series/16686894/06987237/174876.mkv" },
-    { title: "S04 E08", url: "http://fortv.cc:8080/series/16686894/06987237/213014.mkv" },
-    { title: "S04 E09", url: "http://fortv.cc:8080/series/16686894/06987237/174877.mkv" },
-    { title: "S04 E10", url: "http://fortv.cc:8080/series/16686894/06987237/213015.mkv" },
-    { title: "S04 E11", url: "http://fortv.cc:8080/series/16686894/06987237/174878.mkv" },
-    { title: "S04 E12", url: "http://fortv.cc:8080/series/16686894/06987237/213016.mkv" },
-    { title: "S04 E13", url: "http://fortv.cc:8080/series/16686894/06987237/174879.mkv" },
-    { title: "S04 E14", url: "http://fortv.cc:8080/series/16686894/06987237/213017.mkv" },
-    { title: "S04 E15", url: "http://fortv.cc:8080/series/16686894/06987237/174880.mkv" },
-    { title: "S04 E16", url: "http://fortv.cc:8080/series/16686894/06987237/213018.mkv" },
-    { title: "S04 E17", url: "http://fortv.cc:8080/series/16686894/06987237/174881.mkv" },
-    { title: "S04 E18", url: "http://fortv.cc:8080/series/16686894/06987237/213019.mkv" },
-    { title: "S04 E19", url: "http://fortv.cc:8080/series/16686894/06987237/174882.mkv" },
-    { title: "S04 E20", url: "http://fortv.cc:8080/series/16686894/06987237/213020.mkv" },
-    { title: "S04 E21", url: "http://fortv.cc:8080/series/16686894/06987237/174883.mkv" },
-    { title: "S04 E22", url: "http://fortv.cc:8080/series/16686894/06987237/213021.mkv" },
-    { title: "S04 E23", url: "http://fortv.cc:8080/series/16686894/06987237/179597.mkv" },
-    { title: "S04 E24", url: "http://fortv.cc:8080/series/16686894/06987237/213022.mkv" },
-    { title: "S04 E25", url: "http://fortv.cc:8080/series/16686894/06987237/179598.mkv" },
-    { title: "S04 E26", url: "http://fortv.cc:8080/series/16686894/06987237/213023.mkv" },
-    { title: "S04 E27", url: "http://fortv.cc:8080/series/16686894/06987237/179599.mkv" },
-    { title: "S04 E28", url: "http://fortv.cc:8080/series/16686894/06987237/213024.mkv" },
-    { title: "S04 E29", url: "http://fortv.cc:8080/series/16686894/06987237/179600.mkv" },
-    { title: "S04 E30", url: "http://fortv.cc:8080/series/16686894/06987237/213025.mkv" },
-    { title: "S04 E31", url: "http://fortv.cc:8080/series/16686894/06987237/179601.mkv" },
-    { title: "S04 E32", url: "http://fortv.cc:8080/series/16686894/06987237/213026.mkv" },
-    { title: "S04 E33", url: "http://fortv.cc:8080/series/16686894/06987237/179602.mkv" },
-    { title: "S04 E34", url: "http://fortv.cc:8080/series/16686894/06987237/213027.mkv" },
-    { title: "S04 E35", url: "http://fortv.cc:8080/series/16686894/06987237/179603.mkv" },
-    { title: "S04 E36", url: "http://fortv.cc:8080/series/16686894/06987237/213028.mkv" },
-    { title: "S04 E37", url: "http://fortv.cc:8080/series/16686894/06987237/179604.mkv" },
-    { title: "S04 E38", url: "http://fortv.cc:8080/series/16686894/06987237/213029.mkv" },
-    { title: "S04 E39", url: "http://fortv.cc:8080/series/16686894/06987237/179605.mkv" },
-    { title: "S04 E40", url: "http://fortv.cc:8080/series/16686894/06987237/213030.mkv" },
-    { title: "S04 E41", url: "http://fortv.cc:8080/series/16686894/06987237/179606.mkv" },
-    { title: "S04 E42", url: "http://fortv.cc:8080/series/16686894/06987237/213031.mkv" },
-    { title: "S04 E43", url: "http://fortv.cc:8080/series/16686894/06987237/179607.mkv" },
-    { title: "S04 E44", url: "http://fortv.cc:8080/series/16686894/06987237/213032.mkv" },
-    { title: "S05 E01", url: "http://fortv.cc:8080/series/16686894/06987237/213033.mkv" },
-    { title: "S05 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213034.mkv" },
-    { title: "S05 E03", url: "http://fortv.cc:8080/series/16686894/06987237/213035.mkv" },
-    { title: "S05 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213036.mkv" },
-    { title: "S05 E05", url: "http://fortv.cc:8080/series/16686894/06987237/213037.mkv" },
-    { title: "S05 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213038.mkv" },
-    { title: "S05 E07", url: "http://fortv.cc:8080/series/16686894/06987237/213039.mkv" },
-    { title: "S05 E08", url: "http://fortv.cc:8080/series/16686894/06987237/213040.mkv" },
-    { title: "S05 E09", url: "http://fortv.cc:8080/series/16686894/06987237/213041.mkv" },
-    { title: "S05 E10", url: "http://fortv.cc:8080/series/16686894/06987237/213042.mkv" },
-    { title: "S05 E11", url: "http://fortv.cc:8080/series/16686894/06987237/213043.mkv" },
-    { title: "S05 E12", url: "http://fortv.cc:8080/series/16686894/06987237/213044.mkv" },
-    { title: "S05 E13", url: "http://fortv.cc:8080/series/16686894/06987237/213045.mkv" },
-    { title: "S05 E14", url: "http://fortv.cc:8080/series/16686894/06987237/213046.mkv" },
-    { title: "S05 E15", url: "http://fortv.cc:8080/series/16686894/06987237/213047.mkv" },
-    { title: "S05 E16", url: "http://fortv.cc:8080/series/16686894/06987237/213048.mkv" },
-    { title: "S05 E17", url: "http://fortv.cc:8080/series/16686894/06987237/213049.mkv" },
-    { title: "S05 E18", url: "http://fortv.cc:8080/series/16686894/06987237/223008.mkv" },
-    { title: "S05 E19", url: "http://fortv.cc:8080/series/16686894/06987237/223009.mkv" },
-    { title: "S05 E20", url: "http://fortv.cc:8080/series/16686894/06987237/223010.mkv" },
-    { title: "S05 E21", url: "http://fortv.cc:8080/series/16686894/06987237/223011.mkv" }
-],
-
-"The Premise": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195024.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195025.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195026.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195027.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195028.mp4" }
-],
-
-"With Love": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195796.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195797.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195798.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195799.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195800.mp4" }
-],
-
-"Firebite": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191383.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191384.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191385.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191386.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191387.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191388.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191389.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191390.mp4" }
-],
-
-	
-
-"The Game": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/174896.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/174897.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/174898.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/174899.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/174900.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/174901.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/174902.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/174903.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/174904.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/174905.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/174906.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/174907.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/174908.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/175213.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/175556.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/176565.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/176566.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/176567.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/176568.mkv" }
-],
-
-"Day of the Dead": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190741.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190742.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190743.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190744.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190745.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190746.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190747.mp4" }
-],
-
-"Diggstown": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190873.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190874.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190875.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190876.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190877.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190878.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190879.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190880.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190881.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190882.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190883.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190884.mp4" }
-],
-
-"The Wheel of Time": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195236.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195237.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195238.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195239.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195240.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195241.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195242.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195243.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/209397.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/209398.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/209399.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/209400.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/209784.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/210601.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/210602.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/210603.mkv" }
-],
-
-
-
-	
-"Frogger": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191394.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191395.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191396.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191397.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191398.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191399.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191400.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191401.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/191402.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/191403.mp4" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/191404.mp4" },
-    { title: "S01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/191405.mp4" },
-    { title: "S01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/191406.mp4" }
-],
-
-"South Side": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195127.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195128.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195129.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195130.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195131.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195132.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195133.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195134.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/195135.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/195136.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195145.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195146.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195147.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195148.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195149.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195150.mp4" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/174020.mp4" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/174021.mp4" }
-],
-
-"Dogs in Space": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190885.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190886.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190887.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190888.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190889.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190890.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190891.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190892.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/190893.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/190894.mp4" }
-],
-
-"Hawkeye": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192124.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192125.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192126.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192127.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192128.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192129.mp4" }
-],
-
-
-
-
-	
-"Yellowjackets": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195801.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195802.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195803.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195804.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195805.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195806.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195807.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195808.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/195809.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/195810.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/180091.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/180203.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/180365.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/180366.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/180628.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/181173.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/181174.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/181723.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/181724.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/226584.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/226585.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/226586.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/226587.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/228347.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/228348.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/228349.mkv" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/228350.mkv" },
-    { title: "S03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/228351.mkv" }
-],
-
-"True Nightmares: Tales of Terror": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195448.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195449.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195450.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195451.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195452.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195453.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195454.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195455.mkv" }
-],
-
-"The Outlaws": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195000.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195001.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195002.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195003.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195004.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195005.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189057.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189058.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189059.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189060.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189061.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189062.mkv" }
-],
-
-
-
-	
-
-"A.P. Bio": [
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189642.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189643.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189644.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189645.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189646.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189647.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/189648.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/189649.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/189650.mp4" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/189651.mp4" },
-    { title: "S02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/189652.mp4" },
-    { title: "S02 E12", url: "http://fortv.cc:8080/series/16686894/06987237/189653.mp4" },
-    { title: "S02 E13", url: "http://fortv.cc:8080/series/16686894/06987237/189654.mp4" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189655.mp4" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189656.mp4" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189657.mp4" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189658.mp4" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189659.mp4" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189660.mp4" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/189661.mp4" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/189662.mp4" },
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189663.mp4" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189664.mp4" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189665.mp4" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189666.mp4" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189667.mp4" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189668.mp4" },
-    { title: "S04 E07", url: "http://fortv.cc:8080/series/16686894/06987237/189669.mp4" },
-    { title: "S04 E08", url: "http://fortv.cc:8080/series/16686894/06987237/189670.mp4" }
-],
-
-"Head of the Class": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192130.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192131.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192132.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192133.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192134.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192135.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192136.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192137.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192138.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192139.mp4" }
-],
-
-"Dexter: New Blood": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190833.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190834.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190835.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190836.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190837.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190838.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190839.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190840.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/190841.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/190842.mp4" }
-],
-
-
-	
-
-"Dopesick": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190901.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190902.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190903.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190904.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190905.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190906.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190907.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190908.mp4" }
-],
-
-"Heels": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192140.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192141.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192142.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192143.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192144.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192145.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192146.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192147.mp4" }
-],
-
-"Fires": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191378.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191379.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191380.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191381.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191382.mkv" }
-],
-
-	
-
-
-	
-"Dan Brown's The Lost Symbol": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190700.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190701.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190702.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190703.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190704.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190705.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190706.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190707.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/190708.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/190709.mp4" }
-],
-
-"Countdown: Inspiration4 Mission to Space": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/100943.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/100944.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/100945.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/100946.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/100947.mp4" }
-],
-
-"Doogie Kamealoha, M.D.": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190895.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190896.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190897.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190898.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190899.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190900.mp4" }
-],
-	
-"Foundation": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191367.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191368.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191369.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191370.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191371.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191372.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191373.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191374.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/191375.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/191376.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191377.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/209409.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/209410.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/209411.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/209412.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/209413.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/209414.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/209415.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/209416.mkv" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/209783.mkv" }
-],
-
-"Back to Life": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189964.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189965.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189966.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189967.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189968.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189969.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189970.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189971.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189972.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189973.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189974.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189975.mp4" }
-],
-
-"Deceit": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190748.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190749.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190750.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190751.mp4" }
-],
-	
-"Delilah": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190752.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190753.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190754.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190755.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190756.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190757.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190758.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190759.mkv" }
-],
-
-"Vigil": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195647.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195648.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195649.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195650.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195651.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195652.mp4" }
-],
-
-"The Tent Mender": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195124.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195125.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195126.mp4" }
-],
-
-
-"Departure": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190764.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190765.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190766.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190767.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190768.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190769.mp4" }
-],
-"FBOY Island": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191347.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191348.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191349.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191350.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191351.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191352.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191353.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191354.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/191355.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/191356.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191357.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191358.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191359.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191360.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191361.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191362.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191363.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191364.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/191365.mp4" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/191366.mp4" }
-],
-
-"The White Lotus": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195244.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195245.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195246.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195247.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195248.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195249.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/171561.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173507.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173508.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173509.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173510.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173910.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/174197.mp4" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/224893.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/226605.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/226606.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/227502.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/227503.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/227504.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/227505.mkv" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/227506.mkv" }
-],
-"The Walking Dead: Origins": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195232.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195233.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195234.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195235.mp4" }
-],
-	
-
-"Hit & Run": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192180.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192181.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192182.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192183.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192184.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192185.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192186.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192187.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192188.mp4" }
-],
-
-
-"Lucifer": [
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192798.mp4" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192799.mp4" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192800.mp4" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192801.mp4" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192802.mp4" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192803.mp4" },
-    { title: "S04 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192804.mp4" },
-    { title: "S04 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192805.mp4" },
-    { title: "S04 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192806.mp4" },
-    { title: "S04 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192807.mp4" },
-    { title: "S05 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192808.mp4" },
-    { title: "S05 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192809.mp4" },
-    { title: "S05 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192810.mp4" },
-    { title: "S05 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192811.mp4" },
-    { title: "S05 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192812.mp4" },
-    { title: "S05 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192813.mp4" },
-    { title: "S05 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192814.mp4" },
-    { title: "S05 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192815.mp4" },
-    { title: "S05 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192816.mp4" },
-    { title: "S05 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192817.mp4" },
-    { title: "S05 E11", url: "http://fortv.cc:8080/series/16686894/06987237/192818.mp4" },
-    { title: "S05 E12", url: "http://fortv.cc:8080/series/16686894/06987237/192819.mp4" },
-    { title: "S05 E13", url: "http://fortv.cc:8080/series/16686894/06987237/192820.mp4" },
-    { title: "S05 E14", url: "http://fortv.cc:8080/series/16686894/06987237/192821.mp4" },
-    { title: "S05 E15", url: "http://fortv.cc:8080/series/16686894/06987237/192822.mp4" },
-    { title: "S05 E16", url: "http://fortv.cc:8080/series/16686894/06987237/192823.mp4" },
-    { title: "S06 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192824.mp4" },
-    { title: "S06 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192825.mp4" },
-    { title: "S06 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192826.mp4" },
-    { title: "S06 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192827.mp4" },
-    { title: "S06 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192828.mp4" },
-    { title: "S06 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192829.mp4" },
-    { title: "S06 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192830.mp4" },
-    { title: "S06 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192831.mp4" },
-    { title: "S06 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192832.mp4" },
-    { title: "S06 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192833.mp4" }
-],
-
-
-
-
-"The Hills: New Beginnings": [
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/195250.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/195251.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/195252.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/195253.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/195254.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/195255.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/195256.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/195257.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/195258.mp4" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/195259.mp4" }
-],
-
-
-
-	
-
-	"Batwoman": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189976.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189977.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189978.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189979.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/189980.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/189981.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/189982.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/189983.mkv" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/189984.mkv" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/189985.mkv" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/189986.mkv" },
-    { title: "S01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/189987.mkv" },
-    { title: "S01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/189988.mkv" },
-    { title: "S01 E14", url: "http://fortv.cc:8080/series/16686894/06987237/189989.mkv" },
-    { title: "S01 E15", url: "http://fortv.cc:8080/series/16686894/06987237/189990.mkv" },
-    { title: "S01 E16", url: "http://fortv.cc:8080/series/16686894/06987237/189991.mkv" },
-    { title: "S01 E17", url: "http://fortv.cc:8080/series/16686894/06987237/189992.mkv" },
-    { title: "S01 E18", url: "http://fortv.cc:8080/series/16686894/06987237/189993.mkv" },
-    { title: "S01 E19", url: "http://fortv.cc:8080/series/16686894/06987237/189994.mkv" },
-    { title: "S01 E20", url: "http://fortv.cc:8080/series/16686894/06987237/189995.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/189996.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/189997.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/189998.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/189999.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190000.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190001.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190002.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190003.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/190004.mp4" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/190005.mp4" },
-    { title: "S02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/190006.mp4" },
-    { title: "S02 E12", url: "http://fortv.cc:8080/series/16686894/06987237/190007.mp4" },
-    { title: "S02 E13", url: "http://fortv.cc:8080/series/16686894/06987237/190008.mp4" },
-    { title: "S02 E14", url: "http://fortv.cc:8080/series/16686894/06987237/190009.mp4" },
-    { title: "S02 E15", url: "http://fortv.cc:8080/series/16686894/06987237/190010.mp4" },
-    { title: "S02 E16", url: "http://fortv.cc:8080/series/16686894/06987237/190011.mp4" },
-    { title: "S02 E17", url: "http://fortv.cc:8080/series/16686894/06987237/190012.mp4" },
-    { title: "S02 E18", url: "http://fortv.cc:8080/series/16686894/06987237/190013.mp4" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190014.mp4" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190015.mp4" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190016.mp4" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190017.mp4" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190018.mp4" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190019.mp4" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/190020.mp4" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/190021.mp4" },
-    { title: "S03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/190022.mp4" },
-    { title: "S03 E10", url: "http://fortv.cc:8080/series/16686894/06987237/190023.mp4" },
-    { title: "S03 E11", url: "http://fortv.cc:8080/series/16686894/06987237/190024.mp4" },
-    { title: "S03 E12", url: "http://fortv.cc:8080/series/16686894/06987237/190025.mkv" }
-],
-
-
-
-	
-	
-
-"Professor T": [
-    { title: "T01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168785.mp4" },
-    { title: "T01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168786.mp4" },
-    { title: "T01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168787.mp4" },
-    { title: "T01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168788.mp4" },
-    { title: "T01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/168789.mp4" },
-    { title: "T01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/168790.mp4" },
-
-    { title: "T02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168791.mp4" },
-    { title: "T02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168792.mp4" },
-    { title: "T02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168793.mp4" },
-    { title: "T02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168794.mp4" },
-    { title: "T02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/168795.mp4" },
-    { title: "T02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/171509.mp4" }
-	],
-
-
-	
-"Let the Right One In": [
-    { title: "T01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168796.mp4" },
-    { title: "T01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168797.mp4" },
-    { title: "T01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168798.mp4" },
-    { title: "T01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/174023.mp4" },
-    { title: "T01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/174024.mp4" },
-    { title: "T01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/174025.mp4" },
-    { title: "T01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/174026.mp4" },
-    { title: "T01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/174027.mp4" },
-    { title: "T01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/174028.mp4" },
-    { title: "T01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/174029.mp4" }
-],
-
-"Ghostwriter": [
-    { title: "T01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168801.mp4" },
-    { title: "T01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168802.mp4" },
-    { title: "T01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168803.mp4" },
-    { title: "T01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168804.mp4" },
-    { title: "T01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/168805.mp4" },
-    { title: "T01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/168806.mp4" },
-    { title: "T01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/168807.mp4" },
-    { title: "T01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/168808.mp4" },
-    { title: "T01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/168809.mp4" },
-    { title: "T01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/168810.mp4" },
-    { title: "T01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/168811.mp4" },
-    { title: "T01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/168812.mp4" },
-    { title: "T01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/168813.mp4" },
-
-    { title: "T02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168814.mp4" },
-    { title: "T02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168815.mp4" },
-    { title: "T02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168816.mp4" },
-    { title: "T02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168817.mp4" },
-    { title: "T02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/168818.mp4" },
-    { title: "T02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/168819.mp4" },
-    { title: "T02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/168820.mp4" },
-    { title: "T02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/168821.mp4" },
-    { title: "T02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/168822.mp4" },
-    { title: "T02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/168823.mp4" },
-    { title: "T02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/168824.mp4" },
-    { title: "T02 E12", url: "http://fortv.cc:8080/series/16686894/06987237/168825.mp4" },
-    { title: "T02 E13", url: "http://fortv.cc:8080/series/16686894/06987237/168826.mp4" },
-
-    { title: "T03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168827.mp4" },
-    { title: "T03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168828.mp4" },
-    { title: "T03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168829.mp4" },
-    { title: "T03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168830.mp4" },
-    { title: "T03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/168831.mp4" },
-    { title: "T03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/168832.mp4" },
-    { title: "T03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/168833.mp4" },
-    { title: "T03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/168834.mp4" },
-    { title: "T03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/168835.mp4" },
-    { title: "T03 E10", url: "http://fortv.cc:8080/series/16686894/06987237/168836.mp4" },
-    { title: "T03 E11", url: "http://fortv.cc:8080/series/16686894/06987237/168837.mp4" },
-    { title: "T03 E12", url: "http://fortv.cc:8080/series/16686894/06987237/168838.mp4" },
-    { title: "T03 E13", url: "http://fortv.cc:8080/series/16686894/06987237/168839.mp4" }
-],
-
-
-"Alaska Daily": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168840.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168841.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168842.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/179864.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/179865.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/179866.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/179867.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/179868.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/179869.mp4" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/180066.mp4" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/180067.mp4" }
-],
-
-
-"The Elon Musk Show": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168847.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168848.mkv" }
-],
-
-
-"Inside Man": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/168872.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/168873.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/168874.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/168875.mkv" }
-],
-
-
-"Alone: Frozen": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/169311.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/169312.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/169313.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/169314.mp4" }
-],
-
-
-
-"Black Mirror": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190320.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190321.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190322.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190323.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190324.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190325.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190326.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190327.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190328.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190329.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190330.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190331.mkv" },
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190332.mkv" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190333.mkv" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190334.mkv" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/190335.mkv" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/190336.mkv" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/190337.mkv" },
-    { title: "S05 E01", url: "http://fortv.cc:8080/series/16686894/06987237/190338.mkv" },
-    { title: "S05 E02", url: "http://fortv.cc:8080/series/16686894/06987237/190339.mkv" },
-    { title: "S05 E03", url: "http://fortv.cc:8080/series/16686894/06987237/190340.mkv" },
-    { title: "S06 E01", url: "http://fortv.cc:8080/series/16686894/06987237/188994.mkv" },
-    { title: "S06 E02", url: "http://fortv.cc:8080/series/16686894/06987237/188995.mkv" },
-    { title: "S06 E03", url: "http://fortv.cc:8080/series/16686894/06987237/188996.mkv" },
-    { title: "S06 E04", url: "http://fortv.cc:8080/series/16686894/06987237/188997.mkv" },
-    { title: "S06 E05", url: "http://fortv.cc:8080/series/16686894/06987237/188998.mkv" }
-],
-
-
-
-"Hightown": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192148.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192149.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192150.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192151.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192152.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192153.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192154.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192155.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192156.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192157.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192158.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192159.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192160.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192161.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192162.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192163.mp4" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192164.mp4" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192165.mp4" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/213635.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213636.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/213637.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213638.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/213639.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/214532.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/214533.mkv" }
-],
-
-
-
-"Insecure": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192333.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192334.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192335.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192336.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192337.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192338.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192339.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192340.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192341.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192342.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192343.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192344.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192345.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192346.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192347.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192348.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192349.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192350.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192351.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192352.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192353.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192354.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192355.mkv" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192356.mkv" },
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192357.mkv" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192358.mkv" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192359.mkv" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192360.mkv" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192361.mkv" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192362.mkv" },
-    { title: "S04 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192363.mkv" },
-    { title: "S04 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192364.mkv" },
-    { title: "S04 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192365.mkv" },
-    { title: "S04 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192366.mkv" },
-    { title: "S05 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192367.mp4" },
-    { title: "S05 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192368.mp4" },
-    { title: "S05 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192369.mp4" },
-    { title: "S05 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192370.mp4" },
-    { title: "S05 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192371.mp4" },
-    { title: "S05 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192372.mp4" },
-    { title: "S05 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192373.mp4" },
-    { title: "S05 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192374.mp4" },
-    { title: "S05 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192375.mp4" },
-    { title: "S05 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192376.mp4" }
-],
-
-"Euphoria": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191254.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191255.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191256.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191257.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191258.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191259.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191260.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191261.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/191262.mp4" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/191263.mp4" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/191264.mp4" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/191265.mp4" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/191266.mp4" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/191267.mp4" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/191268.mp4" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/191269.mp4" }
-],
-
-"Marvel Studios: Legends": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/192929.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/192930.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/192931.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/192932.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/192933.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/192934.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/192935.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/192936.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/192937.mkv" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/192938.mp4" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/192939.mp4" },
-    { title: "S01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/192940.mp4" },
-    { title: "S01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/192941.mp4" },
-    { title: "S01 E14", url: "http://fortv.cc:8080/series/16686894/06987237/192942.mp4" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/180868.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/180869.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/180870.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/180871.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/180872.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/180873.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/180874.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/180875.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/180876.mkv" }
-],
-
-
-"Charmed": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/166489.avi" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/166490.avi" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/166491.avi" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/166492.avi" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/166493.avi" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/166494.avi" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/166495.avi" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/166496.avi" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/166497.avi" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/166498.avi" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/166499.avi" },
-    { title: "S01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/166500.avi" },
-    { title: "S01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/166501.avi" },
-    { title: "S01 E14", url: "http://fortv.cc:8080/series/16686894/06987237/166502.avi" },
-    { title: "S01 E15", url: "http://fortv.cc:8080/series/16686894/06987237/166503.avi" },
-    { title: "S01 E16", url: "http://fortv.cc:8080/series/16686894/06987237/166504.avi" },
-    { title: "S01 E17", url: "http://fortv.cc:8080/series/16686894/06987237/166505.avi" },
-    { title: "S01 E18", url: "http://fortv.cc:8080/series/16686894/06987237/166506.avi" },
-    { title: "S01 E19", url: "http://fortv.cc:8080/series/16686894/06987237/166507.avi" },
-    { title: "S01 E20", url: "http://fortv.cc:8080/series/16686894/06987237/166508.avi" },
-    { title: "S01 E21", url: "http://fortv.cc:8080/series/16686894/06987237/166509.avi" },
-    { title: "S01 E22", url: "http://fortv.cc:8080/series/16686894/06987237/166510.avi" },
-    { title: "S01 E23", url: "http://fortv.cc:8080/series/16686894/06987237/166511.avi" },
-    { title: "S01 E24", url: "http://fortv.cc:8080/series/16686894/06987237/166512.avi" },
-    { title: "S01 E25", url: "http://fortv.cc:8080/series/16686894/06987237/166513.avi" },
-    { title: "S01 E26", url: "http://fortv.cc:8080/series/16686894/06987237/166514.avi" },
-    { title: "S01 E27", url: "http://fortv.cc:8080/series/16686894/06987237/166515.avi" },
-    { title: "S01 E28", url: "http://fortv.cc:8080/series/16686894/06987237/166516.avi" },
-    { title: "S01 E29", url: "http://fortv.cc:8080/series/16686894/06987237/166517.avi" },
-    { title: "S01 E30", url: "http://fortv.cc:8080/series/16686894/06987237/166518.avi" },
-    { title: "S01 E31", url: "http://fortv.cc:8080/series/16686894/06987237/166519.avi" },
-    { title: "S01 E32", url: "http://fortv.cc:8080/series/16686894/06987237/166520.avi" },
-    { title: "S01 E33", url: "http://fortv.cc:8080/series/16686894/06987237/166521.avi" },
-    { title: "S01 E34", url: "http://fortv.cc:8080/series/16686894/06987237/166522.avi" },
-    { title: "S01 E35", url: "http://fortv.cc:8080/series/16686894/06987237/166523.avi" },
-    { title: "S01 E36", url: "http://fortv.cc:8080/series/16686894/06987237/166524.avi" },
-    { title: "S01 E37", url: "http://fortv.cc:8080/series/16686894/06987237/166525.avi" },
-    { title: "S01 E38", url: "http://fortv.cc:8080/series/16686894/06987237/166526.avi" },
-    { title: "S01 E39", url: "http://fortv.cc:8080/series/16686894/06987237/166527.avi" },
-    { title: "S01 E40", url: "http://fortv.cc:8080/series/16686894/06987237/166528.avi" },
-    { title: "S01 E41", url: "http://fortv.cc:8080/series/16686894/06987237/166529.avi" },
-    { title: "S01 E42", url: "http://fortv.cc:8080/series/16686894/06987237/166530.avi" },
-    { title: "S01 E43", url: "http://fortv.cc:8080/series/16686894/06987237/166531.avi" },
-    { title: "S01 E44", url: "http://fortv.cc:8080/series/16686894/06987237/166532.avi" },
-    { title: "S01 E45", url: "http://fortv.cc:8080/series/16686894/06987237/166533.avi" },
-    { title: "S01 E46", url: "http://fortv.cc:8080/series/16686894/06987237/166534.avi" },
-    { title: "S01 E47", url: "http://fortv.cc:8080/series/16686894/06987237/166535.avi" },
-    { title: "S01 E48", url: "http://fortv.cc:8080/series/16686894/06987237/166536.avi" },
-    { title: "S01 E49", url: "http://fortv.cc:8080/series/16686894/06987237/166537.avi" },
-    { title: "S01 E50", url: "http://fortv.cc:8080/series/16686894/06987237/166538.avi" },
-    { title: "S01 E51", url: "http://fortv.cc:8080/series/16686894/06987237/166539.avi" },
-    { title: "S01 E52", url: "http://fortv.cc:8080/series/16686894/06987237/166540.avi" },
-    { title: "S01 E53", url: "http://fortv.cc:8080/series/16686894/06987237/166541.avi" },
-    { title: "S01 E54", url: "http://fortv.cc:8080/series/16686894/06987237/166542.avi" },
-    { title: "S01 E55", url: "http://fortv.cc:8080/series/16686894/06987237/166543.avi" },
-    { title: "S01 E56", url: "http://fortv.cc:8080/series/16686894/06987237/166544.avi" },
-    { title: "S01 E57", url: "http://fortv.cc:8080/series/16686894/06987237/166545.avi" },
-    { title: "S01 E58", url: "http://fortv.cc:8080/series/16686894/06987237/166546.avi" },
-    { title: "S01 E59", url: "http://fortv.cc:8080/series/16686894/06987237/166547.avi" },
-    { title: "S01 E60", url: "http://fortv.cc:8080/series/16686894/06987237/166548.avi" },
-    { title: "S01 E61", url: "http://fortv.cc:8080/series/16686894/06987237/166549.avi" },
-    { title: "S01 E62", url: "http://fortv.cc:8080/series/16686894/06987237/166550.avi" },
-    { title: "S01 E63", url: "http://fortv.cc:8080/series/16686894/06987237/166551.avi" },
-    { title: "S01 E64", url: "http://fortv.cc:8080/series/16686894/06987237/166552.avi" },
-    { title: "S01 E65", url: "http://fortv.cc:8080/series/16686894/06987237/166553.avi" },
-    { title: "S01 E66", url: "http://fortv.cc:8080/series/16686894/06987237/166554.avi" },
-    { title: "S01 E67", url: "http://fortv.cc:8080/series/16686894/06987237/166555.avi" },
-    { title: "S01 E68", url: "http://fortv.cc:8080/series/16686894/06987237/166556.avi" },
-    { title: "S01 E69", url: "http://fortv.cc:8080/series/16686894/06987237/166557.avi" },
-    { title: "S01 E70", url: "http://fortv.cc:8080/series/16686894/06987237/166558.avi" },
-    { title: "S01 E71", url: "http://fortv.cc:8080/series/16686894/06987237/166559.avi" },
-    { title: "S01 E72", url: "http://fortv.cc:8080/series/16686894/06987237/166560.avi" },
-    { title: "S01 E73", url: "http://fortv.cc:8080/series/16686894/06987237/166561.avi" },
-    { title: "S01 E74", url: "http://fortv.cc:8080/series/16686894/06987237/166562.avi" },
-    { title: "S01 E75", url: "http://fortv.cc:8080/series/16686894/06987237/166563.avi" },
-    { title: "S01 E76", url: "http://fortv.cc:8080/series/16686894/06987237/166564.avi" },
-    { title: "S01 E77", url: "http://fortv.cc:8080/series/16686894/06987237/166565.avi" },
-    { title: "S01 E78", url: "http://fortv.cc:8080/series/16686894/06987237/166566.avi" },
-    { title: "S01 E79", url: "http://fortv.cc:8080/series/16686894/06987237/166567.avi" },
-    { title: "S01 E80", url: "http://fortv.cc:8080/series/16686894/06987237/166568.avi" },
-    { title: "S01 E81", url: "http://fortv.cc:8080/series/16686894/06987237/166569.avi" },
-    { title: "S01 E82", url: "http://fortv.cc:8080/series/16686894/06987237/166570.avi" },
-    { title: "S01 E83", url: "http://fortv.cc:8080/series/16686894/06987237/166571.avi" },
-    { title: "S01 E84", url: "http://fortv.cc:8080/series/16686894/06987237/166572.avi" },
-    { title: "S01 E85", url: "http://fortv.cc:8080/series/16686894/06987237/166573.avi" },
-    { title: "S01 E86", url: "http://fortv.cc:8080/series/16686894/06987237/166574.avi" },
-    { title: "S01 E87", url: "http://fortv.cc:8080/series/16686894/06987237/166575.avi" },
-    { title: "S01 E88", url: "http://fortv.cc:8080/series/16686894/06987237/166576.avi" },
-    { title: "S01 E89", url: "http://fortv.cc:8080/series/16686894/06987237/166577.avi" },
-    { title: "S01 E90", url: "http://fortv.cc:8080/series/16686894/06987237/166578.avi" },
-    { title: "S01 E91", url: "http://fortv.cc:8080/series/16686894/06987237/166579.avi" },
-    { title: "S01 E92", url: "http://fortv.cc:8080/series/16686894/06987237/166580.avi" },
-    { title: "S01 E93", url: "http://fortv.cc:8080/series/16686894/06987237/166581.avi" },
-    { title: "S01 E94", url: "http://fortv.cc:8080/series/16686894/06987237/166582.avi" },
-    { title: "S01 E95", url: "http://fortv.cc:8080/series/16686894/06987237/166583.avi" },
-    { title: "S01 E96", url: "http://fortv.cc:8080/series/16686894/06987237/166584.avi" },
-    { title: "S01 E97", url: "http://fortv.cc:8080/series/16686894/06987237/166585.avi" },
-    { title: "S01 E98", url: "http://fortv.cc:8080/series/16686894/06987237/166586.avi" },
-    { title: "S01 E99", url: "http://fortv.cc:8080/series/16686894/06987237/166587.avi" },
-    { title: "S01 E100", url: "http://fortv.cc:8080/series/16686894/06987237/166588.avi" },
-    { title: "S01 E101", url: "http://fortv.cc:8080/series/16686894/06987237/166589.avi" },
-    { title: "S01 E102", url: "http://fortv.cc:8080/series/16686894/06987237/166590.avi" },
-    { title: "S01 E103", url: "http://fortv.cc:8080/series/16686894/06987237/166591.avi" },
-    { title: "S01 E104", url: "http://fortv.cc:8080/series/16686894/06987237/166592.avi" },
-    { title: "S01 E105", url: "http://fortv.cc:8080/series/16686894/06987237/166593.avi" },
-    { title: "S01 E106", url: "http://fortv.cc:8080/series/16686894/06987237/166594.avi" },
-    { title: "S01 E107", url: "http://fortv.cc:8080/series/16686894/06987237/166595.avi" },
-    { title: "S01 E108", url: "http://fortv.cc:8080/series/16686894/06987237/166596.avi" },
-    { title: "S01 E109", url: "http://fortv.cc:8080/series/16686894/06987237/166597.avi" },
-    { title: "S01 E110", url: "http://fortv.cc:8080/series/16686894/06987237/166598.avi" },
-    { title: "S01 E111", url: "http://fortv.cc:8080/series/16686894/06987237/166599.avi" },
-    { title: "S01 E112", url: "http://fortv.cc:8080/series/16686894/06987237/166600.avi" },
-    { title: "S01 E113", url: "http://fortv.cc:8080/series/16686894/06987237/166601.avi" },
-    { title: "S01 E114", url: "http://fortv.cc:8080/series/16686894/06987237/166602.avi" },
-    { title: "S01 E115", url: "http://fortv.cc:8080/series/16686894/06987237/166603.avi" },
-    { title: "S01 E116", url: "http://fortv.cc:8080/series/16686894/06987237/166604.avi" },
-    { title: "S01 E117", url: "http://fortv.cc:8080/series/16686894/06987237/166605.avi" },
-    { title: "S01 E118", url: "http://fortv.cc:8080/series/16686894/06987237/166606.avi" },
-    { title: "S01 E119", url: "http://fortv.cc:8080/series/16686894/06987237/166607.avi" },
-    { title: "S01 E120", url: "http://fortv.cc:8080/series/16686894/06987237/166608.avi" },
-    { title: "S01 E121", url: "http://fortv.cc:8080/series/16686894/06987237/166609.avi" },
-    { title: "S01 E122", url: "http://fortv.cc:8080/series/16686894/06987237/166610.avi" },
-    { title: "S01 E123", url: "http://fortv.cc:8080/series/16686894/06987237/166611.avi" },
-    { title: "S01 E124", url: "http://fortv.cc:8080/series/16686894/06987237/166612.avi" },
-    { title: "S01 E125", url: "http://fortv.cc:8080/series/16686894/06987237/166613.avi" },
-    { title: "S01 E126", url: "http://fortv.cc:8080/series/16686894/06987237/166614.avi" },
-    { title: "S01 E127", url: "http://fortv.cc:8080/series/16686894/06987237/166615.avi" },
-    { title: "S01 E128", url: "http://fortv.cc:8080/series/16686894/06987237/166616.avi" },
-    { title: "S01 E129", url: "http://fortv.cc:8080/series/16686894/06987237/166617.avi" },
-    { title: "S01 E130", url: "http://fortv.cc:8080/series/16686894/06987237/166618.avi" },
-    { title: "S01 E131", url: "http://fortv.cc:8080/series/16686894/06987237/166619.avi" },
-    { title: "S01 E132", url: "http://fortv.cc:8080/series/16686894/06987237/166620.avi" },
-    { title: "S01 E133", url: "http://fortv.cc:8080/series/16686894/06987237/166621.avi" },
-    { title: "S01 E134", url: "http://fortv.cc:8080/series/16686894/06987237/166622.avi" },
-    { title: "S01 E135", url: "http://fortv.cc:8080/series/16686894/06987237/166623.avi" },
-    { title: "S01 E136", url: "http://fortv.cc:8080/series/16686894/06987237/166624.avi" },
-    { title: "S01 E137", url: "http://fortv.cc:8080/series/16686894/06987237/166625.avi" },
-    { title: "S01 E138", url: "http://fortv.cc:8080/series/16686894/06987237/166626.avi" },
-    { title: "S01 E139", url: "http://fortv.cc:8080/series/16686894/06987237/166627.avi" },
-    { title: "S01 E140", url: "http://fortv.cc:8080/series/16686894/06987237/166628.avi" },
-    { title: "S01 E141", url: "http://fortv.cc:8080/series/16686894/06987237/166629.avi" },
-    { title: "S01 E142", url: "http://fortv.cc:8080/series/16686894/06987237/166630.avi" },
-    { title: "S01 E143", url: "http://fortv.cc:8080/series/16686894/06987237/166631.avi" },
-    { title: "S01 E144", url: "http://fortv.cc:8080/series/16686894/06987237/166632.avi" },
-    { title: "S01 E145", url: "http://fortv.cc:8080/series/16686894/06987237/166633.avi" },
-    { title: "S01 E146", url: "http://fortv.cc:8080/series/16686894/06987237/166634.avi" },
-    { title: "S01 E147", url: "http://fortv.cc:8080/series/16686894/06987237/166635.avi" },
-    { title: "S01 E148", url: "http://fortv.cc:8080/series/16686894/06987237/166636.avi" },
-    { title: "S01 E149", url: "http://fortv.cc:8080/series/16686894/06987237/166637.avi" },
-    { title: "S01 E150", url: "http://fortv.cc:8080/series/16686894/06987237/166638.avi" },
-    { title: "S01 E151", url: "http://fortv.cc:8080/series/16686894/06987237/166639.avi" },
-    { title: "S01 E152", url: "http://fortv.cc:8080/series/16686894/06987237/166640.avi" },
-    { title: "S01 E153", url: "http://fortv.cc:8080/series/16686894/06987237/166641.avi" },
-    { title: "S01 E154", url: "http://fortv.cc:8080/series/16686894/06987237/166642.avi" },
-    { title: "S01 E155", url: "http://fortv.cc:8080/series/16686894/06987237/166643.avi" },
-    { title: "S01 E156", url: "http://fortv.cc:8080/series/16686894/06987237/166644.avi" },
-    { title: "S01 E157", url: "http://fortv.cc:8080/series/16686894/06987237/166645.avi" },
-    { title: "S01 E158", url: "http://fortv.cc:8080/series/16686894/06987237/166646.avi" },
-    { title: "S01 E159", url: "http://fortv.cc:8080/series/16686894/06987237/166647.avi" },
-    { title: "S01 E160", url: "http://fortv.cc:8080/series/16686894/06987237/166648.avi" },
-    { title: "S01 E161", url: "http://fortv.cc:8080/series/16686894/06987237/166649.avi" },
-    { title: "S01 E162", url: "http://fortv.cc:8080/series/16686894/06987237/166650.avi" },
-    { title: "S01 E163", url: "http://fortv.cc:8080/series/16686894/06987237/166651.avi" },
-    { title: "S01 E164", url: "http://fortv.cc:8080/series/16686894/06987237/166652.avi" },
-    { title: "S01 E165", url: "http://fortv.cc:8080/series/16686894/06987237/166653.avi" },
-    { title: "S01 E166", url: "http://fortv.cc:8080/series/16686894/06987237/166654.avi" },
-    { title: "S01 E167", url: "http://fortv.cc:8080/series/16686894/06987237/166655.avi" },
-    { title: "S01 E168", url: "http://fortv.cc:8080/series/16686894/06987237/166656.avi" },
-    { title: "S01 E169", url: "http://fortv.cc:8080/series/16686894/06987237/166657.avi" },
-    { title: "S01 E170", url: "http://fortv.cc:8080/series/16686894/06987237/166658.avi" },
-    { title: "S01 E171", url: "http://fortv.cc:8080/series/16686894/06987237/166659.avi" },
-    { title: "S01 E172", url: "http://fortv.cc:8080/series/16686894/06987237/166660.avi" },
-    { title: "S01 E173", url: "http://fortv.cc:8080/series/16686894/06987237/166661.avi" },
-    { title: "S01 E174", url: "http://fortv.cc:8080/series/16686894/06987237/166662.avi" },
-    { title: "S01 E175", url: "http://fortv.cc:8080/series/16686894/06987237/166663.avi" }
-],
-
-"The Bachelorette": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/194448.mp4" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/194449.mp4" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/194450.mp4" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/194451.mp4" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/194452.mp4" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/194453.mp4" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/194454.mp4" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/194455.mp4" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/194456.mp4" }
-],
-
-
-	"Queen Sugar": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173408.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173409.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173410.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173411.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173412.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173413.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173414.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173415.mkv" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173416.mkv" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173417.mkv" },
-    { title: "S01 E11", url: "http://fortv.cc:8080/series/16686894/06987237/173418.mkv" },
-    { title: "S01 E12", url: "http://fortv.cc:8080/series/16686894/06987237/173419.mkv" },
-    { title: "S01 E13", url: "http://fortv.cc:8080/series/16686894/06987237/173420.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173421.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173422.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173423.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173424.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173425.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173426.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173427.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173428.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173429.mkv" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173430.mkv" },
-    { title: "S02 E11", url: "http://fortv.cc:8080/series/16686894/06987237/173431.mkv" },
-    { title: "S02 E12", url: "http://fortv.cc:8080/series/16686894/06987237/173432.mkv" },
-    { title: "S02 E13", url: "http://fortv.cc:8080/series/16686894/06987237/173433.mkv" },
-    { title: "S02 E14", url: "http://fortv.cc:8080/series/16686894/06987237/173434.mkv" },
-    { title: "S02 E15", url: "http://fortv.cc:8080/series/16686894/06987237/173435.mkv" },
-    { title: "S02 E16", url: "http://fortv.cc:8080/series/16686894/06987237/173436.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173437.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173438.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173439.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173440.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173441.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173442.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173443.mkv" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173444.mkv" },
-    { title: "S03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173445.mkv" },
-    { title: "S03 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173446.mkv" },
-    { title: "S03 E11", url: "http://fortv.cc:8080/series/16686894/06987237/173447.mkv" },
-    { title: "S03 E12", url: "http://fortv.cc:8080/series/16686894/06987237/173448.mkv" },
-    { title: "S03 E13", url: "http://fortv.cc:8080/series/16686894/06987237/173449.mkv" },
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173450.mp4" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173451.mp4" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173452.mp4" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173453.mp4" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173454.mp4" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173455.mp4" },
-    { title: "S04 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173456.mp4" },
-    { title: "S04 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173457.mp4" },
-    { title: "S04 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173458.mp4" },
-    { title: "S04 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173459.mp4" },
-    { title: "S04 E11", url: "http://fortv.cc:8080/series/16686894/06987237/173460.mp4" },
-    { title: "S04 E12", url: "http://fortv.cc:8080/series/16686894/06987237/173461.mp4" },
-    { title: "S04 E13", url: "http://fortv.cc:8080/series/16686894/06987237/173462.mp4" },
-    { title: "S05 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173463.mp4" },
-    { title: "S05 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173464.mp4" },
-    { title: "S05 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173465.mp4" },
-    { title: "S05 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173466.mp4" },
-    { title: "S05 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173467.mp4" },
-    { title: "S05 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173468.mp4" },
-    { title: "S05 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173469.mp4" },
-    { title: "S05 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173470.mp4" },
-    { title: "S05 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173471.mp4" },
-    { title: "S05 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173472.mp4" },
-    { title: "S06 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173473.mp4" },
-    { title: "S06 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173474.mp4" },
-    { title: "S06 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173475.mp4" },
-    { title: "S06 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173476.mkv" },
-    { title: "S06 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173477.mkv" },
-    { title: "S06 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173478.mp4" },
-    { title: "S06 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173479.mp4" },
-    { title: "S06 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173480.mp4" },
-    { title: "S06 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173481.mp4" },
-    { title: "S06 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173482.mp4" },
-    { title: "S07 E01", url: "http://fortv.cc:8080/series/16686894/06987237/173483.mkv" },
-    { title: "S07 E02", url: "http://fortv.cc:8080/series/16686894/06987237/173484.mkv" },
-    { title: "S07 E03", url: "http://fortv.cc:8080/series/16686894/06987237/173485.mp4" },
-    { title: "S07 E04", url: "http://fortv.cc:8080/series/16686894/06987237/173486.mp4" },
-    { title: "S07 E05", url: "http://fortv.cc:8080/series/16686894/06987237/173487.mp4" },
-    { title: "S07 E06", url: "http://fortv.cc:8080/series/16686894/06987237/173488.mp4" },
-    { title: "S07 E07", url: "http://fortv.cc:8080/series/16686894/06987237/173489.mp4" },
-    { title: "S07 E08", url: "http://fortv.cc:8080/series/16686894/06987237/173490.mp4" },
-    { title: "S07 E09", url: "http://fortv.cc:8080/series/16686894/06987237/173491.mkv" },
-    { title: "S07 E10", url: "http://fortv.cc:8080/series/16686894/06987237/173492.mkv" },
-    { title: "S07 E11", url: "http://fortv.cc:8080/series/16686894/06987237/173493.mkv" }
-],
-
-
-
-
-
-
-
-	
-	
-"Formula 1: Drive to Survive": [
-    { title: "S01 E01", url: "http://fortv.cc:8080/series/16686894/06987237/171955.mkv" },
-    { title: "S01 E02", url: "http://fortv.cc:8080/series/16686894/06987237/171956.mkv" },
-    { title: "S01 E03", url: "http://fortv.cc:8080/series/16686894/06987237/171957.mkv" },
-    { title: "S01 E04", url: "http://fortv.cc:8080/series/16686894/06987237/171958.mkv" },
-    { title: "S01 E05", url: "http://fortv.cc:8080/series/16686894/06987237/171959.mkv" },
-    { title: "S01 E06", url: "http://fortv.cc:8080/series/16686894/06987237/171960.mkv" },
-    { title: "S01 E07", url: "http://fortv.cc:8080/series/16686894/06987237/171961.mkv" },
-    { title: "S01 E08", url: "http://fortv.cc:8080/series/16686894/06987237/171962.mkv" },
-    { title: "S01 E09", url: "http://fortv.cc:8080/series/16686894/06987237/171963.mkv" },
-    { title: "S01 E10", url: "http://fortv.cc:8080/series/16686894/06987237/171964.mkv" },
-    { title: "S02 E01", url: "http://fortv.cc:8080/series/16686894/06987237/171965.mkv" },
-    { title: "S02 E02", url: "http://fortv.cc:8080/series/16686894/06987237/171966.mkv" },
-    { title: "S02 E03", url: "http://fortv.cc:8080/series/16686894/06987237/171967.mkv" },
-    { title: "S02 E04", url: "http://fortv.cc:8080/series/16686894/06987237/171968.mkv" },
-    { title: "S02 E05", url: "http://fortv.cc:8080/series/16686894/06987237/171969.mkv" },
-    { title: "S02 E06", url: "http://fortv.cc:8080/series/16686894/06987237/171970.mkv" },
-    { title: "S02 E07", url: "http://fortv.cc:8080/series/16686894/06987237/171971.mkv" },
-    { title: "S02 E08", url: "http://fortv.cc:8080/series/16686894/06987237/171972.mkv" },
-    { title: "S02 E09", url: "http://fortv.cc:8080/series/16686894/06987237/171973.mkv" },
-    { title: "S02 E10", url: "http://fortv.cc:8080/series/16686894/06987237/171974.mkv" },
-    { title: "S03 E01", url: "http://fortv.cc:8080/series/16686894/06987237/171975.mkv" },
-    { title: "S03 E02", url: "http://fortv.cc:8080/series/16686894/06987237/171976.mkv" },
-    { title: "S03 E03", url: "http://fortv.cc:8080/series/16686894/06987237/171977.mkv" },
-    { title: "S03 E04", url: "http://fortv.cc:8080/series/16686894/06987237/171978.mkv" },
-    { title: "S03 E05", url: "http://fortv.cc:8080/series/16686894/06987237/171979.mkv" },
-    { title: "S03 E06", url: "http://fortv.cc:8080/series/16686894/06987237/171980.mkv" },
-    { title: "S03 E07", url: "http://fortv.cc:8080/series/16686894/06987237/171981.mkv" },
-    { title: "S03 E08", url: "http://fortv.cc:8080/series/16686894/06987237/171982.mkv" },
-    { title: "S03 E09", url: "http://fortv.cc:8080/series/16686894/06987237/171983.mkv" },
-    { title: "S03 E10", url: "http://fortv.cc:8080/series/16686894/06987237/171984.mkv" },
-    { title: "S04 E01", url: "http://fortv.cc:8080/series/16686894/06987237/171985.mp4" },
-    { title: "S04 E02", url: "http://fortv.cc:8080/series/16686894/06987237/171986.mp4" },
-    { title: "S04 E03", url: "http://fortv.cc:8080/series/16686894/06987237/171987.mp4" },
-    { title: "S04 E04", url: "http://fortv.cc:8080/series/16686894/06987237/171988.mp4" },
-    { title: "S04 E05", url: "http://fortv.cc:8080/series/16686894/06987237/171989.mp4" },
-    { title: "S04 E06", url: "http://fortv.cc:8080/series/16686894/06987237/171990.mp4" },
-    { title: "S04 E07", url: "http://fortv.cc:8080/series/16686894/06987237/171991.mp4" },
-    { title: "S04 E08", url: "http://fortv.cc:8080/series/16686894/06987237/171992.mp4" },
-    { title: "S04 E09", url: "http://fortv.cc:8080/series/16686894/06987237/171993.mp4" },
-    { title: "S04 E10", url: "http://fortv.cc:8080/series/16686894/06987237/171994.mp4" },
-    { title: "S05 E01", url: "http://fortv.cc:8080/series/16686894/06987237/213703.mkv" },
-    { title: "S05 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213704.mkv" },
-    { title: "S05 E03", url: "http://fortv.cc:8080/series/16686894/06987237/213705.mkv" },
-    { title: "S05 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213706.mkv" },
-    { title: "S05 E05", url: "http://fortv.cc:8080/series/16686894/06987237/213707.mkv" },
-    { title: "S05 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213708.mkv" },
-    { title: "S05 E07", url: "http://fortv.cc:8080/series/16686894/06987237/213709.mkv" },
-    { title: "S05 E08", url: "http://fortv.cc:8080/series/16686894/06987237/213710.mkv" },
-    { title: "S05 E09", url: "http://fortv.cc:8080/series/16686894/06987237/213711.mkv" },
-    { title: "S05 E10", url: "http://fortv.cc:8080/series/16686894/06987237/213712.mkv" },
-    { title: "S06 E01", url: "http://fortv.cc:8080/series/16686894/06987237/213713.mkv" },
-    { title: "S06 E02", url: "http://fortv.cc:8080/series/16686894/06987237/213714.mkv" },
-    { title: "S06 E03", url: "http://fortv.cc:8080/series/16686894/06987237/213715.mkv" },
-    { title: "S06 E04", url: "http://fortv.cc:8080/series/16686894/06987237/213716.mkv" },
-    { title: "S06 E05", url: "http://fortv.cc:8080/series/16686894/06987237/213717.mkv" },
-    { title: "S06 E06", url: "http://fortv.cc:8080/series/16686894/06987237/213718.mkv" },
-    { title: "S06 E07", url: "http://fortv.cc:8080/series/16686894/06987237/213719.mkv" },
-    { title: "S06 E08", url: "http://fortv.cc:8080/series/16686894/06987237/213720.mkv" },
-    { title: "S06 E09", url: "http://fortv.cc:8080/series/16686894/06987237/213721.mkv" },
-    { title: "S06 E10", url: "http://fortv.cc:8080/series/16686894/06987237/213722.mkv" }
-],
-
-
-
-
-
-	
-
-	
-
-    
-    "Yes Minister": [
-        { title: "Capítulo 1", url: "https://archive.org/download/el-abismo-secreto_202511/El%20abismo%20secreto.mp4" },
-        { title: "Capítulo 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
-        { title: "Capítulo 3", url: "", locked: true }
-    ],
-
-    "ciencia-ficcion": [
-        { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" },
-        { title: "Episodio 2", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
-    ],
-
-    "misterios-nocturnos": [
-        { title: "Episodio 1", url: "https://archive.org/download/sample-mp4-file_202511/sample.mp4" }
-    ]
-};
-
-/* ------- TV NAVIGATION HOME ------- */
-const cards = [...document.querySelectorAll(".card")];
-let index = 0;
-const backButton = document.getElementById("backButton");
-const mainGrid = document.getElementById("mainGrid");
-
-function focusCard() {
-    cards.forEach(c => c.classList.remove("focused"));
-    cards[index].classList.add("focused");
-    cards[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-}
-focusCard();
-
-const modal = document.getElementById("modal");
-const episodiosDiv = document.getElementById("episodios");
-let currentSeries = null;
-let episodioEls = [];
-let epIndex = 0;
-let lastBackspaceTime = 0;
-
-/* ------- OPEN MODAL ------- */
-cards.forEach(card => {
-    card.addEventListener("click", () => {
-        currentSeries = card.dataset.series;
-        openModal();
-    });
-});
-
-function openModal() {
-    modal.style.display = "flex";
-    backButton.classList.add("visible");
-    loadEpisodes();
-}
-
-/* ------- LOAD EPISODES ------- */
-function loadEpisodes() {
-    episodiosDiv.innerHTML = "";
-    episodioEls = [];
-
-    seriesData[currentSeries].forEach((ep, i) => {
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <h1 id="heroTitle">Bienvenido a IPTV Player</h1>
+      <p id="heroDesc">Explora tus películas favoritas.</p>
+      <button id="heroPlayBtn" class="play-btn">▶ Reproducir</button>
+    </div>
+  </div>
+
+  <div class="main" id="mainContent"></div>
+
+  <script>
+    // Aquí defines tus playlists por categoría
+    const PLAYLISTS = {
+      "Acción": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html",
+      
+      
+      
+      
+      
+      "HBO": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html",
+      
+      
+      
+      
+      
+      "Apple TV": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html", 
+      
+      
+      
+       
+      "Netflix": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html",
+      
+      
+      
+       
+      "Apple TV": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html",
+      
+      
+       
+      "Amazon Prime Video": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html", 
+      
+      
+      
+       
+      "Crimen": "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/accion.html"
+      
+      
+      
+      
+      // Si tienes más categorías, agrégalas así:
+      // "Terror": "URL_TERROR",
+      // "Comedia": "URL_COMEDIA",
+      // "Estrenos": "URL_ESTRENOS",
+    };
+
+    let moviesByCategory = {};
+    let currentHero = null;
+
+    function parseM3U(text) {
+      const lines = text.split("\n");
+      const channels = [];
+      let current = {};
+      for (let line of lines) {
+        line = line.trim();
+        if (line.startsWith("#EXTINF:")) {
+          const logo = line.match(/tvg-logo="([^"]*)"/);
+          const name = line.split(",").pop();
+          const cat = line.match(/group-title="([^"]*)"/);
+          current.logo = logo ? logo[1] : "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
+          current.name = name;
+          current.category = cat ? cat[1] : "Sin categoría";
+        } else if (line && !line.startsWith("#")) {
+          current.url = line;
+          channels.push({...current});
+          current = {};
+        }
+      }
+      return channels;
+    }
+
+    async function loadPlaylist() {
+      try {
+        moviesByCategory = {};
+
+        // Cargar cada playlist
+        for (const category in PLAYLISTS) {
+          const url = PLAYLISTS[category];
+          const res = await fetch(url);
+          if (!res.ok) {
+            console.warn("No se pudo cargar la playlist:", category, url);
+            continue;
+          }
+          const text = await res.text();
+          const channels = parseM3U(text);
+          if (channels.length > 0) {
+            // Fuerza la categoría a la que corresponde esta playlist
+            moviesByCategory[category] = channels.map(ch => ({
+              ...ch,
+              category: category
+            }));
+          }
+        }
+
+        // Verifica que haya al menos una categoría cargada
+        const cats = Object.keys(moviesByCategory);
+        if (cats.length === 0) {
+          throw new Error("No se cargó ninguna playlist válida.");
+        }
+
+        renderAllCategories();
+
+        // Establece el primer canal de la primera categoría como hero
+        const firstCat = cats[0];
+        const firstChannel = moviesByCategory[firstCat][0];
+        setHero(firstChannel);
+
+        initTVNavigation();
+      } catch (e) {
+        console.error("Error al cargar listas:", e);
+        const hero = document.getElementById("hero");
+        hero.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg')";
+        document.getElementById("heroTitle").innerText = "Error al cargar playlists";
+        document.getElementById("heroDesc").innerText = "Verifica las URLs configuradas.";
+      }
+    }
+
+    function renderAllCategories() {
+      const main = document.getElementById("mainContent");
+      main.innerHTML = "";
+      for (const category in moviesByCategory) {
+        const section = document.createElement("div");
+        section.className = "section";
+        section.innerHTML = `<h2>${category}</h2><div class="row" id="row_${category.replace(/\s+/g, '_')}"></div>`;
+        main.appendChild(section);
+        renderChannels(moviesByCategory[category], `row_${category.replace(/\s+/g, '_')}`);
+      }
+    }
+
+    function renderChannels(channels, rowId) {
+      const row = document.getElementById(rowId);
+      row.innerHTML = "";
+      channels.forEach(ch => {
         const div = document.createElement("div");
-        div.textContent = ep.title;
-        div.classList.add("episodio");
-        if (ep.locked) div.classList.add("bloqueado");
+        div.className = "channel";
+        div.innerHTML = `
+          <img src="${ch.logo}" alt="${ch.name}">
+          <p>${ch.name}</p>
+        `;
+        div.onclick = () => playChannel(ch.url);
+        div.onmouseenter = () => updateHeroPreview(ch);
+        div.onmouseleave = () => restoreHero();
+        row.appendChild(div);
+      });
+    }
 
-        div.addEventListener("click", () => playEpisode(i));
+    function setHero(ch) {
+      currentHero = ch;
+      const hero = document.getElementById("hero");
+      hero.style.backgroundImage = `url('${ch.logo}')`;
+      document.getElementById("heroTitle").innerText = ch.name;
+      document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
+      document.getElementById("heroPlayBtn").onclick = () => playChannel(ch.url);
+    }
 
-        episodiosDiv.append(div);
-        episodioEls.push(div);
+    function updateHeroPreview(ch) {
+      const hero = document.getElementById("hero");
+      hero.style.backgroundImage = `url('${ch.logo}')`;
+      document.getElementById("heroTitle").innerText = ch.name;
+      document.getElementById("heroDesc").innerText = `Categoría: ${ch.category}`;
+    }
+
+    function restoreHero() {
+      if (currentHero) setHero(currentHero);
+    }
+
+    function playChannel(url) {
+      // Abre en nueva pestaña. Si prefieres embebido, se debe cambiar a <video> o <iframe>.
+      window.open(url, "_blank");
+    }
+
+    let focusedRow = -1;
+    let focusedCol = 0;
+    let sectionElements = [];
+
+    function initTVNavigation() {
+      sectionElements = Array.from(document.querySelectorAll(".section .row"));
+      focusedRow = -1;
+      focusedCol = 0;
+      updateFocus();
+    }
+
+    function updateFocus() {
+      document.querySelectorAll(".focused").forEach(el => el.classList.remove("focused"));
+      if (focusedRow === -1) {
+        document.getElementById("heroPlayBtn").classList.add("focused");
+        document.querySelector(".hero").scrollIntoView({ behavior: "smooth" });
+      } else {
+        const row = sectionElements[focusedRow];
+        if (!row) return;
+        const channels = row.querySelectorAll(".channel");
+        const channel = channels[focusedCol];
+        if (!channel) return;
+        channel.classList.add("focused");
+        channel.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+        row.parentElement.classList.add("active");
+      }
+    }
+
+    document.addEventListener("keydown", e => {
+      let handled = true;
+      switch (e.key) {
+        case "ArrowRight": focusedCol++; break;
+        case "ArrowLeft": focusedCol--; break;
+        case "ArrowDown": focusedRow++; break;
+        case "ArrowUp": focusedRow--; break;
+        case "Enter":
+        case "OK":
+          if (focusedRow === -1) {
+            if (currentHero) playChannel(currentHero.url);
+          } else {
+            const row = sectionElements[focusedRow];
+            const item = row?.querySelectorAll(".channel")[focusedCol];
+            if (item) item.click();
+          }
+          break;
+        default:
+          handled = false;
+      }
+      if (!handled) return;
+
+      if (focusedRow < -1) focusedRow = -1;
+      if (focusedRow >= sectionElements.length) focusedRow = sectionElements.length - 1;
+
+      const currentRow = sectionElements[focusedRow];
+      if (focusedRow >= 0 && currentRow) {
+        const totalCols = currentRow.querySelectorAll(".channel").length;
+        if (focusedCol < 0) focusedCol = 0;
+        if (focusedCol >= totalCols) focusedCol = totalCols - 1;
+      }
+
+      updateFocus();
+      e.preventDefault();
     });
 
-    focusEpisode(0);
-}
+    document.addEventListener("DOMContentLoaded", loadPlaylist);
 
-/* ------- PLAY EPISODE ------- */
-function playEpisode(i) {
-    const ep = seriesData[currentSeries][i];
-    if (ep.locked) return alert("Episodio bloqueado");
-    window.location.href = ep.url;
-}
-
-/* ------- NAVIGATION EPISODES & DOUBLE BACKSPACE ------- */
-function focusEpisode(i) {
-    epIndex = i;
-    episodioEls.forEach(e => e.classList.remove("focused"));
-    episodioEls[i].classList.add("focused");
-}
-
-/* ------- CLOSE MODAL ------- */
-function closeModal() {
-    modal.style.display = "none";
-    backButton.classList.remove("visible");
-    // Restablecer el foco a la tarjeta de la serie actual
-    const currentCardIndex = cards.findIndex(card => card.dataset.series === currentSeries);
-    if (currentCardIndex !== -1) {
-        index = currentCardIndex;
-        focusCard();
-    }
-}
-
-/* ------- MANEJAR BOTÓN ATRÁS ------- */
-backButton.addEventListener("click", closeModal);
-
-document.addEventListener("keydown", e => {
-    const now = Date.now();
-
-    // Si el modal está abierto
-    if (modal.style.display === "flex") {
-        if (e.key === "ArrowRight") {
-            epIndex = Math.min(epIndex + 1, episodioEls.length - 1);
-            focusEpisode(epIndex);
-        }
-        if (e.key === "ArrowLeft") {
-            epIndex = Math.max(epIndex - 1, 0);
-            focusEpisode(epIndex);
-        }
-        if (e.key === "Enter") episodioEls[epIndex].click();
-
-        // Botón Atrás (Backspace) para volver al inicio
-        if (e.key === "Backspace") {
-            closeModal();
-        }
-        return;
-    }
-
-    // Navegación en Home
-    const gridWidth = Math.floor(document.querySelector(".grid").offsetWidth / cards[0].offsetWidth);
-    if (e.key === "ArrowRight") index = (index + 1) % cards.length;
-    if (e.key === "ArrowLeft") index = (index - 1 + cards.length) % cards.length;
-    if (e.key === "ArrowDown") index = Math.min(index + gridWidth, cards.length - 1);
-    if (e.key === "ArrowUp") index = Math.max(index - gridWidth, 0);
-    if (e.key === "Enter") cards[index].click();
-    focusCard();
-});
-
-// Manejar el botón "atrás" del navegador
-window.addEventListener('popstate', function(event) {
-    if (modal.style.display === "flex") {
-        closeModal();
-        // Prevenir que el navegador retroceda en el historial
-        history.pushState(null, null, window.location.href);
-    }
-});
-
-// Prevenir que el navegador retroceda cuando se abre el modal
-window.history.pushState(null, null, window.location.href);
-</script>
-
+    // Puedes activar auto-actualización si lo deseas
+    // setInterval(loadPlaylist, 15 * 60 * 1000); // por ejemplo cada 15 min
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
