@@ -1,6 +1,3633 @@
 {
   "series": [
     {
+  "id": "vienna-blood",
+  "title": "VIENNA BLOOD",
+  "poster": "https://www.themoviedb.org/t/p/w1280/wHIkllx1obFjEeI7z558QLoRhiU.jpg",
+  "displayTitle": "Vienna Blood",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195638.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195639.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195640.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195641.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195642.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195643.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195644.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195645.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195646.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-responder",
+  "title": "THE RESPONDER",
+  "poster": "https://www.themoviedb.org/t/p/w1280/mU51EB4OSEL7oxMIub1Rl7N0xFB.jpg",
+  "displayTitle": "The Responder",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195035.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195036.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195037.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195038.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195039.mkv"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226794.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226795.mkv"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226796.mkv"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226797.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226798.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "dota-dragons-blood",
+  "title": "DOTA: DRAGON'S BLOOD",
+  "poster": "https://www.themoviedb.org/t/p/w1280/6Qwwam0TQEMQmFMagjtLmcQHJYs.jpg",
+  "displayTitle": "DOTA: Dragon's Blood",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190909.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190910.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190911.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190912.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190913.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190914.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190915.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190916.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190917.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190918.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190919.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190920.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190921.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190922.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190923.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190924.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "fast-foodies",
+  "title": "FAST FOODIES",
+  "poster": "https://www.themoviedb.org/t/p/w1280/9BJiM1hlidIrFA1HZ7vUCJ5MZMe.jpg",
+  "displayTitle": "Fast Foodies",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191290.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191291.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191292.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191293.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191294.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191295.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191296.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191297.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191298.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191299.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-righteous-gemstones",
+  "title": "THE RIGHTEOUS GEMSTONES",
+  "poster": "https://www.themoviedb.org/t/p/w1280/bKb54fgtMrS54VMMl8KdDIFlG3g.jpg",
+  "displayTitle": "The Righteous Gemstones",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209677.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209678.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209679.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209680.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209681.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209682.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209683.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209684.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209685.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209686.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209687.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209688.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209689.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209690.mkv"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209691.mkv"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209692.mkv"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209693.mkv"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209694.mkv"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209695.mkv"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209696.mkv"
+      },
+      {
+        "title": "S03 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209697.mkv"
+      },
+      {
+        "title": "S03 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209698.mkv"
+      },
+      {
+        "title": "S03 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209699.mkv"
+      },
+      {
+        "title": "S03 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209700.mkv"
+      },
+      {
+        "title": "S03 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209701.mkv"
+      },
+      {
+        "title": "S03 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209702.mkv"
+      },
+      {
+        "title": "S03 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209703.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "women-of-the-movement",
+  "title": "WOMEN OF THE MOVEMENT",
+  "poster": "https://www.themoviedb.org/t/p/w1280/pL9prhQYEPKoNOniVJcJjEaozdY.jpg",
+  "displayTitle": "Women of the Movement",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195840.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195841.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195842.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195843.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195844.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195845.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "derry-girls",
+  "title": "DERRY GIRLS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/btIm8LOtm2qgHIA2IHmQJvD1Mju.jpg",
+  "displayTitle": "Derry Girls",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190770.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190771.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190772.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190773.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190774.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190775.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190776.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190777.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190778.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190779.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190780.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190781.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "son-of-a-critch",
+  "title": "SON OF A CRITCH",
+  "poster": "https://www.themoviedb.org/t/p/w1280/ufw98SF9HdcZevXbEOTpHOmJF6Y.jpg",
+  "displayTitle": "Son of a Critch",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195029.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195030.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195031.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195032.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195033.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195034.mkv"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179839.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179840.mkv"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179841.mkv"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179842.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179843.mkv"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179844.mkv"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179845.mkv"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179846.mkv"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179847.mkv"
+      },
+      {
+        "title": "S02 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179848.mkv"
+      },
+      {
+        "title": "S02 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179849.mkv"
+      },
+      {
+        "title": "S02 E12",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/179893.mkv"
+      },
+      {
+        "title": "S02 E13",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213098.mkv"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213099.mkv"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213100.mkv"
+      },
+      {
+        "title": "S03 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213101.mkv"
+      },
+      {
+        "title": "S03 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213102.mp4"
+      },
+      {
+        "title": "S03 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213103.mkv"
+      },
+      {
+        "title": "S03 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213459.mkv"
+      },
+      {
+        "title": "S03 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/213460.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "home-economics",
+  "title": "HOME ECONOMICS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/svYYne5mdKQVyIFwzkMVS2t35Ok.jpg",
+  "displayTitle": "Home Economics",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192201.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192202.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192203.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192204.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192205.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192206.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192207.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192208.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192209.mkv"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192210.mkv"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192211.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192212.mkv"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192213.mkv"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192214.mkv"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192215.mkv"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192216.mkv"
+      },
+      {
+        "title": "S02 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192217.mkv"
+      },
+      {
+        "title": "S02 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192218.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "pivoting",
+  "title": "PIVOTING",
+  "poster": "https://www.themoviedb.org/t/p/w1280/gQXja8mUGddQMfIpOOA0doLNdGu.jpg",
+  "displayTitle": "Pivoting",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193293.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193294.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193295.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193296.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193297.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193298.mkv"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193299.mkv"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193300.mkv"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193301.mkv"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/193302.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "hype-house",
+  "title": "HYPE HOUSE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/sIppViBWffdcN2m6ffOsl0NKhHw.jpg",
+  "displayTitle": "Hype House",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192247.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192248.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192249.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192250.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192251.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192252.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192253.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192254.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "four-lives",
+  "title": "FOUR LIVES",
+  "poster": "https://www.themoviedb.org/t/p/w1280/yZK3uB5btwimbgJVFzVo4BOLibX.jpg",
+  "displayTitle": "Four Lives",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191391.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191392.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191393.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "harlem",
+  "title": "HARLEM",
+  "poster": "https://www.themoviedb.org/t/p/w1280/hQP2zAm5L52vs7fp3JzOI5LZ4uB.jpg",
+  "displayTitle": "Harlem",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192088.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192089.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192090.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192091.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192092.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192093.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192094.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192095.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192096.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192097.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/176680.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/176681.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/177201.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/177202.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/177203.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/177204.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/177409.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/177410.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "firebite",
+  "title": "FIREBITE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/wMFLGQ6dQ5V4pPp62hN2FCbpe0E.jpg",
+  "displayTitle": "Firebite",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191383.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191384.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191385.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191386.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191387.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191388.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191389.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191390.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "with-love",
+  "title": "WITH LOVE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/H7UoEyxRPKdwgdy4kt7UbvkAlX.jpg",
+  "displayTitle": "With Love",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195796.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195797.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195798.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195799.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195800.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-premise",
+  "title": "THE PREMISE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/r6fZdnOVjerXjXbotbTaRAeueqH.jpg",
+  "displayTitle": "The Premise",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195024.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195025.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195026.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195027.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195028.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "tyler-perrys-the-oval",
+  "title": "TYLER PERRY'S THE OVAL",
+  "poster": "https://www.themoviedb.org/t/p/w1280/b5PTXErp18fzi8e2MQv2HlEiE23.jpg",
+  "displayTitle": "Tyler Perry's The Oval",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195500.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195501.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195502.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195503.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195504.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195505.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195506.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195507.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195508.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195509.mp4"
+      },
+      {
+        "title": "S01 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195510.mp4"
+      },
+      {
+        "title": "S01 E12",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195511.mp4"
+      },
+      {
+        "title": "S01 E13",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195512.mp4"
+      },
+      {
+        "title": "S01 E14",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195513.mp4"
+      },
+      {
+        "title": "S01 E15",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195514.mp4"
+      },
+      {
+        "title": "S01 E16",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195515.mp4"
+      },
+      {
+        "title": "S01 E17",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195516.mp4"
+      },
+      {
+        "title": "S01 E18",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195517.mp4"
+      },
+      {
+        "title": "S01 E19",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195518.mp4"
+      },
+      {
+        "title": "S01 E20",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195519.mp4"
+      },
+      {
+        "title": "S01 E21",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195520.mp4"
+      },
+      {
+        "title": "S01 E22",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195521.mp4"
+      },
+      {
+        "title": "S01 E23",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195522.mp4"
+      },
+      {
+        "title": "S01 E24",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195523.mp4"
+      },
+      {
+        "title": "S01 E25",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195524.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195525.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195526.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195527.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195528.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195529.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195530.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195531.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195532.mp4"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195533.mp4"
+      },
+      {
+        "title": "S02 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195534.mp4"
+      },
+      {
+        "title": "S02 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195535.mp4"
+      },
+      {
+        "title": "S02 E12",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195536.mp4"
+      },
+      {
+        "title": "S02 E13",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195537.mp4"
+      },
+      {
+        "title": "S02 E14",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195538.mp4"
+      },
+      {
+        "title": "S02 E15",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195539.mp4"
+      },
+      {
+        "title": "S02 E16",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195540.mp4"
+      },
+      {
+        "title": "S02 E17",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195541.mp4"
+      },
+      {
+        "title": "S02 E18",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195542.mp4"
+      },
+      {
+        "title": "S02 E19",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195543.mp4"
+      },
+      {
+        "title": "S02 E20",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195544.mp4"
+      },
+      {
+        "title": "S02 E21",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195545.mp4"
+      },
+      {
+        "title": "S02 E22",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195546.mp4"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195547.mp4"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195548.mp4"
+      },
+      {
+        "title": "S03 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195549.mp4"
+      },
+      {
+        "title": "S03 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195550.mp4"
+      },
+      {
+        "title": "S03 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195551.mp4"
+      },
+      {
+        "title": "S03 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195552.mp4"
+      },
+      {
+        "title": "S03 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195553.mp4"
+      },
+      {
+        "title": "S03 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195554.mp4"
+      },
+      {
+        "title": "S03 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195555.mp4"
+      },
+      {
+        "title": "S03 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195556.mp4"
+      },
+      {
+        "title": "S03 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195557.mp4"
+      },
+      {
+        "title": "S03 E12",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195558.mp4"
+      },
+      {
+        "title": "S03 E13",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195559.mp4"
+      },
+      {
+        "title": "S03 E14",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195560.mp4"
+      },
+      {
+        "title": "S03 E15",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195561.mp4"
+      },
+      {
+        "title": "S03 E16",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195562.mp4"
+      },
+      {
+        "title": "S03 E17",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195563.mp4"
+      },
+      {
+        "title": "S03 E18",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195564.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-wheel-of-time",
+  "title": "THE WHEEL OF TIME",
+  "poster": "https://www.themoviedb.org/t/p/w1280/ihBi24EIr5kwAeY2PqmsgAcCj4n.jpg",
+  "displayTitle": "The Wheel of Time",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195236.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195237.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195238.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195239.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195240.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195241.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195242.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195243.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209397.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209398.mkv"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209399.mkv"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209400.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209784.mkv"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/210601.mkv"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/210602.mkv"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/210603.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "diggstown",
+  "title": "DIGGSTOWN",
+  "poster": "https://www.themoviedb.org/t/p/w1280/a2PVO7LwAJbqr1JWbsmJ6pjkYvw.jpg",
+  "displayTitle": "Diggstown",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190873.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190874.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190875.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190876.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190877.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190878.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190879.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190880.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190881.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190882.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190883.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190884.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "day-of-the-dead",
+  "title": "DAY OF THE DEAD",
+  "poster": "https://www.themoviedb.org/t/p/w1280/iBeWa2Ds2uCjTOlMikiBqETsS2X.jpg",
+  "displayTitle": "Day of the Dead",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190741.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190742.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190743.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190744.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190745.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190746.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190747.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-game",
+  "title": "THE GAME",
+  "poster": "https://www.themoviedb.org/t/p/w1280/2UzDjvQ5yHfRSStJJUi1cN5s0XW.jpg",
+  "displayTitle": "The Game",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174896.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174897.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174898.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174899.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174900.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174901.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174902.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174903.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174904.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174905.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174906.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174907.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174908.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/175213.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/175556.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/176565.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/176566.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/176567.mp4"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/176568.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "hawkeye",
+  "title": "HAWKEYE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
+  "displayTitle": "Hawkeye",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192124.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192125.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192126.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192127.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192128.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192129.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "dogs-in-space",
+  "title": "DOGS IN SPACE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/wyrX626w311nbLfmG2JXewUjmFi.jpg",
+  "displayTitle": "Dogs in Space",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190885.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190886.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190887.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190888.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190889.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190890.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190891.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190892.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190893.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190894.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "south-side",
+  "title": "SOUTH SIDE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/xUQ5ApXjd1sHAyZfsuZAN7wokzq.jpg",
+  "displayTitle": "South Side",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195127.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195128.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195129.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195130.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195131.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195132.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195133.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195134.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195135.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195136.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195145.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195146.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195147.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195148.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195149.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195150.mp4"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174020.mp4"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174021.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "frogger",
+  "title": "FROGGER",
+  "poster": "https://www.themoviedb.org/t/p/w1280/3Q41BC0ozUA0wzOvtQFbp284hQ0.jpg",
+  "displayTitle": "Frogger",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191394.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191395.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191396.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191397.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191398.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191399.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191400.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191401.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191402.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191403.mp4"
+      },
+      {
+        "title": "S01 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191404.mp4"
+      },
+      {
+        "title": "S01 E12",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191405.mp4"
+      },
+      {
+        "title": "S01 E13",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191406.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-outlaws",
+  "title": "THE OUTLAWS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/s8vp0S0iz2nPb7TpOpV0rHbm1er.jpg",
+  "displayTitle": "The Outlaws",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195000.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195001.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195002.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195003.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195004.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195005.mkv"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189057.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189058.mkv"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189059.mkv"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189060.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189061.mkv"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189062.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "true-nightmares-tales-of-terror",
+  "title": "TRUE NIGHTMARES: TALES OF TERROR",
+  "poster": "https://www.themoviedb.org/t/p/w1280/deqtP9WDh4RnATvC7akvd151Gox.jpg",
+  "displayTitle": "True Nightmares: Tales of Terror",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195448.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195449.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195450.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195451.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195452.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195453.mkv"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195454.mkv"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195455.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "yellowjackets",
+  "title": "YELLOWJACKETS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+  "displayTitle": "Yellowjackets",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195801.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195802.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195803.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195804.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195805.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195806.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195807.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195808.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195809.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195810.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/180091.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/180203.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/180365.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/180366.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/180628.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/181173.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/181174.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/181723.mp4"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/181724.mkv"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226584.mkv"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226585.mkv"
+      },
+      {
+        "title": "S03 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226586.mkv"
+      },
+      {
+        "title": "S03 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226587.mkv"
+      },
+      {
+        "title": "S03 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/228347.mkv"
+      },
+      {
+        "title": "S03 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/228348.mkv"
+      },
+      {
+        "title": "S03 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/228349.mkv"
+      },
+      {
+        "title": "S03 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/228350.mkv"
+      },
+      {
+        "title": "S03 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/228351.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "dexter-new-blood",
+  "title": "DEXTER: NEW BLOOD",
+  "poster": "https://www.themoviedb.org/t/p/w1280/9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg",
+  "displayTitle": "Dexter: New Blood",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190833.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190834.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190835.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190836.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190837.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190838.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190839.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190840.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190841.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190842.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "head-of-the-class",
+  "title": "HEAD OF THE CLASS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/hHa7u2ySBgRtUGpxAkd1Maf6ws6.jpg",
+  "displayTitle": "Head of the Class",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192130.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192131.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192132.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192133.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192134.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192135.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192136.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192137.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192138.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192139.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "ap-bio",
+  "title": "A.P. BIO",
+  "poster": "https://www.themoviedb.org/t/p/w1280/8GwiuZazRFNrmvSkagZlEDH7qSS.jpg",
+  "displayTitle": "A.P. Bio",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189642.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189643.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189644.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189645.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189646.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189647.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189648.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189649.mp4"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189650.mp4"
+      },
+      {
+        "title": "S02 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189651.mp4"
+      },
+      {
+        "title": "S02 E11",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189652.mp4"
+      },
+      {
+        "title": "S02 E12",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189653.mp4"
+      },
+      {
+        "title": "S02 E13",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189654.mp4"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189655.mp4"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189656.mp4"
+      },
+      {
+        "title": "S03 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189657.mp4"
+      },
+      {
+        "title": "S03 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189658.mp4"
+      },
+      {
+        "title": "S03 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189659.mp4"
+      },
+      {
+        "title": "S03 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189660.mp4"
+      },
+      {
+        "title": "S03 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189661.mp4"
+      },
+      {
+        "title": "S03 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189662.mp4"
+      }
+    ],
+    "Temporada 4": [
+      {
+        "title": "S04 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189663.mp4"
+      },
+      {
+        "title": "S04 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189664.mp4"
+      },
+      {
+        "title": "S04 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189665.mp4"
+      },
+      {
+        "title": "S04 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189666.mp4"
+      },
+      {
+        "title": "S04 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189667.mp4"
+      },
+      {
+        "title": "S04 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189668.mp4"
+      },
+      {
+        "title": "S04 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189669.mp4"
+      },
+      {
+        "title": "S04 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189670.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "fires",
+  "title": "FIRES",
+  "poster": "https://www.themoviedb.org/t/p/w1280/QE851qjGKdtBCIAXszyGPnkYl4.jpg",
+  "displayTitle": "Fires",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191378.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191379.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191380.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191381.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191382.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "heels",
+  "title": "HEELS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/69kPJaCFMXuZfbCrbDaYfMZbtJt.jpg",
+  "displayTitle": "Heels",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192140.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192141.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192142.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192143.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192144.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192145.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192146.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192147.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "dopesick",
+  "title": "DOPESICK",
+  "poster": "https://www.themoviedb.org/t/p/w1280/qW8Gpddy29faTcD7VuyKjwLXbKU.jpg",
+  "displayTitle": "Dopesick",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190901.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190902.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190903.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190904.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190905.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190906.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190907.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190908.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "doogie-kamealoha-md",
+  "title": "DOOGIE KAMEALOHA, M.D.",
+  "poster": "https://www.themoviedb.org/t/p/w1280/qS9NwCJDPnHWtJbgiFmpc8T90tP.jpg",
+  "displayTitle": "Doogie Kamealoha, M.D.",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190895.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190896.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190897.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190898.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190899.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190900.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "countdown-inspiration4-mission-to-space",
+  "title": "COUNTDOWN: INSPIRATION4 MISSION TO SPACE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/e4o6pOY136iDJN4IFvESltHa5to.jpg",
+  "displayTitle": "Countdown: Inspiration4 Mission to Space",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/100943.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/100944.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/100945.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/100946.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/100947.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "dan-browns-the-lost-symbol",
+  "title": "DAN BROWN'S THE LOST SYMBOL",
+  "poster": "https://www.themoviedb.org/t/p/w1280/rc99fLHeOH4QBROUzAyPeKCvt6T.jpg",
+  "displayTitle": "Dan Brown's The Lost Symbol",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190700.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190701.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190702.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190703.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190704.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190705.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190706.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190707.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190708.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190709.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "deceit",
+  "title": "DECEIT",
+  "poster": "https://www.themoviedb.org/t/p/w1280/peIkWRJNnufq5n8al7Ngzmk9ujZ.jpg",
+  "displayTitle": "Deceit",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190748.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190749.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190750.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190751.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "back-to-life",
+  "title": "BACK TO LIFE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/opMb4UHDVKCVSknT5DIPUaSRaSP.jpg",
+  "displayTitle": "Back to Life",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189964.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189965.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189966.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189967.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189968.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189969.mkv"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189970.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189971.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189972.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189973.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189974.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/189975.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "foundation",
+  "title": "FOUNDATION",
+  "poster": "https://www.themoviedb.org/t/p/w1280/tg9I5pOY4M9CKj8U0cxVBTsm5eh.jpg",
+  "displayTitle": "Foundation",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191367.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191368.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191369.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191370.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191371.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191372.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191373.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191374.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191375.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191376.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191377.mkv"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209409.mkv"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209410.mkv"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209411.mkv"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209412.mkv"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209413.mkv"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209414.mkv"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209415.mkv"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209416.mkv"
+      },
+      {
+        "title": "S02 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/209783.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-tent-mender",
+  "title": "THE TENT MENDER",
+  "poster": "https://www.themoviedb.org/t/p/w1280/cYrZnYOY8ozTlR9Vd5WRtQRK0nA.jpg",
+  "displayTitle": "The Tent Mender",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195124.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195125.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195126.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "vigil",
+  "title": "VIGIL",
+  "poster": "https://www.themoviedb.org/t/p/w1280/5zAheY0Upi2MwU3edGtEgb7Ldh3.jpg",
+  "displayTitle": "Vigil",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195647.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195648.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195649.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195650.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195651.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195652.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "delilah",
+  "title": "DELILAH",
+  "poster": "https://www.themoviedb.org/t/p/w1280/bqq5IEmBUSPjspbxaNQqo5kY9wh.jpg",
+  "displayTitle": "Delilah",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190752.mkv"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190753.mkv"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190754.mkv"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190755.mkv"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190756.mkv"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190757.mkv"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190758.mkv"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190759.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "fboy-island",
+  "title": "FBOY ISLAND",
+  "poster": "https://www.themoviedb.org/t/p/w1280/nFpUwmfZijUXthLkizncQPsGt62.jpg",
+  "displayTitle": "FBOY Island",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191347.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191348.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191349.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191350.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191351.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191352.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191353.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191354.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191355.mp4"
+      },
+      {
+        "title": "S01 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191356.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191357.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191358.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191359.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191360.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191361.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191362.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191363.mp4"
+      },
+      {
+        "title": "S02 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191364.mp4"
+      },
+      {
+        "title": "S02 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191365.mp4"
+      },
+      {
+        "title": "S02 E10",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/191366.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "departure",
+  "title": "DEPARTURE",
+  "poster": "https://www.themoviedb.org/t/p/w1280/b52lWChoqjtE6ZgMLK2XjA3unDW.jpg",
+  "displayTitle": "Departure",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190764.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190765.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190766.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190767.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190768.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/190769.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-walking-dead-origins",
+  "title": "THE WALKING DEAD: ORIGINS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/6stEKYqgLBhSieTRnnZ5ShE5ZPS.jpg",
+  "displayTitle": "The Walking Dead: Origins",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195232.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195233.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195234.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195235.mp4"
+      }
+    ]
+  }
+},
+    {
+  "id": "the-white-lotus",
+  "title": "THE WHITE LOTUS",
+  "poster": "https://www.themoviedb.org/t/p/w1280/gbSaK9v1CbcYH1ISgbM7XObD2dW.jpg",
+  "displayTitle": "The White Lotus",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195244.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195245.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195246.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195247.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195248.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/195249.mp4"
+      }
+    ],
+    "Temporada 2": [
+      {
+        "title": "S02 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/171561.mp4"
+      },
+      {
+        "title": "S02 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/173507.mp4"
+      },
+      {
+        "title": "S02 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/173508.mp4"
+      },
+      {
+        "title": "S02 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/173509.mp4"
+      },
+      {
+        "title": "S02 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/173510.mp4"
+      },
+      {
+        "title": "S02 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/173910.mp4"
+      },
+      {
+        "title": "S02 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/174197.mp4"
+      }
+    ],
+    "Temporada 3": [
+      {
+        "title": "S03 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/224893.mkv"
+      },
+      {
+        "title": "S03 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226605.mkv"
+      },
+      {
+        "title": "S03 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/226606.mkv"
+      },
+      {
+        "title": "S03 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/227502.mkv"
+      },
+      {
+        "title": "S03 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/227503.mkv"
+      },
+      {
+        "title": "S03 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/227504.mkv"
+      },
+      {
+        "title": "S03 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/227505.mkv"
+      },
+      {
+        "title": "S03 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/227506.mkv"
+      }
+    ]
+  }
+},
+    {
+  "id": "hit-run",
+  "title": "HIT & RUN",
+  "poster": "https://www.themoviedb.org/t/p/w1280/6qiKrLdGQRUp2vgmkpOR3fwmzA.jpg",
+  "displayTitle": "Hit & Run",
+  "contentUrl": "http://fortv.cc:8080/series/16686894/06987237/",
+  "seasons": {
+    "Temporada 1": [
+      {
+        "title": "S01 E01",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192180.mp4"
+      },
+      {
+        "title": "S01 E02",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192181.mp4"
+      },
+      {
+        "title": "S01 E03",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192182.mp4"
+      },
+      {
+        "title": "S01 E04",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192183.mp4"
+      },
+      {
+        "title": "S01 E05",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192184.mp4"
+      },
+      {
+        "title": "S01 E06",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192185.mp4"
+      },
+      {
+        "title": "S01 E07",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192186.mp4"
+      },
+      {
+        "title": "S01 E08",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192187.mp4"
+      },
+      {
+        "title": "S01 E09",
+        "duration": 0,
+        "url": "http://fortv.cc:8080/series/16686894/06987237/192188.mp4"
+      }
+    ]
+  }
+},
+    {
   "id": "lucifer",
   "title": "LUCIFER",
   "poster": "https://www.themoviedb.org/t/p/w1280/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
