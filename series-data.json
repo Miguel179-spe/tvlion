@@ -2716,9 +2716,8 @@
       }
     }
   ]
-}, 
-	
-	{
+},
+{
   "id": "formula-1-drive-to-survive",
   "title": "FORMULA 1: DRIVE TO SURVIVE",
   "poster": "https://www.themoviedb.org/t/p/w1280/bTvsFzYK4ZdbcAIPSEJ3i8uLHSh.jpg",
@@ -3037,7 +3036,9 @@
         "url": "http://fortv.cc:8080/series/16686894/06987237/213722.mkv"
       }
     ]
-  }
+      }
+    }
+  ]
 }
 	
 	
