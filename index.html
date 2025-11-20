@@ -765,9 +765,10 @@ header {
 </div>
 
 <script>
-/* ========================================
-   STREAMING PLATFORM NAVIGATION SYSTEM
-   ======================================== */
+<script>
+/* =======================================================
+   STREAMING PLATFORM — SCRIPT ULTRA OPTIMIZADO
+   ======================================================= */
 
 class StreamingPlatform {
     constructor() {
@@ -782,200 +783,62 @@ class StreamingPlatform {
         this.episodeFocus = 0;
         this.carouselPosition = 0;
         this.episodesPerView = 0;
+
+        // JSON principal
         this.dataUrl = 'series-data.json';
-        this.refreshInterval = null;
-        
+
         this.initializeElements();
         this.loadData();
         this.setupCarousel();
         this.setupSeasonCarousel();
     }
-    
-    initializeElements() {
-        // Cache DOM elements
-        this.loader = document.getElementById('loader');
-        this.mainGrid = document.getElementById('mainGrid');
-        this.seriesOverlay = document.getElementById('seriesOverlay');
-        this.backButton = document.getElementById('backButton');
-        this.closeButton = document.getElementById('closeButton');
-        this.seriesTitle = document.getElementById('seriesTitle');
-        this.seriesBannerBg = document.getElementById('seriesBannerBg');
-        this.seasonsCount = document.getElementById('seasonsCount');
-        this.seasonBar = document.getElementById('seasonBar');
-        this.seasonPrev = document.getElementById('seasonPrev');
-        this.seasonNext = document.getElementById('seasonNext');
-        this.episodesTrack = document.getElementById('episodesTrack');
-        this.statusIndicator = document.getElementById('statusIndicator');
-        this.seriesCount = document.getElementById('seriesCount');
-        this.errorMessage = document.getElementById('errorMessage');
-        this.carouselPrev = document.getElementById('carouselPrev');
-        this.carouselNext = document.getElementById('carouselNext');
-        this.carouselIndicators = document.getElementById('carouselIndicators');
-        
-        // Event listeners
-        this.backButton.addEventListener('click', () => this.closeModal());
-        this.closeButton.addEventListener('click', () => this.closeModal());
-        document.addEventListener('keydown', (e) => this.handleKeyboard(e));
-        
-        // Window resize handler
-        window.addEventListener('resize', () => {
-            this.calculateEpisodesPerView();
-            this.updateSeasonButtons();
-            this.updateCarouselPosition();
-            this.updateCarouselIndicators();
-        });
-        
-        // Auto-refresh cada 5 minutos (opcional)
-        this.refreshInterval = setInterval(() => this.refreshData(), 300000);
-    }
-    
-    setupCarousel() {
-        this.carouselPrev.addEventListener('click', () => this.moveCarousel('prev'));
-        this.carouselNext.addEventListener('click', () => this.moveCarousel('next'));
-    }
 
-    setupSeasonCarousel() {
-        if (!this.seasonBar) return;
-        if (this.seasonPrev) this.seasonPrev.addEventListener('click', () => this.moveSeasonCarousel('prev'));
-        if (this.seasonNext) this.seasonNext.addEventListener('click', () => this.moveSeasonCarousel('next'));
-        this.seasonBar.addEventListener('scroll', () => this.updateSeasonButtons());
-    }
-    
-    calculateEpisodesPerView() {
-        const carouselEl = document.querySelector('.episodes-carousel');
-        let containerWidth;
-        if (carouselEl) {
-            const style = window.getComputedStyle(carouselEl);
-            const paddingLeft = parseFloat(style.paddingLeft) || 0;
-            const paddingRight = parseFloat(style.paddingRight) || 0;
-            containerWidth = carouselEl.clientWidth - paddingLeft - paddingRight;
-        } else {
-            containerWidth = window.innerWidth - 80; // fallback
-        }
-        const episodeWidth = 315; // 300px + 15px gap
-        this.episodesPerView = Math.max(1, Math.floor(containerWidth / episodeWidth));
-        return this.episodesPerView;
-    }
-    
-    moveCarousel(direction) {
-        const episodes = this.episodesTrack.querySelectorAll('.episode');
-        const totalEpisodes = episodes.length;
-        const maxPosition = Math.max(0, totalEpisodes - this.episodesPerView);
-        
-        if (direction === 'next') {
-            this.carouselPosition = Math.min(this.carouselPosition + this.episodesPerView, maxPosition);
-        } else {
-            this.carouselPosition = Math.max(this.carouselPosition - this.episodesPerView, 0);
-        }
-        
-        this.updateCarouselPosition();
-        this.updateCarouselButtons();
-        this.updateCarouselIndicators();
-    }
-    
-    updateCarouselPosition() {
-        const carouselEl = document.querySelector('.episodes-carousel');
-        let containerWidth;
-        if (carouselEl) {
-            const style = window.getComputedStyle(carouselEl);
-            const paddingLeft = parseFloat(style.paddingLeft) || 0;
-            const paddingRight = parseFloat(style.paddingRight) || 0;
-            containerWidth = carouselEl.clientWidth - paddingLeft - paddingRight;
-        } else {
-            containerWidth = window.innerWidth - 80;
-        }
-        const visibleWidth = this.episodesPerView * 315; // ancho visible (card+gap)
-        const centerOffset = Math.max(0, (containerWidth - visibleWidth) / 2);
-        const offset = this.carouselPosition * 315; // Episode width + gap
-        this.episodesTrack.style.transform = `translateX(${centerOffset - offset}px)`;
-    }
-    
-    updateCarouselButtons() {
-        const episodes = this.episodesTrack.querySelectorAll('.episode');
-        const totalEpisodes = episodes.length;
-        const maxPosition = Math.max(0, totalEpisodes - this.episodesPerView);
-        
-        this.carouselPrev.classList.toggle('disabled', this.carouselPosition === 0);
-        this.carouselNext.classList.toggle('disabled', this.carouselPosition >= maxPosition);
-    }
-    
-    updateCarouselIndicators() {
-        const indicators = this.carouselIndicators.querySelectorAll('.indicator');
-        indicators.forEach((indicator, index) => {
-            const page = Math.floor(this.carouselPosition / this.episodesPerView);
-            indicator.classList.toggle('active', index === page);
-        });
-    }
-    
-    createCarouselIndicators() {
-        this.carouselIndicators.innerHTML = '';
-        const episodes = this.episodesTrack.querySelectorAll('.episode');
-        const totalPages = Math.ceil(episodes.length / this.episodesPerView);
-        
-        if (totalPages <= 1) {
-            this.carouselIndicators.style.display = 'none';
-            return;
-        }
-        
-        this.carouselIndicators.style.display = 'flex';
-        
-        for (let i = 0; i < totalPages; i++) {
-            const indicator = document.createElement('div');
-            indicator.className = 'indicator';
-            if (i === 0) indicator.classList.add('active');
-            indicator.addEventListener('click', () => {
-                this.carouselPosition = i * this.episodesPerView;
-                this.updateCarouselPosition();
-                this.updateCarouselButtons();
-                this.updateCarouselIndicators();
-            });
-            this.carouselIndicators.appendChild(indicator);
-        }
-    }
-
-    moveSeasonCarousel(direction) {
-        if (!this.seasonBar) return;
-        const step = this.seasonBar.clientWidth * 0.8; // avanza ~80%
-        const target = direction === 'next'
-            ? this.seasonBar.scrollLeft + step
-            : this.seasonBar.scrollLeft - step;
-        this.seasonBar.scrollTo({ left: target, behavior: 'smooth' });
-        setTimeout(() => this.updateSeasonButtons(), 300);
-    }
-
-    updateSeasonButtons() {
-        if (!this.seasonBar || !this.seasonPrev || !this.seasonNext) return;
-        const maxScroll = this.seasonBar.scrollWidth - this.seasonBar.clientWidth;
-        const atStart = this.seasonBar.scrollLeft <= 1;
-        const atEnd = this.seasonBar.scrollLeft >= (maxScroll - 1);
-        this.seasonPrev.classList.toggle('disabled', atStart);
-        this.seasonNext.classList.toggle('disabled', atEnd);
-    }
-    
+    /* =============================
+       CACHE + PRECARGA DE JSON
+       ============================= */
     async loadData() {
         try {
             this.showLoader(true);
-            
-            const response = await fetch(this.dataUrl);
-            if (!response.ok) throw new Error('Error loading data');
-            
-            const data = await response.json();
-            this.processSeriesData(data);
+
+            /* 1. Intentar cargar desde caché — INMEDIATO */
+            const cached = localStorage.getItem('series-data');
+            if (cached) {
+                this.processSeriesData(JSON.parse(cached));
+                this.renderGrid();
+            }
+
+            /* 2. Descargar nueva versión del servidor, sin bloquear */
+            const response = await fetch(this.dataUrl, { cache: "no-store" });
+
+            if (!response.ok) throw new Error("Error al obtener JSON");
+
+            const freshData = await response.json();
+
+            // Guardar caché nueva
+            localStorage.setItem('series-data', JSON.stringify(freshData));
+
+            // Renderizar datos nuevos
+            this.processSeriesData(freshData);
             this.renderGrid();
-            this.updateStatus();
-            
+
         } catch (error) {
-            console.error('Error loading series data:', error);
-            this.showError('Error cargando las series. Usando datos de respaldo.');
-            this.loadFallbackData();
+            console.warn("Error cargando JSON, usando fallback si existe");
+
+            if (!this.seriesData || Object.keys(this.seriesData).length === 0) {
+                this.loadFallbackData();
+            }
+
         } finally {
             this.showLoader(false);
         }
     }
-    
+
+    /* =============================
+       PROCESAR JSON
+       ============================= */
     processSeriesData(data) {
         this.seriesData = {};
-        
+
         if (data.series && Array.isArray(data.series)) {
             data.series.forEach(serie => {
                 this.seriesData[serie.id] = {
@@ -989,12 +852,320 @@ class StreamingPlatform {
             });
         }
     }
-    
+
+    /* =============================
+          GRID — RENDER RÁPIDO
+       ============================= */
+    renderGrid() {
+        this.mainGrid.innerHTML = '';
+        this.cards = [];
+
+        const frag = document.createDocumentFragment();
+        let index = 0;
+
+        for (const [id, serie] of Object.entries(this.seriesData)) {
+            const card = this.createCard(id, serie);
+            card.style.animationDelay = `${index * 0.02}s`;
+            frag.appendChild(card);
+            this.cards.push(card);
+            index++;
+        }
+
+        this.mainGrid.appendChild(frag);
+
+        if (this.cards.length > 0) {
+            this.index = 0;
+            this.focusCard();
+        }
+    }
+
+    createCard(id, serie) {
+        const article = document.createElement('article');
+        article.className = 'card';
+        article.dataset.series = id;
+        article.tabIndex = -1;
+
+        // Badge
+        if (serie.badge) {
+            const badge = document.createElement('span');
+            badge.className = `badge ${serie.badgeType || ''}`;
+            badge.textContent = serie.badge;
+            article.appendChild(badge);
+        }
+
+        // Imagen — Lazy loading avanzado
+        const img = document.createElement('img');
+        img.src = serie.poster;
+        img.alt = serie.displayTitle;
+
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.fetchPriority = "low";
+
+        img.onerror = () => {
+            img.src = 'https://via.placeholder.com/300x450?text=' + encodeURIComponent(serie.displayTitle);
+        };
+
+        article.appendChild(img);
+
+        // Título
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'card-title';
+        titleDiv.textContent = serie.displayTitle;
+        article.appendChild(titleDiv);
+
+        article.addEventListener('click', () => this.openSeriesDetail(id));
+
+        return article;
+    }
+
+    /* =============================
+            SERIES DETALLE
+       ============================= */
+    openSeriesDetail(seriesId) {
+        this.currentSeries = this.seriesData[seriesId];
+        this.currentSeriesId = seriesId;
+        if (!this.currentSeries) return;
+
+        this.mainGrid.style.display = 'none';
+        this.seriesOverlay.style.display = 'block';
+        this.backButton.classList.add('visible');
+
+        // Banner
+        this.seriesTitle.textContent = this.currentSeries.title;
+        this.seriesBannerBg.style.backgroundImage = `url('${this.currentSeries.poster}')`;
+
+        // Temporadas
+        const seasonCount = Object.keys(this.currentSeries.seasons).length;
+        this.seasonsCount.textContent =
+            `${seasonCount} ${seasonCount === 1 ? 'Temporada disponible' : 'Temporadas disponibles'}`;
+
+        // Reset
+        this.currentSeason = 0;
+        this.focusMode = "season";
+        this.seasonFocus = 0;
+        this.episodeFocus = 0;
+        this.carouselPosition = 0;
+
+        this.calculateEpisodesPerView();
+        this.renderSeasons();
+        this.renderEpisodes();
+
+        history.pushState({ modal: true }, "", '#' + seriesId);
+    }
+
+    /* =============================
+            TEMPORADAS
+       ============================= */
+    renderSeasons() {
+        this.seasonBar.innerHTML = '';
+        const seasons = Object.keys(this.currentSeries.seasons);
+
+        const frag = document.createDocumentFragment();
+
+        seasons.forEach((name, i) => {
+            const seasonDiv = document.createElement('div');
+            seasonDiv.className = 'season';
+            seasonDiv.textContent = name;
+            seasonDiv.dataset.index = i;
+            seasonDiv.tabIndex = -1;
+
+            if (i === this.currentSeason) seasonDiv.classList.add('active');
+
+            seasonDiv.addEventListener('click', () => {
+                this.currentSeason = i;
+                this.focusMode = 'episode';
+                this.seasonFocus = i;
+                this.episodeFocus = 0;
+                this.carouselPosition = 0;
+
+                this.renderSeasons();
+                this.renderEpisodes();
+            });
+
+            frag.appendChild(seasonDiv);
+        });
+
+        this.seasonBar.appendChild(frag);
+        this.updateSeasonButtons();
+        this.updateSeriesFocus();
+    }
+
+    /* =============================
+             EPISODIOS
+       ============================= */
+    renderEpisodes() {
+        this.episodesTrack.innerHTML = '';
+        const seasonKeys = Object.keys(this.currentSeries.seasons);
+        const episodes = this.currentSeries.seasons[seasonKeys[this.currentSeason]];
+
+        const frag = document.createDocumentFragment();
+
+        episodes.forEach((ep, i) => {
+            const episodeDiv = document.createElement('div');
+            episodeDiv.className = 'episode';
+            episodeDiv.tabIndex = -1;
+            if (ep.locked) episodeDiv.classList.add('bloqueado');
+
+            /* Thumbnail */
+            const thumb = document.createElement('div');
+            thumb.className = 'thumb';
+
+            const epNum = document.createElement('div');
+            epNum.className = 'ep-number';
+            epNum.textContent = `E${i + 1}`;
+            thumb.appendChild(epNum);
+
+            if (ep.thumbnail) {
+                const img = document.createElement('img');
+                img.src = ep.thumbnail;
+                img.loading = 'lazy';
+                img.decoding = 'async';
+                img.fetchPriority = "low";
+                img.alt = ep.title;
+                thumb.appendChild(img);
+            } else {
+                thumb.textContent = ep.title;
+            }
+
+            const playIcon = document.createElement('div');
+            playIcon.className = 'play-icon';
+            thumb.appendChild(playIcon);
+
+            episodeDiv.appendChild(thumb);
+
+            /* Info */
+            const epInfo = document.createElement('div');
+            epInfo.className = 'ep-info';
+
+            const epTitle = document.createElement('div');
+            epTitle.className = 'ep-title';
+            epTitle.textContent = ep.title;
+            epInfo.appendChild(epTitle);
+
+            episodeDiv.appendChild(epInfo);
+            episodeDiv.dataset.index = i;
+
+            if (!ep.locked && ep.url) {
+                episodeDiv.addEventListener('click', () => this.playEpisode(ep.url));
+            }
+
+            frag.appendChild(episodeDiv);
+        });
+
+        this.episodesTrack.appendChild(frag);
+
+        // Reset carrusel
+        this.carouselPosition = 0;
+        this.calculateEpisodesPerView();
+        this.createCarouselIndicators();
+        this.updateCarouselButtons();
+        this.updateCarouselPosition();
+        this.updateSeriesFocus();
+    }
+
+    /* =============================
+       FOCO Y NAVEGACIÓN
+       ============================= */
+
+    focusCard() {
+        if (this.cards.length === 0) return;
+
+        this.cards.forEach(c => {
+            c.classList.remove('focused');
+            c.tabIndex = -1;
+        });
+
+        const card = this.cards[this.index];
+
+        if (card) {
+            card.classList.add('focused');
+            card.tabIndex = 0;
+            card.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+        }
+    }
+
+    openCard() {
+        if (this.cards[this.index]) this.cards[this.index].click();
+    }
+
+    /* =============================
+          PLAY EPISODIO
+       ============================= */
+    playEpisode(url) {
+        if (url && url !== "#") {
+            this.saveProgress();
+            window.location.href = url;
+        }
+    }
+
+    saveProgress() {
+        if (this.currentSeries) {
+            const progress = {
+                seriesId: this.currentSeriesId,
+                season: this.currentSeason,
+                episode: this.episodeFocus
+            };
+            localStorage.setItem('lastWatched', JSON.stringify(progress));
+        }
+    }
+
+    /* =============================
+            CERRAR MODAL
+       ============================= */
+    closeModal() {
+        this.seriesOverlay.style.display = 'none';
+        this.backButton.classList.remove('visible');
+        this.mainGrid.style.display = 'grid';
+
+        if (this.currentSeriesId) {
+            const idx = this.cards.findIndex(
+                c => c.dataset.series === this.currentSeriesId
+            );
+            if (idx !== -1) {
+                this.index = idx;
+                this.focusCard();
+            }
+        }
+
+        history.replaceState(null, '', ' ');
+    }
+
+    /* =============================
+        TECLADO
+       ============================= */
+    handleKeyboard(e) {
+        if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter', 'Escape', 'Backspace'].includes(e.key)) {
+            e.preventDefault();
+        }
+
+        if (this.seriesOverlay.style.display === "block") {
+            this.handleSeriesNavigation(e);
+        } else {
+            this.handleGridNavigation(e);
+        }
+    }
+
+    /* =============================
+         LOADER / ERRORES
+       ============================= */
+    showLoader(show) {
+        this.loader.classList.toggle('hidden', !show);
+    }
+
+    showError(msg) {
+        this.errorMessage.textContent = msg;
+        this.errorMessage.classList.add('show');
+        setTimeout(() => this.errorMessage.classList.remove('show'), 3000);
+    }
+
+    /* =============================
+            FALLBACK
+       ============================= */
     loadFallbackData() {
-        // Datos de respaldo mínimos
         this.seriesData = {
             "demo": {
-                title: "SERIE DEMO",
+                title: "Series Demo",
                 displayTitle: "Serie Demo",
                 poster: "https://via.placeholder.com/300x450",
                 seasons: {
@@ -1006,477 +1177,35 @@ class StreamingPlatform {
                 }
             }
         };
-        this.renderGrid();
-        this.updateStatus();
-    }
-    
-    renderGrid() {
-        this.mainGrid.innerHTML = '';
-        this.cards = [];
-        
-        Object.entries(this.seriesData).forEach(([id, serie], index) => {
-            const card = this.createCard(id, serie);
-            this.mainGrid.appendChild(card);
-            this.cards.push(card);
-            
-            // Animation delay
-            card.style.animationDelay = `${index * 0.03}s`;
-        });
-        
-        if (this.cards.length > 0) {
-            this.index = 0;
-            this.focusCard();
-        }
-    }
-    
-    createCard(id, serie) {
-        const article = document.createElement('article');
-        article.className = 'card';
-        article.dataset.series = id;
-        article.tabIndex = -1;
-        
-        // Badge
-        if (serie.badge) {
-            const badge = document.createElement('span');
-            badge.className = `badge ${serie.badgeType || ''}`;
-            badge.textContent = serie.badge;
-            article.appendChild(badge);
-        }
-        
-        // Image
-        const img = document.createElement('img');
-        img.src = serie.poster;
-        img.alt = serie.displayTitle;
-        img.loading = 'lazy';
-        img.onerror = () => { img.src = 'https://via.placeholder.com/300x450?text=' + encodeURIComponent(serie.displayTitle); };
-        article.appendChild(img);
-        
-        // Title
-        const titleDiv = document.createElement('div');
-        titleDiv.className = 'card-title';
-        titleDiv.textContent = serie.displayTitle;
-        article.appendChild(titleDiv);
-        
-        // Click event
-        article.addEventListener('click', () => this.openSeriesDetail(id));
-        
-        return article;
-    }
-    
-    focusCard() {
-        if (this.cards.length === 0) return;
-        
-        this.cards.forEach((c) => {
-            c.classList.remove('focused');
-            c.tabIndex = -1;
-        });
-        
-        const currentCard = this.cards[this.index];
-        if (currentCard) {
-            currentCard.classList.add('focused');
-            currentCard.tabIndex = 0;
-            currentCard.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'center', 
-                inline: 'center' 
-            });
-        }
-    }
-    
-    openSeriesDetail(seriesId) {
-        this.currentSeries = this.seriesData[seriesId];
-        this.currentSeriesId = seriesId;
-        if (!this.currentSeries) return;
-        
-        this.mainGrid.style.display = 'none';
-        this.seriesOverlay.style.display = 'block';
-        this.backButton.classList.add('visible');
-        
-        // Setup banner
-        this.seriesTitle.textContent = this.currentSeries.title;
-        this.seriesBannerBg.style.backgroundImage = `url('${this.currentSeries.poster}')`;
-        
-        // Update seasons info
-        const seasonCount = Object.keys(this.currentSeries.seasons).length;
-        this.seasonsCount.textContent = `${seasonCount} ${seasonCount === 1 ? 'Temporada disponible' : 'Temporadas disponibles'}`;
-        
-        // Reset navigation
-        this.currentSeason = 0;
-        this.focusMode = 'season';
-        this.seasonFocus = 0;
-        this.episodeFocus = 0;
-        this.carouselPosition = 0;
-        
-        // Calculate episodes per view
-        this.calculateEpisodesPerView();
-        
-        this.renderSeasons();
-        this.renderEpisodes();
-        
-        // Push state for browser back button
-        history.pushState({ modal: true }, '', '#' + seriesId);
-    }
-    
-    renderSeasons() {
-        this.seasonBar.innerHTML = '';
-        const seasonKeys = Object.keys(this.currentSeries.seasons);
-        
-        seasonKeys.forEach((seasonName, i) => {
-            const seasonDiv = document.createElement('div');
-            seasonDiv.className = 'season';
-            seasonDiv.tabIndex = -1;
-            
-            if (i === this.currentSeason) {
-                seasonDiv.classList.add('active');
-            }
-            
-            seasonDiv.textContent = seasonName;
-            seasonDiv.dataset.index = i;
-            
-            seasonDiv.addEventListener('click', () => {
-                this.currentSeason = i;
-                this.focusMode = 'episode';
-                this.seasonFocus = i;
-                this.episodeFocus = 0;
-                this.carouselPosition = 0;
-                this.renderSeasons();
-                this.renderEpisodes();
-            });
-            
-            this.seasonBar.appendChild(seasonDiv);
-        });
 
-        // Botones del carrusel de temporadas
-        this.updateSeasonButtons();
-        this.updateSeriesFocus();
-    }
-    
-    renderEpisodes() {
-        this.episodesTrack.innerHTML = '';
-        const seasonKeys = Object.keys(this.currentSeries.seasons);
-        const episodes = this.currentSeries.seasons[seasonKeys[this.currentSeason]];
-        
-        episodes.forEach((ep, i) => {
-            const episodeDiv = document.createElement('div');
-            episodeDiv.className = 'episode';
-            episodeDiv.tabIndex = -1;
-            
-            if (ep.locked) {
-                episodeDiv.classList.add('bloqueado');
-            }
-            
-            const thumb = document.createElement('div');
-            thumb.className = 'thumb';
-            
-            const epNumber = document.createElement('div');
-            epNumber.className = 'ep-number';
-            epNumber.textContent = `E${i + 1}`;
-            thumb.appendChild(epNumber);
-            
-            if (ep.thumbnail) {
-                const img = document.createElement('img');
-                img.src = ep.thumbnail;
-                img.alt = ep.title;
-                thumb.appendChild(img);
-            } else {
-                const placeholder = document.createElement('span');
-                placeholder.textContent = ep.title;
-                thumb.appendChild(placeholder);
-            }
-            
-            const playIcon = document.createElement('div');
-            playIcon.className = 'play-icon';
-            thumb.appendChild(playIcon);
-            
-            episodeDiv.appendChild(thumb);
-            
-            const epInfo = document.createElement('div');
-            epInfo.className = 'ep-info';
-            
-            const epTitle = document.createElement('div');
-            epTitle.className = 'ep-title';
-            epTitle.textContent = ep.title;
-            epInfo.appendChild(epTitle);
-            
-            episodeDiv.appendChild(epInfo);
-            
-            episodeDiv.dataset.index = i;
-            
-            if (!ep.locked) {
-                episodeDiv.addEventListener('click', () => {
-                    if (ep.url) {
-                        this.playEpisode(ep.url);
-                    }
-                });
-            }
-            
-            this.episodesTrack.appendChild(episodeDiv);
-        });
-        
-        // Reset carousel
-        this.carouselPosition = 0;
-        this.episodesTrack.style.transform = 'translateX(0)';
-        
-        // Setup carousel
-        this.calculateEpisodesPerView();
-        this.createCarouselIndicators();
-        this.updateCarouselButtons();
-        this.updateCarouselPosition();
-        
-        this.updateSeriesFocus();
-    }
-    
-    updateSeriesFocus() {
-        // Update seasons focus
-        const seasons = this.seasonBar.querySelectorAll('.season');
-        seasons.forEach((el, i) => {
-            el.classList.toggle('focused', this.focusMode === 'season' && i === this.seasonFocus);
-            el.tabIndex = (this.focusMode === 'season' && i === this.seasonFocus) ? 0 : -1;
-        });
-        // Asegura que la temporada enfocada quede visible
-        if (this.focusMode === 'season' && seasons[this.seasonFocus]) {
-            seasons[this.seasonFocus].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-        }
-        
-        // Update episodes focus
-        const episodes = this.episodesTrack.querySelectorAll('.episode');
-        episodes.forEach((el, i) => {
-            el.classList.toggle('focused', this.focusMode === 'episode' && i === this.episodeFocus);
-            el.tabIndex = (this.focusMode === 'episode' && i === this.episodeFocus) ? 0 : -1;
-        });
-        
-        // Auto-scroll carousel to focused episode
-        if (this.focusMode === 'episode' && episodes[this.episodeFocus]) {
-            const pageIndex = Math.floor(this.episodeFocus / this.episodesPerView);
-            if (pageIndex !== Math.floor(this.carouselPosition / this.episodesPerView)) {
-                this.carouselPosition = pageIndex * this.episodesPerView;
-                this.updateCarouselPosition();
-                this.updateCarouselButtons();
-                this.updateCarouselIndicators();
-            }
-        }
-    }
-    
-    playEpisode(url) {
-        if (url && url !== '#') {
-            // Guardar progreso antes de navegar
-            this.saveProgress();
-            window.location.href = url;
-        }
-    }
-    
-    saveProgress() {
-        if (this.currentSeries) {
-            const progress = {
-                seriesId: this.currentSeriesId,
-                season: this.currentSeason,
-                episode: this.episodeFocus
-            };
-            localStorage.setItem('lastWatched', JSON.stringify(progress));
-        }
-    }
-    
-    closeModal() {
-        this.seriesOverlay.style.display = 'none';
-        this.backButton.classList.remove('visible');
-        this.mainGrid.style.display = 'grid';
-        
-        // Find and focus the current series card
-        if (this.currentSeriesId) {
-            const cardIndex = this.cards.findIndex(
-                card => card.dataset.series === this.currentSeriesId
-            );
-            if (cardIndex !== -1) {
-                this.index = cardIndex;
-                this.focusCard();
-            }
-        }
-        
-        // Clear hash
-        history.replaceState(null, '', ' ');
-    }
-    
-    handleKeyboard(e) {
-        // Prevent default for navigation keys
-        if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter', 'Escape', 'Backspace'].includes(e.key)) {
-            e.preventDefault();
-        }
-        
-        if (this.seriesOverlay.style.display === 'block') {
-            this.handleSeriesNavigation(e);
-        } else {
-            this.handleGridNavigation(e);
-        }
-    }
-    
-    handleGridNavigation(e) {
-        const gridWidth = Math.floor(this.mainGrid.offsetWidth / (this.cards[0]?.offsetWidth || 160));
-        
-        switch(e.key) {
-            case 'ArrowRight':
-                this.index = (this.index + 1) % this.cards.length;
-                break;
-            case 'ArrowLeft':
-                this.index = (this.index - 1 + this.cards.length) % this.cards.length;
-                break;
-            case 'ArrowDown':
-                this.index = Math.min(this.index + gridWidth, this.cards.length - 1);
-                break;
-            case 'ArrowUp':
-                this.index = Math.max(this.index - gridWidth, 0);
-                break;
-            case 'Enter':
-            case ' ':
-                if (this.cards[this.index]) {
-                    this.cards[this.index].click();
-                }
-                break;
-        }
-        
-        this.focusCard();
-    }
-    
-    handleSeriesNavigation(e) {
-        if (!this.currentSeries) return;
-        
-        const seasonKeys = Object.keys(this.currentSeries.seasons);
-        
-        if (this.focusMode === 'season') {
-            const totalSeasons = seasonKeys.length;
-            
-            switch(e.key) {
-                case 'ArrowRight':
-                    this.seasonFocus = Math.min(this.seasonFocus + 1, totalSeasons - 1);
-                    break;
-                case 'ArrowLeft':
-                    this.seasonFocus = Math.max(this.seasonFocus - 1, 0);
-                    break;
-                case 'ArrowDown':
-                case 'Enter':
-                case ' ':
-                    this.currentSeason = this.seasonFocus;
-                    this.focusMode = 'episode';
-                    this.episodeFocus = 0;
-                    this.carouselPosition = 0;
-                    this.renderSeasons();
-                    this.renderEpisodes();
-                    return;
-            }
-        } else if (this.focusMode === 'episode') {
-            const episodes = this.currentSeries.seasons[seasonKeys[this.currentSeason]];
-            const total = episodes.length;
-            
-            switch(e.key) {
-                case 'ArrowRight':
-                    if (this.episodeFocus < total - 1) {
-                        this.episodeFocus++;
-                        if (this.episodeFocus >= this.carouselPosition + this.episodesPerView) {
-                            this.moveCarousel('next');
-                        }
-                    }
-                    break;
-                case 'ArrowLeft':
-                    if (this.episodeFocus > 0) {
-                        this.episodeFocus--;
-                        if (this.episodeFocus < this.carouselPosition) {
-                            this.moveCarousel('prev');
-                        }
-                    }
-                    break;
-                case 'ArrowUp':
-                    this.focusMode = 'season';
-                    this.seasonFocus = this.currentSeason;
-                    break;
-                case 'Enter':
-                case ' ':
-                    const ep = episodes[this.episodeFocus];
-                    if (!ep.locked && ep.url) {
-                        this.playEpisode(ep.url);
-                    } else if (ep.locked) {
-                        this.showError('Este episodio está bloqueado');
-                    }
-                    return;
-            }
-        }
-        
-        if (e.key === 'Escape' || e.key === 'Backspace') {
-            if (this.focusMode === 'episode') {
-                this.focusMode = 'season';
-                this.seasonFocus = this.currentSeason;
-            } else {
-                this.closeModal();
-            }
-        }
-        
-        this.updateSeriesFocus();
-    }
-    
-    showLoader(show) {
-        if (this.loader) {
-            this.loader.classList.toggle('hidden', !show);
-        }
-    }
-    
-    showError(message) {
-        this.errorMessage.textContent = message;
-        this.errorMessage.classList.add('show');
-        setTimeout(() => {
-            this.errorMessage.classList.remove('show');
-        }, 3000);
-    }
-    
-    updateStatus() {
-        // Removido el conteo de series
-    }
-    
-    async refreshData() {
-        // Refresh data from server
-        console.log('Refreshing series data...');
-        await this.loadData();
-    }
-    
-    destroy() {
-        // Cleanup
-        if (this.refreshInterval) {
-            clearInterval(this.refreshInterval);
-        }
-        document.removeEventListener('keydown', this.handleKeyboard);
-        window.removeEventListener('resize', this.calculateEpisodesPerView);
+        this.renderGrid();
     }
 }
 
-// Initialize platform when DOM is ready
+/* =======================================================
+   INICIALIZACIÓN DEL SISTEMA
+   ======================================================= */
+
 let platform = null;
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     platform = new StreamingPlatform();
-    
-    // Handle browser back button
-    window.addEventListener('popstate', (event) => {
+
+    document.addEventListener('keydown', (e) => platform.handleKeyboard(e));
+
+    window.addEventListener('popstate', () => {
         if (platform.seriesOverlay.style.display === 'block') {
             platform.closeModal();
         }
     });
-    
-    // Expose platform instance for debugging
-    window.streamingPlatform = platform;
-});
 
-// Handle page visibility for auto-pause
-document.addEventListener('visibilitychange', () => {
-    if (document.hidden && platform) {
-        // Pause any background activities
-        console.log('Page hidden, pausing activities');
-    } else if (platform) {
-        // Resume activities
-        console.log('Page visible, resuming activities');
-    }
+    window.streamingPlatform = platform;
 });
 </script>
 
+
 </body>
 </html>
-
 
 
 
