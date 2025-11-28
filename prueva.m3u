@@ -40,20 +40,6 @@ https://amg00658-amg00658c108-canelatv-international-7664.playouts.now.amagi.tv/
 
 
 
-#EXTINF:-1, group-title="Local" tvg-logo="https://i.ibb.co/CJ2WDMK/ABC-News-Logo-132x99.jpg" tvg-id="ABC News" group-title="Local",ABC News
-https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
-
-
-#EXTINF:-1, group-title="Local" tvg-logo="https://imgur.com/xaXbBCI.png" tvg-id="ABC News" group-title="Local",Telesistema
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(KSmA1QcAmAHclRBE0YUayV4k7y7WtoAaMJpGxo9JmXiqTo_1YTUmfd3q_iJn6T8ateSx8LaDlu1_PefpxyGpTvucrZPm6SBd94p6ZhtODUq5qXw-OShurQCyuuge0JqP)/cloud/3/x80ac48/d/live-720.m3u8#cell=lcf2-eu-north-1b
-
-
-
-
-#EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat.com/logo/tv/kk/ktnv-tv-us-nv.png" tvg-name="ABC 13 Las Vegas NV (KTNV)" group-title="Local",ABC 13 Las Vegas NV (KTNV)
-https://content.uplynk.com/channel/39919d3f7a074eefa8bf579214e952f9.m3u8
-
-
 #EXTINF:-1 group-title="MoveOnJoy+" tvg-id="Antenna.TV.us2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/antenna-us.png" tvg-name="Antenna", ANTENNA
 https://cvtv.cvalley.net/hls/WDAFAntenna/WDAFAntenna.m3u8
 
@@ -66,9 +52,6 @@ https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_3_14
 #EXTINF:-1 group-title="MoveOnJoy+" tvg-id="CNN.HD.us2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true", CNN 2
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
 
-
-#EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat.com/logo/tv/kk/knxv-tv-us-az.png" tvg-name="ABC 15 Phoenix AZ (KNXV)" group-title="Local",ABC 15 Phoenix AZ (KNXV)
-https://content.uplynk.com/channel/9deaf22aaa33461f9cac22e030ed00ec.m3u8
 
 
 #EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat-logo.com/logo/tv/aa/adn_40_mx.png" tvg-name="ADN 40" group-title="News",ADN 40
@@ -516,54 +499,9 @@ https://daiconnect.com/live/hls/tvup/rk-oficiosperdidos/.m3u8?ads_amznbrmid=&ads
 #EXTINF:-1 tvg-id="historia-y-vida" tvg-name="historia-y-vida" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/112ebdc0-159a-422f-9659-e9e6aa967df7.jpeg" group-title="Documentales" , Historia y Vida
 https://amg01821-amg01821c22-rakuten-gb-8651.playouts.now.amagi.tv/playlist/amg01821-lovetvfast-historiayvidacc-rakutengb/playlist.m3u8?ads_amagi_channel=1030&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=documentary%2Chistory&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=6986&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=2e79c818-e86c-4b04-8afa-a999a67e569f&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
 
-#EXTINF:-1 tvg-id="euronews-live-spa" tvg-name="euronews-live-spa" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/c5d844e3-4f48-4da9-85aa-d13c432761ae.png" group-title="Noticias" , Euronews EN DIRECTO
-https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiYTczODZlNDItNmI4Mi00ZDk3LThjNGYtM2NkMzk0M2IzMGFkIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjo1fQ%3D%3D/26034/euronews-es.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=euronews-live-spa_es&ads.rtv_content_id=6571&ads.rtv_content_language=spa&ads.rtv_language=spa&ads.rtvid=271859&ads.streaming_id=a7386e42-6b82-4d97-8c4f-3cd3943b30ad&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6571&publishing_platform_id=5
-
-#EXTINF:-1 tvg-id="actualidad-360" tvg-name="actualidad-360" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/6e42888b-dbe7-4acc-a07e-9cd81d3de1b7.jpeg" group-title="Noticias" , Actualidad 360
-https://amg01821-amg01821c27-rakuten-gb-8652.playouts.now.amagi.tv/playlist/amg01821-lovetvfast-lovenews-rakutengb/playlist.m3u8?ads_amagi_channel=1031&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=6987&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=f8dde0a8-caea-4907-b997-ba358f274c74&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="the-reuters-60" tvg-name="the-reuters-60" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/c3defe95-3188-4b5d-9cf6-68ca7b3e1767.jpeg" group-title="Noticias" , The Reuters 60
-https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-rakutenuk/playlist.m3u8?ads_amagi_channel=481&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=12&ads_rtv_content_id=5789&ads_rtv_content_language=deu&ads_rtvid=271859&ads_streaming_id=132e1a8a-0d72-485f-b118-a3e0abc2e9eb&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="revry-news" tvg-name="revry-news" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/3f6c9f74-ee6f-43b9-959e-f63992e2e83d.png" group-title="Noticias" , Revry News
-https://dcb264a4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1JldnJ5TmV3c19ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB12&ads.content_genre=news&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=0&ads.rtv_content_id=1302&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=2fbe8c1f-1413-431f-ac67-00166d062c33&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=616
-
-#EXTINF:-1 tvg-id="bloomberg-originals-new" tvg-name="bloomberg-originals-new" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d6c3cf95-3570-44fa-a3db-ca215ded6396.jpeg" group-title="Noticias" , Bloomberg Originals
-https://www.bloomberg.com/media-manifest/streams/qt.m3u8
-
-#EXTINF:-1 tvg-id="bloomberg-tv-plus" tvg-name="bloomberg-tv-plus" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/80bb6ac5-9dbf-44fb-8716-dd84aec360f8.jpeg" group-title="Noticias" , Bloomberg TV+
-https://86ebec83.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0Jsb29tYmVyZ1RWUGx1c19ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB12&ads.content_genre=business%2Cnews&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_content_id=6958&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=65f4bd32-6866-4868-8c6a-8adb933aac23&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=1511
-
-#EXTINF:-1 tvg-id="cgtn-es" tvg-name="cgtn-es" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/830975d8-58b0-443f-a276-f9eb93ef9364.jpeg" group-title="Noticias" , CGTN
-https://amg01314-cgtn-amg01314c3-rakuten-uk-1318.playouts.now.amagi.tv/cgtn-es-rakuten/playlist.m3u8?ads_amagi_channel=878&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5546&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=b558817a-af86-412b-914a-b87f00aec647&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="africanews-eng" tvg-name="africanews-eng" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/6941bdf2-110a-42b1-9906-b48cff32d456.png" group-title="Noticias" , Africanews
-https://africanews-eng-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6576/bitok/eyJzdGlkIjoiZWU4YWZkOGItNmM5ZS00ZDNlLTg1YmUtMzc3MzdkYmE1Y2I2IiwibWt0IjoiZXMiLCJjaCI6NjU4OCwicHRmIjo1fQ%3D%3D/26036/africanews-en.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=africanews-eng_es&ads.rtv_content_id=6588&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=ee8afd8b-6c9e-4d3e-85be-37737dba5cb6&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6588&publishing_platform_id=5
-
-#EXTINF:-1 tvg-id="cgtn" tvg-name="cgtn" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/82a28e14-7f41-4a39-b6b9-57de69feb0ef.jpeg" group-title="Noticias" , CGTN
-https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8?ads_amagi_channel=852&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5004&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=bd076c19-f664-49ed-b2f2-b2bd01441594&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="newsworld-spa" tvg-name="newsworld-spa" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/4939210a-0bec-4dd9-9ea4-40ed09db1dbc.jpeg" group-title="Noticias" , NewsWorld
-https://amg01076-amg01076c25-rakuten-es-8818.playouts.now.amagi.tv/playlist/amg01076-lightning-newsworldspanish-rakutenes/playlist.m3u8?ads_amagi_channel=1036&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=7038&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=17a24bb2-173e-41f9-8724-f18947ab99de&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="el-pais" tvg-name="el-pais" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/2ed79327-afc6-47cb-9e5a-5b8c67aa60ff.jpeg" group-title="Noticias" , El País
-https://daiconnect.com/live/hls/tvup/rk-elpais/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5598&ads_rtv_content_language=spa&ads_streaming_id=f734c01d-1e6f-465a-9042-bfe625ca95af&ads_tcs_channel_id=926&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="france-24-en" tvg-name="france-24-en" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/b4e13e24-5808-4dbb-8239-bf72c9611650.jpeg" group-title="Noticias" , France 24 FAST English
-https://amg00106-amg00106c1-rakuten-uk-4654.playouts.now.amagi.tv/playlist/amg00106-france24fast-france24-rakutenuk/playlist.m3u8?ads_amagi_channel=938&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=6311&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=1ac274f8-c4d9-49b3-9495-47bd14f44305&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a" tvg-name="the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/66f04592-6574-4afa-8ad4-06b8e5387d47.jpeg" group-title="Noticias" , The Guardian
-https://the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6437/master.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_name=the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a_es&ads.rtv_content_id=6438&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=4671992b-9569-43fa-840e-c3087555d694&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6438&publishing_platform_id=5
-
 #EXTINF:-4, tvg-id="" tvg-logo"https://www.lyngsat.com/logo/tv/cc/cosmovision-co.png" tvg-name="Cosmovision" group-title="Colombia",Cosmovision
 https://videohls2.cosmovision.tv/hls/sd_720p2628kbs/index.m3u8
 
-
-#EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat-logo.com/logo/tv/cc/circle-us.png" tvg-name="Circle" group-title="Local",Circle OPT-1
-https://circle-roku.amagi.tv/playlist.m3u8
-
-#EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat-logo.com/logo/tv/cc/circle-us.png" tvg-name="Circle HD" group-title="Local",Circle OPT-2
-https://circle-samsung.amagi.tv/playlist.m3u8
 
 
 
@@ -587,16 +525,10 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d14fdb8c
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fc31252d35decbc4080b/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=378&deviceId=5d14fc31252d35decbc4080b&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false
 
 
-#EXTINF:-4, tvg-id=""  tvg-logo="logo" tvg-name="NBCLx Home" group-title="Local",NBCLx Home
-https://nbculocallive.akamaized.net/hls/live/2037096/lx/use1.m3u8
-
 
 #EXTINF:-4, tvg-id="" tvg-logo="logo" tvg-name="NEWSMAX" group-title="News",NEWSMAX OPT-1
 https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 
-
-#EXTINF:-4, tvg-id="" tvg-logo="logo" tvg-name="WHBQ BREAKING NEWS" group-title="Local",WHBQ BREAKING NEWS
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02104-imagicommcommun-whbqbreaking-ono/playlist.m3u8
 
 #EXTM3U
 
@@ -788,9 +720,6 @@ https://igd-it-runtime.otteravision.com/igd/it/it.m3u8
 
 #EXTINF:-0, tvg-logo="logo" tvg-name="ITV Deportes" group-title="Deportes", ITV Deportes
 https://thm-it-aymsports.otteravision.com/thm/it/it.m3u8
-
-#EXTINF:-0, tvg-logo="logo" tvg-name="Telediario Now" group-title="Noticias", Telediario Now
-https://mul-tldn.otteravision.com/mul/tldn/tldn.m3u8
 
 #EXTM3U
 #EXTINF:-1 group-title="Entretenimiento" tvg-logo="logo", A&E HD
@@ -1040,176 +969,7 @@ https://epix-drivein.live.epix.services/out/v1/bef1dd342f69416e9fdd844ece496dc0/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"2f2032b4cae944a0adf5ce111a2ff693":"2b4a2855b0abde035714985be6db4bd0"}
 https://epix-hits.live.epix.services/out/v1/a87dee961e4249afae86749c59202b9e/index.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTM3U
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", RTS 1
-https://viamotionhsi.netplus.ch/live/eds/rts1hd/browser-HLS8/rts1hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", RTS 2
-https://viamotionhsi.netplus.ch/live/eds/rts2hd/browser-HLS8/rts2hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", TF1
-https://viamotionhsi.netplus.ch/live/eds/tf1hd/browser-HLS8/tf1hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", France 2
-https://viamotionhsi.netplus.ch/live/eds/france2hd/browser-HLS8/france2hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", France 3
-https://viamotionhsi.netplus.ch/live/eds/france3hd/browser-HLS8/france3hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", France 4
-https://viamotionhsi.netplus.ch/live/eds/france4hd/browser-HLS8/france4hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", France 5
-https://viamotionhsi.netplus.ch/live/eds/france5hd/browser-HLS8/france5hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", M6
-https://viamotionhsi.netplus.ch/live/eds/m6hd/browser-HLS8/m6hd.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Canal 9
-https://viamotionhsi.netplus.ch/live/eds/canal9/browser-HLS8/canal9.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Léman Bleu
-https://viamotionhsi.netplus.ch/live/eds/lemanbleu/browser-HLS8/lemanbleu.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", La Télé
-https://viamotionhsi.netplus.ch/live/eds/latele/browser-HLS8/latele.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Canal Alpha JU
-https://viamotionhsi.netplus.ch/live/eds/canalalphaju/browser-HLS8/canalalphaju.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Canal Alpha NE
-https://viamotionhsi.netplus.ch/live/eds/canalalphane/browser-HLS8/canalalphane.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", TMC
-https://viamotionhsi.netplus.ch/live/eds/tmc/browser-HLS8/tmc.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", W9
-https://viamotionhsi.netplus.ch/live/eds/w9/browser-HLS8/w9.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Carac 1
-https://viamotionhsi.netplus.ch/live/eds/rougetv/browser-HLS8/rougetv.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", TFX
-https://viamotionhsi.netplus.ch/live/eds/nt1/browser-HLS8/nt1.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", T18
-https://viamotionhsi.netplus.ch/live/eds/t18/browser-HLS8/t18.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", CStar
-https://viamotionhsi.netplus.ch/live/eds/d17/browser-HLS8/d17.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", RTL9
-https://viamotionhsi.netplus.ch/live/eds/rtl9/browser-HLS8/rtl9.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", AB1
-https://viamotionhsi.netplus.ch/live/eds/ab1/browser-HLS8/ab1.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", TF1 Séries Films
-https://viamotionhsi.netplus.ch/live/eds/hd1/browser-HLS8/hd1.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", 6ter
-https://viamotionhsi.netplus.ch/live/eds/6ter/browser-HLS8/6ter.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", RMC Life
-https://viamotionhsi.netplus.ch/live/eds/cherie25/browser-HLS8/cherie25.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Novo19
-https://viamotionhsi.netplus.ch/live/eds/novo19/browser-HLS8/novo19.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", RMC Story
-https://viamotionhsi.netplus.ch/live/eds/numero23/browser-HLS8/numero23.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Blue Zoom F
-https://viamotionhsi.netplus.ch/live/eds/bluezoomfr/browser-HLS8/bluezoomfr.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", L'Équipe
-https://viamotionhsi.netplus.ch/live/eds/lequipe21/browser-HLS8/lequipe21.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logoab3.jpg", AB3
-https://viamotionhsi.netplus.ch/live/eds/ab3/browser-HLS8/ab3.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Paramount Network
-https://viamotionhsi.netplus.ch/live/eds/paramount/browser-HLS8/paramount.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Cartoon Network
-https://viamotionhsi.netplus.ch/live/eds/cartoonnetwork/browser-HLS8/cartoonnetwork.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Gulli
-https://viamotionhsi.netplus.ch/live/eds/gulli/browser-HLS8/gulli.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Game One
-https://viamotionhsi.netplus.ch/live/eds/gameone/browser-HLS8/gameone.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Trek
-https://viamotionhsi.netplus.ch/live/eds/escales/browser-HLS8/escales.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", RMC Découverte
-https://viamotionhsi.netplus.ch/live/eds/rmcdecouverte/browser-HLS8/rmcdecouverte.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Planète+
-https://viamotionhsi.netplus.ch/live/eds/planeteplus/browser-HLS8/planeteplus.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Netplus" tvg-logo="logo", Animaux
-https://viamotionhsi.netplus.ch/live/eds/animaux/browser-HLS8/animaux.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTM3U
-#EXTINF:-1 group-title="Noticias" tvg-logo="logo", Telediario Now
-https://mul-tldn.otteravision.com/mul/tldn/tldn.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTM3U
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Eastern
-https://cors-proxy.cooks.fyi/https://pbs.lls.cdn.pbs.org/est/index.m3u8
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Pacific
-https://cors-proxy.cooks.fyi/https://pbs.lls.cdn.pbs.org/pst/index.m3u8
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Create
-https://cors-proxy.cooks.fyi/https://create.lls.pbs.org/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS FNX
-https://cors-proxy.cooks.fyi/https://fnx.lls.pbs.org/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS NHK Japan World
-https://cors-proxy.cooks.fyi/https://nhk.lls.pbs.org/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS World
-https://cors-proxy.cooks.fyi/https://world.lls.pbs.org/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KERA (KERA-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"f04f65dfa8f747cf9c22124590d9c07f":"4f9d4405ec2c618d0be09b6712ad3e86"}
-https://cors-proxy.cooks.fyi/https://keradt.lls.pbs.org/out/v1/1e7b1562e03e437f82089ed56b410c1e/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", KERA Create (KERA-DT3)
-https://cors-proxy.cooks.fyi/https://keradt3.lls.pbs.org/keradt3-hls.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KET (WKLE-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"5759f75634e94a5980bce546c72378ef":"11fa69ff9c5a7d21614a33f8925214b1"}
-https://cors-proxy.cooks.fyi/https://wkledt.lls.pbs.org/out/v1/be88bb7ee227444f9368e5e161ca2987/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KET2 (WKLE-DT2)
-https://cors-proxy.cooks.fyi/https://wkledt2.lls.pbs.org/wkledt2-hls.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KET KY (WKLE-DT3)
-https://cors-proxy.cooks.fyi/https://wkledt3.lls.pbs.org/wkledt3-hls.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KET2
-https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1315484/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KET KY
-https://2-fss-2.streamhoster.com/pl_132/amlst:200914-1315486/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KET Kids
-https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KLCS (KLCS-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"b2fe64bda6d04948bdc5cb29c918f28e":"84c1d1ee4721d1168477badab89ad679"}
-https://cors-proxy.cooks.fyi/https://klcsdt.lls.pbs.org/out/v1/264e5f8fab5d4ac8aa833272f23a0861/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KLCS Create (KLCS-DT3)
-https://cors-proxy.cooks.fyi/https://d1mxoeplf1ak5a.cloudfront.net/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KRMA (KRMA-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"e9d50fff0f104a8181731a880fba244d":"2d5ddbdcf81ac8b9c0a306145a925770"}
-https://cors-proxy.cooks.fyi/https://krmadt.lls.pbs.org/out/v1/239e3afea2ad4574a112bd5d8c717353/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Create Rocky Mountains
-https://3ae97e9482b0d011.mediapackage.us-west-2.amazonaws.com/out/v1/db135313ca9f44d49c0e9e71e89dc761/CMAF_HLS/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Kids Rocky Mountains
-https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS World Rocky Mountains
-https://ef12a945743b4a46.mediapackage.us-west-2.amazonaws.com/out/v1/8f2cd51f46db45708ad703a8968a904d/CMAF_HLS/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS KUON (KUON-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"c49f9d33e3bc4c529abc6b77f21d0d14":"f88186658fcc977617b2ac842dba52e0"}
-https://cors-proxy.cooks.fyi/https://kuondt.lls.pbs.org/out/v1/7b9f392188144a1f92c53b1d78584297/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Nebraska Public Media World
-https://d3bpna7ua68cn6.cloudfront.net/out/v1/bfe93f9852004ad199ed69890cfa8784/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS WGBH (WGBH-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"2518b47015794a9ca8e7f6a7d81dadb0":"b2c744818e10c6f7130855abbbbdd663"}
-https://cors-proxy.cooks.fyi/https://wgbhdt.lls.pbs.org/out/v1/fc994cd4c0854f6baaa84d551494352d/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS WGBH World
-https://d2f96gmbl6rcn.cloudfront.net/out/v1/7b57d37759cf40f791a1a07b93a9e7fc/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS WKNO (WKNO-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"5db6ca2f5c194e2c96c2073c72bc514f":"4670dd8c8f19fff96c126539fff93ef7"}
-https://cors-proxy.cooks.fyi/https://wknodt.lls.pbs.org/out/v1/347b4226ab2c4207a25b445dfce9dc85/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", WKNO2 (WKNO-DT2)
-https://cors-proxy.cooks.fyi/https://wknodt2.lls.pbs.org/wknodt2-hls.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Kids WKNO (WKNO-DT3)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"309e77c939a2464e9c04df289b335228":"6b3334b74f5917a1542a71aebd4449e6","745d83e811ba40c38c55eaf51d7742ec":"d4a2e1648262216ffab25ac02e3f4f25"}
-https://cors-proxy.cooks.fyi/https://livestream.pbskids.org/v1/dash/afde4238821a08932ac8931c7b3e89adcbe90300/pbskids-prod-dash/116db48616c44f41a80ea0989c336ce3/est-dash-drm.mpd?ads.station_id=6b3ba9b1-843d-4c44-a8e3-fada6005f081&0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS WPSU (WSPU-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"9a910e23c9144a32a7a381e4c264c1da":"68de863db5a940d2fc4e6c32ee3cdc99"}
-https://cors-proxy.cooks.fyi/https://wpsudt.lls.pbs.org/out/v1/6d87709086d44c8d820ba3b7ff85b4de/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", PBS Kids WPSU (WPSU-DT4)
-https://livestream.pbskids.org/v1/master/afde4238821a08932ac8931c7b3e89adcbe90300/pbskids-prod-hls/14507d931bbe48a69287e4850e53443c/est.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="PBS Local" tvg-logo="logo", MPB WMPN (WMPN-DT1)
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"2b4510e4e71142f3b6c8586efecaf32f":"dc563b5767d4912ce857be926dee3295"}
-https://cors-proxy.cooks.fyi/https://wmpndt.lls.pbs.org/out/v1/4cb9c0b95c824c4195cbf48c0ca48c6f/dash-drm.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTM3U
+
 #EXTINF:-1 group-title="Spain" group-logo="logo" tvg-logo="logo", Canal Sur Televison
 http://37.0.110.5:8080?0GKUSH_R4IN&DONTSTEAL 
 #EXTINF:-1 group-title="Spain" group-logo="logo" tvg-logo="logo", Waytel TV HD
@@ -1330,11 +1090,7 @@ https://cors-proxy.cooks.fyi/https://propefh1c17d.airspace-cdn.cbsivideo.com/out
 https://content.uplynk.com/channel/2bb01dbf7c9b425db6854a4e45a57af8.mpd
 #EXTINF:-1 group-title="USA Entertainment" tvg-logo="logo", VH1 East
 https://cors-proxy.cooks.fyi/https://propedh55a7a.airspace-cdn.cbsivideo.com/out/v1/0009a2f77fc94928988c254966ef4176/manifest.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTM3U
-#EXTINF:-1 group-title="USA Local" tvg-logo="logo", ABC 10 Wichita KS (KAKE-DT1) NOT24/7
-https://live.field59.com/kake/kake1/chunklist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="USA Local" tvg-logo="logo", ABC 13 Anchorage AK (KYUR-DT1) NOT24/7
-https://live.field59.com/kyur/kyur1/chunklist.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 
 #EXTINF:-1 group-title="NSFW" tvg-logo="logo", Pigoo (NSFW)
 https://ca01.utako.moe/pigoo/index.m3u8?0GKUSH_R4IN&DONTSTEAL&DONTSTEAL
@@ -1922,10 +1678,6 @@ http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/chun
 https://cdn.igocast.com/channel8_hls/channel8_master.m3u8?checkedby:iptvcat.com
 
 
-
-
-#EXTINF:0 tvg-country="UN" tvg-logo="https://f9q4g5j6.ssl.hwcdn.net/5f9c1efa49020443150ee563" group-title="Deportes""Sport",Outside TV
-https://outsidetv-outside-localnow.amagi.tv/localnow.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Deportes""Sport",Red Bull TV,SPORT : Red Bull TV,SPORT | Red Bull TV
 http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8?checkedby:iptvcat.com
@@ -4505,6 +4257,85 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61
 
 
 
+
+#EXTINF:-1 tvg-id="euronews-live-spa" tvg-name="euronews-live-spa" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/c5d844e3-4f48-4da9-85aa-d13c432761ae.png" group-title="B Noticias""B Noticias""Noticias" , Euronews EN DIRECTO
+https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiYTczODZlNDItNmI4Mi00ZDk3LThjNGYtM2NkMzk0M2IzMGFkIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjo1fQ%3D%3D/26034/euronews-es.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=euronews-live-spa_es&ads.rtv_content_id=6571&ads.rtv_content_language=spa&ads.rtv_language=spa&ads.rtvid=271859&ads.streaming_id=a7386e42-6b82-4d97-8c4f-3cd3943b30ad&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6571&publishing_platform_id=5
+
+#EXTINF:-1 tvg-id="actualidad-360" tvg-name="actualidad-360" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/6e42888b-dbe7-4acc-a07e-9cd81d3de1b7.jpeg" group-title="B Noticias""Noticias" , Actualidad 360
+https://amg01821-amg01821c27-rakuten-gb-8652.playouts.now.amagi.tv/playlist/amg01821-lovetvfast-lovenews-rakutengb/playlist.m3u8?ads_amagi_channel=1031&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=6987&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=f8dde0a8-caea-4907-b997-ba358f274c74&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="the-reuters-60" tvg-name="the-reuters-60" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/c3defe95-3188-4b5d-9cf6-68ca7b3e1767.jpeg" group-title="B Noticias""Noticias" , The Reuters 60
+https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-rakutenuk/playlist.m3u8?ads_amagi_channel=481&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=12&ads_rtv_content_id=5789&ads_rtv_content_language=deu&ads_rtvid=271859&ads_streaming_id=132e1a8a-0d72-485f-b118-a3e0abc2e9eb&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="revry-news" tvg-name="revry-news" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/3f6c9f74-ee6f-43b9-959e-f63992e2e83d.png" group-title="B Noticias""Noticias" , Revry News
+https://dcb264a4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1JldnJ5TmV3c19ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB12&ads.content_genre=news&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=0&ads.rtv_content_id=1302&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=2fbe8c1f-1413-431f-ac67-00166d062c33&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=616
+
+#EXTINF:-1 tvg-id="bloomberg-originals-new" tvg-name="bloomberg-originals-new" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d6c3cf95-3570-44fa-a3db-ca215ded6396.jpeg" group-title="B Noticias""Noticias" , Bloomberg Originals
+https://www.bloomberg.com/media-manifest/streams/qt.m3u8
+
+#EXTINF:-1 tvg-id="bloomberg-tv-plus" tvg-name="bloomberg-tv-plus" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/80bb6ac5-9dbf-44fb-8716-dd84aec360f8.jpeg" group-title="B Noticias""Noticias" , Bloomberg TV+
+https://86ebec83.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0Jsb29tYmVyZ1RWUGx1c19ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB12&ads.content_genre=business%2Cnews&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_content_id=6958&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=65f4bd32-6866-4868-8c6a-8adb933aac23&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=1511
+
+#EXTINF:-1 tvg-id="cgtn-es" tvg-name="cgtn-es" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/830975d8-58b0-443f-a276-f9eb93ef9364.jpeg" group-title="B Noticias""Noticias" , CGTN
+https://amg01314-cgtn-amg01314c3-rakuten-uk-1318.playouts.now.amagi.tv/cgtn-es-rakuten/playlist.m3u8?ads_amagi_channel=878&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5546&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=b558817a-af86-412b-914a-b87f00aec647&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="africanews-eng" tvg-name="africanews-eng" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/6941bdf2-110a-42b1-9906-b48cff32d456.png" group-title="B Noticias""Noticias" , Africanews
+https://africanews-eng-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6576/bitok/eyJzdGlkIjoiZWU4YWZkOGItNmM5ZS00ZDNlLTg1YmUtMzc3MzdkYmE1Y2I2IiwibWt0IjoiZXMiLCJjaCI6NjU4OCwicHRmIjo1fQ%3D%3D/26036/africanews-en.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=africanews-eng_es&ads.rtv_content_id=6588&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=ee8afd8b-6c9e-4d3e-85be-37737dba5cb6&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6588&publishing_platform_id=5
+
+#EXTINF:-1 tvg-id="cgtn" tvg-name="cgtn" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/82a28e14-7f41-4a39-b6b9-57de69feb0ef.jpeg" group-title="B Noticias""Noticias" , CGTN
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8?ads_amagi_channel=852&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5004&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=bd076c19-f664-49ed-b2f2-b2bd01441594&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="newsworld-spa" tvg-name="newsworld-spa" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/4939210a-0bec-4dd9-9ea4-40ed09db1dbc.jpeg" group-title="B Noticias""Noticias" , NewsWorld
+https://amg01076-amg01076c25-rakuten-es-8818.playouts.now.amagi.tv/playlist/amg01076-lightning-newsworldspanish-rakutenes/playlist.m3u8?ads_amagi_channel=1036&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=7038&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=17a24bb2-173e-41f9-8724-f18947ab99de&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="el-pais" tvg-name="el-pais" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/2ed79327-afc6-47cb-9e5a-5b8c67aa60ff.jpeg" group-title="B Noticias""Noticias" , El País
+https://daiconnect.com/live/hls/tvup/rk-elpais/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5598&ads_rtv_content_language=spa&ads_streaming_id=f734c01d-1e6f-465a-9042-bfe625ca95af&ads_tcs_channel_id=926&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="france-24-en" tvg-name="france-24-en" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/b4e13e24-5808-4dbb-8239-bf72c9611650.jpeg" group-title="B Noticias""Noticias" , France 24 FAST English
+https://amg00106-amg00106c1-rakuten-uk-4654.playouts.now.amagi.tv/playlist/amg00106-france24fast-france24-rakutenuk/playlist.m3u8?ads_amagi_channel=938&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=6311&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=1ac274f8-c4d9-49b3-9495-47bd14f44305&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a" tvg-name="the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/66f04592-6574-4afa-8ad4-06b8e5387d47.jpeg" group-title="B Noticias""Noticias" , The Guardian
+https://the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6437/master.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_name=the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a_es&ads.rtv_content_id=6438&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=4671992b-9569-43fa-840e-c3087555d694&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6438&publishing_platform_id=5
+
+
+#EXTINF:-1 tvg-id="euronews-live-spa" tvg-name="euronews-live-spa" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/c5d844e3-4f48-4da9-85aa-d13c432761ae.png" group-title="B Noticias""Noticias" , Euronews EN DIRECTO
+https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiYTczODZlNDItNmI4Mi00ZDk3LThjNGYtM2NkMzk0M2IzMGFkIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjo1fQ%3D%3D/26034/euronews-es.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=euronews-live-spa_es&ads.rtv_content_id=6571&ads.rtv_content_language=spa&ads.rtv_language=spa&ads.rtvid=271859&ads.streaming_id=a7386e42-6b82-4d97-8c4f-3cd3943b30ad&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6571&publishing_platform_id=5
+
+#EXTINF:-1 tvg-id="actualidad-360" tvg-name="actualidad-360" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/6e42888b-dbe7-4acc-a07e-9cd81d3de1b7.jpeg" group-title="B Noticias""Noticias" , Actualidad 360
+https://amg01821-amg01821c27-rakuten-gb-8652.playouts.now.amagi.tv/playlist/amg01821-lovetvfast-lovenews-rakutengb/playlist.m3u8?ads_amagi_channel=1031&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=6987&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=f8dde0a8-caea-4907-b997-ba358f274c74&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="the-reuters-60" tvg-name="the-reuters-60" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/c3defe95-3188-4b5d-9cf6-68ca7b3e1767.jpeg" group-title="B Noticias""Noticias" , The Reuters 60
+https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-rakutenuk/playlist.m3u8?ads_amagi_channel=481&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=12&ads_rtv_content_id=5789&ads_rtv_content_language=deu&ads_rtvid=271859&ads_streaming_id=132e1a8a-0d72-485f-b118-a3e0abc2e9eb&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="revry-news" tvg-name="revry-news" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/3f6c9f74-ee6f-43b9-959e-f63992e2e83d.png" group-title="B Noticias""Noticias" , Revry News
+https://dcb264a4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1JldnJ5TmV3c19ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB12&ads.content_genre=news&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=0&ads.rtv_content_id=1302&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=2fbe8c1f-1413-431f-ac67-00166d062c33&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=616
+
+#EXTINF:-1 tvg-id="bloomberg-originals-new" tvg-name="bloomberg-originals-new" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d6c3cf95-3570-44fa-a3db-ca215ded6396.jpeg" group-title="B Noticias""Noticias" , Bloomberg Originals
+https://www.bloomberg.com/media-manifest/streams/qt.m3u8
+
+#EXTINF:-1 tvg-id="bloomberg-tv-plus" tvg-name="bloomberg-tv-plus" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/80bb6ac5-9dbf-44fb-8716-dd84aec360f8.jpeg" group-title="B Noticias""Noticias" , Bloomberg TV+
+https://86ebec83.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0Jsb29tYmVyZ1RWUGx1c19ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB12&ads.content_genre=business%2Cnews&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_content_id=6958&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=65f4bd32-6866-4868-8c6a-8adb933aac23&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=1511
+
+#EXTINF:-1 tvg-id="cgtn-es" tvg-name="cgtn-es" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/830975d8-58b0-443f-a276-f9eb93ef9364.jpeg" group-title="B Noticias""Noticias" , CGTN
+https://amg01314-cgtn-amg01314c3-rakuten-uk-1318.playouts.now.amagi.tv/cgtn-es-rakuten/playlist.m3u8?ads_amagi_channel=878&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5546&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=b558817a-af86-412b-914a-b87f00aec647&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="africanews-eng" tvg-name="africanews-eng" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/6941bdf2-110a-42b1-9906-b48cff32d456.png" group-title="B Noticias""Noticias" , Africanews
+https://africanews-eng-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6576/bitok/eyJzdGlkIjoiZWU4YWZkOGItNmM5ZS00ZDNlLTg1YmUtMzc3MzdkYmE1Y2I2IiwibWt0IjoiZXMiLCJjaCI6NjU4OCwicHRmIjo1fQ%3D%3D/26036/africanews-en.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=africanews-eng_es&ads.rtv_content_id=6588&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=ee8afd8b-6c9e-4d3e-85be-37737dba5cb6&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6588&publishing_platform_id=5
+
+#EXTINF:-1 tvg-id="cgtn" tvg-name="cgtn" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/82a28e14-7f41-4a39-b6b9-57de69feb0ef.jpeg" group-title="B Noticias""Noticias" , CGTN
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8?ads_amagi_channel=852&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5004&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=bd076c19-f664-49ed-b2f2-b2bd01441594&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="newsworld-spa" tvg-name="newsworld-spa" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/4939210a-0bec-4dd9-9ea4-40ed09db1dbc.jpeg" group-title="B Noticias""Noticias" , NewsWorld
+https://amg01076-amg01076c25-rakuten-es-8818.playouts.now.amagi.tv/playlist/amg01076-lightning-newsworldspanish-rakutenes/playlist.m3u8?ads_amagi_channel=1036&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=7038&ads_rtv_content_language=spa&ads_rtvid=271859&ads_streaming_id=17a24bb2-173e-41f9-8724-f18947ab99de&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="el-pais" tvg-name="el-pais" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/2ed79327-afc6-47cb-9e5a-5b8c67aa60ff.jpeg" group-title="B Noticias""Noticias" , El País
+https://daiconnect.com/live/hls/tvup/rk-elpais/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5598&ads_rtv_content_language=spa&ads_streaming_id=f734c01d-1e6f-465a-9042-bfe625ca95af&ads_tcs_channel_id=926&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="france-24-en" tvg-name="france-24-en" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/b4e13e24-5808-4dbb-8239-bf72c9611650.jpeg" group-title="B Noticias""Noticias" , France 24 FAST English
+https://amg00106-amg00106c1-rakuten-uk-4654.playouts.now.amagi.tv/playlist/amg00106-france24fast-france24-rakutenuk/playlist.m3u8?ads_amagi_channel=938&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=6311&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=1ac274f8-c4d9-49b3-9495-47bd14f44305&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
+
+#EXTINF:-1 tvg-id="the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a" tvg-name="the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/66f04592-6574-4afa-8ad4-06b8e5387d47.jpeg" group-title="B Noticias""Noticias" , The Guardian
+https://the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6437/master.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_name=the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a_es&ads.rtv_content_id=6438&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=4671992b-9569-43fa-840e-c3087555d694&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6438&publishing_platform_id=5
 
 
 
