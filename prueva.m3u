@@ -75,11 +75,7 @@ https://content.uplynk.com/channel/9deaf22aaa33461f9cac22e030ed00ec.m3u8
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
 
 
-#EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat-logo.com/logo/tv/bb/bloomberg-quicktake-us.png" tvg-name="Bloomberg Quicktake" group-title="Business",Bloomberg Quicktake
-https://www.bloomberg.com/media-manifest/streams/qt.m3u8
 
-#EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat-logo.com/logo/tv/bb/blommberg-tv-us.png" tvg-name="Bloomberg TV (Live Event)" group-title="Business",Bloomberg TV (Live Event)
-https://www.bloomberg.com/media-manifest/streams/us-event.m3u8
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="Movies",24 Hour Free Movies (720p)
 https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8?checkedby:iptvcat.com
