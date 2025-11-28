@@ -216,12 +216,6 @@ https://2-fss-1.streamhoster.com/pl_154/amlst:205448-2145652/rightnowtv.m3u8?che
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/gh1ghp4.png" group-title="Entertainment",Royal Time Television (1080p)
 https://tixbolt.com/royaltv/index.fmp4.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="Undefined",NBC 5 Memphis TN (WMC)
-https://dai2-playlistserver.aws.syncbak.com/playlist/18497172/master.m3u8?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkdyYXkyMDE2MDgyOSJ9.eyJtaWQiOiIxODQ5NzE3MiIsIm1kNSI6IjYzOWYxNjJjOTZjZjJmZWFmYjQ1YWY1NTA4MzhmMGQ4IiwiaWF0IjoxNTk0MDU4Mjc4LCJpc3MiOiJTeW5jYmFrIChURykifQ.m34pXxraDlVLkgkAtFOwXbZ4DqUaAXQjOrumoMi2Fso&checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/Z4UD1O7.png" group-title="Undefined",NBC 9 Denver CO (KUSA) (1080p)
-https://livevideo.tegnadigital.com/kusa/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/KUSA/elvs/live.m3u8?checkedby:iptvcat.com
-
 #EXTINF:-2 tvg-id="canal de  las estrellas" tvg-logo="https://imgur.com/aHciKfK.png" group-title="CANALES ESPANOL",canal de  las estrellas
 https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 
@@ -390,9 +384,6 @@ https://a883593c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdX
 
 #EXTINF:-1 tvg-id="motorsport-tv-en" tvg-name="motorsport-tv-en" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/d1e02c44-7aa4-443e-aa8d-e5bd1389b9a3.jpeg" group-title="Deportes" , Motorsport.tv
 https://25dee28f.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X01vdG9yc3BvcnR0di0xX0hMUw/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB17&ads.content_genre=sports&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=0&ads.rtv_content_id=4668&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=5edddabf-800f-47f8-9599-beacc3ce9c41&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=2018
-
-#EXTINF:-1 tvg-id="racer-international" tvg-name="racer-international" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/e99fd425-48f6-4ced-b550-a9faca315a4d.jpeg" group-title="Deportes" , RACER International
-https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-rakutenus/playlist.m3u8?ads_amagi_channel=872&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB17&ads_content_genre=sports&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5458&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=8a854858-e438-4fc0-b8e4-3804c733bc10&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
 
 #EXTINF:-1 tvg-id="red-bull-tv-es" tvg-name="red-bull-tv-es" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/cf356519-2a5a-4d5e-9737-e133f5c5a5c8.jpeg" group-title="Deportes" , Red Bull TV
 https://73554b8d.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX1JlZEJ1bGxUVl9ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB17&ads.content_genre=entertainment%2Csports&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_content_id=6759&ads.rtv_content_language=spa&ads.rtvid=271859&ads.streaming_id=dad32be6-f7e0-4adf-a4c6-667014b3b730&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=1985
@@ -588,8 +579,6 @@ https://the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a-es.fast.rakuten.tv/v1/
 #EXTINF:-4, tvg-id="" tvg-logo"https://www.lyngsat.com/logo/tv/cc/cosmovision-co.png" tvg-name="Cosmovision" group-title="Colombia",Cosmovision
 https://videohls2.cosmovision.tv/hls/sd_720p2628kbs/index.m3u8
 
-#EXTINF:-4, tvg-id="" tvg-logo="logo" tvg-name="CineLife" group-title="Cinema",CineLife
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/cinelife/playlist.m3u8
 
 #EXTINF:-4, tvg-id="" tvg-logo="https://www.lyngsat-logo.com/logo/tv/cc/circle-us.png" tvg-name="Circle" group-title="Local",Circle OPT-1
 https://circle-roku.amagi.tv/playlist.m3u8
@@ -598,8 +587,6 @@ https://circle-roku.amagi.tv/playlist.m3u8
 https://circle-samsung.amagi.tv/playlist.m3u8
 
 
-#EXTINF:-4, tvg-id="" tvg-logo="logo" tvg-name="Extrema TV" group-title="Cinema",Extrema TV
-http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/chunklist_w2066641111.m3u8
 
 #EXTINF:-4, Festiva Television Azteca Music Video
 http://k4.usastreams.com/festivatelevision/AztecaMusicVideo/playlist.m3u8
@@ -902,9 +889,7 @@ https://val04.ride.com.ar/tvmia/an353/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://streamyes.alsolnet.com/esportsmax/live/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", Esports Max 2 | Rek TV
 https://streamlov.alsolnet.com/rektv/live/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes" tvg-logo="logo", FanDuel TV
-https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TVGindex_1.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes" tvg-logo="logo", FanDuel Racing
+
 https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX en Tubi
 https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
@@ -2040,20 +2025,9 @@ https://cdn.igocast.com/channel8_hls/channel8_master.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="UN" tvg-logo="https://f9q4g5j6.ssl.hwcdn.net/5f9c1efa49020443150ee563" group-title="Deportes""Sport",Outside TV
 https://outsidetv-outside-localnow.amagi.tv/localnow.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Deportes""Sport",Red Bull TV
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Deportes""Sport",Red Bull TV
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_928.m3u8?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Deportes""Sport",Red Bull TV
-http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8?checkedby:iptvcat.com
-
 #EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Deportes""Sport",Red Bull TV,SPORT : Red Bull TV,SPORT | Red Bull TV
 http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Red Bull TV (720p)
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8?denmstv.m3u8&checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/hxxjMPJ.jpg" group-title="Deportes""Sport",SPORT : Dubai Sports 3,SPORT | Dubai Sports 3
 http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/index.m3u8?checkedby:iptvcat.com
@@ -2113,10 +2087,7 @@ https://aym-as.otteravision.com/aym/as/as.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://streamyes.alsolnet.com/esportsmax/live/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Esports Max 2 | Rek TV
 https://streamlov.alsolnet.com/rektv/live/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", FanDuel TV
-https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TVGindex_1.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", FanDuel Racing
-https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 #EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX en Tubi
 https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 
@@ -2145,8 +2116,6 @@ https://v3.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=NRRQ2hPg25W_s
 https://e4.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=60SHB__KlYS4dcunulTwrA&expires=1760650186&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
 
 
-#EXTINF:-1 tvg-id="RedBullTV.at@SD" tvg-logo="https://i.postimg.cc/8c78JM28/image.png" group-title="Deportes""Sports",Red Bull TV SD
-https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ACCDigitalNetwork.us" tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes""Sports", ACC Digital Network
 https://livetv-fa.tubi.video/accdn2/playlist.m3u8
@@ -2206,14 +2175,6 @@ https://cdn-01.bonus-tv.ru/gsl/playlist.m3u8
 #EXTINF:-1 tvg-id="ESPNU.us" tvg-logo="https://i.imgur.com/HiBrysh.png" group-title="Deportes""Sports", ESPNU
 https://fl7.moveonjoy.com/ESPN_U/index.m3u8
 
-#EXTINF:-1 tvg-id="FanDuelRacing.us@SD" tvg-logo="" group-title="Deportes""Sports", FanDuel Racing SD
-https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8
-
-#EXTINF:-1 tvg-id="FanDuelSportsNetwork.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/FanDuel_Sports_Network_logo.svg/330px-FanDuel_Sports_Network_logo.svg.png" group-title="Deportes""Sports", FanDuel Sports Network
-https://fl7.moveonjoy.com/PAC_12/index.m3u8
-
-#EXTINF:-1 tvg-id="FanDuelTV.us" tvg-logo="" group-title="Deportes""Sports", FanDuel TV
-https://fl7.moveonjoy.com/TVG/index.m3u8
 
 #EXTINF:-1 tvg-id="FBTV.tr@SD" tvg-logo="https://i.imgur.com/qBVqtYd.png" group-title="Deportes""Sports", FB TV SD
 http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
@@ -2348,9 +2309,6 @@ http://194.143.148.28:8080/MatchArena/index.m3u8
 #EXTINF:-1 tvg-id="Match4.hu" tvg-logo="https://i.imgur.com/hzexBLX.png" group-title="Deportes""Sports", Match4
 http://194.76.186.33:8000/play/a04d/index.m3u8
 
-#EXTINF:-1 tvg-id="MLB.us" tvg-logo="https://i.imgur.com/ym3su2J.png" group-title="Deportes""Sports", MLB
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e66968a70f34c0007d050be/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c29dbd3-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0f1d3baf-2f1b-47d7-9966-3e92a98f1c8a
-
 
 #EXTINF:-1 tvg-id="MMATVcom.ru@SD" tvg-logo="https://i.imgur.com/QhdxNsB.png" group-title="Deportes""Sports", MMA-TV.com SD
 https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8
@@ -2377,17 +2335,10 @@ https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/6058
 #EXTINF:-1 tvg-id="NauticalChannel.it" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Deportes""Sports", Nautical Channel
 https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 
-#EXTINF:-1 tvg-id="NBATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/512px-NBA_TV.svg.png" group-title="Deportes""Sports", NBA TV
-https://fl7.moveonjoy.com/NBA_TV/index.m3u8
 
 #EXTINF:-1 tvg-id="NBATVCanada.ca@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a4/NBA_TV_Canada_2020.png" group-title="Deportes""Sports", NBA TV Canada SD
 http://user.scalecdn.co:8080/live/54706135/09221986/3092.m3u8
 
-#EXTINF:-1 tvg-id="NBCSportsBayArea.us" tvg-logo="https://i.imgur.com/MTgUVKx.png" group-title="Deportes""Sports", NBC Sports Bay Area
-https://tvpass.org/live/nbc-sports-bay-area/hd
-
-#EXTINF:-1 tvg-id="NBCSportsBoston.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/NBC_Sports_Boston.png/512px-NBC_Sports_Boston.png" group-title="Deportes""Sports", NBC Sports Boston
-https://tvpass.org/live/nbc-sports-boston/hd
 
 #EXTINF:-1 tvg-id="NBCSportsPhiladelphia.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/NBC_Sports_Philadelphia.png/512px-NBC_Sports_Philadelphia.png" group-title="Deportes""Sports", NBC Sports Philadelphia
 https://tvpass.org/live/nbc-sports-philadelphia/hd
@@ -2497,8 +2448,6 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01201-cinedigmenterta-realmadrid-ci
 #EXTINF:-1 tvg-id="RealitateaSportiva.ro@SD" tvg-logo="https://i.imgur.com/BaEyZto.png" group-title="Deportes""Sports", Realitatea Sportiva SD
 https://stream.realitatea.net/realitatea/sportiva_md/ts:playlist.m3u8
 
-#EXTINF:-1 tvg-id="RedBullTV.at" tvg-logo="https://i.postimg.cc/8c78JM28/image.png" group-title="Deportes""Sports", Red Bull TV
-https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Rete8Sport.it@SD" tvg-logo="https://www.lyngsat.com/logo/tv/rr/rete-8-sport-it.png" group-title="Deportes""Sports", Rete 8 Sport SD
 https://uvotv-aniview.global.ssl.fastly.net/10010/live/hls/rete8sport/playlist.m3u8
@@ -2539,8 +2488,6 @@ http://49.113.179.174:4022/udp/238.125.2.142:5140
 #EXTINF:-1 tvg-id="SolhSports.af" tvg-logo="https://www.lyngsat.com/logo/tv/ss/solhsports-af.png" group-title="Deportes""Sports", Solh Sports
 https://wo.cma.footballii.ir/hls2/solh.m3u8
 
-#EXTINF:-1 tvg-id="SonySportsTen5.in" tvg-logo="https://i.imgur.com/40BbQUd.png" group-title="Deportes""Sports" user-agent="stream", Sony Sports Ten 5
-http://103.81.104.118/hls/stream10.m3u8
 
 #EXTINF:-1 tvg-id="SOSKanalPlus.rs" tvg-logo="https://i.imgur.com/9SD40uH.png" group-title="Deportes""Sports", SOS Kanal Plus
 https://53be5ef2d13aa.streamlock.net/soskanalplus/soskanalplus.stream/playlist.m3u8
@@ -2614,22 +2561,6 @@ http://62.210.211.188:2095/play/a00q
 #EXTINF:-1 tvg-id="VarzeshTV.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/f/f5/Iribvarzesh2022.png/240px-Iribvarzesh2022.png" group-title="Deportes""Sports", Varzesh TV
 https://lenz.splus.ir/PLTV/88888888/224/3221226845/index.m3u8
 
-#EXTINF:-1 tvg-id="VitalBasketball.ru" tvg-logo="https://i.imgur.com/E67CY0d.png" group-title="Deportes""Sports", Vital Basketball
-https://vslive.pw/stream/48684/index.m3u8
-
-#EXTINF:-1 tvg-id="VitalDrive.ru" tvg-logo="https://i.imgur.com/XoR9zLh.png" group-title="Deportes""Sports", Vital Drive
-https://autopilot.catcast.tv/content/37909/index.m3u8
-
-#EXTINF:-1 tvg-id="VitalFootball.ru" tvg-logo="https://i.imgur.com/wXf8nNf.png" group-title="Deportes""Sports", Vital Football
-https://vslive.pw/stream/48682/index.m3u8
-
-#EXTINF:-1 tvg-id="VitalPlus.ru" tvg-logo="https://i.imgur.com/7NTLpDt.png" group-title="Deportes""Sports", Vital Plus
-https://vslive.pw/stream/48683/index.m3u8
-
-#EXTINF:-1 tvg-id="VitalSport.ru" tvg-logo="https://i.imgur.com/2Kinxqb.png" group-title="Deportes""Sports", Vital Sport
-https://vslive.pw/stream/48527/index.m3u8
-
-
 #EXTINF:-1 tvg-id="W14DKD5.us" tvg-logo="https://i.imgur.com/D4mZ8ll.png" group-title="Deportes""Sports", W14DK-D5
 https://2-fss-2.streamhoster.com/pl_118/204972-2205186-1/playlist.m3u8
 
@@ -2661,13 +2592,7 @@ https://tvr-tvrsport.cdn.zitec.com/live/tvrsport/main.m3u8
 
 
 
-#EXTINF:-1 tvg-id="FanDuelRacing.us@SD" tvg-logo="" group-title="Deportes""Sports",FanDuel Racing
-https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8
 
-
-
-#EXTINF:-1 tvg-id="FanDuelSportsNetwork.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/FanDuel_Sports_Network_logo.svg/330px-FanDuel_Sports_Network_logo.svg.png" group-title="Deportes""Sports",FanDuel Sports Network
-https://fl1.moveonjoy.com/PAC_12/index.m3u8
 
 #EXTINF:-32 tvg-id="DEPORTES" tvg-logo="https://imgur.com/gPm5h9q.png" group-title="Deportes""DEPORTES", DEPORTES
 https://amg00658-amg00658c10-canelatv-international-7279.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-deporteslt-canelatvinternational/cb7d3e1e7b736f8f99ca376cd2f142f6d1043481573ad1666aad5ec227c11d53d4bdf397e718be6f0abd40a33e40340d0136d41cc07c11dfb923f6056b3b5464e4fca27ad9871202a2bf56742cb7710e19f80a0cc0541362d5ec2d0d8716bc6d4a46bb5e200564cdf522d5122fb99c1ad72672debdaa346a2605468f2e05a7ff03f6e0e05944c66cbfb10248854c14b1d30090cb19b887ca5898519274a540949bf189d60dd08f9831b456b332591520799ad434c0c805e58ecf3e3c9824291f443f8cc097f05a4ee52d220ca28fa1d76cf912f19d3c916545df6afa61a56ae401c800a49326cacb92fe601074f39e220b4da1f5b0b5f9203db96afed082b71a7f98f81174468779ce784052f3f1c600f6a77ff49802dfc303723cc5874c98988d8feebe8a5f9d22cfb590f25f475d397168eb5cb28a52c83dd26aadf10633503f20c7f87be5dc943453664682f218be571abc8adbd1dc0a638731430fb82d8d5a0769816d3429b560fa9f6f6f8c755380363bff0b6fff2896ad3fcab7c9ec103ab6c7b5339500e1a006dec917ba522c4b0ba5f32f461f2017b5ed691d2078b1268eb29ad37d637d842b3948a1295a231655202884efee7e928dc1275d24c4433362781914e47cbc0bf12139cdaa547ca9c1277b9712296dc7aa3a4f536f97b2d1cbe784812cb10eb3af9d594f5b0a43c4c26a3c38187cbcf9b74d6a737f4f890c650c8e065456e5aaedea948960c9935e6759081b4ecaea1e4d05533c3644cbd020e057ec9712ae888a72f8afdc420bd567e3361990868837b8f5d793064fb1ba471562a0d625ee7a398842877cc6812698f87e2e28116c0482825df45af9f89fc4209565ed6c0b6ce575bed3b2e7872806a9c10463733a54117e407f6359eb8d9b37560999d64dd154e8ef5abe5114626f35b9ac341ed7b8394ce676140682afc48ca1cf7960e966e67ac46543eb173a27efc837fd90f094de827c5f14d6a6a12ee9f268e05664028e18c6e9628b74fbd101a3467c15646a046f/23/1920x1080_6423560/index.m3u8
@@ -2690,7 +2615,7 @@ https://59d39900ebfb8.streamlock.net/8312/8312/.m3u8
 https://e3.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=iQ4Hyk4H__XVyG5A11jn_g&expires=1760650081&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
 
 
-#EXTINF:-1 tvg-id="fifa-plus-es-new" tvg-name="fifa-plus-es-new" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/381e0e02-e3e4-4bf8-af7d-0751ec0cd395.png" group-title="Deportes""Deportes" , FIFA+
+#EXTINF:-1 tvg-id="fifa-plus-es-new" tvg-name="fifa-plus-es-new" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/381e0e02-e3e4-4bf8-af7d-0751ec0cd395.png" group-title="Deportes""Deportes" , AFIFA+
 https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB17&ads.content_genre=sports&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=0&ads.rtv_content_id=6128&ads.rtv_content_language=spa&ads.rtvid=271859&ads.streaming_id=dc2a371d-ef1c-4646-8ef5-7ebb1db4157f&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=1780
 
 #EXTINF:-1 tvg-id="mypadel-tv" tvg-name="mypadel-tv" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/1de5d983-6666-4d47-8f02-b7a898f2ebc3.png" group-title="Deportes""Deportes" , MyPadel TV
@@ -2726,9 +2651,6 @@ https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist
 #EXTINF:-1 tvg-id="red-bull-tv-es" tvg-name="red-bull-tv-es" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/cf356519-2a5a-4d5e-9737-e133f5c5a5c8.jpeg" group-title="Deportes""Deportes" , Red Bull TV
 https://73554b8d.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX1JlZEJ1bGxUVl9ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB17&ads.content_genre=entertainment%2Csports&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_content_id=6759&ads.rtv_content_language=spa&ads.rtvid=271859&ads.streaming_id=dad32be6-f7e0-4adf-a4c6-667014b3b730&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=1985
 
-#EXTINF:-1 tvg-id="motorvision-tv-spanish" tvg-name="motorvision-tv-spanish" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/1c0727dc-17ab-4c8b-b6d9-3b300fb3f458.png" group-title="Deportes""Deportes" , MOTORVISION.TV
-https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/mv_es.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB17&ads._fw_content_genre=sports&ads._fw_content_language=es&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=ppid&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=MotorvisionSpanish&ads.content_livestream=0&ads.csid=zeus_es_motorvision_ssai&ads.gam_correlator=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=4193&ads.rakuten_streaming_id=32b548bc-a1dc-452a-bf17-6fc350993ead&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883004&ads.xumo_contentId=3791&ads.xumo_contentName=MotorvisionSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=3791&ads.xumo_providerName=motorvision-tv-spa-rakutentv&ads.xumo_streamId=88883004
-
  
 #EXTINF:-1 tvg-id="NFL Channel " tvg-logo="https://imgur.com/7AkcPs3.png" group-title="Deportes""Kids",NFL Channel 
 https://aegis-cloudfront-1.tubi.video/4237973e-9e8c-4ec6-95b3-b7363ce39470/playlist.m3u8
@@ -2737,16 +2659,8 @@ https://aegis-cloudfront-1.tubi.video/4237973e-9e8c-4ec6-95b3-b7363ce39470/playl
 https://fl1.moveonjoy.com/ESPN_U/index.m3u8
 #EXTINF:-1 tvg-id="A ESPNews.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ESPNews.svg/512px-ESPNews.svg.png" group-title="Deportes""News;Sports",A ESPNews (720p)
 https://fl1.moveonjoy.com/ESPN_NEWS/index.m3u8
-#EXTINF:-1 tvg-id="FanDuelRacing.us@SD" tvg-logo="" group-title="Deportes""Sports",FanDuel Racing
-https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8
-#EXTINF:-1 tvg-id="FanDuelSportsNetwork.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/FanDuel_Sports_Network_logo.svg/330px-FanDuel_Sports_Network_logo.svg.png" group-title="Deportes""Sports",FanDuel Sports Network
-https://fl1.moveonjoy.com/PAC_12/index.m3u8
-#EXTINF:-1 tvg-id="FanDuelTV.us@SD" tvg-logo="" group-title="Deportes""Sports",FanDuel TV (720p)
+
 https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TVGindex_1.m3u8
-#EXTINF:-1 tvg-id="FIFAPlus.uk@Poland" tvg-logo="https://i.imgur.com/l5iax42.png" group-title="Deportes""Sports",FIFA plus
-https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
-#EXTINF:-1 tvg-id="FITE247.us@SD" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="Deportes""Sports",FITE 24/7 (1080p)
-https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 
 
 
@@ -2755,9 +2669,6 @@ https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 #EXTINF:-1 tvg-id= "13" tvg-logo="https://imgur.com/HjKEYU7.png"  group-title="Deportes""Deporte (Chile) (🇨🇱)",Deporte
 https://origin.dpsgo.com/ssai/event/uFiYkh4CQPCPgbs7WPKhXw/master.m3u8
 
-
-#EXTINF:-1  tvg-name="NBA TV SD" tvg-id="nba-tv-usa" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nba-tv-icon-us.png?raw=true" group-title="Deportes""TheTVApp",NBA TV SD
-https://e2.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8?token=5UUmhc5F4YPrCIZCxXGsgA&expires=1760650899&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
 
 
 
@@ -2950,8 +2861,7 @@ https://fl1.moveonjoy.com/PAC_12/index.m3u8
 https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TVGindex_1.m3u8
 #EXTINF:-1 tvg-id="FIFAPlus.uk@Poland" tvg-logo="https://i.imgur.com/l5iax42.png" group-title="Deportes""Sports",FIFA plus
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
-#EXTINF:-1 tvg-id="FITE247.us@SD" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="Deportes""Sports",FITE 24/7 (1080p)
-https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
+
 #EXTINF:-1 tvg-id="FTV.bo@SD" tvg-logo="https://i.imgur.com/YOr1Oac.png" group-title="Deportes""Sports",FTV
 https://master.tucableip.com/ftvhd/index.m3u8
 #EXTINF:-1 tvg-id="FuboSportsNetwork.us@SD" tvg-logo="https://i.imgur.com/qFNRJLb.png" group-title="Deportes""Sports",Fubo Sports Network (1080p) [Geo-blocked]
@@ -2990,9 +2900,6 @@ http://146.59.85.40:89/m4hd/index.m3u8
 http://ares.mnet.mk/hls/mnet-sport.m3u8
 #EXTINF:-1 tvg-id="MadeinBOTV.it@SD" tvg-logo="https://i.postimg.cc/TY4qcYz5/madeinbotv.png" group-title="Deportes""Sports",MadeinBO TV (1080p)
 https://srvx1.selftv.video/dmchannel/live/playlist.m3u8
-#EXTINF:-1 tvg-id="MLB.us@SD" tvg-logo="https://i.imgur.com/ym3su2J.png" group-title="Deportes""Sports",MLB
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e66968a70f34c0007d050be/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c29dbd3-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0f1d3baf-2f1b-47d7-9966-3e92a98f1c8a
-
 
 #EXTINF:-1 tvg-id="MLBNetwork.us@SD" tvg-logo="https://i.imgur.com/sA5V39D.png" group-title="Deportes""Sports", A MLB Network
 https://fl1.moveonjoy.com/MLB_NETWORK/index.m3u8
@@ -3009,12 +2916,6 @@ https://www.opencaster.com/resources/hls_stream/hipodromojcp2.m3u8
 
 #EXTINF:-1 tvg-id="NauticalChannel.it@SD" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Deportes""Sports",Nautical Channel (720p)
 https://a-cdn.klowdtv.com/live2/nautical_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="NBCSportsBayArea.us@SD" tvg-logo="https://i.imgur.com/MTgUVKx.png" group-title="Deportes""Sports",NBC Sports Bay Area (720p) [Not 24/7]
-https://tvpass.org/live/nbc-sports-bay-area/hd
-#EXTINF:-1 tvg-id="NBCSportsBoston.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/NBC_Sports_Boston.png/512px-NBC_Sports_Boston.png" group-title="Deportes""Sports",NBC Sports Boston (1080p) [Not 24/7]
-https://tvpass.org/live/nbc-sports-boston/hd
-#EXTINF:-1 tvg-id="NBCSportsPhiladelphia.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/NBC_Sports_Philadelphia.png/512px-NBC_Sports_Philadelphia.png" group-title="Deportes""Sports",NBC Sports Philadelphia (720p) [Not 24/7]
-https://tvpass.org/live/nbc-sports-philadelphia/hd
 #EXTINF:-1 tvg-id="NFLNetwork.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/NFL_Network_logo.svg/512px-NFL_Network_logo.svg.png" group-title="Deportes""Sports",NFL Network
 https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8
 #EXTINF:-1 tvg-id="NFLSundayTicket1.us@SD" tvg-logo="https://i.imgur.com/OhHxZrE.png" group-title="Deportes""Sports",NFL Sunday Ticket 1
@@ -3085,14 +2986,6 @@ http://178.33.11.6:8696/live/rtshsport/playlist.m3u8
 https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SolhSports.af@HD" tvg-logo="https://www.lyngsat.com/logo/tv/ss/solhsports-af.png" group-title="Deportes""Sports",Solh Sports
 https://wo.cma.footballii.ir/hls2/solh.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen1.in@SD" tvg-logo="https://i.imgur.com/hWo7Ba4.png" group-title="Deportes""Sports",Sony Sports Ten 1 (1080p)
-http://87.255.35.150:18926
-#EXTINF:-1 tvg-id="SonySportsTen2.in@SD" tvg-logo="https://i.imgur.com/W96KVqu.png" group-title="Deportes""Sports",Sony Sports Ten 2 (1080p)
-http://87.255.35.150:18927
-#EXTINF:-1 tvg-id="SonySportsTen3.in@SD" tvg-logo="https://i.imgur.com/vG19HxD.png" group-title="Deportes""Sports",Sony Sports Ten 3 (1080p)
-http://87.255.35.150:18848
-#EXTINF:-1 tvg-id="SonySportsTen5.in@SD" tvg-logo="https://i.imgur.com/40BbQUd.png" group-title="Deportes""Sports" http-user-agent="stream",Sony Sports Ten 5 (1080p)
-#EXTVLCOPT:http-user-agent=stream
 http://87.255.35.150:18818
 #EXTINF:-1 tvg-id="SOSKanalPlus.rs@SD" tvg-logo="https://i.imgur.com/9SD40uH.png" group-title="Deportes""Sports",SOS Kanal Plus (720p)
 https://53be5ef2d13aa.streamlock.net/soskanalplus/soskanalplus.stream/playlist.m3u8
@@ -3128,24 +3021,6 @@ https://tvturf4.janus.cl/playlist/stream.m3u8?d=w&id=
 https://unbeaten-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="VarzeshTV.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/f/f5/Iribvarzesh2022.png/240px-Iribvarzesh2022.png" group-title="Deportes""Sports",Varzesh TV
 https://lenz.splus.ir/PLTV/88888888/224/3221226845/index.m3u8
-
-#EXTINF:-1 tvg-id="VitalBasketball.ru@HD" tvg-logo="https://i.imgur.com/E67CY0d.png" group-title="Deportes""Sports",VITAL Basketball [Not 24/7]
-https://vslive.pw/stream/48684/index.m3u8
-
-#EXTINF:-1 tvg-id="WorldofFreesports.de@Poland" tvg-logo="https://i.imgur.com/lta5Mog.png" group-title="Deportes""Sports",World of Freesports
-https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-mainstreammediafreesportsintl-rakuten/CDN/master.m3u8
-
-
-#EXTINF:-1 tvg-id="WorldofFreesports.de@SD" tvg-logo="https://i.imgur.com/lta5Mog.png" group-title="Deportes""Sports",World of Freesports (1080p)
-https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="WorldPokerTour.us@US" tvg-logo="https://i.imgur.com/98kLMjj.png" group-title="Deportes""Sports",World Poker Tour (1080p) [Not 24/7]
-https://d3w4n3hhseniak.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/WPT-DistroTV/150.m3u8
-
-
-#EXTINF:-1 tvg-id="MatchStrana.ru@HD" tvg-logo="https://i.imgur.com/X02s2UE.png" group-title="Deportes""Sports",Матч! Страна
-http://31.148.48.15/Match_Strana/index.m3u8
-
 
 
 
