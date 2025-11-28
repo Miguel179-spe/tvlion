@@ -926,8 +926,7 @@ http://45.5.119.97:12500/play/a04n/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://marqueesports.global.transmit.live/hls/67cb394e6ef201b4705ce294/hls-itc/marquee1/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", PX Sports
 http://45.5.119.97:12500/play/a04m/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes" tvg-logo="logo", Tigo Sports
-http://45.5.119.97:12500/play/a05q/index.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 #EXTINF:-1 group-title="Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tudn-mexico-mx.png", TUDN USA
 https://tkx.mp.lura.live/rest/v2/mcp/video/adstkZj0NvKqzB6e?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n&0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", Sport1 DE | GEO
@@ -1332,8 +1331,6 @@ https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.co
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/galawest/galawest.isml/hls/galawest.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Univision Now" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="logo", Noticias Univision 24/7
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/n247/n247.isml/hls/n247.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Univision Now" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tudn-mexico-mx.png", TUDN USA
-https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/tudn/tudn.isml/hls/tudn.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Univision Now" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/uu/unimas_este.png", Unimás East
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/umaeast/umaeast.isml/hls/umaeast.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Univision Now" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/uu/unimas_este.png", Unimás West
@@ -1362,8 +1359,7 @@ https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.co
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kxln/kxln.isml/hls/kxln.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Univision Now" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wgbo-tv-us-in.svg", Univision 66 Chicago WGBO
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wgbo/wgbo.isml/hls/wgbo.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Univision Now" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="logo", Zona TUDN
-https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/zona/zona.isml/hls/zona.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 #EXTM3U
 #EXTINF:-1 group-title="United Kingdom" tvg-logo="logo", Blaze UK
 https://cors.almoroj.com/https://live-blaze-ssai.simplestreamcdn.com/v1/master/774d979dd66704abea7c5b62cb34c6815fda0d35/blaze-live-broadcast-scte/index.m3u8?0GKUSH_R4IN&DONTSTEAL
@@ -1889,8 +1885,7 @@ https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
 https://ss2.tvrdomi.com:1936/vozzmedianetwork/vozzmedianetwork/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPlata.do@SD" tvg-logo="https://i.imgur.com/r3urUnn.png" group-title="Dominicano""General",TV Plata SD
 https://ss2.tvrdomi.com:1936/tvplata/tvplata/playlist.m3u8
-#EXTINF:-1 tvg-id="TVS.do@SD" tvg-logo="https://i.imgur.com/a2YX1oj.jpg" group-title="Dominicano""Entertainment",TVS SD
-https://imagenuniversaltv.net:3741/live/tvslive.m3u8
+
 #EXTINF:-1 tvg-id="ValleNuevoTV.do@SD" tvg-logo="https://i.imgur.com/RvIkFxp.png" group-title="Dominicano""General",Valle Nuevo TV SD
 https://media.streambrothers.com:1936/8262/8262/playlist.m3u8
 #EXTINF:-1 tvg-id="Vallevision.do@SD" tvg-logo="https://i.imgur.com/lNpgFAU.png" group-title="Dominicano""General",Vallevision SD
@@ -2026,10 +2021,6 @@ https://sportsgrid-plex.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 
 
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",Trace Sports Stars (1080p)
-https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-
-
 
 #EXTINF:0 tvg-country="UN" tvg-logo="https://imgur.com/FWCT4yk.PNG" group-title="Deportes""Sport",A21 Network : Russian Motorsport Television
 https://autopilot.catcast.tv/content/37909/index.m3u8?checkedby:iptvcat.com
@@ -2082,11 +2073,6 @@ http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/inde
 #EXTINF:0 tvg-country="UN" tvg-logo="https://www.samsung.com/us/smg/content/dam/s7/home/televisions-and-home-theater/tvs/tv-plus/07072020/SportsGrid_190x190.png?raw=true" group-title="Deportes""Sport",SportsGrid
 https://sportsgrid-samsungus.amagi.tv/playlist.m3u8?checkedby:iptvcat.
 
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Trace Sport Stars (Australia)
-https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Trace Sports Stars
-https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Астрахань.Ru Sport
 https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v2a1/index.m3u8?checkedby:iptvcat.com
@@ -2164,8 +2150,6 @@ http://45.5.119.97:12500/play/a04n/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://marqueesports.global.transmit.live/hls/67cb394e6ef201b4705ce294/hls-itc/marquee1/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", PX Sports
 http://45.5.119.97:12500/play/a04m/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Tigo Sports
-http://45.5.119.97:12500/play/a05q/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tudn-mexico-mx.png", TUDN USA
 https://tkx.mp.lura.live/rest/v2/mcp/video/adstkZj0NvKqzB6e?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n&0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sport1 DE | GEO
@@ -2655,8 +2639,6 @@ https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="talkSPORT.uk" tvg-logo="https://i.postimg.cc/G2n8bztd/talksport.png" group-title="Deportes""Sports", talkSPORT
 https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TDMSports.mo" tvg-logo="https://i.imgur.com/AsWLf8S.png" group-title="Deportes""Sports", TDM Sports
-https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Teledeporte.es" tvg-logo="https://i.imgur.com/b0H5f62.png" group-title="Deportes""Sports", Teledeporte
 https://d1cctoeg0n48w5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mnixw9wn5ugmv/TeledeporteES.m3u8
@@ -2664,56 +2646,12 @@ https://d1cctoeg0n48w5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:-1 tvg-id="TeletrakTV.cl" tvg-logo="https://i.imgur.com/NoJvlig.png" group-title="Deportes""Sports", Teletrak TV
 https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TelewebionSport.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/%D9%84%D9%88%DA%AF%D9%88%DB%8C_%D8%B4%D8%A8%DA%A9%D9%87_%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86_%D9%88%D8%B1%D8%B2%D8%B4%DB%8C_%DB%B1.png/240px-%D9%84%D9%88%DA%AF%D9%88%DB%8C_%D8%B4%D8%A8%DA%A9%D9%87_%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86_%D9%88%D8%B1%D8%B2%D8%B4%DB%8C_%DB%B1.png" group-title="Deportes""Sports", Telewebion Sport
-https://hidden-mud-9dcf.nhhwkiszzzvcuojxdo.workers.dev/?url=https://live-azd1109.telewebion.com/ek/sport1/live/1080p/index.m3u8
-
-#EXTINF:-1 tvg-id="TelewebionSport2.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/%D9%84%D9%88%DA%AF%D9%88%DB%8C_%D8%B4%D8%A8%DA%A9%D9%87_%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86_%D9%88%D8%B1%D8%B2%D8%B4%DB%8C_%DB%B1.png/240px-%D9%84%D9%88%DA%AF%D9%88%DB%8C_%D8%B4%D8%A8%DA%A9%D9%87_%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86_%D9%88%D8%B1%D8%B2%D8%B4%DB%8C_%DB%B1.png" group-title="Deportes""Sports", Telewebion Sport 2
-https://hidden-mud-9dcf.nhhwkiszzzvcuojxdo.workers.dev/?url=https://live-azd1109.telewebion.com/ek/sport2/live/1080p/index.m3u8
-
-#EXTINF:-1 tvg-id="TelewebionSport3.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/%D9%84%D9%88%DA%AF%D9%88%DB%8C_%D8%B4%D8%A8%DA%A9%D9%87_%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86_%D9%88%D8%B1%D8%B2%D8%B4%DB%8C_%DB%B1.png/240px-%D9%84%D9%88%DA%AF%D9%88%DB%8C_%D8%B4%D8%A8%DA%A9%D9%87_%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86_%D9%88%D8%B1%D8%B2%D8%B4%DB%8C_%DB%B1.png" group-title="Deportes""Sports", Telewebion Sport 3
-https://hidden-mud-9dcf.nhhwkiszzzvcuojxdo.workers.dev/?url=https://live-azd1103.telewebion.com/ek/sport3/live/1080p/index.m3u8
 
 #EXTINF:-1 tvg-id="TenSportsPakistan.pk" tvg-logo="https://i.imgur.com/nnqpYNm.png" group-title="Deportes""Sports", Ten Sports Pakistan
 http://121.91.61.106:8000/play/a04h/index.m3u8
 
-#EXTINF:-1 tvg-id="TennisChannel.us" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Deportes""Sports", Tennis Channel
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TigoSports.sv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Tigo_Sports_2025.png/512px-Tigo_Sports_2025.png" group-title="Deportes""Sports", Tigo Sports
-https://channel03.tigosports.com.sv/out/v1/31f36d52d558475ca18799d8ca5e4b40/index.m3u8
 
-#EXTINF:-1 tvg-id="TJKTV.tr" tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="Deportes""Sports", TJK TV
-https://tjktv-live.tjk.org/tjktv.m3u8
-
-#EXTINF:-1 tvg-id="TJKTV2.tr@SD" tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="Deportes""Sports", TJK TV 2 SD
-https://tjktv-live.tjk.org/tjktv2/tjktv2.m3u8
-
-#EXTINF:-1 tvg-id="TRSport.it" tvg-logo="https://i.imgur.com/ELXmaqg.png" group-title="Deportes""Sports", TR Sport
-https://livetr.teleromagna.it/mia/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TraceSportStars.fr" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Deportes""Sports", Trace Sport Stars
-https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TRTSpor.tr" tvg-logo="https://i.imgur.com/6tv0zxh.png" group-title="Deportes""Sports", TRT Spor
-https://tv-trtspor1.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTSporYildiz.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg/460px-TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg.png" group-title="Deportes""Sports", TRT Spor Yildiz
-https://tv-trtspor2.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TSNTheOcho.ca@SD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1400003R3_20240709T002034SQUARE.png" group-title="Deportes""Sports", TSN The Ocho SD
-https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rds8g35qfqrnv/TSN_The_Ocho.m3u8
-
-#EXTINF:-1 tvg-id="TSN1.ca" tvg-logo="https://i.imgur.com/eRFE0jZ.png" group-title="Deportes""Sports", TSN1
-https://fl7.moveonjoy.com/TSN_1/index.m3u8
-
-#EXTINF:-1 tvg-id="TSN2.ca" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/512px-TSN2.svg.png" group-title="Deportes""Sports", TSN2
-https://fl7.moveonjoy.com/TSN_2/index.m3u8
-
-#EXTINF:-1 tvg-id="TSN3.ca" tvg-logo="https://i.imgur.com/AYza8KO.png" group-title="Deportes""Sports", TSN3
-https://fl7.moveonjoy.com/TSN_3/index.m3u8
-
-#EXTINF:-1 tvg-id="TSN4.ca" tvg-logo="https://i.imgur.com/qJyAWU8.png" group-title="Deportes""Sports", TSN4
-https://fl7.moveonjoy.com/TSN_4/index.m3u8
 
 #EXTINF:-1 tvg-id="TSN5.ca" tvg-logo="https://i.imgur.com/HEzHpzz.png" group-title="Deportes""Sports", TSN5
 https://fl7.moveonjoy.com/TSN_5/index.m3u8
@@ -2732,28 +2670,6 @@ https://dacastmmd.mmdlive.lldns.net/dacastmmd/1b6bbade53634f5a847b953c9adfd102/i
 
 #EXTINF:-1 tvg-id="TVRISport.id" tvg-logo="https://i.postimg.cc/PrqBt2h1/tvrisport.png" group-title="Deportes""Sports", TVRI Sport
 https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
-
-#EXTINF:-1 tvg-id="TVSBowlingNetwork.us" tvg-logo="https://www.watchyour.tv/channels/logo/tvs-bowling-network.jpg" group-title="Deportes""Sports", TVS Bowling Network
-https://rpn.bozztv.com/gusa/gusa-tvsbowling/index.m3u8
-
-#EXTINF:-1 tvg-id="TVSBoxing.us" tvg-logo="https://i.imgur.com/30ZoF75.png" group-title="Deportes""Sports", TVS Boxing
-https://rpn.bozztv.com/gusa/gusa-tvsboxing/index.m3u8
-
-#EXTINF:-1 tvg-id="TVSClassicSports.us" tvg-logo="https://i.imgur.com/auR0Mi6.png" group-title="Deportes""Sports", TVS Classic Sports
-https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8
-
-#EXTINF:-1 tvg-id="TVSSports.us" tvg-logo="https://i.imgur.com/Lwwq62E.png" group-title="Deportes""Sports", TVS Sports
-https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
-
-#EXTINF:-1 tvg-id="TVSSportsBureau.us" tvg-logo="" group-title="Deportes""Sports", TVS Sports Bureau
-https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
-
-#EXTINF:-1 tvg-id="TVSTurbo.us" tvg-logo="https://i.imgur.com/7zYIbU1.png" group-title="Deportes""Sports", TVS Turbo
-https://rpn.bozztv.com/gusa/gusa-tvsturbo/index.m3u8
-
-#EXTINF:-1 tvg-id="TVSWomenSports.us" tvg-logo="https://i.imgur.com/8hC4PfF.png" group-title="Deportes""Sports", TVS Women Sports
-https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
-
 #EXTINF:-1 tvg-id="Unbeaten.us" tvg-logo="https://i.imgur.com/LmkNt3v.png" group-title="Deportes""Sports", Unbeaten
 https://unbeaten-tcl.amagi.tv/playlist.m3u8
 
@@ -2778,8 +2694,6 @@ https://vslive.pw/stream/48683/index.m3u8
 #EXTINF:-1 tvg-id="VitalSport.ru" tvg-logo="https://i.imgur.com/2Kinxqb.png" group-title="Deportes""Sports", Vital Sport
 https://vslive.pw/stream/48527/index.m3u8
 
-#EXTINF:-1 tvg-id="VitalTennis.ru" tvg-logo="https://i.imgur.com/RoCOuhJ.png" group-title="Deportes""Sports", Vital Tennis
-https://vslive.pw/stream/48685/index.m3u8
 
 #EXTINF:-1 tvg-id="W14DKD5.us" tvg-logo="https://i.imgur.com/D4mZ8ll.png" group-title="Deportes""Sports", W14DK-D5
 https://2-fss-2.streamhoster.com/pl_118/204972-2205186-1/playlist.m3u8
@@ -2953,12 +2867,6 @@ https://sportsgrid-plex.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 
 
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",Trace Sports Stars (1080p)
-https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-
-
-
-
 
 
 #EXTINF:0 tvg-country="UN" tvg-logo="https://imgur.com/kg2yRfG.png?raw=true" group-title="Deportes""Sport",Dubai Sports 3
@@ -2997,11 +2905,7 @@ http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/inde
 #EXTINF:0 tvg-country="UN" tvg-logo="https://www.samsung.com/us/smg/content/dam/s7/home/televisions-and-home-theater/tvs/tv-plus/07072020/SportsGrid_190x190.png?raw=true" group-title="Deportes""Sport",SportsGrid
 https://sportsgrid-samsungus.amagi.tv/playlist.m3u8?checkedby:iptvcat.
 
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Trace Sport Stars (Australia)
-https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Trace Sports Stars
-https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Астрахань.Ru Sport
 https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v2a1/index.m3u8?checkedby:iptvcat.com
@@ -3064,8 +2968,7 @@ http://45.5.119.97:12500/play/a04n/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://marqueesports.global.transmit.live/hls/67cb394e6ef201b4705ce294/hls-itc/marquee1/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", PX Sports
 http://45.5.119.97:12500/play/a04m/index.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Tigo Sports
-http://45.5.119.97:12500/play/a05q/index.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tudn-mexico-mx.png", TUDN USA
 https://tkx.mp.lura.live/rest/v2/mcp/video/adstkZj0NvKqzB6e?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n&0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sport1 DE | GEO
@@ -3283,29 +3186,14 @@ https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playl
 http://87.255.35.150:18881
 #EXTINF:-1 tvg-id="Strongman.us@Germany" tvg-logo="https://i.imgur.com/bVQBF6R.png" group-title="Deportes""Sports",Strongman
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e1452156c07b50009d0230e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84af8ae0-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c0be139f-be68-4d55-940e-e5aae0d99e04
-#EXTINF:-1 tvg-id="talkSPORT.uk@SD" tvg-logo="https://i.postimg.cc/G2n8bztd/talksport.png" group-title="Deportes""Sports",talkSPORT (1080p)
-https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8
-#EXTINF:-1 tvg-id="TDMSports.mo@SD" tvg-logo="https://i.imgur.com/AsWLf8S.png" group-title="Deportes""Sports",TDM Sports Ch. 93 (720p)
-https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8
-#EXTINF:-1 tvg-id="Teledeporte.es@SD" tvg-logo="https://i.imgur.com/b0H5f62.png" group-title="Deportes""Sports",Teledeporte (1080p)
-https://d1cctoeg0n48w5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mnixw9wn5ugmv/TeledeporteES.m3u8
-#EXTINF:-1 tvg-id="TeletrakTV.cl@SD" tvg-logo="https://i.imgur.com/NoJvlig.png" group-title="Deportes""Sports",Teletrak (720p)
-https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
-
-
 
 
 
 #EXTINF:-1 tvg-id="TennisChannel.us@SD" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Deportes""Sports",Tennis Channel
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
-#EXTINF:-1 tvg-id="TJKTV.tr@SD" tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="Deportes""Sports",TJK TV (1080p)
-https://tjktv-live.tjk.org/tjktv.m3u8
+
 #EXTINF:-1 tvg-id="TRSport.it@SD" tvg-logo="https://i.imgur.com/ELXmaqg.png" group-title="Deportes""Sports",TR Sport (480p)
 https://livetr.teleromagna.it/mia/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TraceSportStars.fr@HD" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Deportes""Sports",Trace Sport Stars (Australia) (1080p)
-https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TSN2.ca@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/512px-TSN2.svg.png" group-title="Deportes""Sports",TSN2
-https://fl1.moveonjoy.com/TSN_2/index.m3u8
 #EXTINF:-1 tvg-id="TSN3.ca@SD" tvg-logo="https://i.imgur.com/AYza8KO.png" group-title="Deportes""Sports",TSN3
 https://fl1.moveonjoy.com/TSN_3/index.m3u8
 #EXTINF:-1 tvg-id="TSN5.ca@SD" tvg-logo="https://i.imgur.com/HEzHpzz.png" group-title="Deportes""Sports",TSN5
@@ -3314,20 +3202,6 @@ https://fl1.moveonjoy.com/TSN_5/index.m3u8
 https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rds8g35qfqrnv/TSN_The_Ocho.m3u8
 #EXTINF:-1 tvg-id="TurfMovil.cl@SD" tvg-logo="https://i.imgur.com/TwIe4lK.png" group-title="Deportes""Sports",Turf Movil (720p)
 https://tvturf4.janus.cl/playlist/stream.m3u8?d=w&id=
-#EXTINF:-1 tvg-id="TVSBowlingNetwork.us@SD" tvg-logo="https://www.watchyour.tv/channels/logo/tvs-bowling-network.jpg" group-title="Deportes""Sports",TVS Bowling Network (720p)
-https://rpn.bozztv.com/gusa/gusa-tvsbowling/index.m3u8
-#EXTINF:-1 tvg-id="TVSBoxing.us@SD" tvg-logo="https://i.imgur.com/30ZoF75.png" group-title="Deportes""Sports",TVS Boxing (360p)
-https://rpn.bozztv.com/gusa/gusa-tvsboxing/index.m3u8
-#EXTINF:-1 tvg-id="TVSClassicSports.us@SD" tvg-logo="https://i.imgur.com/auR0Mi6.png" group-title="Deportes""Sports",TVS Classic Sports (360p)
-https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8
-#EXTINF:-1 tvg-id="TVSSports.us@SD" tvg-logo="https://i.imgur.com/Lwwq62E.png" group-title="Deportes""Sports",TVS Sports (720p) [Not 24/7]
-https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
-#EXTINF:-1 tvg-id="TVSSportsBureau.us@SD" tvg-logo="" group-title="Deportes""Sports",TVS Sports Bureau (720p)
-https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
-#EXTINF:-1 tvg-id="TVSTurbo.us@SD" tvg-logo="https://i.imgur.com/7zYIbU1.png" group-title="Deportes""Sports",TVS Turbo (360p)
-https://rpn.bozztv.com/gusa/gusa-tvsturbo/index.m3u8
-#EXTINF:-1 tvg-id="TVSWomenSports.us@SD" tvg-logo="https://i.imgur.com/8hC4PfF.png" group-title="Deportes""Sports",TVS Women Sports (720p)
-https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
 #EXTINF:-1 tvg-id="Unbeaten.us@SD" tvg-logo="https://i.imgur.com/LmkNt3v.png" group-title="Deportes""Sports",Unbeaten (1080p)
 https://unbeaten-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="VarzeshTV.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/f/f5/Iribvarzesh2022.png/240px-Iribvarzesh2022.png" group-title="Deportes""Sports",Varzesh TV
