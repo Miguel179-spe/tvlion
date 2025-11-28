@@ -914,8 +914,8 @@ https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TV
 https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX en Tubi
 https://aegis-cloudfront-1.tubi.video/0d2ea257-ada0-4b84-9247-ce1c53eb3f1d/playlist.m3u8
-#EXTINF:-1 group-title="Deportes"  tvg-logo="logo", FUTV CR
-http://45.5.119.97:12500/play/a066/index.m3u8?0GKUSH_R4IN&DONTSTEAL
+
+
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", ITV Deportes
 https://thm-it-aymsports.otteravision.com/thm/it/it.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/ll/latin_american_sports_us.png", Latin America Sports
@@ -2115,20 +2115,8 @@ https://bein-beinxtrasports-firetv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 https://e4.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=Kz1f5xsWYYIdMAFiNMtR6Q&expires=1760647146&user_id=QTFXeFpMb2x0WkpKNjBTQ3N6UVJOOGR1UGh5S2hjMWc0M3J6SVVpVw==
 
 
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",FOX Sports
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a74b8e1e22a61737979c6bf/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28f173-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=46a3b8ff-5a4a-4952-bb4d-9461224acd54&checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",FOX Sports
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a74b8e1e22a61737979c6bf/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28f173-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=46a3b8ff-5a4a-4952-bb4d-9461224acd54&serverSideAds=false&checkedby:iptvcat.com
-
 #EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",Golf Channel (360p)
 https://tvpass.org/live/GolfChannel/sd?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",GolfPass
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65493029ab052400089e9d2f/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c291881-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=fc355a72-e401-4038-a2fd-7378aedc3a6f&checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",GolfPass
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65493029ab052400089e9d2f/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c291881-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=fc355a72-e401-4038-a2fd-7378aedc3a6f&serverSideAds=false&checkedby:iptvcat.com
 
 
 #EXTINF:-1 tvg-id="30AGolfKingdom.us" tvg-logo="https://golfkingdom.net/wp-content/uploads/2022/04/golf-kingdom-st.jpg" group-title="Deportes""Deportes""Sports", 30A Golf Kingdom
@@ -2162,10 +2150,10 @@ https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TV
 https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX en Tubi
 https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX en Tubi
+
+#EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX 
 https://aegis-cloudfront-1.tubi.video/0d2ea257-ada0-4b84-9247-ce1c53eb3f1d/playlist.m3u8
-#EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="logo", FUTV CR
-http://45.5.119.97:12500/play/a066/index.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", ITV Deportes
 https://thm-it-aymsports.otteravision.com/thm/it/it.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/ll/latin_american_sports_us.png", Latin America Sports
@@ -2191,18 +2179,7 @@ https://edge-003.streamup.eu/sportitaliain/sisolocalcio/playlist.m3u8?0GKUSH_R4I
 https://v3.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=NRRQ2hPg25W_s__f-F15IA&expires=1760650176&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
 #EXTINF:-1  tvg-name="Fox Business Network HD" tvg-id="fox-business" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-business-us.png?raw=true" group-title="Deportes""TheTVApp",Fox Business Network HD
 https://e4.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=60SHB__KlYS4dcunulTwrA&expires=1760650186&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
-#EXTINF:-1  tvg-name="FOX News Channel SD" tvg-id="fox-news" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-news-us.png?raw=true" group-title="Deportes""TheTVApp",FOX News Channel SD
-https://v1.thetvapp.to/hls/FoxNewsChannel/tracks-v1a1/mono.m3u8?token=lAMayYJGxsRHU2-BXNAH9g&expires=1760650195&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
-#EXTINF:-1  tvg-name="FOX News Channel HD" tvg-id="fox-news" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-news-us.png?raw=true" group-title="Deportes""TheTVApp",FOX News Channel HD
-https://v4.thetvapp.to/hls/FoxNewsChannel/tracks-v1a1/mono.m3u8?token=smbGqRJRisrvOe-FQnYvvg&expires=1760650205&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
-#EXTINF:-1  tvg-name="FOX Sports 1 SD" tvg-id="fox-sports-1" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-1-us.png?raw=true" group-title="Deportes""TheTVApp",FOX Sports 1 SD
-https://v5.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=oDpDDAaVYN1MpQVNpOR3Dg&expires=1760650214&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
-#EXTINF:-1  tvg-name="FOX Sports 1 HD" tvg-id="fox-sports-1" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-1-us.png?raw=true" group-title="Deportes""TheTVApp",FOX Sports 1 HD
-https://v5.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=QY7xwZmAU-apCeL0_496SA&expires=1760650224&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
-#EXTINF:-1  tvg-name="FOX Sports 2 SD" tvg-id="fox-sports-2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-2-us.png?raw=true" group-title="Deportes""TheTVApp",FOX Sports 2 SD
-https://v14.thetvapp.to/hls/FoxSports2/tracks-v1a1/mono.m3u8?token=Yv--Sb1pz-hHdux08nNubA&expires=1760650233&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
-#EXTINF:-1  tvg-name="FOX Sports 2 HD" tvg-id="fox-sports-2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-2-us.png?raw=true" group-title="Deportes""TheTVApp",FOX Sports 2 HD
-https://v12.thetvapp.to/hls/FoxSports2/tracks-v1a1/mono.m3u8?token=_GsdPsBynqE_Mii9r7JpYQ&expires=1760650243&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
+
 
 #EXTINF:-1 tvg-id="RedBullTV.at@SD" tvg-logo="https://i.postimg.cc/8c78JM28/image.png" group-title="Deportes""Sports",Red Bull TV SD
 https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
@@ -2301,26 +2278,10 @@ https://livetv-fa.tubi.video/fox-sports-espanol2/index.m3u8
 #EXTINF:-1 tvg-id="FoxSports2.us@HD" tvg-logo="https://i.imgur.com/LHtxKI8.png" group-title="Deportes""Sports", Fox Sports 2 HD
 http://23.237.104.106:8080/USA_FS2/index.m3u8
 
-#EXTINF:-1 tvg-id="FoxSportsPremium.mx" tvg-logo="https://i.imgur.com/3lOZWeD.png" group-title="Deportes""Sports", Fox Sports Premium
-https://live20.bozztv.com/akamaissh101/ssh101/foxsports/playlist.m3u8
-
-#EXTINF:-1 tvg-id="FTV.bo" tvg-logo="https://i.imgur.com/YOr1Oac.png" group-title="Deportes""Sports", FTV
-https://master.tucableip.com/ftvhd/index.m3u8
 
 #EXTINF:-1 tvg-id="FuboSportsNetwork.us" tvg-logo="https://i.imgur.com/qFNRJLb.png" group-title="Deportes""Sports", Fubo Sports Network
 https://livetv-fa.tubi.video/fubo/master.m3u8
 
-#EXTINF:-1 tvg-id="FUELTV.at" tvg-logo="https://i.imgur.com/I8mviBy.png" group-title="Deportes""Sports", FUEL TV
-https://amg01074-fueltv-amg01074c1-firetv-us-3150.playouts.now.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Futbol.tj" tvg-logo="https://i.imgur.com/RngmCDn.png" group-title="Deportes""Sports", Futbol
-https://live.teleradiocom.tj/8/3m.m3u8
-
-#EXTINF:-1 tvg-id="FUTV.cr" tvg-logo="https://i.imgur.com/f8BkLql.png" group-title="Deportes""Sports", FUTV
-https://live20.bozztv.com/akamaissh101/ssh101/livefutvcr/playlist.m3u8
-
-#EXTINF:-1 tvg-id="GameChannel.cn" tvg-logo="https://i.imgur.com/UMdwCum.png" group-title="Deportes""Sports", Game Channel
-http://49.113.179.174:4022/udp/238.125.1.36:5140
 
 #EXTINF:-1 tvg-id="GamePlus.ca" tvg-logo="https://i.imgur.com/Lj69WbR.png" group-title="Deportes""Sports", Game+
 https://a-cdn.klowdtv.com/live2/fntsy_720p/playlist.m3u8
@@ -2328,11 +2289,7 @@ https://a-cdn.klowdtv.com/live2/fntsy_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMFit.tr" tvg-logo="https://i.imgur.com/7FQxaII.png" group-title="Deportes""Sports", GEM Fit
 https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemfit/index-0.m3u8
 
-#EXTINF:-1 tvg-id="GeoSuper.pk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Geo_Super_logo.png" group-title="Deportes""Sports", Geo Super SD
-http://116.90.120.149:8000/play/a021/index.m3u8
 
-#EXTINF:-1 tvg-id="GloryKickboxing.us" tvg-logo="https://i.imgur.com/tS7Ub7i.png" group-title="Deportes""Sports", Glory Kickboxing
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5417a212ff9fba68282fbf5e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28f178-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=df3ca9c7-d700-4719-be3f-74dd169206f8
 
 #EXTINF:-1 tvg-id="GolPeru.pe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gol_Per%C3%BA_2019.svg/640px-Gol_Per%C3%BA_2019.svg.png" group-title="Deportes""Sports", Gol Peru
 http://38.183.182.166:8000/play/a120/index.m3u8
@@ -2430,8 +2387,6 @@ http://194.76.186.33:8000/play/a04d/index.m3u8
 #EXTINF:-1 tvg-id="MLB.us" tvg-logo="https://i.imgur.com/ym3su2J.png" group-title="Deportes""Sports", MLB
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e66968a70f34c0007d050be/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c29dbd3-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0f1d3baf-2f1b-47d7-9966-3e92a98f1c8a
 
-#EXTINF:-1 tvg-id="MLBNetwork.us" tvg-logo="https://i.imgur.com/sA5V39D.png" group-title="Deportes""Sports", MLB Network
-https://fl7.moveonjoy.com/MLB_NETWORK/index.m3u8
 
 #EXTINF:-1 tvg-id="MMATVcom.ru@SD" tvg-logo="https://i.imgur.com/QhdxNsB.png" group-title="Deportes""Sports", MMA-TV.com SD
 https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8
@@ -2880,8 +2835,6 @@ https://thm-it-roku.otteravision.com/thm/it/it_720p_high.m3u8
 #EXTINF:-1 tvg-id="futbol network tv" tvg-logo="https://imgur.com/6aBC47h.png" group-title="Deportes""DEPORTES",futbol network tv
 https://59d39900ebfb8.streamlock.net/8312/8312/.m3u8
 
-#EXTINF:-1 tvg-id="MLB Network" tvg-logo="https://imgur.com/JWLeoiQ.png" group-title="Deportes",MLB Network
-https://v14.thetvapp.to/hls/NBA16/tracks-v1a1/mono.m3u8?token=2ZCtEKMqIXn18qhUMz7A3g&expires=1762060317&user_id=eW9NeDlMNlFMNnJSRTh3ZmdIWEZTQmhsZWUyTmxWcnBlcE9LN3g1NA==
 
 
 #EXTINF:-1  tvg-name="A ESPN SD" tvg-id="espn" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/espn-icon-us.png?raw=true" group-title="Deportes""TheTVApp",A ESPN SD
@@ -2945,8 +2898,7 @@ https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TV
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
 #EXTINF:-1 tvg-id="FITE247.us@SD" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="Deportes""Sports",FITE 24/7 (1080p)
 https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
-#EXTINF:-1 tvg-id="FTV.bo@SD" tvg-logo="https://i.imgur.com/YOr1Oac.png" group-title="Deportes""Sports",FTV
-https://master.tucableip.com/ftvhd/index.m3u8
+
 
 
 
@@ -3081,12 +3033,6 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a
 #EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",Golf Channel (360p)
 https://tvpass.org/live/GolfChannel/sd?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",GolfPass
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65493029ab052400089e9d2f/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c291881-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=fc355a72-e401-4038-a2fd-7378aedc3a6f&checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Deportes""Sport",GolfPass
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65493029ab052400089e9d2f/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c291881-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=fc355a72-e401-4038-a2fd-7378aedc3a6f&serverSideAds=false&checkedby:iptvcat.com
-
 
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="https://imgur.com/k6VgbX2.png", Claro Sports
 http://45.5.119.97:12500/play/a024/index.m3u8?0GKUSH_R4IN&DONTSTEAL
@@ -3106,8 +3052,8 @@ https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TV
 https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png" , FOX en Tubi
 https://aegis-cloudfront-1.tubi.video/0d2ea257-ada0-4b84-9247-ce1c53eb3f1d/playlist.m3u8
-#EXTINF:-1 group-title="Deportes""Deportes"  tvg-logo="logo", FUTV CR
-http://45.5.119.97:12500/play/a066/index.m3u8?0GKUSH_R4IN&DONTSTEAL
+
+
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", ITV Deportes
 https://thm-it-aymsports.otteravision.com/thm/it/it.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/ll/latin_american_sports_us.png", Latin America Sports
@@ -3187,20 +3133,6 @@ https://master.tucableip.com/ftvhd/index.m3u8
 https://livetv-fa.tubi.video/fubo/master.m3u8
 #EXTINF:-1 tvg-id="FUELTV.at@SD" tvg-logo="https://i.imgur.com/I8mviBy.png" group-title="Deportes""Sports",FUEL TV (1080p)
 https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
-#EXTINF:-1 tvg-id="Futbol.tj@SD" tvg-logo="https://i.imgur.com/RngmCDn.png" group-title="Deportes""Sports",Futbol (1080p)
-https://live.teleradiocom.tj/8/3m.m3u8
-#EXTINF:-1 tvg-id="FUTV.cr@SD" tvg-logo="https://i.imgur.com/f8BkLql.png" group-title="Deportes""Sports",FUTV (1080p)
-https://live20.bozztv.com/akamaissh101/ssh101/livefutvcr/playlist.m3u8
-#EXTINF:-1 tvg-id="GamePlus.ca@SD" tvg-logo="https://i.imgur.com/Lj69WbR.png" group-title="Deportes""Sports",Game+ (720p)
-https://a-cdn.klowdtv.com/live2/fntsy_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="GEMFit.tr@SD" tvg-logo="https://i.imgur.com/7FQxaII.png" group-title="Deportes""Sports",GEM Fit
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemfit/index-0.m3u8
-#EXTINF:-1 tvg-id="GeoSuper.pk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Geo_Super_logo.png" group-title="Deportes""Sports",Geo Super (1080p)
-http://116.90.120.149:8000/play/a021/index.m3u8
-#EXTINF:-1 tvg-id="GloryKickboxing.us@Poland" tvg-logo="https://i.imgur.com/tS7Ub7i.png" group-title="Deportes""Sports",GLORY Kickboxing
-https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
-#EXTINF:-1 tvg-id="GloryKickboxing.us@US" tvg-logo="https://i.imgur.com/tS7Ub7i.png" group-title="Deportes""Sports",Glory Kickboxing
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5417a212ff9fba68282fbf5e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28f178-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=df3ca9c7-d700-4719-be3f-74dd169206f8
 #EXTINF:-1 tvg-id="GolClassics.es@SD" tvg-logo="https://golstadium.com/_next/image?url=%2Fimg%2Fhome%2Fchannels%2Fthumb-gol-classics.jpg&w=1920&q=75" group-title="Deportes""Sports",Gol Classics
 https://d71gqtnep83vb.cloudfront.net/gol_classics/gol_classics.m3u8
 #EXTINF:-1 tvg-id="GolfChannel.us@SD" tvg-logo="https://i.imgur.com/Lgux6Ik.png" group-title="Deportes""Sports",Golf Channel
@@ -3235,8 +3167,13 @@ http://ares.mnet.mk/hls/mnet-sport.m3u8
 https://srvx1.selftv.video/dmchannel/live/playlist.m3u8
 #EXTINF:-1 tvg-id="MLB.us@SD" tvg-logo="https://i.imgur.com/ym3su2J.png" group-title="Deportes""Sports",MLB
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e66968a70f34c0007d050be/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c29dbd3-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0f1d3baf-2f1b-47d7-9966-3e92a98f1c8a
-#EXTINF:-1 tvg-id="MLBNetwork.us@SD" tvg-logo="https://i.imgur.com/sA5V39D.png" group-title="Deportes""Sports",MLB Network
+
+
+#EXTINF:-1 tvg-id="MLBNetwork.us@SD" tvg-logo="https://i.imgur.com/sA5V39D.png" group-title="Deportes""Sports", A MLB Network
 https://fl1.moveonjoy.com/MLB_NETWORK/index.m3u8
+
+
+
 #EXTINF:-1 tvg-id="MMATVcom.ru@SD" tvg-logo="https://i.imgur.com/QhdxNsB.png" group-title="Deportes""Sports",MMA-TV.com
 https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8
 #EXTINF:-1 tvg-id="MNBSport.mn@SD" tvg-logo="https://i.imgur.com/z854PC3.png" group-title="Deportes""Sports",MNB Sport (1080p)
