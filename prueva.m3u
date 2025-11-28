@@ -471,27 +471,6 @@ https://amg00056-amg00056c10-rakuten-es-3242.playouts.now.amagi.tv/playlist/amg0
 #EXTINF:-1 tvg-id="now-90s00s" tvg-name="now-90s00s" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/798cc3b5-1f31-4bee-97d2-39a6555d7b07.jpeg" group-title="Música" , NOW 90s00s
 https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8?ads_amagi_channel=1033&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=6994&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=568207b3-589c-4be9-8cff-ff78bf8edb43&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
 
-#EXTINF:-1 tvg-id="family-rakuten-tv" tvg-name="family-rakuten-tv" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/55bcbbe9-d8ec-45de-849e-775854edea1e.jpeg" group-title="Infantil" , En Familia
-https://family-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6205/master.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_name=family-rakuten-tv_es&ads.rtv_content_id=6205&ads.rtv_content_language=spa&ads.rtv_language=spa&ads.rtvid=271859&ads.streaming_id=0176e8c1-e156-41ec-a0c2-e2575c74a9fc&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6205&publishing_platform_id=5
-
-#EXTINF:-1 tvg-id="rantaro-ninja-boy-rakuten-tv" tvg-name="rantaro-ninja-boy-rakuten-tv" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/c03fa5a5-dd8d-4e53-ba59-352993c4e6fb.jpeg" group-title="Infantil" , Rantaró, el ninja boy
-https://rantaro-ninja-boy-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6432/master.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_name=rantaro-ninja-boy-rakuten-tv_es&ads.rtv_content_id=6432&ads.rtv_content_language=spa&ads.rtv_language=spa&ads.rtvid=271859&ads.streaming_id=61ec4205-8ed1-4393-b335-b425bd7b81d7&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6432&publishing_platform_id=5
-
-#EXTINF:-1 tvg-id="baby-shark-tv" tvg-name="baby-shark-tv" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/a037e33c-a084-4a63-b433-b227d0bc2c59.jpeg" group-title="Infantil" , Baby Shark TV
-https://c0c65b821b3542c3a4dca92702f59944.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BabySharkTV/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB1&ads.content_genre=children%2Canimation&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=7&ads.rtv_content_id=3619&ads.rtv_content_language=eng&ads.rtvid=271859&ads.streaming_id=18a40e11-0744-4b5d-9377-a1098e7cdaee&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel=696
-
-#EXTINF:-1 tvg-id="las-tres-mellizas" tvg-name="las-tres-mellizas" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/5fca5e18-a011-44e0-a411-608be7e29a84.jpeg" group-title="Infantil" , Las tres mellizas
-https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=children%2Canimation&ads._fw_content_language=es&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=ppid&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusSpanish&ads.content_livestream=0&ads.csid=zeus_es_lastresmellizas_ssai&ads.gam_correlator=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6976&ads.rakuten_streaming_id=0dfedb64-0ac6-4c26-bab9-eead0ed114be&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883128&ads.xumo_contentId=1865&ads.xumo_contentName=IndigeniusKids&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1865&ads.xumo_providerName=las-tres-mellizas-spa-rakutentv&ads.xumo_streamId=88883128
-
-#EXTINF:-1 tvg-id="ducktv" tvg-name="ducktv" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/46c614e1-cc27-4d06-96ab-5477041a1d62.jpeg" group-title="Infantil" , ducktv
-https://daiconnect.com/live/hls/tvup/rk-ducktv/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=animation%2Cchildren&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_content_id=1838&ads_rtv_content_language=zxx&ads_streaming_id=d530f058-510e-49d6-adad-daf52349b62c&ads_tcs_channel_id=936&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="pocoyo" tvg-name="pocoyo" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/b427e296-f7e7-488a-b8ac-f9822584acff.jpeg" group-title="Infantil" , Pocoyó
-https://daiconnect.com/live/hls/tvup/rk-pocoyo/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=animation%2Cchildren&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5541&ads_rtv_content_language=spa&ads_streaming_id=d6cdcfa9-ee29-4044-ac39-787faaec4fa8&ads_tcs_channel_id=920&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
-#EXTINF:-1 tvg-id="planeta-junior-spa" tvg-name="planeta-junior-spa" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/66532545-7c48-4163-8602-4c17c8bb12ac.jpeg" group-title="Infantil" , La abeja Maya
-https://daiconnect.com/live/hls/tvup/rk-planetajunior/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=children%2Canimation&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_content_id=2954&ads_rtv_content_language=spa&ads_streaming_id=c8fa2fc4-3646-4a8c-8551-d7cd4c92689a&ads_tcs_channel_id=967&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-
 #EXTINF:-1 tvg-id="ice-pilots-es" tvg-name="ice-pilots-es" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/47db66d1-8f73-451e-9244-34ce4b1c423c.jpeg" group-title="Reality" , Pilotos del Ártico
 https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment%2Coutdoors&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=ppid&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IcePilotsSpanish&ads.content_livestream=0&ads.csid=zeus_es_indigeniusicepilots_ssai&ads.gam_correlator=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=5914&ads.rakuten_streaming_id=f741d31c-e343-4f3b-b629-b277c45a7478&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883090&ads.xumo_contentId=2504&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2504&ads.xumo_providerName=ice-pilots-spa-rakutentv&ads.xumo_streamId=88883090
 
@@ -1897,83 +1876,6 @@ https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
 
 
 
-
-
-
-
-
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/dkkyFT8/dog-day-afternoon-55a782d7b2e08.jpg" group-title="Infantil""Drama", Dog Day Afternoon (1975)
-https://dl.dropbox.com/s/kcdgfbx1999wikh/tarde%20de%20perros%28SS_CANY%29.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/17TPydR/El-arte-de-defenderse.jpg" group-title="Infantil""Drama", El arte de defenderse
-https://archive.org/download/eadd_20200222/Finde/EADD.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/VCRQMKg/EL-BANQUERO.jpg" group-title="Infantil""Drama", El Banquero
-https://dl.dropbox.com/s/ty3xtrk1h23dobl/El.Banquero.2020.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/VVpCb2K/El-Caballo-de-dos-piernas.jpg" group-title="Infantil""Drama", El caballo de dos piernas
-http://archive.org/download/zqu21148_zoqqa_3/su1id0_p4r4_stre4ming_a85/1.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/VJ89sPx/clubss.jpg" group-title="Infantil""Drama", El club de los incomprendidos
-https://archive.org/download/1834526-hd-720p-412646/1834526_HD__720p___412646.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/HX3Dr4F/El-curioso-caso-de-Benjamin-Button.jpg" group-title="Infantil""Drama", El curioso caso de Benjamin Button
-https://archive.org/download/aloctpsj/Lunes/benb.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/kg2bcTj/El-Hoyo.jpg" group-title="Infantil""Drama", El Hoyo
-https://dl.dropboxusercontent.com/s/g3g9wak3ncv72ri/el%20hoyo.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/khn1bzR/El-Vendedor-Chino.jpg" group-title="Infantil""Drama", El Vendedor Chino
-https://dl.dropboxusercontent.com/s/dccfl431kfkm42t/China%20Salesman.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/t4YCdK2/emma.jpg" group-title="Infantil""Drama", Emma
-https://dl.dropboxusercontent.com/s/g1g027j6dtdyb9f/Ema.2019.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/NxD9LHx/En-busca-de-la-felicidad.jpg" group-title="Infantil""Drama", En Busca de la Felicidad (2006)
-https://archive.org/download/buscfel/Crisis/buscfel.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/m4w3BvP/Eterno-resplandor.jpg" group-title="Infantil""Drama", Eterno resplandor de una mente sin recuerdos
-https://archive.org/download/00400_202001/00400.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/HNXrHBt/fatal-affair.jpg" group-title="Infantil""Drama", Fatal Affair
-https://dl.dropbox.com/s/2eaibx0y9lj5b08/encuentro_fatal.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/5TLMVcg/Forrest-Gump.jpg" group-title="Infantil""Drama", Forrest Gump
-https://archive.org/download/forrest-gump/forrest%20gump.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/N9xY2qp/God-s-Not-Dead-2-2016.jpg" group-title="Infantil""Drama", God's Not Dead 2 (2016)
-http://archive.org/download/balovaxe1/Sub1d0_p4r4_5tr34ming_A85%202/1.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/XVcTdMF/God-s-Not-Dead-A-Light-in-Darkness-2018.jpg" group-title="Infantil""Drama", God's Not Dead: A Light in Darkness (2018)
-http://archive.org/download/jidam1_20190319/Sub1d0_p4r4_5tr34ming_A85%203/1.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/cbwT007/Gol-2-Viviendo-el-sue-o.jpg" group-title="Infantil""Drama", Gol 2: Viviendo el sueño (2007)
-https://ia601403.us.archive.org/28/items/futbol-2/Futbol2.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/PjW3gsz/Gol.jpg" group-title="Infantil""Drama", Gol! (2005)
-https://ia601400.us.archive.org/4/items/futbol-1/Futbol1.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/tx78NTp/Habia-una-vez-en-Hollywood.jpg" group-title="Infantil""Drama", Habia una vez en Hollywood (2019)
-https://archive.org/download/buscfel/Crisis/holly.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/560y2L8/Hachiko.jpg" group-title="Infantil""Drama", Hachiko
-https://ia601503.us.archive.org/26/items/9c6f1/bd408b3237.mp4
-
-#EXTINF:-1 tvg-logo="https://archive.org/download/DAPOR/DAPOR.png" group-title="Infantil""Drama", Hermanos de armas (2020)
-https://dl.dropbox.com/s/orjrxwynmz29pjc/Da5Bloods.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/R4xVN1x/Hijos-de-los-Hombres.jpg" group-title="Infantil""Drama", Hijos de los Hombres
-https://ia601405.us.archive.org/11/items/dragonballsuperbroly_201911/39-Children%20of%20Men.MP4.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/16wLs7t/Hitler-el-Reinado-del-Mal.jpg" group-title="Infantil""Drama", Hitler: El Reinado del Mal
-https://ia601407.us.archive.org/35/items/h-r-d-m/H%20r%20d%20m.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/55j1H7f/I-m-Not-Ashamed-2016.jpg" group-title="Infantil""Drama", I'm Not Ashamed (2016)
-http://archive.org/download/gikudec5/Sub1d0_p4r4_5tr34ming_A85_Cr15T14n4S/11.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/hHCtLYx/invierno.jpg" group-title="Infantil""Drama", Invierno Profundo (2010)
-https://ia601505.us.archive.org/12/items/4_20210301/8%20nov/1.mp4
 
 
 
