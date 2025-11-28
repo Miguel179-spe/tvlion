@@ -931,10 +931,7 @@ http://45.5.119.97:12500/play/a04m/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://tkx.mp.lura.live/rest/v2/mcp/video/adstkZj0NvKqzB6e?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n&0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", Sport1 DE | GEO
 https://oz.sport1.de/api/ottv1/2/livestream/view/sport2.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes" tvg-logo="logo", Sportitalia
-https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes" tvg-logo="logo", Sportitalia Solo Calcio
-https://edge-003.streamup.eu/sportitaliain/sisolocalcio/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", Win Audio | GEO (No Video)
 https://mdstrm.com/audio/68531acded49f159d27dc597/live.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTM3U
@@ -2011,11 +2008,6 @@ https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8?chec
 #EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/1JRQeHu.png" group-title="Deportes""Deportes""Sport",Sports First (1080p)
 https://d4ddgdmj1cvnm.cloudfront.net/scheduler/scheduleMaster/409.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/MYWSyMx.png" group-title="Deportes""Sport",SportsGrid
-https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/dwLqx5j.png" group-title="Deportes""Sport",SportsGrid (1080p)
-https://sportsgrid-plex.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 
 
@@ -2074,11 +2066,6 @@ http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/inde
 https://sportsgrid-samsungus.amagi.tv/playlist.m3u8?checkedby:iptvcat.
 
 
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Астрахань.Ru Sport
-https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v2a1/index.m3u8?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Deportes""Sport",Матч! ТВ
-http://zabava-htlive.cdn.ngenix.net/hls/CH_MATCHTV/variant.m3u8?version=2&checkedby:iptvcat.com
 
 
 
@@ -2154,10 +2141,7 @@ http://45.5.119.97:12500/play/a04m/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://tkx.mp.lura.live/rest/v2/mcp/video/adstkZj0NvKqzB6e?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n&0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sport1 DE | GEO
 https://oz.sport1.de/api/ottv1/2/livestream/view/sport2.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sportitalia
-https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sportitalia Solo Calcio
-https://edge-003.streamup.eu/sportitaliain/sisolocalcio/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
+
 
 #EXTINF:-1  tvg-name="Fox Business Network SD" tvg-id="fox-business" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-business-us.png?raw=true" group-title="Deportes""TheTVApp",Fox Business Network SD
 https://v3.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=NRRQ2hPg25W_s__f-F15IA&expires=1760650176&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
@@ -2381,8 +2365,6 @@ https://cdn4.skygo.mn/live/disk1/MNBSport/DASH-FTA/MNBSport.mpd
 #EXTINF:-1 tvg-id="MonterricoTV.pe" tvg-logo="https://i.imgur.com/SuVO9T7.png" group-title="Deportes""Sports", Monterrico TV
 https://www.opencaster.com/resources/hls_stream/hipodromojcp2.m3u8
 
-#EXTINF:-1 tvg-id="MoreThanSportsTV.de" tvg-logo="https://i.postimg.cc/L5DYvxw9/morethansportstv.png" group-title="Deportes""Sports", More Than Sports TV
-https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MSG.us" tvg-logo="https://i.imgur.com/SEQFh0P.png" group-title="Deportes""Sports", MSG
 https://fl7.moveonjoy.com/MSG/index.m3u8
@@ -2573,20 +2555,7 @@ http://88.212.15.27/live/test_rtvs_sport_hevc/playlist.m3u8
 #EXTINF:-1 tvg-id="SportenFrance.fr" tvg-logo="https://i.imgur.com/1IXQoWq.png" group-title="Deportes""Sports", Sport en France
 https://sp1564435593.mytvchain.info/live/sp1564435593/index.m3u8
 
-#EXTINF:-1 tvg-id="Sportitalia.it" tvg-logo="https://i.imgur.com/0CJGGgd.png" group-title="Deportes""Sports", Sportitalia
-https://di-g7ij0rwh.vo.lswcdn.net/sportitalia/sihd/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Sportitalia24.it" tvg-logo="https://i.imgur.com/RSwnoLn.png" group-title="Deportes""Sports", Sportitalia 24
-https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:silive24.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="SportitaliaMotori.it" tvg-logo="https://i.imgur.com/hu56Ya5.png" group-title="Deportes""Sports", Sportitalia Motori
-https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:simotori.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="SportitaliaSolocalcio.it" tvg-logo="https://i.imgur.com/hu56Ya5.png" group-title="Deportes""Sports", Sportitalia Solocalcio
-https://di-g7ij0rwh.vo.lswcdn.net/sportitalia/sisolocalcio.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="SportsConnect.za" tvg-logo="https://i.imgur.com/0sNWg54.png" group-title="Deportes""Sports", Sports Connect
-https://origin3.afxp.telemedia.co.za/PremiumFree/sportsconnect/playlist.m3u8
 
 #EXTINF:-1 tvg-id="SportsTV.tr" tvg-logo="https://i.postimg.cc/sXMS2194/sportstv.png" group-title="Deportes""Sports", Sports TV
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
@@ -2597,44 +2566,14 @@ https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SportsmanChannel.us" tvg-logo="https://i.imgur.com/CXauv8M.png" group-title="Deportes""Sports", Sportsman Channel
 https://fl7.moveonjoy.com/SPORTSMAN_CHANNEL/index.m3u8
 
-#EXTINF:-1 tvg-id="SportsNetNewYork.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/SNY_logo.svg/512px-SNY_logo.svg.png" group-title="Deportes""Sports", SportsNet New York
-https://fl7.moveonjoy.com/SNY/index.m3u8
 
 #EXTINF:-1 tvg-id="Stadium.us" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Stadium_%28sports_network%29_logo.svg/512px-Stadium_%28sports_network%29_logo.svg.png" group-title="Deportes""Sports", Stadium
 https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist.m3u8
 
-#EXTINF:-1 tvg-id="StarSports1.in@HD" tvg-logo="https://i.imgur.com/E5jjKHI.png" group-title="Deportes""Sports", Star Sports 1 HD
-http://41.205.93.154/STARSPORTS1/index.m3u8
-
-#EXTINF:-1 tvg-id="StarSports1Hindi.in@HD" tvg-logo="https://i.imgur.com/RGeLxjv.png" group-title="Deportes""Sports", Star Sports 1 Hindi HD
-http://116.90.120.149:8000/play/a0bv/index.m3u8
-
-#EXTINF:-1 tvg-id="StarSports1Tamil.in@HD" tvg-logo="https://i.imgur.com/dfLSnsZ.png" group-title="Deportes""Sports", Star Sports 1 Tamil HD
-https://live20.bozztv.com/akamaissh101/ssh101/vboxsungosttamil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="StarSports2Hindi.in@SD" tvg-logo="https://i.imgur.com/kHerF19.png" group-title="Deportes""Sports", Star Sports 2 Hindi SD
-http://116.90.120.149:8000/play/a0cs/index.m3u8
-
-#EXTINF:-1 tvg-id="StarSportsSelect1.in@HD" tvg-logo="https://i.imgur.com/Mh9tKPx.png" group-title="Deportes""Sports", Star Sports Select 1 HD
-http://116.90.120.149:8000/play/a0cl/index.m3u8
-
-#EXTINF:-1 tvg-id="StarSportsSelect2.in@HD" tvg-logo="https://i.imgur.com/FtRT73R.png" group-title="Deportes""Sports", Star Sports Select 2 HD
-http://116.90.120.149:8000/play/a0cm/index.m3u8
-
-#EXTINF:-1 tvg-id="StartTriumf.ru" tvg-logo="https://i.imgur.com/L9jTieL.png" group-title="Deportes""Sports", Start Triumf
-https://bl.webcaster.pro/media/playlist/free_fe8dc1b768a84b8b0333db826471f17e_hd/33_85479982/1080p/8666c3e935faf6ef47ffd601e8e48868/4821408969.m3u8
-
-#EXTINF:-1 tvg-id="Strongman.us@Germany" tvg-logo="https://i.imgur.com/bVQBF6R.png" group-title="Deportes""Sports", Strongman Germany
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e1452156c07b50009d0230e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84af8ae0-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c0be139f-be68-4d55-940e-e5aae0d99e04
 
 #EXTINF:-1 tvg-id="SwerveSports.us" tvg-logo="https://i.imgur.com/GT0Yi2T.png" group-title="Deportes""Sports", Swerve Sports
 https://linear-253.frequency.stream/dist/xumo/253/hls/master/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TSports7.th" tvg-logo="https://i.imgur.com/KyI0s5n.png" group-title="Deportes""Sports", T Sports 7
-https://lb1-live-mv.v2h-cdn.com/hls/ffef/mulxvnghf/mulxvnghf.m3u8
-
-#EXTINF:-1 tvg-id="TabiiSpor6.tr" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w300/43020.jpeg" group-title="Deportes""Sports", Tabii Spor 6
-https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="talkSPORT.uk" tvg-logo="https://i.postimg.cc/G2n8bztd/talksport.png" group-title="Deportes""Sports", talkSPORT
 https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8
@@ -2854,14 +2793,7 @@ https://aegis-cloudfront-1.tubi.video/4237973e-9e8c-4ec6-95b3-b7363ce39470/playl
 #EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/tSVnDfO.png" group-title="Deportes""Sport",Speed Sport 1 (1080p)
 https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/1JRQeHu.png" group-title="Deportes""Sport",Sports First (1080p)
-https://d4ddgdmj1cvnm.cloudfront.net/scheduler/scheduleMaster/409.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/MYWSyMx.png" group-title="Deportes""Sport",SportsGrid
-https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-
-#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/dwLqx5j.png" group-title="Deportes""Sport",SportsGrid (1080p)
-https://sportsgrid-plex.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 
 
@@ -2902,8 +2834,6 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8?denmstv
 #EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/hxxjMPJ.jpg" group-title="Deportes""Sport",SPORT : Dubai Sports 3,SPORT | Dubai Sports 3
 http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/index.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="UN" tvg-logo="https://www.samsung.com/us/smg/content/dam/s7/home/televisions-and-home-theater/tvs/tv-plus/07072020/SportsGrid_190x190.png?raw=true" group-title="Deportes""Sport",SportsGrid
-https://sportsgrid-samsungus.amagi.tv/playlist.m3u8?checkedby:iptvcat.
 
 
 
@@ -2973,10 +2903,6 @@ http://45.5.119.97:12500/play/a04m/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 https://tkx.mp.lura.live/rest/v2/mcp/video/adstkZj0NvKqzB6e?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n&0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sport1 DE | GEO
 https://oz.sport1.de/api/ottv1/2/livestream/view/sport2.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sportitalia
-https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="Deportes""Deportes" tvg-logo="logo", Sportitalia Solo Calcio
-https://edge-003.streamup.eu/sportitaliain/sisolocalcio/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 
 
 
