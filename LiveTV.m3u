@@ -1458,8 +1458,9 @@ hhttps://fl1002.bozztv.com/ssh101/rctvhdtra/tracks-v1a1/mono.m3u8
 https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
 #EXTINF:-1 tvg-id="TurismoHD.do@HD" tvg-logo="https://gia.tv/streams/pptv/208343.jpg" group-title="A Dominicano""Dominicano""Entertainment",Turismo HD HD
 https://live20.bozztv.com/giatvplayout7/giatv-208343/playlist.m3u8
-#EXTINF:-1 tvg-id="TV10SanJuan.do@SD" tvg-logo="https://i.imgur.com/e2BXUdH.png" group-title="A Dominicano""Dominicano""General",TV 10 San Juan SD
-https://59d39900ebfb8.streamlock.net/TV10SanJuan/TV10SanJuan/playlist.m3u8
+
+
+
 #EXTINF:-1 tvg-id="TV43.do@SD" tvg-logo="https://i.imgur.com/nnx7Eb1.png" group-title="A Dominicano""Dominicano""General",TV43 SD
 https://ss5.domint.net:3058/tv43_str/tv43/chunklist_w594470939.m3u8
 #EXTINF:-1 tvg-id="TVCanalSur.do@SD" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tv-canal-sur-do.png" group-title="A Dominicano""Dominicano""Entertainment",TV Canal Sur SD
@@ -1481,12 +1482,9 @@ https://ss2.tvrdomi.com:1936/vozzmedianetwork/vozzmedianetwork/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPlata.do@SD" tvg-logo="https://i.imgur.com/r3urUnn.png" group-title="A Dominicano""Dominicano""General",TV Plata SD
 https://ss2.tvrdomi.com:1936/tvplata/tvplata/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ValleNuevoTV.do@SD" tvg-logo="https://i.imgur.com/RvIkFxp.png" group-title="A Dominicano""Dominicano""General",Valle Nuevo TV SD
-https://media.streambrothers.com:1936/8262/8262/playlist.m3u8
 #EXTINF:-1 tvg-id="Vallevision.do@SD" tvg-logo="https://i.imgur.com/lNpgFAU.png" group-title="A Dominicano""Dominicano""General",Vallevision SD
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
-#EXTINF:-1 tvg-id="VegaTeve.do@SD" tvg-logo="https://i.imgur.com/jiyMOZx.png" group-title="A Dominicano""Dominicano""General",Vega Teve SD
-https://cloud6.livescast.com:3797/live/vegatevelive.m3u8
+
 #EXTINF:-1 tvg-id="VegavisionCanal18.do@SD" tvg-logo="https://i.imgur.com/352jxnd.png" group-title="A Dominicano""Dominicano""General",Vegavision Canal 18 SD
 https://rdn.essastream.com:3400/live/canal18hdlive.m3u8
 #EXTINF:-1 tvg-id="VillaAltagraciaTV.do@SD" tvg-logo="https://i.imgur.com/uQAeKKa.png" group-title="A Dominicano""Dominicano""General",Villa Altagracia TV SD
@@ -1501,16 +1499,10 @@ https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
 https://cnn.essastream.com:3387/live/xtratvlive.m3u8
 #EXTINF:-1 tvg-id="XtremoChannel.do@SD" tvg-logo="https://i.imgur.com/bvPh0Uq.png" group-title="A Dominicano""Dominicano""General",Xtremo Channel SD
 https://ss2.tvrdomi.com:1936/xtremochannel/xtremochannel/playlist.m3u8
-#EXTINF:-1 tvg-id="Yunavision.do@SD" tvg-logo="https://i.imgur.com/YjceEv5.png" group-title="A Dominicano""Dominicano""Entertainment",Yunavision SD
-https://ss9.domint.net:3036/yv_str/yunavision/playlist.m3u8
-#EXTINF:-1 tvg-id="ZincNombreTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3751-294x165-FFFFFF.jpg" group-title="A Dominicano""Dominicano""General",Zinc Nombre TV HD
-https://5790d294af2dc.streamlock.net/zincnombreradiotv24@gmail.com/zincnombreradiotv24@gmail.com/playlist.m3u8
-#EXTINF:-1 tvg-id="Zol106.do@SD" tvg-logo="https://i.imgur.com/xz4LQoD.png" group-title="A Dominicano""Dominicano""General",Zol106 SD
-https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
+
+
 #EXTINF:-1 tvg-id="ZonavisionTV.do@SD" tvg-logo="https://imgur.com/B3PrrMH.png" group-title="A Dominicano""Dominicano""General",Zonavision TV SD
 https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
-#EXTINF:-1 tvg-id="ZTV.do@SD" tvg-logo="https://i.imgur.com/7F4jQ13.png" group-title="A Dominicano""Dominicano""Music",ZTV SD
-https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
 
 
 
