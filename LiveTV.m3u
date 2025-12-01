@@ -1030,8 +1030,11 @@ https://dxmwlv9y37d4r.cloudfront.net/VIDEOROLA_PLUS_HD/master.m3u8?0GKUSH_R4IN&D
 
 
 
-#EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/undefined.png" group-title="A Dominicano", Ad Telemundo Orlando	
+#EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/z9i3CP9.png" group-title="A Dominicano", Ad Telemundo Orlando	
 https://d368vp0qqzvkid.cloudfront.net/11603/88889703/hls/master.m3u8?ads._fw_atts=&ads._fw_h_user_agent=Mozilla%252F5.0%2520%28Windows%2520NT%252010.0%253B%2520Win64%253B%2520x64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F142.0.0.0%2520Safari%252F537.36&ads._fw_is_lat=0&ads._fw_nielsen_app_id=P06F4DCAF-86D7-4159-AAE9-D3C50FF96F01&ads._fw_player_height=680&ads._fw_player_width=1208&ads._fw_site_page=https%253A%252F%252Fwww.telemundo31.com%252Fver%252F&ads._fw_us_privacy=1---&ads.afid=396657886&ads.caid=TelemundoNoticiasFL&ads.channelName=TelemundoNoticiasFL&ads.csid=tm_ots_alldevice_allos_web_wtmo_livelinear_virtualchannel&ads.flag=%252Bsltp%252Bemcr%252Bslcb%252Bsbid-fbad%252Baeti%252Bslif-vicb%252Bamcb%252Bplay-uapl%252Bdtrd%252Bexvt&ads.gpp=DBABLA%7EBVQVAAAAAgA.QA&ads.gpp_sid=7&ads.nw=169843&ads.playerVersion=8.30.1&ads.prof=169843%3Anbcu_ots_web_linear&ads.resp=vmap1&ads.sfid=23475403&ads.vcid=&ads.vip=2001%3A1308%3A2023%3Ac400%3A1fd%3A54b6%3A96d6%3A7b4&ads.xumo_channelId=88889703a&ads.xumo_contentId=3905&ads.xumo_contentName=TelemundoNoticiasFL&ads.xumo_ifaType=&ads.xumo_providerId=3905&ads.xumo_providerName=TelemundoNoticiasFL&ads.xumo_streamId=88889703&ads.xumo_ifa=&ads._fw_did=&ads.site_name=TLMD
+
+#EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/jnzu4fk.png" group-title="A Dominicano", Ad telemundo las vegas	
+https://prodamdtlmdtv.akamaized.net/out/v1/16f8fa5338af47f8bd234da2f35b9b45/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
 
 
 #EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/z9i3CP9.png" group-title="A Dominicano", Ad telemundo dallas	
