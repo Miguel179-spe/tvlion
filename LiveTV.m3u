@@ -1029,6 +1029,21 @@ https://dxmwlv9y37d4r.cloudfront.net/VIDEOROLA_PLUS_HD/master.m3u8?0GKUSH_R4IN&D
 
 
 
+
+
+#EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/37xJqA6.png" group-title="A Dominicano",Ad TELEMONDO Nueva York
+https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/69ea74b0-08d5-4fbb-b844-0b70338ea55e/4.m3u8
+
+#EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/YOHqx9b.png" group-title="A Dominicano",Ad TELEMONDO Puerto Rico
+https://prodamdtlmdtv.akamaized.net/NBCU_TLM_WKAQ/43919170056/1/hls/index.m3u8
+
+
+#EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/fLLlG1t.png" group-title="A Dominicano",Ad TELEMONDO Los Angeles
+https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/343bb196-6cda-46c8-af90-46751b72aefb/6.m3u8
+
+#EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/YtInM86.png" group-title="A Dominicano",Ad TELEMONDO Noticias
+https://prodamdtlmdtv.akamaized.net/out/v1/4669fdf9e8b54c3c90419fc6117e580c/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
+
 #EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://i.imgur.com/DVASpQj.png" group-title="A Dominicano",Ad TELEMONDO
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
 
