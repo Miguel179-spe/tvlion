@@ -959,25 +959,25 @@ https://proxy.khipu.edu.pe/https://live-evg25.tv360.bitel.com.pe/bitel/liketv/pl
 #KODIPROP:inputstream.adaptive.license_key={"2528892552c65b5399017c2f2a194ab7":"fc87001860c95eb094c2dd5fc2d2e2bd","3ef088eaf6685839a1d77c9bc89b1e20":"68c8566c7cb4400fac63d0abe8eea6d4","4518f2fc410a5327b26a26e8c0cebd17":"16da291229b2b68ded5419cc35339beb"}
 https://unipluslivedash.akamaized.net/universalpremiert0/manifest.mpd?0GKUSH_R4IN&DONTSTEAL
 #EXTM3U
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wfut-tv-us-nj.svg",ac Unimás Nueva York WFUT
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wfut-tv-us-nj.svg",ae Unimás Nueva York WFUT
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wfut/wfut.isml/hls/wfut.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kftr-dt-us-ca.svg",ac  Unimás 46 Los Ángeles KFTR
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kftr-dt-us-ca.svg",ae  Unimás 46 Los Ángeles KFTR
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kftr/kftr.isml/hls/kftr.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/uu/univision_us.png",ac  Univision East
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/uu/univision_us.png",ae  Univision East
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/unieast/unieast.isml/hls/unieast.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/uu/univision_us.png",ac  Univision West
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/uu/univision_us.png",ae  Univision West
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/uniwest/uniwest.isml/hls/uniwest.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kdtv-tv-us-ca.svg",ac  Univision 14 Área De La Bahiá KDTV
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kdtv-tv-us-ca.svg",ae  Univision 14 Área De La Bahiá KDTV
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kdtv/kdtv.isml/hls/kdtv.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kuvn-tv-us-tx.svg",ac  Univision 23 Dallas - Fort-Worth TX KUVN
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kuvn-tv-us-tx.svg",ae  Univision 23 Dallas - Fort-Worth TX KUVN
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kuvn/kuvn.isml/hls/kuvn.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wltv-tv-us-fl.svg",ac  Univision 23 Miami FL WLTV
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wltv-tv-us-fl.svg",ae  Univision 23 Miami FL WLTV
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wltv/wltv.isml/hls/wltv.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wuvg-tv-us-ga.svg", Univision 34 Atlanta WUVG
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wuvg-tv-us-ga.svg", ae Univision 34 Atlanta WUVG
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wuvg/wuvg.isml/hls/wuvg.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kmex-tv-us-ca.svg",ac  Univision 34 Los Ángeles KMEX
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kmex-tv-us-ca.svg",ae  Univision 34 Los Ángeles KMEX
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kmex/kmex.isml/hls/kmex.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wxtv-tv-us-nj.svg",ac  Univision 41 Nueva York WXTV
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wxtv-tv-us-nj.svg",ae  Univision 41 Nueva York WXTV
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wxtv/wxtv.isml/hls/wxtv.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kxln_houston.png",ac  Univision 45 Houston TX KXLN
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kxln/kxln.isml/hls/kxln.m3u8?0GKUSH_R4IN&DONTSTEAL
