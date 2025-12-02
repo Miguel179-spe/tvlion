@@ -1036,8 +1036,6 @@ https://prodamdtlmdtv.akamaized.net/NBCU_TLM_WKAQ/43919170056/1/hls/index.m3u8
 #EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/fLLlG1t.png" group-title="A Dominicano",Ad TELEMONDO Los Angeles
 https://prodamdtlmdtv.akamaized.net/out/v1/0ad5288f553d4438afb33aef9687cb8b/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
 
-#EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/YtInM86.png" group-title="A Dominicano",Ad TELEMONDO Noticias
-https://prodamdtlmdtv.akamaized.net/out/v1/4669fdf9e8b54c3c90419fc6117e580c/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
 
 #EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://i.imgur.com/DVASpQj.png" group-title="A Dominicano",Ad TELEMONDO
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
