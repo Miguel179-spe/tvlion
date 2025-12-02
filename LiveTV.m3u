@@ -979,10 +979,6 @@ https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.co
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kmex/kmex.isml/hls/kmex.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wxtv-tv-us-nj.svg",ae  Univision 41 Nueva York WXTV
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wxtv/wxtv.isml/hls/wxtv.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kxln_houston.png",ac  Univision 45 Houston TX KXLN
-https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/kxln/kxln.isml/hls/kxln.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wgbo-tv-us-in.svg",ac  Univision 66 Chicago WGBO
-https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wgbo/wgbo.isml/hls/wgbo.m3u8?0GKUSH_R4IN&DONTSTEAL
 
 #EXTM3U
 #EXTINF:-1 group-title="United Kingdom" tvg-logo="logo", Blaze UK
@@ -1017,10 +1013,6 @@ https://dxmwlv9y37d4r.cloudfront.net/VIDEOROLA_PLUS_HD/master.m3u8?0GKUSH_R4IN&D
 
 
 
-
-#EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/z9i3CP9.png" group-title="A Dominicano", Ad Telemundo Orlando	
-https://d368vp0qqzvkid.cloudfront.net/11603/88889703/hls/master.m3u8?ads._fw_atts=&ads._fw_h_user_agent=Mozilla%252F5.0%2520%28Windows%2520NT%252010.0%253B%2520Win64%253B%2520x64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F142.0.0.0%2520Safari%252F537.36&ads._fw_is_lat=0&ads._fw_nielsen_app_id=P06F4DCAF-86D7-4159-AAE9-D3C50FF96F01&ads._fw_player_height=680&ads._fw_player_width=1208&ads._fw_site_page=https%253A%252F%252Fwww.telemundo31.com%252Fver%252F&ads._fw_us_privacy=1---&ads.afid=396657886&ads.caid=TelemundoNoticiasFL&ads.channelName=TelemundoNoticiasFL&ads.csid=tm_ots_alldevice_allos_web_wtmo_livelinear_virtualchannel&ads.flag=%252Bsltp%252Bemcr%252Bslcb%252Bsbid-fbad%252Baeti%252Bslif-vicb%252Bamcb%252Bplay-uapl%252Bdtrd%252Bexvt&ads.gpp=DBABLA%7EBVQVAAAAAgA.QA&ads.gpp_sid=7&ads.nw=169843&ads.playerVersion=8.30.1&ads.prof=169843%3Anbcu_ots_web_linear&ads.resp=vmap1&ads.sfid=23475403&ads.vcid=&ads.vip=2001%3A1308%3A2023%3Ac400%3A1fd%3A54b6%3A96d6%3A7b4&ads.xumo_channelId=88889703a&ads.xumo_contentId=3905&ads.xumo_contentName=TelemundoNoticiasFL&ads.xumo_ifaType=&ads.xumo_providerId=3905&ads.xumo_providerName=TelemundoNoticiasFL&ads.xumo_streamId=88889703&ads.xumo_ifa=&ads._fw_did=&ads.site_name=TLMD
-
 #EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/jnzu4fk.png" group-title="A Dominicano", Ad telemundo las vegas	
 https://prodamdtlmdtv.akamaized.net/out/v1/16f8fa5338af47f8bd234da2f35b9b45/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
 
@@ -1042,7 +1034,7 @@ https://prodamdtlmdtv.akamaized.net/NBCU_TLM_WKAQ/43919170056/1/hls/index.m3u8
 
 
 #EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/fLLlG1t.png" group-title="A Dominicano",Ad TELEMONDO Los Angeles
-https://prodamdtlmdtv.akamaized.net/out/v1/4669fdf9e8b54c3c90419fc6117e580c/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
+https://prodamdtlmdtv.akamaized.net/out/v1/0ad5288f553d4438afb33aef9687cb8b/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
 
 #EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/YtInM86.png" group-title="A Dominicano",Ad TELEMONDO Noticias
 https://prodamdtlmdtv.akamaized.net/out/v1/4669fdf9e8b54c3c90419fc6117e580c/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
@@ -1054,8 +1046,6 @@ https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m
 #EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://images.fubo.tv/channel-config-ui/station-logos/on-white/telemundo_al_dia_1000x1500_2x3_logo_300dpi_vertical_full_color_logo_xumo-3-copy.png" group-title="A Dominicano""General", Ad Telemundo Al Dia HD
 https://d1rqgw5gocwo9i.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-stitched/10a44c37-f976-4d2b-ab23-8637a7a094ca/3.m3u8
 
-#EXTINF:-1 tvg-id="TelemundoCorpusChristi.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/Telemundo_Corpus_Christi_logo.png" group-title="A Dominicano""Entertainment",Ad Telemundo Corpus Christi SD
-https://content.uplynk.com/channel/b6a96ed39d694ae1b738faa98cf7dd3f.m3u8
 
 #EXTINF:-1 tvg-id="TelemundoInternacional.us@South" tvg-logo="https://i.imgur.com/j2O4ndp.png" group-title="A Dominicano""General",Ad Telemundo Internacional South
 https://cdn.igocast.com/wkrp_channel1_hls/wkrp_channel1_master.m3u8
@@ -1067,6 +1057,31 @@ https://d3rciv7av2te5a.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae0
 https://tvpass.org/live/TelemundoEast/hd
 #EXTINF:-1 tvg-id="WTMOCD1.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano""News",Ad telexitos WTMO-CD1 SD
 https://dvrfl03.bozztv.com/hondu-telexitos/index.m3u8
+
+
+
+#EXTINF:-1 group-title="A Dominicano"  tvg-logo="https://imgur.com/s5zbiyE.png", Ad Telemundo  Filadelfia 
+https://d368vp0qqzvkid.cloudfront.net/11603/88889716/hls/master.m3u8?ads._fw_atts=&ads._fw_h_user_agent=Mozilla%252F5.0%2520%28Windows%2520NT%252010.0%253B%2520Win64%253B%2520x64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F142.0.0.0%2520Safari%252F537.36&ads._fw_is_lat=0&ads._fw_nielsen_app_id=P06F4DCAF-86D7-4159-AAE9-D3C50FF96F01&ads._fw_player_height=680&ads._fw_player_width=1208&ads._fw_site_page=https%253A%252F%252Fwww.telemundo62.com%252Fver%252F&ads._fw_us_privacy=1---&ads.afid=396653824&ads.caid=TelemundoNoticiasNoreste&ads.channelName=TelemundoNoticiasNoreste&ads.csid=tm_ots_alldevice_allos_web_wwsi_livelinear_virtualchannel&ads.flag=%252Bsltp%252Bemcr%252Bslcb%252Bsbid-fbad%252Baeti%252Bslif-vicb%252Bamcb%252Bplay-uapl%252Bdtrd%252Bexvt&ads.gpp=DBABLA%7EBVQVAAAAAgA.QA&ads.gpp_sid=7&ads.nw=169843&ads.playerVersion=8.30.1&ads.prof=169843%3Anbcu_ots_web_linear&ads.resp=vmap1&ads.sfid=23475404&ads.vcid=&ads.vip=186.6.158.126&ads.xumo_channelId=88889716a&ads.xumo_contentId=3906&ads.xumo_contentName=TelemundoNoticiasNoreste&ads.xumo_ifaType=&ads.xumo_providerId=3906&ads.xumo_providerName=TelemundoNoticiasNoreste&ads.xumo_streamId=88889716&ads.xumo_ifa=&ads._fw_did=&ads.site_name=TLMD
+
+#EXTINF:-1 group-title="A Dominicano"  tvg-logo="https://imgur.com/Fj5Tchg.png", Ad Telemundo Dia 
+https://d3rciv7av2te5a.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/master.m3u8?ads.xumo_channelId=88889469
+
+
+#EXTINF:-1 group-title="A Dominicano"  tvg-logo="https://imgur.com/Fj5Tchg.png", Ad Telemundo Forida
+https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/ecf94e7b-e223-4a18-9f3c-e0f13e4e6d55/4.m3u8
+
+#EXTINF:-1 group-title="A Dominicano"  tvg-logo="https://imgur.com/Fj5Tchg.png", Ad Telemundo Accion
+https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/696c0670-4449-43c4-96c9-a36198ca3b92/4.m3u8
+
+
+#EXTINF:-1 group-title="A Dominicano"  tvg-logo="https://imgur.com/uBByUia.png", Ad Telemundo 47
+https://d368vp0qqzvkid.cloudfront.net/11603/88889716/hls/master.m3u8?ads._fw_atts=&ads._fw_h_user_agent=Mozilla%252F5.0%2520%28Windows%2520NT%252010.0%253B%2520Win64%253B%2520x64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F142.0.0.0%2520Safari%252F537.36&ads._fw_is_lat=0&ads._fw_nielsen_app_id=P06F4DCAF-86D7-4159-AAE9-D3C50FF96F01&ads._fw_player_height=680&ads._fw_player_width=1208&ads._fw_site_page=https%253A%252F%252Fwww.telemundowashingtondc.com%252Fver%252F&ads._fw_us_privacy=1---&ads.afid=396657891&ads.caid=TelemundoNoticiasNoreste&ads.channelName=TelemundoNoticiasNoreste&ads.csid=tm_ots_alldevice_allos_web_wzdc_livelinear_virtualchannel&ads.flag=%252Bsltp%252Bemcr%252Bslcb%252Bsbid-fbad%252Baeti%252Bslif-vicb%252Bamcb%252Bplay-uapl%252Bdtrd%252Bexvt&ads.gpp=DBABLA%7EBVQVAAAAAgA.QA&ads.gpp_sid=7&ads.nw=169843&ads.playerVersion=8.30.1&ads.prof=169843%3Anbcu_ots_web_linear&ads.resp=vmap1&ads.sfid=23475405&ads.vcid=&ads.vip=186.6.158.126&ads.xumo_channelId=88889716a&ads.xumo_contentId=3906&ads.xumo_contentName=TelemundoNoticiasNoreste&ads.xumo_ifaType=&ads.xumo_providerId=3906&ads.xumo_providerName=TelemundoNoticiasNoreste&ads.xumo_streamId=88889716&ads.xumo_ifa=&ads._fw_did=&ads.site_name=TLMD
+
+
+#EXTINF:-1 group-title="A Dominicano"  tvg-logo="https://imgur.com/uBByUia.png", Ad Telemundo chicago
+https://d368vp0qqzvkid.cloudfront.net/11603/88889714/hls/master.m3u8?ads._fw_atts=&ads._fw_h_user_agent=Mozilla%252F5.0%2520%28Windows%2520NT%252010.0%253B%2520Win64%253B%2520x64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F142.0.0.0%2520Safari%252F537.36&ads._fw_is_lat=0&ads._fw_nielsen_app_id=P06F4DCAF-86D7-4159-AAE9-D3C50FF96F01&ads._fw_player_height=680&ads._fw_player_width=1208&ads._fw_site_page=https%253A%252F%252Fwww.telemundo20.com%252Fver%252F&ads._fw_us_privacy=1---&ads.afid=396654894&ads.caid=TelemundoNoticiasCA&ads.channelName=TelemundoNoticiasCA&ads.csid=tm_ots_alldevice_allos_web_kuan_livelinear_virtualchannel&ads.flag=%252Bsltp%252Bemcr%252Bslcb%252Bsbid-fbad%252Baeti%252Bslif-vicb%252Bamcb%252Bplay-uapl%252Bdtrd%252Bexvt&ads.gpp=DBABLA%7EBVQVAAAAAgA.QA&ads.gpp_sid=7&ads.nw=169843&ads.playerVersion=8.30.1&ads.prof=169843%3Anbcu_ots_web_linear&ads.resp=vmap1&ads.sfid=23475395&ads.vcid=&ads.vip=186.6.158.126&ads.xumo_channelId=88889714a&ads.xumo_contentId=3903&ads.xumo_contentName=TelemundoNoticiasCA&ads.xumo_ifaType=&ads.xumo_providerId=3903&ads.xumo_providerName=TelemundoNoticiasCA&ads.xumo_streamId=88889714&ads.xumo_ifa=&ads._fw_did=&ads.site_name=TLMD
+
+
 
 
 
