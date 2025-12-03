@@ -1,3 +1,48 @@
+
+#EXTINF:-1 tvg-id="CBS.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/512px-CBS_logo_%282020%29.svg.png" group-title="General",CBS East
+https://fl1.moveonjoy.com/CBS_News/index.m3u8
+#EXTINF:-1 tvg-id="CBSNewsBayArea.us@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/1a/Logo-cbsn-bayarea-1920x1080.jpg/revision/latest/scale-to-width-down/512" group-title="News",CBS News Bay Area SD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5eb1afb21486df0007abc57c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c276ad7-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=5bd2f615-6b6e-4064-999c-18f8e5fef312
+#EXTINF:-1 tvg-id="CBSNewsDetroit.us@SD" tvg-logo="https://i.imgur.com/cMels2Y.png" group-title="News",CBS News Detroit SD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/634f2610d5023700078f7dee/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2791e3-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=8334f86e-7583-40d6-b2f2-2e8328f8b6ef
+#EXTINF:-1 tvg-id="Channel5.uk@HD" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1800.png" group-title="General",Channel 5 HD
+https://viamotionhsi.netplus.ch/live/eds/channel5/browser-dash/channel5.mpd
+#EXTINF:-1 tvg-id="CMT.us@East" tvg-logo="https://i.imgur.com/S7DOpdY.png" group-title="Music",CMT East
+https://fl1.moveonjoy.com/CMT/index.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.de@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png" group-title="Comedy",Comedy Central HD
+https://viamotionhsi.netplus.ch/live/eds/comedycentral/browser-HLS8/comedycentral.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png" group-title="Comedy",Comedy Central East
+https://fl1.moveonjoy.com/Comedy_Central/index.m3u8
+#EXTINF:-1 tvg-id="ComedyCentralAnimation.us@SD" tvg-logo="https://i.imgur.com/uENch0P.png" group-title="Comedy",Comedy Central Animation SD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a949f5b5e4000862467c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c79b862-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=954a470a-ef46-4375-9079-27408bd93898
+#EXTINF:-1 tvg-id="ComedyCentralenEspanol.us@SD" tvg-logo="https://i.imgur.com/6xTD3G8.png" group-title="Comedy",Comedy Central en Espanol SD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cf96dad1652631e36d43320/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c280717-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=970b3112-4df5-46fc-83e4-cefce01e5024
+#EXTINF:-1 tvg-id="MTV.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/512px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV SD
+https://viamotionhsi.netplus.ch/live/eds/mtvfrance/browser-HLS8/mtvfrance.m3u8
+#EXTINF:-1 tvg-id="NickComedyCentralPlus1.de@HD" tvg-logo="https://i.imgur.com/08ZUI9k.png" group-title="Comedy;Kids",Nick/Comedy Central +1 HD
+https://viamotionhsi.netplus.ch/live/eds/comedycentralnick/browser-dash/comedycentralnick.mpd
+#EXTINF:-1 tvg-id="Nickelodeon.ru@SD" tvg-logo="https://i.imgur.com/w8iE8dV.png" group-title="Kids",Nickelodeon SD
+http://46.8.46.14/Nickelodeon/index.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.us@East" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon East
+http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
+#EXTINF:-1 tvg-id="NickMusic.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/NickMusic.svg/512px-NickMusic.svg.png" group-title="Music",NickMusic SD
+https://fl1.moveonjoy.com/NICK_MUSIC/index.m3u8
+#EXTINF:-1 tvg-id="Nicktoons.ru@SD" tvg-logo="https://i.postimg.cc/mZjCjNc5/nicktoons.png" group-title="Kids",Nicktoons SD
+http://94.232.127.28:8080/nicktoons/index.m3u8
+#EXTINF:-1 tvg-id="Nicktoons.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Nicktoons_Network_logo_2009.svg/512px-Nicktoons_Network_logo_2009.svg.png" group-title="Kids",Nicktoons East
+https://fl1.moveonjoy.com/NICKTOONS/index.m3u8
+#EXTINF:-1 tvg-id="ParamountChannel.fr@SD" tvg-logo="https://i.imgur.com/BqmDlC2.png" group-title="Movies;Series",Paramount Channel SD
+https://viamotionhsi.netplus.ch/live/eds/paramount/browser-HLS8/paramount.m3u8
+#EXTINF:-1 tvg-id="ParamountMovieChannel.us@SD" tvg-logo="https://i.imgur.com/sj5h9bl.png" group-title="Movies",Paramount Movie Channel SD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a7819-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=8a4a0712-cb24-4d05-b429-1b98c1f73f74
+#EXTINF:-1 tvg-id="ParamountNetwork.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/512px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network SD
+http://176.65.146.237:8401/play/a09i/index.m3u8
+#EXTINF:-1 tvg-id="ParamountNetwork.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/512px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network East
+https://fl1.moveonjoy.com/PARAMOUNT_NETWORK/index.m3u8
+#EXTINF:-1 tvg-id="ParamountPlusPicks.us@SD" tvg-logo="https://images.pluto.tv/channels/5ff8c708653d080007361b14/featuredImage.jpg" group-title="Movies",Paramount+ Picks SD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ff8c708653d080007361b14/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a9f20-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=86df5336-6268-4928-9b7d-3af618ca807b
+#EXTINF:-1 tvg-id="Showtime.us@East" tvg-logo="https://i.postimg.cc/4NFMSszc/showtime.png" group-title="",Showtime East
+https://fl1.moveonjoy.com/SHOWTIME/index.m3u8
 #EXTINF:-1 tvg-id="GoldenEdge.mx@Panregional" tvg-logo="https://i.imgur.com/SlSbcp3.png" group-title="",Golden Edge Panregional
 https://linear-407.frequency.stream/mt/studio/407/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="OuterMax.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/OuterMax_Logo.svg/512px-OuterMax_Logo.svg.png" group-title="Movies",OuterMax East
