@@ -1,4 +1,66 @@
 
+#EXTINF:-1 tvg-id="10Bold.au@Sydney" tvg-logo="https://i.imgur.com/2xglh33.png" group-title="Australia""Lifestyle;Relax",10 Bold Sydney
+https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8
+
+#EXTINF:-1 tvg-id="ABCAustralia.au@SD" tvg-logo="https://i.imgur.com/qQ33TVM.png" group-title="Australia""General",ABC Australia SD
+https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
+
+#EXTINF:-1 tvg-id="ABCKids.au@Sydney" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/ABC_Kids_%282020%29.svg/revision/latest/scale-to-width-down/512" group-title="Australia""Kids",ABC Kids Sydney
+https://c.mjh.nz/abc-kids.m3u8
+
+#EXTINF:-1 tvg-id="ABCME.au@Sydney" tvg-logo="https://i.imgur.com/6NyFLAm.png" group-title="Australia""Education;Kids",ABC ME Sydney
+https://c.mjh.nz/abc-me.m3u8
+
+#EXTINF:-1 tvg-id="ABCNews.au@Sydney" tvg-logo="https://i.imgur.com/BrW7gk8.png" group-title="Australia""News",ABC News Sydney
+https://c.mjh.nz/abc-news.m3u8
+
+#EXTINF:-1 tvg-id="ABCTV.au@Sydney" tvg-logo="https://i.imgur.com/DPVQSjM.png" group-title="Australia""General",ABC TV Sydney
+https://c.mjh.nz/abc-act.m3u8
+
+#EXTINF:-1 tvg-id="ABCTVPlus.au@Sydney" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/ABC_TV_Plus_logo_2021.svg/512px-ABC_TV_Plus_logo_2021.svg.png" group-title="Australia""Entertainment",ABC TV Plus Sydney
+https://c.mjh.nz/abc-tv-plus.m3u8
+
+#EXTINF:-1 tvg-id="AusbizTV.au@SD" tvg-logo="https://i.imgur.com/8vGGdB0.png" group-title="Australia""Business",Ausbiz TV SD
+https://d9quh89lh7dtw.cloudfront.net/public-output/index.m3u8
+
+#EXTINF:-1 tvg-id="C31Melbourne.au@SD" tvg-logo="https://i.imgur.com/Ge1EutY.png" group-title="Australia""General",C31 Melbourne SD
+https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel44.au@SD" tvg-logo="https://i.imgur.com/P2wUGh9.png" group-title="Australia""General",Channel 44 SD
+https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8
+
+#EXTINF:-1 tvg-id="CTBPerth.au@SD" tvg-logo="https://i.imgur.com/VB8gtCy.jpeg" group-title="Australia""General",CTB Perth SD
+https://live.ctbperth.net.au/hls/0/stream.m3u8
+
+#EXTINF:-1 tvg-id="CTBPerthMoviesChannel.au@SD" tvg-logo="https://i.imgur.com/VB8gtCy.jpeg" group-title="Australia""Movies",CTB Perth Movies Channel SD
+https://movies.ctbperth.net.au/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="ExpoChannel.au@SD" tvg-logo="https://i.imgur.com/2KzCShW.png" group-title="Australia""Shop",Expo Channel SD
+https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8
+
+#EXTINF:-1 tvg-id="FolkKlubTV.au@SD" tvg-logo="https://i.imgur.com/Seq7Od7.png" group-title="Australia""Music",Folk Klub TV SD
+http://tv1.intv.mk:1935/live2/folkklub/index.m3u8
+
+#EXTINF:-1 tvg-id="IndoOzTV.au@SD" tvg-logo="https://i.imgur.com/4LECwDh.png" group-title="Australia""Entertainment",Indo Oz TV SD
+https://stream.e2is.in/hls/indoztv.m3u8
+
+#EXTINF:-1 tvg-id="INTVAustralia.au@SD" tvg-logo="https://i.imgur.com/1nJl0Pv.png" group-title="Australia""Music",INTV Australia SD
+http://tv1.intv.mk:1935/live/intv/index.m3u8
+
+#EXTINF:-1 tvg-id="MISTelevizija.au@SD" tvg-logo="https://i.imgur.com/qvrNVFg.png" group-title="Australia""Culture",MIS Televizija SD
+https://5afd52b55ff79.streamlock.net/MISTV/myStream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SkyNewsExtra1.au@SD" tvg-logo="https://i.imgur.com/ZsPb8nL.png" group-title="Australia""News",Sky News Extra 1 SD
+https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
+
+#EXTINF:-1 tvg-id="SkyNewsExtra2.au@SD" tvg-logo="https://i.imgur.com/ZsPb8nL.png" group-title="Australia""News",Sky News Extra 2 SD
+https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8
+
+#EXTINF:-1 tvg-id="SkyNewsExtra3.au@SD" tvg-logo="https://i.imgur.com/ZsPb8nL.png" group-title="Australia""News",Sky News Extra 3 SD
+https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8
+
+#EXTINF:-1 tvg-id="TVSN.au@SD" tvg-logo="https://i.postimg.cc/sD1NFx9c/tvsn.png" group-title="Australia""Shop",TVSN SD
+https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8
 #EXTINF:-1 tvg-id="BoliviaTV.bo@SD" tvg-logo="https://i.imgur.com/tKLYYys.png" group-title="Bolivia""General",Bolivia TV SD
 http://boliviatv1.srfms.com:5735/live/livestream/playlist.m3u8
 
