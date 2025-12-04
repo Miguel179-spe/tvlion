@@ -1,5 +1,194 @@
-
 #EXTM3U
+#EXTINF:-1 tvg-id="ArboldeVidaTV.sv@SD" tvg-logo="https://i.imgur.com/4sGDc4X.jpg" group-title="El Salvador""Religious",Arbol de Vida TV SD
+https://www.yupi.live:1936/livearbol/livearbol/playlist.m3u8
+#EXTINF:-1 tvg-id="AwapaSportsTV.sv@SD" tvg-logo="https://i.imgur.com/MNw5cJH.jpg" group-title="El Salvador""Sports",Awapa Sports TV SD
+https://mgv-awapa.akamaized.net/hls/live/2104282/MGV_CHANNEL15/master.m3u8
+#EXTINF:-1 tvg-id="Canal2.sv@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Canal_2_TCS.png/512px-Canal_2_TCS.png" group-title="El Salvador""General",Canal 2 SD
+https://telecorporacion-es.cdn.vustreams.com/live/d3e259fa-736d-46b0-b1c9-71caf946ace9/live.isml/live.m3u8
+#EXTINF:-1 tvg-id="Canal3Impresionante.sv@SD" tvg-logo="https://i.imgur.com/mdfiWG9.png" group-title="El Salvador""General",Canal 3 Impresionante SD
+https://cloud2.streaminglivehd.com:1936/8048/8048/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal4.sv@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Canal_4_TCS.png/512px-Canal_4_TCS.png" group-title="El Salvador""General",Canal 4 SD
+http://tmp-sv3.teleon.live:8080/play/a011/index.m3u8
+#EXTINF:-1 tvg-id="Canal6.sv@SD" tvg-logo="https://i.imgur.com/M4muPLK.png" group-title="El Salvador""General",Canal 6 SD
+https://telecorporacion.cdn.vustreams.com/live/b164ebe7-decf-4a5a-8aea-5bb56fb92dfc/live.isml/live.m3u8
+#EXTINF:-1 tvg-id="Canal11TuTV.sv@SD" tvg-logo="https://i.imgur.com/itqQEux.png" group-title="El Salvador""General",Canal 11 TuTV SD
+https://stream.giostreaming.net:19360/canal11/canal11.m3u8
+#EXTINF:-1 tvg-id="Canal12.sv@SD" tvg-logo="https://i.imgur.com/UGDbp3O.png" group-title="El Salvador""General",Canal 12 SD
+https://alba-sv-c12-c12.stream.mediatiquestream.com/index.m3u8
+#EXTINF:-1 tvg-id="Canal65.sv@SD" tvg-logo="https://i.imgur.com/P15QovY.png" group-title="El Salvador""Religious",Canal 65 SD
+https://panel.streamingtv-mediacp.online:1936/tv65/tv65/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalTRV.sv@SD" tvg-logo="https://i.imgur.com/g5QKQ2E.png" group-title="El Salvador""General",Canal TRV SD
+https://stream.oursnetworktv.com/latin/encoder44/playlist.m3u8
+#EXTINF:-1 tvg-id="El15TV.sv@SD" tvg-logo="https://i.imgur.com/LsrCVy3.jpg" group-title="El Salvador""General",El 15 TV SD
+https://streaming.grupocsanetwork.com:19360/canal15/canal15.m3u8
+#EXTINF:-1 tvg-id="ElCaminoTV.sv@SD" tvg-logo="https://i.imgur.com/ZSktjGB.png" group-title="El Salvador""Religious",El Camino TV SD
+https://5d32e2b9b7eed.streamlock.net:4443/ectv/ectv/playlist.m3u8
+#EXTINF:-1 tvg-id="ElimTV.sv@SD" tvg-logo="https://i.imgur.com/payIg0N.png" group-title="El Salvador""Religious",Elim TV SD
+https://dacastmmd.mmdlive.lldns.net/dacastmmd/7e84ed301b194b7b81e86f85bb2c3a33/playlist.m3u8
+#EXTINF:-1 tvg-id="FTVTelevisionFamiliar.sv@SD" tvg-logo="https://i.imgur.com/OD4dTTU.png" group-title="El Salvador""Religious",FTV Television Familiar SD
+https://www.yupi.live:1936/tvftv/tvftv/playlist.m3u8
+#EXTINF:-1 tvg-id="GSGTV.sv@SD" tvg-logo="https://i.imgur.com/8fZnNu0.png" group-title="El Salvador""Religious",GSG TV SD
+https://schurch1.bozztv.com/livecdn69/live/playlist.m3u8
+#EXTINF:-1 tvg-id="JosueTV.sv@SD" tvg-logo="https://i.imgur.com/LNWGe1D.jpg" group-title="El Salvador""Religious",Josue TV SD
+https://videoserver.tmcreativos.com:19360/abbftuhxxs/abbftuhxxs.m3u8
+#EXTINF:-1 tvg-id="LegislativeAssemblyofElSalvador.sv@SD" tvg-logo="https://i.imgur.com/OBuiCyb.png" group-title="El Salvador""Legislative",Legislative Assembly of El Salvador SD
+https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8
+#EXTINF:-1 tvg-id="MegavisionCanal19.sv@SD" tvg-logo="https://i.imgur.com/voyVP6X.png" group-title="El Salvador""General",Megavision Canal 19 SD
+https://mgv-channel19.akamaized.net/hls/live/2093190/MGV_CHANNEL19/master.m3u8
+#EXTINF:-1 tvg-id="MegavisionCanal21.sv@SD" tvg-logo="https://i.imgur.com/HbdYU9k.png" group-title="El Salvador""General",Megavision Canal 21 SD
+https://mgv-channel21.akamaized.net/hls/live/2093191/MGV_CHANNEL21/master.m3u8
+#EXTINF:-1 tvg-id="OrbitaFM.sv@SD" tvg-logo="https://i.imgur.com/KTgTjQi.png" group-title="El Salvador""Music",Orbita FM SD
+https://fl1003.bozztv.com/ssh101/OrbitaFM953/index.m3u8
+#EXTINF:-1 tvg-id="OrbitaTV.sv@SD" tvg-logo="https://i.imgur.com/tFqDOpV.png" group-title="El Salvador""News",Orbita TV SD
+https://ssh101.bozztv.com/ssh101/OrbitaTV25/playlist.m3u8
+#EXTINF:-1 tvg-id="RTVCanal57.sv@SD" tvg-logo="https://i.imgur.com/tnOGWqL.png" group-title="El Salvador""General",RTV Canal 57 SD
+https://streaming.grupocsanetwork.com:19360/canal57/canal57.m3u8
+#EXTINF:-1 tvg-id="RTVCatolica.sv@SD" tvg-logo="https://i.imgur.com/MIlw7GI.png" group-title="El Salvador""Religious",RTV Catolica SD
+https://streaming.grupocsanetwork.com:19360/canal40/canal40.m3u8
+#EXTINF:-1 tvg-id="SolTV.sv@SD" tvg-logo="https://i.imgur.com/jaBxxpt.png" group-title="El Salvador""General",SolTV SD
+http://rtmp.info:1935/soltv/envivo/playlist.m3u8
+#EXTINF:-1 tvg-id="TaberTV.sv@SD" tvg-logo="https://i.imgur.com/ikq2iSf.png" group-title="El Salvador""Religious",TaberTV SD
+https://5ca9af4645e15.streamlock.net/tabertv/smil:tabertv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TCSPlus.sv@SD" tvg-logo="https://i.imgur.com/iYFWG06.png" group-title="El Salvador""General",TCS+ SD
+https://telecorporacion.cdn.vustreams.com/live/19b307cf-3f2d-44cb-bce6-0fd65365c56a/live.isml/live.m3u8
+#EXTINF:-1 tvg-id="TigoSports.sv@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Tigo_Sports_2025.png/512px-Tigo_Sports_2025.png" group-title="El Salvador""Sports",Tigo Sports SD
+https://channel03.tigosports.com.sv/out/v1/31f36d52d558475ca18799d8ca5e4b40/index.m3u8
+#EXTINF:-1 tvg-id="TribunaTV.sv@SD" tvg-logo="https://i.imgur.com/C5vHpd0.png" group-title="El Salvador""News",Tribuna TV SD
+https://cloudflare.streamgato.us:3204/live/tribunatvlive.m3u8
+#EXTINF:-1 tvg-id="TVCa.sv@SD" tvg-logo="https://i.imgur.com/uPWWtCA.png" group-title="El Salvador""Religious",TVCa SD
+https://ssh101.bozztv.com/ssh101/tvcaelsalvador/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCNetwork.sv@SD" tvg-logo="https://i.imgur.com/S1xiWB3.png" group-title="El Salvador""General" referrer="https://player.castr.com/live_d0b3cf70e24111ed8ed2951b4c7d1b75",TVC Network SD
+#EXTVLCOPT:http-referrer=https://player.castr.com/live_d0b3cf70e24111ed8ed2951b4c7d1b75
+https://stream.castr.com/643880749cf895435bf8eadf/live_d0b3cf70e24111ed8ed2951b4c7d1b75/index.m3u8
+#EXTINF:-1 tvg-id="TVCRET.sv@SD" tvg-logo="https://i.imgur.com/ChonoKb.png" group-title="El Salvador""Religious",TV CRET SD
+https://radiocret.net:8082/hls/tvcret.m3u8
+#EXTINF:-1 tvg-id="TVGetsemani.sv@SD" tvg-logo="https://i.imgur.com/C9SJCcE.jpg" group-title="El Salvador""Religious",TV Getsemani SD
+https://serversv.com:8080/hls/tvgetsemani.m3u8
+#EXTINF:-1 tvg-id="TVLeondeJuda.sv@SD" tvg-logo="https://i.imgur.com/ZUCppwi.png" group-title="El Salvador""Religious",TV Leon de Juda SD
+https://6110f70ea8d0e.streamlock.net/1838/1838/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMElSalvador.sv@SD" tvg-logo="https://i.imgur.com/fyCC8R6.png" group-title="El Salvador""News",TVM El Salvador SD
+http://201.247.102.189/tmp_hls/stream/index.m3u8
+#EXTINF:-1 tvg-id="TVX.sv@SD" tvg-logo="https://i.imgur.com/JbxpB6M.png" group-title="El Salvador""General",TVX SD
+https://raw.githubusercontent.com/azgaresncf/strm2hls/main/streams/TVX.m3u8
+#EXTINF:-1 tvg-id="WOWTV.sv@SD" tvg-logo="https://i.imgur.com/yk46NxC.png" group-title="El Salvador""General",WOW TV SD
+https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Barbie & Teresa - Recipe for Friendship (2025)" tvg-logo="https://imgur.com/2UovNWK.jpg" group-title="Comedia""Animation",Barbie & Teresa - Recipe for Friendship (2025)
+https://a.111477.xyz/movies/Barbie%20&%20Teresa%20-%20Recipe%20for%20Friendship%20(2025)/Barbie.And.Teresa.Recipe.For.Friendship.2025.1080p.NF.WEB-DL.H264-SiGLA.mkv
+
+#EXTINF:-1 tvg-id="" tvg-name="Barron's Cove (2025)" tvg-logo="https://imgur.com/mIkTu7m.jpg" group-title="Comedia""Drama",Barron's Cove (2025)
+https://a.111477.xyz/movies/Barron's%20Cove%20(2025)/Barrons.Cove.2024.1080p.WEBRip.x265-DH.mkv
+
+#EXTINF:-1 tvg-id="" tvg-name="Batman Ninja vs. Yakuza League (2025)" tvg-logo="https://imgur.com/SVOB6Yu.jpg" group-title="Comedia""Action",Batman Ninja vs. Yakuza League (2025)
+https://a.111477.xyz/movies/Batman%20Ninja%20vs.%20Yakuza%20League%20(2025)/Batman.Ninja.vs.Yakuza.League.2025.1080p.AMZN.WEB-DL.DDP5.1.H.264-APEX.mkv
+
+#EXTINF:-1 tvg-id="" tvg-name="Be Happy (2025)" tvg-logo="https://imgur.com/91FmRQq.jpg" group-title="Comedia""Comedy",Be Happy (2025)
+https://a.111477.xyz/movies/Be%20Happy%20(2025)/Be.Happy.2025.1080p.AMZN.WEB-DL.DD.2B5.1.H.264-playWEB.mkv
+
+#EXTINF:-1 group-title="Comedia""Fantasy" tvg-logo="https://www.themoviedb.org/t/p/w1280/fLsaFKExQt05yqjoAvKsmOMYvJR.jpg", Animales Fantásticos 1 : y dónde encontrarlos
+http://archive.org/download/AFantasticosDEncontrarlosbrspawww.newpct1.com654848946487468498449489/AFantasticosDEncontrarlosbrspa%20%5Bwww.newpct1.com%5D654848946487468498449489.mp4
+
+
+#EXTINF:-1 group-title="Comedia""Fantasy" tvg-logo="https://www.themoviedb.org/t/p/w1280/1Bc9VNd9CIHIyJtPKFqSQzrXWru.jpg", El Grinch
+http://archive.org/download/AnimalesFantsticos20182564564445646/El%20Grinch%20%282018%296464645411.mp4
+
+#EXTINF:-1 group-title="Comedia""Fantasy" tvg-logo="https://www.themoviedb.org/t/p/w1280/uTVGku4LibMGyKgQvjBtv3OYfAX.jpg", El regreso de Mary Poppins
+http://archive.org/download/AnimalesFantsticos20182564564445646/El%20regreso%20de%20Mary%20Poppins%20%282018%29654564684646.mp4
+
+#EXTINF:-1 group-title="Comedia""Fantasy" tvg-logo="https://www.themoviedb.org/t/p/w1280/kHMuyjlvNIwhCaDFiRwnl45wF7z.jpg", Kamen Rider Heisei Generation Forever
+http://archive.org/download/GFKRHGFOREVER_201905/%5BGF%5DKRHGFOREVER.mp4
+
+#EXTINF:-1 group-title="Comedia""Romance" tvg-logo="https://www.themoviedb.org/t/p/w1280/rrdTlA0MfKLcEAS62lH8f4TzaZm.jpg", Kimagure Orange Road: Summer's Beginning
+http://archive.org/download/KimagureOrangeRoadLaPelicula/kimagure%20orange%20road%20la%20pelicula.mp4
+
+
+
+#EXTINF:-1 group-title="Comedia""Animation" tvg-logo="https://www.themoviedb.org/t/p/w1280/wwbgkXQBEKtnyIJapk6gUgWkVw8.jpg", Las locuras del emperador
+http://archive.org/download/E24M2PER4D0R1121/E24M2PER4D0R1.mp4
+
+#EXTINF:-1 group-title="Comedia""Animation" tvg-logo="https://www.themoviedb.org/t/p/w1280/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg", Monsters Inc.
+http://archive.org/download/1NC21021MNAELC/1NC%2CM0N5T3R.mp4
+
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/5m3FEfxGQ7MdNNfUwNtA6paXRDs.jpg", ATENTADO EN EL ESTADIO
+http://ia601402.us.archive.org/22/items/1_20191127_20191127_1730/1.mp4
+
+#EXTINF:-1 group-title="Comedia""Drama" tvg-logo="https://www.themoviedb.org/t/p/w1280/dS6ZC5FsDHy1fTBpQ4UBv5gZYZc.jpg", ATRACCIÓN PELIGROSA
+http://archive.org/download/kicinigi1/Sub1d0_p4r4_5tr34ming_A85_V4R145_21/3.avi
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/1cSHEKYYP8Dpi4o1iBVd4U75FYt.jpg", BLACK AND BLUE
+http://ia801505.us.archive.org/28/items/000_20200122/2.mp4
+
+#EXTINF:-1 group-title="Comedia""Animation" tvg-logo="https://www.themoviedb.org/t/p/w1280/ml5eX1mitt8YuMjl8oAstzuzUw9.jpg", BLEACH
+http://ia601504.us.archive.org/20/items/sototo_patonce_04/04.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/3LeFOvzjZuIC7cQiXDeSIy1ym7a.jpg", BURN OUT
+http://ia601500.us.archive.org/8/items/000_20191210/4.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/wufI3VIUFiuQ0i65ycc1Eq5z8Q.jpg", CONTRABANDO
+http://ia601509.us.archive.org/16/items/2_20191128_20191128_1720/16.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://imgur.com/undefined.png", CRUZADA
+http://archive.org/download/meyabaror_netmails_3/3.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/eBaUVUNAWSOg70TMl7o9K3qSgYO.jpg", CYBORG
+http://archive.org/download/w-17-fl-1-x-1/Cyb0rgJ34nCl4ud3V4nD4mm3.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/8iXpVITXenqPG8gQ0lCFpUMtZIx.jpg", DE LA CUNA A LA TUMBA
+http://archive.org/download/ditemo1/Sub1d0_p4r4_5tr34ming_A85_V4R145_8/8.avi
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/g0eEEZAqMf98ULQnoiORuazjOpn.jpg", DESEO DE MATAR
+http://archive.org/download/damiantellez78_gmail_362/Sthepensonprieto_ladron/362.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/xbxpYjTrOgbQTtPrgdpl3EOu75q.jpg", DESTRUCCION LOS ANGELES
+http://ia801509.us.archive.org/29/items/ziduyaliri_mail-register_08/08.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/f6QAViAj4ualzAVRjwoIupT6Zal.jpg", EL IRLANDES (SUBTITULADA)
+http://archive.org/download/ir1_20200421/ir1/ir1.avi
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/iJpDx4E2cvgDOgtL4AszJKCFsRT.jpg", EL TRAFICANTE
+http://ia801507.us.archive.org/11/items/000_20191203/2.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/xmuCaJJjGbUns8pwMD7M0C0O1uP.jpg", EL TRANSPORTADOR
+http://archive.org/download/ditemo1/Sub1d0_p4r4_5tr34ming_A85_V4R145_8/11.mkv
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/cdm17vK8PxHfTi7ayZf6WKbOgUO.jpg", EL TRANSPORTADOR 2
+http://archive.org/download/ditemo1/Sub1d0_p4r4_5tr34ming_A85_V4R145_8/12.mkv
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/o4w9VF3GRZuXe9NHHvZ07pJespl.jpg", EL TRANSPORTADOR 3
+http://archive.org/download/ditemo1/Sub1d0_p4r4_5tr34ming_A85_V4R145_8/13.mkv
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/71kaQfdrMy0LHSeLRADsvlDGCgb.jpg", EL TRANSPORTADOR RECARGADO
+http://ia600206.us.archive.org/27/items/7H3.794N5P09/7H3.794N5P09739.93FU313D-ES-360.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/qdKOgznTjZ7KsDblyhPn8UkKh0d.jpg", EL UNICO
+http://archive.org/download/elalcaheda28_gmail_EUO/EUO.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/wwPYF3PqYXa9tcR8sBNPLgsUIYL.jpg", HACKER
+http://ia601500.us.archive.org/17/items/000_20191202_20191202/1.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/h69UJOOKlrHcvhl5H2LY74N61DQ.jpg", HITMAN
+http://ia801302.us.archive.org/16/items/HI7M4N/HI7M4N.463N7.47-360-ES.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg", JOHN WICK 1
+http://ia601408.us.archive.org/20/items/000_20191216/5.mp4
+
+#EXTINF:-1 group-title="Comedia""Action" tvg-logo="https://www.themoviedb.org/t/p/w1280/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg", JOHN WICK 2
+http://ia801504.us.archive.org/13/items/000_20191225/5.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/ejODG5DtqCVJm85XVt2BOxMrHxF.jpg", JOHN WICK 3
+http://ia601504.us.archive.org/13/items/000_20191225/1.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/nA8ZVbdBsNkTqsa49ZG9na4lFuY.jpg", JUEGO LETAL
+http://ia601408.us.archive.org/20/items/000_20191216/3.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/4iuG6XWB0caLyxJpbHrm0resKCU.jpg", LA DEUDA
+http://archive.org/download/l-d-3ud/l%40%20d3ud%40.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/A8FWpw3WHUo9EvU1xMWZRjdRlN3.jpg", LA DEUDA 2
+http://archive.org/download/l-d-3ud-2/l%40%20d3ud%40%202.mp4
+
+#EXTINF:-1 group-title="Comedia""Science Fiction" tvg-logo="https://www.themoviedb.org/t/p/w1280/mIDxsJTrOC7NhgOo3GziiHyKfsQ.jpg", DIA DEL ATENTADO
+http://archive.org/download/dia-del-atentado-2016/Dia%20Del%20Atentado%20%282016%29/Dia%20Del%20Atentado%20%282016%29.mp4
 #EXTINF:-1 tvg-id="AnhuiSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/n5LABhB.png" group-title="China""",Anhui Satellite TV SD
 http://118.81.195.79:9003/hls/21/index.m3u8
 #EXTINF:-1 tvg-id="AnimationShowChannel.cn@SD" tvg-logo="https://i.imgur.com/Ul1pjUN.png" group-title="China""Animation;Kids",Animation Show Channel SD
