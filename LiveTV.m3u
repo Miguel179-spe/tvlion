@@ -2067,10 +2067,10 @@ https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8?checkedb
 #EXTINF:-1 group-title="MoveOnJoy+" tvg-id="Laff.us2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/laff-us.png?raw=true", LAFF TV
 https://cvtv.cvalley.net/hls/KSHBLaff/KSHBLaff.m3u8
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://www.sidewalkstv.com/wp-content/uploads/2013/10/sw-tep-large-300x125.png" group-title="Undefined",30A Sidewalks
+#EXTINF:0 tvg-country="US" tvg-logo="https://www.sidewalkstv.com/wp-content/uploads/2013/10/sw-tep-large-300x125.png" group-title="USA",30A Sidewalks
 http://30a-tv.com/sidewalks.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/B8bKeq9.png" group-title="Undefined",30A Georgia Hollywood Review TV
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/B8bKeq9.png" group-title="USA",30A Georgia Hollywood Review TV
 https://30a-tv.com/gh.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/JwCLwQ2.png" group-title="Religious",3ABN Dare To Dream Network
@@ -2100,10 +2100,10 @@ https://mediaserver.abnvideos.com/streams/abntvindia.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/Z6lB0Ww.png" group-title="Legislative",ACTV
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/athens/live/ch2/video.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/XRTfoSp.png" group-title="Undefined",AKC TV
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/XRTfoSp.png" group-title="USA",AKC TV
 https://install.akctvcontrol.com/speed/broadcast/138/desktop-playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/OjLCew5.png" group-title="Undefined",AMC All Weddings
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/OjLCew5.png" group-title="USA",AMC All Weddings
 https://d85lu9l3axp7b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-49b4g6287mnav/playlist.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/S1YM83i.png" group-title="Religious",Al-MahdiTV (1080p)
@@ -2125,13 +2125,13 @@ https://catholictvhd-lh.akamaized.net/hls/live/2043390/CTVLiveHD/master.m3u8?che
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/RIUNuMQ.png" group-title="Lifestyle",CineLife
 https://magnolia-cinelife.amagi.tv/hls/amagi_hls_data_magnoliaA-cinelife-oando/CDN/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/vhSzfDC.png" group-title="Undefined",Degrassi
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/vhSzfDC.png" group-title="USA",Degrassi
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c6eeb85c05dfc257e5a50c4/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c287c45-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=e77a3a7d-8f76-4cbc-a288-db274c938959&checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/MRR6UL3.png" group-title="Legislative",DerryTV 17
 https://livestream.telvue.com/derrynh1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/MRR6UL3.png" group-title="Undefined",DerryTV 23
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/MRR6UL3.png" group-title="USA",DerryTV 23
 https://livestream.telvue.com/derrynh2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/fewPTFE.png" group-title="Movies",EBS Cinema (720p)
@@ -2146,7 +2146,7 @@ https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8?checkedb
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="Sports",FITE 24/7 (720p)
 https://cdn.klowdtv.net/803B48A/n1.klowdtv.net/live2/fite247_720p/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/FNX_Web_Logo.png" group-title="Undefined",FNX [Geo-blocked]
+#EXTINF:0 tvg-country="US" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/FNX_Web_Logo.png" group-title="USA",FNX [Geo-blocked]
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/kvcr/live/ch1/video.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/wlYUEYc.png" group-title="Legislative",Gilroy CMAP TV Channel 17 (720p)
@@ -2158,10 +2158,10 @@ https://2-fss-2.streamhoster.com/pl_118/201450-1248872-1/playlist.m3u8?checkedby
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/gwPaw3v.png" group-title="News",HMI PROMZ NEWS (720p)
 https://video1.getstreamhosting.com:1936/8326/8326/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/S4r98AB.png" group-title="Undefined",Judge Nosey
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/S4r98AB.png" group-title="USA",Judge Nosey
 https://amg00514-noseybaxterllc-realnosey-cineverse-tqbpv.amagi.tv/playlist/amg00514-noseybaxterllc-realnosey-cineverse/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/ocMGZM6.png" group-title="Undefined",KET
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/ocMGZM6.png" group-title="USA",KET
 https://2-fss-1.streamhoster.com/pl_134/amlst:200914-1282960/playlist.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/5mhYHtD.png" group-title="General",Lompoc TAP TV Channel 24 (720p)
@@ -2176,13 +2176,13 @@ https://livestream.telvue.com/ogat1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlis
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/b0ufMkd.png" group-title="General",Pacific Coast TV HMB Coastside Channel 27 (720p)
 https://livestream.telvue.com/pacificaca1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/t9wYYY9.png" group-title="Undefined",Payam-e-Afghan TV (480p) [Not 24/7]
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/t9wYYY9.png" group-title="USA",Payam-e-Afghan TV (480p) [Not 24/7]
 https://g5nl6xx5lpq6-hls-live.5centscdn.com/live1234/2621b29e501b445fabf227b086123b70.sdp/mono.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/A4gqEmG.png" group-title="News",Payvand TV (720p) [Not 24/7]
 https://bozztv.com/cus01/ucur1/Payvand/index.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/kFO675K.png" group-title="Undefined",Popstar! TV
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/kFO675K.png" group-title="USA",Popstar! TV
 https://linear-10.frequency.stream/dist/plex/10/hls/master/playlist.m3u8?ads.plex_token=MorUy57ijWhGe4ixZb_T&ads.plex_id=5ef11487d33ab9004048a1d6&ads.device_id=df8e1a36-847d-5096-86a7-3803ed330ede&ads.dnt=0&ads.us_privacy=1---&checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/Yx0AnLW.png" group-title="Religious",Potta-Divine TV USA (480p)
@@ -2191,10 +2191,10 @@ https://playout7multirtmp.tulix.tv/live21/Stream1/playlist.m3u8?checkedby:iptvca
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/TJNXjS2.png" group-title="Religious",RadioMensaje TV (720p)
 https://eu1.servers10.com:8081/8230/index.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/DWwequ0.png" group-title="Undefined",Rifle Community TV RCTV (Rifle CO) (720p)
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/DWwequ0.png" group-title="USA",Rifle Community TV RCTV (Rifle CO) (720p)
 https://livestream.telvue.com/riflecmttv2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8?checkedby:iptvcat.com
 
-#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/OxbIla4.png" group-title="Undefined",RightNow TV (720p)
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/OxbIla4.png" group-title="USA",RightNow TV (720p)
 https://2-fss-1.streamhoster.com/pl_154/amlst:205448-2145652/rightnowtv.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/gh1ghp4.png" group-title="Entertainment",Royal Time Television (1080p)
@@ -2954,7 +2954,7 @@ https://proxy.khipu.edu.pe/https://live-evg25.tv360.bitel.com.pe/bitel/toplatino
 #EXTINF:-1 group-title="TV360 by Bitel" group-logo="logo" tvg-logo="logo", FuegoTV
 https://proxy.khipu.edu.pe/https://live-evg25.tv360.bitel.com.pe/bitel/liketv/playlist.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTM3U
-#EXTINF:-1 group-title="Universal+" group-logo="logo" tvg-logo="logo", Universal Premiere
+#EXTINF:-1 group-title="USA" group-logo="logo" tvg-logo="logo", Universal Premiere
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"2528892552c65b5399017c2f2a194ab7":"fc87001860c95eb094c2dd5fc2d2e2bd","3ef088eaf6685839a1d77c9bc89b1e20":"68c8566c7cb4400fac63d0abe8eea6d4","4518f2fc410a5327b26a26e8c0cebd17":"16da291229b2b68ded5419cc35339beb"}
@@ -2985,14 +2985,14 @@ https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.co
 #EXTINF:-1 group-title="United Kingdom" tvg-logo="logo", Blaze UK
 https://cors.almoroj.com/https://live-blaze-ssai.simplestreamcdn.com/v1/master/774d979dd66704abea7c5b62cb34c6815fda0d35/blaze-live-broadcast-scte/index.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTM3U
-#EXTINF:-1 group-title="USA Entertainment" tvg-logo="logo", BET East
+#EXTINF:-1 group-title="USA" tvg-logo="logo", BET East
 https://cors-proxy.cooks.fyi/https://propefh1c17d.airspace-cdn.cbsivideo.com/out/v1/99d9cb48069746a7aeb98f51b9ec7e54/manifest.m3u8?0GKUSH_R4IN&DONTSTEAL
-#EXTINF:-1 group-title="USA Entertainment" tvg-logo="logo", BYUtv
+#EXTINF:-1 group-title="USA" tvg-logo="logo", BYUtv
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"85877dfc046947328b273987bf8d5bb8":"c465f8a7b9db273043154005021d44b7"}
 https://content.uplynk.com/channel/2bb01dbf7c9b425db6854a4e45a57af8.mpd
-#EXTINF:-1 group-title="USA Entertainment" tvg-logo="logo", VH1 East
+#EXTINF:-1 group-title="USA" tvg-logo="logo", VH1 East
 https://cors-proxy.cooks.fyi/https://propedh55a7a.airspace-cdn.cbsivideo.com/out/v1/0009a2f77fc94928988c254966ef4176/manifest.m3u8?0GKUSH_R4IN&DONTSTEAL
 
 
