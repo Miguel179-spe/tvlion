@@ -1315,7 +1315,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=535, https://mvg-mv-xumo.o
 #EXTINF:-1  tvg-country="United Kingdom" tvg-language="English" group-title="Auto" tvg-logo="https://imgur.com/YjyZlCr.jpg",Top Gear Classic
 https://www.youtube-nocookie.com/embed/5Bw7xtfpUV4
 
-#EXTINF:-1 tvg-id="TopGear.uk@SD" tvg-logo="https://i.imgur.com/S6Su6QH.png" group-title="Auto;Entertainment", Top Gear SD
+#EXTINF:-1 tvg-id="TopGear.uk@SD" tvg-logo="https://i.imgur.com/S6Su6QH.png" group-title="Auto", Top Gear SD
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64c109735dc1660008a4a2dc/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b215b51-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=55fb26fd-5dba-40cd-a0b1-8de7d0f78acb
 
 #EXTINF:-1  tvg-country="Russia" tvg-language="Russian" group-title="Auto" tvg-logo="https://imgur.com/RK5LlLk.jpg",Сити Эдем АвтоГид
@@ -1357,7 +1357,7 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63
 #EXTINF:-1 tvg-id="RPM.za" tvg-logo="https://i.imgur.com/gWJ1lN8.png" group-title="Auto", RPM
 https://origin3.afxp.telemedia.co.za/PremiumFree/rpm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="FunRoads.us" tvg-logo="https://i.imgur.com/2Q6TENm.png" group-title="Auto;Travel", Fun Roads
+#EXTINF:-1 tvg-id="FunRoads.us" tvg-logo="https://i.imgur.com/2Q6TENm.png" group-title="Auto", Fun Roads
 https://a-cdn.klowdtv.com/live3/funroads_720p/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AntenneKaernten.at@SD" tvg-logo="https://i.imgur.com/nUKFDsb.jpeg" group-title="Austria""Music",Antenne Kaernten SD
@@ -1663,13 +1663,13 @@ https://fl1.moveonjoy.com/CMT/index.m3u8
 https://viamotionhsi.netplus.ch/live/eds/comedycentral/browser-HLS8/comedycentral.m3u8
 #EXTINF:-1 tvg-id="ComedyCentral.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png" group-title="Comedy",Comedy Central East
 https://fl1.moveonjoy.com/Comedy_Central/index.m3u8
-#EXTINF:-1 tvg-id="ComedyCentralAnimation.us@SD" tvg-logo="https://i.imgur.com/uENch0P.png" group-title="Comedy",Comedy Central Animation SD
+#EXTINF:-1 tvg-id="ComedyCentralAnimation.us@SD" tvg-logo="https://i.imgur.com/uENch0P.png" group-title="Comedia",Comedy Central Animation SD
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a949f5b5e4000862467c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c79b862-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=954a470a-ef46-4375-9079-27408bd93898
-#EXTINF:-1 tvg-id="ComedyCentralenEspanol.us@SD" tvg-logo="https://i.imgur.com/6xTD3G8.png" group-title="Comedy",Comedy Central en Espanol SD
+#EXTINF:-1 tvg-id="ComedyCentralenEspanol.us@SD" tvg-logo="https://i.imgur.com/6xTD3G8.png" group-title="Comedia",Comedy Central en Espanol SD
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cf96dad1652631e36d43320/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c280717-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=970b3112-4df5-46fc-83e4-cefce01e5024
 #EXTINF:-1 tvg-id="MTV.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/512px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV SD
 https://viamotionhsi.netplus.ch/live/eds/mtvfrance/browser-HLS8/mtvfrance.m3u8
-#EXTINF:-1 tvg-id="NickComedyCentralPlus1.de@HD" tvg-logo="https://i.imgur.com/08ZUI9k.png" group-title="Comedy;Kids",Nick/Comedy Central +1 HD
+#EXTINF:-1 tvg-id="NickComedyCentralPlus1.de@HD" tvg-logo="https://i.imgur.com/08ZUI9k.png" group-title="Comedia",Nick/Comedy Central +1 HD
 https://viamotionhsi.netplus.ch/live/eds/comedycentralnick/browser-dash/comedycentralnick.mpd
 #EXTINF:-1 tvg-id="Nickelodeon.ru@SD" tvg-logo="https://i.imgur.com/w8iE8dV.png" group-title="Kids",Nickelodeon SD
 http://46.8.46.14/Nickelodeon/index.m3u8
@@ -1811,7 +1811,7 @@ http://190.11.225.124:5000/live/universo_hd/playlist.m3u8
 https://cors-proxy.cooks.fyi/https://streamer1.nexgen.bz/STUDIO_UNIVERSAL/index.m3u8
 #EXTINF:-1 tvg-id="UniversalCinema.us@SD" tvg-logo="https://i.imgur.com/XxfET68.png" group-title="Movies",Universal Cinema SD
 http://190.2.212.209:8050/play/a0q3
-#EXTINF:-1 tvg-id="UniversalComedy.us@SD" tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Comedy;Movies;Series",Universal Comedy SD
+#EXTINF:-1 tvg-id="UniversalComedy.us@SD" tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Comedia",Universal Comedy SD
 http://190.2.212.209:8050/play/a0q4
 #EXTINF:-1 tvg-id="UniversalCrime.us@East" tvg-logo="https://i.imgur.com/OwSlGMu.png" group-title="Series",Universal Crime East
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6549341853fc9700083901ac/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2cc200-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=f8ea05b6-c631-4463-8491-a4394e906d3c
@@ -1943,7 +1943,7 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cffcf5686dfe15595fb3f56/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84ae044a-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=1702995c-e680-43a7-aab2-8ad161900add
 #EXTINF:-1 tvg-id="MTVU.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/MTVU_Logo_%282016%E2%80%93present%29.svg/512px-MTVU_Logo_%282016%E2%80%93present%29.svg.png" group-title="Entertainment",MTVU SD
 https://fl1.moveonjoy.com/MTV_U/index.m3u8
-#EXTINF:-1 tvg-id="PlutoTVComedy.us@US" tvg-logo="https://i.imgur.com/MTVrbd5.png" group-title="Comedy",Pluto TV Comedy US
+#EXTINF:-1 tvg-id="PlutoTVComedy.us@US" tvg-logo="https://i.imgur.com/MTVrbd5.png" group-title="Comedia",Pluto TV Comedy US
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a4d3a00ad95e4718ae8d8db/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2ac639-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=b9ed92f1-1fa3-4a05-abd8-e6b077ed35c4
 #EXTINF:-1 tvg-id="PlutoTVMTVClassic.us@SD" tvg-logo="https://i.imgur.com/NPavpts.png" group-title="Musica",Pluto TV MTV Classic SD
 https://jmp2.uk/plu-66a11a21a79dea0008aa90ca.m3u8
@@ -5169,7 +5169,7 @@ https://rpn.bozztv.com/gusa/gusa-chefchampion/index.m3u8
 https://rpn.bozztv.com/gusa/gusa-chefrock/index.m3u8
 #EXTINF:-1 tvg-id="ChiveTV.us@SD" tvg-logo="https://i.imgur.com/iUMAOUq.png" group-title="USA""Outdoor",Chive TV SD
 https://linear-941.frequency.stream/dist/stirr/941/hls/master/playlist.m3u8
-#EXTINF:-1 tvg-id="Choppertown.us@SD" tvg-logo="https://i.imgur.com/U6cu5Ms.png" group-title="USA""Auto;Series",Choppertown SD
+#EXTINF:-1 tvg-id="Choppertown.us@SD" tvg-logo="https://i.imgur.com/U6cu5Ms.png" group-title="USA""Auto",Choppertown SD
 https://linear-11.frequency.stream/dist/glewedtv/11/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="ChristianYouthChannelCYC.us@SD" tvg-logo="https://i.imgur.com/61eV77C.png" group-title="USA""Kids;Religious",Christian Youth Channel CYC SD
 https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119197/cyc/playlist.m3u8
