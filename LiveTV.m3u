@@ -1,4 +1,5 @@
-
+#EXTINF:-1  tvg-name="NBA TV SD" tvg-id="nba-tv-usa" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nba-tv-icon-us.png?raw=true" group-title="Deportes",NBA TV SD
+https://e2.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8?token=5UUmhc5F4YPrCIZCxXGsgA&expires=1760650899&user_id=Q09uZmxXdmwyeTdvVmgwS0Z2VGhidkw1NnViOWFOcThGVlJCMzF3VQ==
 #EXTINF:-1 tvg-id="4Afghanistan.fr@SD" tvg-logo="https://imgur.com/Ecm0qPY.png" group-title="France"Ac Domincano",Telemundo Chicago 
 http://cord-cutter.net:8080/live/sheldoncull@gmail.com/35GqjifuTF/120691.m3u8
 
