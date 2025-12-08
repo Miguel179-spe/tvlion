@@ -1,7 +1,7 @@
 
-
-#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO", US HBO East HD  
+#EXTINF:-1 group-title="HBO"  tvg-logo="https://imgur.com/WjWhKUS.png",US HBO East HD  
 http://fortv.cc:8080/live/16686894/06987237/46713.m3u8
+
 #EXTINF:-1  tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO 
 http://fortv.cc:8080/live/16686894/06987237/9264.m3u8
 #EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO 2 (A)
