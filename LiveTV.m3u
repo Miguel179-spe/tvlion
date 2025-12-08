@@ -1,27 +1,27 @@
 
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO", US HBO East HD  
+
+#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO", US HBO East HD  
 http://fortv.cc:8080/live/16686894/06987237/46713.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO 
+#EXTINF:-1  tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO 
 http://fortv.cc:8080/live/16686894/06987237/9264.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO 2 (A)
+#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO 2 (A)
 http://fortv.cc:8080/live/16686894/06987237/9816.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO Comedy (East) 
+#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO Comedy (East) 
 http://fortv.cc:8080/live/16686894/06987237/17773.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO Family (East) 
+#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO Family (East) 
 http://fortv.cc:8080/live/16686894/06987237/17772.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa"tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO SIGNATURE (East) 
+#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa"tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO SIGNATURE (East) 
 http://fortv.cc:8080/live/16686894/06987237/9266.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO Zone (East) 
+#EXTINF:-1  tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",US HBO Zone (East) 
 http://fortv.cc:8080/live/16686894/06987237/9265.m3u8
 
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",BR: HBO HD
+#EXTINF:-1  tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",BR: HBO HD
 http://fortv.cc:8080/live/16686894/06987237/164950.m3u8
 
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",CA: HBO 1 
+#EXTINF:-1 tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",CA: HBO 1 
 http://fortv.cc:8080/live/16686894/06987237/57437.m3u8
-#EXTINF:-1,tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",CA HBO 2 (R)
+#EXTINF:-1  tvg-name="HBO" tvg-id="nba-tv-usa" tvg-logo="https://imgur.com/WjWhKUS.png" group-title="HBO",CA HBO 2 (R)
 http://fortv.cc:8080/live/16686894/06987237/57438.m3u8
-
 
 
 #EXTINF:-1  tvg-name="NBA TV SD" tvg-id="nba-tv-usa" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nba-tv-icon-us.png?raw=true" group-title="Deportes",NBA TV SD
