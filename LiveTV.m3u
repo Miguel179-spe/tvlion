@@ -1,3 +1,15 @@
+
+
+#EXTINF:-32 tvg-id="AYM DEPORTES" tvg-logo="https://imgur.com/Lkrpfct.png" group-title="DEPORTES", ESPN (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/157558.m3u8
+#EXTINF:-32 tvg-id="AYM DEPORTES" tvg-logo="https://imgur.com/Lkrpfct.png" group-title="DEPORTES", ESPN 2 (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/157559.m3u8
+#EXTINF:-32 tvg-id="AYM DEPORTES" tvg-logo="https://imgur.com/Lkrpfct.png" group-title="DEPORTES", ESPN 3 (M)(720)
+#EXTINF:-32 tvg-id="AYM DEPORTES" tvg-logo="https://imgur.com/Lkrpfct.png" group-title="DEPORTES", ESPN 4 (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/157561.m3u8
+#EXTINF:-32 tvg-id="AYM DEPORTES" tvg-logo="https://imgur.com/Lkrpfct.png" group-title="DEPORTES", ESPN Premium (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/157562.m3u8
+
 #EXTINF:-1,NOV-Telemundo (M)(1080)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/8336.m3u8
 #EXTINF:-1,NOV-Telemundo (T)(720)
