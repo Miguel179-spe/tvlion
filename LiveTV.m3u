@@ -3547,8 +3547,6 @@ https://d368vp0qqzvkid.cloudfront.net/11603/88889714/hls/master.m3u8?ads._fw_att
 
 #EXTINF:-1 tvg-id="AdoramTV.do@SD" tvg-logo="https://i.imgur.com/uU01KHz.png" group-title="A Dominicano""A Dominicano""Dominicano",Adoram TV SD
 https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
-#EXTINF:-1 tvg-id="Agenda56TV.do@SD" tvg-logo="https://i.imgur.com/G7zIVB7.png" group-title="A Dominicano""Dominicano""General",Agenda 56 TV SD
-https://cloudflare.streamgato.us:3148/live/agenda56tvlive.m3u8
 #EXTINF:-1 tvg-id="AhoraTV.do@SD" tvg-logo="https://i.imgur.com/dyJyuXc.png" group-title="A Dominicano""Dominicano""Dominicano""General",Ahora TV SD
 https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
 #EXTINF:-1 tvg-id="AltantoTV.do@SD" tvg-logo="https://i.imgur.com/KWvVLhc.png" group-title="A Dominicano""Dominicano""Dominicano""General",Altanto TV SD
