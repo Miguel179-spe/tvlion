@@ -118,6 +118,11 @@ http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/111929.mkv
 #EXTINF:-1 group-title="Science Fiction" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/7ubj6nPmJDwGPFW41USMYIs8AKc.jpg",Asesinos de aliens del espacio sideral (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/152101.mkv
 
+#EXTINF:-1 group-title="Science Fiction" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/swUvAF9d9WKWGQwVCPDu8Qi8ilZ.jpg",Estado eléctrico (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/111926.mkv
+
+#EXTINF:-1 group-title="Science Fiction" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/4rOMi0FAfFwLfS1qsoklDAejI70.jpg",Gravedad cero (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/124745.mkv
 
 
 
@@ -360,15 +365,32 @@ http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/131625.mkv
 #EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/3hVjnB5FE4gBrR5rqk42qiBFgGe.jpg",Batman Ninja vs La Liga Yakuza (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/112648.mkv
 
-#EXTINF:-1 group-title="Superhero" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/vUNj55xlF0pSU5FU3yDHC6L5wVX.jpg",Capitán América: Un nuevo mundo (2025)
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/vUNj55xlF0pSU5FU3yDHC6L5wVX.jpg",Capitán América: Un nuevo mundo (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/109060.mkv
 
-#EXTINF:-1 group-title="Superhero" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/fJdnp5OO2wh07tdy6noACNyaqMJ.jpg",Chainsaw Man la película -Arco de Reze (2025)
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/fJdnp5OO2wh07tdy6noACNyaqMJ.jpg",Chainsaw Man la película -Arco de Reze (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/156186.mkv
 
-#EXTINF:-1 group-title="Superhero" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/iWLV12z9oexSRLz2WKyqCZbKoPA.jpg",Demon Slayer: Kimetsu no Yaiba Castillo infinito (2025)
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/iWLV12z9oexSRLz2WKyqCZbKoPA.jpg",Demon Slayer: Kimetsu no Yaiba Castillo infinito (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/151869.mkv
 
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/mWla8Ndd7YjTdRKqfbdTneoMRPz.jpg",El secreto de Santa (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/160459.mkv
+
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/2IL9BVp0wXPFADYGW7wtCxsIw8L.jpg",Chicos de hielo en el trópico (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/115388.mkv
+
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/d2K7Zhw9yRjzoa4HBbrjt7aqlgT.jpg",Chico Bento e a Goiabeira Maraviosa (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/113944.mkv
+
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/4zjK2DNOMaVT7kd6mYjqf56FIHr.jpg",Dibujos Imaginarios (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/146084.mkv
+
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/fJdnp5OO2wh07tdy6noACNyaqMJ.jpg",Chainsaw Man la película -Arco de Reze (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/156186.mkv
+
+#EXTINF:-1 group-title="Animation" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/iWLV12z9oexSRLz2WKyqCZbKoPA.jpg",Demon Slayer: Kimetsu no Yaiba Castillo infinito (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/151869.mkv
 
 
 
@@ -405,12 +427,43 @@ http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/157696.mkv
 
 #EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/8joWkrzM7ss1t8JZlBffavbg4hg.jpg",Bajo un volcán (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/152971.mkv
+#EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/uSzB0T77LvQzCjYCkb6ZhWHTrQa.jpg",Cacería de brujas (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/158344.mkv
 
+#EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/oen5tE7lCLv3MlaHgVovlBVx6yT.jpg",Chris Hemsworth: A Road Trip to Remember (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/158973.mkv
+
+#EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/uOEgCIpKtZZ7Iz6kXe3LvTPldje.jpg",El gran premio a toda velocidad (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/156184.mkv
+
+#EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/cL9Pg5qYLsPPlJrClmvuBMTaC4o.jpg",Fuera de pista 2 (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/124979.mkv
+
+#EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/wfpqaxoPKvcqzLy8FO0enGXBzU.jpg",F1 la película (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/142731.mkv
+
+#EXTINF:-1 group-title="Adventure" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/4rOMi0FAfFwLfS1qsoklDAejI70.jpg",Gravedad cero (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/124745.mkv
 
 
 
 #EXTINF:-1 group-title="Documentary" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/t11mBtF6xd3KnaSGfoP3Q0TnnoE.jpg",Al descubierto: La caída de Favre (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/136628.mkv
+
+#EXTINF:-1 group-title="Documentary" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/kbCZnT5qXL6xKz3Z0cskB21bR13.jpg",Delfines en primer plano con Bertie Gregory (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/150870.mkv
+
+#EXTINF:-1 group-title="Documentary" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/2kjTyXPJUqGs1iAwL1nIEyj0rew.jpg",Grenfell: Uncovered (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/130467.mkv
+
+#EXTINF:-1 group-title="Documentary" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/yZ22c1ljoFexSuEHVi3ZCSFRSeC.jpg",Dua Lipa: Estadio River Plate 2025 (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/156776.mkv
+
+#EXTINF:-1 group-title="Documentary" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/u8E4aR8ghCnc1gWJTyHxXseHvpy.jpg",Fiasco total: La tragedia de Astroworld (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/127107.mkv
+
+#EXTINF:-1 group-title="Documentary" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/wbM7cWkaHpUGiLkjd2ZaJiHLLCr.jpg",Hurry Up Tomorrow: Más allá de los reflectores (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/137350.mkv
 
 
 
@@ -420,10 +473,55 @@ http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/136628.mkv
 #EXTINF:-1 group-title="Mistery" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/1gdkXW3QMsi6u0yeh7DlUOw95PV.jpg",8 (2025)
 http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/136965.mkv
 
+#EXTINF:-1 group-title="Mistery" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/sPW9fszYL0EG7YJW4NwvnAZbfuq.jpg",El secreto del orfebre (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/124187.mkv
+
+#EXTINF:-1 group-title="Mistery" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/x4Clc08pw5UJEzK2fM6yy6HdrKr.jpg",Cuatro madres (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/154496.mkv
+
+#EXTINF:-1 group-title="Mistery" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/oukn96XolAQBXykWTVT6h0HNgY7.jpg",El Rey de Reyes (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/128374.mkv
+
+#EXTINF:-1 group-title="Mistery" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/wfpqaxoPKvcqzLy8FO0enGXBzU.jpg",F1 la película (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/142731.mkv
+
+#EXTINF:-1 group-title="Mistery" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/oen5tE7lCLv3MlaHgVovlBVx6yT.jpg",Chris Hemsworth: A Road Trip to Remember (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/158973.mkv
 
 
 
 
+
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/rSOYVDmg4VFoVuZzu4941X2s1fO.jpg",Carretera Forestal (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/154172.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/cD5WrzWVjA5Q5rHNLoZ1DsZIOLR.jpg",El Robo Perfecto: Pantera (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/110398.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/p6ALxjTM4YUdiCRmHCkZLE6r2pG.jpg",El asesino del calendario (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/105565.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/xJeCdbeaLgsEr5DkXD6T67eqZFT.jpg",El club del crimen de los jueves (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/145840.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/roboTp6hVELXd2PDkz98vnBhWnM.jpg",El día de la masacre (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/152985.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/ts8IjoVDPH4wTlhZOm8owNlPhs4.jpg",El esquema Fenicio (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/131927.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/hzuus3qrQct2JeoAs2AGMYzKzjZ.jpg",El ladrón de joyas (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/132743.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/lbpyI9nwzSVDjS7OnE0uC41UciP.jpg",El último encargo (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/140846.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/rpAbueORafYSgTk2oSc2t6ayktb.jpg",Criminales de lujo (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/113841.mkv
+
+#EXTINF:-1 group-title="Crime" type="movie" tvg-logo="https://image.tmdb.org/t/p/original/kDLQP1bbaFBTpOSM2fuPu3yBqxA.jpg",Good Fortune (2025)
+http://tv.zapping.life:8080/movie/Maricsasantana/sEM6wKMsBf/155425.mkv
 
 
 
