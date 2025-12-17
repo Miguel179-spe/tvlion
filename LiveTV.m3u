@@ -1,3 +1,8 @@
+
+
+#EXTINF:-32 tvg-id=" USA-NBA TV" tvg-logo="https://imgur.com/CciJSk9.png" group-title="DEPORTES",NBA U (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9598.m3u8
+
 #EXTINF:-32 tvg-id=" USA-NBA TV" tvg-logo="https://imgur.com/hXeq3zy.png" group-title="DEPORTES", USA-NBA TV (L)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/10821.m3u8
 
