@@ -3428,7 +3428,12 @@ https://proxy.khipu.edu.pe/https://live-evg25.tv360.bitel.com.pe/bitel/liketv/pl
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"2528892552c65b5399017c2f2a194ab7":"fc87001860c95eb094c2dd5fc2d2e2bd","3ef088eaf6685839a1d77c9bc89b1e20":"68c8566c7cb4400fac63d0abe8eea6d4","4518f2fc410a5327b26a26e8c0cebd17":"16da291229b2b68ded5419cc35339beb"}
 https://unipluslivedash.akamaized.net/universalpremiert0/manifest.mpd?0GKUSH_R4IN&DONTSTEAL
-#EXTM3U
+
+
+#EXTINF:-1 group-title="A Dominicano" group-logo="https://imgur.com/5Qfinui.png" ,Color vision 
+https://live.eu-north-1a.cf.dmcdn.net/sec2(fj524kXBSKHwhubMHNtcX_icqx7QbwSYGDWdmLLaAR_oviD79hxNrOdqgYA3vPM24k9teFuH-ZhIhfsjQuFjc6G3Ndual7r8gyXA0ITufseduaxBJown0nUhm8nwcIWM)/dm/3/x7gy059/d/live-720.m3u8
+
+
 #EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wfut-tv-us-nj.svg",ae Unimás Nueva York WFUT
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wfut/wfut.isml/hls/wfut.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kftr-dt-us-ca.svg",ae  Unimás 46 Los Ángeles KFTR
