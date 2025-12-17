@@ -3430,9 +3430,8 @@ https://proxy.khipu.edu.pe/https://live-evg25.tv360.bitel.com.pe/bitel/liketv/pl
 https://unipluslivedash.akamaized.net/universalpremiert0/manifest.mpd?0GKUSH_R4IN&DONTSTEAL
 
 
-#EXTINF:-1 group-title="A Dominicano" group-logo="https://imgur.com/5Qfinui.png" ,Color vision 
-https://live.eu-north-1a.cf.dmcdn.net/sec2(fj524kXBSKHwhubMHNtcX_icqx7QbwSYGDWdmLLaAR_oviD79hxNrOdqgYA3vPM24k9teFuH-ZhIhfsjQuFjc6G3Ndual7r8gyXA0ITufseduaxBJown0nUhm8nwcIWM)/dm/3/x7gy059/d/live-720.m3u8
-
+#EXTINF:-1 tvg-id="Bellavision.do@SD" tvg-logo="https://imgur.com/5Qfinui.png" group-title="A Dominicano""Dominicano""Dominicano""Entertainment" ,Color vision 
+https://live.eu-north-1a.cf.dmcdn.net/sec2(YmfNgUI02x0KWVzSjLA2Czml-lyHjewsr4deDFlYdEooaD47DJBconSbhb4g77jUxQt2JFAsrsVm0BwiiuI92_ihAZ65t10I31KJR9Xqgw7AoAfexvFliLjzxbAEULep)/dm/3/x7gy059/d/live-720.m3u8#cell=lcf-eu-north-1a
 
 #EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wfut-tv-us-nj.svg",ae Unimás Nueva York WFUT
 https://cors-proxy.cooks.fyi/https://streaming-live-fcdn.api.prd.univisionnow.com/wfut/wfut.isml/hls/wfut.m3u8?0GKUSH_R4IN&DONTSTEAL
