@@ -1,3 +1,6 @@
+#EXTINF:-1 tvg-id="Bellavision.do@SD" tvg-logo="https://imgur.com/SXnGmUL.png" group-title="A Dominicano" ,canal 39
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(sG_dbH31HLzrMTPLanZa3-8j9NjPfQbwGBCQpmYp4S0lKSvUzdE2gdeISDferCJIYUdX_4fbC-GXYo6ELk2yuOFEC-SF3NQerLnfoP70Ks_JSX3-x6QIYtrggjw38XyR)/cloud/3/x8mwmvs/s/live-480.m3u8#cell=lcf2-eu-north-1b
+
 
 
 #EXTINF:-32 tvg-id=" USA-NBA TV" tvg-logo="https://imgur.com/CciJSk9.png" group-title="DEPORTES",NBA U (M)(720)
@@ -3883,8 +3886,11 @@ https://ss2.tvrdomi.com:1936/supertv55/supertv55/playlist.m3u8
 https://ss2.tvrdomi.com:1936/supremateve/supremateve/playlist.m3u8
 #EXTINF:-1 tvg-id="Telealtura.do@SD" tvg-logo="https://i.imgur.com/Ql2eaP0.png" group-title="A Dominicano""Dominicano""General",Telealtura SD
 https://live20.bozztv.com/akamaissh101/ssh101/codificador7/playlist.m3u8
+
+
 #EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="A Dominicano""Dominicano""General",Tele Antillas SD
-http://181.189.244.252:8000/play/a00x/index.m3u8
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(U4mQcRZmxy3QZcEk41Lo8MyISVIoI7QVKUpXJAx1PIsPQce5xLl-xr3WgHhZR4aJ0jvbETW9cwOc0Ef_3VblCrlnkn0dyx3EVB55HK3Zckh-QDbcva9SPXkJQNLJBtIZ)/cloud/3/x8mwmvs/s/live-480.m3u8#cell=lcf2-eu-north-1b
+
 #EXTINF:-1 tvg-id="TeleBendicion.do@SD" tvg-logo="https://i.imgur.com/nh4sNVI.png" group-title="A Dominicano""Dominicano""Religious",TeleBendicion SD
 https://ss5.domint.net:3180/tbt_str/telebendicion/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecanal12.do@SD" tvg-logo="https://i.imgur.com/90cTK8S.png" group-title="A Dominicano""Dominicano""General",Telecanal 12 SD
