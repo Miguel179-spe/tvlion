@@ -1,3 +1,8 @@
+#EXTINF:-1 tvg-id="Toros del Este" tvg-logo="https://imgur.com/r0qTaoP.png" group-title="A Dominicano", Canal 25
+https://stream.lunatv.do/hls/prueba.m3u8
+
+
+
 
 
 #EXTINF:-32 tvg-id=" USA-NBA TV" tvg-logo="https://imgur.com/CciJSk9.png" group-title="DEPORTES",NBA U (M)(720)
@@ -3437,6 +3442,8 @@ https://www.dailymotion.com/cdn/live/video/x84nyz2.m3u8?sec=iNYOXI5DGbluB17FLVDs
 
 #EXTINF:-1 tvg-id="Bellavision.do@SD" tvg-logo="https://imgur.com/5Qfinui.png" group-title="A Dominicano""Dominicano""Dominicano""Entertainment" ,Color vision 
 http://190.110.36.254:80/COLORVISION/index.m3u8
+https://live.eu-north-1a.cf.dmcdn.net/sec2(ZbyuRKduWOKEbN6jmAeRSi6K2EyMbF3-L91ZOKyfQOmsNGGPazl0q662FeI4a6CfZIEfhw_YZW7dW-ayHkMyfLU4srd5GWAJ3IhMC795sQYpAg7rTzMyay5RhlQ6yqeA)/dm/3/x7gy059/d/live-720.m3u8#cell=lcf-eu-north-1a
+https://live.eu-north-1a.cf.dmcdn.net/sec2(ZbyuRKduWOKEbN6jmAeRSi6K2EyMbF3-L91ZOKyfQOmsNGGPazl0q662FeI4a6CfZIEfhw_YZW7dW-ayHkMyfLU4srd5GWAJ3IhMC795sQYpAg7rTzMyay5RhlQ6yqeA)/dm/3/x7gy059/d/live-720.m3u8
 
 
 #EXTINF:-1 group-title="A Dominicano" group-logo="https://i.ibb.co/PGLqGZ17/492x0w.webp" tvg-logo="https://www.lyngsat.com/logo/tv/ww/wfut-tv-us-nj.svg",ae Unimás Nueva York WFUT
