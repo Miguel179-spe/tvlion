@@ -1,4 +1,4 @@
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/undefined.png" group-title="Infantil",Baby First (M)(SD)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/M4LFCG3.png" group-title="Infantil",Baby First (M)(SD)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9854.m3u8
 
 #EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/h0oNAvf.png" group-title="Infantil", Baby TV (Z)(1080)
@@ -37,16 +37,16 @@ http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9866.m3u8
 #EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/yhSsepw.png" group-title="Infantil",Disney Channel (Z)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9867.m3u8
 
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/undefined.png" group-title="Infantil",Disney Junior (L)(1080)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/yhSsepw.png" group-title="Infantil",Disney Junior (L)(1080)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9868.m3u8
 
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/undefined.png" group-title="Infantil",Disney Junior (M)(1080)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/WdrowpI.png" group-title="Infantil",Disney Junior (M)(1080)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9869.m3u8
 
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/undefined.png" group-title="Infantil",Disney Junior (Z)(720)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/WdrowpI.png" group-title="Infantil",Disney Junior (Z)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9870.m3u8
 
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/2u0pYkG.png" group-title="Infantil",Nickelodeon (M)(720)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/on5uADs.png" group-title="Infantil",Nickelodeon (M)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9871.m3u8
 
 #EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/on5uADs.png" group-title="Infantil",Nickelodeon (Z)(720)
@@ -67,10 +67,10 @@ http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9877.m3u8
 #EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/gSIiz9z.png" group-title="Infantil",Nick Music (L)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9878.m3u8
 
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/undefined.png" group-title="Infantil",Nicktoons (Z)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/mVI2NWD.png" group-title="Infantil",Nicktoons (Z)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9881.m3u8
 
-#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/undefined.png" group-title="Infantil",Nicktoons (M)(720)
+#EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/mVI2NWD.png" group-title="Infantil",Nicktoons (M)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9882.m3u8
 
 #EXTINF:-1 tvg-id="Canal" tvg-logo="https://imgur.com/6lSEL6c.png" group-title="Infantil",TeenNick (M)(1080)
