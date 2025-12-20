@@ -1,3 +1,14 @@
+#EXTINF:-1 tvg-id="24/7Halloween" tvg-logo="https://imgur.com/AJTyfUL.png" group-title="24/7" tvg-name="24/7 Halloween",24/7 Hallowen (e)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/154053.m3u8
+
+#EXTINF:-1 tvg-id="WalkingDeadDaryl" tvg-logo="https://imgur.com/ZvxNBIb.png" group-title="24/7" tvg-name="24/7 The Walking Dead",24/ The Walking Dead Daryl Dixon
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/94829.m3u8
+
+#EXTINF:-1 tvg-id="2BrokeGirls" tvg-logo="https://imgur.com/fCVnpQo.png" group-title="24/7" tvg-name="24/7 2 Broke Girls",24/7 2 Broke Girls (e)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/94845.m3u8
+
+
+
 #EXTINF:-1 tvg-id="Canal20004" tvg-logo="https://imgur.com/dzBNU50.png" tvg-name="Canal 20004" group-title="Retro",Canal 20004
 https://panel.host-live.com:19360/20004/20004.m3u8
 
