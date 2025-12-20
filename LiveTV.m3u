@@ -1,14 +1,15 @@
+#EXTINF:-1 tvg-id="Canal20004" tvg-logo="https://imgur.com/dzBNU50.png" tvg-name="Canal 20004" group-title="Retro",Canal 20004
+https://panel.host-live.com:19360/20004/20004.m3u8
+
 #EXTINF:-1 tvg-id="TeleClasik" tvg-logo="https://imgur.com/0QVGus5.png" tvg-name="TeleClasik" group-title="Retro",TeleClasik
 https://live21.bozztv.com/akamaissh101/ssh101/teleclasik/chunks.m3u8
 
-#EXTINF:-1 tvg-id="MiTV" tvg-logo="https://imgur.com/undefined.png" tvg-name="Mi TV" group-title="Retro",Mi TV
+#EXTINF:-1 tvg-id="MiTV" tvg-logo="https://imgur.com/PCfCEBc.png" tvg-name="Mi TV" group-title="Retro",Mi TV
 https://mitv.getstreamhosting.com:1936/live/live/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RetroXCRTV" tvg-logo="https://imgur.com/bkehISi.png" tvg-name="Retro XCR TV" group-title="Retro",Retro XCR TV
 https://live21.bozztv.com/akamaissh101/ssh101/retroxcrtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Canal8006" tvg-logo="https://imgur.com/aBbe4Ux.png" tvg-name="Canal 8006" group-title="Retro",Canal 8006
-https://video0.rogohosting.com:19360/8006/8006.m3u8
 
 #EXTINF:-1 tvg-id="RetroPalmTV" tvg-logo="https://imgur.com/gdMO5R2.png" tvg-name="Retro Palm TV" group-title="Retro",Retro Palm TV
 https://live21.bozztv.com/akamaissh101/ssh101/tvretropalm2020/playlist.m3u8
