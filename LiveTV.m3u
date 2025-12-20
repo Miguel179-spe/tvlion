@@ -1,3 +1,224 @@
+#EXTINF:-1 tvg-id="A&E" tvg-logo="https://imgur.com/DR3A29E.png" group-title="A canales premium" tvg-name="A&E",CINE - A&E (L)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9614.m3u8
+
+#EXTINF:-1 tvg-id="A&EM" tvg-logo="https://imgur.com/DR3A29E.png" group-title="A canales premium" tvg-name="A&E (M)",CINE - A&E (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9615.m3u8
+
+#EXTINF:-1 tvg-id="A&EZ" tvg-logo="https://imgur.com/DR3A29E.png" group-title="A canales premium" tvg-name="A&E (Z)",CINE - A&E (Z)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9616.m3u8
+
+#EXTINF:-1 tvg-id="AMC" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="AMC",CINE - AMC (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9619.m3u8
+
+#EXTINF:-1 tvg-id="AMCTV" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="AMC (TV)",CINE - AMC (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9620.m3u8
+
+#EXTINF:-1 tvg-id="AXN" tvg-logo="https://imgur.com/h9aHpOw.png" group-title="A canales premium" tvg-name="AXN (M)",CINE - AXN (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9623.m3u8
+
+#EXTINF:-1 tvg-id="AXNTV" tvg-logo="https://imgur.com/h9aHpOw.png" group-title="A canales premium" tvg-name="AXN (TV)",CINE - AXN (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9624.m3u8
+
+#EXTINF:-1 tvg-id="AXNZ" tvg-logo="https://imgur.com/h9aHpOw.png" group-title="A canales premium" tvg-name="AXN (Z)",CINE - AXN (Z)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9625.m3u8
+
+# HBO Channels
+#EXTINF:-1 tvg-id="HBOM" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="A canales premium" tvg-name="HBO (M)",CINE - HBO (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9666.m3u8
+
+#EXTINF:-1 tvg-id="HBOTV" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="A canales premium" tvg-name="HBO (TV)",CINE - HBO (TV)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9668.m3u8
+
+#EXTINF:-1 tvg-id="HBOM720" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="A canales premium" tvg-name="HBO (M) 720",CINE - HBO (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9667.m3u8
+
+#EXTINF:-1 tvg-id="HBOTVSD" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="A canales premium" tvg-name="HBO (TV) SD",CINE - HBO (TV)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9669.m3u8
+
+#EXTINF:-1 tvg-id="HBOT1080" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="A canales premium" tvg-name="HBO (T) 1080",CINE - HBO (1080)(T)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9670.m3u8
+
+#EXTINF:-1 tvg-id="HBO2T" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="A canales premium" tvg-name="HBO 2 (T)",CINE - HBO 2 (T)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9673.m3u8
+
+#EXTINF:-1 tvg-id="HBO2Z" tvg-logo="https://imgur.com/F7yR5ap.png" group-title="A canales premium" tvg-name="HBO 2 (Z)",CINE - HBO 2 (Z)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9675.m3u8
+
+#EXTINF:-1 tvg-id="HBO2L" tvg-logo="https://imgur.com/F7yR5ap.png" group-title="A canales premium" tvg-name="HBO 2 (L)",CINE - HBO 2 (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9671.m3u8
+
+#EXTINF:-1 tvg-id="HBO2TV" tvg-logo="https://imgur.com/F7yR5ap.png" group-title="A canales premium" tvg-name="HBO 2 (TV)",CINE - HBO 2 (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9674.m3u8
+
+#EXTINF:-1 tvg-id="HBO2TV1080" tvg-logo="https://imgur.com/F7yR5ap.png" group-title="A canales premium" tvg-name="HBO 2 (TV) 1080",CINE - HBO. 2 (TV)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9672.m3u8
+
+
+#EXTINF:-1 tvg-id="HBOFamilyL" tvg-logo="https://imgur.com/iOMw9P5.png" group-title="A canales premium" tvg-name="HBO Family (L)",CINE - HBO Family (L)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9676.m3u8
+
+#EXTINF:-1 tvg-id="HBOFamilyT" tvg-logo="https://imgur.com/iOMw9P5.png" group-title="A canales premium" tvg-name="HBO Family (T)",CINE - HBO Family (T)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9678.m3u8
+
+#EXTINF:-1 tvg-id="HBOFamilyTV" tvg-logo="https://imgur.com/iOMw9P5.png" group-title="A canales premium" tvg-name="HBO Family (TV)",CINE - HBO Family (TV)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9679.m3u8
+
+#EXTINF:-1 tvg-id="HBOFamilyTV720" tvg-logo="https://imgur.com/iOMw9P5.png" group-title="A canales premium" tvg-name="HBO Family (TV) 720",CINE - HBO Family (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9680.m3u8
+
+#EXTINF:-1 tvg-id="HBOFamilyTVSD" tvg-logo="https://imgur.com/iOMw9P5.png" group-title="A canales premium" tvg-name="HBO Family (TV) SD",CINE - HBO Family. (TV)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9677.m3u8
+
+# HBO Mundi
+#EXTINF:-1 tvg-id="HBOMundiL" tvg-logo="https://imgur.com/fhYUcQB.png" group-title="A canales premium" tvg-name="HBO Mundi (L)",CINE - HBO Mundi (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9682.m3u8
+
+#EXTINF:-1 tvg-id="HBOMundiTV" tvg-logo="https://imgur.com/fhYUcQB.png" group-title="A canales premium" tvg-name="HBO Mundi (TV)",CINE - HBO Mundi (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9683.m3u8
+
+#EXTINF:-1 tvg-id="HBOMundiZ" tvg-logo="https://imgur.com/fhYUcQB.png" group-title="A canales premium" tvg-name="HBO Mundi (Z)",CINE - HBO Mundi (Z)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9684.m3u8
+
+#EXTINF:-1 tvg-id="HBOPlusM" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="HBO Plus (M)",CINE - HBO Plus (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9685.m3u8
+
+#EXTINF:-1 tvg-id="HBOPlusMSD" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="HBO Plus (M) SD Dual",CINE - HBO Plus (M)(SD) [Dual Audio]
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9686.m3u8
+
+#EXTINF:-1 tvg-id="HBOPlusTVSD" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="HBO Plus (TV) SD",CINE - HBO Plus (TV)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9687.m3u8
+
+#EXTINF:-1 tvg-id="HBOPlusZ" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="HBO Plus (Z)",CINE - HBO Plus (Z)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9688.m3u8
+
+#EXTINF:-1 tvg-id="HBOPOPM" tvg-logo="https://imgur.com/b3EVdCA.png" group-title="A canales premium" tvg-name="HBO POP (M)",CINE - HBO POP (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9689.m3u8
+
+#EXTINF:-1 tvg-id="HBOPOPZ" tvg-logo="https://imgur.com/b3EVdCA.png" group-title="A canales premium" tvg-name="HBO POP (Z)",CINE - HBO POP (Z)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9691.m3u8
+
+#EXTINF:-1 tvg-id="HBOPOPTVSD" tvg-logo="https://imgur.com/b3EVdCA.png" group-title="A canales premium" tvg-name="HBO POP (TV) SD",CINE - HBO POP. (TV)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9690.m3u8
+
+#EXTINF:-1 tvg-id="HBOSignatureM" tvg-logo="https://imgur.com/6nO0uQq.png" group-title="A canales premium" tvg-name="HBO Signature (M)",CINE - HBO Signature (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9692.m3u8
+
+#EXTINF:-1 tvg-id="HBOSignatureTV" tvg-logo="https://imgur.com/6nO0uQq.png" group-title="A canales premium" tvg-name="HBO Signature (TV)",CINE - HBO Signature (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9693.m3u8
+
+#EXTINF:-1 tvg-id="HBOSignatureL" tvg-logo="https://imgur.com/6nO0uQq.png" group-title="A canales premium" tvg-name="HBO Signature Dual (L)",CINE - HBO Signature Dual Audio (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9695.m3u8
+
+#EXTINF:-1 tvg-id="HBOSURZ" tvg-logo="https://imgur.com/CvPuDRI.png" group-title="A canales premium" tvg-name="HBO SUR (Z)",CINE - HBO SUR (Z)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9696.m3u8
+
+# HBO Xtream/Xtreme
+#EXTINF:-1 tvg-id="HBOXtreamTV" tvg-logo="https://imgur.com/CvPuDRI.png" group-title="A canales premium" tvg-name="HBO Xtream (TV)",CINE - HBO Xtream (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9697.m3u8
+
+#EXTINF:-1 tvg-id="HBOXtremeM" tvg-logo="https://imgur.com/CvPuDRI.png" group-title="A canales premium" tvg-name="HBO Xtreme (M)",CINE - HBO Xtreme (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9698.m3u8
+
+#EXTINF:-1 tvg-id="HBOXtremeTVSD" tvg-logo="https://imgur.com/CvPuDRI.png" group-title="A canales premium" tvg-name="HBO Xtreme (TV) SD",CINE - HBO Xtreme (TV)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9700.m3u8
+
+#EXTINF:-1 tvg-id="HBOXtremeZ" tvg-logo="https://imgur.com/Uq1cAia.png" group-title="A canales premium" tvg-name="HBO Xtreme (Z)",CINE - HBO Xtreme (Z)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9701.m3u8
+
+#EXTINF:-1 tvg-id="HBOXtremeM720" tvg-logo="https://imgur.com/Uq1cAia.png" group-title="A canales premium" tvg-name="HBO Xtreme (M) 720",CINE - HBO Xtreme. (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9699.m3u8
+
+#EXTINF:-1 tvg-id="HBOXtremeLDual" tvg-logo="https://imgur.com/Uq1cAia.png" group-title="A canales premium" tvg-name="HBO Xtreme Dual (L)",CINE - HBO Xtreme Dual (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9779.m3u8
+
+#EXTINF:-1 tvg-id="CineLatinoL" tvg-logo="https://imgur.com/7uM8LNh.png" group-title="A canales premium" tvg-name="Cine Latino (L)",CINE - Cine Latino (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9626.m3u8
+
+#EXTINF:-1 tvg-id="CineLatinoZ" tvg-logo="https://imgur.com/7uM8LNh.png" group-title="A canales premium" tvg-name="Cine Latino (Z)",CINE - Cine Latino (Z)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9627.m3u8
+
+#EXTINF:-1 tvg-id="CineCanalTV" tvg-logo="https://imgur.com/rw9pYiQ.png" group-title="A canales premium" tvg-name="CineCanal (TV)",CINE - CineCanal (TV)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9629.m3u8
+
+#EXTINF:-1 tvg-id="CineCanalTV720" tvg-logo="https://imgur.com/rw9pYiQ.png" group-title="A canales premium" tvg-name="CineCanal (TV) 720",CINE - CineCanal (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9630.m3u8
+
+#EXTINF:-1 tvg-id="CinecanalZ" tvg-logo="https://imgur.com/rw9pYiQ.png" group-title="A canales premium" tvg-name="Cinecanal (Z)",CINE - Cinecanal (Z)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9631.m3u8
+
+#EXTINF:-1 tvg-id="CinemaDinamitaZ" tvg-logo="https://imgur.com/1IZ00dN.png" group-title="A canales premium" tvg-name="Cinema Dinamita (Z)",CINE - Cinema Dinamita (Z)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9632.m3u8
+
+#EXTINF:-1 tvg-id="CinemaxM" tvg-logo="https://imgur.com/ReKUfQ5.png" group-title="A canales premium" tvg-name="Cinemax (M)",CINE - Cinemax (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9633.m3u8
+
+#EXTINF:-1 tvg-id="CinemaxZ" tvg-logo="https://imgur.com/ReKUfQ5.png" group-title="A canales premium" tvg-name="Cinemax (Z)",CINE - Cinemax (Z)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9635.m3u8
+
+#EXTINF:-1 tvg-id="ComedyCentralL" tvg-logo="https://imgur.com/BHy85jB.png" group-title="A canales premium" tvg-name="Comedy Central (L)",CINE - Comedy Central (L)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9636.m3u8
+
+#EXTINF:-1 tvg-id="ComedyCentralM" tvg-logo="https://imgur.com/BHy85jB.png" group-title="A canales premium" tvg-name="Comedy Central (M)",CINE - Comedy Central (M)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9637.m3u8
+
+#EXTINF:-1 tvg-id="ParamountZ" tvg-logo="https://imgur.com/xR2R3DL.png" group-title="A canales premium" tvg-name="Paramount (Z)",CINE - Paramount (Z)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9705.m3u8
+
+#EXTINF:-1 tvg-id="ParamountTV" tvg-logo="https://imgur.com/xR2R3DL.png" group-title="A canales premium" tvg-name="Paramount (TV)",CINE - Paramount Channel. (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9708.m3u8
+
+#EXTINF:-1 tvg-id="TNTL" tvg-logo="https://imgur.com/JbArQPx.png" group-title="A canales premium" tvg-name="TNT (L)",CINE - TNT (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9742.m3u8
+
+#EXTINF:-1 tvg-id="TNTM" tvg-logo="https://imgur.com/JbArQPx.png" group-title="A canales premium" tvg-name="TNT (M)",CINE - TNT (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9743.m3u8
+
+#EXTINF:-1 tvg-id="TNTM720" tvg-logo="https://imgur.com/JbArQPx.png" group-title="A canales premium" tvg-name="TNT (M) 720",CINE - TNT (M)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9744.m3u8
+
+#EXTINF:-1 tvg-id="TNTTV" tvg-logo="https://imgur.com/JbArQPx.png" group-title="A canales premium" tvg-name="TNT (TV)",CINE - TNT (TV)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9745.m3u8
+
+#EXTINF:-1 tvg-id="TNTNovelasM" tvg-logo="https://imgur.com/WjaTzDk.png" group-title="A canales premium" tvg-name="TNT Novelas (M)",CINE - TNT Novelas  (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9747.m3u8
+
+#EXTINF:-1 tvg-id="TNTNovelasMSD" tvg-logo="https://imgur.com/WjaTzDk.png" group-title="A canales premium" tvg-name="TNT Novelas (M) SD",CINE - TNT Novelas (M)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9737.m3u8
+
+#EXTINF:-1 tvg-id="TNTSeriesL" tvg-logo="https://imgur.com/uuDW2VL.png" group-title="A canales premium" tvg-name="TNT Series (L)",CINE - TNT Series (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9748.m3u8
+
+#EXTINF:-1 tvg-id="TNTSeriesM" tvg-logo="https://imgur.com/uuDW2VL.png" group-title="A canales premium" tvg-name="TNT Series (M)",CINE - TNT Series (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9749.m3u8
+
+#EXTINF:-1 tvg-id="TNTSeriesZ" tvg-logo="https://imgur.com/uuDW2VL.png" group-title="A canales premium" tvg-name="TNT Series (Z)",CINE - TNT Series (Z)(720).
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9751.m3u8
+
+#EXTINF:-1 tvg-id="UniversalChannelL" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="Universal Channel (L)",CINE - Universal Channel (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9753.m3u8
+
+#EXTINF:-1 tvg-id="UniversalChannelM" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="Universal Channel (M)",CINE - Universal Channel (M)(1080)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9754.m3u8
+
+#EXTINF:-1 tvg-id="UniversalChannelMSD" tvg-logo="https://imgur.com/undefined.png" group-title="A canales premium" tvg-name="Universal Channel (M) SD",CINE - Universal Channel (M)(SD)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9755.m3u8
+
+#EXTINF:-1 tvg-id="UniversalCinemaL" tvg-logo="https://imgur.com/Tc4AsIA.png" group-title="A canales premium" tvg-name="Universal Cinema (L)",CINE - Universal Cinema (L)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9756.m3u8
+
+#EXTINF:-1 tvg-id="UniversalCinemaM" tvg-logo="https://imgur.com/Tc4AsIA.png" group-title="A canales premium" tvg-name="Universal Cinema (M) Dual",CINE - Universal Cinema (M)(1080) [Dual Audio]
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9757.m3u8
+
+# Universal Comedy
+#EXTINF:-1 tvg-id="UniversalComedyTV" tvg-logo="https://imgur.com/XYPOf9Z.png" group-title="A canales premium" tvg-name="Universal Comedy (TV)",CINE - Universal Comedy (TV)(720)
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9759.m3u8
+
+
+
+
+
+
+
 #EXTINF:-1 tvg-id="24/7Halloween" tvg-logo="https://imgur.com/AJTyfUL.png" group-title="24/7" tvg-name="24/7 Halloween",24/7 Hallowen (e)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/154053.m3u8
 
