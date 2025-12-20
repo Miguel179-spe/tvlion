@@ -1,4 +1,44 @@
 
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Haiti""News",Haiti News Channel (720p) [Not 24/7]
+https://haititivi.com/website/haitinews/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Metropole
+https://dvrfl03.bozztv.com/hdirect/hdirect-telemetrolple2/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",RTH-TV1 (1080p)
+https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4203440/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",RTH-TV2 Gospel (1080p)
+https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4202592/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Tele Ginen
+https://dvrfl03.bozztv.com/hdirect/hdirect-teleginen/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Tele Planet Compas (720p) [Not 24/7]
+https://5dcab9aed5331.streamlock.net/mrcompas1/livestream/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="https://i.imgur.com/HFyrVaS.png" group-title="Haiti""Undefined",Radio TeleBoston (USA)
+http://162.244.81.145:3333/live//telebostonrtb/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Télé Amen FM (360p) [Not 24/7]
+http://184.173.179.163:1935/daniel/daniel/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Télé Hit (480p)
+https://59d39900ebfb8.streamlock.net/RadioTelehit/RadioTelehit/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Télé Stanne Charitab (480p)
+https://59d39900ebfb8.streamlock.net/radiotelestannecharitab/radiotelestannecharitab/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Télé Yaguana (1080p)
+https://lakay.online/relay/teleyaguana/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Télévision Hirondelle (480p)
+https://acwstream.com/acw/hbrtvh/index.fmp4.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Radio Télévision Shilo (720p) [Not 24/7]
+https://watch.haitilive.net/freehb/rtvs/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",TNH
+https://dvrfl03.bozztv.com/hdirect/hdirect-tnhtv2/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",TV Panou (720p) [Not 24/7]
+http://tvpanoucom.srfms.com:1935/tvpanoucom/livestream/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="https://i.imgur.com/vZmlq9N.jpg" group-title="Haiti""Undefined",Tele Louange
+https://5790d294af2dc.streamlock.net/8124/8124/chunklist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Tele Louange (1080p)
+https://5790d294af2dc.streamlock.net/8124/8124/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Tele Pacific (1080p)
+https://pacific.zekletech.com:2002/live/acw_01/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HT" tvg-logo="" group-title="Haiti""Undefined",Télévision La Brise (Ch. 28 Les Cayes) (720p)
+http://lakay.online/public/telelabrise/index.m3u8?checkedby:iptvcat.com
+
+
 #EXTINF:-1 tvg-id="RadioTele4VEH.ht@SD" tvg-logo="https://i.imgur.com/AnOjqaS.png" group-title="Haiti""Religious",Radio Télé 4VEH (720p)
 https://uni01rtmp.tulix.tv/4vehtv/4vehtv-firetv/playlist.m3u8
 
