@@ -801,7 +801,7 @@ http://archive.org/download/l-d-3ud-2/l%40%20d3ud%40%202.mp4
 http://archive.org/download/dia-del-atentado-2016/Dia%20Del%20Atentado%20%282016%29/Dia%20Del%20Atentado%20%282016%29.mp4
 #EXTINF:-1 tvg-id="AnhuiSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/n5LABhB.png" group-title="China""",Anhui Satellite TV SD
 http://118.81.195.79:9003/hls/21/index.m3u8
-#EXTINF:-1 tvg-id="AnimationShowChannel.cn@SD" tvg-logo="https://i.imgur.com/Ul1pjUN.png" group-title="China""Animation;Kids",Animation Show Channel SD
+#EXTINF:-1 tvg-id="AnimationShowChannel.cn@SD" tvg-logo="https://i.imgur.com/Ul1pjUN.png" group-title="China",Animation Show Channel SD
 http://180.213.174.225:9901/tsfile/live/1034_1.m3u8?authid=0&key=txiptv&playlive=1
 #EXTINF:-1 tvg-id="BaichengTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/baicheng.jpg" group-title="China""General",Baicheng TV SD
 https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
@@ -2147,7 +2147,7 @@ http://66.102.120.18:8000/play/a013/index.m3u8
 
 #EXTINF:-1 tvg-id="DisneyChannel.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" group-title="Kids",Disney Channel East
 https://fl1.moveonjoy.com/DISNEY/index.m3u8
-#EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@PanregionalHD" tvg-logo="https://pbs.twimg.com/profile_images/1740338476736815104/vJGKgOJe_400x400.jpg" group-title="Animation;Kids",Disney Channel Latin America Panregional HD
+#EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@PanregionalHD" tvg-logo="https://pbs.twimg.com/profile_images/1740338476736815104/vJGKgOJe_400x400.jpg" group-title="Infantil",Disney Channel Latin America Panregional HD
 http://201.217.246.177:8000/play/a02r/index.m3u8
 #EXTINF:-1 tvg-id="FXMovieChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FXM_Logo.svg/512px-FXM_Logo.svg.png" group-title="Movies",FX Movie Channel SD
 https://tvpass.org/live/FXMovieChannel/hd
