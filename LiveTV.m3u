@@ -197,11 +197,6 @@ http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9699.m3u8
 #EXTINF:-1 tvg-id="HBOXtremeLDual" tvg-logo="https://imgur.com/Uq1cAia.png" group-title="A canales premium" tvg-name="HBO Xtreme Dual (L)", HBO Xtreme Dual (L)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9779.m3u8
 
-#EXTINF:-1 tvg-id="CineLatinoL" tvg-logo="https://imgur.com/7uM8LNh.png" group-title="A canales premium" tvg-name="Cine Latino (L)", Cine Latino (L)(720)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9626.m3u8
-
-#EXTINF:-1 tvg-id="CineLatinoZ" tvg-logo="https://imgur.com/7uM8LNh.png" group-title="A canales premium" tvg-name="Cine Latino (Z)", Cine Latino (Z)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9627.m3u8
 
 #EXTINF:-1 tvg-id="CineCanalTV" tvg-logo="https://imgur.com/rw9pYiQ.png" group-title="A canales premium" tvg-name="CineCanal (TV)", CineCanal (TV)(1080)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9629.m3u8
