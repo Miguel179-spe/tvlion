@@ -65,9 +65,6 @@ http://tvpanoucom.srfms.com:1935/tvpanoucom/livestream/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="A&E" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E",  A&E (L)(1080)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9614.m3u8
-
 #EXTINF:-1 tvg-id="A&EM" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (M)", A&E (M)(1080)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9615.m3u8
 
