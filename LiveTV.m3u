@@ -66,36 +66,34 @@ http://tvpanoucom.srfms.com:1935/tvpanoucom/livestream/playlist.m3u8
 
 
 #EXTINF:-1 tvg-id="A&EM" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (M)", A&E (M)(1080)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9615.m3u8
+https://list.iptvcat.com/my_list/s/d20305d4ea6a659d641c25a11e881c87.m3u8
+
 
 #EXTINF:-1 tvg-id="A&EZ" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (Z)",  A&E (Z)(1080)
-http://fortv.cc:8080/live/16686894/06987237/57476.m3u8
+http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9615.m3u8
 #EXTINF:-1 tvg-id="A&EZ" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (Z)",  A&E (Z)(1080)
 http://tv14s.xyz:8080/live/69YmcB/658437/59056.m3u8
 #EXTINF:-1 tvg-id="A&EZ" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (Z)",  A&E (Z)(1080)
 http://1tv41.icu:8080/live/tandphunt1@gmail.com/AAn4BJhH7f/57476.m3u8
-#EXTINF:-1 tvg-id="A&EZ" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (Z)",  A&E (Z)(1080)
-http://xxip25.top:8080/live/6p1EkK/694038/59056.m3u8
-
-#EXTINF:-1 tvg-id="A&EZ" tvg-logo="https://imgur.com/DR3A29E.png" group-title="Canales premium" tvg-name="A&E (Z)",  A&E (Z)(1080)
-http://cord-cutter.net:8080/live/sheldoncull@gmail.com/35GqjifuTF/57476.m3u8
 
 
 
 #EXTINF:-1 tvg-id="AMC" tvg-logo="https://imgur.com/keDuU2c.png" group-title="Canales premium" tvg-name="AMC",  AMC (L)(720)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9619.m3u8
+https://list.iptvcat.com/my_list/s/f54e3113a15099c7cff8f93dd795fc89.m3u8
 
 #EXTINF:-1 tvg-id="AMCTV" tvg-logo="https://imgur.com/keDuU2c.png" group-title="Canales premium" tvg-name="AMC (TV)",  AMC (TV)(720)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9620.m3u8
 
+
+
 #EXTINF:-1 tvg-id="AXN" tvg-logo="https://imgur.com/h9aHpOw.png" group-title="Canales premium" tvg-name="AXN (M)",  AXN (M)(1080)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9623.m3u8
+https://list.iptvcat.com/my_list/s/6364cbf71b3d727a283d104908a77070.m3u8
 
 #EXTINF:-1 tvg-id="AXNTV" tvg-logo="https://imgur.com/h9aHpOw.png" group-title="Canales premium" tvg-name="AXN (TV)", AXN (TV)(720)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9624.m3u8
+https://list.iptvcat.com/my_list/s/6364cbf71b3d727a283d104908a77070.m3u8
 
-#EXTINF:-1 tvg-id="AXNZ" tvg-logo="https://imgur.com/h9aHpOw.png" group-title="Canales premium" tvg-name="AXN (Z)", AXN (Z)(1080)
-http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9625.m3u8
+
+
 
 #EXTINF:-1 tvg-id="HBOM" tvg-logo="https://imgur.com/rnWiPU8.png" group-title="Canales premium" tvg-name="HBO (M)", HBO (M)(1080)
 http://tv.zapping.life:8080/live/Maricsasantana/sEM6wKMsBf/9666.m3u8
