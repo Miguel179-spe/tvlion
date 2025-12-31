@@ -1,66 +1,266 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="48Hours.us@SD"group-title="Ploto TV",48 Hours
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e925bc68d18a00077bb990/master.m3u8
-#EXTINF:-1 tvg-id="AmericanPickers.us@SD"group-title="Ploto TV",American Pickers
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6408ae8f9b39550008caf94f/master.m3u8
-#EXTINF:-1 tvg-id="AngerManagementChannel.us@SD"group-title="Ploto TV",Anger Management
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65cf8bdaa25d5e00081e1e5d/master.m3u8
-#EXTINF:-1 tvg-id="AreWeThereYet.us@SD"group-title="Ploto TV",Are We There Yet?
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65cf8b9328730900087c5324/master.m3u8
-#EXTINF:-1 tvg-id="Arthur.us@SD"group-title="Ploto TV",Arthur
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6482f27c17f5e10008c10ff0/master.m3u8
-#EXTINF:-1 tvg-id="BarRescue.us@SD"group-title="Ploto TV",Bar Rescue
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/655f2ee6c0fc88000877d26c/master.m3u8
-#EXTINF:-1 tvg-id="Baywatch.us@Canada"group-title="Ploto TV",Baywatch
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdae69a47b6c00076af298/master.m3u8
-#EXTINF:-1 tvg-id="BestofTheDrewBarrymoreShow.us@SD"group-title="Ploto TV",Best of The Drew Barrymore Show
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6310cbee5a8ad300070fdb7c/master.m3u8
-#EXTINF:-1 tvg-id="BloombergTelevision.us@SD"group-title="Ploto TV",Bloomberg Television
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62b976b93279cb000772c6f9/master.m3u8
-#EXTINF:-1 tvg-id="CatfishTVShow.us@SD"group-title="Ploto TV",Catfish
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a2a23a0d700008a6ed7b/master.m3u8
-#EXTINF:-1 tvg-id="CBSNews247.us@SD"group-title="Ploto TV",CBS News 24/7
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6350fdd266e9ea0007bedec5/master.m3u8
-#EXTINF:-1 tvg-id="Cheers.us@Canada"group-title="Ploto TV",Cheers
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdb7f0db2eb30007376d4d/master.m3u8
-#EXTINF:-1 tvg-id="ComedyCentralAnimation.us@SD"group-title="Ploto TV",Comedy Central Animation
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a949f5b5e4000862467c/master.m3u8
-#EXTINF:-1 tvg-id="CSI.us@SD"group-title="Ploto TV",CSI (Original)
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e9224f41d5e100076db2b6/master.m3u8
-#EXTINF:-1 tvg-id="CSIMiami.us@SD"group-title="Ploto TV",CSI: Miami
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63f4e0e63fde020007835cbe/master.m3u8
-#EXTINF:-1 tvg-id="CSINY.us@SD"group-title="Ploto TV",CSI: NY
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63f4e11c7533d80008a1d5f0/master.m3u8
-#EXTINF:-1 tvg-id="DealorNoDeal.us@SD"group-title="Ploto TV",Deal or no Deal
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e92951c2db99000787c00d/master.m3u8
-#EXTINF:-1 tvg-id="DoctorWhoClassic.us@Canada"group-title="Ploto TV",Doctor Who Classic
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdad934d73d50007a82472/master.m3u8
-#EXTINF:-1 tvg-id="DogtheBountyHunter.us@Canada"group-title="Ploto TV",Dog The Bounty Hunter
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6540fee72cf13100085d5a18/master.m3u8
-#EXTINF:-1 tvg-id="FailArmy.us@Canada"group-title="Ploto TV",FailArmy
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdb5500c21270007218ce1/master.m3u8
-#EXTINF:-1 tvg-id="ForensicFiles.us@SD"group-title="Ploto TV",Forensic Files
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e92392a3e6270007f562e8/master.m3u8
-#EXTINF:-1 tvg-id="GlobalNewsNational.ca@SD"group-title="Ploto TV",Global News National
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62cbef9ebb857100072fc187/master.m3u8
-#EXTINF:-1 tvg-id="GordonRamsaysHellsKitchen.us@SD"group-title="Ploto TV",Gordon Ramsay's Hell's Kitchen
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62ea45010d0611000839868c/master.m3u8
-#EXTINF:-1 tvg-id="IincMaster.us@SD"group-title="Ploto TV",Ink Master
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/655f2d713944b60008bc7e90/master.m3u8
-#EXTINF:-1 tvg-id="MissionImpossible.us@SD"group-title="Ploto TV",Mission Impossible
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62ea43aa0c43540007f2db96/master.m3u8
-#EXTINF:-1 tvg-id="QelloConcertsbyStingray.ca@SD",Qello Concerts
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64240d3d466225000827412b/master.m3u8
-#EXTINF:-1 tvg-id="SouthPark.us@Canada"group-title="Ploto TV",South Park
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdb1c5e25122000798ac79/master.m3u8
-#EXTINF:-1 tvg-id="TheWeatherNetwork.ca@SD"group-title="Ploto TV",The Weather Network
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63da370e2e477400081cf8b6/master.m3u8
-#EXTINF:-1 tvg-id="ThePriceIsRight.us@SD"group-title="Ploto TV",The Price is Right: Barker Era
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64c220e15dc1660008a79c96/master.m3u8
-#EXTINF:-1 tvg-id="WalkerTexasRanger.us@Canada"group-title="Ploto TV",Walker Texas Ranger
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/635659445b4c4700076d2ad1/master.m3u8
-#EXTINF:-1 tvg-id="YoMTV.us@SD"group-title="Ploto TV",Yo! MTV
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/654102ed770cf1000866c307/master.m3u8
+#EXTINF:-1 tvg-id="45TV.hn@SD" tvg-logo="https://i.imgur.com/SjUnQlg.png" group-title="Honduras""Honduras""Honduras",45 TV (720p)
+https://stream.alojamientowebgt.com:3656/live/tv45live.m3u8
+
+#EXTINF:-1 tvg-id="504TV.hn@SD" tvg-logo="https://i.imgur.com/c2HLI3k.png" group-title="Honduras""Honduras",504 TV (720p)
+https://mediacp.us:8081/504tvhn/index.m3u8
+
+#EXTINF:-1 tvg-id="AlsaciasTelevision.hn@SD" tvg-logo="https://i.imgur.com/SbuD1UW.png" group-title="Honduras""Honduras",Alsacias Televisión (ATV | Canal 28)
+https://s.emisoras.tv:8081/atv/index.m3u8
+
+#EXTINF:-1 tvg-id="AztecaHonduras.hn@SD" tvg-logo="https://i.imgur.com/sxFh1dw.png" group-title="Honduras""Honduras",Azteca Honduras (720p)
+https://dvrfl03.bozztv.com/hondu-azteca/index.m3u8
+
+#EXTINF:-1 tvg-id="CampusTV.hn@SD" tvg-logo="https://i.imgur.com/E1TmADM.png" group-title="Honduras""Honduras",Campus TV (480p)
+https://5e85d90130e77.streamlock.net/6052/6052/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Canal5ElLider.hn@SD" tvg-logo="https://i.imgur.com/4hEYFa9.png" group-title="Honduras""Honduras",Canal 5 El Líder (720p)
+https://mdstrm.com/live-stream-playlist/6287fda8ea3b8b397d1ca2ed.m3u8
+
+#EXTINF:-1 tvg-id="Canal6.hn@SD" tvg-logo="https://i.imgur.com/vygCUNz.png" group-title="Honduras""Honduras",Canal 6 (480p)
+https://envivo.canal6.com.hn/hls/0/stream.m3u8
+
+#EXTINF:-1 tvg-id="Canal11.hn@SD" tvg-logo="https://i.imgur.com/Sht2Rd4.png" group-title="Honduras""Honduras",Canal 11 (1080p)
+https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/canal11hn/canal11hn.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CCIChannel.hn@SD" tvg-logo="https://i.imgur.com/c6hm03f.png" group-title="Honduras""Honduras",CCI Channel (1080p)
+https://cdn.playcloud.us/cci/srtin3.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="EbenezerTV.hn@SD" tvg-logo="https://i.imgur.com/IC30j61.png" group-title="Honduras""Honduras",Ebenezer TV (1080p)
+https://5e85d90130e77.streamlock.net/6010/ngrp:6010_all/playlist.m3u8
+
+#EXTINF:-1 tvg-id="EDNTV.hn@SD" tvg-logo="https://i.imgur.com/5fPsYTz.png" group-title="Honduras""Honduras",EDN TV (1080p)
+https://60417ddeaf0d9.streamlock.net/edntv/videoedntv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="GloboTV.hn@SD" tvg-logo="https://i.imgur.com/hxGvZ77.png" group-title="Honduras""Honduras",Globo TV (1080p)
+https://panel.dattalive.com/8122/8122/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HCH.hn@SD" tvg-logo="https://i.imgur.com/2CB5ezq.png" group-title="Honduras""Honduras",HCH
+https://dvrfl03.bozztv.com/hondu-hchtv/index.m3u8
+
+#EXTINF:-1 tvg-id="JBNTV.hn@SD" tvg-logo="https://i.imgur.com/4EbHIvf.png" group-title="Honduras""Honduras",JBN (1080p)
+https://mediacp.us:8081/jbntv/index.m3u8
+
+#EXTINF:-1 tvg-id="LTV.hn@SD" tvg-logo="https://i.imgur.com/KBYUOcP.png" group-title="Honduras""Honduras",LTV (720p)
+https://5e85d90130e77.streamlock.net/6022/6022/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MayaTV.hn@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Maya_TV_logo.png/512px-Maya_TV_logo.png" group-title="Honduras""Honduras",Maya TV (480p)
+https://media.streambrothers.com:19360/8356/8356.m3u8
+
+#EXTINF:-1 tvg-id="QhuboTV.hn@SD" tvg-logo="https://i.imgur.com/yZmnfvj.png" group-title="Honduras""Honduras",Q'hubo TV (410p)
+https://5e85d90130e77.streamlock.net/6024/6024/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RSVHonduras.hn@SD" tvg-logo="https://i.imgur.com/yr7Ellh.jpg" group-title="Honduras""Honduras",RSV Honduras
+https://live20.bozztv.com/dvrfl03/hondu/hondu-rsvhonduras/index.m3u8
+
+#EXTINF:-1 tvg-id="SercanoTV.hn@SD" tvg-logo="https://pbs.twimg.com/profile_images/972873782972076032/6cacahDX_400x400.jpg" group-title="Honduras""Honduras",Sercano TV (720p)
+http://stream.grupoabchn.com:1935/SERCANOHD/SERCANOLive.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Teleceiba.hn@SD" tvg-logo="https://i.imgur.com/oPSfsvy.png" group-title="Honduras""Honduras",Teleceiba (1080p)
+https://dvrfl03.bozztv.com/hondu-teleceiba/index.m3u8
+
+#EXTINF:-1 tvg-id="TeleProgreso.hn@SD" tvg-logo="https://i.imgur.com/yBDI3AF.png" group-title="Honduras""Honduras",TeleProgreso (720p)
+https://livestreamhd.us:8077/teleprogreso/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TSi.hn@SD" tvg-logo="https://i.imgur.com/GEyxDnf.png" group-title="Honduras""Honduras",TSi (720p)
+https://mdstrm.com/live-stream-playlist/6287fdc9303e3008289ab711.m3u8
+
+#EXTINF:-1 tvg-id="UNAHUTV.hn@SD" tvg-logo="https://i.imgur.com/GhzaYbK.png" group-title="Honduras""Honduras",UNAH UTV (360p)
+https://live-utv.unah.edu.hn/web/salida.m3u8
+
+#EXTINF:-1 tvg-id="VTV.hn@SD" tvg-logo="https://i.imgur.com/CsPkwD5.png" group-title="Honduras""Honduras",VTV (480p)
+https://d3q93l5bumjyoq.cloudfront.net/index.m3u8
+
+#EXTM3U
+#EXTINF:-1 tvg-id="AbyaYalaTV.bo@SD" tvg-logo="https://abyayala.tv.bo/wp-content/uploads/2024/04/MOSCA-BLANCA-OK-308x189.png" group-title="Bolivia""Bolivia""General",Abya Yala TV
+https://seo.tv.bo/tv/LIpSEO-TV-8.m3u8
+#EXTINF:-1 tvg-id="BoliviaTV72.bo@SD" tvg-logo="https://i.imgur.com/tKLYYys.png" group-title="Bolivia""General",Bolivia TV 7.2 (720p)
+https://5ca3e84a76d30.streamlock.net/boliviatv2/videoboliviatv2/playlist.m3u8
+#EXTINF:-1 tvg-id="BoliviaTV.bo@SD" tvg-logo="https://i.imgur.com/tKLYYys.png" group-title="Bolivia""General",Bolivia TV (720p)
+http://boliviatv1.srfms.com:5735/live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="Bolivision.bo@SD" tvg-logo="https://i.imgur.com/U98Z5zn.png" group-title="Bolivia""General",Bolivisión LPZ (720p)
+https://alba-bo-bolivision-bolivision.stream.mediatiquestream.com/index.m3u8
+#EXTINF:-1 tvg-id="CadenaA.bo@SD" tvg-logo="https://i.imgur.com/BxQPPAA.png" group-title="Bolivia""",Cadena A (720p)
+https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal29TVA.bo@SD" tvg-logo="https://i.imgur.com/y3bymuv.jpg" group-title="Bolivia""Religious",Canal 29 TVA
+https://play.agenciastreaming.com:19360/8160/8160.m3u8
+#EXTINF:-1 tvg-id="CEACOMTV.bo@SD" tvg-logo="https://i.imgur.com/hutdRfk.png" group-title="Bolivia""General;Lifestyle;Music;News",CEACOM TV
+https://eu1.servers10.com:8081/ceacom/index.m3u8
+#EXTINF:-1 tvg-id="CoralTV.bo@SD" tvg-logo="https://i.ibb.co/xDrc5MD/CORALTv.png" group-title="Bolivia""General",Coral TV (480p)
+https://tv.mediacp.eu:8081/coraltv/index.m3u8
+#EXTINF:-1 tvg-id="CTV.bo@SD" tvg-logo="https://i.imgur.com/ljKb0UX.png" group-title="Bolivia""General",CTV
+https://live.ctvbolivia.com/hls/ctv.m3u8
+#EXTINF:-1 tvg-id="F10HD.bo@SD" tvg-logo="https://i.imgur.com/OEsT0KN.png" group-title="Bolivia""General",F10 HD
+https://tv2.bitstreaming.net:3235/multi_live/play.m3u8
+#EXTINF:-1 tvg-id="FTV.bo@SD" tvg-logo="https://i.imgur.com/YOr1Oac.png" group-title="Bolivia""Sports",FTV
+https://master.tucableip.com/ftvhd/index.m3u8
+#EXTINF:-1 tvg-id="Gigavision.bo@SD" tvg-logo="https://i.imgur.com/fE3BkcT.png" group-title="Bolivia""",Gigavision
+https://tv2.bitstreaming.net:3896/multi_web/play.m3u8
+#EXTINF:-1 tvg-id="ImperialTV.bo@SD" tvg-logo="https://i.ibb.co/8XHSVWY/IMG-20210613-153444.png" group-title="Bolivia""General",Imperial TV
+https://play.agenciastreaming.com:19360/8122/8122.m3u8
+#EXTINF:-1 tvg-id="INTV.bo@SD" tvg-logo="https://i.imgur.com/4eNH7JS.png" group-title="Bolivia""General",IN TV
+https://envivo.bolivia-link.com:3580/live/intvlive.m3u8
+#EXTINF:-1 tvg-id="PalenqueTV.bo@SD" tvg-logo="https://i.imgur.com/wAIBvaO.png" group-title="Bolivia""General",Palenque TV
+https://tv.bitstreaming.net:3234/live/palenquetvlive.m3u8
+#EXTINF:-1 tvg-id="PATLaPaz.bo@SD" tvg-logo="https://i.imgur.com/4A7R2Jt.png" group-title="Bolivia""General",PAT La Paz
+https://www.redpat.tv/proxylpz/index.m3u8
+#EXTINF:-1 tvg-id="RedUnoSantaCruz.bo@SD" tvg-logo="https://i.imgur.com/pqVzZQ9.png" group-title="Bolivia""General",Red Uno Santa Cruz
+https://master.tucableip.com/muxredunosc/index.m3u8
+#EXTINF:-1 tvg-id="RTP.bo@SD" tvg-logo="https://i.imgur.com/cECNvvr.png" group-title="Bolivia""General",RTP
+https://rtp.noxun.net/hls/stream.m3u8
+#EXTINF:-1 tvg-id="TDTMultimedia.bo@SD" tvg-logo="https://i.imgur.com/JkCywl5.png" group-title="Bolivia""General",TDT Multimedia (720p)
+https://video01.kshost.com.br:4443/juan6318/juan6318/playlist.m3u8
+#EXTINF:-1 tvg-id="TVOFF.bo@SD" tvg-logo="https://i.imgur.com/vBe1GgI.png" group-title="Bolivia""Travel",TV OFF
+https://seo.tv.bo/tv/TV-OFF.m3u8
+#EXTINF:-1 tvg-id="UMSATVUInternacional.bo@HD" tvg-logo="https://tvu.umsa.bo/documents/780216/12171558/Logo+TVU-Int.png" group-title="Bolivia""Educativo"
+#EXTVLCOPT:http-referrer=https://tvu.umsa.bo/tvu-internacional
+https://live.enhdtv.com:8081/8026/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="UMSATVULP.bo@SD" tvg-logo="https://tvu.umsa.bo/documents/780216/12171558/logo+tvu+icon.png" group-title="Bolivia""Cultura"
+#EXTVLCOPT:http-referrer=https://tvu.umsa.bo/en-vivo
+https://live.enhdtv.com:8081/8190/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Unifranz.bo@HD" tvg-logo="https://unifranz.edu.bo/wp-content/themes/unifranz-web/public/images/logos/logo-light-min.442cee.svg" group-title="Bolivia""General",Unifranz (720p)
+https://live.enhdtv.com:8081/8192/index.m3u8
+#EXTINF:-1 tvg-id="UnitelSantaCruz.bo@SD" tvg-logo="https://i.imgur.com/B9wg1zj.png" group-title="Bolivia""General",Unitel Santa Cruz
+https://master.tucableip.com/tvhome/index.m3u8
+#EXTINF:-1 tvg-id="UnivalleTelevision.bo@SD" tvg-logo="https://i.imgur.com/qgrWDIs.png" group-title="Bolivia""",Univalle Televisión (1080p)
+https://master.tucableip.com/univalletv/playlist.m3u8
+#EXTINF:-1 tvg-id="UPEATV.bo@SD" tvg-logo="https://tvadmin.upea.bo/storage/imagenes_institucion/imagen_institucion_66cd025754fcb.png" group-title="Bolivia"""
+#EXTVLCOPT:http-referrer=https://tv.upea.bo/live
+https://tvstream.upea.bo/hls/oSs0jSWumTFIIVY97559.m3u8
+#EXTINF:-1 tvg-id="UPPTV.bo@SD" tvg-logo="https://i.ibb.co/Kwvbyr0/unnamed.jpg" group-title="Bolivia""General",UPP TV (Bolivisión)
+https://alba-bo-bolivision-upptv.stream.mediatiquestream.com/index.m3u8
+#EXTINF:-1 tvg-id="ZoyTVSports1.bo@SD" tvg-logo="https://i.imgur.com/0YHztGq.png" group-title="Bolivia""Sports",Zoy TV Sports 1
+https://mio.zoymilton.com/ZoyEventos/index.m3u8
+
+
+#EXTINF:-1 tvg-id="AmigosTVChiquimula.gt@SD" tvg-logo="https://i.ibb.co/tLhcNTD/amigos-tv-chiquimula.png" group-title="Guatemala""Guatemala""Religious",Amigos TV Chiquimula (480p)
+https://antmedia.cablevisionrobles.com:5443/LiveApp/streams/CqwAgRagMvBNYN8c1731608980342.m3u8
+
+#EXTINF:-1 tvg-id="APlusGuate.gt@SD" tvg-logo="https://i.imgur.com/BtGK7iZ.png" group-title="Guatemala""General",A+ Guate (720p)
+https://ch2-tva.duin.dev/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="AuroraMediaFilms.gt@SD" tvg-logo="https://i.imgur.com/DVC5w6H.png" group-title="Guatemala""Movies",Aurora Media Films (720p)
+https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
+
+#EXTINF:-1 tvg-id="AztecaGuatemala.gt@SD" tvg-logo="https://i.imgur.com/UJhQoUK.png" group-title="Guatemala""General",Azteca Guate (1080p)
+https://ch1-tva.duin.dev/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="BarbeTV.gt@SD" tvg-logo="https://i.imgur.com/2Sekew2.png" group-title="Guatemala""General",Canal 9 Barbe TV (720p)
+https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8
+
+#EXTINF:-1 tvg-id="BDTelevision.gt@SD" tvg-logo="https://i.ibb.co/VBJhHkJ/Fda27b8e352949c39c8d88de33a284a4.png" group-title="Guatemala""General",BD Televisión (720p)
+https://stream.oursnetworktv.com/latin/telegtmb/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Canal6Panadish.gt@SD" tvg-logo="https://i.imgur.com/KJWNPiz.jpg" group-title="Guatemala""General",Canal 6 Panadish (720p)
+https://stream.meteorito.cloud:1947/canal6/smil:canal6.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Canal 8 Santa Rosa.gt@SD" tvg-logo="https://i.imgur.com/Nenn6gE.png" group-title="Guatemala""General",Canal 8 Santa Rosa (720p)
+https://cdn.streamhispanatv.net:3697/live/canal8starosalive.m3u8
+
+#EXTINF:-1 tvg-id="Canal9Toliman.gt@SD" tvg-logo="https://i.imgur.com/ytg9oTf.png" group-title="Guatemala""General",Canal 9 Tolimán (720p)
+https://cdn.streamhispanatv.net:3237/live/canal9tvgtlive.m3u8
+
+#EXTINF:-1 tvg-id="Canal13Esquipulas.gt@SD" tvg-logo="https://i.imgur.com/INKZvlN.png" group-title="Guatemala""General",Canal 13 Esquipulas (720p)
+https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
+
+#EXTINF:-1 tvg-id="Canal27.gt@SD" tvg-logo="https://i.imgur.com/eA4vt8A.png" group-title="Guatemala""Religious",Canal 27 (1080p)
+https://live.canal27.tv:3633/live/canal27live.m3u8
+
+#EXTINF:-1 tvg-id="Canal30TVBethel.gt@SD" tvg-logo="https://i.imgur.com/PP4U1JL.png" group-title="Guatemala""Religious",Canal 30 TV Bethel (720p)
+https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8
+
+#EXTINF:-1 tvg-id="Canal35Yepocapa.gt@SD" tvg-logo="https://i.ibb.co/Kw1JNrm/Logo-Canal-yepotv.png" group-title="Guatemala""General",Canal 35 Yepocapa (720p)
+https://cdn.streamhispanatv.net:3948/live/yepotvlive.m3u8
+
+#EXTINF:-1 tvg-id="CanalIglesiaLuzyVerdad.gt@SD" tvg-logo="https://i.ibb.co/x3Vdz6h/Screenshot-20231202-125205.jpg" group-title="Guatemala""Religious",Canal Iglesia Luz y Verdad (1080p)
+https://stream.oursnetworktv.com/latin/IglesialuzyVerdad/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CanalPeniel.gt@SD" tvg-logo="https://i.imgur.com/Z7aKJCt.png" group-title="Guatemala""Religious",Canal Peniel (720p)
+https://cdn.streamhispanatv.net:3840/live/penielfamlive.m3u8
+
+#EXTINF:-1 tvg-id="CanalVisof.gt@SD" tvg-logo="https://i.imgur.com/XiszuLl.png" group-title="Guatemala""General",Canal Visof (720p)
+https://stream.oursnetworktv.com/latin/Visof/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CandelariaTV.gt@SD" tvg-logo="https://i.imgur.com/Mq1yoUQ.png" group-title="Guatemala""Religious",Candelaria TV (720p)
+https://cdn.streamhispanatv.net:3921/live/candetvlive.m3u8
+
+#EXTINF:-1 tvg-id="CarinosaTV.gt@SD" tvg-logo="https://i.imgur.com/13Kb6Lp.png" group-title="Guatemala""General",Cariñosa TV (720p)
+https://cdn.streamhispanatv.net:3110/live/carinosatvlive.m3u8
+
+#EXTINF:-1 tvg-id="CNI.gt@SD" tvg-logo="https://i.imgur.com/9kRYdSp.png" group-title="Guatemala""Religious",CNI Digital (720p)
+https://cdn.streamhispanatv.net:3003/live/cnidigitallive.m3u8
+
+#EXTINF:-1 tvg-id="CristoTV.gt@SD" tvg-logo="https://i.ibb.co/c2czW3M/Screenshot-20231201-180316.jpg" group-title="Guatemala""Religious",Cristo TV (480p)
+https://stream.oursnetworktv.com/latin/CristoTV/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ElOlamTV.gt@SD" tvg-logo="https://i.imgur.com/QR7yrHg.png" group-title="Guatemala""Religious",El Olam TV (720p)
+https://live.elolam.tv:3743/live/elolamtvlivelive.m3u8
+
+#EXTINF:-1 tvg-id="ElRoiTV.gt@SD" tvg-logo="https://i.imgur.com/h8S0eA4.png" group-title="Guatemala""Religious",El-Roi TV (720p)
+https://cdn.streamhispanatv.net:3648/live/elroitvlive.m3u8
+
+#EXTINF:-1 tvg-id="EspirituSantoYFuegoTV.gt@SD" tvg-logo="https://i.imgur.com/8mdSWO4.jpg" group-title="Guatemala""Religious",Espíritu Santo Y Fuego TV (480p)
+https://inliveserver.com:1936/8392/8392/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ExpresionTV.gt@SD" tvg-logo="https://i.imgur.com/lFek4Pj.png" group-title="Guatemala""Religious",Expresión TV (1080p)
+https://ssh101.bozztv.com/ssh101/expresiongrany/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FranchsTV.gt@SD" tvg-logo="https://i.imgur.com/Rr9pKQh.png" group-title="Guatemala""Religious",Franchs TV (720p)
+https://stream.oursnetworktv.com/latin/franchstv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="GardeniasTV.gt@SD" tvg-logo="https://i.ibb.co/YfVmfwV/83ff2da28cae14bc47bb07e976bef578.png" group-title="Guatemala""Entertainment",Gardenias TV (720p)
+https://stream.oursnetworktv.com/latin/gardeniasTv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="GTV.gt@SD" tvg-logo="https://i.imgur.com/gUiIC8E.png" group-title="Guatemala""Entertainment",Génesis TV (768p)
+https://cdn.streamhispanatv.net:3126/live/genesistvlive.m3u8
+
+#EXTINF:-1 tvg-id="GuaTV.gt@SD" tvg-logo="https://i.imgur.com/YxBrM4u.png" group-title="Guatemala""Legislative",GuaTV (1080p)
+https://cdn.streamhispanatv.net:3352/live/guatvlive.m3u8
+
+#EXTINF:-1 tvg-id="IzabalTV.gt@SD" tvg-logo="https://i.imgur.com/BnRITjB.png" group-title="Guatemala""General",Izabal TV (720p)
+https://cdn.streamhispanatv.net:3718/live/izabaltvlive.m3u8
+
+#EXTINF:-1 tvg-id="JubiloTV.gt@SD" tvg-logo="https://i.ibb.co/R4QSfYd/Ba073d3280959c5ba7d25d40052a7349.png" group-title="Guatemala""Religious",Júbilo TV (720p)
+https://stream.oursnetworktv.com/latin/jubilotv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MaxivisionTV.gt@SD" tvg-logo="https://i.imgur.com/UC8WrEN.jpg" group-title="Guatemala""Entertainment",Maxivisión TV (720p)
+https://video03.logicahost.com.br/maxivisiontv/maxivisiontv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MCNTelevision.gt@SD" tvg-logo="https://i.imgur.com/SNUaCCw.png" group-title="Guatemala""Religious",MCN Televisión (768p)
+https://vdo.grupolimalive.com:3263/live/mcnlive.m3u8
+
+#EXTINF:-1 tvg-id="MultivisionCanal3.gt@SD" tvg-logo="https://i.imgur.com/6bdj2BV.jpg" group-title="Guatemala""General",Multivisión Canal 3 (720p)
+https://stream.digitalgt.com:3136/live/multivisionlive.m3u8
+
+#EXTINF:-1 tvg-id="MultivisionSports.gt@SD" tvg-logo="https://i.imgur.com/wLjSSo2.jpg" group-title="Guatemala""Sports",Multivisión Sports (720p)
+https://stream.digitalgt.com:3605/live/multivisionsportslive.m3u8
+
+#EXTINF:-1 tvg-id="NuevoMundoTV.gt@SD" tvg-logo="https://i.imgur.com/j3OGO3V.png" group-title="Guatemala""News",Nuevo Mundo TV (720p)
+https://tvlatina.live:1936/8008/8008/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PenielKY.gt@SD" tvg-logo="https://i.imgur.com/YtPRKmS.png" group-title="Guatemala""Religious",Peniel Kids & Young (480p)
+https://s.emisoras.tv:8081/penielkids/index.m3u8
+
+#EXTINF:-1 tvg-id="RhemaTV.gt@SD" tvg-logo="https://i.imgur.com/5o821rT.png" group-title="Guatemala""Religious",Rhema TV (720p)
+https://5e85d90130e77.streamlock.net/6006/6006/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SILTV.gt@SD" tvg-logo="https://i.imgur.com/tWZXRVu.png" group-title="Guatemala""General"
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
+#EXTVLCOPT:http-referrer=https://www.facebook.com/Siltv32
+https://live20.bozztv.com/giatv/giatv-SilTvOnline/SilTvOnline/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Telecosta.gt@SD" tvg-logo="https://www.telecostaescuintla.com/gallery_gen/f57408fa00aca6d969248be4b56b48e6.png" group-title="Guatemala""General",Telecosta (720p)
+https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8
+
+#EXTINF:-1 tvg-id="TVMaria.gt@SD" tvg-logo="https://i.ibb.co/qY7T9s9/cropped-TV-MARIA-LOGO-C.jpg" group-title="Guatemala""Religious",TV María (720p)
+https://streamtv.intervenhosting.net:3155/live/juandelacruz3live.m3u8
+
+#EXTINF:-1 tvg-id="TVMaya.gt@SD" tvg-logo="https://i.imgur.com/BGFa4OO.png" group-title="Guatemala""Education",TV Maya (480p)
+https://5ca9af4645e15.streamlock.net/mayas/videomayas/playlist.m3u8
+
+#EXTINF:-1 tvg-id="UnicaTV.gt@SD" tvg-logo="https://i.imgur.com/VE5OrU7.png" group-title="Guatemala""General",Única TV (720p)
+https://cdn.streamhispanatv.net:3642/live/unicatvlive.m3u8
+
 
 
 #EXTINF:-1 tvg-id="AcentoTV.do@SD",Acento TV
