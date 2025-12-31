@@ -1,3 +1,67 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="48Hours.us@SD"group-title="Ploto TV",48 Hours
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e925bc68d18a00077bb990/master.m3u8
+#EXTINF:-1 tvg-id="AmericanPickers.us@SD"group-title="Ploto TV",American Pickers
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6408ae8f9b39550008caf94f/master.m3u8
+#EXTINF:-1 tvg-id="AngerManagementChannel.us@SD"group-title="Ploto TV",Anger Management
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65cf8bdaa25d5e00081e1e5d/master.m3u8
+#EXTINF:-1 tvg-id="AreWeThereYet.us@SD"group-title="Ploto TV",Are We There Yet?
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65cf8b9328730900087c5324/master.m3u8
+#EXTINF:-1 tvg-id="Arthur.us@SD"group-title="Ploto TV",Arthur
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6482f27c17f5e10008c10ff0/master.m3u8
+#EXTINF:-1 tvg-id="BarRescue.us@SD"group-title="Ploto TV",Bar Rescue
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/655f2ee6c0fc88000877d26c/master.m3u8
+#EXTINF:-1 tvg-id="Baywatch.us@Canada"group-title="Ploto TV",Baywatch
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdae69a47b6c00076af298/master.m3u8
+#EXTINF:-1 tvg-id="BestofTheDrewBarrymoreShow.us@SD"group-title="Ploto TV",Best of The Drew Barrymore Show
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6310cbee5a8ad300070fdb7c/master.m3u8
+#EXTINF:-1 tvg-id="BloombergTelevision.us@SD"group-title="Ploto TV",Bloomberg Television
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62b976b93279cb000772c6f9/master.m3u8
+#EXTINF:-1 tvg-id="CatfishTVShow.us@SD"group-title="Ploto TV",Catfish
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a2a23a0d700008a6ed7b/master.m3u8
+#EXTINF:-1 tvg-id="CBSNews247.us@SD"group-title="Ploto TV",CBS News 24/7
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6350fdd266e9ea0007bedec5/master.m3u8
+#EXTINF:-1 tvg-id="Cheers.us@Canada"group-title="Ploto TV",Cheers
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdb7f0db2eb30007376d4d/master.m3u8
+#EXTINF:-1 tvg-id="ComedyCentralAnimation.us@SD"group-title="Ploto TV",Comedy Central Animation
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a949f5b5e4000862467c/master.m3u8
+#EXTINF:-1 tvg-id="CSI.us@SD"group-title="Ploto TV",CSI (Original)
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e9224f41d5e100076db2b6/master.m3u8
+#EXTINF:-1 tvg-id="CSIMiami.us@SD"group-title="Ploto TV",CSI: Miami
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63f4e0e63fde020007835cbe/master.m3u8
+#EXTINF:-1 tvg-id="CSINY.us@SD"group-title="Ploto TV",CSI: NY
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63f4e11c7533d80008a1d5f0/master.m3u8
+#EXTINF:-1 tvg-id="DealorNoDeal.us@SD"group-title="Ploto TV",Deal or no Deal
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e92951c2db99000787c00d/master.m3u8
+#EXTINF:-1 tvg-id="DoctorWhoClassic.us@Canada"group-title="Ploto TV",Doctor Who Classic
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdad934d73d50007a82472/master.m3u8
+#EXTINF:-1 tvg-id="DogtheBountyHunter.us@Canada"group-title="Ploto TV",Dog The Bounty Hunter
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6540fee72cf13100085d5a18/master.m3u8
+#EXTINF:-1 tvg-id="FailArmy.us@Canada"group-title="Ploto TV",FailArmy
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdb5500c21270007218ce1/master.m3u8
+#EXTINF:-1 tvg-id="ForensicFiles.us@SD"group-title="Ploto TV",Forensic Files
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62e92392a3e6270007f562e8/master.m3u8
+#EXTINF:-1 tvg-id="GlobalNewsNational.ca@SD"group-title="Ploto TV",Global News National
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62cbef9ebb857100072fc187/master.m3u8
+#EXTINF:-1 tvg-id="GordonRamsaysHellsKitchen.us@SD"group-title="Ploto TV",Gordon Ramsay's Hell's Kitchen
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62ea45010d0611000839868c/master.m3u8
+#EXTINF:-1 tvg-id="IincMaster.us@SD"group-title="Ploto TV",Ink Master
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/655f2d713944b60008bc7e90/master.m3u8
+#EXTINF:-1 tvg-id="MissionImpossible.us@SD"group-title="Ploto TV",Mission Impossible
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62ea43aa0c43540007f2db96/master.m3u8
+#EXTINF:-1 tvg-id="QelloConcertsbyStingray.ca@SD",Qello Concerts
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64240d3d466225000827412b/master.m3u8
+#EXTINF:-1 tvg-id="SouthPark.us@Canada"group-title="Ploto TV",South Park
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62bdb1c5e25122000798ac79/master.m3u8
+#EXTINF:-1 tvg-id="TheWeatherNetwork.ca@SD"group-title="Ploto TV",The Weather Network
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63da370e2e477400081cf8b6/master.m3u8
+#EXTINF:-1 tvg-id="ThePriceIsRight.us@SD"group-title="Ploto TV",The Price is Right: Barker Era
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64c220e15dc1660008a79c96/master.m3u8
+#EXTINF:-1 tvg-id="WalkerTexasRanger.us@Canada"group-title="Ploto TV",Walker Texas Ranger
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/635659445b4c4700076d2ad1/master.m3u8
+#EXTINF:-1 tvg-id="YoMTV.us@SD"group-title="Ploto TV",Yo! MTV
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/654102ed770cf1000866c307/master.m3u8
+
 
 #EXTINF:-1 tvg-id="AcentoTV.do@SD",Acento TV
 #EXTVLCOPT:http-referrer=https://acentotv01.streamprolive.com/i/cp/hls/player.html
