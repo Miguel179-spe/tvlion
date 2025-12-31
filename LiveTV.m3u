@@ -1,4 +1,4 @@
-#EXTM3U
+
 #EXTINF:-1 tvg-id="AcentoTV.do@SD",Acento TV
 #EXTVLCOPT:http-referrer=https://acentotv01.streamprolive.com/i/cp/hls/player.html
 https://acentotv01.streamprolive.com/hls/live.m3u8
@@ -24,32 +24,19 @@ https://streaming.altantotv.domiplay.net/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="Ame47.do@SD",Ame 47 (576p)
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Antena7.do@SD" group-title="A Dominicano",Antena 7 (720p)
-https://d3mhrz6vhsrmmq.cloudfront.net/index.m3u8
-
-#EXTINF:-1 tvg-id="Antena21.do@SD"group-title="A Dominicano" ,Antena 21
-https://d1p8txxph783az.cloudfront.net/index.m3u8
 
 #EXTINF:-1 tvg-id="Area809ElOriginal.do@SD"group-title="A Dominicano" ,Area 809 El Original (1080p)
 https://vdo.voxhdnet.com:3159/stream/play.m3u8
 
-#EXTINF:-1 tvg-id="" group-title="A Dominicano",ASMAR TV
-https://ss5.domint.net:3034/astv_str/asmartv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="BebetoTV.do@SD" group-title="A Dominicano",Bebeto TV (1080p)
 https://mlb.essastream.com:8081/bebetotelevision/index.m3u8
 
-#EXTINF:-1 tvg-id="Bellavision.do@SD"group-title="A Dominicano",Bellavisión (1080p)
-https://rdn.essastream.com:3110/live/bellavision8hdlive.m3u8
 
-#EXTINF:-1 tvg-id="BonaoTV.do@SD"group-title="A Dominicano",Bonao TV (720p)
-https://bonaotv.com/stream2/index.m3u8
 
 #EXTINF:-1 tvg-id="BonchesLatinosTV.do@SD"group-title="A Dominicano",Bonches Latinos TV (720p)
 https://5790d294af2dc.streamlock.net/latinostv/latinostv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Boreal.do@SD"group-title="A Dominicano",Boreal (720p)
-https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8
 
 #EXTINF:-1 tvg-id="Canal4RD.do@SD"group-title="A Dominicano",Canal 4 RD (1080p)
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
@@ -69,17 +56,6 @@ https://tv.livestreaminggroup.info:3052/live/catorcetvlive.m3u8
 #EXTINF:-1 tvg-id="CanalMultivision.do@SD"group-title="A Dominicano",Canal Multivision (720p)
 https://5790d294af2dc.streamlock.net/MULTIVISIONRD/MULTIVISIONRD/playlist.m3u8
 
-#EXTINF:-1 tvg-id="CanaldelSol.do@SD"group-title="A Dominicano",Canal Sol (720p)
-https://5790d294af2dc.streamlock.net/sol65/sol65/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CanelaTV.do@HD"group-title="A Dominicano",Canela TV
-https://cnn.hostlagarto.com/canelatv/index.m3u8
-
-#EXTINF:-1 tvg-id="CDN.do@SD"group-title="A Dominicano",CDN (720p)
-https://dacastmmd.mmdlive.lldns.net/dacastmmd/5f85ae10c62d4be3a5edbf483cb04f25/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CDNDeportes.do@SD"group-title="A Dominicano",CDN Deportes (720p)
-http://200.125.170.122:8000/play/a03j/index.m3u8
 
 #EXTINF:-1 tvg-id="CenovisionHD.do@HD"group-title="A Dominicano",Cenovision HD (720p)
 https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
@@ -93,8 +69,6 @@ https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
 #EXTINF:-1 tvg-id="ColorVision.do@SD"group-title="A Dominicano",Color Vision (720p)
 http://190.110.36.254/COLORVISION/index.m3u8
 
-#EXTINF:-1 tvg-id="Coral39.do@SD"group-title="A Dominicano",Coral 39 (480p)
-http://190.110.36.254/CORAL39/index.m3u8
 
 #EXTINF:-1 tvg-id="CotubanamaTV.do@SD"group-title="A Dominicano" ,Cotubanama TV (1080p)
 https://host.streamingnation.live/p/3588/hybrid/play.m3u8
@@ -108,10 +82,6 @@ https://tv.livestreaminggroup.info:3985/live/entelevisionlive.m3u8
 #EXTINF:-1 tvg-id="Extra86TV.do@HD"group-title="A Dominicano",Extra 86 TV (720p)
 https://samson.streamerr.co:8081/xtelevisionrd/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="GlobalSocialTV.do@SD"group-title="A Dominicano",Global Social TV (720p)
-#EXTVLCOPT:http-referrer=https://player.castr.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
-https://stream.castr.com/6809124f3f3e7e594c63cf15/live_8e5d0b50206a11f08690576446b3c082/index.fmp4.m3u8
 
 #EXTINF:-1 tvg-id="HTVLive.do@SD"group-title="A Dominicano",HTV Live (1080p)
 https://vdo1.streamgato.us:3833/live/canalhtvlivelive.m3u8
@@ -119,21 +89,12 @@ https://vdo1.streamgato.us:3833/live/canalhtvlivelive.m3u8
 #EXTINF:-1 tvg-id="LunaTVCanal53.do@SD"group-title="A Dominicano",Luna TV Canal 53 (720p)
 https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8
 
-#EXTINF:-1 tvg-id="MocaVisionCanal48.do@SD"group-title="A Dominicano",Moca Vision Canal 48 (720p)
-#EXTVLCOPT:http-referrer=https://player.castr.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
-https://stream.castr.com/5da89a909db964293ad13301/live_8252710021ba11f0b7e18b4de1df97ab/index.fmp4.m3u8
 
 #EXTINF:-1 tvg-id="RNN.do@SD"group-title="A Dominicano",RNN (720p)
 https://2-fss-2.streamhoster.com/pl_120/206532-5753030-1/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Telefuturo.do@SD"group-title="A Dominicano",Telefuturo (1080p)
 http://190.110.36.254/TELEFUTURO/index.m3u8
-
-#EXTINF:-1 tvg-id="Telemicro.do@SD"group-title="A Dominicano",Telemicro (1080p)
-#EXTVLCOPT:http-referrer=https://telemicro.com.do/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
-https://live4.telemicro.com.do/live/telemicrocast_1080p/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ZonavisionTV.do@SD"group-title="A Dominicano",Zonavision TV
 https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
@@ -2538,8 +2499,6 @@ https://ss2.tvrdomi.com:1936/supertv55/supertv55/playlist.m3u8
 #EXTINF:-1 tvg-id="Supremateve.do@HD" tvg-logo="https://canalesdominicanos.live/template/images/radios/small/supremateve.jpeg" group-title="A Dominicano",Supremateve HD
 https://ss2.tvrdomi.com:1936/supremateve/supremateve/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Telefuturo.do@SD" tvg-logo="https://i.imgur.com/QpnctoU.png" group-title="A Dominicano",Telefuturo SD
-http://190.110.36.254/TELEFUTURO/index.m3u8
 
 #EXTINF:-1 tvg-id="Telemax.do@SD" tvg-logo="https://i.imgur.com/QvKmjvV.png" group-title="A Dominicano",Telemax SD
 https://vdo2.streamgato.us:3673/live/telemaxlive.m3u8
