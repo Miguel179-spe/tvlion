@@ -2143,14 +2143,8 @@ https://dxmwlv9y37d4r.cloudfront.net/VIDEOROLA_PLUS_HD/master.m3u8
 #EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/jnzu4fk.png" group-title="A Dominicano", Ad telemundo las vegas	
 https://prodamdtlmdtv.akamaized.net/out/v1/16f8fa5338af47f8bd234da2f35b9b45/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
 
-#EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/z9i3CP9.png" group-title="A Dominicano", Ad telemundo dallas	
-https://d368vp0qqzvkid.cloudfront.net/11603/88889715/hls/master.m3u8
 
-#EXTINF:-1 tvg-id="TelemundoAlDia.us@HD" tvg-logo="https://imgur.com/qOB5XyO.png" group-title="A Dominicano", Ad telemundo 52
-https://d368vp0qqzvkid.cloudfront.net/11603/88889714/hls/master.m3u8
 
-#EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://imgur.com/37xJqA6.png" group-title="A Dominicano",Ad TELEMONDO Nueva York
-https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/69ea74b0-08d5-4fbb-b844-0b70338ea55e/4.m3u8
 
 #EXTINF:-23 tvg-id="WKAQDT1.pr" tvg-logo="https://i.imgur.com/DVASpQj.png" group-title="A Dominicano",Ad TELEMONDO (Puerto Rico)
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
@@ -2163,9 +2157,6 @@ https://cdn.igocast.com/wkrp_channel1_hls/wkrp_channel1_master.m3u8
 
 #EXTINF:-1 tvg-id="TelemundoTelenovelasClasicas.us@SD" tvg-logo="https://i.imgur.com/9bPcYIN.png" group-title="A Dominicano",Ad Telemundo Telenovelas Clasicas SD
 https://d3rciv7av2te5a.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/master.m3u8?ads.xumo_channelId=88889470
-
-#EXTINF:-1 tvg-id="WNJUDT1.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/512px-Telemundo_logo_2018.svg.png" group-title="A Dominicano",Ad TelemundoEast 
-https://tvpass.org/live/TelemundoEast/hd
 
 #EXTINF:-1 tvg-id="WTMOCD1.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano",Ad telexitos WTMO-CD1 SD
 https://dvrfl03.bozztv.com/hondu-telexitos/index.m3u8
@@ -2182,11 +2173,7 @@ https://streaming.altantotv.domiplay.net/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="Ame47.do@SD" tvg-logo="https://i.imgur.com/MUEbjeP.png" group-title="A Dominicano",Ame 47 SD
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 
-#EXTINF:-1 tvg-id="BajoTechoTV.do@SD" tvg-logo="https://i.imgur.com/I2wRq88.png" group-title="A Dominicano",Bajo Techo TV SD
-https://rdn.essastream.com:3042/live/bajotechotvlive.m3u8
 
-#EXTINF:-1 tvg-id="BonaoTV.do@SD" tvg-logo="https://i.imgur.com/en1vCZB.png" group-title="A Dominicano",Bonao TV SD
-https://bonaotv.com/stream2/index.m3u8
 
 #EXTINF:-1 tvg-id="Canal4RD.do@SD" tvg-logo="https://i.imgur.com/eiqpffH.png" group-title="A Dominicano",Canal 4 RD SD
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
