@@ -71,19 +71,6 @@ https://live-utv.unah.edu.hn/web/salida.m3u8
 #EXTINF:-1 tvg-id="VTV.hn@SD" tvg-logo="https://i.imgur.com/CsPkwD5.png" group-title="Honduras""Honduras",VTV (480p)
 https://d3q93l5bumjyoq.cloudfront.net/index.m3u8
 
-#EXTM3U
-#EXTINF:-1 tvg-id="AbyaYalaTV.bo@SD" tvg-logo="https://abyayala.tv.bo/wp-content/uploads/2024/04/MOSCA-BLANCA-OK-308x189.png" group-title="Bolivia""Bolivia""General",Abya Yala TV
-https://seo.tv.bo/tv/LIpSEO-TV-8.m3u8
-#EXTINF:-1 tvg-id="BoliviaTV72.bo@SD" tvg-logo="https://i.imgur.com/tKLYYys.png" group-title="Bolivia""General",Bolivia TV 7.2 (720p)
-https://5ca3e84a76d30.streamlock.net/boliviatv2/videoboliviatv2/playlist.m3u8
-#EXTINF:-1 tvg-id="BoliviaTV.bo@SD" tvg-logo="https://i.imgur.com/tKLYYys.png" group-title="Bolivia""General",Bolivia TV (720p)
-http://boliviatv1.srfms.com:5735/live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="Bolivision.bo@SD" tvg-logo="https://i.imgur.com/U98Z5zn.png" group-title="Bolivia""General",Bolivisión LPZ (720p)
-https://alba-bo-bolivision-bolivision.stream.mediatiquestream.com/index.m3u8
-#EXTINF:-1 tvg-id="CadenaA.bo@SD" tvg-logo="https://i.imgur.com/BxQPPAA.png" group-title="Bolivia""",Cadena A (720p)
-https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal29TVA.bo@SD" tvg-logo="https://i.imgur.com/y3bymuv.jpg" group-title="Bolivia""Religious",Canal 29 TVA
-https://play.agenciastreaming.com:19360/8160/8160.m3u8
 #EXTINF:-1 tvg-id="CEACOMTV.bo@SD" tvg-logo="https://i.imgur.com/hutdRfk.png" group-title="Bolivia""General;Lifestyle;Music;News",CEACOM TV
 https://eu1.servers10.com:8081/ceacom/index.m3u8
 #EXTINF:-1 tvg-id="CoralTV.bo@SD" tvg-logo="https://i.ibb.co/xDrc5MD/CORALTv.png" group-title="Bolivia""General",Coral TV (480p)
@@ -127,8 +114,6 @@ https://master.tucableip.com/univalletv/playlist.m3u8
 #EXTINF:-1 tvg-id="UPEATV.bo@SD" tvg-logo="https://tvadmin.upea.bo/storage/imagenes_institucion/imagen_institucion_66cd025754fcb.png" group-title="Bolivia"""
 #EXTVLCOPT:http-referrer=https://tv.upea.bo/live
 https://tvstream.upea.bo/hls/oSs0jSWumTFIIVY97559.m3u8
-#EXTINF:-1 tvg-id="UPPTV.bo@SD" tvg-logo="https://i.ibb.co/Kwvbyr0/unnamed.jpg" group-title="Bolivia""General",UPP TV (Bolivisión)
-https://alba-bo-bolivision-upptv.stream.mediatiquestream.com/index.m3u8
 #EXTINF:-1 tvg-id="ZoyTVSports1.bo@SD" tvg-logo="https://i.imgur.com/0YHztGq.png" group-title="Bolivia""Sports",Zoy TV Sports 1
 https://mio.zoymilton.com/ZoyEventos/index.m3u8
 
@@ -1622,8 +1607,6 @@ https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8
 #EXTINF:-1 tvg-id="BoliviaTV.bo@SD" tvg-logo="https://i.imgur.com/tKLYYys.png" group-title="Bolivia""General",Bolivia TV SD
 http://boliviatv1.srfms.com:5735/live/livestream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="CadenaA.bo@SD" tvg-logo="https://i.imgur.com/BxQPPAA.png" group-title="Bolivia""",Cadena A SD
-https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8
 
 #EXTINF:-1 tvg-id="CoralTV.bo@SD" tvg-logo="https://i.ibb.co/xDrc5MD/CORALTv.png" group-title="Bolivia""General",Coral TV SD
 https://tv.mediacp.eu:8081/coraltv/index.m3u8
