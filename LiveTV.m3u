@@ -1,4 +1,50 @@
-#EXTM3U
+
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Nuevos canales""Undefined",Golden Boy
+https://goldenboy.duckhunting.playout.vju.tv/DuckhuntingTV_GoldenBoy/main.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CL" tvg-logo="" group-title="Nuevos canales""Undefined",Canal Claro (720p)
+https://stitcher.pluto.tv/stitch/hls/channel/68224482c5d53e1351aaf2f2/master.m3u8?appVersion=1&deviceDNT=0&deviceId=spencer&deviceMake=safari&deviceModel=web&deviceType=web&deviceVersion=1&servertSideAds=false&sid=e3ca3088-b0b3-11f0-ab21-da2bce2249f9&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CL" tvg-logo="" group-title="Nuevos canales""Sport",Claro Sports Chile
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6320d80a66666000086712d7livestitch/master.m3u8?advertisingId={PSID}&appVersion=unknown&deviceDNT={TARGETOPT}&deviceId={PSID}&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&profilesFromStream=true&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&us_privacy=1YNY&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Nuevos canales""Sport",Claro Sports
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6320d2755e54db000783fd87livestitch/master.m3u8?advertisingId={PSID}&appVersion=unknown&deviceDNT={TARGETOPT}&deviceId={PSID}&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&profilesFromStream=true&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&us_privacy=1YNY&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="AU" tvg-logo="" group-title="Nuevos canales""Undefined",Zee Cinema (1080p)
+https://amg17931-zee-amg17931c5-samsung-au-8873.playouts.now.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CA" tvg-logo="" group-title="Nuevos canales""Undefined",Noovo Cinéma (1080p)
+https://dk4ogs46bjxcw.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-xr1ct045l70mz/Noovo_Cinema.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="EG" tvg-logo="" group-title="Nuevos canales""Undefined",Rotana Cinema Egypt (1080p)
+https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="DE" tvg-logo="" group-title="Nuevos canales""Undefined",Rakuten TV German Cinema (1080p)
+https://a5dc66582aa040269fd99d7d7a6ac23b.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6200/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Zee Cinema (1080p)
+https://amg17931-zee-amg17931c5-samsung-th-5696.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeecinema-samsungth/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="PH" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Cinema_One_2013_logo.svg/512px-Cinema_One_2013_logo.svg.png" group-title="Nuevos canales""Movies",Cinema One (1080p)
+https://cinemaone-abscbn-ono.amagi.tv/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="SK" tvg-logo="" group-title="Nuevos canales""Undefined",JOJ Cinema (1080p)
+https://live.cdn.joj.sk/live/andromeda/cinema-1080.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="AE" tvg-logo="" group-title="Nuevos canales""Undefined",Spacetoon Arabic (1080p)
+https://live-uae.spacetoongo.com/ST_Live_UAE/hls/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Sony Aath (1080p)
+https://dai.google.com/linear/hls/event/j-YEIDwORxubtP_967VcZg/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Sony BBC Earth HD (1080p)
+https://dai.google.com/linear/hls/event/6bVWYIKGS0CIa-cOpZZJPQ/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Sony Entertainment Television Asia HD (1080p)
+https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Sony MAX (1080p)
+https://dai.google.com/linear/hls/event/Oc1isQAET3WaNPoABfScmg/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Sony Pix (1080p)
+https://dai.google.com/linear/hls/event/x7rXWd2ERZ2tvyQWPmO1HA/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Undefined",Sony SAB (1080p)
+https://dai.google.com/linear/hls/event/CrTivkDESWqwvUj3zFEYEA/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IN" tvg-logo="" group-title="Nuevos canales""Sport",Sony Sports TEN 2 HD (1080p)
+https://dai.google.com/linear/hls/event/V9h-iyOxRiGp41ppQScDSQ/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/bZWoDTg.png" group-title="Nuevos canales""Movies",Cine Sony (720p)
+https://cdn.klowdtv.net/803B48A/n1.klowdtv.net/live1/cine_720p/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/Dut8Ftk.png" group-title="Nuevos canales""Undefined",Sony Canal Competencias (1080p)
+https://spt-competencias-2-us.roku.wurl.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/ohE9IgP.png" group-title="Nuevos canales""Undefined",Sony Canal Escape Perfecto
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/605e479d5b8229000763e697/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web&sid=e52ea0d7-7d74-4383-8afa-27a135057740&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Nuevos canales""Undefined",Sony Canal Novelas (1080p)
+https://spt-novelas-2-us.roku.wurl.tv/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="US" tvg-logo="" group-title="Nuevos canales""Undefined",Supermarket Sweep (1080p) [Geo-blocked]
 https://aegis-cloudfront-1.tubi.video/4541ec70-497a-4a92-87cf-50258fbab999/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="US" tvg-logo="" group-title="Nuevos canales""Undefined",Revolt (1080p)
