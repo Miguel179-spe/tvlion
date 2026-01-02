@@ -1,3 +1,232 @@
+
+#EXTINF:-1 tvg-id="ATV.pe" tvg-logo="https://i.imgur.com/eUzYZfg.png" group-title="Nicaragua""General",ATV (720p)
+https://alba-pe-atv-atv.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 tvg-id="ATVSur.pe" tvg-logo="https://i.imgur.com/LnyVa5H.png" group-title="Nicaragua""General",ATV Sur (720p)
+https://alba-pe-atv-atvsur.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 tvg-id="ATVPlus.pe" tvg-logo="https://i.imgur.com/fY9256H.png" group-title="Nicaragua""News",ATV+
+https://alba-pe-atv-atvmas.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 tvg-id="CanalIPe.pe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Identidad_Peruana_ipe_2020.png/1200px-Identidad_Peruana_ipe_2020.png" group-title="Nicaragua""Family",Canal IPe (1080p)
+https://cdnhd.iblups.com/hls/3f2cb1658d114f2693eff18d83199e67.m3u8
+
+#EXTINF:-1 tvg-id="ClaroSports.mx" tvg-logo="https://i.imgur.com/n0kd17r.png" group-title="Nicaragua""Sports",Claro Sports (Pluto TV)
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6320d2755e54db000783fd87livestitch/master.m3u8?advertisingId={PSID}&appVersion=unknown&deviceDNT={TARGETOPT}&deviceId={PSID}&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&profilesFromStream=true&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&us_privacy=1YNY
+
+#EXTINF:-1 tvg-id="Latina.pe" tvg-logo="https://i.imgur.com/8Hvk59N.png" group-title="Nicaragua""General",Latina (720p)
+https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea/latina/latina.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NacionalTvPeru.pe" tvg-logo="https://i.imgur.com/ad0GNqa.png" group-title="Nicaragua""Undefined",Nacional Tv Peru
+https://s1.tvdatta.com:3349/live/nacionaltvlive.m3u8
+
+
+#EXTINF:-1 tvg-id="VegavisionCanal18.do@SD" tvg-logo="https://i.imgur.com/352jxnd.png" group-title="Paraguay""A Dominicano",Vegavision Canal 18 SD
+https://rdn.essastream.com:3400/live/canal18hdlive.m3u8
+
+#EXTINF:-1 tvg-id="VillaAltagraciaTV.do@SD" tvg-logo="https://i.imgur.com/uQAeKKa.png" group-title="Paraguay""A Dominicano",Villa Altagracia TV SD
+https://inliveserver.com:1936/10016/10016/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Vision3000.do@SD" tvg-logo="https://i.imgur.com/mogsnzp.png" group-title="Paraguay""A Dominicano",Vision 3000 SD
+https://ss2.tvrdomi.com:1936/vision3000/vision3000/playlist.m3u8
+
+#EXTINF:-1 tvg-id="VisionNDV.do@SD" tvg-logo="https://i.imgur.com/4gj5NMa.png" group-title="Paraguay""A Dominicano",Vision NDV SD
+https://cloudflare.streamgato.us:3820/live/visionndvlive.m3u8
+
+#EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="Paraguay""A Dominicano",VTV Canal 32 SD
+https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
+
+#EXTINF:-1 tvg-id="XtraTv.do@HD" tvg-logo="https://xtratvrd.com/logo512.png" group-title="Paraguay""A Dominicano",Xtra Tv HD
+https://cnn.essastream.com:3387/live/xtratvlive.m3u8
+
+#EXTINF:-1 tvg-id="XtremoChannel.do@SD" tvg-logo="https://i.imgur.com/bvPh0Uq.png" group-title="Paraguay""A Dominicano",Xtremo Channel SD
+https://ss2.tvrdomi.com:1936/xtremochannel/xtremochannel/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZonavisionTV.do@SD" tvg-logo="https://imgur.com/B3PrrMH.png" group-title="Paraguay""A Dominicano",Zonavision TV SD
+https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
+
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/tSVnDfO.png" group-title="Paraguay""Deportes",Speed Sport 1 (1080p)
+https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8
+
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/1JRQeHu.png" group-title="Paraguay""Deportes",Sports First (1080p)
+https://d4ddgdmj1cvnm.cloudfront.net/scheduler/scheduleMaster/409.m3u8
+
+#EXTINF:0 tvg-country="UN" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Paraguay""Deportes",Red Bull TV
+http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+
+#EXTINF:0 tvg-country="UN" tvg-logo="https://www.samsung.com/us/smg/content/dam/s7/home/televisions-and-home-theater/tvs/tv-plus/07072020/SportsGrid_190x190.png" group-title="Paraguay""Deportes",SportsGrid
+https://sportsgrid-samsungus.amagi.tv/playlist.m3u8
+
+#EXTINF:0 tvg-country="AE" tvg-logo="https://i.imgur.com/IaRaabJ.jpg" group-title="Paraguay""Deportes",Sharjah Sports
+https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8
+
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Paraguay""Deportes",BeIN Sports XTRA (1080p)
+https://bein-beinxtrasports-firetv.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="4Sports.fr" tvg-logo="https://www.aparatchi.com/images/chanells-logo/4sports.svg" group-title="Paraguay""Deportes", 4 Sports
+https://pepsi.abntv.live/hls/4spstream.m3u8
+
+#EXTINF:-1 tvg-id="SkyNewsExtra1.au@SD" tvg-logo="https://i.imgur.com/ZsPb8nL.png" group-title="Paraguay""Deportes",Sky News Extra 1
+https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
+
+#EXTINF:-1 group-title="Paraguay""Deportes", Esports Max
+https://streamyes.alsolnet.com/esportsmax/live/playlist.m3u8
+
+#EXTINF:-1 group-title="Paraguay""Deportes", Esports Max 2 | Rek TV
+https://streamlov.alsolnet.com/rektv/live/playlist.m3u8
+
+#EXTINF:-1 group-title="Paraguay""Deportes", FOX en Tubi
+https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8
+
+#EXTINF:-1 group-title="Paraguay""Deportes", ITV Deportes
+https://thm-it-aymsports.otteravision.com/thm/it/it.m3u8
+
+#EXTINF:-1 group-title="Paraguay""Deportes", Marquee Sports Network
+https://marqueesports.global.transmit.live/hls/67cb394e6ef201b4705ce294/hls-itc/marquee1/index.m3u8
+
+#EXTINF:-1 tvg-id="fifa-plus-es" tvg-name="fifa-plus-es" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/381e0e02-e3e4-4bf8-af7d-0751ec0cd395.png" group-title="Paraguay""Deportes", FIFA+
+https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-id="laliga-inside" tvg-name="laliga-inside" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/99ae16ca-3e5a-4f96-8924-46d2c034f959.jpeg" group-title="Paraguay""Deportes", LaLiga Inside
+https://daiconnect.com/live/hls/tvup/rk-ligainside/.m3u8
+
+#EXTINF:-1 tvg-id="13Kids.cl@SD" tvg-logo="https://i.imgur.com/8WJUbSD.png" group-title="Paraguay""Kids",13 Kids (1080p)
+https://origin.dpsgo.com/ssai/event/LhHrVtyeQkKZ-Ye_xEU75g/master.m3u8
+
+#EXTINF:-1 tvg-id="13-deporte" tvg-logo="https://imgur.com/HjKEYU7.png" group-title="Paraguay""Deportes", Deporte (Chile)
+https://origin.dpsgo.com/ssai/event/uFiYkh4CQPCPgbs7WPKhXw/master.m3u8
+
+#EXTINF:-1 group-title="Paraguay""EVENTOS EN VIVO", 920 Sin evento
+https://ia803408.us.archive.org/25/items/SMPTECOLORBARS_201801/SMPTE%20COLOR%20BARS.mp4
+
+
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="AZTECAUNO" tvg-name="AZTECA UNO" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/azteca_uno-mediano.png" group-title="Panama""TV ABIERTA", AZTECA UNO 1.1 
+https://mdstrm.com/live-stream-playlist/609b243156cca108312822a6.m3u8
+
+#EXTINF:-1 tvg-id="AZTECAUNO" tvg-name="AZTECA UNO" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/azteca_uno-mediano.png" group-title="Panama""TV ABIERTA", AZTECA UNO 1.1 -1h
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4833
+
+#EXTINF:-1 tvg-id="LASESTRELLAS" tvg-name="LAS ESTRELLAS" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Las_Estrellas_2017_Navidad.svg/revision/latest/scale-to-width-down/250?cb=20230202024114&path-prefix=es" group-title="Panama""TV ABIERTA", LAS ESTRELLAS 2.1 
+https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index_6.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/ivantapia882804/rasta12/main/Emblems/xhctmx.png" group-title="Panama""TV ABIERTA", IMAGEN TV+
+https://igd-it-runtime.otteravision.com/igd/it/it_720.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", CLARO SPORTS
+https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", CGTN ESPAÑOL 
+https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MULTIMEDIOSPLUS" tvg-name="MULTIMEDIOS PLUS II" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/multimedios_plus-mediano.png" group-title="Panama""TV ABIERTA", CDMX CANAL 6.1
+https://mdstrm.com/live-stream-playlist/5f2d9d6ff17144074bd8a284.m3u8
+
+#EXTINF:-1 tvg-id="MILENIOTV" tvg-name="MILENIO TV" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/milenio_tv-mediano.png" group-title="Panama""TV ABIERTA", MILENIO 6.2
+https://mdstrm.com/live-stream-playlist/610178c7db32a4112d994650.m3u8
+
+#EXTINF:-1 tvg-id="ADN40" tvg-name="ADN 40" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/adn_40-mediano.png" group-title="Panama""TV ABIERTA", ADN 40 
+https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
+
+#EXTINF:-1 tvg-logo="https://directostv.teleame.com/wp-content/uploads/2018/07/Teleformula-en-vivo-Online-218x150.png" group-title="Panama""TV ABIERTA", TELEFORMULA 
+https://mdstrm.com/live-stream-playlist/62f2c855f7981b5a5a2d8763.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", AL DW 
+https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", HISPAN TV 
+https://live.presstv.ir/hls/hispantv.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", RS RT 
+https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", TV BRICS
+https://espbrics.mediacdn.ru:443/cdn/brics/spanish/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", UNIVISION 24|7
+https://linear-254.frequency.stream:443/mt/studio/254/hls/master/playlist_1280x720.m3u8
+
+#EXTINF:-1 tvg-id="Azteca7.mx" tvg-logo="https://i.imgur.com/UtFXjIn.png" group-title="Panama""TV ABIERTA", AZTECA 7
+https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8
+
+#EXTINF:-1 tvg-id="APRENDETV" tvg-name="AZTECA 7.2" tvg-logo="http://codiceenlinea.com/wp-content/uploads/2020/08/Aprende-en-Casa_2_LOGO2-792x445.png" group-title="Panama""TV ABIERTA", AZ+ 7.2 
+https://mdstrm.com/live-stream-playlist/60b56be1000ea50835fa1e63.m3u8
+
+#EXTINF:-1 tvg-logo="https://mvstv.com/wp-content/uploads/2020/08/cropped-mvstv_logo_wt-3.png" group-title="Panama""TV ABIERTA", MVS TV 6.4
+https://dish.akamaized.net/Content/HLS_HLS_CLR/Live/channel(mvs)/variant.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", TURISTIK TV
+https://cdn1.cef-technology.com/stream_web/turistik/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png" group-title="Panama""TV ABIERTA", ONCE.3 Señal Digital 
+https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png" group-title="Panama""TV ABIERTA", ONCE MÉXICO 
+https://vivo.canaloncelive.tv:443/alivepkgr3/ngrp:cepro_all/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png" group-title="Panama""TV ABIERTA", ONCE 11.1
+https://s5.mexside.net:1936/stream/stream/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/bb/XHSPR-TDT_%28Canal_14_MX%29.png/revision/latest?cb=20200410213940" group-title="Panama""TV ABIERTA", CANAL CATORCE 
+https://s5.mexside.net:1936/canal14/canal14/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://iconape.com/wp-content/png_logo_vector/justiciatv-logo.png" group-title="Panama""TV ABIERTA", JUSTICIA TV 
+https://live-scjn.ovp-vivaro.digital:443/ovp-origin/638a22b47746d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://directostv.teleame.com/wp-content/uploads/2017/10/TV-Cuatro-Canal-4.1-Guanajuato-en-vivo-Online-218x150.png" group-title="Panama""TV ABIERTA", GTO TV4.1 
+https://5ca3e84a76d30.streamlock.net/tv4/smil:tv4.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://directostv.teleame.com/wp-content/uploads/2017/10/TV-Cuatro-Canal-4.2-Guanajuato-en-vivo-Online-218x150.png" group-title="Panama""TV ABIERTA", GTO TV4.2 
+https://5f2c1b0d880e5.streamlock.net/tv42/smil:tv42.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://directostv.teleame.com/wp-content/uploads/2017/10/TV-Cuatro-Canal-4.3-Guanajuato-en-vivo-Online-218x150.png" group-title="Panama""TV ABIERTA", GTO TV4.3 UHD 
+https://5f1af61612fb5.streamlock.net/tv43gto/smil:tv43gto.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://directostv.teleame.com/wp-content/uploads/2017/10/TV-Cuatro-Canal-4.1-Guanajuato-en-vivo-Online-218x150.png" group-title="Panama""TV ABIERTA", GTO TV4.4 UHD 
+https://5ca3e84a76d30.streamlock.net/tv44gto/smil:tv44gto.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", EXPRESA TV CELAYA 
+https://5ca9af4645e15.streamlock.net:443/teleradio/smil:teleradio.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/i4N1CVp.png" group-title="Panama""TV ABIERTA", CHP Canal 10
+https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/ivantapia882804/rasta12/main/Emblems/capital.png" group-title="Panama""TV ABIERTA", CAPITAL21 
+https://video.cdmx.gob.mx/redes/stream.m3u8
+
+#EXTINF:-1 tvg-logo="http://manualdeimagen.canal22.org.mx/img/original.png" group-title="Panama""TV ABIERTA", CANAL 22.1
+https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://s3.amazonaws.com/rytvmx/wpmedia/2020/07/14141848/logoNew.png" group-title="Panama""TV ABIERTA", MEXIQUENSE Tv 34.1
+https://5e50264bd6766.streamlock.net/mexiquense/videomexiquense/playlist.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", EXAtv
+https://mvs.daioncdn.net:443/exatv/exatv_1080p.m3u8?app=web
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", STINGRAY CLASSICA
+https://lotus.stingray.com/manifest/classica-cla008-montreal/samsungtvplus/master.m3u8
+
+#EXTINF:-1 group-title="Panama""TV ABIERTA", EWTN
+https://cdn3.wowza.com/1/SmVrQmZCUXZhVDgz/b3J3MFJv/hls/l4hjmzyf/720/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/ivantapia882804/rasta12/main/Emblems/tlr.png" group-title="Panama""TV ABIERTA", TELERITMO 6.3
+https://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/ITx8bTj.png" group-title="Panama""TV ABIERTA", TVE INTERNACIONAL AMERICA HD 
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_ame_main_1080.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/a8w1QRn.png" group-title="Panama""TV ABIERTA", STAR TVE AMERICA HD 
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_dvr_1080.m3u8
+
+
+
 #EXTINF:-1 tvg-chno=397 tvg-id="fashion-tv" tvg-name="Fashion TV" group-title="Estilo de vida""lifestyle",Fashion TV
 https://amg01546-amg01546c1-rakuten-gb-9592.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01546-fashiontv-fashiontv-rakutengb/playlist.m3u8
 #EXTINF:-1 tvg-chno=409 tvg-id="travelxp-eng" tvg-name="Travelxp" group-title="Estilo de vida""lifestyle",Travelxp
