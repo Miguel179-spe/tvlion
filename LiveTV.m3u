@@ -1,3 +1,43 @@
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",HBO East HD 
+http://tv14s.xyz:8080/live/69YmcB/658437/46713.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HBO 
+http://tv14s.xyz:8080/live/69YmcB/658437/9264.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HBO 2 (A)
+http://tv14s.xyz:8080/live/69YmcB/658437/9816.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HBO Comedy (East) 
+http://tv14s.xyz:8080/live/69YmcB/658437/17773.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HBO Family (East) 
+http://tv14s.xyz:8080/live/69YmcB/658437/17772.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HBO SIGNATURE (East) 
+http://tv14s.xyz:8080/live/69YmcB/658437/9266.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HBO Zone (East) 
+http://tv14s.xyz:8080/live/69YmcB/658437/9265.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HDNET MOVIES 
+http://tv14s.xyz:8080/live/69YmcB/658437/16265.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US Heroes & Icons (Los Angeles) 
+http://tv14s.xyz:8080/live/69YmcB/658437/66087.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HGTV (East) 
+http://tv14s.xyz:8080/live/69YmcB/658437/46717.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HISTORY 
+http://tv14s.xyz:8080/live/69YmcB/658437/46724.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US History Channel 
+http://tv14s.xyz:8080/live/69YmcB/658437/15017.m3u8
+#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/gBjE81K.png",US HLN 
+http://tv14s.xyz:8080/live/69YmcB/658437/17748.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",San Francisco
 http://tv14s.xyz:8080/live/69YmcB/658437/252010.m3u8
 #EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 02:  San Francisco 49ers vs Indianapolis Colts 8:15pm
