@@ -1,3 +1,23 @@
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: CLARO SPORTS
+https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: AYM SPORTS
+https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: AYM SPORTS
+https://aym-as.otteravision.com/aym/as/as_720p_high.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: AYM SPORTS
+https://aym-as.otteravision.com/aym/as/as.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: CANAL ONCE
+https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: NRT MEXICO
+https://5c001c2729b09.streamlock.net:4443/live/_definst_/canal4/playlist.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: RTV VERACRUZ
+https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: OLMECAS
+https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
+
+
+
+
 
 #EXTINF:-1 tvg-id="ATV.pe" tvg-logo="https://i.imgur.com/eUzYZfg.png" group-title="Nicaragua""General",ATV (720p)
 https://alba-pe-atv-atv.stream.mediatiquestream.com/index.m3u8
