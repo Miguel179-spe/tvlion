@@ -1,37 +1,36 @@
-
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,  San Francisco 49ers vs Indianapolis Colts 8:15pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",San Francisco
 http://tv14s.xyz:8080/live/69YmcB/658437/252010.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 02:  San Francisco 49ers vs Indianapolis Colts 8:15pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 02:  San Francisco 49ers vs Indianapolis Colts 8:15pm
 http://tv14s.xyz:8080/live/69YmcB/658437/252011.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 03:  Los Angeles Chargers vs Dallas Cowboys @ 1:00 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 03:  Los Angeles Chargers vs Dallas Cowboys @ 1:00 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252012.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 04: New York Jets vs New Orleans Saints 1pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 04: New York Jets vs New Orleans Saints 1pm
 http://tv14s.xyz:8080/live/69YmcB/658437/252013.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 05:  Minnesota Vikings vs New York Giants @ 1:00 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 05:  Minnesota Vikings vs New York Giants @ 1:00 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252014.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 06: Kansas City Chiefs vs Tennessee Titans @ 1:00 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 06: Kansas City Chiefs vs Tennessee Titans @ 1:00 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252015.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 07: Cincinnati Bengals vs Miami Dolphins @ 1:00 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 07: Cincinnati Bengals vs Miami Dolphins @ 1:00 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252016.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 08: Atlanta Falcons vs Arizona Cardinals @ 4:05 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 08: Atlanta Falcons vs Arizona Cardinals @ 4:05 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252017.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 09: Jacksonville Jaguars vs Denver Broncos @ 4:05 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 09: Jacksonville Jaguars vs Denver Broncos @ 4:05 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252018.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 10: Pittsburgh Steelers vs Detroit Lions @ 4:25 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 10: Pittsburgh Steelers vs Detroit Lions @ 4:25 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252019.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 11: Las Vegas Raiders vs Houston Texans @ 4:25 pm EST
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 11: Las Vegas Raiders vs Houston Texans @ 4:25 pm EST
 http://tv14s.xyz:8080/live/69YmcB/658437/252020.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 12: New England Patriots vs Baltimore Ravens @ 8:20 pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 12: New England Patriots vs Baltimore Ravens @ 8:20 pm
 http://tv14s.xyz:8080/live/69YmcB/658437/252021.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 13: Tennessee Titans vs San Francisco 49ers 4:25pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 13: Tennessee Titans vs San Francisco 49ers 4:25pm
 http://tv14s.xyz:8080/live/69YmcB/658437/252022.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,US CBS 4 (WBZ) Boston 
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",US CBS 4 (WBZ) Boston 
 http://tv14s.xyz:8080/live/69YmcB/658437/253290.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,US NHL Network
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",US NHL Network
 http://tv14s.xyz:8080/live/69YmcB/658437/253636.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 14: Minnesota Vikings vs Dallas Cowboys 8:20pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 14: Minnesota Vikings vs Dallas Cowboys 8:20pm
 http://tv14s.xyz:8080/live/69YmcB/658437/253677.m3u8
-#EXTINF:-1,tvg-id="AguacateTV.ve@SD" tvg-logo="https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg" group-title="NFL" ,NFL 01: Baltimore Ravens at Miami Dolphins 8:15pm
+#EXTINF:-1 group-title="NFL"  tvg-logo="https://imgur.com/ZYnQN0n.png",NFL 01: Baltimore Ravens at Miami Dolphins 8:15pm
 http://tv14s.xyz:8080/live/69YmcB/658437/253678.m3u8
 
 
