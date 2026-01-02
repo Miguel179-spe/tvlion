@@ -1,19 +1,189 @@
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: CLARO SPORTS
-https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: AYM SPORTS
-https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: AYM SPORTS
+
+
+#EXTINF:-1, group-title="Futbol" group-title="Futbol" SCTV 22 - SSPORT 1 🇻🇳
+https://liveh34.vtvprime.vn/hls/SCTV22/03.m3u8
+
+#EXTINF:-1, group-title="Futbol" group-title="Futbol" IDMANTV 🇹🇷
+https://str2.yodacdn.net/idman_300_to_small/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1, group-title="Futbol"ESPN DEPORTES 🇺🇸
+https://e3.thetvapp.to/hls/espn-deportes/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" beIN SPORTS 1 🇶🇦
+https://balance.footballii.ir/hls2/bein1.m3u8
+
+#EXTINF:-1, group-title="Futbol" beIN SPORTS 2 🇶🇦
+https://balance.footballii.ir/hls2/bein2.m3u8
+
+#EXTINF:-1, group-title="Futbol" Varzesh TV 🇸🇦
+https://lenz.splus.ir/PLTV/88888888/224/3221226845/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" Varzesh TV 🇸🇦
+https://balance.footballii.ir/hls2/varzeshtv.m3u8
+
+#EXTINF:-1, group-title="Futbol" beIN SPORTS 2 🇶🇦
+https://ab.footballii.ir/hls2/bein2_src.m3u8
+
+#EXTINF:-1, group-title="Futbol" beIN SPORTS 1 🇶🇦
+https://ab.footballii.ir/hls2/bein1_src.m3u8
+
+#EXTINF:-1, group-title="Futbol" beIN SPORTS 1 🇶🇦
+https://ab.footballii.ir/hls2/bein1_low.m3u8
+
+#EXTINF:-1, group-title="Futbol" S Sport 1 🇹🇷
+https://dga1op10s1u3lep.617cc29522c890.click/live/selcukssport/playlist.m3u8
+
+#EXTINF:-1, group-title="Futbol" DAZN La Liga 🇪🇸
+https://tiger-hub.vercel.app/DAZN-LaLiga/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1, group-title="Futbol" M La Liga 🇪🇸
+https://tiger-hub.vercel.app/LaLiga_TV/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1, group-title="Futbol" beIN4k 🇶🇦
+https://7pal.short.gp/bein-uhd
+
+#EXTINF:-1, group-title="Futbol" L'Équipe 🇫🇷
+https://tvradiozap.eu/tools/dm-m3u8.php/x2lefik.m3u8
+
+#EXTINF:-1, group-title="Futbol" PERSIANA SPORT 🇮🇷
+https://af.ayas.ir/hls2/persiana.m3u8
+
+#EXTINF:-1, group-title="Futbol" Bein sports 1 ENG 🇬🇧
+https://tiger-hub.vercel.app/Bein-sports_1_ENG/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1, group-title="Futbol" PremierSports1 🇬🇧
+https://7pal.short.gy/prsport1
+
+#EXTINF:-1, group-title="Futbol" Матч! 🇷🇺
+https://32tech0steam0dp01.org/test/matchtv/chunks.m3u8
+
+#EXTINF:-1, group-title="Futbol" BELARUS 5 🇧🇾
+https://ngtrk.dc.beltelecom.by/ngtrk/_definst_/smil:belarus5/playlist.m3u8
+
+#EXTINF:-1, group-title="Futbol"Arena_Sport P1 🇷🇸
+https://tiger-hub.vercel.app/Arena-Sports/Premium-1/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1, group-title="Futbol"Arena_Sport P2 🇷🇸
+https://tiger-hub.vercel.app/Arena-Sports/Premium_2/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1, group-title="Futbol" MAXSPORT_1 🇭🇷
+http://185.166.252.230/MaxSport1/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" Azteca Deportes 🇲🇽
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65cf60d166eec80008724e6flivestitch/master.m3u8?advertisingId=channel&appName=rokuchannel
+
+#EXTINF:-1, group-title="Futbol" FOX 🇲🇽
+https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8
+
+#EXTINF:-1, group-title="Futbol" TYC Sports 🇦🇷
+https://cdnlatam.sysedge-delivery.com/TYC_SPORTS_CACHE_2/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" ESPN PREMIUM 🇦🇷
+https://cdnlatam.sysedge-delivery.com/ESPN_PREMIUM_HD/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" TNT Sports 🇦🇷
+https://cdnlatam.sysedge-delivery.com/TNT_SPORTS_HD/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" CAZE TV 1 🇧🇷
+https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8
+
+#EXTINF:-1, group-title="Futbol"TV2 🇪🇸
+https://ztnr.rtve.es/ztnr/1688885.m3u8
+
+#EXTINF:-1, group-title="Futbol" REAL MADRID TV 🇪🇸
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+
+#EXTINF:-1, group-title="Futbol" BEIN SPORT EXTRA Ñ 🇪🇸
+https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+
+#EXTINF:-1, group-title="Futbol" Esport3 🇪🇸
+https://directes-tv-cat.3catdirectes.cat/live-content/esport3-hls/master.m3u8
+
+#EXTINF:-1, group-title="Futbol" ETB Deportes 🇪🇸
+https://multimedia.eitb.eus/live-content/oka2hd-hls/master.m3u8
+
+#EXTINF:-1, group-title="Futbol" ITV DEPORTES 🇲🇽
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=3010
+
+#EXTINF:-1, group-title="Futbol"TELEMUNDO 🇲🇽
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
+#EXTINF:-1, group-title="Futbol" ESPN 🇺🇸
+https://tiger-hub.vercel.app/ESPN/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1, group-title="Futbol" CBS Sports Golazo Network 🇺🇸
+https://stitcher.pluto.tv/stitch/hls/channel/63a0e33a45264d000850ed7e/master.m3u8
+
+#EXTINF:-1, group-title="Futbol" AYM SPORT 🇺🇸
 https://aym-as.otteravision.com/aym/as/as_720p_high.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: AYM SPORTS
+
+#EXTINF:-1, group-title="Futbol" Turkmenistan Sport 🇹🇲
+https://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" HT SPOR 🇹🇷
+https://ciner-live.ercdn.net/htspor/htspor_1080p.m3u8
+
+#EXTINF:-1, group-title="Futbol" HTSpor TV 🇹🇷
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
+
+#EXTINF:-1, group-title="Futbol" SOLO CALCIO HD 🇮🇹
+https://bit.ly/48XfUCc?profile=inspirationFreetv.m3u8
+
+#EXTINF:-1, group-title="Futbol" ESPN VIVO 🇦🇷
+https://cdn01.oplay.tv/espn/index.m3u8
+
+#EXTINF:-1, group-title="Futbol" TELETRAK 🇨🇱
+http://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
+
+#EXTINF:-1, group-title="Futbol" SOLH SPORT 🇦🇫
+http://cors.tundracast.com:2000/https://wo.cma.footballii.ir/hls2/solh.m3u8
+
+
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: CLARO SPORTS
+https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: AYM SPORTS
+https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: AYM SPORTS
+https://aym-as.otteravision.com/aym/as/as_720p_high.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: AYM SPORTS
 https://aym-as.otteravision.com/aym/as/as.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: CANAL ONCE
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: CANAL ONCE
 https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: NRT MEXICO
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: NRT MEXICO
 https://5c001c2729b09.streamlock.net:4443/live/_definst_/canal4/playlist.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: RTV VERACRUZ
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: RTV VERACRUZ
 https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES LMB", LMB: OLMECAS
+#EXTINF:-1 group-title="Bics DEPORTES", LMB: OLMECAS
 https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
+
+
+
+#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportHR100.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT 2
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportHR200.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT 3
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportHR300.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT PREMIUM 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportpremium100.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", ES: DAZN 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/daznES100.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", ES: DAZN 2
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/daznES200.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", DIGISPORT 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/digisport001.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", ELEVEN 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/elevenPL100.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", NL: ESPN 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/espnNL100.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", EUROSPORT 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/eurosportUK100.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", SKY SPORTS F1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/skysportITf1.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", SPORT TV 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/sporttvPT1.m3u8
+#EXTINF:-1 group-title="Bics DEPORTES", TRT SPORTS 1
+https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/trtsport00.m3u8
 
 
 
