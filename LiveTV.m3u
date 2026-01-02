@@ -1,4 +1,89 @@
+#EXTM3U
 
+#EXTINF:-1 group-title="A Dominicano""A Dominicano""Bics MX", MX: AZTECA UNO
+https://mdstrm.com/live-stream-playlist/609b243156cca108312822a6.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: AZTECA INTERNACIONAL
+https://azt-mun.otteravision.com/azt/mun/mun.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: IMAGEN TV+
+https://igd-it-runtime.otteravision.com/igd/it/it_720.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: MULTIMEDIOS CDMX
+https://mdstrm.com/live-stream-playlist/5f2d9d6ff17144074bd8a284.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: MULTIMEDIOS MTY
+https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: MULTIMEDIOS LAGUNA
+https://mdstrm.com/live-stream-playlist/57bf686a61ff39e1085d43e1.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: MULTIMEDIOS GDL
+https://mdstrm.com/live-stream-playlist/5c54d38ca392a5119bb0aa0d.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: AZTECA 7
+https://dai.google.com/linear/hls/event/YHoOj51dSKCvBQOBG2OvLQ/master.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: ADN 40
+https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
+#EXTINF:-1  group-title="A Dominicano""Bics MX", MX: A+
+https://mdstrm.com/live-stream-playlist/60b56be1000ea50835fa1e63.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MX", MX: MILENIO
+https://mdstrm.com/live-stream-playlist/610178c7db32a4112d994650.m3u8
+#EXTINF:-1  group-title="A Dominicano""Bics MX", MX: MARIA VISION
+https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/playlist.m3u8
+#EXTINF:-1  group-title="A Dominicano""Bics MX", MX: MVS
+https://dish.akamaized.net/Content/HLS_HLS_CLR/Live/channel(mvs)/variant.m3u8
+
+#EXTINF:-1 group-title="A Dominicano""Bics US", US: CNN
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics US", US: AL JAZEERA EN
+https://live-hls-web-aje-fa.getaj.net/AJE/03.m3u8
+
+#EXTINF:-1 group-title="A Dominicano""Bics Latino", PR: TELEMUNDO
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics Latino", PR: PUNTO 2
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics Latino", GT: TV AZTECA GUATE
+https://ch1-tva.duin.dev/hls/stream.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics Latino", BO: CANAL 7.1
+https://5ca9af4645e15.streamlock.net/boliviatv/videoboliviatv/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics Latino", VE: VPI TV
+https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics Latino", VE: TELESUR
+https://cdnesmain.telesur.ultrabase.net/mbliveMain/480p/chunklist.m3u8
+
+#EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", ABC EAST
+http://fl1.moveonjoy.com/ABC_EAST/index.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", ESPN
+http://fl2.moveonjoy.com/ESPN/index.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", DISNEY CHANNEL
+http://fl5.moveonjoy.com/DISNEY_CHANNEL/index.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", FOX SPORTS 1
+http://fl2.moveonjoy.com/FOX_Sports_1/index.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", HBO
+http://fl5.moveonjoy.com/HBO/index.m3u8
+
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", AGS: CANAL 26
+https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", BAJA: CANAL 66 MEXICALI
+https://60417ddeaf0d9.streamlock.net/canal66/videocanal66/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", CDMX: ONCE
+https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", COA: NRT REGION CENTRO
+https://5c001c2729b09.streamlock.net:4443/live/_definst_/canal4/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", GTO: TV 4.1
+https://5f1af61612fb5.streamlock.net/tv4/smil:tv4.smil/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", TAB: TV UJAT
+https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", VER: RTV  VERACRUZ
+https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", YUC: SIPSE
+https://webprod.sipse.com.mx:8080/show/merida.m3u8
+
+#EXTINF:-1 group-title="A Dominicano""Bics DEPORTES", MX: AYM SPORTS
+https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics DEPORTES", MX: CLARO SPORTS
+https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics DEPORTES", MX: CANELA DEPORTES
+https://amg00658-amg00658c28-canelatv-international-5109.playouts.now.amagi.tv/playlist/amg00658-canelamediafast-deportesltta-canelatvinternational/playlist.m3u8
+
+#EXTINF:-1 group-title="A Dominicano""Bics STIN", LATIN POP
+https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
+#EXTINF:-1 group-title="A Dominicano""Bics STIN", ROMANCE LATINO
+https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
 
 #EXTINF:-1, group-title="Futbol" group-title="Futbol" SCTV 22 - SSPORT 1 🇻🇳
 https://liveh34.vtvprime.vn/hls/SCTV22/03.m3u8
