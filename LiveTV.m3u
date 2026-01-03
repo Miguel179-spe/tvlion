@@ -417,14 +417,13 @@ https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics Latino", GT: TV AZTECA GUATE
 https://ch1-tva.duin.dev/hls/stream.m3u8
-#EXTINF:-1 group-title="A Dominicano""Bics Latino", BO: CANAL 7.1
-https://5ca9af4645e15.streamlock.net/boliviatv/videoboliviatv/playlist.m3u8
+
 #EXTINF:-1 group-title="A Dominicano""Bics Latino", VE: VPI TV
 https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics Latino", VE: TELESUR
 https://cdnesmain.telesur.ultrabase.net/mbliveMain/480p/chunklist.m3u8
 
-#EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", ABC EAST
+#EXTINF:-1 group-title="DEPORTES"Bics MoveOnJoy US", ABC EAST
 http://fl1.moveonjoy.com/ABC_EAST/index.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", ESPN
 http://fl2.moveonjoy.com/ESPN/index.m3u8
@@ -435,8 +434,6 @@ http://fl2.moveonjoy.com/FOX_Sports_1/index.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics MoveOnJoy US", HBO
 http://fl5.moveonjoy.com/HBO/index.m3u8
 
-#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", AGS: CANAL 26
-https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", BAJA: CANAL 66 MEXICALI
 https://60417ddeaf0d9.streamlock.net/canal66/videocanal66/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", CDMX: ONCE
@@ -1937,32 +1934,36 @@ https://vdo.aiontelevision.com:3735/live/aiontelevisionlive.m3u8
 https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AltantoTV.do@SD",Altanto TV (720p)
-https://streaming.altantotv.domiplay.net/hls/0/stream.m3u8
+https://altantotv.haislin.com/altantotv/main_stream.m3u8
 
 #EXTINF:-1 tvg-id="Ame47.do@SD",Ame 47 (576p)
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 
 
-#EXTINF:-1 tvg-id="Area809ElOriginal.do@SD"group-title="A Dominicano" ,Area 809 El Original (1080p)
+#EXTINF:-1 tvg-id="Area809ElOriginal.do@SD" tvg-logo="https://imgur.com/v2a6Jqt.png" group-title="A Dominicano" ,Area 809 El Original (1080p)
 https://vdo.voxhdnet.com:3159/stream/play.m3u8
 
 
-#EXTINF:-1 tvg-id="BebetoTV.do@SD" group-title="A Dominicano",Bebeto TV (1080p)
+
+#EXTINF:-1 tvg-id="BebetoTV.do@SD" tvg-logo="https://imgur.com/mv08BXO.png" group-title="A Dominicano",Bebeto TV (1080p)
 https://mlb.essastream.com:8081/bebetotelevision/index.m3u8
 
 
 
-#EXTINF:-1 tvg-id="BonchesLatinosTV.do@SD"group-title="A Dominicano",Bonches Latinos TV (720p)
+
+#EXTINF:-1 tvg-id="BonchesLatinosTV.do@SD" tvg-logo="https://imgur.com/8jVx9CS.png" group-title="A Dominicano",Bonches Latinos TV (720p)
 https://5790d294af2dc.streamlock.net/latinostv/latinostv/playlist.m3u8
 
 
 #EXTINF:-1 tvg-id="Canal4RD.do@SD"group-title="A Dominicano",Canal 4 RD (1080p)
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Canal17RTVD.do@HD"group-title="A Dominicano",Canal 17 RTVD (720p)
+#EXTINF:-1 tvg-id="Canal17RTVD.do@HD"tvg-logo="https://imgur.com/W8LOHA8.png" group-title="A Dominicano",Canal 17 RTVD (720p)
 https://protvradiostream.com:1936/rtvd17/ngrp:rtvd17_all/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Canal56.do@SD"group-title="A Dominicano",Canal 56 (720p)
+
+
+#EXTINF:-1 tvg-id="Canal56.do@SD" tvg-logo="https://imgur.com/PMx4ptH.png" group-title="A Dominicano",Canal 56 (720p)
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
 #EXTINF:-1 tvg-id="CanalAmericaTV.do@SD"group-title="A Dominicano",Canal America TV (720p)
@@ -4186,14 +4187,14 @@ https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
 
 #EXTINF:-1 tvg-id="AltantoTV.do@SD" tvg-logo="https://i.imgur.com/KWvVLhc.png" group-title="A Dominicano",Altanto TV SD
-https://streaming.altantotv.domiplay.net/hls/0/stream.m3u8
+https://altantotv.haislin.com/altantotv/main_stream.m3u8
 
 #EXTINF:-1 tvg-id="Ame47.do@SD" tvg-logo="https://i.imgur.com/MUEbjeP.png" group-title="A Dominicano",Ame 47 SD
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="Canal4RD.do@SD" tvg-logo="https://i.imgur.com/eiqpffH.png" group-title="A Dominicano",Canal 4 RD SD
+#EXTINF:-1 tvg-id="Canal4RD.do@SD" tvg-logo="https://imgur.com/iYvtU6g.png" group-title="A Dominicano",Canal 4 RD SD
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Canal17RTVD.do@HD" tvg-logo="https://i.ibb.co/2YvKhjW4/Quisqueya-17-AZUL.png" group-title="A Dominicano",Quisqueya 17 HD
