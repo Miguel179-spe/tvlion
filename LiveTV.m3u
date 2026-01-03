@@ -452,12 +452,6 @@ https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", YUC: SIPSE
 https://webprod.sipse.com.mx:8080/show/merida.m3u8
 
-#EXTINF:-1 group-title="A Dominicano""Bics DEPORTES", MX: AYM SPORTS
-https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
-#EXTINF:-1 group-title="A Dominicano""Bics DEPORTES", MX: CLARO SPORTS
-https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
-#EXTINF:-1 group-title="A Dominicano""Bics DEPORTES", MX: CANELA DEPORTES
-https://amg00658-amg00658c28-canelatv-international-5109.playouts.now.amagi.tv/playlist/amg00658-canelamediafast-deportesltta-canelatvinternational/playlist.m3u8
 
 #EXTINF:-1 group-title="A Dominicano""Bics STIN", LATIN POP
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
@@ -603,55 +597,39 @@ http://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
 http://cors.tundracast.com:2000/https://wo.cma.footballii.ir/hls2/solh.m3u8
 
 
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: CLARO SPORTS
-https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: AYM SPORTS
-https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: AYM SPORTS
-https://aym-as.otteravision.com/aym/as/as_720p_high.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: AYM SPORTS
-https://aym-as.otteravision.com/aym/as/as.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: CANAL ONCE
-https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: NRT MEXICO
-https://5c001c2729b09.streamlock.net:4443/live/_definst_/canal4/playlist.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: RTV VERACRUZ
-https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", LMB: OLMECAS
-https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
-
-
-
-#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportHR100.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT 2
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportHR200.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT 3
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportHR300.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", ARENA SPORT PREMIUM 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/arenasportpremium100.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", ES: DAZN 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/daznES100.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", ES: DAZN 2
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/daznES200.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", DIGISPORT 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/digisport001.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", ELEVEN 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/elevenPL100.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", NL: ESPN 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/espnNL100.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", EUROSPORT 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/eurosportUK100.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", SKY SPORTS F1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/skysportITf1.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", SPORT TV 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/sporttvPT1.m3u8
-#EXTINF:-1 group-title="Bics DEPORTES", TRT SPORTS 1
-https://raw.githubusercontent.com/jwz4rt/ikitv/refs/heads/main/trtsport00.m3u8
-
-
-
-
+#EXTM3U
+#EXTINF:0 tvg-country="DZ;BH;IQ;SA" tvg-logo="https://i.imgur.com/acuCGF8.png" group-title="Kids",Roya Kids
+https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="AT" tvg-logo="" group-title="Kids",Pluto TV Kids
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ad9b648e738977e2c312131/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web&sid=f7c2181e-b38a-44dc-b46f-bce29df214e8&serverSideAds=false&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Kids",TNT Kids (288p)
+https://restreamer1.tnt.ba/hls/tntkids.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="FR" tvg-logo="" group-title="FRANCE",Pluto TV Kids Animation
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f8eba14a4ffb8000764e950/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web&sid=1894d5d0-76ab-4321-9f74-30abda806f6e&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="FR" tvg-logo="" group-title="FRANCE",Pluto TV Kids Classics
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/654a58dbf9cc82000868f0fb/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web&sid=f64d55f0-5a5d-460e-9d8f-a12bb3309360&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="GT" tvg-logo="" group-title="Kids",Peniel Kids & Young (480p)
+https://s.emisoras.tv:8081/penielkids/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="HN" tvg-logo="" group-title="Kids",Dios Te Ve Kids (720p)
+https://s.emisoras.tv:8081/diostevekids/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="ID" tvg-logo="" group-title="Kids",Biznet Kids (1080p)
+http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IL" tvg-logo="" group-title="Kids",Kan Kids (720p)
+https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="IT" tvg-logo="" group-title="Kids",BeJoy.kids (1080p)
+https://64b16f23efbee.streamlock.net/bejoy/bejoy/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Kids",4 Fun Kids (576i) [[Not 24/7]]
+https://stream.4fun.tv:8889/hls/4fk_high/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="KR" tvg-logo="" group-title="Kids",EBS KIDS (400p)
+http://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="ES" tvg-logo="" group-title="Kids",Pluto TV Kids (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ad9b648e738977e2c312131/master.m3u8?advertisingId=channel&appName=rokuchannel&content_type=livefeed&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="UN" tvg-logo="https://www.samsung.com/us/smg/content/dam/s7/home/televisions-and-home-theater/tvs/tv-plus/all-channels/07212020/circle_190x190.png?raw=true" group-title="Kids",Moonbug Kids not geo via roku
+https://moonbug-rokuus.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/tMfEsVr.png" group-title="Kids",LEGO Kids TV
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60fb01a24795a6000762fe83/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&sid=65f7a3a9-1736-46bc-aaa5-7e4778774536&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Kids",WBRA PBS Kids (1080p)
+https://livestream.pbskids.org/out/v1/1e3d77b418ad4a819b3f4c80ac0373b5/est_124.m3u8?checkedby:iptvcat.com
 
 #EXTINF:-1 tvg-id="ATV.pe" tvg-logo="https://i.imgur.com/eUzYZfg.png" group-title="Nicaragua""General",ATV (720p)
 https://alba-pe-atv-atv.stream.mediatiquestream.com/index.m3u8
