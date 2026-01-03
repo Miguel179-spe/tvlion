@@ -425,7 +425,7 @@ https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
 https://webprod.sipse.com.mx:8080/show/merida.m3u8
 
 
-#EXTINF:-1 group-title="A Dominicano""Bics STIN", LATIN POP
+#EXTINF:-1 tvg-logo="https://imgur.com/ZlDCi4u.png" group-title="A Dominicano""Bics STIN", LATIN POP
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics STIN", ROMANCE LATINO
 https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
@@ -4279,8 +4279,6 @@ https://vdo1.streamgato.us:3833/live/canalhtvlivelive.m3u8
 #EXTINF:-1 tvg-id="ImagenUniversalTV.do@SD" tvg-logo="https://i.imgur.com/DP6HmDV.png" group-title="A Dominicano",Imagen Universal TV SD
 https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
 
-#EXTINF:-1 tvg-id="InfinitoTV.do@HD" tvg-logo="https://imgur.com/YqNSEM6.jpg" group-title="A Dominicano",Infinito TV HD
-https://vdo1.streamgato.us:3057/live/infinitotvlive.m3u8
 
 #EXTINF:-1 tvg-id="LaHoraTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3807-294x165-FFFFFF.jpg" group-title="A Dominicano",La Hora TV HD
 https://cloud5.livescast.com:19360/lahoratv/lahoratv.m3u8
@@ -4297,17 +4295,12 @@ https://live.lavozdemaria.com:3436/live/lavozdemarialive.m3u8
 #EXTINF:-1 tvg-id="LunaTVCanal53.do@SD" tvg-logo="https://i.imgur.com/EvX5aqI.png" group-title="A Dominicano",Luna TV Canal 53 SD
 https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8
 
-#EXTINF:-1 tvg-id="MaimonTVCanal3.do@SD" tvg-logo="https://i.imgur.com/twldaaC.png" group-title="A Dominicano",Maimon TV Canal 3 SD
-https://ss3.domint.net:3138/mtv_str/maimon/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MiavisionTV.do@HD" tvg-logo="https://imgur.com/Bbcrjvs.png" group-title="A Dominicano",Miavision TV HD
-https://rdn.essastream.com:3550/live/miavisiontvlive.m3u8
+https://mlb.essastream.com:8081/miavisiontv/index.m3u8
 
 #EXTINF:-1 tvg-id="Microvision10.do@SD" tvg-logo="https://i.imgur.com/wMl1fNZ.png" group-title="A Dominicano",Microvision 10 SD
 https://streaming.telecablecentral.com.do/live/MicroHD/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MiPuebloTv.do@HD" tvg-logo="https://imgur.com/x5qt5aK.jpg" group-title="A Dominicano",Mi Pueblo Tv HD
-https://ds.tvabierta.net/memfs/e02e5624-6ff9-42b0-b500-68b22e5adc64.m3u8
 
 #EXTINF:-1 tvg-id="MiTV.do@SD" tvg-logo="https://i.imgur.com/qsyjdR8.png" group-title="A Dominicano",MiTV SD
 https://ss2.domint.net:3204/mitv_str/mitv/playlist.m3u8
