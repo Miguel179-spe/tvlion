@@ -1,4 +1,3 @@
-
 #EXTINF:0 tvg-country="US" tvg-logo="" group-title="Nuevos canales""Undefined",Golden Boy
 https://goldenboy.duckhunting.playout.vju.tv/DuckhuntingTV_GoldenBoy/main.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="CL" tvg-logo="" group-title="Nuevos canales""Undefined",Canal Claro (720p)
@@ -436,10 +435,6 @@ http://fl5.moveonjoy.com/HBO/index.m3u8
 
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", BAJA: CANAL 66 MEXICALI
 https://60417ddeaf0d9.streamlock.net/canal66/videocanal66/playlist.m3u8
-#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", CDMX: ONCE
-https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8
-#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", COA: NRT REGION CENTRO
-https://5c001c2729b09.streamlock.net:4443/live/_definst_/canal4/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", GTO: TV 4.1
 https://5f1af61612fb5.streamlock.net/tv4/smil:tv4.smil/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", TAB: TV UJAT
@@ -1972,15 +1967,17 @@ http://newyorkstream.ddns.net:5854/enlacecanalamerica/encoderRD/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalCatorce.do@SD"group-title="A Dominicano",Canal Catorce (720p)
 https://tv.livestreaminggroup.info:3052/live/catorcetvlive.m3u8
 
-#EXTINF:-1 tvg-id="CanalMultivision.do@SD"group-title="A Dominicano",Canal Multivision (720p)
-https://5790d294af2dc.streamlock.net/MULTIVISIONRD/MULTIVISIONRD/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalMultivision.do@SD" tvg-logo="https://imgur.com/Q5gwzJu.png"group-title="A Dominicano",Canal Multivision (720p)
+https://live20.bozztv.com/akamaissh101/ssh101/canalmulti24/chunks.m3u8
 
 
 #EXTINF:-1 tvg-id="CenovisionHD.do@HD"group-title="A Dominicano",Cenovision HD (720p)
 https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
 
-#EXTINF:-1 tvg-id="CieloTV.do@SD"group-title="A Dominicano",Cielo TV (1080p)
+#EXTINF:-1 tvg-id="CieloTV.do@SD" tvg-logo="https://imgur.com/undefined.png" group-title="A Dominicano",Cielo TV (1080p)
 https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
+
+
 
 #EXTINF:-1 tvg-id="CinevisionCanal19.do@SD"group-title="A Dominicano",Cinevision Canal 19 (720p)
 https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
@@ -4212,11 +4209,7 @@ https://5790d294af2dc.streamlock.net/sol65/sol65/playlist.m3u8
 #EXTINF:-1 tvg-id="CanangaTV.do@SD" tvg-logo="https://i.imgur.com/isXlMAh.png" group-title="A Dominicano",Cananga TV SD
 https://cdn.streamingcpanel.com:3545/live/canangatlive.m3u8
 
-#EXTINF:-1 tvg-id="CanelaTV.do@HD" tvg-logo="https://imgur.com/TRCvLdz.png" group-title="A Dominicano",Canela TV HD
-https://cnn.hostlagarto.com/canelatv/index.m3u8
 
-#EXTINF:-1 tvg-id="Carivision.do@SD" tvg-logo="https://i.imgur.com/XjGb2UM.png" group-title="A Dominicano",Carivision SD
-https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8
 
 #EXTINF:-1 tvg-id="CascaraTV.do@SD" tvg-logo="https://i.imgur.com/DEUR7mB.png" group-title="A Dominicano",Cascara TV SD
 https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8
