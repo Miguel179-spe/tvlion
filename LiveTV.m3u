@@ -1,5 +1,128 @@
+#EXTM3U
+#EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/IUVRm5L.png" group-title="Mexico""MEXICO",24 Horas HEVC
+https://d3pfmk89wc0vm9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-nlow3qkp9tmdm/24H_ES.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",8NTV (1080p)
+https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Azteca 7 (720p) [Geo-blocked]
+https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Azteca Uno (720p) [Geo-blocked]
+https://mdstrm.com/live-stream-playlist/609b243156cca108312822a6.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="BB;CA;MX;PA;US" tvg-logo="https://i.imgur.com/gBbLyqh.png" group-title="Mexico""General;MEXICO",CCTV-4 America (1080p)
+https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Canal 10 Chiapas (720p)
+https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Canal 22 Nacional (720p) [Geo-blocked]
+https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Canal 26 Aguascalientes (1080p)
+https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Canal 33 Tijuana (720p)
+https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/AWLWu91.png" group-title="Mexico""MEXICO",Canal Catorce
+https://s5.mexside.net:1936/canal14/canal14/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/I5XxyLI.png" group-title="Mexico""MEXICO",Cine Terror LATAM [Geo-blocked]
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcddf1ed95e740009fef7ab/master.m3u8?advertisingId=channel&appName=rokuchannel&content_type=livefeed&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""Sport",Claro Sports
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6320d2755e54db000783fd87livestitch/master.m3u8?advertisingId={PSID}&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",El NU9VE (1080p)
+https://channel06.akamaized.net/hls/live/2033784/event01/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Estrella TV (1080p)
+https://estrellatv-oando.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Failarmy International (720p)
+https://failarmy-international-mx.samsung.wurl.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",ICRTV Colima (1080p)
+https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Jalisco TV (720p)
+https://5fa5de1a545ae.streamlock.net/sisjalisciense/sisjalisciense/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="AR;CL;CO;MX;PA;VE" tvg-logo="" group-title="Mexico""Undefined;MEXICO",MAX Anime (720p)
+https://vcp14.myplaytv.com/maxanime/maxanime/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",MVS TV
+https://mvs.daioncdn.net/mvstv/mvstv.m3u8?app=web&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Milenio Television
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/652e922db4b047000825f975livestitch/master.m3u8?deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/W2E0fSy.png" group-title="Mexico""MEXICO",NRT México Canal 4 (720p)
+https://59e88b197fb16.streamlock.net:4443/live/canal4/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Nueve TV San Luís Potosí (720p)
+https://5ca9af4645e15.streamlock.net/nuevetv/videonuevetv/.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Pluto TV Lucha Libre AAA (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5c01df1759ee03633e7b272c/master.m3u8?advertisingId=channel&appName=rokuchannel&content_type=livefeed&checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",RTG (720p)
+https://5e50264bd6766.streamlock.net/rtg/videortg/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/oT5CAvd.png" group-title="Mexico""MEXICO",TUDN (720p)
+https://i.mjh.nz/SamsungTVPlus/USBD1700016X9.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",TV Cuatro 4.1 (1080p)
+https://5f1af61612fb5.streamlock.net/tv4/tv4.smil/.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",TV Mar Puerto Vallarta (1080p)
+https://5ca9af4645e15.streamlock.net/tvmarvallarta/videotvmarvallarta/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",TV Nuevo León Canal 28 (XHMNL-TDT) (720p)
+https://s5.mexside.net:1936/canal28/canal28/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",TVMÁS (XHGV-TDT) (360p) [Not 24/7]
+https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",TeleFórmula (720p) [Geo-blocked]
+https://mdstrm.com/live-stream-playlist/62f2c855f7981b5a5a2d8763.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/WIeZMKT.png" group-title="Mexico""MEXICO",Vive Kanal D Drama (1080p)
+https://thema-vivekanald-rakuten.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
 
 
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/xjTU14t.jpg" group-title="Colombia""Entertainment",ANC Televisión (480p) [Not 24/7]
+https://canal.mediaserver.com.co/live/ANCTELEVISION.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/79sX78u.png" group-title="Colombia""General",ATN Televisión (720p) [Not 24/7]
+https://streaming5.globalhostla.com/rtplive/atntelevision/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Agenda Al Día TV (720p)
+https://cp.panelchs.com:1936/8156/8156/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/7YB94Hf.png" group-title="Colombia""Undefined",Avivamiento TV (720p)
+https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/akGKPsk.png" group-title="Colombia""Religious",CMB Televisión (1080p)
+https://catv.cmbcolombia.tv/bethesda/bethesda/chunklist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/zJAwnvd.png" group-title="Colombia""General",CNC Bugavisión (720p)
+https://video.ejeserver.com/live/cncbuga.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/NCzpcqm.png" group-title="Colombia""General",CNC Tuluá (720p)
+https://cdn.amelbasoluciones.co:8081/cnctulualive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/Rvuyu7R.jpg" group-title="Colombia""General",Cable Sur TV (720p)
+https://tvlatina.live:1936/8012/8012/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/peOIG1F.png" group-title="Colombia""General",Canal 8 TV+ (720p)
+https://video.ejeserver.com/live/canal8tv.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/6YxtyUR.jpeg" group-title="Colombia""General",Canal Calima TV (720p)
+https://cdn.amelbasoluciones.co:8081/calimalive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/zAYtbYi.png" group-title="Colombia""General;Undefined",Canal Capital (1080p)
+https://cdns.livewave.co:8081/ccapitallive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Religious;Undefined",Canal Oración Con Son (1080p)
+https://canal.mediaserver.com.co/live/oracionconson.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Canal TRO (1080p)
+https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Caracol Noticias Ahora (720p)
+https://mdstrm.com/live-stream-playlist/632391734be92a791e2750e6.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/XIhCUY9.png" group-title="Colombia""Religious;Undefined",Cristovisión (480p)
+https://liveingesta118.cdnmedia.tv/cristovisiontvlive/smil:rtmp01.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/WgnZPol.png" group-title="Colombia""Kids;Undefined",Eureka (1080p)
+https://cdns.livewave.co:8081/eurekalive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/ZnmAXVv.png" group-title="Colombia""News",France 24 Español (1080p)
+https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/3WxC59H.jpg" group-title="Colombia""Music",Full Música (720p)
+https://eu1.servers10.com:8081/8060/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="AR;CL;CO;MX;PA;VE" tvg-logo="" group-title="Colombia""Undefined;MEXICO",MAX Anime (720p)
+https://vcp14.myplaytv.com/maxanime/maxanime/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/qvtaUdp.jpeg" group-title="Colombia""General",RTC Televisión Urabá (720p)
+https://cdn.amelbasoluciones.co:8081/rtcurabalive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="AR;BO;CL;CO;PA;PE" tvg-logo="https://i.imgur.com/aTcJ5p3.png" group-title="Colombia""General;Undefined",SEO TV 1 (1080p)
+https://seo.tv.bo/tv/SEOTV_1FHD.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/uRMq5HC.jpeg" group-title="Colombia""General",TV3 La Plata (720p)
+https://cdn.amelbasoluciones.co:8081/teleopitalive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="https://i.imgur.com/XHtpEfu.png" group-title="Colombia""General",Tele Mocoa Canal 10 (1080p)
+https://cdn.amelbasoluciones.co:8081/telemocoalive/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Tele Vid (1080p)
+https://liveingesta118.cdnmedia.tv/televidtvlive/smil:dvrlive.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Teleantioquia 2 (720p)
+https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:live.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Telecafé (720p)
+https://liveingesta118.cdnmedia.tv/telecafelive/smil:dvrlive.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Telecaribe (720p)
+https://liveingesta118.cdnmedia.tv/telecaribetvlive/smil:rtmp01.smil/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CO" tvg-logo="" group-title="Colombia""Undefined",Telepacifico (1080p)
+https://play.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/022/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CL;CO;MX;PE" tvg-logo="https://i.imgur.com/BzQphbw.png" group-title="Colombia""Undefined;MEXICO",UCL (720p)
+https://livedelta.cdn.antel.net.uy/out/u/url_canalu.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CL;CO;PA;PE" tvg-logo="https://i.imgur.com/JkiFoXA.png" group-title="Colombia""News",VPItv (1080p)
+https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8?checkedby:iptvcat.com
 
 #EXTINF:0 tvg-country="VE" tvg-logo="" group-title="Venezuela""Undefined",Alcance TV
 https://videolatam.com:3516/live/tjjqdqurlive.m3u8?checkedby:iptvcat.com
