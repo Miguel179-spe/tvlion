@@ -1,12 +1,15 @@
 
-#EXTINF:-1 tvg-id="BET.us@East" tvg-logo="https://i.imgur.com/copIbc9.png" group-title="Canales Premium""",BET East
-https://fl1.moveonjoy.com/BET_EAST/index.m3u8
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Canales Premium""Undefined",Discovery Life HD (1080p)
+http://178.219.128.68:64888/DISCLIFEHD?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Canales Premium""Undefined",Discovery Life HD (1080p)
+http://109.233.89.166/Discovery_Life_HD/index.m3u8?checkedby:iptvcat.com
+
+
+
 #EXTINF:-1 tvg-id="BETGospel.us@SD" tvg-logo="https://i.imgur.com/jbOkq8C.png" group-title="Canales Premium""Religious",BET Gospel
 https://fl1.moveonjoy.com/BET_GOSPEL/index.m3u8
 #EXTINF:-1 tvg-id="BETJams.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/BET_Jams_2021.png/512px-BET_Jams_2021.png" group-title="Canales Premium""",BET Jams
 https://fl1.moveonjoy.com/BET_Jams/index.m3u8
-#EXTINF:-1 tvg-id="BETPlutoTV.us@US" tvg-logo="https://i.imgur.com/Kq9WKZg.png" group-title="Canales Premium""Entertainment",BET Pluto TV
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca670f6593a5d78f0e85aed/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
 #EXTINF:-1 tvg-id="BETSoul.us@SD" tvg-logo="https://i.imgur.com/VeuTWUb.png" group-title="Canales Premium""",BET Soul
 https://fl1.moveonjoy.com/BET_SOUL/index.m3u8
 #EXTINF:-1 tvg-id="GCOtv.us@SD" tvg-logo="https://i.imgur.com/zHBR2zR.png" group-title="Canales Premium""General",Golden Community Television (GCO.tv) (Golden CO) (1080p)
