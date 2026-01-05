@@ -1,6 +1,6 @@
 
 #EXTINF:0 tvg-country="Univision Los Angeles" tvg-logo="https://imgur.com/aP6Qg5i.png" group-title="Canales Premium",Univision Los Angeles
-https://dcs-live-uw1.mp.lura.live/server/play/019n91h1VmpZs2L0/rendition.m3u8?track=video-5&anvsid=m177610496-n523b56ab764f9d911e15cd3e12df55a2&ts=1767624168&anvtrid=8a78c59a0e09283733f705eed5588a9f
+http://moontools.me:8080/live/Pruebas191/Pe1CNIB5Ro/1113595.m3u8
 
 #EXTINF:0 tvg-country="DE;CH" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Kids;Undefined",Disney Channel (576p)
 https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-HLS8/disneychannelde.m3u8?checkedby:iptvcat.com
