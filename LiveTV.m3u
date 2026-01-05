@@ -1,14 +1,8 @@
 
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Canales Premium""Kids",TNT Kids (288p)
-https://restreamer1.tnt.ba/hls/tntkids.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="FR" tvg-logo="" group-title="Canales Premium""FRANCE",TNTV (1080p)
-https://tntv-samsung-fr.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="PF" tvg-logo="" group-title="Canales Premium""Undefined",TNTV (720p) [Not 24/7]
-https://bcovlive-a.akamaihd.net/34b9e8a6345d4ee8acb351730d1dbe89/us-west-2/5816339219001/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="UN" tvg-logo="" group-title="Canales Premium""Undefined",TNT4 International
-https://cdn4.skygo.mn/live/disk1/TNT4/HLSv3-FTA/TNT4.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/l0RGbRI.png" group-title="Canales Premium""Entertainment",TNT International
 https://cdn4.skygo.mn/live/disk1/THT/HLSv3-FTA/THT.m3u8?checkedby:iptvcat.com
+
+
 
 #EXTINF:-1 tvg-id="Bravo.nz@Plus1" tvg-logo="https://i.imgur.com/hphQ2kw.png" group-title="Canales Premium""",Bravo +1
 https://i.mjh.nz/.r/bravo-plus1.m3u8
@@ -18,10 +12,6 @@ https://fl1.moveonjoy.com/BRAVO/index.m3u8
 https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/bravo/bravo.smil/playlist.m3u8?did=b2201035844768f58630b7eef
 
 
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Canales Premium""Undefined",Discovery Life HD (1080p)
-http://178.219.128.68:64888/DISCLIFEHD?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Canales Premium""Undefined",Discovery Life HD (1080p)
-http://109.233.89.166/Discovery_Life_HD/index.m3u8?checkedby:iptvcat.com
 
 
 
@@ -31,9 +21,6 @@ https://fl1.moveonjoy.com/BET_GOSPEL/index.m3u8
 https://fl1.moveonjoy.com/BET_Jams/index.m3u8
 #EXTINF:-1 tvg-id="BETSoul.us@SD" tvg-logo="https://i.imgur.com/VeuTWUb.png" group-title="Canales Premium""",BET Soul
 https://fl1.moveonjoy.com/BET_SOUL/index.m3u8
-#EXTINF:-1 tvg-id="GCOtv.us@SD" tvg-logo="https://i.imgur.com/zHBR2zR.png" group-title="Canales Premium""General",Golden Community Television (GCO.tv) (Golden CO) (1080p)
-https://reflect-golden-co.cablecast.tv/live-3/live/live.m3u8
-
 
 
 
