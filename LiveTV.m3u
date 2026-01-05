@@ -1,4 +1,20 @@
 
+#EXTINF:0 tvg-country="DE;CH" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Kids;Undefined",Disney Channel (576p)
+https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-HLS8/disneychannelde.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Undefined",Disney Channel (360p)
+https://e3.thetvapp.to/hls/DisneyChannelEast/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Undefined",Disney Channel (360p)
+https://e5.thetvapp.to/hls/DisneyChannelEast/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Undefined",Disney Channel (720p)
+https://fl5.moveonjoy.com/DISNEY_CHANNEL/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Undefined",Disney Channel (720p)
+https://fl2.moveonjoy.com/DISNEY_CHANNEL/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Disney_Channel_logo_%282014%29.svg/512px-Disney_Channel_logo_%282014%29.svg.png" group-title="Canales Premium""Kids",Disney Channel East
+https://fl5.moveonjoy.com/DISNEY/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Undefined",Disney Channel East
+https://fl1.moveonjoy.com/DISNEY/index.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Undefined",Disney Channel East (720p)
+https://tvpass.org/live/DisneyChannelEast/hd?checkedby:iptvcat.com
 
 #EXTINF:-1 tvg-id="LasEstrellas.mx@SD" tvg-logo="https://i.imgur.com/g5ShxZ7.png" group-title="General",Las Estrellas (1080p)
 https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
