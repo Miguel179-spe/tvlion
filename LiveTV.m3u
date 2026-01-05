@@ -1,4 +1,11 @@
 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/VGBP9wj.png" group-title="PREMIUM MOVIE",HBO+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=861ab989089891d84ad0da296954437c:3bdf94f9fc1888529f8d27d070d38566
+https://zap-live1-ott.izzigo.tv/5/out/u/dash/HBO-PLUS-HD/default.mpd
+
+
+
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/l0RGbRI.png" group-title="Canales Premium""Entertainment",TNT International
 https://cdn4.skygo.mn/live/disk1/THT/HLSv3-FTA/THT.m3u8?checkedby:iptvcat.com
 
