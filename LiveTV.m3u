@@ -1,4 +1,15 @@
 
+#EXTINF:-1 tvg-id="TUDN XTRA 1" tvg-logo="https://imgur.com/b5VSUon.png" group-title="Canales Premium",TUDN XTRA 1
+https://593zona.live:8443/live/Flamatv2.0/q4F479ZGZ5/565950.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-id="LasEstrellas.mx@SD" tvg-logo="https://i.imgur.com/g5ShxZ7.png" group-title="General",Las Estrellas (1080p)
+https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
+#EXTINF:-1 tvg-id="NueveTV.mx@SD" tvg-logo="https://i.imgur.com/3fzB7zY.png" group-title="General",Nueve TV San Luís Potosí (720p)
+https://5ca9af4645e15.streamlock.net/nuevetv/videonuevetv/.m3u8
 #EXTINF:0 tvg-country="MX" tvg-logo="https://i.imgur.com/IUVRm5L.png" group-title="Mexico""MEXICO",24 Horas HEVC
 https://d3pfmk89wc0vm9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-nlow3qkp9tmdm/24H_ES.m3u8?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",8NTV (1080p)
