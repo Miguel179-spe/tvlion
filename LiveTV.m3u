@@ -1,4 +1,7 @@
 
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium""🇹🇭Digital TV🇹🇭" tvg-logo="https://i.postimg.cc/k5KBRQVj/IMG-3102.png", Universal
+http://49.0.64.96:8007/H-Channel
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VGBP9wj.png" group-title="PREMIUM MOVIE",HBO+
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=861ab989089891d84ad0da296954437c:3bdf94f9fc1888529f8d27d070d38566
