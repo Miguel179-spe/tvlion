@@ -1,6 +1,21 @@
 
-#EXTINF:0 tvg-country="Univision Los Angeles" tvg-logo="https://imgur.com/aP6Qg5i.png" group-title="Canales Premium",Univision Los Angeles
-http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/300169.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.de@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png" group-title="Canales Premium""Comedy",Comedy Central HD (1080p)
+https://viamotionhsi.netplus.ch/live/eds/comedycentral/browser-HLS8/comedycentral.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/512px-Comedy_Central_2018.svg.png" group-title="Canales Premium""Comedy",Comedy Central (720p)
+https://fl1.moveonjoy.com/Comedy_Central/index.m3u8
+#EXTINF:-1 tvg-id="ComedyCentralAnimation.us@SD" tvg-logo="https://i.imgur.com/uENch0P.png" group-title="Canales Premium""Comedy",Comedy Central Animation
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f8a949f5b5e4000862467c/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:-1 tvg-id="ComedyCentralenEspanol.us@SD" tvg-logo="https://i.imgur.com/6xTD3G8.png" group-title="Canales Premium""Comedy",Comedy Central en Español
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cf96dad1652631e36d43320/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:-1 tvg-id="ComedyCentralPlutoTV.us@US" tvg-logo="https://i.imgur.com/9y6TtjF.png" group-title="Canales Premium""Comedy",Comedy Central Pluto TV
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca671f215a62078d2ec0abf/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:-1 tvg-id="ComedyCentralSouthPark.us@Germany" tvg-logo="https://i.imgur.com/7GKO6Fp.png" group-title="Canales Premium""Series",Comedy Central South Park
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60c716084d842c00085f6e64/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:-1 tvg-id="NickComedyCentralPlus1.de@HD" tvg-logo="https://i.imgur.com/08ZUI9k.png" group-title="Canales Premium""Comedy;Kids",Nick/Comedy Central +1 HD (1080p)
+https://viamotionhsi.netplus.ch/live/eds/comedycentralnick/browser-HLS8/comedycentralnick.m3u8
+#EXTINF:-1 tvg-id="PlutoTVComedyCentralLatino.us@SD" tvg-logo="https://i.imgur.com/FiM7Rbz.png" group-title="Canales Premium""Comedy",Pluto TV Comedy Central Latino (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cf96dad1652631e36d43320/master.m3u8?marketingRegion=US&serverSideAds=false
+
 
 #EXTINF:0 tvg-country="DE;CH" tvg-logo="https://imgur.com/gEwldsU.png" group-title="Canales Premium""Kids;Undefined",Disney Channel (576p)
 https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-HLS8/disneychannelde.m3u8?checkedby:iptvcat.com
