@@ -1,4 +1,12 @@
 
+#EXTINF:-1 tvg-id="Bravo.nz@Plus1" tvg-logo="https://i.imgur.com/hphQ2kw.png" group-title="Canales Premium""",Bravo +1
+https://i.mjh.nz/.r/bravo-plus1.m3u8
+#EXTINF:-1 tvg-id="Bravo.us@East" tvg-logo="https://i.imgur.com/JmTIRLF.png" group-title="Canales Premium""",Bravo East
+https://fl1.moveonjoy.com/BRAVO/index.m3u8
+#EXTINF:-1 tvg-id="BravoTV.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Bravotv.png" group-title="Canales Premium""General",Bravo TV
+https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/bravo/bravo.smil/playlist.m3u8?did=b2201035844768f58630b7eef
+
+
 #EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Canales Premium""Undefined",Discovery Life HD (1080p)
 http://178.219.128.68:64888/DISCLIFEHD?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Canales Premium""Undefined",Discovery Life HD (1080p)
