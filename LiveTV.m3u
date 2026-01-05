@@ -1,7 +1,9 @@
 
-#EXTINF:-1 tvg-id="TUDN XTRA 1" tvg-logo="https://imgur.com/b5VSUon.png" group-title="Canales Premium",TUDN XTRA 1
+#EXTINF:-1 tvg-id="UNIVISION TLENOVELAS" tvg-logo="https://imgur.com/ABxnHpv.png" group-title="Canales Premium",UNIVISION TLENOVELAS
 https://593zona.live:8443/live/Flamatv2.0/q4F479ZGZ5/373058.m3u8
 
+#EXTINF:-1 tvg-id="UNIVISION " tvg-logo="https://imgur.com/Nlwj6B1.png" group-title="Canales Premium",UNIVISION 
+https://593zona.live:8443/live/Flamatv2.0/q4F479ZGZ5/373053.m3u8
 
 
 
