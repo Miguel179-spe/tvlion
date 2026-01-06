@@ -1,4 +1,7 @@
-
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/ae0phX1.png",Telemicro Internacional
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570359.m3u8
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/ae0phX1.png",TELEMICRO 5
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570355.m3u8
 
 #EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/1kCM5dm.png",UNIVISION DALLAS
 http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/617100.m3u8
