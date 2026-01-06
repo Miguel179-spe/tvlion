@@ -1,3 +1,15 @@
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/undefined.png",CDN37
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570306.m3u8
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/undefined.png",,CDN2
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570304.m3u8
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/undefined.png",CDN SportsMax
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570303.m3u8
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/undefined.png",CDN Deportes
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570301.m3u8
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/undefined.png",CDN 37
+http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570299.m3u8
+
+
 #EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/ae0phX1.png",Telemicro Internacional
 http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/570359.m3u8
 #EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/ae0phX1.png",TELEMICRO 5
