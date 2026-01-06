@@ -7,6 +7,10 @@ https://amg01334-beinsportsllc-beinxtra-samsungau-eiyvc.amagi.tv/playlist/amg013
 https://aegis-cloudfront-1.tubi.video/01f6c149-449b-4248-8bda-2278799205ec/playlist.m3u8
 
 
+
+#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/5KSXV3r.png" group-title="Canales Premium", BEIN MAX 03 HD
+http://smart.lionsmart.cc:80/live/da6afe7f/70c31af7/1335296.m3u8
+
 #EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/uJosqHh.png" group-title="Canales Premium""Sport",BeIN SPORTS XTRA (720p)
 https://aegis-cloudfront-1.tubi.video/651ee7d3-e75b-4748-be86-422d43ff24b6/playlist.m3u8?checkedby:iptvcat.com
 
