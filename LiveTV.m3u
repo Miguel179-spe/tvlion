@@ -1,7 +1,26 @@
-#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/AzFyd7s.png", bein sport
-http://194.62.214.166/live/play/TmtoMlVWUm9ZVzE1UlVwTkwxRmhXak5yVTFsaVlVOU9WV0ZFWlVad1IxSlNkemhzVkdwYVNXMUdSVDA9/1335305.m3u8
 
-
+#EXTINF:0 tvg-country="AU" tvg-logo="" group-title="Canales Premium""Sport",BeIN SPORTS XTRA (1080p) [Geo-blocked]
+https://amg01334-beinsportsllc-beinxtra-samsungau-eiyvc.amagi.tv/playlist/amg01334-beinsportsllc-beinxtra-samsungau/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="CA" tvg-logo="" group-title="Canales Premium""Sport",beIN SPORTS XTRA
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62b97ef310e33f0007eea65f/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",BeIN SPORTS XTRA (720p)
+https://lnc-bein.tubi.video/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",BeIN SPORTS XTRA (720p)
+https://aegis-cloudfront-1.tubi.video/651ee7d3-e75b-4748-be86-422d43ff24b6/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/V562tpO.png" group-title="Canales Premium""Sport",BeIN SPORTS XTRA En Espanol (720p)
+https://aegis-cloudfront-1.tubi.video/82c7f2de-f4ea-44a4-8200-069c5c0bb639/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",BeIN SPORTS XTRA En Espanol (720p)
+https://lnc-bein-espanol.tubi.video/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",BeIN SPORTS XTRA en Espanol (720p) [Geo-blocked]
+https://bein-esp-klowdtv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",BeIN Sports XTRA (1080p)
+https://bein-beinxtrasports-firetv.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0 tvg-country="US" tvg-logo="https://i.imgur.com/uJosqHh.png" group-title="Canales Premium""Sport",beIN SPORTS XTRA
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5df975e2b27cf5000921c102/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",beIN SPORTS XTRA en español
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60492fdd9989d30007ccd30a/master.m3u8?appName=web&deviceMake=Chrome&deviceModel=web&deviceType=web
+#EXTINF:0 tvg-country="US" tvg-logo="" group-title="Canales Premium""Sport",beIN Sports USA
+http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8?checkedby:iptvcat.com
 
 
 #EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/YPC1XYe.png",CDN37
