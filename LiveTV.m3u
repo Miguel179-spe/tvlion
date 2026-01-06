@@ -1,32 +1,4 @@
 
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: TNT SERIES [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/83741.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: TNT SERIES [HD]
-http://xtremsys.icu:8080/live/85436894/32487546/6248.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: TNT SERIES [SD]
-http://xtremsys.icu:8080/live/85436894/32487546/89.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: TNT [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/83742.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: TNT [HD]
-http://xtremsys.icu:8080/live/85436894/32487546/88.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: TNT [SD]
-http://xtremsys.icu:8080/live/85436894/32487546/6247.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL CINEMA [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/48.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL COMEDY [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/83639.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL CRIME [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/109174.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL PREMIERE [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/83658.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL REALITY [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/83625.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL TV [FHD]
-http://xtremsys.icu:8080/live/85436894/32487546/83747.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL TV [HD]
-http://xtremsys.icu:8080/live/85436894/32487546/123803.m3u8
-#EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/P4D2Cgp.png" group-title="Canales Premium",CINE: UNIVERSAL TV [SD]
-http://xtremsys.icu:8080/live/85436894/32487546/109176.m3u8
 
 
 #EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/ttfUoMO.png" group-title="Canales Premium",Cine de Accion
@@ -35,7 +7,7 @@ https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
 
 
 #EXTINF:0 tvg-country="AU" tvg-logo="https://imgur.com/ttfUoMO.png" group-title="Canales Premium",Cine de Accion
-https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
+http://xtremsys.icu:8080/live/85436894/32487546/26377.m3u8
 
 #EXTINF:-1 tvg-id="beINSportsUSA.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bein_Sports_Logo.svg/512px-Bein_Sports_Logo.svg.png" group-title="Canales Premium""Sports",beIN Sports USA
 http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
