@@ -1,4 +1,26 @@
 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL",NFL NETWORK 
+http://cord-cutter.net:8080/live/20DKn6/055490/159091.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL",NFL NETWORK (2)
+http://cord-cutter.net:8080/live/20DKn6/055490/159117.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL", NFL REDZONE
+http://cord-cutter.net:8080/live/20DKn6/055490/159118.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL", NFL REDZONE (2)
+http://cord-cutter.net:8080/live/20DKn6/055490/159119.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL", NFL REDZONE 3
+http://cord-cutter.net:8080/live/20DKn6/055490/208830.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL", NFL 
+http://cord-cutter.net:8080/live/20DKn6/055490/208896.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL",NFL 04: Tennessee Titans vs Jacksonville Jaguars 1pm
+http://cord-cutter.net:8080/live/20DKn6/055490/252013.m3u8
+
+
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/undefined.png" group-title="A Dominicano",Entérate RD
 https://5790d294af2dc.streamlock.net/enteraterd/enteraterd/playlist.m3u8
 
