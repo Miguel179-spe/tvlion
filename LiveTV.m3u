@@ -1,4 +1,34 @@
 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/undefined.png" group-title="A Dominicano",Entérate RD
+https://5790d294af2dc.streamlock.net/enteraterd/enteraterd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/KNZISUU.png" group-title="A Dominicano", Canal Sur RD
+https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/Mc0BoiE.png" group-title="A Dominicano", HMTV (Hermanas Mirabal TV)
+https://cnn.essastream.com:3091/live/hmtvlive.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/pWKxVAI.png" group-title="A Dominicano", TV Hispanic
+https://livetv.305streamhd.com:3504/live/tvhispaniclive.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/53U5aVT.png" group-title="A Dominicano", RDN TV
+https://mlb.essastream.com:8081/rdntv/index.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/k7WpDJf.png" group-title="A Dominicano", Megacine TV
+https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/NIyY5cX.png" group-title="A Dominicano", MUN2 TV
+https://mlb.essastream.com:8081/mun2tv/index.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/v7uGm8X.png" group-title="A Dominicano", CDN 37 (Digital)
+https://d2qsan2ut81n2k.cloudfront.net/live/5365fbe2-4961-4e49-91bb-167328524f39/ts:abr.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/Z8bwsMa.png" group-title="A Dominicano", Telecontacto (Santiago)
+https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/VxZdgfm.png" group-title="A Dominicano", Canal Regional 8060
+https://5790d294af2dc.streamlock.net/8060/8060/playlist.m3u8
+
 #EXTINF:-1 tvg-id="TUDN XTRA 1" tvg-logo="https://imgur.com/b5VSUon.png" group-title="Canales Premium",TUDN XTRA 1
 https://593zona.live:8443/live/Flamatv2.0/q4F479ZGZ5/565950.m3u8
 
