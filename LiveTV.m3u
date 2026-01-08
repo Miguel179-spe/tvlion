@@ -1,44 +1,45 @@
 
-
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png", group-title="Canales Premium", TNT (West)
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png", group-title="Canales Premium", TNT (West)
 http://cord-cutter.net:8080/live/20DKn6/055490/46688.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png" group-title="Canales Premium",TNT East 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png" group-title="Canales Premium",TNT East 
 http://cord-cutter.net:8080/live/20DKn6/055490/10455.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png" group-title="Canales Premium", TNT SERIES HD
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png" group-title="Canales Premium", TNT SERIES HD
 http://cord-cutter.net:8080/live/20DKn6/055490/164958.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", Cinemax
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", Cinemax
 http://cord-cutter.net:8080/live/20DKn6/055490/57638.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", SKY CINEMA ACTION FHD
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", SKY CINEMA ACTION FHD
 http://cord-cutter.net:8080/live/20DKn6/055490/35254.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", SKY CINEMA DRAMA
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", SKY CINEMA DRAMA
 http://cord-cutter.net:8080/live/20DKn6/055490/35251.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", Cinema Scifi & Horror FHD  
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", Cinema Scifi & Horror FHD  
 http://cord-cutter.net:8080/live/20DKn6/055490/35248.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", MOVIES: SKY COMEDY
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", MOVIES: SKY COMEDY
 http://cord-cutter.net:8080/live/20DKn6/055490/35253.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", MOVIES: SKY CRIME THRILLER
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", MOVIES: SKY CRIME THRILLER
 http://cord-cutter.net:8080/live/20DKn6/055490/35252.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", MOVIES: SKY GREATS
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/XMLh5mn.png" group-title="Canales Premium", MOVIES: SKY GREATS
 http://cord-cutter.net:8080/live/20DKn6/055490/35249.m3u8
 
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium", HBO 1 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium", HBO 1 
 http://cord-cutter.net:8080/live/20DKn6/055490/57437.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium", HBO 2 (R)
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium", HBO 2 (R)
 http://cord-cutter.net:8080/live/20DKn6/055490/57438.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO East HD  
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO East HD  
 http://cord-cutter.net:8080/live/20DKn6/055490/46713.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO 
 http://cord-cutter.net:8080/live/20DKn6/055490/9264.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO 2 (A)
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO 2 (A)
 http://cord-cutter.net:8080/live/20DKn6/055490/9816.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO Comedy (East) 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO Comedy (East) 
 http://cord-cutter.net:8080/live/20DKn6/055490/17773.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO Family (East) 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO Family (East) 
 http://cord-cutter.net:8080/live/20DKn6/055490/17772.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO SIGNATURE (East) 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO SIGNATURE (East) 
 http://cord-cutter.net:8080/live/20DKn6/055490/9266.m3u8
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO Zone (East) 
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",US HBO Zone (East) 
 http://cord-cutter.net:8080/live/20DKn6/055490/9265.m3u8
+
+
 
 
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/LpbVNDW.png" group-title="NFL",NFL NETWORK 
