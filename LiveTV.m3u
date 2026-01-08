@@ -20,8 +20,6 @@ https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/NIyY5cX.png" group-title="A Dominicano", MUN2 TV
 https://mlb.essastream.com:8081/mun2tv/index.m3u8
 
-#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/v7uGm8X.png" group-title="A Dominicano", CDN 37 (Digital)
-https://d2qsan2ut81n2k.cloudfront.net/live/5365fbe2-4961-4e49-91bb-167328524f39/ts:abr.m3u8
 
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/Z8bwsMa.png" group-title="A Dominicano", Telecontacto (Santiago)
 https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8
