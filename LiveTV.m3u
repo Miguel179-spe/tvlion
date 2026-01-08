@@ -1,13 +1,15 @@
-#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO Family | SD LAT
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO Family Español
 http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156448.m3u8
-#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO Plus | SD LAT
+
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO Plus español
 http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156447.m3u8
-#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO 2 | SD LAT
+
+
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO 2 español 
 http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156446.m3u8
-#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO | SD LAT
+#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO español
 http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156445.m3u8
-#EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO | SD LAT
-http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156444.m3u8
 
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/QfoyZdc.png", group-title="Canales Premium", Paramount Network 
 http://cord-cutter.net:8080/live/20DKn6/055490/16201.m3u8
