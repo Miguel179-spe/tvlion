@@ -1,6 +1,6 @@
 
 
-#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png" group-title="Canales Premium", TNT (West)
+#EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png", group-title="Canales Premium", TNT (West)
 http://cord-cutter.net:8080/live/20DKn6/055490/46688.m3u8
 #EXTINF:-1, tvg-id="RD" tvg-logo="https://imgur.com/tHgZEFc.png" group-title="Canales Premium",TNT East 
 http://cord-cutter.net:8080/live/20DKn6/055490/10455.m3u8
