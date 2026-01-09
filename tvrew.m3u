@@ -1,15 +1,7 @@
 #EXTM3U
-#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",El NU9VE (1080p)
-https://channel06.akamaized.net/hls/live/2033784/event01/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Estrella TV (1080p)
-https://estrellatv-oando.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Failarmy International (720p)
-https://failarmy-international-mx.samsung.wurl.tv/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",ICRTV Colima (1080p)
-https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",Jalisco TV (720p)
-https://5fa5de1a545ae.streamlock.net/sisjalisciense/sisjalisciense/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="AR;CL;CO;MX;PA;VE" tvg-logo="" group-title="Mexico""Undefined;MEXICO",MAX Anime (720p)
-https://vcp14.myplaytv.com/maxanime/maxanime/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MX" tvg-logo="" group-title="Mexico""MEXICO",MVS TV
-https://mvs.daioncdn.net/mvstv/mvstv.m3u8?app=web&checkedby:iptvcat.com
+#EXTINF:-1,WCEF 98.3 The Bull live
+https://live-01-01-tn.vodgc.net/TN24_2/index_TN24_2_1080.m3u8
+#EXTINF:-1,WPTR 1240 AM & 97.1 FM live
+https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8
+#EXTINF:-1,US Telemundo 31 (WTMO) Orlando 
+https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8
