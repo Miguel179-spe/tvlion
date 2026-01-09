@@ -1,6 +1,8 @@
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO Family Español
 http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156448.m3u8
 
+#EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/GZcjUU1.png",Telemundo Orlando
+http://tvmate.icu:8080/live/13KpN5/160160/139149.m3u8
 
 #EXTINF:-1 tvg-id="RD" tvg-logo="https://imgur.com/usvQ3FU.png" group-title="Canales Premium",HBO Plus español
 http://xworld-blue.com:25461/live/3008Nestor/3008Solis/156447.m3u8
