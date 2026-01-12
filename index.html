@@ -1,1 +1,1068 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>LIVE TV</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            color: #fff;
+            height: 100%;
+            height: 100dvh;
+            overflow: hidden;
+            touch-action: manipulation;
+        }
+
+        /* ==================== LAYOUT PRINCIPAL ==================== */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            height: 100dvh;
+        }
+
+        /* ==================== ÁREA DEL VIDEO (SUPERIOR) ==================== */
+        .video-section {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            flex-shrink: 0;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            outline: none;
+            background: #000;
+        }
+
+        video::-webkit-media-controls { display: none !important; }
+        video::-webkit-media-controls-panel { display: none !important; }
+        video::-webkit-media-controls-enclosure { display: none !important; }
+
+        /* Fondo con icono TV */
+        .loading-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s ease;
+        }
+
+        .loading-background.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .tv-icon {
+            opacity: 0.1;
+            animation: pulse-subtle 3s ease-in-out infinite;
+        }
+
+        .tv-icon svg {
+            width: 80px;
+            height: 80px;
+            fill: #fff;
+        }
+
+        @keyframes pulse-subtle {
+            0%, 100% { opacity: 0.1; transform: scale(1); }
+            50% { opacity: 0.15; transform: scale(1.02); }
+        }
+
+        /* Spinner */
+        .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            display: none;
+        }
+
+        .spinner.active {
+            display: block;
+        }
+
+        .spinner-ring {
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Overlay de info en video */
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 12px 16px;
+            padding-top: max(12px, env(safe-area-inset-top));
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-overlay.visible {
+            opacity: 1;
+        }
+
+        .channel-display {
+            flex: 1;
+        }
+
+        .channel-display-name {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .channel-display-category {
+            font-size: 11px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .fullscreen-btn {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .fullscreen-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        /* Controles de video */
+        .video-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 12px;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-controls.visible {
+            opacity: 1;
+        }
+
+        .ctrl-btn {
+            width: 44px;
+            height: 44px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .ctrl-btn:active {
+            transform: scale(0.9);
+            background: rgba(102, 126, 234, 0.5);
+        }
+
+        .ctrl-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .ctrl-btn.play-btn {
+            width: 52px;
+            height: 52px;
+        }
+
+        .ctrl-btn.play-btn svg {
+            width: 26px;
+            height: 26px;
+            margin-left: 2px;
+        }
+
+        /* ==================== LISTA DE CANALES (INFERIOR) ==================== */
+        .channels-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #0a0a0a;
+            min-height: 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Barra de búsqueda */
+        .search-bar {
+            padding: 12px 16px;
+            background: #0a0a0a;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            flex-shrink: 0;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 16px 12px 44px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255,255,255,0.3);
+        }
+
+        .search-input:focus {
+            border-color: rgba(102, 126, 234, 0.5);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            fill: rgba(255,255,255,0.3);
+        }
+
+        /* Lista scrolleable */
+        .channel-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 12px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .channel-list::-webkit-scrollbar { width: 0; }
+
+        .channel-group {
+            margin-bottom: 16px;
+        }
+
+        .group-title {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.3);
+            padding: 12px 8px 6px;
+            position: sticky;
+            top: 0;
+            background: #0a0a0a;
+            z-index: 1;
+        }
+
+        .channel-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            margin: 3px 0;
+            background: transparent;
+            border-radius: 12px;
+            cursor: pointer;
+            gap: 12px;
+            transition: all 0.15s ease;
+            border: 1px solid transparent;
+        }
+
+        .channel-item:active {
+            transform: scale(0.98);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .channel-item.active {
+            background: rgba(102, 126, 234, 0.15);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .channel-logo {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .channel-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 3px;
+        }
+
+        .channel-logo-fallback {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .channel-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .channel-name {
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .channel-item.active .channel-name {
+            color: #fff;
+        }
+
+        .channel-meta {
+            font-size: 11px;
+            color: rgba(255,255,255,0.35);
+            margin-top: 1px;
+        }
+
+        /* Indicador de reproduciendo */
+        .now-playing-indicator {
+            width: 8px;
+            height: 8px;
+            background: #667eea;
+            border-radius: 50%;
+            animation: blink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* ==================== TOAST ==================== */
+        .error-toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: rgba(244, 67, 54, 0.95);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            opacity: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .error-toast.show {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        /* ==================== LOADING CHANNELS ==================== */
+        .loading-channels {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .loading-channels .spinner-ring {
+            width: 28px;
+            height: 28px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255,255,255,0.3);
+            font-size: 13px;
+        }
+
+        .retry-btn {
+            margin-top: 16px;
+            padding: 10px 24px;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 20px;
+            color: #667eea;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* ==================== MODO LANDSCAPE ==================== */
+        @media (orientation: landscape) {
+            .app-container {
+                flex-direction: row;
+            }
+
+            .video-section {
+                flex: 1;
+                aspect-ratio: unset;
+                height: 100%;
+            }
+
+            .channels-section {
+                width: 320px;
+                border-top: none;
+                border-left: 1px solid rgba(255,255,255,0.05);
+            }
+
+            .video-overlay {
+                padding-left: max(16px, env(safe-area-inset-left));
+            }
+
+            .video-controls {
+                padding-left: max(16px, env(safe-area-inset-left));
+                padding-bottom: max(12px, env(safe-area-inset-bottom));
+            }
+
+            .channel-list {
+                padding-bottom: max(12px, env(safe-area-inset-bottom));
+            }
+        }
+
+        /* ==================== MODO FULLSCREEN ==================== */
+        body.fullscreen-active .channels-section {
+            display: none;
+        }
+
+        body.fullscreen-active .video-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            aspect-ratio: unset;
+            z-index: 1000;
+        }
+
+        body.fullscreen-active .video-overlay,
+        body.fullscreen-active .video-controls {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        body.fullscreen-active.controls-visible .video-overlay,
+        body.fullscreen-active.controls-visible .video-controls {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        body.fullscreen-active .video-controls {
+            padding-bottom: max(20px, env(safe-area-inset-bottom));
+        }
+
+        /* ==================== PANTALLAS PEQUEÑAS ==================== */
+        @media (max-height: 600px) and (orientation: portrait) {
+            .video-section {
+                aspect-ratio: 16 / 8;
+            }
+
+            .search-bar {
+                padding: 8px 12px;
+            }
+
+            .search-input {
+                padding: 10px 14px 10px 40px;
+                font-size: 14px;
+            }
+
+            .channel-item {
+                padding: 8px 10px;
+            }
+
+            .channel-logo {
+                width: 36px;
+                height: 36px;
+                min-width: 36px;
+            }
+
+            .channel-name {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <!-- ==================== SECCIÓN DE VIDEO (ARRIBA) ==================== -->
+    <section class="video-section" id="videoSection">
+        <div class="video-wrapper">
+            <!-- Fondo con icono TV -->
+            <div class="loading-background" id="loadingBackground">
+                <div class="tv-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <video id="videoPlayer"
+       autoplay
+       muted
+       playsinline
+       preload="auto"></video>
+
+
+
+
+            <div class="spinner" id="spinner">
+                <div class="spinner-ring"></div>
+            </div>
+
+            <!-- Overlay superior -->
+            <div class="video-overlay" id="videoOverlay">
+                <div class="channel-display">
+                    <div class="channel-display-name" id="displayName"></div>
+                    <div class="channel-display-category" id="displayCategory"></div>
+                </div>
+                <button class="fullscreen-btn" onclick="toggleFullscreen()">
+                    <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path></svg>
+                </button>
+            </div>
+
+            <!-- Controles inferiores del video -->
+            <div class="video-controls" id="videoControls">
+                <button class="ctrl-btn" onclick="channelUp()">
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"></path></svg>
+                </button>
+                <button class="ctrl-btn play-btn" onclick="togglePlay()" id="playBtn">
+                    <svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"></path></svg>
+                </button>
+                <button class="ctrl-btn" onclick="channelDown()">
+                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE CANALES (ABAJO) ==================== -->
+    <section class="channels-section">
+        <div class="search-bar">
+            <div class="search-container">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input type="text" 
+                       class="search-input" 
+                       id="searchInput" 
+                       placeholder="Buscar canal..."
+                       autocomplete="off"
+                       spellcheck="false">
+            </div>
+        </div>
+        
+        <div class="channel-list" id="channelList">
+            <div class="loading-channels">
+                <div class="spinner-ring"></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="error-toast" id="errorToast"></div>
+
+<script>
+const PLAYLIST_URLS = [
+    "https://raw.githubusercontent.com/Miguel179-spe/tvlion/refs/heads/peliculas/LiveTV.m3u"
+];
+
+let channels = [];
+let filteredChannels = [];
+let currentChannel = null;
+let hlsInstance = null;
+let currentIndex = -1;
+let isInFullscreen = false;
+let controlsVisible = false;
+let controlsTimeout = null;
+let searchTimeout = null;
+
+let touchStartX = 0;
+let touchStartY = 0;
+let touchStartTime = 0;
+let lastTap = 0;
+
+const HLS_CONFIG = {
+    debug: false,
+
+    enableWorker: false,   // 🔑 CLAVE PARA GAMA BAJA
+
+    lowLatencyMode: false,
+
+    startLevel: 0,         // calidad más baja
+    capLevelToPlayerSize: true,
+
+    maxBufferLength: 10,
+    maxMaxBufferLength: 20,
+    backBufferLength: 5,
+
+    maxBufferSize: 15 * 1000 * 1000,
+
+    manifestLoadingTimeOut: 5000,
+    fragLoadingTimeOut: 8000,
+
+    fragLoadingRetryDelay: 1500,
+    fragLoadingMaxRetry: 2,
+    levelLoadingMaxRetry: 1
+};
+
+
+
+// ==================== UTILIDADES ====================
+function getChannelInitials(name) {
+    const words = name.split(' ').filter(w => w.length > 0);
+    if (words.length === 1) return words[0].substring(0, 2).toUpperCase();
+    return words.slice(0, 2).map(w => w[0]).join('').toUpperCase();
+}
+
+function createLogoElement(channel, container) {
+    container.innerHTML = '';
+    if (channel.logo) {
+        const img = document.createElement('img');
+        img.src = channel.logo;
+        img.alt = '';
+        img.loading = 'lazy';
+        img.onerror = function() {
+            this.remove();
+            const fallback = document.createElement('div');
+            fallback.className = 'channel-logo-fallback';
+            fallback.textContent = getChannelInitials(channel.name);
+            container.appendChild(fallback);
+        };
+        container.appendChild(img);
+    } else {
+        const fallback = document.createElement('div');
+        fallback.className = 'channel-logo-fallback';
+        fallback.textContent = getChannelInitials(channel.name);
+        container.appendChild(fallback);
+    }
+}
+
+// ==================== CONTROLES ====================
+function showControls() {
+    controlsVisible = true;
+    document.getElementById('videoOverlay').classList.add('visible');
+    document.getElementById('videoControls').classList.add('visible');
+    if (isInFullscreen) document.body.classList.add('controls-visible');
+    resetControlsTimeout();
+}
+
+function hideControls() {
+    controlsVisible = false;
+    document.getElementById('videoOverlay').classList.remove('visible');
+    document.getElementById('videoControls').classList.remove('visible');
+    document.body.classList.remove('controls-visible');
+}
+
+function resetControlsTimeout() {
+    clearTimeout(controlsTimeout);
+    controlsTimeout = setTimeout(hideControls, 3000);
+}
+
+function showSpinner(show) {
+    document.getElementById('spinner').classList.toggle('active', show);
+}
+
+function showError(message) {
+    const toast = document.getElementById('errorToast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+function hideBackground() {
+    document.getElementById('loadingBackground').classList.add('hidden');
+}
+
+function showBackground() {
+    document.getElementById('loadingBackground').classList.remove('hidden');
+}
+
+// ==================== NAVEGACIÓN ====================
+function getVisibleChannels() {
+    return filteredChannels.length > 0 || document.getElementById('searchInput').value 
+        ? filteredChannels 
+        : channels;
+}
+
+function channelUp() {
+    const list = getVisibleChannels();
+    if (list.length === 0) return;
+    let idx = list.findIndex(ch => ch.id === currentIndex);
+    idx = (idx <= 0) ? list.length - 1 : idx - 1;
+    playChannel(list[idx]);
+}
+
+function channelDown() {
+    const list = getVisibleChannels();
+    if (list.length === 0) return;
+    let idx = list.findIndex(ch => ch.id === currentIndex);
+    idx = (idx === -1 || idx >= list.length - 1) ? 0 : idx + 1;
+    playChannel(list[idx]);
+}
+
+function togglePlay() {
+    const video = document.getElementById('videoPlayer');
+    video.paused ? video.play() : video.pause();
+}
+
+function updatePlayButton() {
+    const video = document.getElementById('videoPlayer');
+    const icon = document.getElementById('playIcon');
+    icon.innerHTML = video.paused 
+        ? '<path d="M8 5v14l11-7z"></path>' 
+        : '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>';
+}
+
+// ==================== PLAYLIST ====================
+async function loadPlaylist() {
+    for (const url of PLAYLIST_URLS) {
+        try {
+            const response = await fetch(url, { cache: 'no-cache' });
+            if (!response.ok) continue;
+            const text = await response.text();
+            if (!text.includes('#EXTINF')) continue;
+            parseM3U(text);
+            if (channels.length > 0) {
+                renderChannels(channels);
+                return;
+            }
+        } catch (e) { console.error(e); }
+    }
+    
+    document.getElementById('channelList').innerHTML = `
+        <div class="no-results">
+            <button class="retry-btn" onclick="loadPlaylist()">Reintentar</button>
+        </div>
+    `;
+}
+
+function parseM3U(text) {
+    const lines = text.split('\n');
+    let group = 'General', name = '', logo = '';
+    channels = [];
+    
+    for (const line of lines) {
+        const l = line.trim();
+        if (l.startsWith('#EXTINF:')) {
+            const g = l.match(/group-title="([^"]+)"/i);
+            const n = l.match(/,(.+)$/);
+            const lo = l.match(/tvg-logo="([^"]+)"/i);
+            if (g) group = g[1];
+            if (n) name = n[1].trim();
+            if (lo) logo = lo[1];
+        } else if (l.startsWith('http')) {
+            channels.push({ name: name || `Canal ${channels.length + 1}`, group, url: l, logo, id: channels.length });
+            name = ''; logo = '';
+        }
+    }
+    channels.sort((a, b) => a.group.localeCompare(b.group) || a.name.localeCompare(b.name));
+}
+
+function renderChannels(list) {
+    const container = document.getElementById('channelList');
+    
+    if (list.length === 0) {
+        container.innerHTML = `<div class="no-results">Sin resultados</div>`;
+        return;
+    }
+    
+    const fragment = document.createDocumentFragment();
+    const groups = {};
+    
+    list.forEach(ch => {
+        if (!groups[ch.group]) groups[ch.group] = [];
+        groups[ch.group].push(ch);
+    });
+    
+    Object.entries(groups).forEach(([groupName, groupChannels]) => {
+        const groupDiv = document.createElement('div');
+        groupDiv.className = 'channel-group';
+        
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'group-title';
+        titleDiv.textContent = groupName;
+        groupDiv.appendChild(titleDiv);
+        
+        groupChannels.forEach(channel => {
+            const item = document.createElement('div');
+            item.className = 'channel-item';
+            item.dataset.id = channel.id;
+            if (currentChannel && channel.id === currentChannel.id) item.classList.add('active');
+            
+            const logoDiv = document.createElement('div');
+            logoDiv.className = 'channel-logo';
+            createLogoElement(channel, logoDiv);
+            
+            const infoDiv = document.createElement('div');
+            infoDiv.className = 'channel-info';
+            infoDiv.innerHTML = `
+                <div class="channel-name">${channel.name}</div>
+                <div class="channel-meta">${channel.group}</div>
+            `;
+            
+            item.appendChild(logoDiv);
+            item.appendChild(infoDiv);
+            
+            // Indicador de reproduciendo
+            if (currentChannel && channel.id === currentChannel.id) {
+                const indicator = document.createElement('div');
+                indicator.className = 'now-playing-indicator';
+                item.appendChild(indicator);
+            }
+            
+            item.onclick = () => playChannel(channel);
+            groupDiv.appendChild(item);
+        });
+        
+        fragment.appendChild(groupDiv);
+    });
+    
+    container.innerHTML = '';
+    container.appendChild(fragment);
+}
+
+// ==================== REPRODUCCIÓN ====================
+async function playChannel(channel) {
+    if (!channel) return;
+    
+    currentChannel = channel;
+    currentIndex = channel.id;
+    
+    showBackground();
+    showSpinner(true);
+    
+    // Actualizar display
+    document.getElementById('displayName').textContent = channel.name;
+    document.getElementById('displayCategory').textContent = channel.group;
+    
+    // Actualizar lista
+    document.querySelectorAll('.channel-item').forEach(item => {
+        const isActive = parseInt(item.dataset.id) === channel.id;
+        item.classList.toggle('active', isActive);
+        
+        // Actualizar indicador
+        const existingIndicator = item.querySelector('.now-playing-indicator');
+        if (isActive && !existingIndicator) {
+            const indicator = document.createElement('div');
+            indicator.className = 'now-playing-indicator';
+            item.appendChild(indicator);
+        } else if (!isActive && existingIndicator) {
+            existingIndicator.remove();
+        }
+    });
+    
+    const activeItem = document.querySelector('.channel-item.active');
+    if (activeItem) activeItem.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    
+    const video = document.getElementById('videoPlayer');
+    
+    if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
+    video.pause();
+video.src = '';
+video.load();
+
+await new Promise(r => setTimeout(r, 30));
+
+    
+    channel.url.includes('.m3u8') ? playHLS(channel.url, video) : playDirect(channel.url, video);
+}
+
+function playHLS(url, video) 
+{ if (Hls.isSupported())
+{ hlsInstance = new Hls(HLS_CONFIG); hlsInstance.attachMedia(video); hlsInstance.loadSource(url); video.muted = true; video.play().catch(() => {}); 
+hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => { showSpinner(false); hideBackground(); setTimeout(() => { video.muted = false; }, 300); }); hlsInstance.on(Hls.Events.ERROR, (_, data) => { if (!data.fatal) return; if (data.type === Hls.ErrorTypes.NETWORK_ERROR) { hlsInstance.stopLoad(); setTimeout(() => { hlsInstance.startLoad(); }, 1000); } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) { hlsInstance.recoverMediaError(); } });
+        
+        hlsInstance.loadSource(url);
+        hlsInstance.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = url;
+        video.addEventListener('loadedmetadata', () => {
+            showSpinner(false);
+            hideBackground();
+            video.play();
+        }, { once: true });
+    }
+}
+
+function playDirect(url, video) {
+    video.src = url;
+    video.addEventListener('canplay', () => {
+        showSpinner(false);
+        hideBackground();
+        video.play();
+    }, { once: true });
+    video.addEventListener('error', () => {
+        showSpinner(false);
+        showError('Error de conexión');
+        showBackground();
+    }, { once: true });
+}
+
+// ==================== BÚSQUEDA ====================
+document.getElementById('searchInput').addEventListener('input', (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        const q = e.target.value.toLowerCase().trim();
+        if (!q) {
+            filteredChannels = [];
+            renderChannels(channels);
+            return;
+        }
+        filteredChannels = channels.filter(ch => 
+            ch.name.toLowerCase().includes(q) || ch.group.toLowerCase().includes(q)
+        );
+        renderChannels(filteredChannels);
+    }, 150);
+});
+
+// ==================== TOUCH EN VIDEO ====================
+const videoSection = document.getElementById('videoSection');
+
+videoSection.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+}, { passive: true });
+
+videoSection.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchEndY = e.changedTouches[0].clientY;
+    const touchDuration = Date.now() - touchStartTime;
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+    
+    // Tap
+    if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20 && touchDuration < 300) {
+        const currentTime = Date.now();
+        if (currentTime - lastTap < 300) {
+            toggleFullscreen();
+        } else {
+            controlsVisible ? hideControls() : showControls();
+        }
+        lastTap = currentTime;
+        return;
+    }
+    
+    // Swipe horizontal
+    if (Math.abs(deltaX) > 60 && Math.abs(deltaY) < 40 && touchDuration < 400) {
+        deltaX > 0 ? channelUp() : channelDown();
+    }
+}, { passive: true });
+
+// ==================== FULLSCREEN ====================
+function toggleFullscreen() {
+    if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        const elem = document.documentElement;
+        elem.requestFullscreen ? elem.requestFullscreen() : elem.webkitRequestFullscreen?.();
+    } else {
+        document.exitFullscreen ? document.exitFullscreen() : document.webkitExitFullscreen?.();
+    }
+}
+
+function handleFullscreenChange() {
+    isInFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    document.body.classList.toggle('fullscreen-active', isInFullscreen);
+    if (isInFullscreen) {
+        showControls();
+    }
+}
+
+document.addEventListener('fullscreenchange', handleFullscreenChange);
+document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+
+// ==================== VIDEO EVENTS ====================
+const video = document.getElementById('videoPlayer');
+video.addEventListener('waiting', () => { showSpinner(true); showBackground(); });
+video.addEventListener('playing', () => { showSpinner(false); hideBackground(); updatePlayButton(); });
+video.addEventListener('pause', updatePlayButton);
+video.addEventListener('play', updatePlayButton);
+video.addEventListener('error', () => showBackground());
+
+// ==================== PREVENT ZOOM ====================
+document.addEventListener('gesturestart', (e) => e.preventDefault());
+
+// ==================== INIT ====================
+window.addEventListener('load', loadPlaylist);
+</script>
+
+</body>
+</html>
+
 
