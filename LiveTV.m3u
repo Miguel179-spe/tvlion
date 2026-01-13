@@ -1,4 +1,33 @@
 #EXTM3U
+
+
+
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png",CA TSN 1 (E)
+http://nocable.cc:8080/live/7MArer2/382185/57292.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 1 (R)
+http://nocable.cc:8080/live/7MArer2/382185/47440.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 2 (R)
+http://nocable.cc:8080/live/7MArer2/382185/16129.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 2 HD 
+http://nocable.cc:8080/live/7MArer2/382185/47442.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 3 HD 
+http://nocable.cc:8080/live/7MArer2/382185/10389.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 3 HD 
+http://nocable.cc:8080/live/7MArer2/382185/47444.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 4 
+http://nocable.cc:8080/live/7MArer2/382185/66783.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 4 (B)
+http://nocable.cc:8080/live/7MArer2/382185/47446.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 5 
+http://nocable.cc:8080/live/7MArer2/382185/57467.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 5 HD 
+http://nocable.cc:8080/live/7MArer2/382185/16131.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png", TSN 5 
+http://nocable.cc:8080/live/7MArer2/382185/57295.m3u8
+
+
+
 #EXTINF:-1 tvg-id="Canale5.it@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Canale_5_-_2018_logo.svg/512px-Canale_5_-_2018_logo.svg.png" group-title="Entertainment",Canale 5
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.group-title="Italia"
 #EXTINF:-1 tvg-id="Italia1.it@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Italia_1_logo.svg/512px-Italia_1_logo.svg.png" group-title="General",Italia 1
