@@ -289,6 +289,45 @@
             fill: rgba(255,255,255,0.3);
         }
 
+        /* Barra de categorías */
+        .categories-container {
+            display: flex;
+            gap: 8px;
+            padding: 12px 16px;
+            background: #0a0a0a;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            overflow-x: auto;
+            flex-shrink: 0;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .categories-container::-webkit-scrollbar {
+            height: 0;
+        }
+
+        .category-tab {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            color: rgba(255,255,255,0.6);
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .category-tab:active {
+            transform: scale(0.95);
+        }
+
+        .category-tab.active {
+            background: rgba(102, 126, 234, 0.2);
+            border-color: rgba(102, 126, 234, 0.4);
+            color: #667eea;
+        }
+
         /* Lista scrolleable */
         .channel-list {
             flex: 1;
@@ -477,7 +516,7 @@
             }
 
             .channels-section {
-                width: 320px;
+                width: 340px;
                 border-top: none;
                 border-left: 1px solid rgba(255,255,255,0.05);
             }
@@ -489,6 +528,11 @@
             .video-controls {
                 padding-left: max(16px, env(safe-area-inset-left));
                 padding-bottom: max(12px, env(safe-area-inset-bottom));
+            }
+
+            .categories-container {
+                padding-left: max(16px, env(safe-area-inset-left));
+                padding-right: max(16px, env(safe-area-inset-right));
             }
 
             .channel-list {
@@ -540,6 +584,15 @@
             .search-input {
                 padding: 10px 14px 10px 40px;
                 font-size: 14px;
+            }
+
+            .categories-container {
+                padding: 8px 12px;
+            }
+            
+            .category-tab {
+                padding: 6px 12px;
+                font-size: 12px;
             }
 
             .channel-item {
@@ -628,6 +681,11 @@
             </div>
         </div>
         
+        <!-- NUEVA BARRA DE CATEGORÍAS -->
+        <div class="categories-container" id="categoryList">
+            <!-- Se generará dinámicamente -->
+        </div>
+        
         <div class="channel-list" id="channelList">
             <div class="loading-channels">
                 <div class="spinner-ring"></div>
@@ -645,6 +703,8 @@ const PLAYLIST_URLS = [
 
 let channels = [];
 let filteredChannels = [];
+let categories = ["Todos"];
+let currentCategory = "Todos";
 let currentChannel = null;
 let hlsInstance = null;
 let currentIndex = -1;
@@ -660,29 +720,28 @@ let lastTap = 0;
 
 const HLS_CONFIG = {
     debug: false,
-
-    enableWorker: false,   // 🔑 CLAVE PARA GAMA BAJA
-
-    lowLatencyMode: false,
-
-    startLevel: 0,         // calidad más baja
-    capLevelToPlayerSize: true,
-
-    maxBufferLength: 6,
-    maxMaxBufferLength: 15,
-    backBufferLength: 5,
-
-    maxBufferSize: 15 * 1000 * 1000,
-
-    manifestLoadingTimeOut: 5000,
-    fragLoadingTimeOut: 8000,
-
-    fragLoadingRetryDelay: 1500,
-    fragLoadingMaxRetry: 2,
-    levelLoadingMaxRetry: 1
+    
+    // 🚀 CON 4GB RAM: ACTIVAR WORKER es mejor para que la interfaz no se trabe
+    enableWorker: true, 
+    
+    // Calidad inicial y límites
+    startLevel: -1,             // -1 permite que HLS elija la mejor calidad según el internet
+    capLevelToPlayerSize: true, // No descarga 1080p si la pantalla es pequeña (ahorra RAM)
+    
+    // Gestión de Memoria (Equilibrado para 4GB)
+    maxBufferLength: 10,        // Guarda 10 segundos de video
+    maxMaxBufferLength: 20,     // Máximo 20 segundos
+    backBufferLength: 10,       // Borra rápido lo que ya pasó para liberar RAM
+    
+    // Límite de peso en memoria (Muy importante)
+    maxBufferSize: 40 * 1000 * 1000, // Limita el uso de RAM a 40MB máximo para el buffer de video
+    
+    // Tiempos de espera y reintentos
+    manifestLoadingTimeOut: 10000,
+    fragLoadingTimeOut: 15000,
+    fragLoadingRetryDelay: 1000,
+    fragLoadingMaxRetry: 3,
 };
-
-
 
 // ==================== UTILIDADES ====================
 function getChannelInitials(name) {
@@ -712,6 +771,57 @@ function createLogoElement(channel, container) {
         fallback.textContent = getChannelInitials(channel.name);
         container.appendChild(fallback);
     }
+}
+
+// ==================== FUNCIONES DE CATEGORÍAS ====================
+function extractCategories() {
+    const allGroups = [...new Set(channels.map(ch => ch.group))].filter(Boolean);
+    categories = ["Todos", ...allGroups.sort()];
+    renderCategories();
+}
+
+function renderCategories() {
+    const container = document.getElementById('categoryList');
+    container.innerHTML = '';
+    
+    categories.forEach(category => {
+        const tab = document.createElement('div');
+        tab.className = 'category-tab';
+        if (category === currentCategory) tab.classList.add('active');
+        tab.textContent = category;
+        tab.onclick = () => filterByCategory(category);
+        container.appendChild(tab);
+    });
+}
+
+function filterByCategory(category) {
+    currentCategory = category;
+    renderCategories();
+    
+    // Actualizar lista de canales según categoría seleccionada
+    updateChannelList();
+}
+
+function updateChannelList() {
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
+    
+    let filtered = channels;
+    
+    // Aplicar filtro de categoría
+    if (currentCategory !== "Todos") {
+        filtered = filtered.filter(ch => ch.group === currentCategory);
+    }
+    
+    // Aplicar filtro de búsqueda si existe
+    if (searchQuery) {
+        filtered = filtered.filter(ch => 
+            ch.name.toLowerCase().includes(searchQuery) || 
+            ch.group.toLowerCase().includes(searchQuery)
+        );
+    }
+    
+    filteredChannels = filtered;
+    renderChannels(filtered);
 }
 
 // ==================== CONTROLES ====================
@@ -756,9 +866,7 @@ function showBackground() {
 
 // ==================== NAVEGACIÓN ====================
 function getVisibleChannels() {
-    return filteredChannels.length > 0 || document.getElementById('searchInput').value 
-        ? filteredChannels 
-        : channels;
+    return filteredChannels.length > 0 ? filteredChannels : channels;
 }
 
 function channelUp() {
@@ -800,6 +908,8 @@ async function loadPlaylist() {
             if (!text.includes('#EXTINF')) continue;
             parseM3U(text);
             if (channels.length > 0) {
+                extractCategories();
+                renderCategories();
                 renderChannels(channels);
                 return;
             }
@@ -828,7 +938,15 @@ function parseM3U(text) {
             if (n) name = n[1].trim();
             if (lo) logo = lo[1];
         } else if (l.startsWith('http')) {
-            channels.push({ name: name || `Canal ${channels.length + 1}`, group, url: l, logo, id: channels.length });
+            // Si no hay grupo, usar "General"
+            const channelGroup = group || 'General';
+            channels.push({ 
+                name: name || `Canal ${channels.length + 1}`, 
+                group: channelGroup, 
+                url: l, 
+                logo, 
+                id: channels.length 
+            });
             name = ''; logo = '';
         }
     }
@@ -979,16 +1097,7 @@ function playDirect(url, video) {
 document.getElementById('searchInput').addEventListener('input', (e) => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => {
-        const q = e.target.value.toLowerCase().trim();
-        if (!q) {
-            filteredChannels = [];
-            renderChannels(channels);
-            return;
-        }
-        filteredChannels = channels.filter(ch => 
-            ch.name.toLowerCase().includes(q) || ch.group.toLowerCase().includes(q)
-        );
-        renderChannels(filteredChannels);
+        updateChannelList();
     }, 150);
 });
 
@@ -1064,6 +1173,3 @@ window.addEventListener('load', loadPlaylist);
 
 </body>
 </html>
-
-
-
