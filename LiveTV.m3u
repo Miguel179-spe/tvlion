@@ -942,8 +942,6 @@ https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61da
 #EXTINF:-1 group-title="A Dominicano""Bics Latino", VE: TELESUR
 https://cdnesmain.telesur.ultrabase.net/mbliveMain/480p/chunklist.m3u8
 
-#EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", BAJA: CANAL 66 MEXICALI
-https://60417ddeaf0d9.streamlock.net/canal66/videocanal66/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", TAB: TV UJAT
 https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
 #EXTINF:-1 group-title="A Dominicano""Bics REGIONALES MX", VER: RTV  VERACRUZ
@@ -2443,10 +2441,6 @@ https://vdo.voxhdnet.com:3159/stream/play.m3u8
 
 
 
-#EXTINF:-1 tvg-id="BebetoTV.do@SD" tvg-logo="https://imgur.com/mv08BXO.png" group-title="A Dominicano",Bebeto TV (1080p)
-https://mlb.essastream.com:8081/bebetotelevision/index.m3u8
-
-
 
 
 #EXTINF:-1 tvg-id="BonchesLatinosTV.do@SD" tvg-logo="https://imgur.com/8jVx9CS.png" group-title="A Dominicano",Bonches Latinos TV (720p)
@@ -2464,11 +2458,6 @@ https://protvradiostream.com:1936/rtvd17/ngrp:rtvd17_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal56.do@SD" tvg-logo="https://imgur.com/PMx4ptH.png" group-title="A Dominicano",Canal 56 (720p)
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
-#EXTINF:-1 tvg-id="CanalAmericaTV.do@SD"group-title="A Dominicano",Canal America TV (720p)
-http://newyorkstream.ddns.net:5854/enlacecanalamerica/encoderRD/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CanalCatorce.do@SD"group-title="A Dominicano",Canal Catorce (720p)
-https://tv.livestreaminggroup.info:3052/live/catorcetvlive.m3u8
 
 #EXTINF:-1 tvg-id="CanalMultivision.do@SD" tvg-logo="https://imgur.com/Q5gwzJu.png"group-title="A Dominicano",Canal Multivision (720p)
 https://live20.bozztv.com/akamaissh101/ssh101/canalmulti24/chunks.m3u8
@@ -4687,8 +4676,6 @@ https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 #EXTINF:-1 tvg-id="AhoraTV.do@SD" tvg-logo="https://i.imgur.com/dyJyuXc.png" group-title="A Dominicano",Ahora TV SD
 https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
 
-#EXTINF:-1 tvg-id="AltantoTV.do@SD" tvg-logo="https://i.imgur.com/KWvVLhc.png" group-title="A Dominicano",Altanto TV SD
-https://altantotv.haislin.com/altantotv/main_stream.m3u8
 
 #EXTINF:-1 tvg-id="Ame47.do@SD" tvg-logo="https://i.imgur.com/MUEbjeP.png" group-title="A Dominicano",Ame 47 SD
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
@@ -4730,8 +4717,6 @@ https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
 #EXTINF:-1 tvg-id="COCOTV.do@SD" tvg-logo="https://i.imgur.com/CnAc7jU.png" group-title="A Dominicano",COCO TV SD
 https://cloudflare.streamgato.us:3253/live/canalcocotvlive.m3u8
 
-#EXTINF:-1 tvg-id="CodigoTV.do@HD" tvg-logo="https://imgur.com/DbjywI3.png" group-title="A Dominicano",Codigo TV HD
-https://mlb.essastream.com:8081/codigotv/index.m3u8
 
 #EXTINF:-1 tvg-id="ColimdoTV.do@SD" tvg-logo="https://i.imgur.com/ZeUgLCa.png" group-title="A Dominicano",Colimdo TV SD
 https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8
@@ -4748,8 +4733,6 @@ https://cnn.essastream.com:3333/live/cromtvlive.m3u8
 #EXTINF:-1 tvg-id="CVVisionTV.do@SD" tvg-logo="https://dominicanchannels.com/wp-content/uploads/ccviison-1.png" group-title="A Dominicano",CV Vision TV SD
 https://eu1.servers10.com:8081/8128/index.m3u8
 
-#EXTINF:-1 tvg-id="DeltaTVCanal50.do@SD" tvg-logo="https://imgur.com/Z1K1tyl.jpg" group-title="A Dominicano",Delta TV Canal 50 SD
-https://fox.hostlagarto.com:8081/deltatv50/index.m3u8
 
 #EXTINF:-1 tvg-id="DeUltimoMinutoTV.do@SD" tvg-logo="https://i.imgur.com/6ML2z17.png" group-title="A Dominicano",De Ultimo Minuto TV SD
 https://soportedvb.click:3620/live/deultimominutomedialive.m3u8
@@ -4757,8 +4740,6 @@ https://soportedvb.click:3620/live/deultimominutomedialive.m3u8
 #EXTINF:-1 tvg-id="Digital809TV.do@SD" tvg-logo="https://i.imgur.com/NKdV8b1.png" group-title="A Dominicano",Digital809 TV SD
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="DigitalVision63.do@SD" tvg-logo="https://i.imgur.com/FQkLIMR.png" group-title="A Dominicano",Digital Vision 63 SD
-https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8
 
 #EXTINF:-1 tvg-id="EcosCanal57.do@HD" tvg-logo="https://imgur.com/ccFwraQ.png" group-title="A Dominicano",Ecos Canal 57 HD
 https://2-fss-1.streamhoster.com/pl_122/206532-5753032-1/playlist.m3u8
