@@ -1,6 +1,10 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="MLB Deportes" tvg-logo="https://imgur.com/cRq0xXG.png",MLB Network
+http://tvmate.icu:8080/live/4yYWhc/832385/21360.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="MLB Deportes" tvg-logo="https://imgur.com/cRq0xXG.png",MLB Strike Zone
+http://tvmate.icu:8080/live/4yYWhc/832385/65699.m3u8
 
 
 
