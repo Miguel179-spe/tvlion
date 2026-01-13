@@ -1,17 +1,8 @@
 #EXTM3U
 
 
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/6E2S9Wq.png",Telemicro HD
-https://live4.telemicro.com.do/live/telemicrocast_1080p/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Telecentro.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/vHqB3g3.png",Telecentro HD
-https://live4.telemicro.com.do/live/telecentrocast_1080p/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Telefuturo.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/3Z8Vv6L.png",Telefuturo 23
-https://ss9.domint.net:3054/tf_str/telefuturo/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Teleuniverso.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/Lz9hOF5.png",Teleuniverso 29
-https://teleuniversotv.streamgato.us:3110/live/teleuniversotvlive.m3u8
 
 #EXTINF:-1 tvg-id="CanalSur.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/P21oiFj.png",TV Canal Sur HD
 https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
@@ -22,14 +13,11 @@ https://hilandofinotv.essastream.com:3480/live/telenewscanallive.m3u8
 #EXTINF:-1 tvg-id="Quisqueya.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/P21oiFj.png",TV Quisqueya
 https://cloud5.livescast.com:19360/canaltvquisqueya/canaltvquisqueya.m3u8
 
-#EXTINF:-1 tvg-id="TeleAntillas.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/7oNe8xj.png",Tele Antillas (SD)
-http://51.81.93.29:8084/hls/tantillas.m3u8
 
-#EXTINF:-1 tvg-id="Telesistema11.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/GZNaLuH.png",Telesistema 11
-http://200.125.170.122:8000/play/a0ci/index.m3u8
 
 #EXTINF:-1 tvg-id="TvExitos.do" group-title="A Dominicano" tvg-logo="https://i.imgur.com/P21oiFj.png",TV Éxitos
 https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8
+
 #EXTINF:-1 tvg-id="Fuck.th" group-title="Canales Premium" tvg-logo="https://imgur.com/P21oiFj.png",UNICABLE
 http://infinitetv.lat:80/live/Olgalidia12345/Olgalidia12345/598894.m3u8
 
