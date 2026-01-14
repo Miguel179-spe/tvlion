@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="A Dominicano" tvg-logo="https://imgur.com/SBjcArP.png", teleunion 
+https://68aff552e1684.streamlock.net/teleunion/TU/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="A Dominicano" tvg-logo="https://imgur.com/oiogsd0.png",telesistema 11
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(dksZF87JqmxPqaV5GCjfXot-8YuUTskrAKejhA6r5BDZQ4KNudgytUkRafYi_iCnDj9TX1df4B173LEbzQ1BfW3xeyYRZy_J5NTuc-yZiH7LTWl8welrh12X6UMKc6kp)/cloud/3/x80ac48/d/live-720.m3u8
 
@@ -11,43 +14,6 @@ http://tvmate.icu:8080/live/4yYWhc/832385/65699.m3u8
 
 
 
-
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png",NBA 01: Utah Jazz @ Cleveland Cavaliers | Home Stream | 01/12/2026 7:00 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259087.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Utah Jazz vs Cleveland Cavaliers @ 07:00 PM EST
-http://tvmate.icu:8080/live/4yYWhc/832385/259088.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Utah Jazz @ Cleveland Cavaliers | Away Stream | 01/12/2026 7:00 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259089.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Boston Celtics vs Indiana Pacers @ 07:30 PM EST
-http://tvmate.icu:8080/live/4yYWhc/832385/259090.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Boston Celtics @ Indiana Pacers | Away Stream | 01/12/2026 7:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259091.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Philadelphia 76ers vs Toronto Raptors @ 07:30 PM EST
-http://tvmate.icu:8080/live/4yYWhc/832385/259092.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Boston Celtics @ Indiana Pacers | Home Stream | 01/12/2026 7:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259093.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Brooklyn Nets vs Dallas Mavericks @ 08:30 PM EST
-http://tvmate.icu:8080/live/4yYWhc/832385/259094.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Philadelphia 76ers @ Toronto Raptors | Away Stream | 01/12/2026 7:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259095.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Los Angeles Lakers vs Sacramento Kings @ 10:00 PM EST
-http://tvmate.icu:8080/live/4yYWhc/832385/259096.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Philadelphia 76ers @ Toronto Raptors | Home Stream | 01/12/2026 7:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259097.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Charlotte Hornets vs LA Clippers @ 10:30 PM EST
-http://tvmate.icu:8080/live/4yYWhc/832385/259098.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Brooklyn Nets @ Dallas Mavericks | Home Stream | 01/12/2026 8:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259099.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Brooklyn Nets @ Dallas Mavericks | Away Stream | 01/12/2026 8:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259100.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Los Angeles Lakers @ Sacramento Kings | Home Stream | 01/12/2026 10:00 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259101.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Los Angeles Lakers @ Sacramento Kings | Away Stream | 01/12/2026 10:00 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259102.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Charlotte Hornets @ Los Angeles Clippers | Home Stream | 01/12/2026 10:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259103.m3u8
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="NBA Deportes" tvg-logo="https://imgur.com/yttTi7R.png", Charlotte Hornets @ Los Angeles Clippers | Away Stream | 01/12/2026 10:30 PM ET
-http://tvmate.icu:8080/live/4yYWhc/832385/259104.m3u8
 
 
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="TSN Deportes" tvg-logo="https://imgur.com/5nNVnIl.png",CA TSN 1 (E)
