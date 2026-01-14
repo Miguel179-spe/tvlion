@@ -5062,13 +5062,13 @@ http://cm.hostlagarto.com:8081/Telemilenio/Telemilenio.myStream/playlist.m3u8
 https://hilandofinotv.essastream.com:3480/live/telenewscanallive.m3u8
 
 #EXTINF:-1 tvg-id="Telenord8.do@SD" tvg-logo="https://i.imgur.com/1Ei0kB8.png" group-title="A Dominicano",Telenord 8 SD
-https://rdn.essastream.com:3170/live/telenord8live.m3u8
+https://fox.hostlagarto.com:8081/telenord8/index.m3u8
 
 #EXTINF:-1 tvg-id="Telenord10.do@SD" tvg-logo="https://i.imgur.com/1Ei0kB8.png" group-title="A Dominicano",Telenord 10 SD
-https://rdn.essastream.com:3676/live/telenord10live.m3u8
+https://fox.hostlagarto.com:8081/telenord10/index.m3u8
 
 #EXTINF:-1 tvg-id="Telenord12.do@SD" tvg-logo="https://i.imgur.com/o7EzEsV.png" group-title="A Dominicano",Telenord 12 SD
-https://vdo1.streamgato.us:3345/live/telenord12live.m3u8
+https://fox.hostlagarto.com:8081/telenord12/index.m3u8
 
 #EXTINF:-1 tvg-id="TeleOla44.do@SD" tvg-logo="https://dominicanchannels.com/wp-content/uploads/tele-ola.jpeg" group-title="A Dominicano",Tele Ola 44 SD
 https://teleola.ddns.net/hls/stream.m3u8
