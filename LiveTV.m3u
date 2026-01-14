@@ -1,7 +1,9 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="Telemicro.do" group-title="A Dominicano" tvg-logo="https://imgur.com/ORhwuQl.png",CDN Deportes
-https://live.eu-north-1b.cf.dmcdn.net/sec2(lvqqTjwtW9civZklfAN5oOjiIIcMEs6mi7C_eSTRU1xlBjQjHGtlFlQuFdBE_ckmcLt7m7PBNJII5KQLc3PPXILrqX7qdqTbwf-hb0FkcUDZKoD7XNCwlHG2uB545PsCw4JEy5cOG513QvoRcAuKsA)/dm/3/x9lntl6/s/live-720.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="A Dominicano" tvg-logo="https://imgur.com/oiogsd0.png",telesistema 11
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(dksZF87JqmxPqaV5GCjfXot-8YuUTskrAKejhA6r5BDZQ4KNudgytUkRafYi_iCnDj9TX1df4B173LEbzQ1BfW3xeyYRZy_J5NTuc-yZiH7LTWl8welrh12X6UMKc6kp)/cloud/3/x80ac48/d/live-720.m3u8
+
+
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="MLB Deportes" tvg-logo="https://imgur.com/cRq0xXG.png",MLB Network
 http://tvmate.icu:8080/live/4yYWhc/832385/21360.m3u8
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="MLB Deportes" tvg-logo="https://imgur.com/cRq0xXG.png",MLB Strike Zone
