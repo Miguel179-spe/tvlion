@@ -1,4 +1,8 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title=" A Dominicano" tvg-logo="https://imgur.com/ORhwuQl.png",CDN Deportes
+https://live.eu-north-1b.cf.dmcdn.net/sec2(lvqqTjwtW9civZklfAN5oOjiIIcMEs6mi7C_eSTRU1xlBjQjHGtlFlQuFdBE_ckmcLt7m7PBNJII5KQLc3PPXILrqX7qdqTbwf-hb0FkcUDZKoD7XNCwlHG2uB545PsCw4JEy5cOG513QvoRcAuKsA)/dm/3/x9lntl6/s/live-720.m3u8
+
 #EXTINF:-1 tvg-id="Telemicro.do" group-title=" A Dominicano" tvg-logo="https://imgur.com/oiogsd0.png",Telesistema Canal 11
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(0slPgVOelZUXQBUssIYJJwURyLsQ6qBlUshqDTnWAlwJNgkvie_MzRTH4E-omVX_O9s1ne_iAekA7FfkGL_NE7aNJZ2zTNkPouWIPjnSGwKBRwTv_u_rkUj_fTRskrA9)/cloud/3/x80ac48/d/live-720.m3u8
 
