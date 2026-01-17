@@ -1,5 +1,9 @@
 #EXTM3U
 
+
+#EXTINF:-1 tvg-id="WTMOCD1.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano",Ad telexitos Telemundo
+http://190.11.225.124:5000/live/telemundo_hd/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="A Dominicano" tvg-logo="https://imgur.com/SBjcArP.png", teleunion 
 https://68aff552e1684.streamlock.net/teleunion/TU/playlist.m3u8
 
