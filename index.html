@@ -729,8 +729,8 @@ const HLS_CONFIG = {
     capLevelToPlayerSize: true, // No descarga 1080p si la pantalla es pequeña (ahorra RAM)
     
     // Gestión de Memoria (Equilibrado para 4GB)
-    maxBufferLength: 10,        // Guarda 10 segundos de video
-    maxMaxBufferLength: 20,     // Máximo 20 segundos
+    maxBufferLength: 5,        // Guarda 10 segundos de video
+    maxMaxBufferLength: 15,     // Máximo 20 segundos
     backBufferLength: 10,       // Borra rápido lo que ya pasó para liberar RAM
     
     // Límite de peso en memoria (Muy importante)
@@ -1173,3 +1173,4 @@ window.addEventListener('load', loadPlaylist);
 
 </body>
 </html>
+
