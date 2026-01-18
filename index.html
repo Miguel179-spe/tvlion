@@ -734,7 +734,7 @@ const HLS_CONFIG = {
     backBufferLength: 10,       // Borra rápido lo que ya pasó para liberar RAM
     
     // Límite de peso en memoria (Muy importante)
-    maxBufferSize: 40 * 1000 * 1000, // Limita el uso de RAM a 40MB máximo para el buffer de video
+    maxBufferSize: 20 * 1000 * 1000, // Limita el uso de RAM a 40MB máximo para el buffer de video
     
     // Tiempos de espera y reintentos
     manifestLoadingTimeOut: 10000,
@@ -1173,6 +1173,7 @@ window.addEventListener('load', loadPlaylist);
 
 </body>
 </html>
+
 
 
 
