@@ -2,6 +2,20 @@
 
 
 
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/23Yv9zj.png",DRAGON BALL Z
+http://cord-cutter.net:8080/live/5uWnY2/585054/79572.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/Ls6YKfq.png",Horror Movies
+http://cord-cutter.net:8080/live/5uWnY2/585054/119429.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/FW9Tfx7.png",EL CHAVO DEL 8 24/7
+http://pixelmax.link:8085/live/Lucos1/Lucos01/103841.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/hme3fSF.png", LA FAMILIA PELUCHE
+http://pixelmax.link:8085/live/Lucos1/Lucos01/246834.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/MCgDArU.png",  Robocop
+http://pixelmax.link:8085/live/Lucos1/Lucos01/441370.m3u8
 
 
 
