@@ -1,5 +1,31 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",24/7 Cantinflas 
+http://pixelmax.link:8085/live/Lucos1/Lucos01/556360.m3u8
 
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",24/7 CASO CERRADO
+http://pixelmax.link:8085/live/Lucos1/Lucos01/623920.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7CATRASTROFES AEREOS HD
+http://pixelmax.link:8085/live/Lucos1/Lucos01/640312.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7 MOVIES 4K (01)
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657210.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7 MOVIES 4K (02)
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657211.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7 MOVIES 4K (03)
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657212.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7 MOVIES 4K (06)
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657215.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7 MOVIES 4K (07)
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657216.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7  SERIES ACTUALES
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657218.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7  SERIES ACTUALES
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657219.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7  SERIES ACTUALES"
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657220.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7  Master Chef 1
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657221.m3u8
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo=".png",✨24/7  Master Chef 2
+http://pixelmax.link:8085/live/Lucos1/Lucos01/657222.m3u8
 
 
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/23Yv9zj.png",DRAGON BALL Z
