@@ -1,5 +1,412 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="AdoramTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Adoram TV
+https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
+
+
+#EXTINF:-1 tvg-id="AhoraTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Ahora TV
+https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
+
+
+
+#EXTINF:-1 tvg-id="Ame47" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Ame 47
+https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Area809" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Area 809 El Original
+https://vdo.voxhdnet.com:3159/stream/play.m3u8
+
+
+
+#EXTINF:-1 tvg-id="Bellavisión" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Bellavisión
+https://rdn.essastream.com:3110/live/bellavision8hdlive.m3u8
+
+
+
+#EXTINF:-1 tvg-id="BonchesLatinosTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Bonches Latinos TV
+https://5790d294af2dc.streamlock.net/latinostv/latinostv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Boreal" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Boreal
+https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8
+
+#EXTINF:-1 tvg-id="CanaTVDigital" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cana TV Digital
+https://stream.hostuis.com:19360/canatvdigital/canatvdigital.m3u8
+
+#EXTINF:-1 tvg-id="Canal4RD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Canal 4 RD
+https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Canal17RTVD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Canal 17 RTVD
+https://protvradiostream.com:1936/rtvd17/ngrp:rtvd17_all/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="CanalCatorce" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Canal Catorce
+https://tv.livestreaminggroup.info:3052/live/catorcetvlive.m3u8
+
+#EXTINF:-1 tvg-id="CanalDTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Canal DTV
+https://s.emisoras.tv:8081/dtv/index.m3u8
+
+
+#EXTINF:-1 tvg-id="CanalSol" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Canal Sol
+https://5790d294af2dc.streamlock.net/sol65/sol65/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Canalda26HD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Canalda 26 HD
+https://canalda.rgradio.net:3084/live/canaldalive.m3u8
+
+#EXTINF:-1 tvg-id="CanangaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cananga TV
+https://cdn.streamingcpanel.com:3545/live/canangatlive.m3u8
+
+
+#EXTINF:-1 tvg-id="Carivision" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Carivision
+https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CascaraTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cascara TV
+https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ChinolaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Chinola TV
+https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8
+
+#EXTINF:-1 tvg-id="CibaeñaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cibaeña TV
+https://streamunoapp.com:3958/live/cibaenatvlive.m3u8
+
+#EXTINF:-1 tvg-id="CieloTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cielo TV
+https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CinevisionCanal19" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cinevision Canal 19
+https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
+
+
+#EXTINF:-1 tvg-id="ClaroTelevisiónDominicana" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Claro Televisión Dominicana
+https://streamunoapp.com:3960/live/claroteledomlive.m3u8
+
+#EXTINF:-1 tvg-id="ClaroVisiónTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Claro Visión TV
+https://streamunoapp.com:3057/live/clarovisiontvlive.m3u8
+
+#EXTINF:-1 tvg-id="COCOTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",COCO TV
+https://cloudflare.streamgato.us:3253/live/canalcocotvlive.m3u8
+
+#EXTINF:-1 tvg-id="CodigoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Codigo TV
+https://vdo2.streamgato.us:3313/live/codigotvlive.m3u8
+
+#EXTINF:-1 tvg-id="ColimdoTTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",ColimdoT TV
+https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8
+
+#EXTINF:-1 tvg-id="ColomeTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Colome TV
+https://ss2.tvrdomi.com:1936/colometv/colometv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ConstanzaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",ConstanzaTV
+https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CotubanamaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Cotubanama TV
+https://host.streamingnation.live/p/3588/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-id="CromTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",CromTV
+https://cnn.essastream.com:3333/live/cromtvlive.m3u8
+
+#EXTINF:-1 tvg-id="CVVisionTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",CV Vision TV
+https://eu1.servers10.com:8081/8128/index.m3u8
+
+
+#EXTINF:-1 tvg-id="DeUltimoMinutoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",De Ultimo Minuto TV
+https://soportedvb.click:3620/live/deultimominutomedialive.m3u8
+
+
+#EXTINF:-1 tvg-id="DigitalVision63" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Digital Vision 63
+https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Digital809TV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Digital809 TV
+https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="EcosCanal57" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Ecos Canal 57
+https://2-fss-1.streamhoster.com/pl_122/206532-5753032-1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Ecovisión" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Ecovisión
+https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8
+
+#EXTINF:-1 tvg-id="ElPitucoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",El Pituco TV
+https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8
+
+#EXTINF:-1 tvg-id="ElPuertoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",El PuertoTV
+https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ElSeis6" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",El Seis 6
+https://5790d294af2dc.streamlock.net/canal6/canal6/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="Entelevisión" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Entelevisión
+https://tv.livestreaminggroup.info:3985/live/entelevisionlive.m3u8
+
+#EXTINF:-1 tvg-id="EnterateRD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Enterate RD
+https://5790d294af2dc.streamlock.net/enteraterd/enteraterd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Farovisión" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Farovisión
+https://streamtv.intervenhosting.net:3754/hybrid/play.m3u8
+
+
+#EXTINF:-1 tvg-id="GalaxiaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Galaxia TV
+https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8
+
+
+#EXTINF:-1 tvg-id="GHTelevision" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",GH Television
+https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8
+
+#EXTINF:-1 tvg-id="GiTelevision" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Gi Television
+https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8
+
+#EXTINF:-1 tvg-id="GlobalTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Global TV
+https://stmv4.voxtvhd.com.br/globaltv/globaltv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="GuaymateTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Guaymate TV
+https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HainaVision" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Haina Vision
+https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8
+
+#EXTINF:-1 tvg-id="HilandoFinoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Hilando Fino TV
+https://hilandofinotv.essastream.com:3606/live/canalhilandofinotvlive.m3u8
+
+#EXTINF:-1 tvg-id="HTVLive" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",HTV Live
+https://vdo1.streamgato.us:3833/live/canalhtvlivelive.m3u8
+
+#EXTINF:-1 tvg-id="ImagenUniversalTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Imagen Universal TV
+https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
+
+#EXTINF:-1 tvg-id="InformeTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Informe TV
+https://vdo1.streamgato.us:3986/live/informetvlive.m3u8
+
+#EXTINF:-1 tvg-id="JimaniTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Jimani TV
+https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8
+
+#EXTINF:-1 tvg-id="LaCaletaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Caleta TV
+https://rdn.essastream.com:3168/live/lacaletatvlive.m3u8
+
+#EXTINF:-1 tvg-id="LaDescargaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Descarga TV
+https://video.udwn.net:19360/ladescargatv/ladescargatv.m3u8
+
+#EXTINF:-1 tvg-id="LaHoraTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Hora TV
+https://cloud5.livescast.com:19360/lahoratv/lahoratv.m3u8
+
+#EXTINF:-1 tvg-id="LaReinaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Reina TV
+https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="LaRutaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Ruta TV
+https://streamunoapp.com:3983/live/larutatvlive.m3u8
+
+#EXTINF:-1 tvg-id="LaVozdeJesusHD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Voz de Jesus HD
+https://live20.bozztv.com/giatvplayout7/giatv-208429/playlist.m3u8
+
+#EXTINF:-1 tvg-id="LaVozdeMaria" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",La Voz de Maria
+https://live.lavozdemaria.com:3436/live/lavozdemarialive.m3u8
+
+#EXTINF:-1 tvg-id="LarivisionTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Larivision TV
+https://live.larimartv.net/livelan/stream.m3u8
+
+#EXTINF:-1 tvg-id="LatinaTVInternacional" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Latina TV Internacional
+https://5790d294af2dc.streamlock.net/latinatv/latinatv/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="LenaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Lena TV
+https://5790d294af2dc.streamlock.net/lenaratv/lenaratv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="LunaTVCanal53" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Luna TV Canal 53
+https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8
+
+#EXTINF:-1 tvg-id="LuzDivinaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Luz Divina TV
+https://tv.wracanal10.com:3776/live/luzdivinatvlive.m3u8
+
+
+#EXTINF:-1 tvg-id="MakinaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Makina TV
+https://vdopanel.jlahozconsulting.com/p/3303/live/makinalive.m3u8
+
+#EXTINF:-1 tvg-id="ManaclarTelevision" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Manaclar Television
+https://5790d294af2dc.streamlock.net/manaclar/manaclar/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="MITurnoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",MI Turno TV
+https://video.udwn.net:19360/miturnotv/miturnotv.m3u8
+
+#EXTINF:-1 tvg-id="Microvision10" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Microvision 10
+https://streaming.telecablecentral.com.do/live/MicroHD/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MontecristiDigital8" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Montecristi Digital 8
+https://soportedvb.click:3400/live/montecristitvlive.m3u8
+
+
+#EXTINF:-1 tvg-id="NaranjaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Naranja TV
+https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8
+
+#EXTINF:-1 tvg-id="NexxoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Nexxo TV
+https://cdn3.streamgato.us:3938/live/nexxotvlive.m3u8
+
+#EXTINF:-1 tvg-id="Noticias16" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Noticias 16
+https://cdn.essastream.com:3457/live/noticiasn16live.m3u8
+
+#EXTINF:-1 tvg-id="NuevaVision14" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Nueva Vision 14
+https://live20.bozztv.com/akamaissh101/ssh101/nuevavisionhd/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="OndaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Onda TV
+https://cnn.hostlagarto.com/ondatv/index.m3u8
+
+
+#EXTINF:-1 tvg-id="OxiTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",OxiTV
+https://streamunoapp.com:3520/live/oxitvcanal36live.m3u8
+
+
+#EXTINF:-1 tvg-id="PortalDigitalTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Portal Digital TV
+https://vdo1.streamgato.us:3999/live/portaldigitallive.m3u8
+
+#EXTINF:-1 tvg-id="PronemsTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Pronems TV
+https://vdo1.streamgato.us:3418/live/pronemstvlive.m3u8
+
+
+
+
+#EXTINF:-1 tvg-id="ReadyTVCanal6" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Ready TV Canal 6
+https://streaming.telecablecentral.com.do/ReadyTV/ReadyHD/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="ReporteroTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Reportero TV
+https://streamrd.cloud:5443/LiveApp/streams/J3E3REmLNBzirS9A10575071547538.m3u8
+
+#EXTINF:-1 tvg-id="RNN" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",RNN
+https://2-fss-2.streamhoster.com/pl_120/206532-5753030-1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RocavisionTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Rocavision TV
+https://streamunoapp.com:3331/live/rocavisiontvlive.m3u8
+
+#EXTINF:-1 tvg-id="RomanaTVCanal42" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Romana TV Canal 42
+https://videoserver.tmcreativos.com:19360/cvmhbyrcat/cvmhbyrcat.m3u8
+
+#EXTINF:-1 tvg-id="Ruta66TV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Ruta66 TV
+https://cnn.livestreaminggroup.info:3796/live/ruta66tvlive.m3u8
+
+
+#EXTINF:-1 tvg-id="SantiagoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Santiago TV
+https://vdo1.streamgato.us:3677/live/telemileniolive.m3u8
+
+#EXTINF:-1 tvg-id="SenalDigitalTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Senal Digital TV
+https://soportedvb.click:3494/live/senaldigitaltvlive.m3u8
+
+#EXTINF:-1 tvg-id="SiembraTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Siembra TV
+https://streamunoapp.com:3809/live/siembratvlive.m3u8
+
+
+
+#EXTINF:-1 tvg-id="SuMundoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Su Mundo TV
+https://175036.global.ssl.fastly.net/6217e980d5bee0e090792fdf/live_75f5635097ba11ecb9f1255c8fe65a34/index.m3u8
+
+#EXTINF:-1 tvg-id="SuperDigitalTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Super Digital TV
+https://inliveserver.com:1936/11516/11516/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SuperTV55" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Super TV 55
+https://ss2.tvrdomi.com:1936/supertv55/supertv55/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Super7FM" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Super7FM
+https://tv.livestreaminggroup.info:3295/live/super7tvlive.m3u8
+
+#EXTINF:-1 tvg-id="Supremateve" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Supremateve
+https://ss2.tvrdomi.com:1936/supremateve/supremateve/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleDominicanaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Tele Dominicana TV
+https://vdopanel.jlahozconsulting.com/p/3417/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-id="TeleOla44" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Tele Ola 44 (576i)
+https://teleola.ddns.net/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="TeleProyectoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Tele Proyecto TV
+https://5790d294af2dc.streamlock.net/Teleproyecto/Teleproyecto/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Telealtura" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Telealtura
+https://live20.bozztv.com/akamaissh101/ssh101/codificador7/playlist.m3u8
+
+
+
+#EXTINF:-1 tvg-id="Telecontacto" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Telecontacto
+https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-id="TelerumbaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Telerumba TV
+https://inliveserver.com:1936/18506/18506/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="Teleuniverso" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Teleuniverso
+https://videoserver.tmcreativos.com:19360/kptjeckkaa/kptjeckkaa.m3u8
+
+#EXTINF:-1 tvg-id="Telever" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Telever
+https://soportedvb.click:3413/live/televerlive.m3u8
+
+
+
+#EXTINF:-1 tvg-id="TigueritoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Tiguerito TV
+https://ss2.tvrdomi.com:1936/tigueritostv/tigueritostv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TomAndJerry" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Tom And Jerry
+https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TuMúsicaHD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Tu Música HD
+https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
+
+#EXTINF:-1 tvg-id="TurismoHD" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Turismo HD
+https://live20.bozztv.com/giatvplayout7/giatv-208343/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="TVCanalSur" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TV Canal Sur
+https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
+
+#EXTINF:-1 tvg-id="TVCotuiCanal31" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TV Cotui Canal 31
+https://live20.bozztv.com/akamaissh101/ssh101/tvcotui/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVDaja" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TV Daja
+https://rdn.essastream.com:3388/live/dajatvlive.m3u8
+
+#EXTINF:-1 tvg-id="TVÉxitos" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TV Éxitos
+https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8
+
+
+
+#EXTINF:-1 tvg-id="TVMontanaCanal10" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TV Montana Canal 10
+https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVPlata" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TV Plata
+https://ss2.tvrdomi.com:1936/tvplata/tvplata/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVN24" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TVN24
+https://ss2.tvrdomi.com:1936/vozzmedianetwork/vozzmedianetwork/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVS" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",TVS
+https://imagenuniversaltv.net:3741/live/tvslive.m3u8
+
+#EXTINF:-1 tvg-id="ValleNuevoTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Valle Nuevo TV
+https://media.streambrothers.com:1936/8262/8262/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="VegaTeve" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",VegaTeve
+https://cloud6.livescast.com:3797/live/vegatevelive.m3u8
+
+
+#EXTINF:-1 tvg-id="VillaAltagraciaTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",VillaAltagracia TV
+https://inliveserver.com:1936/10016/10016/playlist.m3u8
+
+#EXTINF:-1 tvg-id="VisionNDVTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",VisionNDV TV
+https://cloudflare.streamgato.us:3820/live/visionndvlive.m3u8
+
+#EXTINF:-1 tvg-id="VTVCanal32" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",VTV Canal 32
+https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
+
+#EXTINF:-1 tvg-id="XtremoChannel" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Xtremo Channel
+https://ss2.tvrdomi.com:1936/xtremochannel/xtremochannel/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="ZonavisionTV" group-title="A Dominicano" tvg-logo="https://imgur.com/NCFojCN.png",Zonavision TV
+https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
+
+
+
+
+
+
+
 #EXTINF:-1 tvg-id="8NTV" group-title="México" tvg-logo="https://imgur.com/VHu5Vh6.png",8NTV
 https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8
 
@@ -186,411 +593,6 @@ https://stream.ontvmx.com/ontv/Wn3jgo4UYNSmwRDIev/playlist.m3u8
 #EXTINF:-1 tvg-id="ZAZ" group-title="México" tvg-logo="https://imgur.com/VHu5Vh6.png",ZAZ
 https://cloud.fastchannel.es/mic/manifiest/hls/zaztv/zaztv.m3u8
 
-
-
-
-
-
-#EXTINF:-1 tvg-id="AdoramTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Adoram TV
-https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
-
-
-#EXTINF:-1 tvg-id="AhoraTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Ahora TV
-https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
-
-
-
-#EXTINF:-1 tvg-id="Ame47" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Ame 47
-https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Area809" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Area 809 El Original
-https://vdo.voxhdnet.com:3159/stream/play.m3u8
-
-
-
-#EXTINF:-1 tvg-id="Bellavisión" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Bellavisión
-https://rdn.essastream.com:3110/live/bellavision8hdlive.m3u8
-
-
-
-#EXTINF:-1 tvg-id="BonchesLatinosTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Bonches Latinos TV
-https://5790d294af2dc.streamlock.net/latinostv/latinostv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Boreal" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Boreal
-https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8
-
-#EXTINF:-1 tvg-id="CanaTVDigital" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cana TV Digital
-https://stream.hostuis.com:19360/canatvdigital/canatvdigital.m3u8
-
-#EXTINF:-1 tvg-id="Canal4RD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Canal 4 RD
-https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Canal17RTVD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Canal 17 RTVD
-https://protvradiostream.com:1936/rtvd17/ngrp:rtvd17_all/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="CanalCatorce" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Canal Catorce
-https://tv.livestreaminggroup.info:3052/live/catorcetvlive.m3u8
-
-#EXTINF:-1 tvg-id="CanalDTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Canal DTV
-https://s.emisoras.tv:8081/dtv/index.m3u8
-
-
-#EXTINF:-1 tvg-id="CanalSol" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Canal Sol
-https://5790d294af2dc.streamlock.net/sol65/sol65/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Canalda26HD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Canalda 26 HD
-https://canalda.rgradio.net:3084/live/canaldalive.m3u8
-
-#EXTINF:-1 tvg-id="CanangaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cananga TV
-https://cdn.streamingcpanel.com:3545/live/canangatlive.m3u8
-
-
-#EXTINF:-1 tvg-id="Carivision" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Carivision
-https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CascaraTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cascara TV
-https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ChinolaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Chinola TV
-https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8
-
-#EXTINF:-1 tvg-id="CibaeñaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cibaeña TV
-https://streamunoapp.com:3958/live/cibaenatvlive.m3u8
-
-#EXTINF:-1 tvg-id="CieloTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cielo TV
-https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CinevisionCanal19" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cinevision Canal 19
-https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8
-
-
-#EXTINF:-1 tvg-id="ClaroTelevisiónDominicana" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Claro Televisión Dominicana
-https://streamunoapp.com:3960/live/claroteledomlive.m3u8
-
-#EXTINF:-1 tvg-id="ClaroVisiónTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Claro Visión TV
-https://streamunoapp.com:3057/live/clarovisiontvlive.m3u8
-
-#EXTINF:-1 tvg-id="COCOTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",COCO TV
-https://cloudflare.streamgato.us:3253/live/canalcocotvlive.m3u8
-
-#EXTINF:-1 tvg-id="CodigoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Codigo TV
-https://vdo2.streamgato.us:3313/live/codigotvlive.m3u8
-
-#EXTINF:-1 tvg-id="ColimdoTTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",ColimdoT TV
-https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8
-
-#EXTINF:-1 tvg-id="ColomeTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Colome TV
-https://ss2.tvrdomi.com:1936/colometv/colometv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ConstanzaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",ConstanzaTV
-https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CotubanamaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Cotubanama TV
-https://host.streamingnation.live/p/3588/hybrid/play.m3u8
-
-#EXTINF:-1 tvg-id="CromTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",CromTV
-https://cnn.essastream.com:3333/live/cromtvlive.m3u8
-
-#EXTINF:-1 tvg-id="CVVisionTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",CV Vision TV
-https://eu1.servers10.com:8081/8128/index.m3u8
-
-
-#EXTINF:-1 tvg-id="DeUltimoMinutoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",De Ultimo Minuto TV
-https://soportedvb.click:3620/live/deultimominutomedialive.m3u8
-
-
-#EXTINF:-1 tvg-id="DigitalVision63" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Digital Vision 63
-https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Digital809TV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Digital809 TV
-https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="EcosCanal57" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Ecos Canal 57
-https://2-fss-1.streamhoster.com/pl_122/206532-5753032-1/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Ecovisión" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Ecovisión
-https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8
-
-#EXTINF:-1 tvg-id="ElPitucoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",El Pituco TV
-https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8
-
-#EXTINF:-1 tvg-id="ElPuertoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",El PuertoTV
-https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ElSeis6" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",El Seis 6
-https://5790d294af2dc.streamlock.net/canal6/canal6/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="Entelevisión" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Entelevisión
-https://tv.livestreaminggroup.info:3985/live/entelevisionlive.m3u8
-
-#EXTINF:-1 tvg-id="EnterateRD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Enterate RD
-https://5790d294af2dc.streamlock.net/enteraterd/enteraterd/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Farovisión" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Farovisión
-https://streamtv.intervenhosting.net:3754/hybrid/play.m3u8
-
-
-#EXTINF:-1 tvg-id="GalaxiaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Galaxia TV
-https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8
-
-
-#EXTINF:-1 tvg-id="GHTelevision" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",GH Television
-https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8
-
-#EXTINF:-1 tvg-id="GiTelevision" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Gi Television
-https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8
-
-#EXTINF:-1 tvg-id="GlobalTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Global TV
-https://stmv4.voxtvhd.com.br/globaltv/globaltv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="GuaymateTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Guaymate TV
-https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="HainaVision" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Haina Vision
-https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8
-
-#EXTINF:-1 tvg-id="HilandoFinoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Hilando Fino TV
-https://hilandofinotv.essastream.com:3606/live/canalhilandofinotvlive.m3u8
-
-#EXTINF:-1 tvg-id="HTVLive" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",HTV Live
-https://vdo1.streamgato.us:3833/live/canalhtvlivelive.m3u8
-
-#EXTINF:-1 tvg-id="ImagenUniversalTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Imagen Universal TV
-https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
-
-#EXTINF:-1 tvg-id="InformeTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Informe TV
-https://vdo1.streamgato.us:3986/live/informetvlive.m3u8
-
-#EXTINF:-1 tvg-id="JimaniTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Jimani TV
-https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8
-
-#EXTINF:-1 tvg-id="LaCaletaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Caleta TV
-https://rdn.essastream.com:3168/live/lacaletatvlive.m3u8
-
-#EXTINF:-1 tvg-id="LaDescargaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Descarga TV
-https://video.udwn.net:19360/ladescargatv/ladescargatv.m3u8
-
-#EXTINF:-1 tvg-id="LaHoraTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Hora TV
-https://cloud5.livescast.com:19360/lahoratv/lahoratv.m3u8
-
-#EXTINF:-1 tvg-id="LaReinaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Reina TV
-https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="LaRutaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Ruta TV
-https://streamunoapp.com:3983/live/larutatvlive.m3u8
-
-#EXTINF:-1 tvg-id="LaVozdeJesusHD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Voz de Jesus HD
-https://live20.bozztv.com/giatvplayout7/giatv-208429/playlist.m3u8
-
-#EXTINF:-1 tvg-id="LaVozdeMaria" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",La Voz de Maria
-https://live.lavozdemaria.com:3436/live/lavozdemarialive.m3u8
-
-#EXTINF:-1 tvg-id="LarivisionTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Larivision TV
-https://live.larimartv.net/livelan/stream.m3u8
-
-#EXTINF:-1 tvg-id="LatinaTVInternacional" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Latina TV Internacional
-https://5790d294af2dc.streamlock.net/latinatv/latinatv/chunklist.m3u8
-
-#EXTINF:-1 tvg-id="LenaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Lena TV
-https://5790d294af2dc.streamlock.net/lenaratv/lenaratv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="LunaTVCanal53" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Luna TV Canal 53
-https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8
-
-#EXTINF:-1 tvg-id="LuzDivinaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Luz Divina TV
-https://tv.wracanal10.com:3776/live/luzdivinatvlive.m3u8
-
-
-#EXTINF:-1 tvg-id="MakinaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Makina TV
-https://vdopanel.jlahozconsulting.com/p/3303/live/makinalive.m3u8
-
-#EXTINF:-1 tvg-id="ManaclarTelevision" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Manaclar Television
-https://5790d294af2dc.streamlock.net/manaclar/manaclar/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="MITurnoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",MI Turno TV
-https://video.udwn.net:19360/miturnotv/miturnotv.m3u8
-
-#EXTINF:-1 tvg-id="Microvision10" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Microvision 10
-https://streaming.telecablecentral.com.do/live/MicroHD/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MontecristiDigital8" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Montecristi Digital 8
-https://soportedvb.click:3400/live/montecristitvlive.m3u8
-
-
-#EXTINF:-1 tvg-id="NaranjaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Naranja TV
-https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8
-
-#EXTINF:-1 tvg-id="NexxoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Nexxo TV
-https://cdn3.streamgato.us:3938/live/nexxotvlive.m3u8
-
-#EXTINF:-1 tvg-id="Noticias16" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Noticias 16
-https://cdn.essastream.com:3457/live/noticiasn16live.m3u8
-
-#EXTINF:-1 tvg-id="NuevaVision14" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Nueva Vision 14
-https://live20.bozztv.com/akamaissh101/ssh101/nuevavisionhd/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="OndaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Onda TV
-https://cnn.hostlagarto.com/ondatv/index.m3u8
-
-
-#EXTINF:-1 tvg-id="OxiTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",OxiTV
-https://streamunoapp.com:3520/live/oxitvcanal36live.m3u8
-
-
-#EXTINF:-1 tvg-id="PortalDigitalTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Portal Digital TV
-https://vdo1.streamgato.us:3999/live/portaldigitallive.m3u8
-
-#EXTINF:-1 tvg-id="PronemsTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Pronems TV
-https://vdo1.streamgato.us:3418/live/pronemstvlive.m3u8
-
-
-
-
-#EXTINF:-1 tvg-id="ReadyTVCanal6" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Ready TV Canal 6
-https://streaming.telecablecentral.com.do/ReadyTV/ReadyHD/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="ReporteroTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Reportero TV
-https://streamrd.cloud:5443/LiveApp/streams/J3E3REmLNBzirS9A10575071547538.m3u8
-
-#EXTINF:-1 tvg-id="RNN" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",RNN
-https://2-fss-2.streamhoster.com/pl_120/206532-5753030-1/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RocavisionTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Rocavision TV
-https://streamunoapp.com:3331/live/rocavisiontvlive.m3u8
-
-#EXTINF:-1 tvg-id="RomanaTVCanal42" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Romana TV Canal 42
-https://videoserver.tmcreativos.com:19360/cvmhbyrcat/cvmhbyrcat.m3u8
-
-#EXTINF:-1 tvg-id="Ruta66TV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Ruta66 TV
-https://cnn.livestreaminggroup.info:3796/live/ruta66tvlive.m3u8
-
-
-#EXTINF:-1 tvg-id="SantiagoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Santiago TV
-https://vdo1.streamgato.us:3677/live/telemileniolive.m3u8
-
-#EXTINF:-1 tvg-id="SenalDigitalTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Senal Digital TV
-https://soportedvb.click:3494/live/senaldigitaltvlive.m3u8
-
-#EXTINF:-1 tvg-id="SiembraTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Siembra TV
-https://streamunoapp.com:3809/live/siembratvlive.m3u8
-
-
-
-#EXTINF:-1 tvg-id="SuMundoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Su Mundo TV
-https://175036.global.ssl.fastly.net/6217e980d5bee0e090792fdf/live_75f5635097ba11ecb9f1255c8fe65a34/index.m3u8
-
-#EXTINF:-1 tvg-id="SuperDigitalTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Super Digital TV
-https://inliveserver.com:1936/11516/11516/playlist.m3u8
-
-#EXTINF:-1 tvg-id="SuperTV55" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Super TV 55
-https://ss2.tvrdomi.com:1936/supertv55/supertv55/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Super7FM" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Super7FM
-https://tv.livestreaminggroup.info:3295/live/super7tvlive.m3u8
-
-#EXTINF:-1 tvg-id="Supremateve" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Supremateve
-https://ss2.tvrdomi.com:1936/supremateve/supremateve/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TeleDominicanaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Tele Dominicana TV
-https://vdopanel.jlahozconsulting.com/p/3417/hybrid/play.m3u8
-
-#EXTINF:-1 tvg-id="TeleOla44" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Tele Ola 44 (576i)
-https://teleola.ddns.net/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="TeleProyectoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Tele Proyecto TV
-https://5790d294af2dc.streamlock.net/Teleproyecto/Teleproyecto/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Telealtura" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Telealtura
-https://live20.bozztv.com/akamaissh101/ssh101/codificador7/playlist.m3u8
-
-
-
-#EXTINF:-1 tvg-id="Telecontacto" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Telecontacto
-https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8
-
-
-
-
-
-#EXTINF:-1 tvg-id="TelerumbaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Telerumba TV
-https://inliveserver.com:1936/18506/18506/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="Teleuniverso" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Teleuniverso
-https://videoserver.tmcreativos.com:19360/kptjeckkaa/kptjeckkaa.m3u8
-
-#EXTINF:-1 tvg-id="Telever" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Telever
-https://soportedvb.click:3413/live/televerlive.m3u8
-
-
-
-#EXTINF:-1 tvg-id="TigueritoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Tiguerito TV
-https://ss2.tvrdomi.com:1936/tigueritostv/tigueritostv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TomAndJerry" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Tom And Jerry
-https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TuMúsicaHD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Tu Música HD
-https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
-
-#EXTINF:-1 tvg-id="TurismoHD" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Turismo HD
-https://live20.bozztv.com/giatvplayout7/giatv-208343/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="TVCanalSur" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TV Canal Sur
-https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
-
-#EXTINF:-1 tvg-id="TVCotuiCanal31" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TV Cotui Canal 31
-https://live20.bozztv.com/akamaissh101/ssh101/tvcotui/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVDaja" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TV Daja
-https://rdn.essastream.com:3388/live/dajatvlive.m3u8
-
-#EXTINF:-1 tvg-id="TVÉxitos" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TV Éxitos
-https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8
-
-
-
-#EXTINF:-1 tvg-id="TVMontanaCanal10" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TV Montana Canal 10
-https://live20.bozztv.com/akamaissh101/ssh101/tvmontanahd/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVPlata" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TV Plata
-https://ss2.tvrdomi.com:1936/tvplata/tvplata/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVN24" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TVN24
-https://ss2.tvrdomi.com:1936/vozzmedianetwork/vozzmedianetwork/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVS" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",TVS
-https://imagenuniversaltv.net:3741/live/tvslive.m3u8
-
-#EXTINF:-1 tvg-id="ValleNuevoTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Valle Nuevo TV
-https://media.streambrothers.com:1936/8262/8262/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="VegaTeve" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",VegaTeve
-https://cloud6.livescast.com:3797/live/vegatevelive.m3u8
-
-
-#EXTINF:-1 tvg-id="VillaAltagraciaTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",VillaAltagracia TV
-https://inliveserver.com:1936/10016/10016/playlist.m3u8
-
-#EXTINF:-1 tvg-id="VisionNDVTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",VisionNDV TV
-https://cloudflare.streamgato.us:3820/live/visionndvlive.m3u8
-
-#EXTINF:-1 tvg-id="VTVCanal32" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",VTV Canal 32
-https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
-
-#EXTINF:-1 tvg-id="XtremoChannel" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Xtremo Channel
-https://ss2.tvrdomi.com:1936/xtremochannel/xtremochannel/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="ZonavisionTV" group-title="Dominicana" tvg-logo="https://imgur.com/NCFojCN.png",Zonavision TV
-https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8
 
 
 
