@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1 group-title="NBA" tvg-logo="https://imgur.com/zqXtpd8.PNG", NBA
+http://xworld-blue.com:25461/play/TwRPO8U_zJz30WuYdNsJpLXLL8BtiHqO8tMtIkSSwvnBISxBSfhelwORwga5nA05/m3u8
+
+
 #EXTINF:-1 group-title="Deportes" tvg-logo="https://www.lyngsat.com/logo/tv/aa/aym-sports-mx.png", AYM HD
 https://aym-as.otteravision.com/aym/as/as.m3u8?0GKUSH_R4IN&DONTSTEAL
 #EXTINF:-1 group-title="Deportes" tvg-logo="logo", Claro Sports
