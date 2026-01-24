@@ -18,7 +18,11 @@ https://vg7ie.envivoslatam.org/hotflix/espnpremium/index.m3u8?token=02d4eefa035e
 #EXTINF:-1 tvg-id="ESPN4.us" tvg-name="ESPN 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="A- PPV",ESPN 4 (FuboHD)
 https://a2vlca.fubohd.com/espn4/mono.m3u8?token=d5a40f5b0a7aff98e7dc95aacac5cae41c6c3e0e-50-1769304066-1769286066
 
+#EXTINF:-1 tvg-id="ESPN2.mx" tvg-name="ESPN 2 México" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="A- PPV",ESPN 2 México
+https://a2vlca.fubohd.com/espn2mx/mono.m3u8?token=f578d817de40698c33c124f625cad79f5286b074-5e-1769304360-1769286360
 
+#EXTINF:-1 tvg-id="FOXSports2.mx" tvg-name="FOX Sports 2 México" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Fox_Sports_logo.svg/800px-Fox_Sports_logo.svg.png" group-title="A- PPV",FOX Sports 2 México
+https://a2vlca.fubohd.com/foxsports2mx/mono.m3u8?token=588da1020301be5130ee64bbfd49b861f0b3bdaf-63-1769304740-1769286740
 
 
 
