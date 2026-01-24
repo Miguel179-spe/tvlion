@@ -1,5 +1,7 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="Liga1MAX.ar" tvg-logo="https://i.imgur.com/placeholder.png" group-title="A-PPV",Liga 1 MAX
+https://mze7u.envivoslatam.org/hotflix/liga1max/index.m3u8?token=a35837be9da2b16fbd7b3deb30acc55161ea9ed2-4f-1769333213-1769279213&ip=200.88.249.202
 
 #EXTINF:-1 tvg-id="TYCSports.ar" tvg-name="TYC Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Logo_TyC_Sports.png/300px-Logo_TyC_Sports.png" group-title="A- PPV",TYC Sports
 https://vg7ie.envivoslatam.org/hotflix/tycsports/index.m3u8?token=848cb009148357c8d8e77701eb346db79fc71c86-64-1769330730-1769276730&ip=200.88.249.202
