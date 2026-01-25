@@ -1,4 +1,48 @@
 #EXTM3U
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",ESPN PREMIUM 🇦🇷
+https://cdnlatam.sysedge-delivery.com/ESPN_PREMIUM_HD/index.m3u8
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",Speed Sport 1 
+https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",Sports First (1080p)
+https://d4ddgdmj1cvnm.cloudfront.net/scheduler/scheduleMaster/409.m3u8
+
+
+
+
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",Red Bull TV
+http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png", Marquee Sports Network
+https://marqueesports.global.transmit.live/hls/67cb394e6ef201b4705ce294/hls-itc/marquee1/index.m3u8
+
+
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",FIFA+
+https://5d95f7d7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWl0X0ZJRkFQbHVzSXRhbGlhbl9ITFM/playlist.m3u8
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",Tennis+
+https://amg01935-amg01935c1-amgplt0165.playout.now3.amagi.tv/playlist/amg01935-amg01935c1-amgplt0165/playlist.m3u8
+
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",ACCDN (1080p)
+https://aegis-cloudfront-1.tubi.video/a1e671ae-d1c2-4e39-99c7-889e83056fd2/playlist.m3u8
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",ESPN 5
+https://anvtcax.fubohd.com/espn/mono.m3u8?token=8d49c50b9ee7537f365c2d1322b75fcb922ddacc-3a-1769379147-1769361147
+
+
+
 #EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",Curiel vs. Panthen
 #EXTIhttp://cord-cutter.net:8080/live/5uWnY2/585054/259478.m3u8
 
