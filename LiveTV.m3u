@@ -795,6 +795,30 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/119429.m3u8
 #EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/FW9Tfx7.png",EL CHAVO DEL 8 24/7
 http://pixelmax.link:8085/live/Lucos1/Lucos01/103841.m3u8
 
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/5VzD0cQ.png", 24/7 FRIENDS
+http://cord-cutter.net:8080/live/5uWnY2/585054/66407.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/MvijsVe.png", 24/7 RICK AND MORTY
+http://cord-cutter.net:8080/live/5uWnY2/585054/66302.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/jcr7EMi.png", 24/7 FULL HOUSE
+http://cord-cutter.net:8080/live/5uWnY2/585054/66269.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/9suJTpC.png", 24/7 FAMILY GUY
+http://cord-cutter.net:8080/live/5uWnY2/585054/66317.m3u8
+
+#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/Vq3HZ2p.png",24/7 KEEPING UP WITH THE KARDASHIANS
+http://cord-cutter.net:8080/live/5uWnY2/585054/66403.m3u8
+
+#EXTINF:-1,#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/8xG7wLP.png", 24/7 FRESH PRINCE OF BEL-AIR
+http://cord-cutter.net:8080/live/5uWnY2/585054/79559.m3u8
+
+#EXTINF:-1,#EXTINF:-1 tvg-id="Telemicro.do" group-title="Canales 24/7" tvg-logo="https://imgur.com/JJ1fTZ4.png", 24/7 THE FIRST 48HRS
+http://cord-cutter.net:8080/live/5uWnY2/585054/66393.m3u8
+
+
+
+
 
 
 #EXTINF:-1 tvg-id="WTMOCD1.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano",Ad telexitos Telemundo
