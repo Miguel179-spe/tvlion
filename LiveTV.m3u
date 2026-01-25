@@ -1,49 +1,50 @@
-#EXTM3U
 
-#EXTINF:-1 tvg-id="" tvg-name="Stream from edge2caster" group-title="A- PPV",edge2caster Stream
-https://edge2caster.pro/hls/wfazgsqtrezu66.m3u8?st=YJoUGWuWzVzYjCMMILY7r3BYGAERDJu3CwI0cnNkPAA&e=1769301416
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png",Curiel vs. Panthen
+#EXTIhttp://cord-cutter.net:8080/live/5uWnY2/585054/259478.m3u8
 
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png",Lane vs. Pague: Weigh-In
+http://cord-cutter.net:8080/live/5uWnY2/585054/259480.m3u8
 
-#EXTINF:-1 tvg-id="Liga1MAX.ar" tvg-logo="https://i.imgur.com/placeholder.png" group-title="A- PPV",Liga 1 MAX
-https://mze7u.envivoslatam.org/hotflix/liga1max/index.m3u8?token=a35837be9da2b16fbd7b3deb30acc55161ea9ed2-4f-1769333213-1769279213&ip=200.88.249.202
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Rocha vs. Curiel 2: Prelims (2026-01-16 21:05:00)
+http://cord-cutter.net:8080/live/5uWnY2/585054/259481.m3u8
 
-#EXTINF:-1 tvg-id="TYCSports.ar" tvg-name="TYC Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Logo_TyC_Sports.png/300px-Logo_TyC_Sports.png" group-title="A- PPV",TYC Sports
-https://vg7ie.envivoslatam.org/hotflix/tycsports/index.m3u8?token=848cb009148357c8d8e77701eb346db79fc71c86-64-1769330730-1769276730&ip=200.88.249.202
-
-#EXTINF:-1 tvg-id="TYCSports.ar" tvg-logo="https://i.imgur.com/ABC123.png" group-title="A- PPV",TYC Sports Argentina
-https://tk0hz.envivoslatam.org/tycsports/index.m3u8?token=848c0c19572581d50853c56f343633a9291a4cb7-3e-1769331307-1769277307&ip=200.88.249.202
-
-#EXTINF:-1 tvg-id="TNTSports.ar" tvg-name="TNT Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logotipo_TNT_Sports_%28Latinoam%C3%A9rica%29.svg/800px-Logotipo_TNT_Sports_%28Latinoam%C3%A9rica%29.svg.png" group-title="A- PPV",TNT Sports Argentina
-https://rci1w.envivoslatam.org/hotflix/tntsports/index.m3u8?token=92b1b968c1f9f5da5eafce8e96b1555a86e78327-a9-1769331326-1769277326&ip=200.88.249.202
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Washington Wizards @ Charlotte Hornets | Away Stream | 01/24/2026 12:00 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260212.m3u8
 
 
-#EXTINF:-1 tvg-id="ESPNPremium.ar" tvg-name="ESPN Premium" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN_Premium_logo.svg/800px-ESPN_Premium_logo.svg.png" group-title="A- PPV",ESPN Premium Argentina
-https://vg7ie.envivoslatam.org/hotflix/espnpremium/index.m3u8?token=02d4eefa035e470665549b1e2744eb760574700a-23-1769331711-1769277711&ip=200.88.249.202
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Cleveland Cavaliers @ Orlando Magic | Away Stream | 01/24/2026 7:00 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260214.m3u8
 
 
-#EXTINF:-1 tvg-id="ESPN4.us" tvg-name="ESPN 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="A- PPV",ESPN 4 (FuboHD)
-https://a2vlca.fubohd.com/espn4/mono.m3u8?token=d5a40f5b0a7aff98e7dc95aacac5cae41c6c3e0e-50-1769304066-1769286066
-
-#EXTINF:-1 tvg-id="ESPN2.mx" tvg-name="ESPN 2 México" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="A- PPV",ESPN 2 México
-https://a2vlca.fubohd.com/espn2mx/mono.m3u8?token=f578d817de40698c33c124f625cad79f5286b074-5e-1769304360-1769286360
-
-#EXTINF:-1 tvg-id="FOXSports2.mx" tvg-name="FOX Sports 2 México" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Fox_Sports_logo.svg/800px-Fox_Sports_logo.svg.png" group-title="A- PPV",FOX Sports 2 México
-https://a2vlca.fubohd.com/foxsports2mx/mono.m3u8?token=588da1020301be5130ee64bbfd49b861f0b3bdaf-63-1769304740-1769286740
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png",Cleveland Cavaliers @ Orlando Magic | Home Stream | 01/24/2026 7:00 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260216.m3u8
 
 
+#EXTINF:-1,NBA 09: Boston Celtics @ Chicago Bulls | Away Stream | 01/24/2026 8:00 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260218.m3u8
 
 
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Boston Celtics @ Chicago Bulls | Home Stream | 01/24/2026 8:00 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260219.m3u8
 
 
-#EXTINF:-1 group-title="NBA" tvg-logo="https://imgur.com/zqXtpd8.png", NBA
-http://xworld-blue.com:25461/play/TwRPO8U_zJz30WuYdNsJpLXLL8BtiHqO8tMtIkSSwvnBISxBSfhelwORwga5nA05/m3u8
-http://xworld-blue.com:25461/play/TwRPO8U_zJz30WuYdNsJpLXLL8BtiHqO8tMtIkSSwvnBISxBSfhelwORwga5nA05/ts
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Los Angeles Lakers @ Dallas Mavericks | Home Stream | 01/24/2026 8:30 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260220.m3u8
 
 
-#EXTINF:-1 group-title="NBA" tvg-logo="https://imgur.com/zqXtpd8.png", NBA
-http://tiger88.live:8080/live/Denz167ALP/UXBvryrSuE/110202.m3u8
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Los Angeles Lakers @ Dallas Mavericks | Away Stream | 01/24/2026 8:30 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260221.m3u8
 
 
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Miami Heat @ Utah Jazz | Home Stream | 01/24/2026 9:30 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260222.m3u8
+
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png", Miami Heat @ Utah Jazz | Away Stream | 01/24/2026 9:30 PM ET
+http://cord-cutter.net:8080/live/5uWnY2/585054/260223.m3u8
+
+#EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/JhpLaAF.png",  MURATALLA VS. CRUZ (1.24 8:00 PM ET) DAZN
+http://cord-cutter.net:8080/live/5uWnY2/585054/260414.m3u8
 
 
 
