@@ -1,22 +1,22 @@
 #EXTM3U
 
 
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Bay Area (A)
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Bay Area (A)
 http://cord-cutter.net:8080/live/5uWnY2/585054/9900.m3u8
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Boston (A)
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Boston (A)
 http://cord-cutter.net:8080/live/5uWnY2/585054/20939.m3u8
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports California (A)
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports California (A)
 http://cord-cutter.net:8080/live/5uWnY2/585054/20940.m3u8
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png",NBC Sports Chicago 
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png",NBC Sports Chicago 
 http://cord-cutter.net:8080/live/5uWnY2/585054/20941.m3u8
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Network (FHD) 
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Network (FHD) 
 http://cord-cutter.net:8080/live/5uWnY2/585054/20926.m3u8
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Philly (F)
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Philly (F)
 http://cord-cutter.net:8080/live/5uWnY2/585054/20943.m3u8
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Washington (F)
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png", NBC Sports Washington (F)
 http://cord-cutter.net:8080/live/5uWnY2/585054/20944.m3u8
 
-#EXTINF:-1 group-title=" NBC" tvg-logo="https://imgur.com/WWD0Nsp.png",NBC Sports Bay Area
+#EXTINF:-1 group-title="NBC" tvg-logo="https://imgur.com/WWD0Nsp.png",NBC Sports Bay Area
 https://d368vp0qqzvkid.cloudfront.net/11603/88889711/hls/master.m3u8?ads._fw_atts=&ads._fw_h_user_agent=Mozilla%252F5.0%2520%28Windows%2520NT%252010.0%253B%2520Win64%253B%2520x64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F144.0.0.0%2520Safari%252F537.36&ads._fw_is_lat=0&ads._fw_nielsen_app_id=PE075FB87-C9AE-41D5-8B17-95C0E9301C8E&ads._fw_player_height=680&ads._fw_player_width=1208&ads._fw_site_page=https%253A%252F%252Fwww.nbcbayarea.com%252Fwatch%252F&ads._fw_us_privacy=1---&ads.afid=396654814&ads.caid=NBCNBA&ads.channelName=nbcsanfrancisconews&ads.csid=nbc_ots_alldevice_allos_web_kntv_livelinear_virtualchannel&ads.flag=%252Bsltp%252Bemcr%252Bslcb%252Bsbid-fbad%252Baeti%252Bslif-vicb%252Bamcb%252Bplay-uapl%252Bdtrd%252Bexvt&ads.gpp=DBABLA%7EBVQVAAAAAgA.QA&ads.gpp_sid=7&ads.nw=169843&ads.playerVersion=8.30.1&ads.prof=169843%3Anbcu_ots_web_linear&ads.resp=vmap1&ads.sfid=23408327&ads.vcid=&ads.vip=100.11.88.33&ads.xumo_channelId=88889711a&ads.xumo_contentId=3822&ads.xumo_contentName=NBCNBA&ads.xumo_ifaType=&ads.xumo_providerId=3822&ads.xumo_providerName=NBCNBA&ads.xumo_streamId=88889711&ads.xumo_ifa=&ads._fw_did=&ads.site_name=NBC
 
 #EXTINF:-1 group-title="A-PPV" tvg-logo="https://imgur.com/v3XcO1f.png",ESPN PREMIUM 🇦🇷
