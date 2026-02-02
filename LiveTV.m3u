@@ -1465,70 +1465,45 @@ https://webprod.sipse.com.mx:8080/show/merida.m3u8
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",ROMANCE LATINO
 https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" group-title="Futbol" SCTV 22 - SSPORT 1 🇻🇳
 https://liveh34.vtvprime.vn/hls/SCTV22/03.m3u8
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" group-title="Futbol" IDMANTV 🇹🇷
 https://str2.yodacdn.net/idman_300_to_small/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol"ESPN DEPORTES 🇺🇸
-https://e3.thetvapp.to/hls/espn-deportes/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Varzesh TV 🇸🇦
 https://lenz.splus.ir/PLTV/88888888/224/3221226845/index.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" S Sport 1 🇹🇷
-https://dga1op10s1u3lep.617cc29522c890.click/live/selcukssport/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" DAZN La Liga 🇪🇸
-https://tiger-hub.vercel.app/DAZN-LaLiga/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" M La Liga 🇪🇸
-https://tiger-hub.vercel.app/LaLiga_TV/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" L'Équipe 🇫🇷
-https://tvradiozap.eu/tools/dm-m3u8.php/x2lefik.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" PERSIANA SPORT 🇮🇷
 https://af.ayas.ir/hls2/persiana.m3u8
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Bein sports 1 ENG 🇬🇧
 https://tiger-hub.vercel.app/Bein-sports_1_ENG/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" PremierSports1 🇬🇧
-https://7pal.short.gy/prsport1
+
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Матч! 🇷🇺
 https://32tech0steam0dp01.org/test/matchtv/chunks.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" BELARUS 5 🇧🇾
-https://ngtrk.dc.beltelecom.by/ngtrk/_definst_/smil:belarus5/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol"Arena_Sport P1 🇷🇸
-https://tiger-hub.vercel.app/Arena-Sports/Premium-1/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol"Arena_Sport P2 🇷🇸
-https://tiger-hub.vercel.app/Arena-Sports/Premium_2/tracks-v1a1/mono.ts.m3u8
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Azteca Deportes 🇲🇽
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65cf60d166eec80008724e6flivestitch/master.m3u8?advertisingId=channel&appName=rokuchannel
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" FOX 🇲🇽
 https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" CAZE TV 1 🇧🇷
-https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol"TV2 🇪🇸
-https://ztnr.rtve.es/ztnr/1688885.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" REAL MADRID TV 🇪🇸
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" BEIN SPORT EXTRA Ñ 🇪🇸
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Esport3 🇪🇸
-https://directes-tv-cat.3catdirectes.cat/live-content/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" ETB Deportes 🇪🇸
-https://multimedia.eitb.eus/live-content/oka2hd-hls/master.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" ITV DEPORTES 🇲🇽
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3010
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol"TELEMUNDO 🇲🇽
-https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" ESPN 🇺🇸
-https://tiger-hub.vercel.app/ESPN/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" CBS Sports Golazo Network 🇺🇸
-https://stitcher.pluto.tv/stitch/hls/channel/63a0e33a45264d000850ed7e/master.m3u8
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" AYM SPORT 🇺🇸
 https://aym-as.otteravision.com/aym/as/as_720p_high.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Turkmenistan Sport 🇹🇲
-https://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" HT SPOR 🇹🇷
 https://ciner-live.ercdn.net/htspor/htspor_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" HTSpor TV 🇹🇷
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" SOLO CALCIO HD 🇮🇹
-https://bit.ly/48XfUCc?profile=inspirationFreetv.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/acuCGF8.png" group-title="Kids",Roya Kids
 https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-logo="" group-title="Kids",Peniel Kids & Young (480p)
