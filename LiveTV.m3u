@@ -1,5 +1,35 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/TiikrAA.png" group-title="Futbol""Entretenimiento", Azteca Mundo
+https://azt-mun.otteravision.com/azt/mun/mun_1080p.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/9sXoYND.png" group-title="Futbol""Deportes", Real Madrid TV (Español)
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/XzmN37K.png" group-title="Futbol""Deportes", FIFA+ (Português)
+https://c2657533.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UGxleC1icl9GSUZBUGx1c1BvcnR1Z3Vlc2VfSExT/ba65e408-3b05-431c-b8c2-d55206a6c3c6/5.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/6dO9VZR.png" group-title="Futbol""Deportes", FC Barcelona TV (English)
+https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/XzmN37K.png" group-title="Futbol""Deportes", FIFA+ (Español)
+https://d63fabad.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/a95275b0-b7f5-494c-88f1-6ff21176f568/2.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/k3cfB20.png" group-title="Futbol""Deportes", Next Sports
+https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/2D6gvbx.png" group-title="Futbol""Entretenimiento", Fama TV
+https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/XzmN37K.png" group-title="Futbol""Deportes", FIFA+ (English)
+https://a62dad94.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/6eb986f4-cbce-444e-98cd-a3c97c46c211/2.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/5CUFMeb.png" group-title="Futbol""Deportes", RS Sports 4
+https://video03.logicahost.com.br/rssports4/rssports4/chunklist_w1285146308.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/YNQR9QT.png" group-title="Futbol""Variedades", Live Stream
+https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/chunklist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/1VNfeLT.png" group-title="Novelas",Canela TV
 https://spt-novelas-1-us.canelatv.wurl.tv/playlist.m3u8
 
