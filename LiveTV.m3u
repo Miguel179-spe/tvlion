@@ -1,5 +1,47 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/fwSsorN.png" group-title="Niños""Infantil", 3ABN Kids
+https://3abn.bozztv.com/3abn2/Kids_live/smil:Kids_live.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/NZSjeq5.png" group-title="Niños""Infantil", Baby Shark TV
+https://newidco-babysharktv-1-eu.rakuten.wurl.tv/3000.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Dn0HBxo.png" group-title="Niños""Infantil", Kids TV ET
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/kids-tv-et/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/o8x4Ef2.png" group-title="Niños""Peliculas y Series", TV Serie
+https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/lVc0tdv.png" group-title="Niños""Peliculas y Series", Retro TV
+https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1093002808.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/hcOfN2x.png" group-title="Niños""Peliculas y Series", Cineverse
+https://cineverse.g-mana.live/media/ac7cff3c-5bc3-4745-ac4d-56aadb586d00/profile/1/profileManifest.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/ougWeJQ.png" group-title="Niños""Peliculas y Series", The Movie Channel (Ottera)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4211
+
+#EXTINF:-1 tvg-logo="https://imgur.com/CjQtFI9.png" group-title="Niños""Anime y Cultura Pop", Loading TV
+https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/TJet5kQ.png" group-title="Niños""Anime y Cultura Pop", Kanade Web (Anime)
+https://backend.energeek.cl/webtv/kanadeweb/tracks-v1a1/mono.m3u8?token=deM0kanADeweB
+
+#EXTINF:-1 tvg-logo="https://imgur.com/QyXHRuB.png" group-title="Niños""Noticias y General", TeleSUR
+https://mblesmain01.telesur.ultrabase.net/mbliveMain/480p/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/12KjQCM.png" group-title="Niños""Noticias y General", Canal 29
+https://stmv1.srvif.com/canal29/canal29/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/M4IT8hp.png" group-title="Niños""Varios", Xtreme TV 54
+https://stmv.webtvninjas.com.br/xtremetv54/xtremetv54/chunklist_w1488161700.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/NOXGQl1.png" group-title="Niños""Youtube Live", Youtube Live Stream 1
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1770063620/ei/pLKAafukHtSY0_wPmdfZ4AI/ip/186.6.161.240/id/eE1L08hNdW8.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51691027/txs/51691027%2C51691028/hfr/1/playlist_duration/30/manifest_duration/30/demuxed/1/maudio/1/gcr/do/bui/AW-iu_rKCC1AeLyE9FdMt_eTqMVy8kGOm5_7A-0UEyWUipYIS2ugyCCwPsJIPx_k4ESxz7Djj1jgk1oZ/spc/q5xjPOa18Q3GV-npV-QGbCvZML5b4p8mFlOSwbrT2enpVLE1OECl6G7fqz5HiA/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51552689%2C51565115%2C51565682%2C51580968/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJEij0EwRAIgBbz5ZS8Q8mn4DB4tdaIqyUWU0VpKuzmYjO5moRO1OBQCIDkH51ByUxlEDWUD1gWkSQQo9tMxcG6G4KWedb4MUZmV/file/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/aBZTSmY.png" group-title="Niños""Youtube Live", Youtube Live Stream 2
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1770063637/ei/tbKAafz_DMrvut0PoqilwAo/ip/186.6.161.240/id/w2sB87jLE1I.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51691027/txs/51691027%2C51691028/hfr/1/playlist_duration/30/manifest_duration/30/demuxed/1/maudio/1/gcr/do/bui/AW-iu_rBZgtSQF_VOf9aQviLgnaBSTvC5MqKoxL3rBU4ws4IudAmYtBSC54RCEIh128Z6Ds0BN8SBIgs/spc/q5xjPBY5CLqhzuH7itzNg4F7wM8w-Oh4smS9lj01UD4HUSgUi8-MpSFYCCMOJQ/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51552689%2C51565115%2C51565682%2C51580968/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJEij0EwRgIhAJaAk_eaoaRah0w4KiyMVR4FT3AlS3g3qNxoahw-1RgfAiEA_nn0HesGKUkjK_EYMx0KxP5kU0TAIJibxrK1k6b5LdE%3D/file/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/TiikrAA.png" group-title="Futbol""Entretenimiento", Azteca Mundo
 https://azt-mun.otteravision.com/azt/mun/mun_1080p.m3u8
 
