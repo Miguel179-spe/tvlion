@@ -1,5 +1,53 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/2c0yvhK.png" group-title="A Premium", AXN
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch4.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/hgaQK7j.png" group-title="A Premium",UNIVERSAL
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch10.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/EPHnWWe.png" group-title="A Premium",SONY
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch6.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/ki2LanZ.png" group-title="A Premium",SPACE
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch1.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/NnR3VkM.png" group-title="A Premium",A&E
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch3.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/LtIii1w.png" group-title="A Premium",HBO FAMILY
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch22.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/3wSiNXT.png" group-title="A Premium",HBO 2
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch20.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/CCWWJHb.png" group-title="A Premium",PARAMOUNT
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch19.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/S1YSr8t.png" group-title="A Premium",STAR CHANNEL
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch21.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/6ogrO2C.png" group-title="A Premium",H&H
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch23.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/YC1Vi9i.png" group-title="A Premium",NATGEO
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch5.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/gxxjnv3.png" group-title="A Premium",Disney HD
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch2.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/gZ6o5cU.png" group-title="A Premium",DISCOVERY CHANNEL
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch15.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/0ElR1fa.png" group-title="A Premium",HISTORY CHANNEL
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch7.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/F4MgN7L.png" group-title="A Premium", CARTOON NETWORK
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch12.playlist.m3u8
+
+
+
+
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/Q6DceZb.png" group-title="Deportes Premium", TNT SPORT
