@@ -54,7 +54,7 @@ http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch12.playlis
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/KmVKt5a.png" group-title="Deportes Premium",ESPN MEXICO H
-http://45.5.119.43:4000/play/a0kz/index.m3u8
+http://tecnotv.club/feb03/phpcode/geomex.php?c=a0kz&token=tecnotokenplustv&f=.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/KmVKt5a.png" group-title="Deportes Premium",SPORTING TV
