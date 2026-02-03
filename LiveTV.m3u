@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/a/6QJtu5f#mFUWTav.png" group-title="Deportes", TNT SPORT
+http://tecnotv.club/28ene/phpcode/ssiptv.php?c=ch26&token=tecnotokenplustv&f=.m3u8 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/isKXanE.png" group-title="Deportes", Trace Sport Stars
 https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
