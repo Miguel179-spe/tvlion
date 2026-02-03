@@ -1,4 +1,6 @@
-#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://imgur.com/wIsuMd5.png" group-title="A Premium",ESPN MEXICO HD
+http://kstv.us:8080/live/T9r7x7HJ9A/2782052626/47107.m3u8#EXTM3U
 
 
 
