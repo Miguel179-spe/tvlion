@@ -1,4 +1,36 @@
 #EXTM3U
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://imgur.com/C3Qo2qS.png" group-title="A Premium", HBO XTREME
+http://38.49.128.38:8000/play/a096/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/6pmkrhC.png" group-title="A Premium", HBO SIGNATURE
+http://38.49.128.38:8000/play/a0ji/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/QXeXVEa.png" group-title="A Premium", MULTI PREMIER
+http://38.49.128.38:8000/play/a0cp/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/QXAvBRt.png" group-title="A Premium", UNIVERSAL
+http://38.49.128.38:8000/play/a0bt/index.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/U3AP3qw.png" group-title="Deportes", NBA TV
+http://38.49.128.38:8000/play/a0kj/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/oIqETRP.png" group-title="Deportes", NFL NETWORK
+http://38.49.128.38:8000/play/a0kk/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/V9QYLJY.png" group-title="Deportes", PX SPORTS
+http://38.49.128.38:8000/play/a0ku/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/IwRytnN.png" group-title="Infantil", NICK JR
+http://38.49.128.38:8000/play/a0ck/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Q9Ncitr.png" group-title="Variedades", MULTICANAL
+http://38.49.128.38:8000/play/a0lo/index.m3u8
+
+
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/2c0yvhK.png" group-title="A Premium", AXN
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch4.playlist.m3u8
