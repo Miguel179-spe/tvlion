@@ -1,6 +1,35 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://imgur.com/a/6QJtu5f#mFUWTav.png" group-title="Deportes", TNT SPORT
+
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Q6DceZb.png" group-title="Deportes Premium", TNT SPORT
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch26.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jDY1iSo.png" group-title="Deportes Premium", TYC SPORT
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch32.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/j8mmkK6.png" group-title="Deportes Premium", FOX SPORT
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch16.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/7KlmdKe.png" group-title="Deportes Premium", FOX SPORT 2
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch30.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/zXFCpNF.png" group-title="Deportes Premium", FOX SPORT 3
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch31.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/7IPr3Ho.png" group-title="Deportes Premium", ESPN PREMIUM
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch42.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/7IPr3Ho.png" group-title="Deportes Premium", ESPN
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch29.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/7IPr3Ho.png" group-title="Deportes Premium", ESPN (Alternativo)
+http://tecnotv.club/28ene/phpcode/ssiptv.php?c=ch9&token=tecnotokenplustv&f=.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/WFTjnc6.png" group-title="Deportes Premium", TYC SPORT (Alternativo)
+http://tecnotv.club/28ene/phpcode/ssiptv.php?c=ch9&token=tecnotokenplustv&f=.m3u8
+
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/isKXanE.png" group-title="Deportes", Trace Sport Stars
 https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8?checkedby:iptvcat.com
