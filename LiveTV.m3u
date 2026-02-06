@@ -12,8 +12,8 @@ https://content.uplynk.com/channel/1fbfb28ae5044f619f75ae0adb011989.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/GzCAU8Q.png" group-title="A-NBC", NBC Sports
 https://list.iptvcat.com/my_list/s/9f037244c410f49af4b4c459cfef5a97.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/xaZvxgs.png" group-title="A-NBC", NBC Sports Bay Area
-http://lb59.xxip9.top:25461/live/7078621762/rguisihan0322/9900.m3u8?token=ThFcUhFaQQwRBgFcAQIOAw9WXQBSUlJQBwBSVVpWAlBWUgUDWgJSAQoQHkdBQURQV1g7WFQWCgtaUlMfG0ZAV0dsXVdACEEBCwQEURAZFEFfWAETCgQcEBMLBxEDEQIHBAsDEU4QBk5HV0ALU1lpUVNDDVJVFgpcFg4PHxtcXW1RVllSDFZBDBECEEkQXEVFFA8KRFxYHBABCxdBWEdWEA8RAQNaC0EaEVFdEFxBREwUD0Z1fxYcEAYaF1ZXQFpdWxEOEQ8BFg4RHhAMQWpEUEVBFlRRWVVAQVhBAxsfEV9US2tQDVwNU1BGWwpcRhQPFABGHRJZX1wKFgxBZkNaVhcJFgJSAFUFBRBP
+#EXTINF:-1 tvg-logo="https://imgur.com/xaZvxgs.png" group-title="A-NBC", NBC Sports Bay Area 1
+http://kstv.us:8080/live/T9r7x7HJ9A/2782052626/28744.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/2c0yvhK.png" group-title="A Premium", AXN
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch4.playlist.m3u8
