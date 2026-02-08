@@ -1,6 +1,17 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-logo="https://imgur.com/EzFsCiq.png" group-title="Aida",DISCOVERY FAMILY
+http://kstv.us:8080/live/T9r7x7HJ9A/2782052626/23334.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/LtIii1w.png" group-title="Aida",HBO FAMILY
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch22.playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/3jVsTug.png" group-title="A Premium",UFC
+https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/3jVsTug.png" group-title="A Premium",UFC
+https://epg-ipv4.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-66ccae1a78822c7edc4b6df1.m3u8?X-Plex-Client-Identifier=xgkz9ui5tipdsflhzmh1ar3h&X-Plex-Client-Platform=Chrome&X-Plex-Token=-jNP89TE332LySp86T_s&redirectedFromV6=1
 
 #EXTINF:-1 tvg-logo="https://imgur.com/rLOS9xH.png" group-title="Aida", HGTV 1
 https://mediapackage-hgtv-source.fullscreen.nz/index.m3u8
