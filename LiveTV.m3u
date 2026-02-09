@@ -1,5 +1,17 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/xaJ5Gv2.png" group-title="Aida",OWN
+http://fl1.moveonjoy.com/OWN/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/RrfFVIc.png" group-title="Aida",HOME
+https://all3media-homes-under-the-hammer-1-au.samsung.wurl.tv/3000.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jTbcv3o.png" group-title="Aida",DIY
+http://fl1.moveonjoy.com/DIY/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/gz38H7m.png" group-title="Aida",Lifetime Movies
+https://fl61.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/vuwR4IA.png" group-title="Aida",GAME SHOW NETWORK
 https://a-cdn.klowdtv.com/live2/gsn_720p/playlist.m3u8
 
