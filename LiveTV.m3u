@@ -1,5 +1,17 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/vuwR4IA.png" group-title="Aida",GAME SHOW NETWORK
+https://a-cdn.klowdtv.com/live2/gsn_720p/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/EsuMr8F.png" group-title="Aida",COZI 
+https://fl1.moveonjoy.com/COZI_TV/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/SE6yqrf.png" group-title="Aida",SHOWTIME WOMEN
+http://fl1.moveonjoy.com/SHOWTIME_WOMEN/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/v95jMFK.png" group-title="Aida",HGTV WEST
+http://fl1.moveonjoy.com/HGTV/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/pZ4XqMl.png" group-title="Aida",CineLife
 https://magnolia-cinelife.amagi.tv/playlist.m3u8
 
