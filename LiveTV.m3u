@@ -1,4 +1,53 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-logo="https://imgur.com/pZ4XqMl.png" group-title="Aida",CineLife
+https://magnolia-cinelife.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/pm5IWop.png" group-title="Aida",Trace Sportstars
+https://trace-sportstars-tcl.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/rcGICQ8.png" group-title="Aida",TESTEMADE
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16international24i-ono/f603fb20-e732-46de-85e7-3439fd71e723/0.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/wXVC8Qr.png" group-title="Aida",HALLMARK CHANNEL
+https://fl1.moveonjoy.com/HALLMARK_CHANNEL/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/adE6mlm.png" group-title="Aida",DISNEY JR
+https://fl1.moveonjoy.com/DISNEY_JR/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/dP7yu9k.png" group-title="Aida",DISNEY XD
+http://fl1.moveonjoy.com/DISNEY_XD/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/anHZIhe.png" group-title="Aida",NICKELODEON
+http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/dd1RBCM.png" group-title="Aida",NICK JR
+https://fl1.moveonjoy.com/NICK_JR/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/1Xs9XXS.png" group-title="Aida",NICK
+http://38.199.6.1:17001/play/a0pb/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/eCXFGIB.png" group-title="Aida",KITCHEN
+https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4us/medhigh.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/GTNwy3a.png" group-title="Aida",Cinevault Westerns
+https://gsn-cinevault-westerns-2-us.roku.wurl.tv/2000.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/gmyQ4Om.png" group-title="Aida",Retro Crush
+https://cineverse.g-mana.live/media/ac7cff3c-5bc3-4745-ac4d-56aadb586d00/profile/1/profile/2/profileManifest.m3u8?_uid=d3689ef5-7d9d-42a7-9dfc-28b73ef594aa&rK=a1&_did=6beeb0e1-bdf4-9a30-5e11-79e008d1abaa
+
+#EXTINF:-1 tvg-logo="https://imgur.com/9riZ2c6.png" group-title="Aida",STARZ ENCORE CLASSIC
+https://fl1.moveonjoy.com/STARZ_ENCORE_CLASSIC/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/BP6Y61w.png" group-title="Aida",The Carol Burnett Show
+https://aegis-cloudfront-1.tubi.video/e17b8de5-e8b7-415a-8377-5707a2f9a727/1080p-cc/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/n3TwI5Y.png" group-title="Aida",Real Families
+https://lds-realfamilies-plex.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/4k4JerY.png" group-title="Aida",30ATV Classic Movie
+https://30a-tv.com/feeds/720p/52.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/ip8loWF.png" group-title="Aida",DISCOVERY LIFE
 http://kstv.us:8080/live/T9r7x7HJ9A/2782052626/23333.m3u8
 
