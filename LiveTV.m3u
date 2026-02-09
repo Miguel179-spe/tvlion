@@ -1,5 +1,22 @@
 #EXTM3U
 
+#EXTINF:-1  tvg-name="ESPN NEWS" tvg-id="ESPN.News.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16485_dark_360w_270h.png" group-title="Deportes Premium" radio="false",ESPN NEWS
+http://fl1.moveonjoy.com/ESPN_NEWS/index.m3u8
+#EXTINF:-1  tvg-name="ESPN U" tvg-id="ESPNU.On.Demand.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45654_dark_360w_270h.png" group-title="Deportes Premium" radio="false",ESPN U
+http://fl1.moveonjoy.com/ESPN_U/index.m3u8
+#EXTINF:-1  tvg-name="FOOD NETWORK" tvg-id="Food.Network.USA.-.Eastern.Feed.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12574_dark_360w_270h.png" group-title="Deportes Premium" radio="false",FOOD NETWORK
+http://fl1.moveonjoy.com/FOOD_NETWORK/index.m3u8
+#EXTINF:-1  tvg-name="FOX (WFLX)" tvg-id="FOX.(WFLX).West.Palm.Beach,.FL.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-us.png?raw=true" group-title="Deportes Premium" radio="false",FOX (WFLX)
+http://fl1.moveonjoy.com/FL_West_Palm_Beach_FOX/index.m3u8
+#EXTINF:-1  tvg-name="FOX Business Network" tvg-id="Fox.Business.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-business-us.png?raw=true" group-title="Deportes Premium" radio="false",FOX Business Network
+http://fl1.moveonjoy.com/FOX_Business_Network/index.m3u8
+#EXTINF:-1  tvg-name="FOX SOUL" tvg-id="plex.tv.FOX.SOUL.plex" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-soul-us.png?raw=true" group-title="Deportes Premium" radio="false",FOX SOUL
+http://fl1.moveonjoy.com/FOX_SOUL/index.m3u8
+#EXTINF:-1  tvg-name="Freeform" tvg-id="Freeform.-.East.Feed.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10093_dark_360w_270h.png" group-title="Deportes Premium" radio="false",Freeform
+http://fl1.moveonjoy.com/FREE_FORM/index.m3u8
+#EXTINF:-1  tvg-name="FS1" tvg-id="Fox.Sports.1.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-1-us.png?raw=true" group-title="Deportes Premium" radio="false",FS1
+http://fl1.moveonjoy.com/FOX_Sports_1/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/xaJ5Gv2.png" group-title="Aida",OWN
 http://fl1.moveonjoy.com/OWN/index.m3u8
 
