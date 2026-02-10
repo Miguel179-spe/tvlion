@@ -3641,8 +3641,11 @@ https://d1rqgw5gocwo9i.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae04
 https://xumo-drct-ch836-57aiq.fast.nbcuni.com/live/master_4.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/9bPcYIN.png" group-title="A Dominicano",Ad Telemundo Telenovelas Clasicas SD
 https://d3rciv7av2te5a.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/master.m3u8?ads.xumo_channelId=88889470
+
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano",Ad telexitos Telemundo
-https://dvrfl03.bozztv.com/hondu-telexitos/tracks-v1a1/mono.ts.m3u8
+http://tvmate.icu:8080/live/13KpN5/160160/56410.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uU01KHz.png" group-title="A Dominicano",Adoram TV SD
 https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/dyJyuXc.png" group-title="A Dominicano",Ahora TV SD
