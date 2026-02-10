@@ -3645,6 +3645,8 @@ https://d3rciv7av2te5a.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae0
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano",Ad telexitos Telemundo
 http://tvmate.icu:8080/live/13KpN5/160160/56410.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Telemundo_31_(2019).svg/512px-Telemundo_31_(2019).svg.png" group-title="A Dominicano",Ad telexitos Telemundo
+http://104.238.205.28:9090/278678_.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uU01KHz.png" group-title="A Dominicano",Adoram TV SD
 https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
