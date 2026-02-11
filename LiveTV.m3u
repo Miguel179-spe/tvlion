@@ -1,37 +1,43 @@
 #EXTM3U
-
-#EXTINF:-1 tvg-logo="https://imgur.com/kFfck6e.png" group-title="Deporte Premium",ACC Digital
+ 
+#EXTINF:-1 tvg-logo="https://imgur.com/kFfck6e.png" group-title="Deportes Premium",ACC Digital
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
  
-#EXTINF:-1 tvg-logo="https://imgur.com/Whq28Xf.png" group-title="Deporte Premium",ACC Digital Network
+#EXTINF:-1 tvg-logo="https://imgur.com/Whq28Xf.png" group-title="Deportes Premium",ACC Digital Network
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
   
-#EXTINF:-1 tvg-logo="https://imgur.com/5msA9SB.png" group-title="Deporte Premium",ACL Cornhole TV
+#EXTINF:-1 tvg-logo="https://imgur.com/5msA9SB.png" group-title="Deportes Premium",ACL Cornhole TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/acl-cornhole-tv/aclco.m3u8?ads.vf=NbEpkTCqk8a
 
-#EXTINF:-1 tvg-logo="https://imgur.com/rELVMb0.png" group-title="Deporte Premium",BEKS ports
+#EXTINF:-1 tvg-logo="https://imgur.com/rELVMb0.png" group-title="Deportes Premium",BEKS ports
 https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/chunklist_b3596000_slENG.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/xYYouWp.png" group-title="Deporte Premium",FanDuel Racing
+#EXTINF:-1 tvg-logo="https://imgur.com/xYYouWp.png" group-title="Deportes Premium",FanDuel Racing
 https://d3ehq1uaxory6w.cloudfront.net/out/v1/35c05f080f4e49a4b4eb031b5a14e505/TVG2index_2.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/xYYouWp.png" group-title="Deporte Premium",FanDuel
+#EXTINF:-1 tvg-logo="https://imgur.com/xYYouWp.png" group-title="Deportes Premium",FanDuel
 https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TVGindex_1.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/wd8h0s8.png" group-title="Deporte Premium",FITE 24/7
+#EXTINF:-1 tvg-logo="https://imgur.com/wd8h0s8.png" group-title="Deportes Premium",FITE 24/7
 https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/qYqdA3L.png" group-title="Deporte Premium",Fubo Sports Network
+#EXTINF:-1 tvg-logo="https://imgur.com/qYqdA3L.png" group-title="Deportes Premium",Fubo Sports Network
 https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/6.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/3x0yRJT.png" group-title="Deporte Premium",Sports Grid
+#EXTINF:-1 tvg-logo="https://imgur.com/3x0yRJT.png" group-title="Deportes Premium",Sports Grid
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sportsgrid/master.m3u8?ads.vf=9SdYmRdXeBe
 
-#EXTINF:-1 tvg-logo="https://imgur.com/R8aVlXx.png" group-title="Deporte Premium",Sports TV Plus
+#EXTINF:-1 tvg-logo="https://imgur.com/R8aVlXx.png" group-title="Deportes Premium",Sports TV Plus
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/NKXQTWMREOB2XFJRLAHO/hls3/now,-1m/m.m3u8?ads.vf=6S5T4Kl7B10
 
-#EXTINF:-1 tvg-logo="https://imgur.com/xguKjKD.png" group-title="Deporte Premium",Strongman
+#EXTINF:-1 tvg-logo="https://imgur.com/xguKjKD.png" group-title="Deportes Premium",Strongman
 https://rightsboosterltd-scl-2-eu.rakuten.wurl.tv/3000.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/fD0WPvE.png" group-title="Deportes Premium",TVS Sports
+https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/iJz6gH1.png" group-title="Deportes Premium",TVS Classic Sports
+https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/fD0WPvE.png" group-title="Deporte Premium",TVS Sports
 https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
