@@ -1,5 +1,9 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/iKz43WL.png" group-title="A Dominicano", CDN Deporte
+http://200.125.170.122:8000/play/a03j/index.m3u8
+
+
 #EXTINF:-1  tvg-name="ESPN NEWS" tvg-id="ESPN.News.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16485_dark_360w_270h.png" group-title="Deportes Premium" radio="false",ESPN NEWS
 http://fl1.moveonjoy.com/ESPN_NEWS/index.m3u8
 #EXTINF:-1  tvg-name="ESPN U" tvg-id="ESPNU.On.Demand.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45654_dark_360w_270h.png" group-title="Deportes Premium" radio="false",ESPN U
