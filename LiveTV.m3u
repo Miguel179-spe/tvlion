@@ -137,7 +137,7 @@ https://a-cdn.klowdtv.com/live2/gsn_720p/playlist.m3u8
 https://fl1.moveonjoy.com/COZI_TV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/SE6yqrf.png" group-title="Aida",SHOWTIME WOMEN
-http://fl1.moveonjoy.com/SHOWTIME_WOMEN/index.m3u8
+https://fl31.moveonjoy.com/SHOWTIME_WOMEN/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/v95jMFK.png" group-title="Aida",HGTV WEST
 http://fl1.moveonjoy.com/HGTV/index.m3u8
@@ -148,8 +148,6 @@ https://magnolia-cinelife.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/pm5IWop.png" group-title="Aida",Trace Sportstars
 https://trace-sportstars-tcl.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/rcGICQ8.png" group-title="Aida",TESTEMADE
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16international24i-ono/f603fb20-e732-46de-85e7-3439fd71e723/0.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/wXVC8Qr.png" group-title="Aida",HALLMARK CHANNEL
 https://fl1.moveonjoy.com/HALLMARK_CHANNEL/index.m3u8
@@ -176,7 +174,7 @@ https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4us/medhigh.m3u8
 https://gsn-cinevault-westerns-2-us.roku.wurl.tv/2000.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/gmyQ4Om.png" group-title="Aida",Retro Crush
-https://cineverse.g-mana.live/media/ac7cff3c-5bc3-4745-ac4d-56aadb586d00/profile/1/profile/2/profileManifest.m3u8?_uid=d3689ef5-7d9d-42a7-9dfc-28b73ef594aa&rK=a1&_did=6beeb0e1-bdf4-9a30-5e11-79e008d1abaa
+https://cineverse.g-mana.live/media/ac7cff3c-5bc3-4745-ac4d-56aadb586d00/mainManifest.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/9riZ2c6.png" group-title="Aida",STARZ ENCORE CLASSIC
 https://fl31.moveonjoy.com/STARZ/index.m3u8
