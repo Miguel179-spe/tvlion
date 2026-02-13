@@ -10,9 +10,6 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/9315.m3u8
  http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62fb9844db5a4a0007ebc2a3/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c796a42-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=d3e7f565-b65d-418f-9f3a-1da5e2c255f3&serverSideAds=false&checkedby:iptvcat.com
  
  
-#EXTINF:-1 tvg-logo="https://imgur.com/IhgUdlH.png" group-title="Aida", Cocina
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcde0657444a40009cd2422/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
- 
  #EXTINF:-1 tvg-id="NationalGeographic.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/512px-Natgeologo.svg.png" group-title="Aida",National Geographic East
 https://fl31.moveonjoy.com/National_Geographic/index.m3u8
    
@@ -25,15 +22,8 @@ https://fl31.moveonjoy.com/Nat_Geo_Wild/index.m3u8
 #EXTINF:-1 tvg-id="HallmarkChannel.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Hallmark_Channel.svg/512px-Hallmark_Channel.svg.png" group-title="Aida",Hallmark Channel East (720p)
 https://fl2.moveonjoy.com/HALLMARK_CHANNEL/index.m3u8
 .
-#EXTINF:-1 tvg-id="HallmarkDrama.us@SD" tvg-logo="" group-title="Aida",Hallmark Drama (720p)
+#EXTINF:-1 tvg-id="HallmarkDrama.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Hallmark_Channel.svg/512px-Hallmark_Channel.svg.png" group-title="Aida",Hallmark Drama (720p)
 https://fl2.moveonjoy.com/HALLMARK_DRAMA/index.m3u8
-
-#EXTINF:-1 tvg-id="HallmarkMoviesMore.us@SD" tvg-logo="" group-title="Aida",Hallmark Movies & More
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/628e685ba3811100070551a8/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=fc1da926-1c2b-44de-a80b-57f4b8693e04
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/YoOuFsi.png" group-title="Aida",Discovery  world
-http://89.105.221.127/Discovery/tracks-a1/mono.m3u8?token=test
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/mUgjGSz.png" group-title="Aida", TLC 
@@ -118,23 +108,17 @@ http://fl1.moveonjoy.com/FREE_FORM/index.m3u8
 #EXTINF:-1  tvg-name="FS1" tvg-id="Fox.Sports.1.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-1-us.png?raw=true" group-title="Deportes Premium" radio="false",FS1
 http://fl1.moveonjoy.com/FOX_Sports_1/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/xaJ5Gv2.png" group-title="Aida",OWN
-http://fl1.moveonjoy.com/OWN/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/RrfFVIc.png" group-title="Aida",HOME
 https://all3media-homes-under-the-hammer-1-au.samsung.wurl.tv/3000.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/jTbcv3o.png" group-title="Aida",DIY
-http://fl1.moveonjoy.com/DIY/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/gz38H7m.png" group-title="Aida",Lifetime Movies
-https://fl61.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/vuwR4IA.png" group-title="Aida",GAME SHOW NETWORK
 https://a-cdn.klowdtv.com/live2/gsn_720p/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/EsuMr8F.png" group-title="Aida",COZI 
-https://fl1.moveonjoy.com/COZI_TV/index.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/yMiiFXr.png" group-title="Aida",DIY
+https://list.iptvcat.com/my_list/s/282fbc84e5a8b371866bff0dfb39e021.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/SE6yqrf.png" group-title="Aida",SHOWTIME WOMEN
 https://fl31.moveonjoy.com/SHOWTIME_WOMEN/tracks-v1a1/mono.ts.m3u8
@@ -149,23 +133,11 @@ https://magnolia-cinelife.amagi.tv/playlist.m3u8
 https://trace-sportstars-tcl.amagi.tv/playlist.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://imgur.com/wXVC8Qr.png" group-title="Aida",HALLMARK CHANNEL
-https://fl1.moveonjoy.com/HALLMARK_CHANNEL/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/adE6mlm.png" group-title="Aida",DISNEY JR
-https://fl1.moveonjoy.com/DISNEY_JR/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/dP7yu9k.png" group-title="Aida",DISNEY XD
-http://fl1.moveonjoy.com/DISNEY_XD/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/anHZIhe.png" group-title="Aida",NICKELODEON
 http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/dd1RBCM.png" group-title="Aida",NICK JR
-https://fl1.moveonjoy.com/NICK_JR/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/1Xs9XXS.png" group-title="Aida",NICK
-http://38.199.6.1:17001/play/a0pb/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/eCXFGIB.png" group-title="Aida",KITCHEN
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4us/medhigh.m3u8
