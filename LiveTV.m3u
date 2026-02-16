@@ -1,5 +1,12 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/undefined.png" group-title="A-NBC", NBC Live
+https://live.field59.com/wlio/wlio1/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/8uli8I8.png" group-title="A-NBC", Univision
+https://streaming-live-fcdn.api.prd.univisionnow.com/wltv/wltv.isml/hls/wltv-audio_eng=128000-video=2500000.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://imgur.com/AkQq9T2.png" group-title="A Dominicano",Color Vision 9
 https://cdn0.360playvid.com/CHVIDIDmlof43uvsr1a15yo5th/hls/mid.m3u8
 
