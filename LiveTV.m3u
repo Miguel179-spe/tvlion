@@ -1,5 +1,9 @@
 #EXTM3U
 
+
+#EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://imgur.com/mzbRDlN.png" group-title="Retro",Boomerang  
+http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/KI13adS.png" group-title="Retro",Best clasicos tv
 https://acceso.mediosdecostarica.com:3873/stream/play.m3u8
 
