@@ -1,5 +1,16 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/85fLKgr.png" group-title="Retro", Dreiko TV
+https://rtv.fullhd-streaming.com:19360/dreikotv/dreikotv.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/JBmBW0T.png" group-title="Retro", Tv Retro palmares
+https://live20.bozztv.com/akamaissh101/ssh101/tvretropalm2020/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/X7NjV7d.png" group-title="Retro", Retro tv
+https://live20.bozztv.com/akamaissh101/ssh101/retrotvcr2025/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/eufRF9F.png" group-title="Retro", Costa rica Channel
+https://video0.rogohosting.com:19360/8006/8006.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/undefined.png" group-title="A-NBC", NBC Live
 https://live.field59.com/wlio/wlio1/playlist.m3u8
 
