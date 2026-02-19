@@ -19,7 +19,7 @@ https://streaming-live-fcdn.api.prd.univisionnow.com/wltv/wltv.isml/hls/wltv.m3u
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/AkQq9T2.png" group-title="A Dominicano",Color Vision 9
-https://cdn0.360playvid.com/CHVIDIDmlof43uvsr1a15yo5th/hls/mid.m3u8
+https://live.eu-north-1b.cf.dmcdn.net/sec2(f5ZqPIzWMzqDOCEC0pwjgnGlslE-wu_dxoTaA9Y8Ofar6M9gtkheOMXOgiKZeJIWkiJ63iO4ynY5YJWGkXEKku4EJvJ9JsFCIBxtRtou0OBHNyZgVufM5z8ydVWCF3_n)/dm/3/x7gy059/d/live-720.m3u8
 
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://imgur.com/mzbRDlN.png" group-title="Retro",Boomerang  
 http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8
