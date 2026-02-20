@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://i.imgur.com/vNfjW6Y.png" group-title="Retro",Memorias TV Film (720p)
+https://video.xtrematv.com:3725/live/memoriasfilmlive.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/85fLKgr.png" group-title="Retro", Dreiko TV
 https://rtv.fullhd-streaming.com:19360/dreikotv/dreikotv.m3u8
 
