@@ -1,20 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",MLB
-http://cord-cutter.net:8080/live/5uWnY2/585054/263159.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",MLB
-http://cord-cutter.net:8080/live/5uWnY2/585054/263157.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",MLB
-http://cord-cutter.net:8080/live/5uWnY2/585054/263156.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",MLB
-http://cord-cutter.net:8080/live/5uWnY2/585054/263155.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",MLB
-http://cord-cutter.net:8080/live/5uWnY2/585054/263154.m3u8
-
-
 
 #EXTINF:-1 tvg-logo="https://imgur.com/1fx0RCE.png" group-title="A Dominicano",Digital 15
 http://190.122.104.210:5080/LiveApp/streams/Di15.m3u8?checkedby:iptvcat.com
