@@ -193,9 +193,6 @@ http://200.125.170.122:8000/play/a03j/index.m3u8
  #EXTINF:-1 tvg-logo="https://imgur.com/Amji3H2.png" group-title="A Dominicano",Telesistema 11
   http://200.125.170.122:8000/play/a0ci/index.m3u8
 
-#EXTINF:-1  tvg-name="FOX (WFLX)" tvg-id="FOX.(WFLX).West.Palm.Beach,.FL.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-us.png?raw=true" group-title="Deportes Premium" radio="false",FOX (WFLX)
-http://fl1.moveonjoy.com/FL_West_Palm_Beach_FOX/index.m3u8
-
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/RrfFVIc.png" group-title="Aida",HOME
