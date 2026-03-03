@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/B5ZHTlc.png" group-title="Retro",siembra tv
+https://cloud2.streaminglivehd.com:1936/siembratv/siembratv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/jGAjG9O.png" group-title="Deportes Premium",Claro Sports
 https://dai.google.com/linear/hls/event/yINISWAPQ0CPhPixe-40wQ/master.m3u8
 
