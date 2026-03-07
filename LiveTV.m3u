@@ -1,4 +1,38 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (KDEN) Parker 
+http://cord-cutter.net:8080/live/5uWnY2/585054/120665.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (WSNS) Chicago 
+http://cord-cutter.net:8080/live/5uWnY2/585054/120691.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (KUTU) Tulsa 
+http://cord-cutter.net:8080/live/5uWnY2/585054/120768.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (WZDC( Leesburg (H)
+http://cord-cutter.net:8080/live/5uWnY2/585054/120833.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo 31 (WTMO) Orlando 
+http://cord-cutter.net:8080/live/5uWnY2/585054/139149.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jeLimFu.png" group-title="TELEMUNDO",Ad TELEMUNDO 51 MIAMI HD
+http://cord-cutter.net:8080/live/5uWnY2/585054/56410.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO", Ad TELEMONDO (Puerto Rico)
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jeLimFu.png" group-title="A Dominicano",Ad TELEMUNDO 51 MIAMI HD
+http://cord-cutter.net:8080/live/5uWnY2/585054/56410.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/DVASpQj.png" group-title="A Dominicano", Ad TELEMONDO (Puerto Rico)
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
+
+
+
 #EXTINF:-1 tvg-logo="https://imgur.com/B5ZHTlc.png" group-title="Retro",siembra tv
 https://cloud2.streaminglivehd.com:1936/siembratv/siembratv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/jGAjG9O.png" group-title="Deportes Premium",Claro Sports
