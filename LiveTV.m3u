@@ -2,6 +2,9 @@
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (KDEN) Parker 
 http://cord-cutter.net:8080/live/5uWnY2/585054/120665.m3u8
 
+#EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",vtv 32 en vivo 
+https://live-nyc-01.debacker.tech/live/vtv-livestream.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (WSNS) Chicago 
 http://cord-cutter.net:8080/live/5uWnY2/585054/120691.m3u8
 
