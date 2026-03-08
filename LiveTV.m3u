@@ -11,6 +11,9 @@ https://edge.livestreaminggroup.info/vtv32live/tracks-v1/index.fmp4.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",Teleantillas 
 http://200.125.170.122:8000/play/a0cg/index.m3u8
 
+#EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="Juego en vivo",VTV Canal 32 (1080p)
+https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (WSNS) Chicago 
 http://cord-cutter.net:8080/live/5uWnY2/585054/120691.m3u8
 
