@@ -1,4 +1,22 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",BeiN Sports Extra
+https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",Redbull TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",Turkmenistan Sport 🇹🇲
+https://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",REAL MADRID TV 🇪🇸
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",BEIN SPORT EXTRA Ñ 🇪🇸
+https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="A dominicana", TELECOSTA 🇬🇹
+https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8
+
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="A Premium", AXN
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch4.playlist.m3u8
 
