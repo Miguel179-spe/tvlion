@@ -1,4 +1,33 @@
 #EXTM3U
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",TNT SPORTS 
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch26.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",America Sporrts 
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch32.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",ESPN 4
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch16.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",FOX SPORTS 
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch30.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",FOX SPORTS 2
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch31.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",ESPN PREMIUM
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch42.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",ESPN 2
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch9.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",ESPN
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch29.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/9aZNg2J.png" group-title="Deportes Premium",FOX SPORTS 2
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch2.playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (KDEN) Parker 
 http://cord-cutter.net:8080/live/5uWnY2/585054/120665.m3u8
 
