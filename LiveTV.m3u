@@ -83,13 +83,16 @@ https://live-nyc-01.debacker.tech/live/vtv-livestream.m3u8
 https://live-nyc-01.debacker.tech/live/vtv-livestream.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",vtv 32 en vivo 
-https://edge.livestreaminggroup.info/vtv32live/tracks-v1/index.fmp4.m3u8
+https://stream.castr.com/68ae41b8990a3c28956d9a41/live_7b6c7bc0183011f184a7c1ddbce6fafb/rewind-3600.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",vtv 32 en vivo 
 https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",Teleantillas 
-http://200.125.170.122:8000/play/a0cg/index.m3u8
+https://dbt-live-nyc-01.b-cdn.net/live/vtv-livestream.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",Teleantillas 
+https://edge.livestreaminggroup.info/vtv32live/index.fmp4.m3u8
 
 #EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="Juego en vivo ",VTV Canal 32 (1080p)
 https://live-nyc-01.debacker.tech/live/vtv-livestream.m3u8
