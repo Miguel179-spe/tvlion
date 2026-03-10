@@ -858,7 +858,7 @@ https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",Digital809 TV 🇩🇴
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",Ecos Canal 57 🇩🇴
-https://2-fss-1.streamhoster.com/pl_122/206532-5753032-1/playlist.m3u8
+https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",Ecovisión 🇩🇴
 https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",El Pituco TV 🇩🇴
@@ -1167,31 +1167,31 @@ https://627bb251f23c7.streamlock.net:444/CDMInternacional/CDMInternacional/playl
 https://stream.nuevavidafm.net:3937/live/nuevavidalive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/B7lqYZe.png" group-title="Puerto Rico",WDWL-DT1 (Teleadoración/Enlace PR) (720p)
 https://67acccf130420.streamlock.net/enlacepr1/enlacepr1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",TV Canal Sur HD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",TV Canal Sur HD 🇩🇴
 https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",Telenews TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",Telenews TV 🇩🇴
 https://hilandofinotv.essastream.com:3480/live/telenewscanallive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",TV Quisqueya
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",TV Quisqueya 🇩🇴
 https://cloud5.livescast.com:19360/canaltvquisqueya/canaltvquisqueya.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",TV Éxitos
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P21oiFj.png" group-title="A Dominicano",TV Éxitos 🇩🇴
 https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/06fH3N0.png" group-title="A Dominicano",Tv Santa Cruz
+#EXTINF:-1 tvg-logo="https://imgur.com/06fH3N0.png" group-title="A Dominicano",Tv Santa Cruz 🇩🇴
 https://viewhn.com/tv_santacruz/to57RfaoTlDsrdbp/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/46JAVDA.png" group-title="A Dominicano",Television del este
+#EXTINF:-1 tvg-logo="https://imgur.com/46JAVDA.png" group-title="A Dominicano",Television del este 🇩🇴
 https://mlb.essastream.com:8081/televisiondeleste/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/undefined.png" group-title="A Dominicano",Entérate RD
+#EXTINF:-1 tvg-logo="https://imgur.com/undefined.png" group-title="A Dominicano",Entérate RD 🇩🇴
 https://5790d294af2dc.streamlock.net/enteraterd/enteraterd/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/KNZISUU.png" group-title="A Dominicano",Canal Sur RD
+#EXTINF:-1 tvg-logo="https://imgur.com/KNZISUU.png" group-title="A Dominicano",Canal Sur RD 🇩🇴
 https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/pWKxVAI.png" group-title="A Dominicano",TV Hispanic
+#EXTINF:-1 tvg-logo="https://imgur.com/pWKxVAI.png" group-title="A Dominicano",TV Hispanic 🇩🇴
 https://livetv.305streamhd.com:3504/live/tvhispaniclive.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/53U5aVT.png" group-title="A Dominicano",RDN TV
+#EXTINF:-1 tvg-logo="https://imgur.com/53U5aVT.png" group-title="A Dominicano",RDN TV 🇩🇴
 https://mlb.essastream.com:8081/rdntv/index.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/NIyY5cX.png" group-title="A Dominicano",MUN2 TV
+#EXTINF:-1 tvg-logo="https://imgur.com/NIyY5cX.png" group-title="A Dominicano",MUN2 TV 🇩🇴
 https://mlb.essastream.com:8081/mun2tv/index.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/Z8bwsMa.png" group-title="A Dominicano",Telecontacto (Santiago)
+#EXTINF:-1 tvg-logo="https://imgur.com/Z8bwsMa.png" group-title="A Dominicano",Telecontacto (Santiago) 🇩🇴
 https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/VxZdgfm.png" group-title="A Dominicano",Canal Regional 8060
+#EXTINF:-1 tvg-logo="https://imgur.com/VxZdgfm.png" group-title="A Dominicano",Canal Regional 8060 🇩🇴
 https://5790d294af2dc.streamlock.net/8060/8060/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/ttfUoMO.png" group-title="Canales Premium",Cine de Accion
 https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
@@ -1693,41 +1693,41 @@ https://daiconnect.com/live/hls/tvup/rk-elpais/.m3u8?ads_amznbrmid=&ads_amznregi
 https://amg00106-amg00106c1-rakuten-uk-4654.playouts.now.amagi.tv/playlist/amg00106-france24fast-france24-rakutenuk/playlist.m3u8?ads_amagi_channel=938&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_classification=7&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_market=es&ads_os_language=&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_rtv_content_id=6311&ads_rtv_content_language=eng&ads_rtvid=271859&ads_streaming_id=a665c407-0166-4f3b-bbbc-9f1884812ab9&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
 #EXTINF:-1 tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/66f04592-6574-4afa-8ad4-06b8e5387d47.jpeg" group-title="Rakuten",The Guardian
 https://the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6437/master.m3u8?ads.Rakuten+TV+EU_channel=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_classification=16&ads.content_url=rakutentv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=ppid&ads.market=es&ads.os_language=&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.rtv_channel_name=the-guardian-3d0e32e7-aa40-49e5-b9d9-c433151fa61a_es&ads.rtv_content_id=6438&ads.rtv_content_language=eng&ads.rtv_language=eng&ads.rtvid=271859&ads.streaming_id=dd248ef6-7ee9-4637-8e31-fc7706edef4e&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6438&publishing_platform_id=5
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: AZTECA INTERNACIONAL
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",AZTECA INTERNACIONAL 🇩🇴
 https://azt-mun.otteravision.com/azt/mun/mun.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: IMAGEN TV+
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",IMAGEN TV+ 🇩🇴
 https://igd-it-runtime.otteravision.com/igd/it/it_720.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MULTIMEDIOS CDMX
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MULTIMEDIOS CDMX 🇩🇴
 https://mdstrm.com/live-stream-playlist/5f2d9d6ff17144074bd8a284.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MULTIMEDIOS MTY
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MULTIMEDIOS MTY 🇩🇴
 https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MULTIMEDIOS LAGUNA
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano", MULTIMEDIOS LAGUNA 🇩🇴
 https://mdstrm.com/live-stream-playlist/57bf686a61ff39e1085d43e1.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MULTIMEDIOS GDL
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano", MULTIMEDIOS GDL 🇩🇴
 https://mdstrm.com/live-stream-playlist/5c54d38ca392a5119bb0aa0d.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: ADN 40
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano", ADN 40 🇩🇴
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MILENIO
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano", MILENIO 🇩🇴
 https://mdstrm.com/live-stream-playlist/610178c7db32a4112d994650.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MARIA VISION
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano", MARIA VISION 🇩🇴
 https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MX: MVS
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",MVS 🇩🇴
 https://dish.akamaized.net/Content/HLS_HLS_CLR/Live/channel(mvs)/variant.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",US: CNN
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",US: CNN 🇩🇴
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",US: AL JAZEERA EN
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",US: AL JAZEERA EN 🇩🇴
 https://live-hls-web-aje-fa.getaj.net/AJE/03.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",VE: VPI TV
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",VE: VPI TV 🇩🇴
 https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",TAB: TV UJAT
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",TAB: TV UJAT 🇩🇴
 https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",VER: RTV  VERACRUZ
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",VER: RTV  VERACRUZ 🇩🇴
 https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",YUC: SIPSE
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",YUC: SIPSE 🇩🇴
 https://webprod.sipse.com.mx:8080/show/merida.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/ZlDCi4u.png" group-title="A Dominicano",LATIN POP
+#EXTINF:-1 tvg-logo="https://imgur.com/ZlDCi4u.png" group-title="A Dominicano",LATIN POP 🇩🇴
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",ROMANCE LATINO
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",ROMANCE LATINO 🇩🇴
 https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" group-title="Futbol" SCTV 22 - SSPORT 1 🇻🇳
 https://liveh34.vtvprime.vn/hls/SCTV22/03.m3u8
@@ -3566,7 +3566,7 @@ https://soportedvb.click:3620/live/deultimominutomedialive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/NKdV8b1.png" group-title="A Dominicano",Digital809 TV SD 🇩🇴
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/ccFwraQ.png" group-title="A Dominicano",Ecos Canal 57 HD 🇩🇴
-https://2-fss-1.streamhoster.com/pl_122/206532-5753032-1/playlist.m3u8
+https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/xFCjtqn.png" group-title="A Dominicano",Ecovision SD 🇩🇴
 https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3610-294x165-FFFFFF.jpg" group-title="A Dominicano",Edu+ TV HD 🇩🇴
