@@ -20,25 +20,33 @@ https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (KDEN) Parker 
 http://cord-cutter.net:8080/live/5uWnY2/585054/120665.m3u8
 
-https://live-nyc-01.debacker.tech/live/vtv-livestream.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",Coral 39 
+https://986244.gvideo.io/mpegts/986244_4049034/media_mpegts_0.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",vtv 32 en vivo 
-https://live-nyc-01.debacker.tech/live/vtv-livestream.m3u8
+https://dbt-mtx-01.b-cdn.net/stream/index.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",vtv 32 en vivo 
 https://stream.castr.com/68ae41b8990a3c28956d9a41/live_7b6c7bc0183011f184a7c1ddbce6fafb/rewind-3600.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",vtv 32 en vivo 
-https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
+https://dbt-gcore-video-cdn.b-cdn.net/mpegts/986244_4049034/master_mpegts.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",Teleantillas 
-https://dbt-mtx-01.b-cdn.net/stream/index.m3u8
+https://dbt-gcore-video-cdn.b-cdn.net/mpegts/986244_4049034/master_mpegts.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Juego en vivo ",Teleantillas 
-https://edge.livestreaminggroup.info/vtv32live/index.fmp4.m3u8
+https://stream.castr.com/68ae41b8990a3c28956d9a41/live_c6405f401c6811f1bd7c1b498b2eeefd/index.fmp4.m3u8
 
 #EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="Juego en vivo ",VTV Canal 32 (1080p)
-https://edge.livestreaminggroup.info/vtv32live/index.fmp4.m3u8
+https://dbt-gcore-video-cdn.b-cdn.net/mpegts/986244_4049034/master_mpegts.m3u8
+
+#EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="Juego en vivo ",VTV Canal 32 (1080p)
+https://986244.gvideo.io/mpegts/986244_4049034/media_mpegts_0.m3u8
+
+#EXTINF:-1 tvg-id="VTVCanal32.do@SD" tvg-logo="https://i.imgur.com/qjm4B0J.png" group-title="Juego en vivo ",VTV Canal 32 (1080p)
+https://dbt-gcore-video-cdn.b-cdn.net/mpegts/986244_4049034/master_mpegts.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (WSNS) Chicago 
 http://cord-cutter.net:8080/live/5uWnY2/585054/120691.m3u8
