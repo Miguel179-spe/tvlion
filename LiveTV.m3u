@@ -16,7 +16,7 @@ https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 
 
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="A Premium", AXN
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch4.playlist.m3u8
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5106
 
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="A Premium",UNIVERSAL
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch10.playlist.m3u8
