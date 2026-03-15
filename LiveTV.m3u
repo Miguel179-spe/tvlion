@@ -15,6 +15,8 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 
 
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/LgHKKUz.png" group-title="Deportes Premium",F1
+http://cord-cutter.net:8080/live/5uWnY2/585054/125947.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/sBgUdlI.png" group-title="TELEMUNDO",US Telemundo (KDEN) Parker 
