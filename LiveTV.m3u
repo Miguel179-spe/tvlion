@@ -1,13 +1,5 @@
 #EXTM3U
 
-
-
-
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-ALLOW-CACHE:YES
-#EXT-X-MEDIA-SEQUENCE:131
-#EXT-X-TARGETDURATION:5
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", 01010
 http://23.94.190.230:12341/live/cyx_DA442D95A726FA05_480p.m3u8
 
