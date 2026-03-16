@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="NBA" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/National_Basketball_Association_logo.svg/105px-National_Basketball_Association_logo.svg.png" group-title="Deportes Premium",NBA TV 🏀
+http://167.160.160.116:33476/live/cyx-NBATEAM10.m3u8
+
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",BeiN Sports Extra
 https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8
 
