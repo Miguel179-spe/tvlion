@@ -1,6 +1,9 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", Claro spor 2
+http://45.5.119.43:4000/play/a0kz/30575439.m3u8
+
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN
 http://cord-cutter.net:8080/live/5uWnY2/585054/66372.m3u8
 
