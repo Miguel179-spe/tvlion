@@ -1,6 +1,8 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN
+http://38.49.128.38:8000/play/a091/index.m3u8
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN 3
 http://38.49.128.38:8000/play/a0c3/index.m3u8
 
