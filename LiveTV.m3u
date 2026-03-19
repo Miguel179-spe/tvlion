@@ -1,4 +1,20 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN NEWS
+http://cord-cutter.net:8080/live/5uWnY2/585054/17707.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",ESPN SEC Network 
+http://cord-cutter.net:8080/live/5uWnY2/585054/17608.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",US ESPN 2 
+http://cord-cutter.net:8080/live/5uWnY2/585054/2210.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN 1 (HD) 
+http://cord-cutter.net:8080/live/5uWnY2/585054/14197.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN 1 (HD) 
+http://cord-cutter.net:8080/live/5uWnY2/585054/9802.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPNU College Sports 
+http://cord-cutter.net:8080/live/5uWnY2/585054/10255.m3u8
+
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",TUDN 
 http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/285794.m3u8
 
@@ -13,8 +29,6 @@ http://45.5.119.43:4000/play/a0kz/30575439.m3u8
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN
 http://cord-cutter.net:8080/live/5uWnY2/585054/66372.m3u8
 
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium", ESPN 2
-http://45.5.119.43:4000/play/a053/53227339.m3u8
 
 
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="Deportes Premium",BeiN Sports Extra
