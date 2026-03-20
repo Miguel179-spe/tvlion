@@ -1,4 +1,9 @@
 #EXTM3U
+
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/9tiG82Z.png" group-title="Deportes Premium",ITV Deportes
+https://thm-it-roku.otteravision.com/thm/it/it.m3u8
+
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/Ww2RING.png" group-title="Deportes Premium",NBC Sports
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
 
@@ -159,6 +164,58 @@ https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m
 
 
 
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",My Time Movie Network
+https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Aurora Media Films
+https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Cine Nanar
+https://zylo-cinenanar-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Cine 01
+https://amg00711-zylo-amg00711c8-rakuten-uk-2686.playouts.now.amagi.tv/playlist/amg00711-zylofast-cinewestern-rakutenuk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Cine
+https://live-fi.tvkaista.net/hero/live.m3u8?hd=true
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",EmotionL
+https://cinehls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Sony One Favoris
+https://49d735318d6b4c30a24a7997ea594e1b.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-820-FR-SONYONEFAVORIS-LG_FR/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Sony One HitsActionFavoris
+https://5098a8b860504a3690fd2e7c0a18d68f.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-817-FR-SONYONEHITSACTION-LG_FR/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Sony One Hits Comedie
+https://7aa9671895264ec9a384dfed1b992171.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-818-FR-SONYONEHITSCOMDIE-LG_FR/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Borea
+https://mlb.essastream.com:8081/borealtelevision/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas", Mega Cine TV
+https://mlb.essastream.com:8081/megacinetv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas", cine 02
+https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
+
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas", MCI Television
+https://video.ejeserver.com/live/mcitelevision.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Xtrema Accion
+https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",CTB Perth Movies Channe
+https://movies.ctbperth.net.au/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",NextHD
+https://live.enhdtv.com:19360/nexthd/nexthd.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Kuria kos Cine
+https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/B5ZHTlc.png" group-title="Retro",siembra tv
 https://cloud2.streaminglivehd.com:1936/siembratv/siembratv/playlist.m3u8
