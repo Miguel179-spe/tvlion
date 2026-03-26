@@ -1,5 +1,39 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB ON ESPN
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5189.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5187.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5184.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5182.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5175.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5172.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5165.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5162.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5161.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5158.m3u8
+
+#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5188.m3u8
+
+
 
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/zZ4GD51.png" group-title="Retro",Antena seis tv
 https://video1.azulstream.com:8081/antenaseistv/tracks-v1a1/mono.m3u8 
