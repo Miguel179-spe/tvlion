@@ -1,4 +1,22 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",Arizona Diamondbacks
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch31.playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch42.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch9.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",FOBOL TACTICO
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch9.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch29.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",FOR SPORT
+http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch2.playlist.m3u8
 
 #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB ON ESPN
 http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5189.m3u8
