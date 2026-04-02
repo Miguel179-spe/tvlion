@@ -1,4 +1,12 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/ODbWjcp.png" group-title="A Domincano",Color Visión
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/268369.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/XeNbPr1.png" group-title="A Domincano",Tele Antillas
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/268396.m3u8
+
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Animal Planet  FREE3
 http://23.237.104.106:8080/USA_ANIMAL_PLANET/index.m3u8
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Cartoon Network  FREE3
