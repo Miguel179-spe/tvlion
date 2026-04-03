@@ -3,8 +3,8 @@
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/ODbWjcp.png" group-title="A Dominicano",Color Visión
 http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/268369.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/ODbWjcp.png" group-title="A Dominicano",Telecentro 
-https://live4.telemicro.com.do/live/telecentrocast_1080p/playlist.m3u8 
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/pIAGiA4.png" group-title="A Dominicano",Telecentro 
+http://190.122.104.210:5080/LiveApp/streams/tcentro.m3u8
 
 
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/XeNbPr1.png" group-title="A Dominicano",Tele Antillas
