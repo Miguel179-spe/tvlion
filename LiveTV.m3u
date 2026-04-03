@@ -5,11 +5,9 @@ http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/268369.m3u8
 
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/pIAGiA4.png" group-title="A Dominicano",Telecentro 
 http://190.122.104.210:5080/LiveApp/streams/tcentro.m3u8
+tele
 
-#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="General",Tele Antillas (480p)
-https://www.youtube.com/live/KqIfsb9Dz6o?si=1AEattnLjP_BAzXO
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/XeNbPr1.png" group-title="A Dominicano",Tele Antillas
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/XeNbPr1.png" group-title="A Dominicano",TeleAntillas
 http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/268396.m3u8
 
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Animal Planet  FREE3
