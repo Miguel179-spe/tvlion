@@ -1,5 +1,27 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN 3
+http://45.5.119.43:4000/play/a054/63367621.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",TUDN
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/285794.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",FOX 3
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/108791.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",FOX 2
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/108727.m3u8
+
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",FOX 1
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/108726.m3u8
+
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN 2
+http://45.5.119.43:4000/play/a053/51971217.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN 1
+http://45.5.119.43:4000/play/a052/38966606.m3u8
 
 #EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium",SPACE
 http://45.5.119.43:4000/play/a0iz/77306175.m3u8
