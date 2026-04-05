@@ -1,5 +1,46 @@
 #EXTM3U
 
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium",SPACE
+http://45.5.119.43:4000/play/a0iz/77306175.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium",HBO FAMILY
+http://45.5.119.43:4000/play/a0l5/20303401.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", HBO XTREME
+http://45.5.119.43:4000/play/a0l6/34005969.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", HBO + 
+http://45.5.119.43:4000/play/a0l4/63441677.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", HBO 2
+http://45.5.119.43:4000/play/a00c/53893085.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", PREMIER
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/60241.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", PREMIER 1
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/60240.m3u8
+
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium",GEDGE
+http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/284606.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", GOLDEN
+http://45.5.119.43:4000/play/a0jv/91822651.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", CINE LATINO
+http://45.5.119.43:4000/play/a0ik/16224998.m3u8
+
+	
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", ID
+http://45.5.119.43:4000/play/a05n/25333329.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", WARNER 
+http://45.5.119.43:4000/play/a0ho/76142474.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="A Premium", SONY CHANEL 
+http://45.5.119.43:4000/play/a0hp/71272154.m3u8
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/ODbWjcp.png" group-title="A Dominicano",Color Visión
 http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/268369.m3u8
 
