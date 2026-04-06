@@ -1,4 +1,65 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Atlanta Hawks
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5092.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Boston Celtics
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5093.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Charlotte Hornets
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5095.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Chicago Bulls
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5096.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Cleveland Cavaliers
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5097.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Dallas Mavericks
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5098.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Detroit Pistons
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5100.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Los Angeles Lakers
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5105.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Memphis Grizzlies
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5106.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Miami Heat
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5107.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Milwaukee Bucks
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5108.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Minnesota Timberwolves
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5109.m3u8
+
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", New Orleans Pelicans
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5110.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Orlando Magic
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5113.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Philadelphia 76ers
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5114.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Phoenix Suns
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5115.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Portland Trail Blazers
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5116.m3u8
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Sacramento Kings
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5117.m3u8 
+
+#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Toronto Raptors
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5119.m3u8
 
 #EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN 3
 http://45.5.119.43:4000/play/a054/63367621.m3u8
