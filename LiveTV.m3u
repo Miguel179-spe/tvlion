@@ -699,26 +699,36 @@ https://stmv.webtvninjas.com.br/xtremetv54/xtremetv54/chunklist_w1488161700.m3u8
 https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1770063620/ei/pLKAafukHtSY0_wPmdfZ4AI/ip/186.6.161.240/id/eE1L08hNdW8.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51691027/txs/51691027%2C51691028/hfr/1/playlist_duration/30/manifest_duration/30/demuxed/1/maudio/1/gcr/do/bui/AW-iu_rKCC1AeLyE9FdMt_eTqMVy8kGOm5_7A-0UEyWUipYIS2ugyCCwPsJIPx_k4ESxz7Djj1jgk1oZ/spc/q5xjPOa18Q3GV-npV-QGbCvZML5b4p8mFlOSwbrT2enpVLE1OECl6G7fqz5HiA/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51552689%2C51565115%2C51565682%2C51580968/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJEij0EwRAIgBbz5ZS8Q8mn4DB4tdaIqyUWU0VpKuzmYjO5moRO1OBQCIDkH51ByUxlEDWUD1gWkSQQo9tMxcG6G4KWedb4MUZmV/file/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/aBZTSmY.png" group-title="Niños",Youtube Live Stream 2
 https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1770063637/ei/tbKAafz_DMrvut0PoqilwAo/ip/186.6.161.240/id/w2sB87jLE1I.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51691027/txs/51691027%2C51691028/hfr/1/playlist_duration/30/manifest_duration/30/demuxed/1/maudio/1/gcr/do/bui/AW-iu_rBZgtSQF_VOf9aQviLgnaBSTvC5MqKoxL3rBU4ws4IudAmYtBSC54RCEIh128Z6Ds0BN8SBIgs/spc/q5xjPBY5CLqhzuH7itzNg4F7wM8w-Oh4smS9lj01UD4HUSgUi8-MpSFYCCMOJQ/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/51552689%2C51565115%2C51565682%2C51580968/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cdemuxed%2Cmaudio%2Cgcr%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJEij0EwRgIhAJaAk_eaoaRah0w4KiyMVR4FT3AlS3g3qNxoahw-1RgfAiEA_nn0HesGKUkjK_EYMx0KxP5kU0TAIJibxrK1k6b5LdE%3D/file/index.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/TiikrAA.png" group-title="Futbol",Azteca Mundo
-https://azt-mun.otteravision.com/azt/mun/mun_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/9sXoYND.png" group-title="Futbol",Real Madrid TV (Español)
+
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/TiikrAA.png" group-title="Futbol Premium",Azteca Mundo
+https://azt-mun.otteravision.com/azt/mun/mun_1080p.m3u8v
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/9sXoYND.png" group-title="Futbol Premium", Real Madrid TV (Español)
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/XzmN37K.png" group-title="Futbol",FIFA+ (Português)
-https://c2657533.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UGxleC1icl9GSUZBUGx1c1BvcnR1Z3Vlc2VfSExT/ba65e408-3b05-431c-b8c2-d55206a6c3c6/5.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/6dO9VZR.png" group-title="Futbol",FC Barcelona TV (English)
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/6dO9VZR.png" group-title="Futbol Premium",Barcelona TV
 https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/XzmN37K.png" group-title="Futbol",FIFA+ (Español)
-https://d63fabad.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/a95275b0-b7f5-494c-88f1-6ff21176f568/2.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/k3cfB20.png" group-title="Futbol",Next Sports
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/k3cfB20.png" group-title="Futbol Premium",Next Sports
 https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/2D6gvbx.png" group-title="Futbol",Fama TV
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/2D6gvbx.png" group-title="Futbol Premium",Fama TV
 https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/XzmN37K.png" group-title="Futbol",FIFA+ (English)
-https://a62dad94.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/6eb986f4-cbce-444e-98cd-a3c97c46c211/2.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/5CUFMeb.png" group-title="Futbol",RS Sports 4
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/5CUFMeb.png" group-title="Futbol Premium",RS Sports 4
 https://video03.logicahost.com.br/rssports4/rssports4/chunklist_w1285146308.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/YNQR9QT.png" group-title="Futbol",Live Stream
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/YNQR9QT.png" group-title="Futbol Premium",Live Stream
 https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/chunklist.m3u8
+
+
+
+
+
+
+
+
 #EXTINF:-1 tvg-logo="https://imgur.com/1VNfeLT.png" group-title="Novelas",Canela TV
 https://spt-novelas-1-us.canelatv.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/r5jopb9.png" group-title="Novelas",Pasion Turca
@@ -2099,26 +2109,56 @@ https://webprod.sipse.com.mx:8080/show/merida.m3u8
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="A Dominicano",ROMANCE LATINO 🇩🇴
 https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" group-title="Futbol" SCTV 22 - SSPORT 1 🇻🇳
-https://liveh34.vtvprime.vn/hls/SCTV22/03.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" group-title="Futbol" IDMANTV 🇹🇷
-https://str2.yodacdn.net/idman_300_to_small/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Bein sports 1 ENG 🇬🇧
-https://tiger-hub.vercel.app/Bein-sports_1_ENG/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Матч! 🇷🇺
-https://32tech0steam0dp01.org/test/matchtv/chunks.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" Azteca Deportes 🇲🇽
-https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65cf60d166eec80008724e6flivestitch/master.m3u8?advertisingId=channel&appName=rokuchannel
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" FOX 🇲🇽
-https://live-manifest.production-public.tubi.io/live/35557bb9-7c94-40ea-85f7-c94d852f8374/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" REAL MADRID TV 🇪🇸
-https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" BEIN SPORT EXTRA Ñ 🇪🇸
-https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" AYM SPORT 🇺🇸
-https://aym-as.otteravision.com/aym/as/as_720p_high.m3u8
-#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Futbol",group-title="Futbol" HT SPOR 🇹🇷
-https://ciner-live.ercdn.net/htspor/htspor_1080p.m3u8
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/uohGmlb.png" group-title="Futbol Premium",Azteca Deportes
+https://azt-mun.otteravision.com/azt/mun/mun.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://imgur.com/M3stbns.png" group-title="Futbol Premium",Real Madrid TV
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",Canela Deportes
+https://amg00658-amg00658c10-canelatv-international-7279.playouts.now.amagi.tv/playlist/amg00658-canelamediafast-deporteslt-canelatvinternational/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",FIFA Plus 
+https://c2657533.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UGxleC1icl9GSUZBUGx1c1BvcnR1Z3Vlc2VfSExT/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",Barça TV 
+https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",FIFA Plus
+https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",N Sports
+https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",CnAr Desportes 
+https://stmv6.voxtvhd.com.br/cnardeportes/cnardeportes/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",RS News Sports 4
+https://video03.logicahost.com.br/rssports4/rssports4/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",Unique Sports 1
+https://pop.uniquetv.com.br/uniquesports1/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",Fama TV
+https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium", Inter 24/7
+https://amg27604-amg27604c1-amgplt0165.playout.now3.amagi.tv/playlist/amg27604-amg27604c1-amgplt0165/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",RS SPORTS
+https://video03.logicahost.com.br/rssports5/rssports5/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",RS News Sports 3
+https://video03.logicahost.com.br/rssports3/rssports3/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Futbol Premium",RS TV
+https://video03.logicahost.com.br/rstv/rstv/playlist.m3u8
+
+
+
+
+
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/acuCGF8.png" group-title="Kids",Roya Kids
 https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-logo="" group-title="Kids",Peniel Kids & Young (480p)
