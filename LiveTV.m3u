@@ -1,4 +1,14 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id=".do@SD" tvg-logo="https://imgur.com/3aevTZJ.png" group-title="Deportes",XFC TV
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2351
+
+#EXTINF:-1 tvg-id=".do@SD" tvg-logo="https://imgur.com/663AN89.png" group-title="Deportes",N Sports
+https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8
+
+#EXTINF:-1 tvg-id=".do@SD" tvg-logo="https://imgur.com/Jph9zpF.png" group-title="Deportes",TV Dubai Racing 
+https://cloudfront41.lexanetwork.com:1344/xrelay/loverseny2.sdp/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Atlanta Hawks
 http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5092.m3u8
 
