@@ -1,5 +1,12 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",PARAMOUNT
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/4811.m3u8
 
+#EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Paramount+
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5028.m3u8
+
+#EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",PARAMOUNT NETWORK ENG
+http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/4483.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ydoBp3b.png" group-title="Colombia""Religious",Avivamiento TV (1080p) [Not 24/7]
 https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8
