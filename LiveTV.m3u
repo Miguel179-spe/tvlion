@@ -3,11 +3,13 @@
 
 
 
-#EXTINF:-1,group-title="NBA",CA-NBA TV
+#EXTINF:-1tvg-logo=".png" group-title="NBA",CA-NBA TV
 http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
 
-#EXTINF:-1,group-title="NBA", USA: NBA TV
+#EXTINF:-1tvg-logo=".png" group-title="NBA", USA: NBA TV
 http://cord-cutter.net:8080/live/5uWnY2/585054/20073.m3u8
+
+
 
 
 
