@@ -1,4 +1,16 @@
 #EXTM3U
+
+
+
+
+#EXTINF:-1,group-title="NBA",CA-NBA TV
+http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
+
+#EXTINF:-1,group-title="NBA", USA: NBA TV
+http://cord-cutter.net:8080/live/5uWnY2/585054/20073.m3u8
+
+
+
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",PARAMOUNT
 http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/4811.m3u8
 
@@ -177,71 +189,10 @@ https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u
 #EXTINF:-1 tvg-id=".do@SD" tvg-logo="https://imgur.com/Jph9zpF.png" group-title="Deportes",TV Dubai Racing 
 https://cloudfront41.lexanetwork.com:1344/xrelay/loverseny2.sdp/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Atlanta Hawks
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5092.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Boston Celtics
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5093.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Charlotte Hornets
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5095.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Chicago Bulls
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5096.m3u8
-
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Cleveland Cavaliers
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5097.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Dallas Mavericks
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5098.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Detroit Pistons
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5100.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Los Angeles Lakers
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5105.m3u8
-
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Memphis Grizzlies
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5106.m3u8
-
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Miami Heat
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5107.m3u8
-
 
 #EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo=".png" group-title="Deportes Premium",TUDN
 http://cdn-abc.xyz:2086/CanalesVen/NF8sq6nCEq/285794.m3u8
 
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Milwaukee Bucks
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5108.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Minnesota Timberwolves
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5109.m3u8
-
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", New Orleans Pelicans
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5110.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Orlando Magic
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5113.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Philadelphia 76ers
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5114.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA",Phoenix Suns
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5115.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Portland Trail Blazers
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5116.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Sacramento Kings
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5117.m3u8 
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="NBA", Toronto Raptors
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5119.m3u8
 
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/ODbWjcp.png" group-title="A Dominicano",Color Visión
 http://190.122.104.210:5080/LiveApp/streams/cvision1.m3u8
@@ -328,8 +279,6 @@ https://stream.decentdoubts.net/803/index.m3u8?token=MnJPcXQ1NlRydE9iZ3BqYXNxMjJ
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Starz  FREE3
 http://23.237.104.106:8080/USA_STARZ/index.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo="https://imgur.com/IezjyEh.png" group-title="MLB",Arizona Diamondbacks
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch31.playlist.m3u8
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",TNT PREMIUM
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch26.playlist.m3u8
 
@@ -357,68 +306,6 @@ http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch29.playlis
 #EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",FOR SPORT
 http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch2.playlist.m3u8
 
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB ON ESPN
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5189.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Atlanta Braves
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5159.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",San Diego Padres
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5180.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Seattle Mariners
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5182.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",San Francisco Giants
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5181.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5187.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5184.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5182.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Milwaukee Brewers
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5173.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",New York Mets
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5175.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Oakland Athletics
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5177.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Miami Marlins
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5172.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Cleveland Guardians
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5165.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Chicago Cubs
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5162.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB", Boston Red Sox
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5161.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Cincinnati Reds
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5164.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Colorado Rockies
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5166.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5158.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",MLB
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5188.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Houston Astros
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5168.m3u8
-
-#EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Detroit Tigers
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5167.m3u8
 
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/icXDZdW.png" group-title="A Dominicano",Telemicro 5
 http://190.122.104.210:5080/LiveApp/streams/telemicrolocal5.m3u8
@@ -426,8 +313,6 @@ http://190.122.104.210:5080/LiveApp/streams/telemicrolocal5.m3u8
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/jnOb1Ad.png" group-title="A Dominicano",Digital 15
 http://190.122.104.210:5080/LiveApp/streams/Di15.m3u8
 
- #EXTINF:-1 tvg-id="SD" tvg-logo=".png" group-title="MLB",Philadelphia Phillies
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5178.m3u8
 
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/zZ4GD51.png" group-title="Retro",Antena seis tv
 https://video1.azulstream.com:8081/antenaseistv/tracks-v1a1/mono.m3u8 
