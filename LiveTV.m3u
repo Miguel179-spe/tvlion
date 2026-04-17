@@ -1,46 +1,21 @@
 #EXTM3U
+#EXTINF:-1tvg-logo=".png" group-title="MLB",MLB Guardians vs Orioles
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/195011.m3u8
 
-#EXTINF:-1tvg-logo=".png" group-title="MLB", D-backs VS Orioles
-http://cord-cutter.net:8080/live/5uWnY2/585054/21360.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="MLB",MLB Astros vs Rockies
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/195012.m3u8
 
-#EXTINF:-1tvg-logo=".png" group-title="MLB", D-backs VS Orioles (Orioles Feed ) @ 18:35
-http://cord-cutter.net:8080/live/5uWnY2/585054/266967.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="MLB",MLB Padres vs Mariners
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/195013.m3u8
 
-#EXTINF:-1tvg-logo=".png" group-title="MLB", D-backs VS Orioles (D-backs Feed ) @ 18:35
-http://cord-cutter.net:8080/live/5uWnY2/585054/266968.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="NBA", TV NBA (M)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/180838.m3u8
 
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Cubs VS Phillies (FS1 Feed ) @ 18:40
-http://cord-cutter.net:8080/live/5uWnY2/585054/266969.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="NBA",DEPORTES - NBA U (M)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/9598.m3u8
 
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Cubs VS Phillies (Cubs Feed ) @ 18:40
-http://cord-cutter.net:8080/live/5uWnY2/585054/266970.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Cubs VS Phillies (Phillies Feed ) @ 18:40
-http://cord-cutter.net:8080/live/5uWnY2/585054/266971.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Angels VS Yankees (Yankees Feed ) @ 19:05
-http://cord-cutter.net:8080/live/5uWnY2/585054/266972.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Red Sox VS Twins (Red Sox Feed ) @ 19:40
-http://cord-cutter.net:8080/live/5uWnY2/585054/266973.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Rangers VS Athletics (Athletics Feed ) @ 21:40
-http://cord-cutter.net:8080/live/5uWnY2/585054/266974.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Mets VS Dodgers (Mets Feed ) @ 22:10
-http://cord-cutter.net:8080/live/5uWnY2/585054/266976.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Mets VS Dodgers (Dodgers Feed ) @ 22:10
-http://cord-cutter.net:8080/live/5uWnY2/585054/266977.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Washington Nationals vs Pittsburgh Pirates @ 6:40 pm EDT
-http://cord-cutter.net:8080/live/5uWnY2/585054/266978.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="MLB", Miami Marlins vs Atlanta Braves @ 7:15 pm EDT
-http://cord-cutter.net:8080/live/5uWnY2/585054/266979.m3u8
-
-#EXTINF:-1tvg-logo=".png" group-title="NBA" USA Real MLB 15: Cleveland Guardians vs St. Louis Cardinals @ 7:45 pm EDT
-http://cord-cutter.net:8080/live/5uWnY2/585054/266980.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="A Dominiano", ad Telemundo - Orlando Florida (L)(1080)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/8365.m3u8
 
 #EXTINF:-1tvg-logo=".png" group-title="NBA",CA-NBA TV
 http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
