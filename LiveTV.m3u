@@ -292,32 +292,32 @@ https://stream.decentdoubts.net/803/index.m3u8?token=MnJPcXQ1NlRydE9iZ3BqYXNxMjJ
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Starz  FREE3
 http://23.237.104.106:8080/USA_STARZ/index.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",TNT PREMIUM
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch26.playlist.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",ESPN Premium ARG
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/9550.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",TNT SPORT
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch32.playlist.m3u8
+#EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="Deportes Premium",ESPN U  FREE3
+http://23.237.104.106:8080/USA_ESPNU/index.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN 4
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch16.playlist.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",ESPN Premium CL (Z)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/115016.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",FOX SPORT1 
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch30.playlist.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",Espn U (Z)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/179512.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",Fox Deportes (TV)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/9571.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",Espn Deportes (Z)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/179504.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch42.playlist.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",Espn 7 CH (Z)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/179519.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium",Espn 4 MX (Z)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/179502.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch9.playlist.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium", Espn 3 MEX (M)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/9536.m3u8
 
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",FOBOL TACTICO
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch9.playlist.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",ESPN
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch29.playlist.m3u8
-
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co@SD" tvg-logo=".png" group-title="Deportes Premium",FOR SPORT
-http://45.225.68.1:8532/Live/878e0987f8fffce401028e0283b0b24d/local-ch2.playlist.m3u8
+#EXTINF:-1tvg-logo=".png" group-title="Deportes Premium", Espn 1 MEX (L)(720)
+http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/9523.m3u8
 
 
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/icXDZdW.png" group-title="A Dominicano",Telemicro 5
