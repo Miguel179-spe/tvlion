@@ -1,4 +1,28 @@
 #EXTM3U
+#EXTINF:-1tvg-logo=".png" group-title="NBA",NBA  Toronto Raptors
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280759.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="NBA", NBA | San Antonio Spurs
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280758.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="NBA",Sacramento Kings
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280757.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="NBA",Phoenix Suns
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280755.m3u8
+
+Orlando Magic
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280753.m3u8
+
+EXTINF:-1tvg-logo=".png" group-title="NBA", New Orleans Pelicans
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280750.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="NBA", Minnesota Timberwolves
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280749.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="NBA", Miami Heat
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/280747.m3u8
+
 
 #EXTINF:-1tvg-logo=".png" group-title="MLB",MLB Guardians vs Orioles
 http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/195011.m3u8
