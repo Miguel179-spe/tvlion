@@ -1,4 +1,23 @@
 #EXTM3U
+
+#EXTINF:-1tvg-logo=".png" group-title="MLB", MLB Strike One
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/23629.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="MLB", MLB Network
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/23630.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="MLB", Fox Sports 2
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/23627.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="MLB",Fox Sports 1
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/23628.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="MLB",MLB Live HD
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/23791.m3u8
+
+#EXTINF:-1tvg-logo=".png" group-title="MLB",MLB HD
+http://canal-pro.xyz:8080/live/956551064tv/12k87e/23985.m3u8
+
 #EXTINF:-1tvg-logo=".png" group-title="NBA",NBA  Toronto Raptors
 http://canal-pro.xyz:8080/live/956551064tv/12k87e/280759.m3u8
 
