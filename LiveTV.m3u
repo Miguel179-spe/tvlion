@@ -30,7 +30,7 @@ http://canal-pro.xyz:8080/live/956551064tv/12k87e/280757.m3u8
 #EXTINF:-1tvg-logo=".png" group-title="NBA",Phoenix Suns
 http://canal-pro.xyz:8080/live/956551064tv/12k87e/280755.m3u8
 
-Orlando Magic
+#EXTINF:-1tvg-logo=".png" group-title="NBA",Orlando Magic
 http://canal-pro.xyz:8080/live/956551064tv/12k87e/280753.m3u8
 
 EXTINF:-1tvg-logo=".png" group-title="NBA", New Orleans Pelicans
@@ -58,7 +58,7 @@ http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/180838.m3u8
 #EXTINF:-1tvg-logo=".png" group-title="NBA",DEPORTES - NBA U (M)(720)
 http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/9598.m3u8
 
-#EXTINF:-1tvg-logo=".png" group-title="A Dominiano", ad Telemundo - Orlando Florida (L)(1080)
+#EXTINF:-1tvg-logo=".png" group-title="A Dominicano", ad Telemundo - Orlando Florida (L)(1080)
 http://tv.proyectox.vip:8080/live/GuillermoV5960/31e5938a2554/8365.m3u8
 
 #EXTINF:-1tvg-logo=".png" group-title="NBA",CA-NBA TV
