@@ -1,5 +1,28 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 DRAGON BALL Z
+http://cord-cutter.net:8080/live/5uWnY2/585054/79572.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 FRESH PRINCE OF BEL-AIR
+http://cord-cutter.net:8080/live/5uWnY2/585054/79559.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 THE FIRST 48HRS
+http://cord-cutter.net:8080/live/5uWnY2/585054/66393.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 RIDICULOUSNESS
+http://cord-cutter.net:8080/live/5uWnY2/585054/66397.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 SAVED BY THE BELL
+http://cord-cutter.net:8080/live/5uWnY2/585054/66344.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 SEINFELD
+http://cord-cutter.net:8080/live/5uWnY2/585054/66303.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 PAW PATROL
+http://cord-cutter.net:8080/live/5uWnY2/585054/66311.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 Horror Movies
+http://cord-cutter.net:8080/live/5uWnY2/585054/119429.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 THE FLINTSTONES
+http://cord-cutter.net:8080/live/5uWnY2/585054/120949.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 COMEDY MOVIES
+http://cord-cutter.net:8080/live/5uWnY2/585054/121096.m3u8
+#EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/T0jW2su.png" group-title="24/7",24/7 STAR TREK
+http://cord-cutter.net:8080/live/5uWnY2/585054/121115.m3u8
+
 #EXTINF:-1tvg-logo=".png" group-title="MLB", MLB Strike One
 http://canal-pro.xyz:8080/live/956551064tv/12k87e/23629.m3u8
 
