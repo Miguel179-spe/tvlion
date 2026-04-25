@@ -1,4 +1,107 @@
 #EXTM3U
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Avivamiento TV
+https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Bum Televisión
+https://movil.ejeserver.com/live/visiondorada.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Cali TV
+https://5ab772334c39c.streamlock.net/live-calitv/calitv1/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal 2 Alpavisión Neiva
+https://stmv1.voxtvhd.com.br/alpavision/alpavision/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal 8 TV+
+https://movil.ejeserver.com/live/canal8tv.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal 14 Codazzi
+https://eu1.servers10.com:8081/8056/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal 55 Telemorisco TV
+https://canal.mediaserver.com.co/live/telemorisco.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal Más Televisión
+https://movil.ejeserver.com/live/teledoradahd.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal Nets
+https://movil.ejeserver.com/live/nets.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal Oración Con Son
+https://canal.mediaserver.com.co/live/oracionconson.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Canal Telefamilia
+https://stmv2.voxtvhd.com.br/telefamilia/telefamilia/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",CMB Television
+https://catv.cmbcolombia.tv/bethesda/bethesda/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",CNC Santander de Quilichao
+https://movil.ejeserver.com/live/cncsantander.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Cosmovision
+https://videohls2.cosmovision.tv/hls/sd.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Eduvision
+https://stmv3.voxtvhd.com.br/conex2/conex2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Frecuencia F TV
+https://tv.frecuenciaf.com/live/envivo.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",La Hermandad Salsera
+https://streamlov.alsolnet.com/hermandadsalsera/live/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Luna Estéreo 106.4 FM
+https://servervideo.intermediacolombia.com:19360/kychbbfhdz/kychbbfhdz.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",MasMusica FM
+https://movil.ejeserver.com/live/masmusica.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",MaxTV
+https://inliveserver.com:1936/8078/8078/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",MCI Television
+https://video.ejeserver.com/live/mcitelevision.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Oasis TV
+https://5e85d90130e77.streamlock.net/6020/6020/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Ondambiental TV
+https://stmv4.voxtvhd.com.br/ondastereo/ondastereo/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Red+
+https://inforedvos.lcdn.claro.net.co/Content/HLS_HLS_DIR/Live/channel(REDMASHDWEB)/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Reyali
+https://eu1.servers10.com:8081/8090/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Salsa Gorda Television
+https://live20.bozztv.com/akamaissh101/ssh101/qMUAZEy/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Suram TV
+https://livetv.305streamhd.com:3111/live/suramtvlive.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Tele San Jacinto
+https://movil.ejeserver.com/live/telesanjacinto.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Teleislas
+https://5ab772334c39c.streamlock.net/live-teleislas/teleislas/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Telepacifico
+https://play.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/022/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Tu Universo TV
+https://5bf8041cb3fed.streamlock.net/TUUNIVERSOTV/TUUNIVERSOTV/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",TV Peñol
+https://stmv1.voxtvhd.com.br/tvpenol/tvpenol/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",TV San Jorge
+https://asucap.com/livestream/asucap_envivo.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/g9GxTyL.png" group-title="Colombia",Zoom
+https://canalzoom.smoothcloud.co:3027/live/canalzoombr1live.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/BMxa8it.png" group-title="Chile",13 Festival
 https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
