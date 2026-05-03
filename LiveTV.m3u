@@ -1878,6 +1878,12 @@ https://live.enhdtv.com:19360/nexthd/nexthd.m3u8
 #EXTINF:-1 tvg-id="SD" tvg-logo="https://imgur.com/tto3XBa.png" group-title="Canales de Peliculas",Kuria kos Cine
 https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://imgur.com/PCihnMS.png" group-title="Retro",UK-Boomerang
+http://cord-cutter.net:8080/live/5uWnY2/585054/53718.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/PCihnMS.png" group-title="Retro",US Boomerang 
+http://cord-cutter.net:8080/live/5uWnY2/585054/14741.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/B5ZHTlc.png" group-title="Retro",siembra tv
 https://cloud2.streaminglivehd.com:1936/siembratv/siembratv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/jGAjG9O.png" group-title="Deportes Premium",Claro Sports
