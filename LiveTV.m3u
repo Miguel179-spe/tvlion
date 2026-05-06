@@ -1,4 +1,18 @@
 EXTM3U
+
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/5aNOsYi.png" group-title="Retro",TV recuerdos
+https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/WI5UmVS.png" group-title="Retro",recuerdosretro
+https://panel.tvstream.cl:1936/8034/8034/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/Pk9pL1V.png" group-title="Retro",canal voice radio tv
+https://tvservices.fullhd-streaming.com:3941/multi_web/play.m3u8
+
+
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/F5uFToL.png" group-title="Retro",canal retro 80-90
+https://tvservices.fullhd-streaming.com:3941/multi_web/play.m3u8
+
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://i.imgur.com/507tvMY.png" group-title="Retro",Telemicro Internacional (480p)
 http://200.115.120.1:8000/play/ca085/index.m3u8
 
