@@ -19,7 +19,7 @@ http://200.125.170.122:8000/play/a0cg/index.m3u8
 https://teleon.tv/stream/cG5wODQ4MjQwOXBucDg0.m3u8
 
 #EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano",Antena 7
-https://d3mhrz6vhsrmmq.cloudfront.net/index.m3u8
+https://alba-do-antena7-antena7.stream.mediatiquestream.com/index.m3u8?checkedby:iptvcat.com
 
 #EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano",Antena 7
 https://list.iptvcat.com/my_list/s/e19f0927d03c4de43d49ceb6d8c33392.m3u8
