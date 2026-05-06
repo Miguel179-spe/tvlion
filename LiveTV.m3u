@@ -3,6 +3,10 @@ EXTM3U
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/5aNOsYi.png" group-title="Retro",TV recuerdos
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
+
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/LqqzmGP.png" group-title="Retro",Retro visión canal 56
+https://vdopanel.jlahozconsulting.com:3124/hybrid/play.m3u8
+
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/WI5UmVS.png" group-title="Retro",recuerdosretro
 https://panel.tvstream.cl:1936/8034/8034/playlist.m3u8
 
