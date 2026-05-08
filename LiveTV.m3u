@@ -3,6 +3,8 @@ EXTM3U
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/5aNOsYi.png" group-title="Retro",TV recuerdos
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
+#EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://imgur.com/AvFuE6I.png" group-title="A Dominicano",Antena 7
+https://alba-do-antena7-antena7.stream.mediatiquestream.com/original.m3u8
 
 #EXTINF:-1 tvg-id="Telesistema11.do@SD" tvg-logo="https://imgur.com/fWKSZMO.png" group-title="Univision",US Univision (East)
 http://cord-cutter.net:8080/live/5uWnY2/585054/15336.m3u8
@@ -13,11 +15,6 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/46692.m3u8
 
 #EXTINF:-1 tvg-id="Telesistema11.do@SD" tvg-logo="https://imgur.com/fWKSZMO.png" group-title="Univision",US Latin Univision 
 http://cord-cutter.net:8080/live/5uWnY2/585054/108248.m3u8
-
-
-u8
-
-
 
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/LqqzmGP.png" group-title="Retro",Retro visión canal 56
 https://vdopanel.jlahozconsulting.com:3124/hybrid/play.m3u8
@@ -43,9 +40,6 @@ https://5790d294af2dc.streamlock.net/SISTESUR/SISTESUR/chunklist.m3u8
 
 #EXTINF:0 tvg-country="DO" tvg-logo="" group-title="Undefined",Telesistema 11
 http://190.123.76.22:8000/play/a045/index.m3u8?checkedby:iptvcat.com
-7
-#EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://imgur.com/AvFuE6I.png" group-title="A Dominicano",Antena 7
-https://alba-do-antena7-antena7.stream.mediatiquestream.com/original.m3u8
 
 #EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://imgur.com/aGlhYII.png" group-title="A Dominicano",Digital 15
 http://190.122.104.210:5080/LiveApp/streams/Di15.m3u8
