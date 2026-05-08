@@ -3,11 +3,6 @@ EXTM3U
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/5aNOsYi.png" group-title="Retro",TV recuerdos
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
-#EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano",Antena 70
-https://teleon.tv/stream/cG5wODQ4MzYzMnBucDg0.m3u8
-
-#EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano",Antena 71
-https://d2qsan2ut81n2k.cloudfront.net/live/3bc8d309-7e74-46ec-bb09-18afc6de1e86/medialist_15609871089997455276_hls.m3u8
 
 #EXTINF:-1 tvg-id="Telesistema11.do@SD" tvg-logo="https://imgur.com/fWKSZMO.png" group-title="Univision",US Univision (East)
 http://cord-cutter.net:8080/live/5uWnY2/585054/15336.m3u8
@@ -20,9 +15,7 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/46692.m3u8
 http://cord-cutter.net:8080/live/5uWnY2/585054/108248.m3u8
 
 
-
-#EXTINF:-1 tvg-id="Antena21.do@SD" tvg-logo="https://i.imgur.com/QE0XWLh.png" group-title="A Dominicano",Antena 21 
-https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8
+u8
 
 
 
@@ -66,14 +59,6 @@ http://200.125.170.122:8000/play/a0cg/index.m3u8
 #EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://imgur.com/WryYng2.png" group-title="A Dominicano",Tele Antillas 2
 https://teleon.tv/stream/cG5wODQ4MjQwOXBucDg0.m3u8
 
-#EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano",Antena 7
-https://d2qsan2ut81n2k.cloudfront.net/live/3bc8d309-7e74-46ec-bb09-18afc6de1e86/medialist_15609871089997455276_hls.m3u8
-
-#EXTINF:-1 tvg-id="Antena21.do@SD" tvg-logo="https://i.imgur.com/QE0XWLh.png" group-title="A Dominicano",Antena 21 
-https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8
-
-#EXTINF:-1 tvg-id="Antena21.do@SD" tvg-logo="https://i.imgur.com/QE0XWLh.png" group-title="A Dominicano",Antena 21 
-https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8
 
 #EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://imgur.com/NnNktfB.png" group-title="A Dominicano",Telemicro 5
 http://190.122.104.210:5080/LiveApp/streams/telemicrolocal5.m3u8
