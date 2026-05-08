@@ -4,7 +4,7 @@ EXTM3U
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
 #EXTINF:-1 tvg-id="Antena7.do@SD" tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano",Antena 7
-https://d3mhrz6vhsrmmq.cloudfront.net/index.m3u8
+https://d2qsan2ut81n2k.cloudfront.net/live/3bc8d309-7e74-46ec-bb09-18afc6de1e86/medialist_15609871089997455276_hls.m3u8
 
 #EXTINF:-1 tvg-id="Telesistema11.do@SD" tvg-logo="https://imgur.com/fWKSZMO.png" group-title="Univision",US Univision (East)
 http://cord-cutter.net:8080/live/5uWnY2/585054/15336.m3u8
