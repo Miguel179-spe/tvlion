@@ -1,4 +1,7 @@
 EXTM3U
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB",Atlanta Braves y Miami Marlins
+https://d2hd2pp0kkhxn.cloudfront.net/8584821/mobile-nvirginia/ZfKmC985674unrKbaNhSQqEp1MP371HtT7T3DYO7f-M/cid=9337~mid=63300485~ecid=8584821~pid=2~dtid=1~sid=019e4204-08cc-7e02-8c7e-cf4fdb44ba27~csid=5878533~gc=g84~gsd=9LM~grm=1~e=1779310421~ip=152.0.14.191/baseball_usa_mlb_8584821_new_712k.m3u8
+
 
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/5aNOsYi.png" group-title="Retro",TV recuerdos
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
