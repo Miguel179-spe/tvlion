@@ -2,6 +2,9 @@ EXTM3U
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB",Atlanta Braves y Miami Marlins
 https://d2hd2pp0kkhxn.cloudfront.net/8584821/mobile-nvirginia/ZfKmC985674unrKbaNhSQqEp1MP371HtT7T3DYO7f-M/cid=9337~mid=63300485~ecid=8584821~pid=2~dtid=1~sid=019e4204-08cc-7e02-8c7e-cf4fdb44ba27~csid=5878533~gc=g84~gsd=9LM~grm=1~e=1779310421~ip=152.0.14.191/baseball_usa_mlb_8584821_new_712k.m3u8
 
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", New York Mets
+https://d2hd2pp0kkhxn.cloudfront.net/8584867/mobile-nvirginia/Daq3L7V9E1uHSzKsGj8PJqwc6j4WD-YJWSwEwXQ5hgw/cid=9337~mid=63300723~ecid=8584867~pid=2~dtid=1~sid=019e4c4f-b22e-79ca-af4d-2c72dcde3861~csid=5878607~gc=aYY~gsd=Hvs~grm=1~e=1779483151~ip=152.0.14.191/baseball_usa_mlb_8584867_new_712k.m3u8
+
 
 #EXTINF:-1 tvg-id="KNSO511.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png" group-title="A Dominicano",Telemundo 51 (1080p)
 https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/db80534b-3c11-4c39-8219-fe8a2d0c4a00/4.m3u8
