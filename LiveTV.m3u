@@ -1,7 +1,68 @@
 EXTM3U
-#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB",Atlanta Braves y Miami Marlins
-https://d2hd2pp0kkhxn.cloudfront.net/8584821/mobile-nvirginia/ZfKmC985674unrKbaNhSQqEp1MP371HtT7T3DYO7f-M/cid=9337~mid=63300485~ecid=8584821~pid=2~dtid=1~sid=019e4204-08cc-7e02-8c7e-cf4fdb44ba27~csid=5878533~gc=g84~gsd=9LM~grm=1~e=1779310421~ip=152.0.14.191/baseball_usa_mlb_8584821_new_712k.m3u8
-
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB ARIZONA DIAMONDBACKS
+http://bgdc.live:25461/live/nmullen144/73970570/99214.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB ATLANTA BRAVES
+http://bgdc.live:25461/live/nmullen144/73970570/99215.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB BALTIMORE ORIOLES
+http://bgdc.live:25461/live/nmullen144/73970570/99216.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB BOSTON RED SOX
+http://bgdc.live:25461/live/nmullen144/73970570/99217.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB CHICAGO CUBS
+http://bgdc.live:25461/live/nmullen144/73970570/99218.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB CHICAGO WHITE SOX
+http://bgdc.live:25461/live/nmullen144/73970570/99219.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB CINCINNATI REDS
+http://bgdc.live:25461/live/nmullen144/73970570/99220.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB CLEVELAND GUARDIANS
+http://bgdc.live:25461/live/nmullen144/73970570/99221.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB COLORADO ROCKIES
+http://bgdc.live:25461/live/nmullen144/73970570/99222.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB DETROIT TIGERS
+http://bgdc.live:25461/live/nmullen144/73970570/99223.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB HOUSTON ASTROS
+http://bgdc.live:25461/live/nmullen144/73970570/99224.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB KANSAS CITY ROYALS
+http://bgdc.live:25461/live/nmullen144/73970570/99225.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB LOS ANGELES ANGELS
+http://bgdc.live:25461/live/nmullen144/73970570/99226.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB LOS ANGELES DODGERS
+http://bgdc.live:25461/live/nmullen144/73970570/99227.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB MIAMI MARLINS
+http://bgdc.live:25461/live/nmullen144/73970570/99228.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB MILWAUKEE BREWERS
+http://bgdc.live:25461/live/nmullen144/73970570/99229.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB MINNESOTA TWINS
+http://bgdc.live:25461/live/nmullen144/73970570/99230.m3u8
+#EXTINF:-1,01. US : MLB NETWORK
+http://bgdc.live:25461/live/nmullen144/73970570/99231.m3u8
+#EXTINF:-1,02. US : MLB NETWORK STRIKE ZONE
+http://bgdc.live:25461/live/nmullen144/73970570/99233.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB NEW YORK METS
+http://bgdc.live:25461/live/nmullen144/73970570/99234.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB NEW YORK YANKEES
+http://bgdc.live:25461/live/nmullen144/73970570/99235.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB OAKLAND ATHLETICS
+http://bgdc.live:25461/live/nmullen144/73970570/99236.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB PHILADELPHIA PHILLIES
+http://bgdc.live:25461/live/nmullen144/73970570/99237.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB PITTSBURGH PIRATES
+http://bgdc.live:25461/live/nmullen144/73970570/99238.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB SAN DIEGO PADRES
+http://bgdc.live:25461/live/nmullen144/73970570/99239.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB SAN FRANCISCO GIANTS
+http://bgdc.live:25461/live/nmullen144/73970570/99240.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB SEATTLE MARINERS
+http://bgdc.live:25461/live/nmullen144/73970570/99241.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB ST LOUIS CARDINALS
+http://bgdc.live:25461/live/nmullen144/73970570/99242.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB TAMPA BAY RAYS
+http://bgdc.live:25461/live/nmullen144/73970570/99243.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB TEXAS RANGERS
+http://bgdc.live:25461/live/nmullen144/73970570/99244.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB TORONTO BLUE JAYS
+http://bgdc.live:25461/live/nmullen144/73970570/99245.m3u8
+#EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", MLB WASHINGTON NATIONALS
+http://bgdc.live:25461/live/nmullen144/73970570/99246.m3u8
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo=".png" group-title="MLB", New York Mets
 https://d2hd2pp0kkhxn.cloudfront.net/8584867/mobile-nvirginia/Daq3L7V9E1uHSzKsGj8PJqwc6j4WD-YJWSwEwXQ5hgw/cid=9337~mid=63300723~ecid=8584867~pid=2~dtid=1~sid=019e4c4f-b22e-79ca-af4d-2c72dcde3861~csid=5878607~gc=aYY~gsd=Hvs~grm=1~e=1779483151~ip=152.0.14.191/baseball_usa_mlb_8584867_new_712k.m3u8
 
