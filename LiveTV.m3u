@@ -70,7 +70,17 @@ https://d2hd2pp0kkhxn.cloudfront.net/8584867/mobile-nvirginia/Daq3L7V9E1uHSzKsGj
 #EXTINF:-1 tvg-id="KNSO511.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png" group-title="A Dominicano",Telemundo 51 (1080p)
 https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/db80534b-3c11-4c39-8219-fe8a2d0c4a00/4.m3u8
 
+#EXTINF:-1 tvg-logo="https://picsum.photos/seed/iptv/200/200" group-title="Univision",UNIVISION 24|7
+https://linear-254.frequency.stream:443/mt/studio/254/hls/master/playlist_1280x720.m3u8
 
+
+
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/uu/unimas_este.png" group-title="Univision",Unimás
+https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=8Q6d5qd2lubv3MRhZrh9xmoPC9Xzo64n
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/DESLSNQ.png" group-title="Retro",360rftv
+https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8
 #EXTINF:-1 tvg-id="TelemicroInternacional.do@SD" tvg-logo="https://imgur.com/5aNOsYi.png" group-title="Retro",TV recuerdos
 https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8
 
