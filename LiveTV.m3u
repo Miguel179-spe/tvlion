@@ -1,4 +1,20 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION", UNIMAS
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18548.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION", UNIVISION 23 (DALLAS)
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18549.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION", UNIVISION
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18550.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION",UNIMAS (NEW YORK)
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18460.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION", UNIMAS GEORGIA
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18461.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION", UNIVISION (NEW YORK)
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18462.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION", UNIVISION DALLAS
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18463.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="UNIVISION",UNIVISION TELENOVELAS
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/18464.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/D7UWHAb.png" group-title="Retro",Telemas Costa Rica
 https://acceso.mediosdecostarica.com:3192/hybrid/play.m3u8
