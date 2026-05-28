@@ -1,4 +1,17 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-logo="https://imgur.com/D7UWHAb.png" group-title="Retro",Telemas Costa Rica
+https://acceso.mediosdecostarica.com:3192/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/BopHjEr.png" group-title="Retro",Stv Saraquipe tv
+https://lstv.duckdns.org:449/hls/stv.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/v7j0Vft.png" group-title="Retro",best clasicos tv
+https://acceso.mediosdecostarica.com:3873/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/gAjKbYP.png" group-title="Retro", 360 rftv 
+https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8
+
 #EXTINF:-1 tvg-logo=".png" group-title="MLB",MLB ARIZONA DIAMONDBACKS
 http://bgdc.live:25461/live/nmullen144/73970570/99214.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="MLB",MLB ATLANTA BRAVES
