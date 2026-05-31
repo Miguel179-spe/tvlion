@@ -193,6 +193,8 @@ https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 http://animezonetv.net/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano""General",Antena 7 (720p)
 https://d3mhrz6vhsrmmq.cloudfront.net/index.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/QE0XWLh.png" group-title="A Dominicano""Entertainment",Antena 21 (480p) [Not 24/7] [Geo-blocked]
 https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/QWR9SOH.png" group-title="A Dominicano""General",Atabal TV (1080p) [Not 24/7]
