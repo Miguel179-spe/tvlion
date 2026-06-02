@@ -3,6 +3,15 @@
 #EXTINF:-1 tvg-logo=".png" group-title="DAZN",DAZN F1
 http://voodvooxqha.top:8080/live/VIP01751759858004994/b49eb82b6e0a/56469.m3u8
 
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN", DAZN EVENT 2
+http://voodvooxqha.top:8080/live/VIP01751759858004994/b49eb82b6e0a/128960.m3u8
+
+#EXTINF:-1 tvg-id="DAZNCombat.uk@Poland" tvg-logo="https://i.postimg.cc/VsW3Jsrz/logo-DAZN-Combat.png" group-title="DAZN",DAZN Combat (1080p)
+https://dazn-combat-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-dazn-combat-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",DAZN F1
+http://voodvooxqha.top:8080/live/VIP01751759858004994/b49eb82b6e0a/56469.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/mSn7ACs.png" group-title="Argentina""General",5TV Corrientes (480p) [Not 24/7]
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4hDCB1M.png" group-title="Argentina""News",24/7 Canal de Noticias
