@@ -1,5 +1,47 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN", DAZN LALIGA
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/63431.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN", DAZN F1
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/57485.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN", DAZN F1
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/57486.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN", LIGA DE CAMPEONES
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/57560.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",LIGA DE CAMPEONES
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/57363.m3u8
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",DAZN MOTOGP FHD
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/70905.m3u8
+#EXTINF:-1,ES: (FHD) DAZN 1
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/5589.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",DAZN 2
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/5590.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",LALIGA TV BAR
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/5661.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",BARCA TV
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/5560.m3u8
+#EXTINF:-1,ES: REAL MADRID TV
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/5729.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="DAZN",ESPN 2
+http://hnsefpop.top:8080/live/14171572141462/51741346610266/71546.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/mSn7ACs.png" group-title="Argentina""General",5TV Corrientes (480p) [Not 24/7]
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4hDCB1M.png" group-title="Argentina""News",24/7 Canal de Noticias
