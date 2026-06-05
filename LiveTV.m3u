@@ -1,5 +1,29 @@
 #EXTM3U
 
+
+#EXTINF:-1 tvg-logo=".png" group-title="A Dominicano",Teleantillas Canal 2
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(i36eJb8MsG2jvtQtHvOlw9o_OBkZtqgaQWXJcIlPuUjN_APsCQGjDiD7YqvjCMsqcP7_pVqS652onJ-6lpkaxpKvyFZ-Sz77rNS4eH-HfyoC1FI-n9ZH-jxPIECdUcbT)/cloud/3/x8mwmvs/s/live-480.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Tbgo1Zc.png" group-title="A Dominicano",Telesistema 11
+https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/canal11hn/canal11hn.smil/playlist.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Tbgo1Zc.png" group-title="A Dominicano",Telesistema 11
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(xrUYXG_nBcTiRt2YNvJfibmjn9UwjxJ_lZ54wf3prEsRfC5shyYGxbAL9s3-ztVPrNkk7uCMuJNdIwloVGX0qsqLHnslMMhcUBHTxyy2RSyr7B1e6ep77lEpCFMnomFq)/cloud/3/x80ac48/d/live-1080.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/iwsgdW0.png" group-title="A Dominicano",Telecentro
+https://live4.telemicro.com.do/live/telecentrocast_1080p/chunks.m3u8?nimblesessionid=23798277
+
+
+#EXTINF:-1 tvg-id="Telecentro.do@SD" tvg-logo="https://i.imgur.com/F17zNXh.png" group-title="General",Telecentro (1080p)
+http://190.122.104.210:5080/LiveApp/streams/tcentro.m3u8
+#EXTINF:-1 tvg-id="Telecentro.do@SD" tvg-logo="https://i.imgur.com/F17zNXh.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" referrer="https://telemicro.com.do/players/5tv/",Telecentro (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
+#EXTVLCOPT:http-referrer=https://telemicro.com.do/players/5tv/
+https://live4.telemicro.com.do/live/telecentrocast_1080p/playlist.m3u8
+
+
 #EXTINF:-1 tvg-logo=".png" group-title="DAZN",DAZN F1
 http://voodvooxqha.top:8080/live/VIP01751759858004994/b49eb82b6e0a/56469.m3u8
 
