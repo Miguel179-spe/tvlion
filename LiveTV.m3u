@@ -1,6 +1,20 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-logo=".png" group-title="Retro",memorias toon
+https://video.xtrematv.com:3812/live/memoriastoonslive.m3u8
+
+#EXTINF:-1 tvg-logo=".png" group-title="Retro",memorias Classi
+https://video.xtrematv.com:3401/live/grupomemoriaslive.m3u8
+
+#EXTINF:-1 tvg-logo=".png" group-title="Retro",memorias film
+https://video.xtrematv.com:3725/live/memoriasfilmlive.m3u8
+
+#EXTINF:-1 tvg-logo=".png" group-title="Retro",memorias serie
+https://video.xtrematv.com:3633/live/memoriasserieslive.m3u8
+
+#EXTINF:-1 tvg-logo=".png" group-title="Retro",memorias Tropical
+https://video.xtrematv.com:3361/live/memoriastropicallive.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="A Dominicano",Teleantillas Canal 2
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(i36eJb8MsG2jvtQtHvOlw9o_OBkZtqgaQWXJcIlPuUjN_APsCQGjDiD7YqvjCMsqcP7_pVqS652onJ-6lpkaxpKvyFZ-Sz77rNS4eH-HfyoC1FI-n9ZH-jxPIECdUcbT)/cloud/3/x8mwmvs/s/live-480.m3u8
 
