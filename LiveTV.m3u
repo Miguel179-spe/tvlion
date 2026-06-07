@@ -1,4 +1,13 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.imgur.com/EBkFVPb.png" group-title="Novelas""Canais | NOVELAS",TELEVISA
+https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8?ManoTV
+
+#EXTINF:-1 tvg-logo="https://imgur.com/92rUCKL.png" group-title="Novelas""Canais | FILMES E SERIES",MOVIE SPHERE
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-moviespherebrazil-samsungbr/playlist.m3u8?ManoTV
+#EXTINF:-1 tvg-logo="https://imgur.com/9xo2bJt.png" group-title="Novelas""Canais | FILMES E SERIES",Sony One Classics
+https://spt-sonyoneclassicas-1-br.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/f35UF5q.png" group-title="Novelas""Canais | FILMES E SERIES",MyTime Movies
+https://appletree-mytime-samsungbrazil.amagi.tv/playlist720p.m3u8?ManoTV
 #EXTINF:-1 tvg-logo="https://imgur.com/bjF29PC.png" group-title="Novelas",tlnovelas 
 https://regionales.saohgdasregions.fun:9092/NjQuMzIuMTA0LjE2MQ==/12_.m3u8?token=8CTQPCHyNRgSrhSa77HXkQ&expires=1780893683
 #EXTINF:-1 tvg-id="RS News Sports 4" tvg-logo="https://imgur.com/dNgw93v.png" group-title="Futbol Premium",RS News Sports 4
