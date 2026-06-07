@@ -1,50 +1,8 @@
 #EXTM3U
-
+#EXTINF:-1 tvg-logo="https://imgur.com/bjF29PC.png" group-title="Novelas",tlnovelas 
+https://regionales.saohgdasregions.fun:9092/NjQuMzIuMTA0LjE2MQ==/12_.m3u8?token=8CTQPCHyNRgSrhSa77HXkQ&expires=1780893683
 #EXTINF:-1 tvg-id="RS News Sports 4" tvg-logo="https://imgur.com/dNgw93v.png" group-title="Futbol Premium",RS News Sports 4
 https://video03.logicahost.com.br/rssports4/rssports4/chunklist_w1149035451.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS 4 HD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/220.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS 4 FHD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/208.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS 4 FHD 50 FPS
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/262996.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",Bein Sports 4 Raw
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/270955.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",Bein Sports 4 FHD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/270956.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",Bein Sports 4 Ticari
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/270957.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",Bein Sports 4 HD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/270958.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS 5 HD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/50872.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS 5 FHD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/50871.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS 5 FHD 50 FPS
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/262997.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",Bein Sports 5 FHD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/270960.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS MAX 1 HD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/221.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS MAX 1 FHD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/209.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS MAX 1 FHD 50 FPS
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/262998.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS MAX 2 HD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/222.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS MAX 2 FHD
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/210.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS MAX 2 FHD 50 FPS
-http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/262999.m3u8
-
-
-
-
-
-
-
-
 
 
 
