@@ -1,49 +1,11 @@
 #EXTM3U
 
 
-
-
-
-
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-", TNT (West) 
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/46688.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-", TNT East 
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/10455.m3u8
-
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-", Foro TV HD
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57594.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-", CNN 
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57619.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",Discovery Channel
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57625.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",Cinemax
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57638.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",DISTRITO COMEDIA
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57639.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",Latin Discovery (F)
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57645.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",Multimedios 
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57646.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",CANAL COCINA
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57698.m3u8
-#EXTINF:-1 group-title="Joseluis""Joseluis""Joseluis""-",Multimedios HD
-http://cord-cutter.net:8080/live/lmendivil13@gmail.com/mDpSjngw1r/57711.m3u8
-
-
-
-
-
-
-
-
-
-
 #EXTINF:-1 tvg-logo=".png" group-title="Joseluis""Retro",Azteca uno HD
 https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3u8
 
 #EXTINF:-1 tvg-logo=".png" group-title="Joseluis""Retro",TV Azteca 40
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8?uid=1z72FLX69MASINfEckvx3IfGnQaL4iDT&sid=UT0gm8jjxi9NrV6by87qipVyWNCuQlml&pid=jytODsBC9kMIg8MRcwgC64OdYUQbzR3c&an=screen&at=web-app&av=v5.2.327&ref=https%3A%2F%2Flive.adn40.mx%2F&res=1522x658&without_cookies=false&listenerid=&dnt=true
--------------------------
 #EXTINF:-1 tvg-id="KNBC41.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/960px-NBC_logo_2022_%28vertical%29.svg.png" group-title="Joseluis""General",KNBC-DT1 (1080p)
 https://nbculocallive.akamaized.net/hls/live/2037084/losangeles/stream1/master.m3u8
 
