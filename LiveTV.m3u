@@ -1,6 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",Bein Sports 3 HD
-http://53.tzpmxqwrysadyvh.xyz/play/hls/eyJpdiI6Ik9SakZUd1plYzJvWUZkaHlqYnRCTmc9PSIsInZhbHVlIjoiMU9HTEdkc3pReGtYdzF6ZElwSmltN0ErTlZidHR5eWdsbFV3aXAvQm5acHkrdDNiZjFLUXlaS2ZjWG9xWGZWSSIsIm1hYyI6IjA5MmVhOWFjNDk1M2UwNTQ2NWQ5NWVmNTMyYmJhYzFkMWQxODQ4MzRkZDU5N2RkNzQwZDRlY2I1MTdhN2YwMDciLCJ0YWciOiIifQ==/b9b27230-1526-4322-8659-2371abe2e78f.m3u8?lvtoken=eyJpdiI6Inhvd1BidnIzbTM0MUdhdHBvR0RXbEE9PSIsInZhbHVlIjoiWDZjN1h2QW9RTHJRSnVKcnF6Z21EWW14UFdOT2V4ellNR2dOSGVQZ2ZJNGdud0llOHR0Q1UvQ2RZQm9wTjF2L3hZb2RsbUVlMGk0d0dKUlRSYWZWY2t0ZE8rdXh0cmM2WnpYbzI5QUg1S0IyUHZlVFdJMktTd20xemFuUkRRTWsySks0SklnU3RCTThtVFZsSlpmc3hGZFVkZW95R0dkK09ZNUdIKzZwaldCMmRrTTdJVjh6akVqYWwxRGNhWHZyS2loSk44c3hlRllRYkZUVk5LMDZMRzBZTjFzMHZZU2o0R0NrdEFOcDFCST0iLCJtYWMiOiI0M2NmNWViNWFjMDNhODM0NmU3MDIwODYzMTYwZjlhYjM4MzM2OTI0NmE0ZWY1YzdlNmY4NzBiYTU1NDBkZTRiIiwidGFnIjoiIn0%3D&r=39f0e7&rt=57bbe8dc1bba886d69c112c7a69324da
+
+#EXTINF:-1 tvg-id="RS News Sports 4" tvg-logo="https://imgur.com/dNgw93v.png" group-title="Futbol Premium",RS News Sports 4
+https://video03.logicahost.com.br/rssports4/rssports4/chunklist_w1149035451.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium", BEIN SPORTS 4 HD
 http://103trkm25.xyz:8080/live/x7BHUeND/eDXKX9qN/220.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/tr8jKnX.png" group-title="Futbol Premium",BEIN SPORTS 4 FHD
