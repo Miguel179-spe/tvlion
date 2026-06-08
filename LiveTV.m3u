@@ -1,4 +1,46 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"HBO 1 
+http://cord-cutter.net:8080/live/5uWnY2/585054/57437.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"HBO 2 (R)
+http://cord-cutter.net:8080/live/5uWnY2/585054/57438.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"HGTV 
+http://cord-cutter.net:8080/live/5uWnY2/585054/57273.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"HLN
+http://cord-cutter.net:8080/live/5uWnY2/585054/57441.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"Investigation Discovery HD (E)
+http://cord-cutter.net:8080/live/5uWnY2/585054/57442.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"Lifetime Movie Network
+http://cord-cutter.net:8080/live/5uWnY2/585054/57444.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"Love Nature HD 
+http://cord-cutter.net:8080/live/5uWnY2/585054/47324.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"MOVIETIME HD
+http://cord-cutter.net:8080/live/5uWnY2/585054/47331.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"MSNBC (R)
+http://cord-cutter.net:8080/live/5uWnY2/585054/47332.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"MTV
+http://cord-cutter.net:8080/live/5uWnY2/585054/57446.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis"MTV2 (E)
+http://cord-cutter.net:8080/live/5uWnY2/585054/57447.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis" MTV HD
+http://cord-cutter.net:8080/live/5uWnY2/585054/57368.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis" National Geographics
+http://cord-cutter.net:8080/live/5uWnY2/585054/57281.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis" National Geographic Wild 
+http://cord-cutter.net:8080/live/5uWnY2/585054/57280.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis" NFL NETWORK HD
+http://cord-cutter.net:8080/live/5uWnY2/585054/47346.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis" Nickelodeon (R)
+http://cord-cutter.net:8080/live/5uWnY2/585054/47349.m3u8
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", NTV St. John`s 
+http://cord-cutter.net:8080/live/5uWnY2/585054/57478.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/EBkFVPb.png" group-title="Novelas""Canais | NOVELAS",TELEVISA
 https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8?ManoTV
 
@@ -1880,12 +1922,8 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/121115.m3u8
 http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="NBA",USA: NBA TV
 http://cord-cutter.net:8080/live/5uWnY2/585054/20073.m3u8
-#EXTINF:-1 tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",PARAMOUNT
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/4811.m3u8
-#EXTINF:-1 tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",Paramount+
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/5028.m3u8
-#EXTINF:-1 tvg-logo="https://www.wirelesshack.org/wp-content/uploads/2022/01/How-To-Install-Mad-Titan-Sports-Kodi-Add-on-2022.jpg" group-title="A Premium",PARAMOUNT NETWORK ENG
-http://channels.dreamplay.lat:8080/live/t6rjfpunq8/2xxzgnw3he/4483.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Cw5k96N.png" group-title="Colombia",Frecuencia F TV (1080p)
 https://tv.frecuenciaf.com/live/envivo_1080p4000kbs/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/NmsWlj6.jpeg" group-title="Colombia",Mas Norte TV [Not 24/7]
