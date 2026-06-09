@@ -1,4 +1,9 @@
 #EXTM3U
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Canal de las Extrellas  
+https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
+
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", ESPN 2 
 http://cord-cutter.net:8080/live/5uWnY2/585054/2210.m3u8
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", ESPN 1 (HD) 
