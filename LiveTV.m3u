@@ -1,4 +1,33 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", ESPN 2 
+http://cord-cutter.net:8080/live/5uWnY2/585054/2210.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", ESPN 1 (HD) 
+http://cord-cutter.net:8080/live/5uWnY2/585054/14197.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",ESPN 1 (HD) 
+http://cord-cutter.net:8080/live/5uWnY2/585054/9802.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",ESPNU College Sports 
+http://cord-cutter.net:8080/live/5uWnY2/585054/10255.m3u8
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",Food Network HD
+http://cord-cutter.net:8080/live/5uWnY2/585054/7323.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",Fox Business Network
+http://cord-cutter.net:8080/live/5uWnY2/585054/17639.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",Fox News  
+http://cord-cutter.net:8080/live/5uWnY2/585054/1818.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Fox Sports 1 
+http://cord-cutter.net:8080/live/5uWnY2/585054/1846.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Fox Sports 2 (A)
+http://cord-cutter.net:8080/live/5uWnY2/585054/1847.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Freeform East
+http://cord-cutter.net:8080/live/5uWnY2/585054/13370.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Fuse 
+http://cord-cutter.net:8080/live/5uWnY2/585054/46690.m3u8
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", FXM 
+http://cord-cutter.net:8080/live/5uWnY2/585054/10260.m3u8
+
+
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",HBO 1 
 http://cord-cutter.net:8080/live/5uWnY2/585054/57437.m3u8
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",HBO 2 (R)
