@@ -1,4 +1,19 @@
-#EXTINF:-1 group-title="Canales Pemium"  tvg-logo="https://imgur.com/cAeImyw.png", Armenia vs Moldavia 
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", Armenia vs Moldavia 
 https://wf6kt.envivoslatam.org/disney1/tracks-v1a1/mono.m3u8?ip=186.6.148.209&token=d8ed448ea9275b5401e229b9c337b3bbc647ad9e-c4-1781064833-1781010833
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", Letonio Vs Islan Feroe
+https://vg7ie.envivoslatam.org/lb04/disney2/index.m3u8?token=c0ba17448165a75aebfdf5dbf338ee78b33af586-c7-1781065345-1781011345&ip=186.6.148.209
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", RD del Congo vs Chile
+https://qbk4f.envivoslatam.org/lb02/eventos3/index.m3u8?token=f5d5ce979e7f6bc9f266dca900c9d35854a4c2cc-e6-1781065658-1781011658&ip=186.6.148.209
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png",Hungría vs Kazajistán
+https://rci1w.envivoslatam.org/lb03/sporttvbr1/index.m3u8?token=4b0aafb4ea16641bef1d92f47da60fcb54bfed66-57-1781065726-1781011726&ip=186.6.148.209
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png",Azerbaiyán vs San Marino
+https://ub2dr.envivoslatam.org/lb03/sporttvbr2/index.m3u8?token=d3a8dc11b3ee2636b1bcca8954d0a63d3cfb60f7-2f-1781065756-1781011756&ip=186.6.148.209
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png",Argentina vs Islandia
+https://lcrj3.envivoslatam.org/lb01/tycsports/index.m3u8?token=b9a8ffa9bada9c4e6c149ce2c33c8fb62fca0213-3b-1781065774-1781011774&ip=186.6.148.209
 
 
