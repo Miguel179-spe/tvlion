@@ -21,6 +21,11 @@ https://j8nte.envivoslatam.org/espnpremium/tracks-v1a1/mono.m3u8?ip=64.32.104.16
 
 
 
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Retro",cartoon classic
+https://rpn.bozztv.com/gusa/gusa-cartoonclassics/tracks-v1a1/mono.m3u8?nimblesessionid=1648065031
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Retro",retro magico
+https://183.bozztv.com/giatv/giatv-retromagicochnl/retromagicochnl/chunks.m3u8
 
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="NBA",NBA TV
 http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
