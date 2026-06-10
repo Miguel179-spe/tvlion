@@ -17,6 +17,35 @@ https://afy4c.envivoslatam.org/tudn_usa/tracks-v1a1/mono.m3u8?ip=64.32.104.161&t
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png",futbol
 https://j8nte.envivoslatam.org/espnpremium/tracks-v1a1/mono.m3u8?ip=64.32.104.161&token=77d9141f784bcd09a907d1d674d9eacd38d871b3-13-1781104627-1781050627
 
+
+
+
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Telemundo 51 Miami  
+https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/32d83610-b3ed-4e0c-bc1a-9cf4055cc405/3.m3u8
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Telemundo Acción
+https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/681bae8b-7071-4c32-8736-792df9906f88/0.m3u8
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Telemundo California 
+https://d1rqgw5gocwo9i.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-stitched/10a44c37-f976-4d2b-ab23-8637a7a094ca/3.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",Telemundo New York 47
+https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/e2d37c4f-10a7-4e0b-9293-ec7e5a8c6445/4.m3u8
+
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",Telemundo Texas
+https://prodamdtlmdtv.akamaized.net/out/v1/dfdf9195d8e645c6a4372dc25537d4e7/5cc271e1002642baa6978559f28e3e5a/1248c8f441c14f869f1358e0d97d99bc/index.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Noticias Telemundo
+https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/28500540-7966-437b-a84a-bb20bb0b8dbc/0.m3u8
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis",Telemundo Nueva Inglaterra
+https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/bae26ce7-589b-4168-afdb-4747f7d7c751/4.m3u8
+
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Joseluis", Canal de las Extrellas  
 https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 
