@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", Armenia vs Moldavia 
-https://wf6kt.envivoslatam.org/disney1/tracks-v1a1/mono.m3u8?ip=186.6.148.209&token=d8ed448ea9275b5401e229b9c337b3bbc647ad9e-c4-1781064833-1781010833
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://iaw5b.envivoslatam.org/lb01/espn/index.m3u8?token=6a93d13776b0edee04c08647c1b99da759c67988-1b-1781098474-1781044474&ip=64.32.104.161
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", Letonio Vs Islan Feroe
 https://vg7ie.envivoslatam.org/lb04/disney2/index.m3u8?token=c0ba17448165a75aebfdf5dbf338ee78b33af586-c7-1781065345-1781011345&ip=186.6.148.209
