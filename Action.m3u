@@ -1,15 +1,22 @@
 #EXTM3U
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://anvtcax.fubo18.com/tycsports/mono.m3u8?token=5b8eb808aabeee2709f311979c46b951d11ba9fd-0-1781120782-1781102782
+https://kbnue.vivolatamz.org/lb03/espn/index.m3u8?token=328256eed5560db7e66cd5dbb351ab6506ba5927-c7-1781188592-1781134592&ip=64.32.104.161
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", funbol 
-https://dw5pdgvk.fubo18.com/espnpremium/mono.m3u8?token=978618445a4dda7dcb8be6d8238200b94e30164a-d1-1781120942-1781102942
+https://walhe.vivolatamz.org/dsports/index.m3u8?token=20ee7c06177846aaa54eaac05cb87ef05d20ba82-e4-1781188688-1781134688&ip=64.32.104.161
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://tyg2mnl9.fubo18.com/tvc_deportes/mono.m3u8?token=cb8ce1d2075fef519b5004dbe5cc810f34aac1a1-22-1781120977-1781102977
+https://mivra.vivolatamz.org/lb04/tycsports/index.m3u8?token=649aa053e017a252b5b493c57373c02ea6dfdfac-a1-1781188709-1781134709&ip=64.32.104.161
+
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://qzv4jmsc.fubo18.com/tudn/mono.m3u8?token=d020ec0dda0155d5031bf718228d28eb002b4f9b-f5-1781121000-1781103000
+https://tezfs.vivolatamz.org/lb05/winplus/index.m3u8?token=b42d38486ddf88da5b88aad45fbc6fc2f7a65fe4-f6-1781188728-1781134728&ip=64.32.104.161
 
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://emprw.vivolatamz.org/lb02/foxsports/index.m3u8?token=8a17286c56b4d3b8f427bcb13cde65223efef52d-d0-1781188758-1781134758&ip=64.32.104.161
 
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://hcroq.vivolatamz.org/lb02/tudn_usa/index.m3u8?token=e490c2c5a5828e7cf1248f41e7edf6c989aee0ac-a4-1781188773-1781134773&ip=64.32.104.161
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://mivra.vivolatamz.org/lb04/espnpremium/index.m3u8?token=e0593478feb98e2d963118794c9214415aff47d7-75-1781188788-1781134788&ip=64.32.104.161
