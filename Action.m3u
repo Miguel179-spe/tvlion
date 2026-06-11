@@ -4,3 +4,9 @@ https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
 https://izsup.vivolatamz.org/lb03/espn/index.m3u8?token=c2d1094f49603d8ca861cfb5805baa3cfbc031a0-f7-1781247417-1781193417&ip=186.6.148.209
 
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://mivra.vivolatamz.org/lb04/winplus/index.m3u8?token=67755aaeaf4c046717548e2619d27c400233c8b4-62-1781247540-1781193540&ip=186.6.148.209
+
+
+
+
