@@ -1,22 +1,46 @@
 #EXTM3U
-
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://kbnue.vivolatamz.org/lb03/espn/index.m3u8?token=328256eed5560db7e66cd5dbb351ab6506ba5927-c7-1781188592-1781134592&ip=64.32.104.161
+https://nhciw.vivolatamz.org/lb04/espn/index.m3u8?token=86b3346f69786d553421571acc989eb28b0dabcb-76-1781245442-1781191442&ip=186.6.148.209
+
+
+
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", funbol 
-https://walhe.vivolatamz.org/dsports/index.m3u8?token=20ee7c06177846aaa54eaac05cb87ef05d20ba82-e4-1781188688-1781134688&ip=64.32.104.161
-
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://mivra.vivolatamz.org/lb04/tycsports/index.m3u8?token=649aa053e017a252b5b493c57373c02ea6dfdfac-a1-1781188709-1781134709&ip=64.32.104.161
+https://udqni.vivolatamz.org/lb06/dsports/index.m3u8?token=89fd4e721a233b2d81136f8e9a677bd2f2c018e3-bf-1781245690-1781191690&ip=186.6.148.209
 
 
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://tezfs.vivolatamz.org/lb05/winplus/index.m3u8?token=b42d38486ddf88da5b88aad45fbc6fc2f7a65fe4-f6-1781188728-1781134728&ip=64.32.104.161
+
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://emprw.vivolatamz.org/lb02/foxsports/index.m3u8?token=8a17286c56b4d3b8f427bcb13cde65223efef52d-d0-1781188758-1781134758&ip=64.32.104.161
+https://mivra.vivolatamz.org/lb04/tycsports/index.m3u8?token=3ba5dc434185e04abd4f85d85adb08ab2a8376e1-c1-1781245691-1781191691&ip=186.6.148.209
+
+
+
+
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://hcroq.vivolatamz.org/lb02/tudn_usa/index.m3u8?token=e490c2c5a5828e7cf1248f41e7edf6c989aee0ac-a4-1781188773-1781134773&ip=64.32.104.161
+https://nhciw.vivolatamz.org/lb04/espn/index.m3u8?token=86b3346f69786d553421571acc989eb28b0dabcb-76-1781245442-1781191442&ip=186.6.148.209
+
+
+
+
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://mivra.vivolatamz.org/lb04/espnpremium/index.m3u8?token=e0593478feb98e2d963118794c9214415aff47d7-75-1781188788-1781134788&ip=64.32.104.161
+https://ovaut.vivolatamz.org/lb04/winplus/index.m3u8?token=ff2a3a103075c518bdf8ef2ff866e970b6dc4e25-1f-1781245741-1781191741&ip=186.6.148.209
+
+
+
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://kbnue.vivolatamz.org/lb03/foxsports/index.m3u8?token=151c926f5b67ce655895c63c27ce4b5905e0c8cb-59-1781245743-1781191743&ip=186.6.148.209
+
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://rbtih.vivolatamz.org/lb05/tudn_usa/index.m3u8?token=6cc95ee5f5fdb4b96d499bb7f6f259c809ea5417-3e-1781245745-1781191745&ip=186.6.148.209
+
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://xrpma.vivolatamz.org/lb06/espnpremium/index.m3u8?token=d33c228d9160dc453eab7e6f3277d6dfaabafc40-bb-1781245746-1781191746&ip=186.6.148.209
+
+
+#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://nhciw.vivolatamz.org/lb04/espn/index.m3u8?token=86b3346f69786d553421571acc989eb28b0dabcb-76-1781245442-1781191442&ip=186.6.148.209
