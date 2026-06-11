@@ -24,5 +24,10 @@ https://d2hd2pp0kkhxn.cloudfront.net/8627511/mobile-nvirginia/buWi2BirIaNVFpPQOK
 https://d2hd2pp0kkhxn.cloudfront.net/8628003/mobile-nvirginia/Vd3MLl9Y5cxbPFCdLI91aEBBBLSw5QmSqFopjGosrKw/cid=9337~mid=63303321~ecid=8628003~pid=2~dtid=1~sid=019eb7f5-0d9d-72c0-bc95-b56dcae43316~csid=5878607~gc=NM0~gsd=QLM~grm=1~e=1781289150~ip=186.6.148.209/baseball_usa_mlb_8628003_new_712k.m3u8
 
 
+#EXTINF:-1 group-title="NBA"  tvg-logo=".png", NBA TV
+http://cord-cutter.net:8080/live/5uWnY2/585054/20073.m3u8
 
+
+#EXTINF:-1 group-title="NBA"  tvg-logo=".png", CA-NBA TV
+http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
 
