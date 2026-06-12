@@ -20,3 +20,7 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/14197.m3u8
 http://cord-cutter.net:8080/live/5uWnY2/585054/9802.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",ESPNU College Sports
 http://cord-cutter.net:8080/live/5uWnY2/585054/10255.m3u8
+
+
+#EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://latamvidzfy.org/pvote.php?id=tsn4
