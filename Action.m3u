@@ -1,26 +1,3 @@
 #EXTM3U
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://izsup.vivolatamz.org/lb03/espn/index.m3u8?token=c2d1094f49603d8ca861cfb5805baa3cfbc031a0-f7-1781247417-1781193417&ip=186.6.148.209
-
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://mivra.vivolatamz.org/lb04/winplus/index.m3u8?token=67755aaeaf4c046717548e2619d27c400233c8b4-62-1781247540-1781193540&ip=186.6.148.209
-
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://rbtih.vivolatamz.org/lb05/tntsports/index.m3u8?token=e1e48467fce0ccdd54b27c0cea256a4c6dbdf904-f5-1781247589-1781193589&ip=186.6.148.209
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://mivra.vivolatamz.org/lb04/winplus/index.m3u8?token=67755aaeaf4c046717548e2619d27c400233c8b4-62-1781247540-1781193540&ip=186.6.148.209
-
-#EXTINF:-1 group-title="MLB"  tvg-logo=".png", MLB 
-https://d2hd2pp0kkhxn.cloudfront.net/8627893/mobile-nvirginia/03fn0LdyKaRqLXg830bdR0qJqboZ5xTe1LDL97mIvRg/cid=9337~mid=63303803~ecid=8627893~pid=2~dtid=1~sid=019eb7f3-8cba-7720-8850-33fd2492238a~csid=5878607~gc=s0A~gsd=xz4~grm=1~e=1781289052~ip=186.6.148.209/baseball_usa_mlb_8627893_new_712k.m3u8
-
-
-#EXTINF:-1 group-title="MLB"  tvg-logo=".png", MLB 
-https://d2hd2pp0kkhxn.cloudfront.net/8627511/mobile-nvirginia/buWi2BirIaNVFpPQOKHjpZc-SwVK3JQA03A5Iw7Gs7M/cid=9337~mid=63301431~ecid=8627511~pid=2~dtid=1~sid=019eb7f4-5064-7996-9dfd-fc9b74242f5f~csid=5878607~gc=J4A~gsd=U_4~grm=1~e=1781289102~ip=186.6.148.209/baseball_usa_mlb_8627511_new_712k.m3u8
-
-
-#EXTINF:-1 group-title="MLB"  tvg-logo=".png", MLB 
-https://d2hd2pp0kkhxn.cloudfront.net/8628003/mobile-nvirginia/Vd3MLl9Y5cxbPFCdLI91aEBBBLSw5QmSqFopjGosrKw/cid=9337~mid=63303321~ecid=8628003~pid=2~dtid=1~sid=019eb7f5-0d9d-72c0-bc95-b56dcae43316~csid=5878607~gc=NM0~gsd=QLM~grm=1~e=1781289150~ip=186.6.148.209/baseball_usa_mlb_8628003_new_712k.m3u8
-
-
+https://bdjky.vivolatamz.org/espn/tracks-v1a1/mono.m3u8?ip=64.32.104.161&token=7e9a6bb0a16d6ba7c83dea6f4fe2aedef7fcbade-73-1781306321-1781252321
