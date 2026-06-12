@@ -1,20 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://nhciw.vivolatamz.org/lb04/espn/index.m3u8?token=86b3346f69786d553421571acc989eb28b0dabcb-76-1781245442-1781191442&ip=186.6.148.209
-
-
-
-
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", funbol 
-https://udqni.vivolatamz.org/lb06/dsports/index.m3u8?token=89fd4e721a233b2d81136f8e9a677bd2f2c018e3-bf-1781245690-1781191690&ip=186.6.148.209
-
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
-
-#EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://mivra.vivolatamz.org/lb04/winplus/index.m3u8?token=67755aaeaf4c046717548e2619d27c400233c8b4-62-1781247540-1781193540&ip=186.6.148.209
-
+https://bdjky.vivolatamz.org/espn/tracks-v1a1/mono.m3u8?ip=64.32.104.161&token=7e9a6bb0a16d6ba7c83dea6f4fe2aedef7fcbade-73-1781306321-1781252321
 
 
 
