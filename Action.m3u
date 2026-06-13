@@ -23,3 +23,6 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/9802.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",ESPNU College Sports
 http://cord-cutter.net:8080/live/5uWnY2/585054/10255.m3u8
 
+
+#EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://szrak.vivolatamz.org/lb05/espn/index.m3u8?token=36ea050a2963920bd2a949ef0d326e5c4081d865-43-1781419520-1781365520&ip=186.6.148.209
