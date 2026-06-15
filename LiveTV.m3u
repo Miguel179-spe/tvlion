@@ -3,22 +3,9 @@
 #EXTINF:-1 group-title="FUTBOL PEMIUM"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
 https://amg00658-amg00658c10-canelatv-international-7279.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-deporteslt-canelatvinternational/cb573d167d6c63909bce3778d2f14982847b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a97f4cc59e0a957f39e8fc8b307b24455a9c5a43e6a64cb7f9e15f11d86ba8b8014e932817fa83439fd501b3d1d35a83168025a2119a96a68f8043d48cab599a03ec207b3b481cc9da06f9a348a5e58a7b308a702b5f6c248ccc9deb4230b9525063e8edc2a964fc0a94fc4fec6127ab3f8b5b8b228f54bf1bab932acacf95fe182d53c1c7547137a197c3e09a6569ca0c94a6eccb7a7f9cc9187949ce78d9252e4af497a91197996cfcdc2295a4561f2dce95499eefd9e986b38c449929cb89e08e6732240b0d048762b6837dde5bb912cae0327b372727a19741b6e2b33c1e4315cbea3dd01a1fcb9de1c7dd0d6d92344f5fbc2d8a0b043a81603d7fb260fbcf6b39c4770981313ea30b66d017fee0769bcdb9ec0549ddb4a16bde4dbef85de02763c3105485f60593563d61633fa2ca69003977ca46e5dd8ad3721915eefbc4fdb22b5265173622c10f7f850af6a0cf3b091e81722b65661914977eaf017b9ea5645cbb2dd2a21d7bc5222e20efa938521a4985dcb4c3c2be37e42f1da1adae6b55416971b2250c286ddab7cd5df878787f74498f4f404cb00e5445e5dfae8ffcd13e9ccc35f8730a7112058a58fc4d44214373b7c781f65efba2bdf3eeeb51c9fd841144ca0fa20f0491eff863f5e48fc040355dcb3d164a98c92ec97f2c88429a7bc89a47d1be51090b2f0066f6ce05af11e984daf022947af9144366bc2cf2dcc2a3c66a53d09448183a1d1a422c05387f5af892fe4c3456c0f067ea54edee158e475738300e9ea1084c89e57253cd61272ef5ee9bc5fd8a3011cc6fe67c863550f1195e7893b95280b4bbfdfe8878474088e6d92b9595c8d09c989a5c3d610a1794ce585972a256d38415eea0183ca2c9bcecd46a9862f177dca0b33def28afdbb66dffc0c91e9a99918eeb31de1f7ea0f551e2125720791edecdd70f/104/1280x720_3849560/index.m3u8
 
-#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="A Dominicano",Ad Telemundo 51 Miami  
-https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/32d83610-b3ed-4e0c-bc1a-9cf4055cc405/3.m3u8
-
 
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="A Dominicano",Ad Canal de las Extrellas  
 https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
-
-#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="A Dominicano",Ad Telemundo Acción
-https://d3rciv7av2te5a.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-plex/681bae8b-7071-4c32-8736-792df9906f88/0.m3u8
-
-
-#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="A Dominicano",Ad Telemundo California 
-https://d1rqgw5gocwo9i.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-stitched/10a44c37-f976-4d2b-ab23-8637a7a094ca/3.m3u8
-
-#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="A Dominicano",Ad Telemundo New York 47
-https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/e2d37c4f-10a7-4e0b-9293-ec7e5a8c6445/4.m3u8
 
 
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Retro",cartoon classic
