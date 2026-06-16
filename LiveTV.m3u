@@ -2,6 +2,8 @@
 
 #EXTINF:-1 tvg-logo=".png" group-title="Novelas",TELEVISACanal Drama  (HD)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="A Premium",HBO Boxing
+https://csm-e-cetubilusordlive-97882409.csm.tubi.video/csm/live/750515240.m3u8?playback_start_ts=1781632490&yo.ap=https://lna.tubi.video/prd-yospace/&yo.t.jt=1000&ss.exp=20260619175450&ss.sig=c8bfd5ececc58fefcbd77a85c82a8af8c1fc39dc&yo.oh=Y3NtLWUtZWIuY3NtLnR1YmkudmlkZW8=
 
 
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Retro",como antes tv  
