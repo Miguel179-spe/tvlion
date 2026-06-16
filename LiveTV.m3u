@@ -4,7 +4,17 @@
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="A Premium",HBO Boxing
 https://csm-e-cetubilusordlive-97882409.csm.tubi.video/csm/live/750515240.m3u8?playback_start_ts=1781632490&yo.ap=https://lna.tubi.video/prd-yospace/&yo.t.jt=1000&ss.exp=20260619175450&ss.sig=c8bfd5ececc58fefcbd77a85c82a8af8c1fc39dc&yo.oh=Y3NtLWUtZWIuY3NtLnR1YmkudmlkZW8=
+#EXTINF:-1 tvg-name="Crime & Justice" group-title="Crímenes Reales",Crime & Justice (1080p)
+https://d1vsdt3c2xcxl2.cloudfront.net/playlist.m3u8
 
+#EXTINF:-1 tvg-name="Crime Beat TV" group-title="Crímenes Reales",Crime Beat TV (1080p)
+https://8e6c868c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0NyaW1lQmVhdF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-name="CrimeFlix" group-title="Crímenes Reales",CrimeFlix (1080p)
+https://dgx2snzx175pa.cloudfront.net/scheduler/scheduleMaster/391.m3u8
+
+#EXTINF:-1 tvg-name="Crímenes Reales" group-title="Crímenes Reales",Crímenes Reales (1080p)
+https://amg01796-amg01796c13-rakuten-gb-6739.playouts.now.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="png" group-title="Retro",como antes tv  
 https://tvstream.alojawebgt.net:3358/live/comoantestvlive.m3u8
