@@ -28,6 +28,8 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/9802.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",ESPNU College Sports
 http://cord-cutter.net:8080/live/5uWnY2/585054/10255.m3u8
 
+#EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
+https://w1327.mywebtv.cloud/hls/winsportsmas/index.m3u8?token=6SRITFPrJLx9FUX9VnI3Bw&expires=1781750956
 
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-https://qxjes.vivolatamz.org/lb05/dsports/index.m3u8?token=77314389f5a807af3e09bba1d5e1b18bb75d8d34-28-1781433127-1781379127&ip=181.37.210.75
+https://w1327.mywebtv.cloud/hls/dsportsplus/index.m3u8?token=u2Gmu_VkUBdUIevcg70mDw&expires=1781749698
