@@ -1,7 +1,8 @@
 #EXTM3U
 
 
-
+#EXTINF:-1 tvg-logo="png" group-title="Retro",Cartoon Classics
+https://rpn.bozztv.com/gusa/gusa-cartoonclassics/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/GY750xh.jpg" group-title="MUSICA",98.1 Pearl FM (720p)
 https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8
