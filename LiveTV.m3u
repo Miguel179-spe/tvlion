@@ -1,4 +1,245 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",A&E
+http://200.35.176.154:8000/play/a034/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",A&E HD
+http://200.35.176.154:8000/play/a0qw/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",AMC
+http://200.35.176.154:8000/play/a01i/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",AMC HD
+http://200.35.176.154:8000/play/a0qx/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",AXN
+http://200.35.176.154:8000/play/a01g/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",AZTECA 7
+http://200.35.176.154:8000/play/a064/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Adult Swim
+http://200.35.176.154:8000/play/a04n/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Animal Planet
+http://200.35.176.154:8000/play/a037/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Azcorazon
+http://200.35.176.154:8000/play/a017/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",BANDAMAX
+http://200.35.176.154:8000/play/a04y/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",BANDAMAX
+http://200.35.176.154:8000/play/a051/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Baby First
+http://200.35.176.154:8000/play/a025/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANA 27 EZPERANZA
+http://200.35.176.154:8000/play/a061/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL 5
+http://200.35.176.154:8000/play/a056/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL 5 MEXICO
+http://200.35.176.154:8000/play/a067/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL CATOLICO HUEHUE
+http://200.35.176.154:8000/play/a04f/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL DE LAS ESTRELLAS
+http://200.35.176.154:8000/play/a03j/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL PENIEL CAMOJA
+http://200.35.176.154:8000/play/a04a/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CARACOL HD
+http://200.35.176.154:8000/play/a063/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CINECANAL HD
+http://200.35.176.154:8000/play/a03h/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CNNE
+http://200.35.176.154:8000/play/a01j/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 11 - GUA
+http://200.35.176.154:8000/play/a01u/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 13-GUA
+http://200.35.176.154:8000/play/a01t/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 3 - GUA
+http://200.35.176.154:8000/play/a02u/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 4 - ESA
+http://200.35.176.154:8000/play/a02n/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 7 - GUA
+http://200.35.176.154:8000/play/a02t/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal Antigua - GUA
+http://200.35.176.154:8000/play/a02r/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal Azteca - GUA
+http://200.35.176.154:8000/play/a02s/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Cartoon Network
+http://200.35.176.154:8000/play/a00z/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Cartoonito
+http://200.35.176.154:8000/play/a011/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Cine Latino
+http://200.35.176.154:8000/play/a043/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CineCanal
+http://200.35.176.154:8000/play/a046/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",CineMax
+http://200.35.176.154:8000/play/a044/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Claro Cinema
+http://200.35.176.154:8000/play/a03d/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Claro Musica
+http://200.35.176.154:8000/play/a02g/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Claro Sports 2 HD
+http://200.35.176.154:8000/play/a00i/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",DE PELICULA
+http://200.35.176.154:8000/play/a004/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",DHE
+http://200.35.176.154:8000/play/a00f/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Channel
+http://200.35.176.154:8000/play/a036/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Home & Health
+http://200.35.176.154:8000/play/a03u/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery ID HD
+http://200.35.176.154:8000/play/a0rx/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Kids
+http://200.35.176.154:8000/play/a03p/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Turbo
+http://200.35.176.154:8000/play/a03t/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery World HD
+http://200.35.176.154:8000/play/a0ru/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Disney
+http://200.35.176.154:8000/play/a03r/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Disney JR
+http://200.35.176.154:8000/play/a012/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",E!
+http://200.35.176.154:8000/play/a033/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",E! Entertairment HD
+http://200.35.176.154:8000/play/a0qu/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN
+http://200.35.176.154:8000/play/a03a/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 2 HD
+http://200.35.176.154:8000/play/a053/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 3
+http://200.35.176.154:8000/play/a02d/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 3 HD
+http://200.35.176.154:8000/play/a054/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 4
+http://200.35.176.154:8000/play/a057/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 5
+http://200.35.176.154:8000/play/a058/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 6 HD
+http://200.35.176.154:8000/play/a055/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",EWTN
+http://200.35.176.154:8000/play/a01n/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",El Gourmet
+http://200.35.176.154:8000/play/a02a/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Exa TV
+http://200.35.176.154:8000/play/a03c/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",FOX MUNDIAL SAL
+http://200.35.176.154:8000/play/a066/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",FX
+http://200.35.176.154:8000/play/a026/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",FX HD
+http://200.35.176.154:8000/play/a0qz/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",GOLDE EDGE
+http://200.35.176.154:8000/play/a001/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Golden
+http://200.35.176.154:8000/play/a02j/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Guatevision - GUA
+http://200.35.176.154:8000/play/a00t/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",H2
+http://200.35.176.154:8000/play/a029/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO Family HD
+http://200.35.176.154:8000/play/a00o/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO HD
+http://200.35.176.154:8000/play/a00l/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO Plus HD
+http://200.35.176.154:8000/play/a00n/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO XTREME
+http://200.35.176.154:8000/play/a00p/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO2 HD
+http://200.35.176.154:8000/play/a00m/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HOLA! TV HD
+http://200.35.176.154:8000/play/a0rc/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",HTV
+http://200.35.176.154:8000/play/a02i/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",History Channel
+http://200.35.176.154:8000/play/a038/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",History HD
+http://200.35.176.154:8000/play/a01o/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Home & Health HD
+http://200.35.176.154:8000/play/a0rb/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",La voz de Maria
+http://200.35.176.154:8000/play/a03w/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Multipremier
+http://200.35.176.154:8000/play/a042/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",NICK JR
+http://200.35.176.154:8000/play/a065/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Nat Geo HD
+http://200.35.176.154:8000/play/a0rq/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",National Geographic
+http://200.35.176.154:8000/play/a01b/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",PREUBA  FOX SPORT 2
+http://200.35.176.154:8000/play/a05x/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",PXTV
+http://200.35.176.154:8000/play/a04l/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Pasiones HD
+http://200.35.176.154:8000/play/a0rv/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",RCN - GUA
+http://200.35.176.154:8000/play/a008/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",RCN Novelas
+http://200.35.176.154:8000/play/a027/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",RHEMA TV
+http://200.35.176.154:8000/play/a04e/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",SEMILLITAS
+http://200.35.176.154:8000/play/a014/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",SPACE HD
+http://200.35.176.154:8000/play/a04h/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",SPIN5HD
+http://200.35.176.154:8000/play/a060/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",STAR CHANNEL
+http://200.35.176.154:8000/play/a03s/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Sembrador
+http://200.35.176.154:8000/play/a02o/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Sony Movies HD
+http://200.35.176.154:8000/play/a005/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Studio Universal
+http://200.35.176.154:8000/play/a045/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TBN Enlace
+http://200.35.176.154:8000/play/a01m/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TCM
+http://200.35.176.154:8000/play/a02k/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TELE FLIX
+http://200.35.176.154:8000/play/a04r/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TELEMUNDO MIAMI
+http://200.35.176.154:8000/play/a05y/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TLC
+http://200.35.176.154:8000/play/a039/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TN 23
+http://200.35.176.154:8000/play/a04z/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TNT HD
+http://200.35.176.154:8000/play/a0r9/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",TNT Series HD
+http://200.35.176.154:8000/play/a0rs/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Tele Antillas - RD
+http://200.35.176.154:8000/play/a00u/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Telemundo HD
+http://200.35.176.154:8000/play/a0qy/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Telemundo Miami
+http://200.35.176.154:8000/play/a05v/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Tooncast
+http://200.35.176.154:8000/play/a02z/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",UNIVERSAL COMEDY HD
+http://200.35.176.154:8000/play/a0rk/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",UNIVERSAL CRIME HD
+http://200.35.176.154:8000/play/a0rj/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",UNIVERSAL PREMIERE HD
+http://200.35.176.154:8000/play/a0rg/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Universal
+http://200.35.176.154:8000/play/a040/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Univision HD
+http://200.35.176.154:8000/play/a0rw/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",VAQUEROS HUEHUE
+http://200.35.176.154:8000/play/a062/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",VENUS
+http://200.35.176.154:8000/play/a02p/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",Warner
+http://200.35.176.154:8000/play/a032/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",radio ranchera
+http://200.35.176.154:8000/play/a05c/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",radio sonora
+http://200.35.176.154:8000/play/a002/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",tele arte
+http://200.35.176.154:8000/play/a05d/index.m3u8
+#EXTINF:-1 tvg-logo="png" group-title="Joseluis",zoe
+http://200.35.176.154:8000/play/a03x/index.m3u8
+
+
+
+
+
+
+
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/GY750xh.jpg" group-title="MUSICA",98.1 Pearl FM (720p)
 https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8
