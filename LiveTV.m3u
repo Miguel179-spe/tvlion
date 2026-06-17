@@ -1,239 +1,239 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",A&E
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a034&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a034/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",A&E HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0qw&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0qw/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",AMC
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01i&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01i/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",AMC HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0qx&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0qx/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",AXN
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01g&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01g/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",AZTECA 7
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a064&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a064/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Adult Swim
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04n&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Animal Planet
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a037&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a037/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Azcorazon
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a017&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a017/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",BANDAMAX
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04y&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04y/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",BANDAMAX
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a051&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a051/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Baby First
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a025&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a025/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANA 27 EZPERANZA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a061&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a061/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL 5
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a056&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a056/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL 5 MEXICO
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a067&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a067/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL CATOLICO HUEHUE
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04f&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04f/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL DE LAS ESTRELLAS
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03j&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03j/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CANAL PENIEL CAMOJA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04a&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04a/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CARACOL HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a063&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a063/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CINECANAL HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03h&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03h/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CNNE
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01j&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01j/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 11 - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01u&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01u/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 13-GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01t&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01t/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 3 - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02u&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02u/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 4 - ESA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02n&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02n/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal 7 - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02t&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02t/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal Antigua - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02r&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02r/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Canal Azteca - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02s&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02s/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Cartoon Network
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00z&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00z/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Cartoonito
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a011&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a011/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Cine Latino
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a043&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a043/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CineCanal
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a046&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a046/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",CineMax
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a044&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a044/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Claro Cinema
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03d&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03d/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Claro Musica
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02g&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02g/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Claro Sports 2 HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00i&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00i/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",DE PELICULA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a004&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a004/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",DHE
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00f&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00f/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Channel
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a036&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a036/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Home & Health
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03u&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03u/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery ID HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rx&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rx/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Kids
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03p&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03p/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery Turbo
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03t&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03t/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Discovery World HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0ru&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0ru/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Disney
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03r&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03r/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Disney JR
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a012&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a012/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",E!
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a033&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a033/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",E! Entertairment HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0qu&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0qu/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03a&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03a/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 2 HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a053&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a053/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 3
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02d&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02d/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 3 HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a054&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a054/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 4
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a057&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a057/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 5
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a058&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a058/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",ESPN 6 HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a055&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a055/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",EWTN
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01n&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01n/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",El Gourmet
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02a&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02a/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Exa TV
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03c&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03c/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",FOX MUNDIAL SAL
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a066&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a066/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",FX
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a026&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a026/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",FX HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0qz&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0qz/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",GOLDE EDGE
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a001&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a001/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Golden
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02j&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02j/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Guatevision - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00t&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00t/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",H2
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a029&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a029/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO Family HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00o&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00o/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00l&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00l/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO Plus HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00n&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00n/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO XTREME
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00p&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00p/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HBO2 HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00m&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00m/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HOLA! TV HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rc&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rc/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",HTV
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02i&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02i/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",History Channel
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a038&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a038/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",History HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01o&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01o/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Home & Health HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rb&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rb/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",La voz de Maria
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03w&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03w/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Multipremier
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a042&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a042/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",NICK JR
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a065&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a065/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Nat Geo HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rq&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rq/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",National Geographic
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01b&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01b/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",PREUBA  FOX SPORT 2
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a05x&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a05x/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",PXTV
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04l&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04l/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Pasiones HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rv&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rv/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",RCN - GUA
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a008&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a008/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",RCN Novelas
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a027&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a027/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",RHEMA TV
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04e&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04e/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",SEMILLITAS
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a014&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a014/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",SPACE HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04h&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04h/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",SPIN5HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a060&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a060/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",STAR CHANNEL
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03s&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03s/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Sembrador
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02o&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02o/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Sony Movies HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a005&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a005/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Studio Universal
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a045&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a045/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TBN Enlace
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a01m&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a01m/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TCM
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02k&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02k/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TELE FLIX
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04r&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04r/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TELEMUNDO MIAMI
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a05y&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a05y/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TLC
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a039&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a039/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TN 23
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a04z&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a04z/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TNT HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0r9&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0r9/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",TNT Series HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rs&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rs/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Tele Antillas - RD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a00u&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a00u/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Telemundo HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0qy&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0qy/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Telemundo Miami
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a05v&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a05v/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Tooncast
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02z&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02z/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",UNIVERSAL COMEDY HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rk&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rk/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",UNIVERSAL CRIME HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rj&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rj/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",UNIVERSAL PREMIERE HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rg&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rg/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Universal
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a040&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a040/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Univision HD
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a0rw&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a0rw/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",VAQUEROS HUEHUE
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a062&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a062/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",VENUS
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a02p&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a02p/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",Warner
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a032&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a032/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",radio ranchera
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a05c&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a05c/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",radio sonora
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a002&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a002/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",tele arte
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a05d&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a05d/index.m3u8
 #EXTINF:-1 tvg-logo="png" group-title="Joseluis",zoe
-http://tecnotv.club/ncnq/phpcode/ssiptv.php?c=a03x&token=tecnotokenplustv230516F&f=.m3u8
+http://200.35.176.154:8000/play/a03x/index.m3u8
 
 
 
