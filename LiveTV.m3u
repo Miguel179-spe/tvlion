@@ -1,4 +1,29 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/156___Listas_en_M3U_CL.png" group-title="A-PPV""Uncategorized",+ Listas en M3U.CL
+https://scl.edge.grupoz.cl/transmision/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/113_Cali_TV.png" group-title="A-PPV""Uncategorized",Cali TV
+https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/122_Canal_Vision_Dorada.png" group-title="A-PPV""Uncategorized",Canal VisiÃ³n Dorada
+https://movil.ejeserver.com/live/visiondorada.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/125_Cosmovision.png" group-title="A-PPV""Uncategorized",CosmovisiÃ³n
+https://videohls2.cosmovision.tv/hls/sd.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/137_Tele_Islas.png" group-title="A-PPV""Uncategorized",Tele Islas
+https://5ab772334c39c.streamlock.net/live-teleislas/_definst_/teleislas/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/135_Telepacifico.png" group-title="A-PPV""Uncategorized",TelepacÃ­fico
+https://play.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/022/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/187_Tele_Familia.png" group-title="A-PPV""Uncategorized",Tele Familia
+https://stmv2.voxtvhd.com.br/telefamilia/telefamilia/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/4_Retro_Plus_TV.png" group-title="A-PPV""Uncategorized",Retro Plus TV
+https://tls-cl.cdnz.cl/retroplustvuno/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/5_Retro_Plus_TV_Senal_2.png" group-title="A-PPV""Uncategorized",Retro Plus TV SeÃ±al 2
+https://tls-cl.cdnz.cl/retroplustvdos/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/465_Retro_Plus_TV_Senal_3.png" group-title="A-PPV""Uncategorized",Retro Plus TV SeÃ±al 3
+https://tls-cl.cdnz.cl/retroplustvtres/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/862_Oasis_TV.png" group-title="A-PPV""Uncategorized",Oasis TV
+https://5e85d90130e77.streamlock.net/6020/6020/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1157_Veo_TV.png" group-title="A-PPV""Uncategorized",Veo TV
+https://movil.ejeserver.com/live/veotv.m3u8
+
 
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
 https://fastly.live.brightcove.com/6397475321112/us-east-1/6416149296001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoidXNuYnRwLmVncmVzcy5jdWNjbzkiLCJhY2NvdW50X2lkIjoiNjQxNjE0OTI5NjAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE2MTQ5Mjk2MDAxIl0sImp0aSI6IjYzOTc0NzUzMjExMTIifQ.C77gEpP9r5wedoSccHu6jq7jC0zR8PfIA033Cw33C_E/playlist-hls.m3u8
