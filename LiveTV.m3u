@@ -34,33 +34,6 @@ https://w1327.mywebtv.cloud/hls/winsportsmas/index.m3u8?token=6SRITFPrJLx9FUX9Vn
 https://w1327.mywebtv.cloud/hls/dsportsplus/index.m3u8?token=u2Gmu_VkUBdUIevcg70mDw&expires=1781749698
 
 
-
-
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Latino
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2154
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Films
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Espanyol
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2649
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Cine y Series
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2152
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time English
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2648
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time France
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2160
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Familia
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3528
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Terror
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3529
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Crimen
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3533
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Comedia
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2551
-#EXTINF:-1 tvg-logo="" group-title="24/7",Run Time Acción
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2550
-#EXTINF:-1 tvg-logo="" group-title="24/7",Toon Goggles
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=771
-
 #EXTINF:-1 tvg-logo="png" group-title="Retro",Cartoon Classics
 https://rpn.bozztv.com/gusa/gusa-cartoonclassics/index.m3u8
 
