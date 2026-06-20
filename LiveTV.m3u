@@ -1,7 +1,19 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo=".jpg" group-title="Discovery",Discovery Channel  FREE3
+http://23.237.104.106:8080/USA_DISCOVERY/index.m3u8
+#EXTINF:-1 tvg-logo=".jpg" group-title="Discovery",Discovery Science
+http://lb59.1xtr.icu:25461/live/5uWnY2/585054/57418.m3u8?token=ThFcUhFaQQwRBQZcClQGBA4GXAkEUAYDUQdWB1tWBFQNVwJWUwFSV1UQHkdBQURQV1g7WFQWCgdUVlILFRFGQVBBa1oGEFkUAgEBXQcGFBkUQQ1cVRYKAk9AE1pdEQkQAAQGBFoQTxRWSkYAQFtXWWlRAUdZV1UQWQwWX1UfEV1bbFBWD1MNUhEIEFQQGRRcRUVGC15BXF5PQAFaTUFSRlARDhFRBVUBER4QBl1AWEFETEYLEmdmEE9ABktNVl1BXFxaEVgQDgVGChBJEFxFakRQF0VCUVFfBhBBCRsDER4XXlVLPVEMWF1XURFbWlhGFA9GCRIYEl8MDApHVkFsQlxXFglAB1YDBAMQGA==
+#EXTINF:-1 tvg-logo=".jpg" group-title="Discovery", Discovery Family 
+http://lb58.1xtr.icu:25461/live/5uWnY2/585054/57347.m3u8?token=ThFcUhFaQQwRUFNSCgYBBlBQVwQBBQRWVAEFCgoABAsMAAwHUQVXBQYQHkdBQURQV1g7WFQWCgdUUVcEFRFGQVBBa1oGEFkUAgEBXQcGFBkUQQ1cVRYKAk9AE1pdEQkQBAACAFAQTxRWSkYAQFtXWWlRAUdZV1UQWQwWX1UfEV1bbFBWD1MNUhEIEFUQGRRcRUVGC15BXF5PQAFaTUFSRlARDhFWAlEBER4QBl1AWEFETEYLEmdmEE9ABktNVl1BXFxaEVgQDgVGChBJEFxFakRQF0VCUVFfBhBBCRsDER4XXlVLPVEMWF1XURFbWlhGFA9GCRIYEl8MDApHVkFsQlxXFglAC1UCCwIQGA==
+#EXTINF:-1 tvg-logo=".jpg" group-title="Discovery",Latin Discovery (F)
+http://lb57.1xtr.icu:25461/live/5uWnY2/585054/57645.m3u8?token=ThFcUhFaQQwRBFZQAgFUDQdTVgkJBAAEAVBRBFxXBVZTC1AEBAoHDlUQHkdBQURQV1g7WFQWCgdUVFcGFRFGQVBBa1oGEFkUAgEBXQcGFBkUQQ1cVRYKAk9AE1pdEQkQBwEFAFEQTxRWSkYAQFtXWWlRAUdZV1UQWQwWX1UfEV1bbFBWD1MNUhEIEFUQGRRcRUVGC15BXF5PQAFaTUFSRlARDhFRClMBER4QBl1AWEFETEYLEmdmEE9ABktNVl1BXFxaEVgQDgVGChBJEFxFakRQF0VCUVFfBhBBCRsDER4XXlVLPVEMWF1XURFbWlhGFA9GCRIYEl8MDApHVkFsQlxXFglABlEOAQMQGA==
+#EXTINF:-1 tvg-logo=".jpg" group-title="Discovery",Investigation Discovery
+http://lb59.1xtr.icu:25461/live/5uWnY2/585054/53687.m3u8?token=ThFcUhFaQQwRCwoBCwEEVwAGBlQFDVVWU1FRA10LBVQHBQACUwZXUlcQHkdBQURQV1g7WFQWCgdQVFsEFRFGQVBBa1oGEFkUAgEBXQcGFBkUQQ1cVRYKAk9AE1pdEQkQDAIEClYQTxRWSkYAQFtXWWlRAUdZV1UQWQwWX1UfEV1bbFBWD1MNUhEIEFUQGRRcRUVGC15BXF5PQAFaTUFSRlARDhFQClQHER4QBl1AWEFETEYLEmdmEE9ABktNVl1BXFxaEVgQDgVGChBJEFxFakRQF0VCUVFfBhBBCRsDER4XXlVLPVEMWF1XURFbWlhGFA9GCRIYEl8MDApHVkFsQlxXFglAClsFCwcQGA==
+
+
+
 #EXTINF:-1 tvg-logo="" group-title="B B 24/7",El Chavo TV (720p)
 https://live20.bozztv.com/giatvplayout7/giatv-211465/playlist.m3u8
-
 
 #EXTINF:-1 tvg-logo="" group-title="B B 24/7",Run Time Latino
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2154
@@ -30,20 +42,6 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=771
 
 
 
-
-#EXTINF:-1 tvg-logo="" group-title="Discovery",Latin Discovery (F)
-http://cord-cutter.net:8080/live/5uWnY2/585054/57645.m3u8
-
-
-#EXTINF:-1 tvg-logo="" group-title="Discovery",Discovery Channel
-http://cord-cutter.net:8080/live/5uWnY2/585054/53684.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Discovery",Discovery History
-http://cord-cutter.net:8080/live/5uWnY2/585054/53694.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Discovery",Discovery Science
-http://cord-cutter.net:8080/live/5uWnY2/585054/53695.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="Discovery",Investigation Discovery
-http://cord-cutter.net:8080/live/5uWnY2/585054/53687.m3u8
 
 #EXTINF:-1 tvg-logo="jpg" group-title="Deportes",ESPN U  FREE3
 http://23.237.104.106:8080/USA_ESPNU/index.m3u8
