@@ -494,14 +494,7 @@ https://stream.haislin.com/ls_j3BOKxBbUJ/index.m3u8
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AHaXlCh.png" group-title="A Dominicano""Animation",Anime Zone TV (480p)
 http://animezonetv.net/hls/stream.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano""General",Antena 7 (480p) [Not 24/7] [Geo-blocked]
-https://alba-do-antena7-antena7.stream.mediatiquestream.com/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/zKWFgeQ.png" group-title="A Dominicano""General",Antena 7 (720p)
-https://d3mhrz6vhsrmmq.cloudfront.net/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/QE0XWLh.png" group-title="A Dominicano""Entertainment",Antena 21
-https://d1p8txxph783az.cloudfront.net/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/QE0XWLh.png" group-title="A Dominicano""Entertainment",Antena 21 (480p) [Not 24/7] [Geo-blocked]
-https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/I2wRq88.png" group-title="A Dominicano""Shop",Bajo Techo TV (1080p) [Not 24/7]
 https://fox.hostlagarto.com:8081/bajotechotv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://www.banivision.com/wp-content/uploads/2023/04/Bani-Vision-Favicon.png" group-title="A Dominicano""General",Bani Vision (720p) [Not 24/7]
@@ -1158,8 +1151,6 @@ https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8
 
 
 
-#EXTINF:-1 tvg-logo="https://imgur.com/AvFuE6I.png" group-title="A Dominicano",Antena 7
-https://alba-do-antena7-antena7.stream.mediatiquestream.com/original.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/fWKSZMO.png" group-title="Univision",US Univision (East)
 http://cord-cutter.net:8080/live/5uWnY2/585054/15336.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/fWKSZMO.png" group-title="Univision",US Univision (East) (SP)
