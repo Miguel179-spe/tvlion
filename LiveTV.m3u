@@ -1,5 +1,15 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="" group-title="Deportes",BEIN
+http://23.237.104.106:8080/USA_BEIN/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Deportes",ESPNU
+http://23.237.104.106:8080/USA_ESPNU/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Deportes",XUMO Channel
+https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
+
+
 #EXTINF:-1 tvg-logo="https://imgur.com/wo9SDlq.png" group-title="A Dominicano""News",Telemundo 51 Florida
 https://d368vp0qqzvkid.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_nbc-direct/9bc9253e-c8e9-472a-b00e-566349bd8579/4.m3u8v
 
