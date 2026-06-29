@@ -1,5 +1,11 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="" group-title="A Dominicano",Antena 7
+https://ds.tvabierta.net/memfs/33981d0f-ff9a-40a7-9cf2-29b75f373037_output_0.m3u8?session=eGfZGWVFiKrEh7chTvHTRe
+
+#EXTINF:-1 tvg-logo="" group-title="A Dominicano",Teleantilla 2
+https://ds.tvabierta.net/memfs/fde81577-b1ae-48ab-bac4-4ae5908af483_output_0.m3u8?session=Uxz4mUGgQTZHQdWvQoep9i
+
 #EXTINF:-1 tvg-logo="" group-title="Deportes",BEIN
 http://23.237.104.106:8080/USA_BEIN/index.m3u8
 
