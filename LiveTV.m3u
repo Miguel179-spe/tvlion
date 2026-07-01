@@ -8,7 +8,7 @@ https://ds.tvabierta.net/memfs/fde81577-b1ae-48ab-bac4-4ae5908af483_output_0.m3u
 
 
 
-#EXTINF:-1 tvg-logo="" group-title="Colombia",CARACOL
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Fww94l9.png" group-title="Colombia", A CARACOL
 http://181.78.8.199:8000/play/a0b0/index.m3u8
 
 
@@ -20,12 +20,6 @@ http://181.78.14.26:4000/play/a00d/index.m3u8
 
 #EXTINF:-1 tvg-id="LaKalle.co@SD" tvg-logo="https://www.tdtparatodos.tv/sites/default/files/la_kalle.png" group-title="Colombia",La Kalle (720p)
 https://mdstrm.com/live-stream-playlist/58d191f07290fbb058025843.m3u8
-
-#EXTINF:-1 tvg-id="CaracolTV.co@SD" tvg-logo="https://i.imgur.com/WbfdJbk.png" group-title="Colombia",Caracol TV (1080p)
-http://138.121.15.230:9002/CARACOL/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/WbfdJbk.png" group-title="Colombia", A Caracol 
-https://us-b4-p-e-pb13.cdn.mdstrm.com/live-stream-gdai/632391734be92a791e2750e6/linear/hls/pa/event/AImtl9u6QA2hQXyM7DGbwg/stream/9ed863e6-ece7-4602-b1bb-cf73eb481554:ATL/master.m3u8?aid=589b13f631f1bebd088ff753&uid=BNvoMjKlIdEXGbaSyuzDvJqPVn7FFwy1&sid=bSrfMtpApQu4Koqwu848MgLojMSmbEo4&pid=kqv1mvEAm0vk09fXVviHhRX9HumGBoBL&pid_dvr=qekmrp86Pc7ESlgGhzWtUw5SMujuuP3H&ref=https%3A%2F%2Fwww.caracoltv.com%2F&without_cookies=false&listenerid=&dnt=true&access_token=vll5yZeQHpwNAT92DjBOUH9E7WoZ62A2ncNQ4SwmoVPqawfrhF8PBmYVVunmIAiLCyro27UMKJo&CMCD=cid%3D%22632391734be92a791e2750e6%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22kqv1mvEAm0vk09fXVviHhRX9HumGBoBL%22%2Csu&adInsertionGoogleStreamId=9ed863e6-ece7-4602-b1bb-cf73eb481554%3AATL&es=us-b4-p-e-pb13.cdn.mdstrm.com&ote=1783021926268&ot=cn-K9kwUaLtDVakc-xB_lA&proto=https&pz=us
 
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/frd60hR.png" group-title="Austria""Austria",Agrotendencia TV (1080p)
