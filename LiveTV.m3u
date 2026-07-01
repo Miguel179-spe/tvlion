@@ -6,6 +6,12 @@ https://ds.tvabierta.net/memfs/33981d0f-ff9a-40a7-9cf2-29b75f373037_output_0.m3u
 #EXTINF:-1 tvg-logo="" group-title="A Dominicano",Teleantilla 2
 https://ds.tvabierta.net/memfs/fde81577-b1ae-48ab-bac4-4ae5908af483_output_0.m3u8?session=Uxz4mUGgQTZHQdWvQoep9i
 
+
+
+#EXTINF:-1 tvg-logo="" group-title="Colombia",CARACOL
+http://181.78.8.199:8000/play/a0b0/index.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Fww94l9.png" group-title="Colombia",Caracol 
 https://mdstrm.com/live-stream-playlist/632391734be92a791e2750e6.m3u8?uid=7fH2GAx7fZVI2wYmHaRHdbli3v7u5EIo&sid=oS3iu9xibsMQSx04G2bAoam1rGGFRCR4&pid=kqv1mvEAm0vk09fXVviHhRX9HumGBoBL&pid_dvr=qekmrp86Pc7ESlgGhzWtUw5SMujuuP3H&an=screen&at=web-app&av=v7.0.69&ref=https%3A%2F%2Fwww.caracoltv.com%2F&res=878x494&without_cookies=false&listenerid=&dnt=true&access_token=vll5yZeQHpwNAT92DjBOUH9E7WoZ62A2ncNQ4SwmoVPqawfrhF8PBmYVVunmIAiLCyro27UMKJo&CMCD=cid%3D%22632391734be92a791e2750e6%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22kqv1mvEAm0vk09fXVviHhRX9HumGBoBL%22%2Csu
 
