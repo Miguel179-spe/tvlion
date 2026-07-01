@@ -22,6 +22,26 @@ http://181.78.14.26:4000/play/a00d/index.m3u8
 https://mdstrm.com/live-stream-playlist/58d191f07290fbb058025843.m3u8
 
 
+#EXTINF:-1 tvg-logo="" group-title="A Premium",AE
+http://181.78.8.199:8000/play/a0al/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",AE
+http://181.78.8.199:8000/play/a0ct/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",ANIMAL PLANET
+http://181.78.8.199:8000/play/a0by/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",ANTV
+http://181.78.8.199:8000/play/a0fo/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",AXN
+http://181.78.8.199:8000/play/a0am/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",AXN
+http://181.78.8.199:8000/play/a0cu/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",Animal Planet HD AMAZONAS
+http://181.78.8.199:8000/play/a06w/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",CARACOL
+http://181.78.8.199:8000/play/a0b0/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="A Premium",CANAL DE LAS ESTRELLAS
+http://181.78.8.199:8000/play/a0as/index.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/frd60hR.png" group-title="Austria""Austria",Agrotendencia TV (1080p)
 https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AHaXlCh.png" group-title="Austria""Animation",Anime Zone TV (480p)
