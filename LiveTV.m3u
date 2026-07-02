@@ -1,5 +1,6 @@
 #EXTM3U
-
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/6/6a/SuperTennis_-_Logo_2016.svg/960px-SuperTennis_-_Logo_2016.svg.png" group-title="Deportes",SuperTennis (1080p)
+https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8 
 #EXTINF:-1 tvg-logo="" group-title="A Dominicano",Antena 7
 https://ds.tvabierta.net/memfs/33981d0f-ff9a-40a7-9cf2-29b75f373037_output_0.m3u8?session=eGfZGWVFiKrEh7chTvHTRe
 
