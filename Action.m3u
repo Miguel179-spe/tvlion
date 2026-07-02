@@ -1,7 +1,5 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="" group-title="Deportes",ESPN 7 HD
-http://181.78.79.131:8000/play/a0s8
 
 
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
@@ -9,9 +7,6 @@ http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/5NR6V3CDUZNTZL/6021/inde
 
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
 https://183.bozztv.com/giatv/giatv-NRT-SPORT/NRT-SPORT/chunks.m3u8
-
-#EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-http://live2.superteve.com:25461/livetv/9Wu6os8Dmg/306?token=SBpYUhVRG1sSA1dUVAVQUFpXXAEBAQNRV1JSAQICVgcBCgQEUghfVVYWSEZCQBAHA15mDFVGDARRVEhHRkdWQ2xRVBFcGwhRBAdTVRMYQBYLXlxHC1UBD1NUVlUFBwEdEUhZV0QDG1AAAlJXAgJATkBWQRFUFlhWDT0AAEVdUFQRAl5GClUVQ19aOwBUWQMMBhEDRwFGGhUIERRHCVpGXV8UElEPTUsARFFGXhMHVVpXERVHUgtDWRUQHUcJFnd+ERQSVh5NXA9DXQsKEw5AFhERFUdYF2lFBBEQF1ZVXlRBGgoRVxsVQ11VHDtSWwwMB1BNDF4KRRVbQFRHHxZeXl1RRFwUZkkIVBZeRgYCVFNWAhsY
 #EXTINF:-1 tvg-logo="jpg" group-title="Deportes",ESPN U  FREE3
 http://23.237.104.106:8080/USA_ESPNU/index.m3u8
 
