@@ -6,6 +6,8 @@ https://ds.tvabierta.net/memfs/33981d0f-ff9a-40a7-9cf2-29b75f373037_output_0.m3u
 #EXTINF:-1 tvg-logo="" group-title="A Dominicano",Teleantilla 2
 https://ds.tvabierta.net/memfs/fde81577-b1ae-48ab-bac4-4ae5908af483_output_0.m3u8?session=Uxz4mUGgQTZHQdWvQoep9i
 
+#EXTINF:-1 tvg-logo="" group-title="A Dominicano",Tennis channel 
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Fww94l9.png" group-title="Colombia", A CARACOL
