@@ -1,5 +1,74 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB", MLB Network
+http://cord-cutter.net:8080/live/5uWnY2/585054/323887.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB", MLB Network
+http://cord-cutter.net:8080/live/5uWnY2/585054/323888.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB", tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB", MLB Strikezone
+http://cord-cutter.net:8080/live/5uWnY2/585054/323889.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Arizona Diamondbacks
+http://cord-cutter.net:8080/live/5uWnY2/585054/324233.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Atlanta Braves
+http://cord-cutter.net:8080/live/5uWnY2/585054/324234.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Baltimore Orioles
+http://cord-cutter.net:8080/live/5uWnY2/585054/324235.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Boston Red Sox
+http://cord-cutter.net:8080/live/5uWnY2/585054/324236.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Chicago Cubs
+http://cord-cutter.net:8080/live/5uWnY2/585054/324237.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Chicago White Sox
+http://cord-cutter.net:8080/live/5uWnY2/585054/324238.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Cincinnati Reds
+http://cord-cutter.net:8080/live/5uWnY2/585054/324239.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Cleveland Guardians
+http://cord-cutter.net:8080/live/5uWnY2/585054/324240.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",,MLB | Colorado Rockies
+http://cord-cutter.net:8080/live/5uWnY2/585054/324241.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Detroit Tigers
+http://cord-cutter.net:8080/live/5uWnY2/585054/324242.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Houston Astros
+http://cord-cutter.net:8080/live/5uWnY2/585054/324243.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Kansas City Royals
+http://cord-cutter.net:8080/live/5uWnY2/585054/324244.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Los Angeles Angels
+http://cord-cutter.net:8080/live/5uWnY2/585054/324245.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Los Angeles Dodgers
+http://cord-cutter.net:8080/live/5uWnY2/585054/324246.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Miami Marlins
+http://cord-cutter.net:8080/live/5uWnY2/585054/324247.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Milwaukee Brewers
+http://cord-cutter.net:8080/live/5uWnY2/585054/324248.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Minnesota Twins
+http://cord-cutter.net:8080/live/5uWnY2/585054/324249.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | New York Mets
+http://cord-cutter.net:8080/live/5uWnY2/585054/324250.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | New York Yankees
+http://cord-cutter.net:8080/live/5uWnY2/585054/324251.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Oakland Athletics
+http://cord-cutter.net:8080/live/5uWnY2/585054/324252.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Philadelphia Phillies
+http://cord-cutter.net:8080/live/5uWnY2/585054/324253.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Pittsburgh Pirates
+http://cord-cutter.net:8080/live/5uWnY2/585054/324254.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",,MLB | San Diego Padres
+http://cord-cutter.net:8080/live/5uWnY2/585054/324255.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | San Francisco Giants
+http://cord-cutter.net:8080/live/5uWnY2/585054/324256.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Seattle Mariners
+http://cord-cutter.net:8080/live/5uWnY2/585054/324257.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | St  Louis Cardinals
+http://cord-cutter.net:8080/live/5uWnY2/585054/324258.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Tampa Bay Rays
+http://cord-cutter.net:8080/live/5uWnY2/585054/324259.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Texas Rangers
+http://cord-cutter.net:8080/live/5uWnY2/585054/324260.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Toronto Blue Jays
+http://cord-cutter.net:8080/live/5uWnY2/585054/324261.m3u8
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB",MLB | Washington Nationals
+http://cord-cutter.net:8080/live/5uWnY2/585054/324262.m3u8
+
+
+
 #EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo="https://imgur.com/gy3Y1zM.png" group-title="Retro",Guacara tv
 https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_id=12689&live=1&avod=1&hls_marker=1&pod_duration=[POD_DURATION]&min_ad_duration=6&max_ad_duration=120&site_page=[SITE_PAGE]&site_name=
 #EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo="https://imgur.com/gy3Y1zM.png" group-title="Retro",Guacara tv
