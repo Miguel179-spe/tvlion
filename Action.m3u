@@ -1,7 +1,5 @@
 #EXTM3U
-#EXTM3U
-#EXTINF:-1 tvg-id="ACCDigitalNetwork.us@SD" tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes",ACC Digital Network (1080p)
-https://d53csymoczzde.cloudfront.net/ACC_Digital_Network.m3u8
+
 
 
 #EXTINF:-1 tvg-id="ACCNetwork.us@SD" tvg-logo="https://i.imgur.com/TpCkbkT.png" group-title="Deportes",ACC Network (720p)
@@ -13,17 +11,14 @@ https://aegis-cloudfront-1.tubi.video/a1e671ae-d1c2-4e39-99c7-889e83056fd2/playl
 
 
 
-#EXTINF:-1 tvg-id="ACCDigitalNetwork.us@SD" tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes",ACCDN (1080p)
-https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="ESPN8TheOcho.us@ESPN8TheOchoHD" tvg-logo="https://images.fubo.tv/channel-config-ui/station-logos/on-dark/espn_8_the_ocho_bw.png" group-title="Deportes",ESPN8 The Ocho (1080p)
-https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
 
 
 
 #EXTINF:-1 tvg-id="ESPNU.us@SD" tvg-logo="https://i.imgur.com/HiBrysh.png" group-title="Deportes",ESPNU (720p)
 http://23.237.104.106:8080/USA_ESPNU/index.m3u8
+
+#EXTINF:-1 tvg-id="ESPNU.us@SD" tvg-logo="https://i.imgur.com/HiBrysh.png" group-title="Deportes",ESPNU (720p)
+http://23.237.104.106:8080/USA_ESPNU/tracks-v1a1/mono.m3u8
 
 
 
@@ -35,8 +30,6 @@ https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c
 #EXTINF:-1 tvg-logo="" group-title="Deportes",Tennis channel 
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
 
-#EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
-http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/5NR6V3CDUZNTZL/6021/index.m3u8
 
 #EXTINF:-1 group-title="Deportes"  tvg-logo="https://imgur.com/cAeImyw.png", futbol
 https://183.bozztv.com/giatv/giatv-NRT-SPORT/NRT-SPORT/chunks.m3u8
