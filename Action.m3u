@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes", ESPN 00
-http://200.35.176.154:8000/play/a03a/index.m3u8
+http://200.35.176.154:8000/play/a03a/26647280.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/3jVsTug.png" group-title="Deportes",UFC
 https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8
