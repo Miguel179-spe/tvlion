@@ -1,4 +1,9 @@
 #EXTM3U
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/3jVsTug.png" group-title="Deportes",UFC
+https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8
+
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",DAZN F1
 http://voodvooxqha.top:8080/live/VIP01751759858004994/b49eb82b6e0a/56469.m3u8
 
