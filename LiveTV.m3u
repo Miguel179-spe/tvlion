@@ -1,5 +1,10 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Novelas",Novelisima 
+https://dai.google.com/linear/hls/pa/event/8QpjAnHCQQqBxFVRdDQXCA/stream/4c6e06c4-d23b-4e05-9bb0-e7f05f3248fd:ATL/variant/081f51567e9cf4e34cd83fdd282d2412/bandwidth/3071200.m3u8
+
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Novelas",TL Novelas 
+http://televisa-televisa-1-it.samsung.wurl.tv/3000.m3u8
 
 #EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Deportes", Dsports+
 https://mivra.vivolatamz.org/lb04/dsports/index.m3u8?token=b7321a3146c80a77b6e712435a0ccad0d4ced7c9-71-1783488072-1783434072&ip=186.6.139.28
