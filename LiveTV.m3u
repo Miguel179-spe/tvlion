@@ -1,5 +1,12 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="A Premium",AXN
+http://cdn.haititivi.net:80/AXN/index.m3u8
+
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="A Premium", Cine Amor
+https://stitcher-ipv4.pluto.tv/v2/stitch/embed/hls/channel/5f5136317aedfb0007016f93/3063648/playlist.m3u8?terminate=false&sid=SAMSUNG-TVPLUS-efe8e37c-4c27-4abf-931e-906f8e56cb16&deviceDNT=0&deviceLat=0&deviceLon=0&deviceModel=samsung&deviceVersion=unknown&embedPartner=jmp2.uk&samsung_app_domain=https%3A%2F%2Fwww.samsung.com%2Fus%2Fappstore%2Fapp.do%3FappId%3DG15147002586&samsung_app_name=Samsung%20TV%20Plus&serverSideAds=true&appName=samsungtvplus&deviceId=69f06968-a231-45d4-b077-c0a10b668351&appVersion=unknown&deviceType=samsung-tvplus&deviceMake=samsung&includeDeviceUA=true&authToken=eyJhbGciOiJIUzI1NiIsImtpZCI6IjEyZDA1MTM0LWI0NzgtNDlkNy1iYjUzLTkxNDYxMmNlMzI4NyIsInR5cCI6IkpXVCJ9.eyJwYXJ0bmVyIjoic2Ftc3VuZ3R2cGx1cyIsImZlYXR1cmVzIjp7Im11bHRpUG9kQWRzIjp7ImNvaG9ydCI6IiIsImVuYWJsZWQiOnRydWV9LCJzdGl0Y2hlckhsc05nIjp7ImRlbXV4ZWRBdWRpbyI6ImppdCJ9LCJzdGl0Y2hlclBhcnRuZXJTaG93U2xhdGUiOnsiZW5hYmxlZCI6dHJ1ZX19LCJpc3MiOiJzZXJ2aWNlLXBhcnRuZXItYXV0aC5wbHV0by50diIsInN1YiI6InByaTp2MTpwbHV0bzpkZXZpY2VzOmMyRnRjM1Z1WjNSMmNHeDFjdz09IiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4MzQ4ODQ0OCwiaWF0IjoxNzgzNDAyMDQ4LCJqdGkiOiIyMGU4ZWZjNC03Njk3LTQ1MGQtODg4NS0zMjNjNDZhYjM5YzgifQ.1pJCCSEud_ONcSvQ0-W_vbI8aqiNnXS7gIRl1Dteo1M&us_privacy=1YNY&advertisingId=%7BPSID%7D&profileLimit=&profileFloor=&masterJWTPassthrough=1
+
+
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB", MLB Network
 http://cord-cutter.net:8080/live/5uWnY2/585054/323887.m3u8
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="MLB", MLB Network
