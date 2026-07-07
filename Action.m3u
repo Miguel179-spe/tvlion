@@ -2,7 +2,7 @@
 
 
 #EXTINF:-1 tvg-id="DSports" tvg-name="DSports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4b/DSports_logo.svg" group-title="Deportes",DSports (Opción 10)
-http://8.243.126.131:8000/play/a05a/index.m3u8
+http://8.243.126.131:8000/play/a05a/91354478.m3u8
 
  #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes",Eurosport 1
 http://cord-cutter.net:8080/live/5uWnY2/585054/266643.m3u8
