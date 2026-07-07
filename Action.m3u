@@ -2,6 +2,21 @@
  #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes",Eurosport 1
 http://cord-cutter.net:8080/live/5uWnY2/585054/266643.m3u8
 
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Deportes",AYM
+https://thm-it-roku.otteravision.com/thm/it/it_720p_high.m3u8
+
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Deportes",AYM Sports
+https://aym-as.otteravision.com/aym/as/as_1080p.m3u8
+
+
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Deportes",✔️ Bein Sports Xtra
+https://amg01334-beinsportsllc-beinxtraesp-localnow-aekzc.amagi.tv/playlistR1080p.m3u8
+
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Deportes", Canela Deportes
+https://amg00658-amg00658c10-canelatv-international-7279.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-deporteslt-canelatvinternational/cb563d167d6c63909bc93678d2f962e5a65928d80b6c852a6ab454876dbd4607c0f4fad39c15bb2a03c64bce68017d32207aba10de747fdece0be81168297021c8e3eb3fc69c110eacdb093a32c8027a2c8212058c7c087799ce1f0b8e32fc39261bfa0663537ddce951b3764cc59e0a9b0276d9f48134291e0b09ce1f04faa55da4e1e25b57cc64a3e51949967c46fa8513c88101ba81825a8311d074f5099ac3f28b85198182946bae57d0c168325f154574cff2b33f92f5d81b1d937c21481756e7add3cc4b2c93454f55fb8db3d507d132be44a11c024dd62e975d9038ca4aa70cb5e84da1d7d4b7fa918cc5b6334f26a3ecaf84fa3971ce0e43725cbc011ec9a76e1069c86ed12d25399cb7ac7ee19245c3e771d7ff017849fb409a1763aed1cfc9a57a005dd9dcc53877376f6e01108f5ea3d55eda27c97797ea1c2c554343a2a084a5eccc733f78468a8c5f9b4655e99bc3afd6002ed23b5b7be664cb540c688c6d373cd600b4bb653cd10843c5142deb5430b747fe9325e1e88eb65175e688870ad447db98269eb60ea066391925b6f127500c0c5ed8fc690035369211bc9d9aaf274750acdac2fcc95f3d470a16540d99eba825c8d98e7a4b64ad3941417a1405990dd21bbe59334a44ae2dd2a11a618b01534ad5a6324e4f6291b2d9b2aa9beb1de527fd8d91142039506fb873352e61ddb3873aac6a1b9e1b8d2adbd625bf3b8a7c61cf0a8fb57da90802b63152/120/1920x1080_6423560/index.m3u8
+
+#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Deportes",✔️ Dsports 
+http://190.108.83.69:8000/play/a05w/index.m3u8
 
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes", ESPN 3
 http://cord-cutter.net:8080/live/5uWnY2/585054/266474.m3u8
