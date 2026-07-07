@@ -3,9 +3,6 @@
 http://cord-cutter.net:8080/live/5uWnY2/585054/266643.m3u8
 
 
-#EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="A Premium",AXN
-http://cdn.haititivi.net:80/AXN/index.m3u8
-
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes", ESPN 3
 http://cord-cutter.net:8080/live/5uWnY2/585054/266474.m3u8
 
