@@ -13,7 +13,7 @@ http://200.35.176.154:8000/play/a057/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/GteBmUJ.png" group-title="Deportes",ESPN 5
 http://200.35.176.154:8000/play/a058/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/GteBmUJ.png" group-title="Deportes",ESPN 6 HD
-http://200.35.176.154:8000/play/a055/index.m3u8
+http://200.35.176.154:8000/play/a055/54312040.m3u8
 
 #EXTINF:-1 tvg-id="GolfChannel.cz@SD" tvg-logo="https://www.sms.cz/kategorie/televize/bmp/loga/velka/golfchannel.png" group-title="Deportes",Golf Channel
 https://dash4.antik.sk/live/test_golf_channel/playlist.m3u8
