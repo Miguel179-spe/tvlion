@@ -1,5 +1,12 @@
 #EXTM3U
 
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://imgur.com/undefined.png" group-title="Retro",Family Tv
+https://tv.webmedialive.com/familytv/live/chunks.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://imgur.com/TvaZosY.png" group-title="Retro", Cotubanama Tv
+https://host.streamingnation.live/p/3588/hybrid/play.m3u8
+
+
 #EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="Novelas",Corazon
 https://stream.ads.ottera.tv/cl/260707d96jlni4rfhc739v6f90/1280x720_3000140_0_f.m3u8?i=475_5399
 
