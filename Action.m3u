@@ -1,6 +1,14 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",SPORTV 1 HD BR
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80073.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",SPORTV 2 FHD BR
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80074.m3u8
+
+
 
 #EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",FOX SPORTS FHD BR
 http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80008.m3u8
