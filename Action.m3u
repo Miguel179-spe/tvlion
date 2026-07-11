@@ -1,6 +1,24 @@
 #EXTM3U
 
 
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",BLUE SPORT EVENT 2 FHD CH
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/96344.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes", NBA TV VIP Sports
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/16958.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 1 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89764.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 2 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89765.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 3 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89766.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 4 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89767.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 5 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89768.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 7 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89770.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",MLB 8 HD VIP SPORTS
+http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/89771.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo=".png" group-title="Deportes",Sportv 3 FHD BR
 http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/81160.m3u8
 
