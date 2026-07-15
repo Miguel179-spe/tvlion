@@ -201,8 +201,6 @@ http://181.78.8.199:8000/play/a0as/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/frd60hR.png" group-title="Austria""Austria",Agrotendencia TV (1080p)
 https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/AHaXlCh.png" group-title="Austria""Animation",Anime Zone TV (480p)
-http://animezonetv.net/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/MsQLaQG.png" group-title="Austria""Religious",Avivamiento TV (1080p) [Not 24/7]
 https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TerY4iM.png" group-title="Austria""General",Bum Televisión (720p) [Not 24/7]
@@ -1192,14 +1190,8 @@ https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AHaXlCh.png" group-title="A Dominicano""Animation",Anime Zone TV (480p)
 http://animezonetv.net/hls/stream.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/I2wRq88.png" group-title="A Dominicano""Shop",Bajo Techo TV (1080p) [Not 24/7]
-https://fox.hostlagarto.com:8081/bajotechotv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://www.banivision.com/wp-content/uploads/2023/04/Bani-Vision-Favicon.png" group-title="A Dominicano""General",Bani Vision (720p) [Not 24/7]
 https://videostream.shockmedia.com.ar/hls/banivision/banivision.m3u8
-#EXTINF:-1 tvg-logo="" group-title="A Dominicano""General",Bebeto TV (1080p)
-https://mlb.essastream.com:8081/bebetotelevision/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/XqQ3kCs.png" group-title="A Dominicano""Entertainment",Bellavision (1080p) [Not 24/7]
-https://fox.hostlagarto.com:8081/bellavision8hd/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/npiRBPC.png" group-title="A Dominicano""General",Boca Chica TV (720p) [Not 24/7]
 https://fox.hostlagarto.com:8081/bocachicatv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/en1vCZB.png" group-title="A Dominicano""General",Bonao TV (720p) [Not 24/7]
