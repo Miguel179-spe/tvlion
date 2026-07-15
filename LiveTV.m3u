@@ -1,4 +1,14 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo="https://imgur.com/9B3gol1.png" group-title="A Premium", CINECANAL
+http://138.186.23.7:8082/CINECANAL/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo="https://imgur.com/EzwGEu8.png" group-title="A Premium", A&E
+http://138.121.15.230:9002/A&E/tracks-v1a1/mono.m3u8
+
+
+#EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo="https://imgur.com/EzwGEu8.png" group-title="A Premium", AMC
+http://45.190.156.152/AMC/tracks-v1a1/mono.m3u8 
+
 
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo="https://imgur.com/9B3gol1.png" group-title="A Premium", CINECANAL
 http://138.186.23.7:8082/CINECANAL/tracks-v1a1/mono.ts.m3u8
