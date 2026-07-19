@@ -665,17 +665,34 @@ const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 const HLS_CONFIG = {
     debug: false,
-    enableWorker: !isFireTV,
+
+    enableWorker: true,
     lowLatencyMode: false,
-    backBufferLength: 30,
-    maxBufferLength: 60,
-    maxMaxBufferLength: 120,
-    maxBufferSize: 60 * 1000 * 1000,
-    maxBufferHole: 0.5,
+
     startLevel: -1,
-    fragLoadingTimeOut: 20000,
-    manifestLoadingTimeOut: 10000,
+
+    backBufferLength: 15,
+
+    maxBufferLength: 30,
+    maxMaxBufferLength: 60,
+    maxBufferSize: 80 * 1000 * 1000,
+
+    maxBufferHole: 1,
+
+    fragLoadingTimeOut: 30000,
+    manifestLoadingTimeOut: 15000,
+
     enableSoftwareAES: true,
+
+    liveSyncDurationCount: 5,
+    liveMaxLatencyDurationCount: 15,
+
+    highBufferWatchdogPeriod: 2,
+
+    nudgeOffset: 0.1,
+    nudgeMaxRetry: 10,
+
+    abrEwmaDefaultEstimate: 5000000,
 };
 
 function getChannelInitials(name) {
