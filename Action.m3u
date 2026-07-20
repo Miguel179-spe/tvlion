@@ -1,5 +1,31 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",Redbull TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",BeiN Sports Extra
+https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",REAL MADRID TV 🇪🇸
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",BEIN SPORT EXTRA Ñ 🇪🇸
+https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",TELECOSTA GUATEMALA 🇬🇹
+https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",TELEMUNDO 🇲🇽
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",Viju+ Sport 🇷🇺
+https://stream1.cinerama.uz/1229/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",SPORT RU 🇷🇺
+http://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v3a1/index.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",X SPORT 🇷🇺
+http://iptv.prosto.tv:7000/ch109/video.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",Turkmenistan Sport 🇹🇲
+http://217.174.225.146/hls/ch004_720/index.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",UZ SPORT 🇺🇿
+https://stream1.cinerama.uz/1004/index.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",INFOSPORT 🇫🇷
+http://212.102.60.80/Infosport/index.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",TELETRAK 🇨🇱
+http://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",COMBATE
 http://45.190.156.152/COMBATE/tracks-v1a1/mono.m3u8
 
