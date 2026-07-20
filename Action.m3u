@@ -1,6 +1,24 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",COMBATE
+http://45.190.156.152/COMBATE/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",GOLTV
+http://177.234.249.178:8888/GOLTV/tracks-v1a1/mono.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",Ovacion1 Tv
+http://cdn2.ujjina.com:1935/iptvovacion1/liveovacion1tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",PREMIERE CLUBES
+http://45.190.156.152/PREMIERE_CLUBES/tracks-v1a1/mono.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",WIN-SPORT
+http://138.121.15.230:9002/WIN-SPORT/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",TYC SPORTSHD
+http://45.181.87.106/TYCSPORTSHD/tracks-v1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes", MLB Network
 http://cord-cutter.net:8080/live/5uWnY2/585054/323887.m3u8
 #EXTINF:-1 tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes", MLB Network
