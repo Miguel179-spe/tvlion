@@ -1,4 +1,7 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="WMAQTV51.us@HD" tvg-logo="https://imgur.com/pSp9m3N.png" group-title="A Dominicano",Ad Canal de las Estrellas
+https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/9B3gol1.png" group-title="A Premium",CINECANAL
 http://138.186.23.7:8082/CINECANAL/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/EzwGEu8.png" group-title="A Premium",A&E
