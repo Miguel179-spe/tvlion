@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",Teleuniverso (720p)
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(0hhqSsjONaSatwlpLWULMlYgFg_jnwfXk9Jsexs-lO1mrgP0osV30SPnybHbHz90o2i5xhh3gny4okd1La8Td58cQ4uCaGMiWNSXuxczkpAsPFE32EJltFRmGM45kRrJ)/cloud/3/xaio352/s/live-480.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/kEUTzKi.png" group-title="Novelas",TL Novelas
 http://televisa-televisa-1-it.samsung.wurl.tv/3000.m3u8 
