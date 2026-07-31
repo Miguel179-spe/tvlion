@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",telesistema
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(8vHpIF2pyvITEC97FAZVo-uP3EyPwo-X2WbCcLtnAQ2j9SEW1EuZEDp67T3nkS8F6aCmDN4_F1uQ0D3R1wLJkgKkykYqmlbwYLRF4wgml43VGpbf3gLRV-zxYJ9kR1ps)/cloud/3/x80ac48/d/live-1080.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",Teleuniverso (720p)
 https://live2.eu-north-1a.cf.dmcdn.net/sec2(0hhqSsjONaSatwlpLWULMlYgFg_jnwfXk9Jsexs-lO1mrgP0osV30SPnybHbHz90o2i5xhh3gny4okd1La8Td58cQ4uCaGMiWNSXuxczkpAsPFE32EJltFRmGM45kRrJ)/cloud/3/xaio352/s/live-480.m3u8
 
