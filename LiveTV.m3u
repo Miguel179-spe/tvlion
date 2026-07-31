@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",Color Vision 
+https://live.eu-north-1b.cf.dmcdn.net/sec2(AkKJbmLVT6mx6CerFc5BfY8gic1K6JKbxOURFRYILI59AH4no-dM3FeKAuFozOHQ2RROOwUaCfppPN8ZX3QTmzQ1my_PddDhgUfE64wdjsij4Ywt9xusBtcjjJTXMc6p)/dm/3/x7gy059/d/live-720.m3u8?startdate=2026-05-28T01%3A25%3A09%2B0000
+
+
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",telesistema
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(8vHpIF2pyvITEC97FAZVo-uP3EyPwo-X2WbCcLtnAQ2j9SEW1EuZEDp67T3nkS8F6aCmDN4_F1uQ0D3R1wLJkgKkykYqmlbwYLRF4wgml43VGpbf3gLRV-zxYJ9kR1ps)/cloud/3/x80ac48/d/live-1080.m3u8
 
