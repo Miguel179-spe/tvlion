@@ -5,7 +5,7 @@ https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 #EXTINF:-1 tvg-id="SECNetwork.us@SD" tvg-logo=".png" group-title="A Dominicano",Ad TL Novelas 
 http://televisa-televisa-1-it.samsung.wurl.tv/3000.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/LZhXumM.png" group-title="A Dominicano",Telesistema 11
+#EXTINF:-1 tvg-logo="https://imgur.com/LZhXumM.png" group-title="A Dominicano",Ad Telesistema 11
 https://cdn3.wind.do/streams/telesistema/telesistema_1080.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/NCFojCN.png" group-title="A Dominicano",vallevnuevo tv
