@@ -1,4 +1,8 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jZffETr.png" group-title="A Dominicano""General",Canal RTVD 4
+https://cdn.protvradiostream.com/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/gQev8ST.png" group-title="A Dominicano""General",Teleuniverso (720p)
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(-KKnLl4t8XT_px0Onu-2XwGMx4a3DoDzbhxmiJsXG2sou3I0hocuHXyQMIRti0EwqGXA-QbaItfykjpvchrC62reWGkc7aAhfcCHbPNf44Kz24bSnCPBDm9aZ3fNtJLY)/cloud/3/xaio352/s/live-720.m3u8
 
