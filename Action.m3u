@@ -1,4 +1,12 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes", NBA TV
+http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Sportsnet East (D) 
+http://cord-cutter.net:8080/live/5uWnY2/585054/41836.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Sportsnet One (E)
+http://cord-cutter.net:8080/live/5uWnY2/585054/10247.m3u8
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TV TSN 4 HD 
+http://cord-cutter.net:8080/live/5uWnY2/585054/16130.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",Tour Spot TV
 https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/FEpzJcC.png" group-title="Deportes",Redbull TV
