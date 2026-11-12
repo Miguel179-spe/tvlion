@@ -1,6 +1,12 @@
 #EXTM3U
 
 
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5dcde07af1c85b0009b18651/colorLogoPNG_1766080575034.png" group-title="Deportes",Pluto TV Deportes
+https://jmp2.uk/plu-5dcde07af1c85b0009b18651.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/yU5LqTL.png" group-title="Deportes",CDN Deportes (720p)
+https://hls.tvabierta.net/hls/036.m3u8
+
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",ESPN 2 MEXICO HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564188.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes", Fox Sports 1 Full HD
