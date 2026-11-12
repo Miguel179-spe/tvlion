@@ -1,83 +1,74 @@
 #EXTM3U
 
 
-
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5dcde07af1c85b0009b18651/colorLogoPNG_1766080575034.png" group-title="Deportes",Pluto TV Deportes
 https://jmp2.uk/plu-5dcde07af1c85b0009b18651.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/yU5LqTL.png" group-title="Deportes",CDN Deportes (720p)
 https://hls.tvabierta.net/hls/036.m3u8
-
+#EXTM3U
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",ESPN 2 MEXICO HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564188.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Fox Sports 1 Full HD
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Fox Sports 1 Full HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564189.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Fox Sports 2 HD
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Fox Sports 2 HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564191.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Fox Sports 3
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Fox Sports 3
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564192.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Fox Sports 3 Full HD
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Fox Sports 3 Full HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564193.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Espn 1
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Espn 1
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564194.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Espn 2 HD
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Espn 2 HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564195.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Espn 3 Full HD
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Espn 3 Full HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564196.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Espn+
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Espn+
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564197.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Espn+ HD
-http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564198.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN (Mexico)
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN (Mexico)
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564199.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN FHD (Mexico)
-http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564200.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN HD (USA)
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN HD (USA)
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564201.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X1
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X1
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564202.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X2
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X2
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564203.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X4
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X4
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564204.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X3
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X3
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564205.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X6
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X6
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564206.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X7
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X7
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564207.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X8
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X8
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564208.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X9
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X9
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564209.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TUDN X10
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TUDN X10
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564210.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",Azteca Deportes
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564211.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",CALIENTE TV HD
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564212.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Deportes mx
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Deportes mx
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564213.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", FOX ONE OP 1
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",FOX ONE OP 1
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564214.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",VIX SPORT
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564215.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Fox Sports Premium
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Fox Sports Premium
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564216.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",ESPN 4 MX OP1
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564217.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", CLARO SPORTS
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",CLARO SPORTS
 http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564218.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Azteca Deportes
-http://superxlatino.com:8880/live/juanmora/7Wz9hnj2Xmu8/564219.m3u8
-
-
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", NBA TV
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",NBA TV
 http://cord-cutter.net:8080/live/5uWnY2/585054/22995.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Sportsnet East (D) 
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Sportsnet East (D)
 http://cord-cutter.net:8080/live/5uWnY2/585054/41836.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", Sportsnet One (E)
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Sportsnet One (E)
 http://cord-cutter.net:8080/live/5uWnY2/585054/10247.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes", TV TSN 4 HD 
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",TV TSN 4 HD
 http://cord-cutter.net:8080/live/5uWnY2/585054/16130.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",Tour Spot TV
 https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8
@@ -113,9 +104,7 @@ http://cdn2.ujjina.com:1935/iptvovacion1/liveovacion1tv/playlist.m3u8
 http://45.181.87.106/TYCSPORTSHD/tracks-v1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",MLB Network
 http://cord-cutter.net:8080/live/5uWnY2/585054/323887.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes",MLB Network
-http://cord-cutter.net:8080/live/5uWnY2/585054/323888.m3u8
-#EXTINF:-1 tvg-logo=".png" group-title="Deportes",tvg-id="SuperTennis.it@SD" tvg-logo=".png" group-title="Deportes", MLB Strikezone
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",MLB Strikezone
 http://cord-cutter.net:8080/live/5uWnY2/585054/323889.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",MLB | Arizona Diamondbacks
 http://cord-cutter.net:8080/live/5uWnY2/585054/324233.m3u8
@@ -163,27 +152,19 @@ http://cord-cutter.net:8080/live/5uWnY2/585054/324262.m3u8
 http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/81161.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/pyw0FG2.png" group-title="Deportes",Sportv 1 FHD BR
 http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/81162.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/pyw0FG2.png" group-title="Deportes",SPORTV 1 HD BR
-http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80073.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/KmvZsZa.png" group-title="Deportes",SPORTV 2 FHD BR
-http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80074.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/YchuBVU.png" group-title="Deportes",FOX SPORTS FHD BR
 http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80008.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/YchuBVU.png" group-title="Deportes",FOX SPORTS 2 HD BR
 http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/80009.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/7RYFxhF.png" group-title="Deportes",ESPN HD
-http://edinpajalic.streamtv.to:8080/live/2rSvsynKRJ/5GHeYZFNwI/79997.m3u8
 #EXTINF:-1 tvg-logo="https://www.sms.cz/kategorie/televize/bmp/loga/velka/golfchannel.png" group-title="Deportes",Golf Channel
 https://dash4.antik.sk/live/test_golf_channel/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://iili.io/J1kV1Bn.png" group-title="Deportes",ITV Deportes (720p)
 https://thm-it-roku.otteravision.com/thm/it/it.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Hf0EiaW.png" group-title="Deportes",Sky Racing 1 (720p)
 https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/chunklist_w1319854701.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/NoJvlig.png" group-title="Deportes",Teletrak (720p)
-https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4b/DSports_logo.svg" group-title="Deportes",DSports (Opción 7)
 http://191.97.59.33:8000/play/a09t/index.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/85Vo4NP.png" group-title="Deportes", Eurosport 1
+#EXTINF:-1 tvg-logo="https://imgur.com/85Vo4NP.png" group-title="Deportes",Eurosport 1
 http://cord-cutter.net:8080/live/5uWnY2/585054/266643.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/nNHPi99.png" group-title="Deportes",AYM
 https://thm-it-roku.otteravision.com/thm/it/it_720p_high.m3u8
@@ -201,8 +182,6 @@ http://voodvooxqha.top:8080/live/VIP01751759858004994/b49eb82b6e0a/56469.m3u8
 https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/o3wOgmH.png" group-title="Deportes",WIN SPORTS
 http://cord-cutter.net:8080/live/5uWnY2/585054/320377.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/o3wOgmH.png" group-title="Deportes",Win Sports+
-http://cord-cutter.net:8080/live/5uWnY2/585054/320382.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TpCkbkT.png" group-title="Deportes",ACC Network (720p)
 http://206.212.244.63/2486/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes",ACCDN (1080p)
@@ -211,19 +190,11 @@ https://aegis-cloudfront-1.tubi.video/a1e671ae-d1c2-4e39-99c7-889e83056fd2/playl
 http://206.212.244.63/2511/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/9p4MIdM.png" group-title="Deportes",Tennis channel
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/6mszxr1.png" group-title="Deportes",ESPN
-http://cord-cutter.net:8080/live/5uWnY2/585054/66372.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/d9hiIJq.png" group-title="Deportes",ESPN NEWS
 http://cord-cutter.net:8080/live/5uWnY2/585054/17707.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/tIcajL9.png" group-title="Deportes",ESPN SEC Network
 http://cord-cutter.net:8080/live/5uWnY2/585054/17608.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/1VlHzhD.png" group-title="Deportes",US ESPN 2
 http://cord-cutter.net:8080/live/5uWnY2/585054/2210.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/hreLo6M.png" group-title="Deportes",ESPN 1 (HD)
-http://cord-cutter.net:8080/live/5uWnY2/585054/14197.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/hreLo6M.png" group-title="Deportes",ESPN 1 (HD)
-http://cord-cutter.net:8080/live/5uWnY2/585054/9802.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/tQ4rv4o.png" group-title="Deportes",ESPNU College Sports
 http://cord-cutter.net:8080/live/5uWnY2/585054/10255.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/tIcajL9.png" group-title="Deportes",ESPN
-http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/2578.m3u8
