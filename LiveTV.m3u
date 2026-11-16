@@ -423,6 +423,13 @@ https://vtm1.msinteractiva.com/vallenuevotv/vallenuevotv/playlist.m3u8?hls_ctx=4
 https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/EzwGEu8.png" group-title="A Premium",A&E
 http://138.121.15.230:9002/A&E/tracks-v1a1/mono.m3u8
+
+
+#EXTINF:-1 tvg-logo=".png" group-title="Retro",Anime kids 
+https://es2-p1-netcdn.bitel.com.pe/netcdn-live-7/bitel/animakids/chunks.m3u8?manifestfilter=video_bitrate:1-10000000&wmkid=0&uid=17823080&timestamp=1794884073&token=733bcece717e133bf5c6943aaec40f6e
+
+
+
 #EXTINF:-1 tvg-logo="https://imgur.com/oG1m40N.png" group-title="Retro",Family Tv
 https://tv.webmedialive.com/familytv/live/chunks.m3u8
 #EXTINF:-1 tvg-logo=".png" group-title="Deportes",AYM
