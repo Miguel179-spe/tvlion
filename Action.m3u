@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo=".png" group-title="Deportes",Anime kids 
+https://es2-p1-netcdn.bitel.com.pe/netcdn-live-7/bitel/animakids/chunks.m3u8?manifestfilter=video_bitrate:1-10000000&wmkid=0&uid=17823080&timestamp=1794884073&token=733bcece717e133bf5c6943aaec40f6e
 
 
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5dcde07af1c85b0009b18651/colorLogoPNG_1766080575034.png" group-title="Deportes",Pluto TV Deportes
